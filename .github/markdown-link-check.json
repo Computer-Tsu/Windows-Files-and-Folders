@@ -6,8 +6,5 @@
       "pattern": "^http://127.0.0.1"
       "pattern": "^https://computername"
     }
-    }
-    }
-    }
   ]
 }
