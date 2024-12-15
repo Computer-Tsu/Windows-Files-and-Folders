@@ -1,10 +1,13 @@
 {
   "ignorePatterns": [
     {
-      "pattern": "^http://server/"
+      "pattern": "^http?://server/"
     },
     {
-      "pattern": "^https://computername"
+      "pattern": "^http?://myserver/"
+    },
+    {
+      "pattern": "^http?://computername"
     },
     {
       "pattern": "^https?://127\\.0\\.0\\.1"
