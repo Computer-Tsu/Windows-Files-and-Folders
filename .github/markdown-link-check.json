@@ -1,16 +1,42 @@
 {
   "ignorePatterns": [
     {
-      "pattern": "^https://example.com"
-    }
-    {
       "pattern": "^http://server/"
-    }
-    {
-      "pattern": "^http://127.0.0.1"
-    }
+    },
     {
       "pattern": "^https://computername"
+    },
+    {
+      "pattern": "^https?://127\\.0\\.0\\.1"
+    },
+    {
+      "pattern": "^https?://localhost"
+    },
+    {
+      "pattern": "^https?://example\\.com"
+    },
+    {
+      "pattern": "^https?://www\\.example\\.com"
+    },
+    {
+      "pattern": "^https?://example\\.org"
+    },
+    {
+      "pattern": "^https?://www\\.example\\.org"
+    },
+    {
+      "pattern": "^https?://example\\.net"
+    },
+    {
+      "pattern": "^https?://www\\.example\\.net"
+    },
+    {
+      "pattern": "^https?://test\\.com"
+    },
+    {
+      "pattern": "^https?://www\\.test\\.com"
     }
-  ]
+  ],
+  "timeout": 10,
+  "retryOn429": true
 }
