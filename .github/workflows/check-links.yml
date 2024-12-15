@@ -9,6 +9,7 @@ on:
       - '**/*.md'
   schedule:
     - cron: '0 0 * * 0'  # Weekly on Sunday at 02:00 UTC
+  workflow_dispatch:  # Enable manual triggering
 
 jobs:
   link-check:
