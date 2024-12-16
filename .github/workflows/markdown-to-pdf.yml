@@ -22,7 +22,8 @@ jobs:
       - name: Install Pandoc and rsvg-convert
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc texlive-xetex librsvg2-bin
+          sudo apt-get install -y pandoc texlive-xetex librsvg2-bin fonts-dejavu ttf-mscorefonts-installer
+          fc-cache -f -v  # Update font cache
 
       # Step 3: Pre-process Markdown files for Latex error with backslashes in .md
       - name: Sanitize Markdown Files
@@ -37,7 +38,7 @@ jobs:
         run: |
           mkdir -p pdfs
           for file in *.md; do
-            pandoc "$file" --pdf-engine=xelatex -o "pdfs/${file%.md}.pdf"
+            pandoc "$file" --pdf-engine=xelatex -V mainfont="Consolas" -o "pdfs/${file%.md}.pdf"
           done
 
       # Step 5: Upload PDFs as Artifact
