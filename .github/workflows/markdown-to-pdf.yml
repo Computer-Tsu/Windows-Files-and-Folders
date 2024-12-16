@@ -1,12 +1,12 @@
 name: Convert Markdown to PDF
 
 on:
-#  push:
-#    paths:
-#      - '**/*.md'  # Trigger on Markdown file changes
-#  pull_request:
-#    paths:
-#      - '**/*.md'  # Trigger on pull requests
+  # push:
+  #   paths:
+  #     - '**/*.md'  # Trigger on Markdown file changes
+  # pull_request:
+  #   paths:
+  #     - '**/*.md'  # Trigger on pull requests modifying Markdown files
   workflow_dispatch:  # Enable manual triggering
 
 jobs:
@@ -14,12 +14,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install Pandoc
-        run: sudo apt-get update && sudo apt-get install -y pandoc texlive-xetex
+      # Step 2: Install dependencies
+      - name: Install Pandoc and rsvg-convert
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex librsvg2-bin
 
+      # Step 3: Convert Markdown to PDF
       - name: Convert Markdown to PDF
         run: |
           mkdir -p pdfs
@@ -27,6 +32,7 @@ jobs:
             pandoc "$file" -o "pdfs/${file%.md}.pdf"
           done
 
+      # Step 4: Upload PDFs as Artifact
       - name: Upload PDFs as Artifact
         uses: actions/upload-artifact@v3
         with:
