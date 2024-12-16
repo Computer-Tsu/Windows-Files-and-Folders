@@ -24,7 +24,14 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y pandoc texlive-xetex librsvg2-bin
 
-      # Step 3: Convert Markdown to PDF
+      # Step 3: Pre-process Markdown files for Latex error with backslashes in .md
+      - name: Sanitize Markdown Files
+        run: |
+          for file in *.md; do
+            sed -i 's|\\|\\\\|g' "$file"
+          done
+
+      # Step 4: Convert Markdown to PDF
       - name: Convert Markdown to PDF
         run: |
           mkdir -p pdfs
@@ -32,7 +39,7 @@ jobs:
             pandoc "$file" -o "pdfs/${file%.md}.pdf"
           done
 
-      # Step 4: Upload PDFs as Artifact
+      # Step 5: Upload PDFs as Artifact
       - name: Upload PDFs as Artifact
         uses: actions/upload-artifact@v3
         with:
