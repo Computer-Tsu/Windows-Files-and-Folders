@@ -1,0 +1,22 @@
+name: Markdown Lint
+
+on:
+  push:
+    paths:
+      - '**/*.md'
+  pull_request:
+    paths:
+      - '**/*.md'
+  workflow_dispatch:  # Enable manual triggering
+
+jobs:
+  lint-markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run Markdown Linter
+        uses: github/super-linter@v5
+        env:
+          VALIDATE_MARKDOWN: true
