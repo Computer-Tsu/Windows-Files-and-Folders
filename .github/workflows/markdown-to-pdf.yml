@@ -38,7 +38,7 @@ jobs:
         run: |
           mkdir -p pdfs
           for file in *.md; do
-            pandoc "$file" --pdf-engine=xelatex -V mainfont="Consolas" -o "pdfs/${file%.md}.pdf"
+            pandoc "$file" --pdf-engine=xelatex -V mainfont="DejaVu Sans Mono" -o "pdfs/${file%.md}.pdf"
           done
 
       # Step 5: Upload PDFs as Artifact
