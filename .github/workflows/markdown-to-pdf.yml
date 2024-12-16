@@ -29,6 +29,7 @@ jobs:
         run: |
           for file in *.md; do
             sed -i 's|\\|\\\\|g' "$file"
+            sed -i 's/├/|--/g; s/└/`--/g; s/│/|   /g' "$file"
           done
 
       # Step 4: Convert Markdown to PDF
