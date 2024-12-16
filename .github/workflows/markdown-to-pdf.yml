@@ -22,15 +22,21 @@ jobs:
       - name: Install Pandoc and rsvg-convert
         run: |
           sudo apt-get update
+          echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | sudo debconf-set-selections
           sudo apt-get install -y pandoc texlive-xetex librsvg2-bin fonts-dejavu ttf-mscorefonts-installer
           fc-cache -f -v  # Update font cache
 
-      # Step 3: Pre-process Markdown files for Latex error with backslashes in .md
-      - name: Sanitize Markdown Files
+      # Step 3: Sanitize Markdown files for Latex error with Unicode and backslashes in .md
+      - name: Preprocess Markdown Files
         run: |
           for file in *.md; do
-            sed -i 's|\\|\\\\|g' "$file"
+            # Escape LaTeX special characters
+            sed -i 's|%|\\%|g; s|{|\\{|g; s|}|\\}|g; s|_|\\_|g; s|\\|\\\\|g' "$file"
+            # Replace box-drawing characters
             sed -i 's/├/|--/g; s/└/`--/g; s/│/|   /g; s/\xE2\x94\x80/--/g' "$file"
+            # Remove trailing spaces and redundant blank lines
+            sed -i 's/[[:space:]]*$//' "$file"
+            sed -i '/^$/N;/^\n$/D' "$file"
           done
 
       # Step 4: Convert Markdown to PDF
