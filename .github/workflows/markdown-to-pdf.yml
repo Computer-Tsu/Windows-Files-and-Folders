@@ -1,0 +1,34 @@
+name: Convert Markdown to PDF
+
+on:
+#  push:
+#    paths:
+#      - '**/*.md'  # Trigger on Markdown file changes
+#  pull_request:
+#    paths:
+#      - '**/*.md'  # Trigger on pull requests
+  workflow_dispatch:  # Enable manual triggering
+
+jobs:
+  convert-to-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc texlive-xetex
+
+      - name: Convert Markdown to PDF
+        run: |
+          mkdir -p pdfs
+          for file in *.md; do
+            pandoc "$file" -o "pdfs/${file%.md}.pdf"
+          done
+
+      - name: Upload PDFs as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: markdown-pdfs
+          path: pdfs/
