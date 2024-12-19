@@ -2345,7 +2345,7 @@ snap-ins (MSC)
 | NAP Client Configuration                        |                                        | Configures and manages NAP Client Configuration settings                                                                                                                                                                        |                                |
 | Online Responder Management                     |                                        | Enables the configuration, monitoring and management of revocation checking services based on the OCSP protocol.                                                                                                                |                                |
 | Performance Monitor                             |                                        | Performance Monitor                                                                                                                                                                                                             |                                |
-| Print Management                                | C:\WINDOWS\PMCSnap\printmanagement.msc | Print Management is a Microsoft Management Console (MMC) snap-in that is used to manage print servers and printers.                                                                                                             | Win2003R2 \\& others             |
+| Print Management                                | C:\WINDOWS\PMCSnap\printmanagement.msc | Print Management is a Microsoft Management Console (MMC) snap-in that is used to manage print servers and printers.                                                                                                             | Win2003R2 \& others             |
 | Public Folder Management Console                |                                        | Allows management of Exchange Server 2010 public folders. © 2010 Microsoft Corporation. All rights reserved.                                                                                                                    | Exchange 2010 Server Tools\<?> |
 | Queue Viewer                                    |                                        | Manage Exchange mail queues.                                                                                                                                                                                                    |                                |
 | Remote Desktop Services Manager                 |                                        | Manage Remote Desktop Services sessions                                                                                                                                                                                         |                                |
@@ -2559,7 +2559,7 @@ psexec and more http://serverfault.com/questions/32489/remote-command-execution-
 
 GUI
 
-**mmc \\& msc**
+**mmc \& msc**
 
 **RDP (tsclient)**
 
@@ -2723,10 +2723,10 @@ ResKit
 | Windows 3.? (WFWG ?)                                      |                         |                          |
 | Windows 95                                                | Documentation and Tools |                          |
 | Windows 98                                                | Documentation and Tools |                          |
-| Windows NT (Workstation \\& Server)                         |                         |                          |
+| Windows NT (Workstation \& Server)                         |                         |                          |
 | Windows NT 3.51                                           |                         | 2 Supplements for Server |
-| Windows NT 4.0 (Workstation \\& Server)                     | Docs, Tools, 3rd party  | 4 supplements for Server |
-| Windows 2000 (Professional \\& Server)                      |                         | 1 supplement for Server  |
+| Windows NT 4.0 (Workstation \& Server)                     | Docs, Tools, 3rd party  | 4 supplements for Server |
+| Windows 2000 (Professional \& Server)                      |                         | 1 supplement for Server  |
 | Windows XP                                                |                         |                          |
 | Windows 2003                                              |                         |                          |
 | Windows XP Professional Resource Kit, Third Edition (SP2) |                         |                          |
@@ -3342,7 +3342,7 @@ Outlook Contacts Auto-Complete List
 
 The Auto-Complete List is a feature which displays suggestions for names and e-mail addresses as you begin to type them. These suggestions are possible matches from a list of names and e-mail addresses from the e-mail messages that you have sent.
 
-In Outlook 2010, the Auto-Complete List file (.nk2) is discontinued. The Auto-Complete List entries are now saved in your Microsoft Exchange Server mailbox or for POP3, IMAP, or Hotmail \\& Windows Live accounts, in the Outlook Data File (.pst) for your account.
+In Outlook 2010, the Auto-Complete List file (.nk2) is discontinued. The Auto-Complete List entries are now saved in your Microsoft Exchange Server mailbox or for POP3, IMAP, or Hotmail \& Windows Live accounts, in the Outlook Data File (.pst) for your account.
 
 Temp folder for Outlook attachments
 
