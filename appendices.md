@@ -252,16 +252,16 @@ Do “Shell:” commands work here?
 | Indexing Service                                         | ciadv.msc                                                                                                                                                                                                                              |
 | Initialise Performance Monitor (by settings file)        | perfmon.msc                                                                                                                                                                                                                            |
 | Internet Properties                                      | inetcpl.cpl                                                                                                                                                                                                                            |
-| IP Configuration (display connection configuration)      | ipconfig /all                                                                                                                                                                                                                          |
-| IP Configuration (display DNS cache contents)            | ipconfig /displaydns                                                                                                                                                                                                                   |
-| IP Configuration (delete DNS cache contents)             | ipconfig /flushdns                                                                                                                                                                                                                     |
-| IP Configuration (release all connections)               | ipconfig /release                                                                                                                                                                                                                      |
-| IP Configuration (renew all connections)                 | ipconfig /renew                                                                                                                                                                                                                        |
-| IP Configuration (refreshes DHCP and re-registers DNS)   | ipconfig /registerdns                                                                                                                                                                                                                  |
+| IP Configuration (display connection configuration)      | `ipconfig /all`                                                                                                                                                                                                                          |
+| IP Configuration (display DNS cache contents)            | `ipconfig /displaydns`                                                                                                                                                                                                                   |
+| IP Configuration (delete DNS cache contents)             | `ipconfig /flushdns`                                                                                                                                                                                                                     |
+| IP Configuration (release all connections)               | `ipconfig /release`                                                                                                                                                                                                                      |
+| IP Configuration (renew all connections)                 | `ipconfig /renew`                                                                                                                                                                                                                        |
+| IP Configuration (refreshes DHCP and re-registers DNS)   | `ipconfig /registerdns`                                                                                                                                                                                                                  |
 | IP Configuration (display DHCP class ID)                 | ipconfig /showclassid                                                                                                                                                                                                                  |
 | IP Configuration (modifies DHCP class ID)                | ipconfig /setclassid                                                                                                                                                                                                                   |
-| Java Control Panel (if installed)                        | javaw.exe or javaws.exe                                                                                                                                                                                                                |
-| Keyboard Properties                                      | control.exe keyboard                                                                                                                                                                                                                   |
+| Java Control Panel (if installed)                        | `javaw.exe` or `javaws.exe`                                                                                                                                                                                                            |
+| Keyboard Properties                                      | `control.exe keyboard`                                                                                                                                                                                                                 |
 | Launches Windows Update                                  | wupdmgr.exe                                                                                                                                                                                                                            |
 | Local Security Settings                                  | secpol.msc                                                                                                                                                                                                                             |
 | Local Users and Groups                                   | lusrmgr.msc                                                                                                                                                                                                                            |
@@ -307,12 +307,12 @@ Do “Shell:” commands work here?
 | Shared Folders                                           | fsmgmt.msc                                                                                                                                                                                                                             |
 | Shut Down Windows                                        | shutdown -s -t 0                                                                                                                                                                                                                       |
 | Sounds and Audio                                         | mmsys.cpl                                                                                                                                                                                                                              |
-| Shows Stored Usernames and Passwords                     | rundll32.exe keymgr.dll, KRShowKeyMgr                                                                                                                                                                                                  |
+| Shows Stored Usernames and Passwords                     | `rundll32.exe keymgr.dll, KRShowKeyMgr`                                                                                                                                                                                                |
 | Spider Solitare Card Game                                | spider.exe                                                                                                                                                                                                                             |
 | SQL Client Configuration                                 | cliconfg.exe                                                                                                                                                                                                                           |
 | System Configuration Editor                              | sysedit.exe                                                                                                                                                                                                                            |
 | System Configuration Utility                             | msconfig.exe                                                                                                                                                                                                                           |
-| System File Checker Utility (scan immediately)           | sfc.exe /scannow                                                                                                                                                                                                                       |
+| System File Checker Utility (scan immediately)           | `sfc.exe /scannow`                                                                                                                                                                                                                     |
 | System File Checker Utility (scan once at next boot)     | sfc.exe /scanonce                                                                                                                                                                                                                      |
 | System File Checker Utility (scan on every boot)         | sfc.exe /scanboot                                                                                                                                                                                                                      |
 | System File Checker Utility (return to default setting)  | sfc.exe /revert                                                                                                                                                                                                                        |
@@ -329,12 +329,12 @@ Do “Shell:” commands work here?
 | Windows Firewall                                         | firewall.cpl                                                                                                                                                                                                                           |
 | Windows Magnifier                                        | magnify.exe                                                                                                                                                                                                                            |
 | Windows Management Infrastructure                        | wmimgmt.msc                                                                                                                                                                                                                            |
-| Windows XP Registration Wizard                           | regwiz.exe /r                                                                                                                                                                                                                          |
+| Windows XP Registration Wizard                           | `regwiz.exe /r`                                                                                                                                                                                                                        |
 | Windows System Security Tool                             | syskey.exe                                                                                                                                                                                                                             |
 | Windows XP Tour Wizard                                   | tourstart.exe                                                                                                                                                                                                                          |
 | WordPad                                                  | write.exe                                                                                                                                                                                                                              |
 
-### Variables {#h.dp3rawraxu1z" id="h.dp3rawraxu1z
+### Variables {#variables}
 
 #### Set an Environmental Variable from Command Prompt {#h.n8qvj5gjg3cl" id="h.n8qvj5gjg3cl
 
@@ -408,73 +408,25 @@ order of precedence:
 
 , - expression separator
 
-If you use any of the logical or modulus operators, you will need to
-
-enclose the expression string in quotes. Any non-numeric strings in the
-
-expression are treated as environment variable names whose values are
-
-converted to numbers before using them. If an environment variable name
-
-is specified but is not defined in the current environment, then a value
-
-of zero is used. This allows you to do arithmetic with environment
+If you use any of the logical or modulus operators, you will need to enclose the expression string in quotes. Any non-numeric strings in the expression are treated as environment variable names whose values are converted to numbers before using them. If an environment variable name is specified but is not defined in the current environment, then a value of zero is used. This allows you to do arithmetic with environment
 
 ``variable values without having to type all those % signs to get their``
 
-values. If SET /A is executed from the command line outside of a
+values. If SET /A is executed from the command line outside of a command script, then it displays the final value of the expression. The assignment operator requires an environment variable name to the left of the assignment operator. Numeric values are decimal numbers, unless prefixed by 0x for hexadecimal numbers, and 0 for octal numbers. So 0x12 is the same as 18 is the same as 022. Please note that the octal notation can be confusing: 08 and 09 are not valid numbers because 8 and 9 are not valid octal digits.
 
-command script, then it displays the final value of the expression. The
-
-assignment operator requires an environment variable name to the left of
-
-the assignment operator. Numeric values are decimal numbers, unless
-
-prefixed by 0x for hexadecimal numbers, and 0 for octal numbers.
-
-So 0x12 is the same as 18 is the same as 022. Please note that the octal
-
-notation can be confusing: 08 and 09 are not valid numbers because 8 and
-
-9 are not valid octal digits.
-
-The /P switch allows you to set the value of a variable to a line of input
-
-entered by the user. Displays the specified promptString before reading
-
-the line of input. The promptString can be empty.
+The /P switch allows you to set the value of a variable to a line of input entered by the user. Displays the specified promptString before reading the line of input. The promptString can be empty.
 
 Environment variable substitution has been enhanced as follows:
 
 ``%PATH:str1=str2%``
 
-would expand the PATH environment variable, substituting each occurrence
-
-of "str1" in the expanded result with "str2". "str2" can be the empty
-
-string to effectively delete all occurrences of "str1" from the expanded
-
-output. "str1" can begin with an asterisk, in which case it will match
-
-everything from the beginning of the expanded output to the first
-
-occurrence of the remaining portion of str1.
+would expand the PATH environment variable, substituting each occurrence of "str1" in the expanded result with "str2". "str2" can be the empty string to effectively delete all occurrences of "str1" from the expanded output. "str1" can begin with an asterisk, in which case it will match everything from the beginning of the expanded output to the first occurrence of the remaining portion of str1.
 
 May also specify substrings for an expansion.
 
 ``%PATH:\~10,5%``
 
-would expand the PATH environment variable, and then use only the 5
-
-characters that begin at the 11th (offset 10) character of the expanded
-
-result. If the length is not specified, then it defaults to the
-
-remainder of the variable value. If either number (offset or length) is
-
-negative, then the number used is the length of the environment variable
-
-value added to the offset or length specified.
+would expand the PATH environment variable, and then use only the 5 characters that begin at the 11th (offset 10) character of the expanded result. If the length is not specified, then it defaults to the remainder of the variable value. If either number (offset or length) is negative, then the number used is the length of the environment variable value added to the offset or length specified.
 
 ``%PATH:\~-10%``
 
@@ -484,55 +436,33 @@ would extract the last 10 characters of the PATH variable.
 
 would extract all but the last 2 characters of the PATH variable.
 
-Finally, support for delayed environment variable expansion has been
+Finally, support for delayed environment variable expansion has been added. This support is always disabled by default, but may be enabled/disabled via the /V command line switch to CMD.EXE. See 'CMD /?'
 
-added. This support is always disabled by default, but may be
+Delayed environment variable expansion is useful for getting around the limitations of the current expansion which happens when a line of text is read, not when it is executed. The following example demonstrates the problem with immediate variable expansion:
 
-enabled/disabled via the /V command line switch to CMD.EXE. See CMD /?
-
-Delayed environment variable expansion is useful for getting around
-
-the limitations of the current expansion which happens when a line
-
-of text is read, not when it is executed. The following example
-
-demonstrates the problem with immediate variable expansion:
-
+```
 set VAR=before
 
-``if "%VAR%" == "before" (``
+if "%VAR%" == "before" (
 
 set VAR=after
 
-``if "%VAR%" == "after" @echo If you see this, it worked``
+if "%VAR%" == "after" @echo If you see this, it worked
 
 )
+```
 
-``would never display the message, since the %VAR% in BOTH IF statements``
+would never display the message, since the `%VAR%` in BOTH IF statements is substituted when the first IF statement is read, since it logically includes the body of the IF, which is a compound statement. So the IF inside the compound statement is really comparing "before" with "after" which will never be equal. Similarly, the following example will not work as expected:
 
-is substituted when the first IF statement is read, since it logically
-
-includes the body of the IF, which is a compound statement. So the
-
-IF inside the compound statement is really comparing "before" with
-
-"after" which will never be equal. Similarly, the following example
-
-will not work as expected:
-
+```
 set LIST=
 
-``for %i in (\*) do set LIST=%LIST% %i``
+for %i in (*) do set LIST=%LIST% %i
 
-``echo %LIST%``
+echo %LIST%
+```
 
-in that it will NOT build up a list of files in the current directory,
-
-but instead will just set the LIST variable to the last file found.
-
-``Again, this is because the %LIST% is expanded just once when the``
-
-FOR statement is read, and at that time the LIST variable is empty.
+in that it will NOT build up a list of files in the current directory, but instead will just set the LIST variable to the last file found. Again, this is because the `%LIST%` is expanded just once when the FOR statement is read, and at that time the LIST variable is empty.
 
 So the actual FOR loop we are executing is:
 
@@ -548,9 +478,10 @@ execution time. If delayed variable expansion is enabled, the above
 
 examples could be written as follows to work as intended:
 
+```
 set VAR=before
 
-``if "%VAR%" == "before" (``
+if "%VAR%" == "before" (
 
 set VAR=after
 
@@ -560,9 +491,10 @@ if "!VAR!" == "after" @echo If you see this, it worked
 
 set LIST=
 
-``for %i in (\*) do set LIST=!LIST! %i``
+for %i in (*) do set LIST=!LIST! %i
 
-``echo %LIST%``
+echo %LIST%
+```
 
 If Command Extensions are enabled, then there are several dynamic
 
@@ -590,31 +522,27 @@ that definition will override the dynamic one described below:
 
 version number.
 
-``%CMDCMDLINE% - expands to the original command line that invoked the``
+`%CMDCMDLINE%` - expands to the original command line that invoked the Command Processor.
 
-Command Processor.
+`%HIGHESTNUMANODENUMBER%` - expands to the highest NUMA node number on this machine.
 
-``%HIGHESTNUMANODENUMBER% - expands to the highest NUMA node number``
+`ALLUSERSPROFILE=C:\ProgramData`
 
-on this machine.
+`APPDATA=C:\Users\<UserName>\AppData\Roaming`
 
-``ALLUSERSPROFILE=C:\ProgramData``
+`CommonProgramFiles=C:\Program Files\Common Files`
 
-``APPDATA=C:\Users\\\<UserName>\AppData\Roaming``
+`CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files`
 
-``CommonProgramFiles=C:\Program Files\Common Files``
+`CommonProgramW6432=C:\Program Files\Common Files`
 
-``CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files``
-
-``CommonProgramW6432=C:\Program Files\Common Files``
-
-COMPUTERNAME=ITTECH
+`COMPUTERNAME=ITTECH`
 
 ``ComSpec=C:\Windows\system32\cmd.exe``
 
 ``FP\_NO\_HOST\_CHECK=NO``
 
-HOMEDRIVE=M:
+`HOMEDRIVE=M:`
 
 ``HOMEPATH=\\``
 
@@ -628,7 +556,7 @@ HOMEDRIVE=M:
 
 ``OS=Windows\_NT``
 
-PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+`PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC`
 
 ``PROCESSOR\_ARCHITECTURE=AMD64``
 
@@ -676,151 +604,83 @@ USERDOMAIN=_MYDOMAIN_
 
 PowerShell
 
-``\[PS] C:\\>get-variable``
+``\[PS] C:\>get-variable``
 
+```
 Name Value
-
-``\---- -----``
-
-``$ \~\history.csv``
-
+---- -----
+$ ~\history.csv
 ? True
-
 ^ Get-History
-
-``\_``
-
+\_
 args {}
-
-``CommonConnectFunctions\_Loca... {res\_0005, res\_0004, res\_0001, res\_0000, res\_0003, res\_0002}``
-
-``ConfigurationPath C:\Program Files\Microsoft\Exchange Server\V14\bin\Microsoft.Exchange.Configuration.O...``
-
+CommonConnectFunctions\_Loca... {res\_0005, res\_0004, res\_0001, res\_0000, res\_0003, res\_0002}
+ConfigurationPath C:\Program Files\Microsoft\Exchange Server\V14\bin\Microsoft.Exchange.Configuration.O...
 ConfirmPreference High
-
 connectedFqdn MYSERVER.mydomain.com
-
-``ConnectFunctions\_LocalizedS... {res\_0001, res\_0000, res\_0003, res\_0002, res\_0005, res\_0004, res\_0007, res\_0006, res\_...``
-
+ConnectFunctions\_LocalizedS... {res\_0001, res\_0000, res\_0003, res\_0002, res\_0005, res\_0004, res\_0007, res\_0006, res\_...
 ConsoleFileName
-
 DebugPreference SilentlyContinue
-
 Error {The term 'testpath' is not recognized as the name of a cmdlet, function, script file...
-
 ErrorActionPreference Continue
-
 ErrorView NormalView
-
-``exbin C:\Program Files\Microsoft\Exchange Server\V14\bin\\``
-
+exbin C:\Program Files\Microsoft\Exchange Server\V14\bin\
 ExecutionContext System.Management.Automation.EngineIntrinsics
-
-``exinstall C:\Program Files\Microsoft\Exchange Server\V14\\``
-
+exinstall C:\Program Files\Microsoft\Exchange Server\V14\
 exrandom System.Random
-
-``exscripts C:\Program Files\Microsoft\Exchange Server\V14\scripts\\``
-
+exscripts C:\Program Files\Microsoft\Exchange Server\V14\scripts\
 false False
-
 FormatEnumerationLimit 16
-
 getLiveIDCredCode using System;...
-
-``HOME M:\\``
-
+`HOME M:\`
 Host System.Management.Automation.Internal.Host.InternalHost
-
 importResults lbexchange.medlinkmanagement.com
-
 input System.Collections.ArrayList+ArrayListEnumeratorSimple
-
 LASTEXITCODE 0
-
-``ManagementPath C:\Program Files\Microsoft\Exchange Server\V14\bin\Microsoft.Exchange.Management.dll``
-
+ManagementPath C:\Program Files\Microsoft\Exchange Server\V14\bin\Microsoft.Exchange.Management.dll
 MaximumAliasCount 4096
-
 MaximumDriveCount 4096
-
 MaximumErrorCount 256
-
 MaximumFunctionCount 4096
-
 MaximumHistoryCount 64
-
 MaximumVariableCount 4096
-
 MyInvocation System.Management.Automation.InvocationInfo
-
 NestedPromptLevel 0
-
 null
-
 OutputEncoding System.Text.ASCIIEncoding
-
-``partialTypeFile C:\Program Files\Microsoft\Exchange Server\V14\bin\Exchange.partial.Types.ps1xml``
-
+partialTypeFile C:\Program Files\Microsoft\Exchange Server\V14\bin\Exchange.partial.Types.ps1xml
 PID 8600
-
-``PROFILE \\\AppServer\Users\Mark McDow\Data\Documents\WindowsPowerShell\Microsoft.PowerShell\_pr...``
-
+PROFILE \\AppServer\Users\User Name\Data\Documents\WindowsPowerShell\Microsoft.PowerShell\_pr...
 ProgressPreference Continue
-
 PSBoundParameters {}
-
 PSCulture en-US
-
 PSEmailServer
-
-``PSHOME C:\Windows\System32\WindowsPowerShell\v1.0``
-
+PSHOME C:\Windows\System32\WindowsPowerShell\v1.0
 PSSessionApplicationName wsman
-
 PSSessionConfigurationName http://schemas.microsoft.com/powershell/Microsoft.PowerShell
-
 PSSessionOption System.Management.Automation.Remoting.PSSessionOption
-
 PSUICulture en-US
-
 PSVersionTable {CLRVersion, BuildVersion, PSVersion, WSManStackVersion, PSCompatibleVersions, Serial...
-
-``PWD C:\\``
-
-``RemoteExchange\_LocalizedStr... {res\_0003, res\_help\_for\_cmdlet, res\_0005, res\_0007, res\_0009, res\_general\_help, res\_t...``
-
+PWD C:\
+RemoteExchange\_LocalizedStr... {res\_0003, res\_help\_for\_cmdlet, res\_0005, res\_0007, res\_0009, res\_general\_help, res\_t...
 remoteSession System.Management.Automation.Runspaces.PSSession
-
 ReportErrorShowExceptionClass 0
-
 ReportErrorShowInnerException 0
-
 ReportErrorShowSource 1
-
 ReportErrorShowStackTrace 0
-
 sessionOptionsTimeout 180000
-
 ShellId Microsoft.PowerShell
-
 StackTrace at System.Management.Automation.CommandDiscovery.LookupCommandInfo(String commandN...
-
 true True
-
-``typeFilePath C:\Program Files\Microsoft\Exchange Server\V14\bin\exchange.types.ps1xml``
-
+typeFilePath C:\Program Files\Microsoft\Exchange Server\V14\bin\exchange.types.ps1xml
 typeListToCheck
-
 typeLoadResult True
-
 VerbosePreference SilentlyContinue
-
 WarningPreference Continue
-
 WhatIfPreference False
+```
 
-### The god Mode {#h.122q6fk9du3z" id="h.122q6fk9du3z
+### The god Mode {#god-mode}
 
 All Tasks folder
 
@@ -828,7 +688,7 @@ All Tasks folder
 
 Do not use in Vista 64-bit?
 
-#### Windows 7 {#h.6a5hg4azm10u" id="h.6a5hg4azm10u
+#### Windows 7 {#god-mode-7}
 
 | **Application**                   | **Name**                                                                       | **Keywords** |
 | --------------------------------- | ------------------------------------------------------------------------------ | ------------ |
@@ -1099,9 +959,9 @@ Do not use in Vista 64-bit?
 | Windows Firewall                  | Check firewall status                                                          |              |
 | Windows Update                    | Check for updates                                                              |              |
 | Windows Update                    | Turn automatic updating on or off                                              |              |
-|                                   |                                                                                |              |
 
-#### Windows 8.1 {#h.f7jxzgccckgr" id="h.f7jxzgccckgr
+
+#### Windows 8.1 {#gode-mode-8}
 
 There are 244 items in the Windows 8.1 folder
 
@@ -1153,7 +1013,7 @@ Windows Anytime Upgrade
 
 Windows Cardspace
 
-### Windows Start Menu {#h.ukzyswluatcb" id="h.ukzyswluatcb
+### Windows Start Menu {#start-menu}
 
 Windows XP, Vista, 7
 
@@ -1164,190 +1024,173 @@ See Start Menu above
 ``C:\Users\\_Username_\AppData\Roaming\Microsoft\Windows\Start Menu``
 
 Default Programs
-
+|
 ``Programs\\``
-
+|
 ``Accessories\\``
-
+|
 ``Ease of Access\\``
-
+|
 Windows Speech Recognition
-
+|
 ``System Tools\\``
-
+|
 Character Map
-
+|
 Disk Cleanup
-
+|
 Disk Defragmenter
-
+|
 Resource Monitor
-
+|
 System Information
-
+|
 System Restore
-
+|
 Task Scheduler
-
+|
 Windows Anytime Upgrade
-
+|
 Windows Easy Transfer Reports ?
-
+|
 Windows Easy Transfer ?
-
+|
 ``Tablet PC\\``
-
+|
 Personalize Handwriting Recognition
-
+|
 Tablet PC Input Panel
-
+|
 Windows Journal
-
+|
 ``Windows PowerShell\\``
-
+|
 Windows PowerShell (x86)
-
+|
 Windows PowerShell ISE (x86)
-
+|
 Windows PowerShell ISE
-
+|
 Windows PowerShell
-
+|
 Calculator
-
+|
 Connect to a Network Projector
-
+|
 Connect to a Projector
-
+|
 Getting Started
-
+|
 Math Input Panel
-
+|
 Paint
-
+|
 Remote Desktop Connection (Moves depending on RDP update?)
-
+|
 Snipping Tool
-
+|
 Sound Recorder
-
+|
 Sticky Notes
-
+|
 Sync Center
-
+|
 Windows DVD Maker ?
-
+|
 ``Windows Mobility Center %windir%\system32\mblctr.exe /open (Opens the Windows Mobility Center so you can adjust display brightness, volume, power options, and other mobile PC settings.)``
-
+|
 WordPad
-
+|
 ``Administrative Tools\\``
-
+|
 ``Dell\\``
-
+|
 ``Games\\``
-
+|
 ``Google Chrome\\``
-
+|
 ``Intel\\``
-
+|
 ``iTunes\\``
-
+|
 ``Maintenance\\``
-
+|
 ``Microsoft Exchange Server 2010\\``
-
+|
 ``Microsoft Office\\``
-
+|
 ``Microsoft Silverlight\\``
-
+|
 ``Mozilla\\``
-
+|
 ``Startup\\``
-
+|
 ``Windows Live\\``
-
+|
 ``Windows Virtual PC\\``
-
+|
 Adobe Reader X ?
-
+|
 Apple Software Update
-
+|
 Desktop Gadget Gallery
-
+|
 iTunes ?
-
+|
 Windows Anytime Upgrade
-
+|
 Windows DVD Maker
-
+|
 Windows Fax and Scan
-
+|
 Windows Live Mail
-
+|
 Windows Live Messenger
-
+|
 Windows Live Movie Maker
-
+|
 Windows Live Photo Gallery
-
+|
 Windows Media Center
-
+|
 Windows Media Player
-
+|
 XPS Viewer
 
 ``C:\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu>tree /f``
 
+```
 Folder PATH listing for volume OS
 
 Volume serial number is A23D-B9F3
 
 C:.
 
-└───Programs
-
-├───Accessories
-
-│ │ Command Prompt.lnk
-
++-----Programs
++-----Accessories
+| | Command Prompt.lnk
 │ │ Notepad.lnk
-
 │ │ Run.lnk
-
 │ │ Windows Explorer.lnk
-
 │ │
-
-│ ├───Accessibility
-
+│ +-----Accessibility
 │ │ Ease of Access.lnk
-
 │ │ Magnify.lnk
-
 │ │ Narrator.lnk
-
 │ │ On-Screen Keyboard.lnk
-
 │ │
-
-│ └───System Tools
-
+│ +-----System Tools
 │ computer.lnk
-
 │ Control Panel.lnk
-
 │ Private Character Editor.lnk
-
 │
-
-└───Maintenance
-
++-----Maintenance
 Help.lnk
+```
 
 ``C:\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu>``
 
-### Windows Components {#h.wq6w7qebqpgx" id="h.wq6w7qebqpgx
+### Windows Components {#windows-components}
 
 Windows XP (Home, Pro, Media Center), Vista, 7, 8
 
@@ -1451,7 +1294,7 @@ XPS Services
 
 XPS Viewer
 
-#### Windows Server 2008 R2 Roles {#h.l9sfxzv9mgx9" id="h.l9sfxzv9mgx9
+#### Windows Server 2008 R2 Roles {#2008r2-roles}
 
 ``Some roles (\_\_\_) not available under Core``
 
@@ -1493,7 +1336,7 @@ Windows Server Update Services
 
 Additional role services can be added from the Roles home page.
 
-#### Windows 2008 R2 Features {#h.eh53aicwzjmw" id="h.eh53aicwzjmw
+#### Windows 2008 R2 Features {#2008r2-features}
 
 .NET Framework 3.5.1 Features
 
@@ -1601,259 +1444,137 @@ Wireless LAN Service
 
 XPS Viewer
 
-#### Microsoft Office {#h.tra4txeegr0s" id="h.tra4txeegr0s
+#### Microsoft Office {#ms-office}
 
 Microsoft Office
 
-``\-- +Microsoft Excel``
-
-``\-- .NET Programmability Support``
-
-``\-- +Add-ins``
-
-``\-- Euro Currency Tools``
-
-``\-- Analysis ToolPak``
-
-``\-- Solver``
-
-``\-- Sample Files``
-
-``\-- +Microsoft OneNote``
-
-``\-- Handwriting Fonts``
-
-``\-- .NET Programmability Support``
-
-``\-- +Send to OneNote Add-ins``
-
-``\-- Internet Explorer Integration``
-
-``\-- Outlook Integration``
-
-``\-- +Microsoft Outlook``
-
-``\-- .NET Programmability Support``
-
-``\-- +Importers and Exporters``
-
-``\-- +Import from Other Formats``
-
-``\-- Act 3.0``
-
-``\-- Text (DOS)``
-
-``\-- Text (Win)``
-
-``\-- ODBC``
-
-``\-- Lotus Organizer``
-
-``\-- PAB``
-
-``\-- Visual Basic Scripting Support``
-
-``\-- +Outlook Messaging Components``
-
-``\-- +Outlook Mapi Service Providers``
-
-``\-- Outlook Address Book``
-
-``\-- Microsoft Exchange Server``
-
-``\-- Microsoft LDAP Directory``
-
-``\-- Personal Folders``
-
-``\-- +Outlook Add-Ins``
-
-``\-- SharePoint Server Colleague Recommendations Add-In``
-
-``\-- Outlook Social Connector``
-
-``\-- +Outlook Stationery``
-
-``\-- Outlook Stationery - Basic Files``
-
-``\-- Outlook Stationery - Extended Files``
-
-``\-- Outlook Templates``
-
-``\-- +Microsoft PowerPoint``
-
-``\-- Organization Chart Add-in for Microsoft Office programs``
-
-``\-- .NET Programmability Support``
-
-``\-- Animation Sound Effects``
-
-``\-- +Microsoft Publisher``
-
-``\-- .NET Programmability Support``
-
-``\-- +Office Shared Features``
-
-``\-- +Clip Organizer``
-
-``\-- +Clip Organizer Collections``
-
-``\-- +Popular Clip Art``
-
-``\-- Clips``
-
-``\-- +AutoShapes and Themes``
-
-``\-- Clips``
-
-``\-- +Converters and Filters``
-
-``\-- +Graphics Filters``
-
-``\-- Computer Graphics Metafile (CGM) File Import``
-
-``\-- Encapsulated Postscript (EPS) File Import``
-
-``\-- Graphics Interchange Format (GIF) File Import``
-
-``\-- Joint Photographic Experts Group (JPEG) File Import``
-
-``\-- Macintosh Graphics (PICT) File Import``
-
-``\-- Portable Network Graphics (PNG) File Import``
-
-``\-- WordPerfect Graphics (WPG) File Import``
-
-``\-- +Text Converters``
-
-``\-- Works 7.0-9.0 Converter for Windows``
-
-``\-- Recover Text Converter``
-
-``\-- WordPerfect 5.x Converter``
-
-``\-- WordPerfect 6.x Converter``
-
-``\-- Word 97-2003/Open XML Format Converter``
-
-``\-- +International Support``
-
-``\-- Universal Font``
-
-``\-- Japanese Font``
-
-``\-- Microsoft Office Themes``
-
-``\-- Digital Certificate for VBA Projects``
-
-``\-- +Proofing Tools``
-
-``\-- Translation Core Files``
-
-``\-- +English Proofing Tools``
-
-``\-- Find All Word Forms``
-
-``\-- Hyphenation``
-
-``\-- Optical Character Recognition Modules``
-
-``\-- Spelling and Grammar Checkers``
-
-``\-- Thesaurus``
-
-``\-- +French Proofing Tools``
-
-``\-- Find All Word Forms``
-
-``\-- Hyphenation``
-
-``\-- Optical Character Recognition Modules``
-
-``\-- Spelling and Grammar Checkers``
-
-``\-- Thesaurus``
-
-``\-- English - French Translation``
-
-``\-- +Spanish Proofing Tools``
-
-``\-- Find All Word Forms``
-
-``\-- Hyphenation``
-
-``\-- Optical Character Recognition Modules``
-
-``\-- Spelling and Grammar Checkers``
-
-``\-- Thesaurus``
-
-``\-- English - Spanish Translation``
-
-``\-- +Fonts``
-
-``\-- Additional TrueType Fonts``
-
-``\-- Microsoft Office Download Control``
-
-``\-- +Web Themes``
-
-``\-- Additional Web Themes``
-
-``\-- Typical Web Themes``
-
-``\-- Visual Basic for Applications``
-
-``\-- +Office Tools``
-
-``\-- Microsoft Forms 2.0 .NET Programmability Support``
-
-``\-- +Microsoft Graph``
-
-``\-- .NET Programmability Support``
-
-``\-- Optical Character Recognition (OCR)``
-
-``\-- +Actions Plugins``
-
-``\-- Measurement Converter Actions Plugin``
-
-``\-- Bibliographic Information Actions Plugin``
-
-``\-- Date Actions Plugin``
-
-``\-- Instant Messaging Contact Actions Plugin``
-
-``\-- Name Actions Plugin``
-
-``\-- Addresses and Places Actions Plugin``
-
-``\-- Stocks && Funds Actions Plugin``
-
-``\-- Microsoft Office Picture Manager``
-
-``\-- +Microsoft SharePoint Foundation Support``
-
-``\-- Microsoft Access Web Datasheet Component``
-
-``\-- Microsoft SharePoint Foundation Support``
-
-``\-- Microsoft Query``
-
-``\-- Language Settings Tool``
-
-``\-- Actions .NET Programmability Support``
-
-``\-- Hosted Webs``
-
-``\-- Equation Editor``
-
-``\-- +Microsoft Word``
-
-``\-- .NET Programmability Support``
-
-``\-- Page Border Art``
-
-``\-- Quick Formatting Files``
+```
+\-- +Microsoft Excel
+\-- .NET Programmability Support
+\-- +Add-ins
+\-- Euro Currency Tools
+\-- Analysis ToolPak
+\-- Solver
+\-- Sample Files
+\-- +Microsoft OneNote
+\-- Handwriting Fonts
+\-- .NET Programmability Support
+\-- +Send to OneNote Add-ins
+\-- Internet Explorer Integration
+\-- Outlook Integration
+\-- +Microsoft Outlook
+\-- .NET Programmability Support
+\-- +Importers and Exporters
+\-- +Import from Other Formats
+\-- Act 3.0
+\-- Text (DOS)
+\-- Text (Win)
+\-- ODBC
+\-- Lotus Organizer
+\-- PAB
+\-- Visual Basic Scripting Support
+\-- +Outlook Messaging Components
+\-- +Outlook Mapi Service Providers
+\-- Outlook Address Book
+\-- Microsoft Exchange Server
+\-- Microsoft LDAP Directory
+\-- Personal Folders
+\-- +Outlook Add-Ins
+\-- SharePoint Server Colleague Recommendations Add-In
+\-- Outlook Social Connector
+\-- +Outlook Stationery
+\-- Outlook Stationery - Basic Files
+\-- Outlook Stationery - Extended Files
+\-- Outlook Templates
+\-- +Microsoft PowerPoint
+\-- Organization Chart Add-in for Microsoft Office programs
+\-- .NET Programmability Support
+\-- Animation Sound Effects
+\-- +Microsoft Publisher
+\-- .NET Programmability Support
+\-- +Office Shared Features
+\-- +Clip Organizer
+\-- +Clip Organizer Collections
+\-- +Popular Clip Art
+\-- Clips
+\-- +AutoShapes and Themes
+\-- Clips
+\-- +Converters and Filters
+\-- +Graphics Filters
+\-- Computer Graphics Metafile (CGM) File Import
+\-- Encapsulated Postscript (EPS) File Import
+\-- Graphics Interchange Format (GIF) File Import
+\-- Joint Photographic Experts Group (JPEG) File Import
+\-- Macintosh Graphics (PICT) File Import
+\-- Portable Network Graphics (PNG) File Import
+\-- WordPerfect Graphics (WPG) File Import
+\-- +Text Converters
+\-- Works 7.0-9.0 Converter for Windows
+\-- Recover Text Converter
+\-- WordPerfect 5.x Converter
+\-- WordPerfect 6.x Converter
+\-- Word 97-2003/Open XML Format Converter
+\-- +International Support
+\-- Universal Font
+\-- Japanese Font
+\-- Microsoft Office Themes
+\-- Digital Certificate for VBA Projects
+\-- +Proofing Tools
+\-- Translation Core Files
+\-- +English Proofing Tools
+\-- Find All Word Forms
+\-- Hyphenation
+\-- Optical Character Recognition Modules
+\-- Spelling and Grammar Checkers
+\-- Thesaurus
+\-- +French Proofing Tools
+\-- Find All Word Forms
+\-- Hyphenation
+\-- Optical Character Recognition Modules
+\-- Spelling and Grammar Checkers
+\-- Thesaurus
+\-- English - French Translation
+\-- +Spanish Proofing Tools
+\-- Find All Word Forms
+\-- Hyphenation
+\-- Optical Character Recognition Modules
+\-- Spelling and Grammar Checkers
+\-- Thesaurus
+\-- English - Spanish Translation
+\-- +Fonts
+\-- Additional TrueType Fonts
+\-- Microsoft Office Download Control
+\-- +Web Themes
+\-- Additional Web Themes
+\-- Typical Web Themes
+\-- Visual Basic for Applications
+\-- +Office Tools
+\-- Microsoft Forms 2.0 .NET Programmability Support
+\-- +Microsoft Graph
+\-- .NET Programmability Support
+\-- Optical Character Recognition (OCR)
+\-- +Actions Plugins
+\-- Measurement Converter Actions Plugin
+\-- Bibliographic Information Actions Plugin
+\-- Date Actions Plugin
+\-- Instant Messaging Contact Actions Plugin
+\-- Name Actions Plugin
+\-- Addresses and Places Actions Plugin
+\-- Stocks && Funds Actions Plugin
+\-- Microsoft Office Picture Manager
+\-- +Microsoft SharePoint Foundation Support
+\-- Microsoft Access Web Datasheet Component
+\-- Microsoft SharePoint Foundation Support
+\-- Microsoft Query
+\-- Language Settings Tool
+\-- Actions .NET Programmability Support
+\-- Hosted Webs
+\-- Equation Editor
+\-- +Microsoft Word
+\-- .NET Programmability Support
+\-- Page Border Art
+\-- Quick Formatting Files
+```
 
 ### Windows (7) Event Log {#h.dgqjcakmo7w9" id="h.dgqjcakmo7w9
 
@@ -1881,15 +1602,17 @@ Custom Views can import as Xml files
 
 #### Applications and Services Logs {#h.dngf5u4tmugc" id="h.dngf5u4tmugc
 
-``ACEEventLog %SystemRoot%\System32\Winevt\Logs\ACEEventLog.evtx``
+```
+ACEEventLog %SystemRoot%\System32\Winevt\Logs\ACEEventLog.evtx
 
-``Hardware Events %SystemRoot%\System32\Winevt\Logs\HardwareEvents.evtx``
+Hardware Events %SystemRoot%\System32\Winevt\Logs\HardwareEvents.evtx
 
-``Internet Explorer %SystemRoot%\System32\Winevt\Logs\Internet Explorer.evtx``
+Internet Explorer %SystemRoot%\System32\Winevt\Logs\Internet Explorer.evtx
 
-``Key Management Service %SystemRoot%\System32\Winevt\Logs\Key Management Service.evtx``
+Key Management Service %SystemRoot%\System32\Winevt\Logs\Key Management Service.evtx
 
-``Media Center %SystemRoot%\System32\Winevt\Logs\Media Center.evtx``
+Media Center %SystemRoot%\System32\Winevt\Logs\Media Center.evtx
+```
 
 _Microsoft_
 
