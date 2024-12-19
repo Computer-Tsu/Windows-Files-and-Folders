@@ -4,57 +4,57 @@
 
 Including changes from Windows XP to Vista, Windows 7
 
-``Application Data - Roaming C:\Users\\\<UserName>\AppData\Roaming``
+``Application Data - Roaming C:\\Users\\\\\\<UserName>\\AppData\\Roaming``
 
-``Cookies - Shortcut C:\Users\\\<UserName>\AppData\Roaming\Microsoft\Windows\Cookies``
+``Cookies - Shortcut C:\\Users\\\\\\<UserName>\\AppData\\Roaming\\Microsoft\\Windows\\Cookies``
 
-``Favorites C:\Users\Public\Favorites\[1]``
+``Favorites C:\\Users\\Public\\Favorites\\[1]``
 
-``Libraries - Shortcut C:\Users\\\<UserName>\AppData\Roaming\Microsoft\Windows\Libraries``
+``Libraries - Shortcut C:\\Users\\\\\\<UserName>\\AppData\\Roaming\\Microsoft\\Windows\\Libraries``
 
-``Libraries - Shortcut (2) C:\Users\Public\Libraries``
+``Libraries - Shortcut (2) C:\\Users\\Public\\Libraries``
 
-``Local Settings - Local C:\Users\\\<UserName>\AppData\Local``
+``Local Settings - Local C:\\Users\\\\\\<UserName>\\AppData\\Local``
 
-``My Documents - Documents C:\Users\\\<UserName>\Documents``
+``My Documents - Documents C:\\Users\\\\\\<UserName>\\Documents``
 
-``Network Shortcuts - Shortcut "C:\Users\\\<UserName>\AppData\Roaming\Microsoft\Windows\Network Shortcuts"``
+``Network Shortcuts - Shortcut "C:\\Users\\\\\\<UserName>\\AppData\\Roaming\\Microsoft\\Windows\\Network Shortcuts"``
 
-``Printer Shortcuts - Shortcut "C:\Users\\\<UserName>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts"``
+``Printer Shortcuts - Shortcut "C:\\Users\\\\\\<UserName>\\AppData\\Roaming\\Microsoft\\Windows\\Printer Shortcuts"``
 
-``Public Desktop - Shortcut C:\Users\Public\Desktop``
+``Public Desktop - Shortcut C:\\Users\\Public\\Desktop``
 
-``Public Documents - Shortcut C:\Users\Public\Documents``
+``Public Documents - Shortcut C:\\Users\\Public\\Documents``
 
-``Public Downloads - Shortcut C:\Users\Public\Downloads``
+``Public Downloads - Shortcut C:\\Users\\Public\\Downloads``
 
-``Public Music - Shortcut C:\Users\Public\Music``
+``Public Music - Shortcut C:\\Users\\Public\\Music``
 
-``Public Pictures - Shortcut C:\Users\Public\Pictures``
+``Public Pictures - Shortcut C:\\Users\\Public\\Pictures``
 
-``Public Recorded TV - Shortcut "C:\Users\Public\Recorded TV"``
+``Public Recorded TV - Shortcut "C:\\Users\\Public\\Recorded TV"``
 
-``Public Videos - Shortcut C:\Users\Public\Videos``
+``Public Videos - Shortcut C:\\Users\\Public\\Videos``
 
-``Recent Items - Shortcut C:\Users\\\<UserName>\AppData\Roaming\Microsoft\Windows\Recent``
+``Recent Items - Shortcut C:\\Users\\\\\\<UserName>\\AppData\\Roaming\\Microsoft\\Windows\\Recent``
 
-``Send to ▶ shortcuts C:\Users\\\<UserName>\AppData\Roaming\Microsoft\Windows\SendTo``
+``Send to ▶ shortcuts C:\\Users\\\\\\<UserName>\\AppData\\Roaming\\Microsoft\\Windows\\SendTo``
 
-``Start Menu - Shortcut (2) "C:\ProgramData\Microsoft\Windows\Start Menu"``
+``Start Menu - Shortcut (2) "C:\\ProgramData\\Microsoft\\Windows\\Start Menu"``
 
-``Start Menu - Shortcut "C:\Users\\\<UserName>\AppData\Roaming\Microsoft\Windows\Start Menu"``
+``Start Menu - Shortcut "C:\\Users\\\\\\<UserName>\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu"``
 
-``Templates - Shortcut C:\Users\\\<UserName>\AppData\Roaming\Microsoft\Windows\Templates``
+``Templates - Shortcut C:\\Users\\\\\\<UserName>\\AppData\\Roaming\\Microsoft\\Windows\\Templates``
 
-``Default User Profile %SystemDrive%\Users\Default``
+``Default User Profile %SystemDrive%\\Users\\Default``
 
-``Themes files C:\Users\\\<UserName>\AppData\Local\Microsoft\Windows\Themes``
+``Themes files C:\\Users\\\\\\<UserName>\\AppData\\Local\\Microsoft\\Windows\\Themes``
 
-``Wallpapers C:\Windows\Web\Wallpaper``
+``Wallpapers C:\\Windows\\Web\\Wallpaper``
 
-``C:\Users\\\<UserName>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar``
+``C:\\Users\\\\\\<UserName>\\AppData\\Roaming\\Microsoft\\Internet Explorer\\Quick Launch\\User Pinned\\TaskBar``
 
-``C:\Users\\\<UserName>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\StartMenu``
+``C:\\Users\\\\\\<UserName>\\AppData\\Roaming\\Microsoft\\Internet Explorer\\Quick Launch\\User Pinned\\StartMenu``
 
 #### Windows Vista/7 Backward Compatible {#h.sh5o97u17lmp" id="h.sh5o97u17lmp
 
@@ -62,65 +62,65 @@ Reparse points, links, junctions, mount points are covered in the File System do
 
 Warning: RoboCopy (version?) causes a copy-loop with certain /MIR situations.
 
-``DIR C:\Users\\\<USERNAME> /AL to list Reparse Points``
+``DIR C:\\Users\\\\\\<USERNAME> /AL to list Reparse Points``
 
-``\<JUNCTION> Application Data \[C:\Users\\\<user name>\AppData\Roaming]``
+``\\<JUNCTION> Application Data \\[C:\\Users\\\\\\<user name>\\AppData\\Roaming]``
 
-``\<JUNCTION> Cookies \[C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Cookies]``
+``\\<JUNCTION> Cookies \\[C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Microsoft\\Windows\\Cookies]``
 
-``\<JUNCTION> Local Settings \[C:\Users\\\<user name>\AppData\Local]``
+``\\<JUNCTION> Local Settings \\[C:\\Users\\\\\\<user name>\\AppData\\Local]``
 
-``\<JUNCTION> My Documents \[C:\Users\\\<user name>\Documents]``
+``\\<JUNCTION> My Documents \\[C:\\Users\\\\\\<user name>\\Documents]``
 
-``\<JUNCTION> NetHood \[C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Network Shortcuts]``
+``\\<JUNCTION> NetHood \\[C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Microsoft\\Windows\\Network Shortcuts]``
 
-``\<JUNCTION> PrintHood \[C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts]``
+``\\<JUNCTION> PrintHood \\[C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Microsoft\\Windows\\Printer Shortcuts]``
 
-``\<JUNCTION> Recent \[C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Recent]``
+``\\<JUNCTION> Recent \\[C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Microsoft\\Windows\\Recent]``
 
-``\<JUNCTION> SendTo \[C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\SendTo]``
+``\\<JUNCTION> SendTo \\[C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Microsoft\\Windows\\SendTo]``
 
-``\<JUNCTION> Start Menu \[C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Start Menu]``
+``\\<JUNCTION> Start Menu \\[C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu]``
 
-``\<JUNCTION> Templates \[C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Templates]``
+``\\<JUNCTION> Templates \\[C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Microsoft\\Windows\\Templates]``
 
-``DIR C:\Users /AL``
+``DIR C:\\Users /AL``
 
-``\<SYMLINKD> All Users \[C:\ProgramData]``
+``\\<SYMLINKD> All Users \\[C:\\ProgramData]``
 
-``\<JUNCTION> Default User \[C:\Users\Default]``
+``\\<JUNCTION> Default User \\[C:\\Users\\Default]``
 
-``Directory of C:\Users\\_UserName_\AppData\Local``
+``Directory of C:\\Users\\\\\_UserName\_\\AppData\\Local``
 
-``\<JUNCTION> Application Data \[C:\Users\\_UserName_\AppData\Local]``
+``\\<JUNCTION> Application Data \\[C:\\Users\\\\\_UserName\_\\AppData\\Local]``
 
-``\<JUNCTION> History \[C:\Users\\_UserName_\AppData\Local\Microsoft\Windows\History]``
+``\\<JUNCTION> History \\[C:\\Users\\\\\_UserName\_\\AppData\\Local\\Microsoft\\Windows\\History]``
 
-``\<JUNCTION> Temporary Internet Files \[C:\Users\\_UserName_\AppData\Local\Microsoft\Windows\Temporary Internet Files]``
+``\\<JUNCTION> Temporary Internet Files \\[C:\\Users\\\\\_UserName\_\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files]``
 
-``Directory of C:\Users\\_UserName_\Documents``
+``Directory of C:\\Users\\\\\_UserName\_\\Documents``
 
-``\<JUNCTION> My Music \[C:\Users\\_UserName_\Music]``
+``\\<JUNCTION> My Music \\[C:\\Users\\\\\_UserName\_\\Music]``
 
-``\<JUNCTION> My Pictures \[C:\Users\\_UserName_\Pictures]``
+``\\<JUNCTION> My Pictures \\[C:\\Users\\\\\_UserName\_\\Pictures]``
 
-``\<JUNCTION> My Videos \[C:\Users\\_UserName_\Videos]``
+``\\<JUNCTION> My Videos \\[C:\\Users\\\\\_UserName\_\\Videos]``
 
 | **Link**               | **Destination**                                                            |
 | ---------------------- | -------------------------------------------------------------------------- |
-| Documents and Settings | C:\Users                                                                   |
-| All Users              | C:\ProgramData                                                             |
-| Default User           | C:\Users\Default                                                           |
-| Application Data       | C:\Users\\\<user name>\AppData\Roaming                                     |
-| Cookies                | C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Cookies           |
-| Local Settings         | C:\Users\\\<user name>\AppData\Local                                       |
-| My Documents           | C:\Users\\\<user name>\Documents                                           |
-| NetHood                | C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Network Shortcuts |
-| PrintHood              | C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts |
-| Recent                 | C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Recent            |
-| SendTo                 | C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\SendTo            |
-| Start Menu             | C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Start Menu        |
-| Templates              | C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Templates         |
+| Documents and Settings | C:\\Users                                                                   |
+| All Users              | C:\\ProgramData                                                             |
+| Default User           | C:\\Users\\Default                                                           |
+| Application Data       | C:\\Users\\\\\\<user name>\\AppData\\Roaming                                     |
+| Cookies                | C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Microsoft\\Windows\\Cookies           |
+| Local Settings         | C:\\Users\\\\\\<user name>\\AppData\\Local                                       |
+| My Documents           | C:\\Users\\\\\\<user name>\\Documents                                           |
+| NetHood                | C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Microsoft\\Windows\\Network Shortcuts |
+| PrintHood              | C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Microsoft\\Windows\\Printer Shortcuts |
+| Recent                 | C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Microsoft\\Windows\\Recent            |
+| SendTo                 | C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Microsoft\\Windows\\SendTo            |
+| Start Menu             | C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu        |
+| Templates              | C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Microsoft\\Windows\\Templates         |
 
 What changes in Windows 8
 
@@ -128,7 +128,7 @@ Shortcuts that no longer work
 
 Shortcuts that still work
 
-``Send To %UserProfile%\AppData\Roaming\Microsoft\Windows\SendTo``
+``Send To %UserProfile%\\AppData\\Roaming\\Microsoft\\Windows\\SendTo``
 
 Can also use shell:sendto from Start-Run
 
@@ -136,9 +136,9 @@ Can also use shell:sendto from Start-Run
 
 More information will be in the File Systems document.
 
-``\[merge section with reserved names, devices, pipes?]``
+``\\[merge section with reserved names, devices, pipes?]``
 
-``filename::datastream \<sp?>``
+``filename::datastream \\<sp?>``
 
 dir /r
 
@@ -168,9 +168,9 @@ AVG .dat files have GUIDs? ex. 36bc5203-fa71-4f47-b52a-d972668bff5d
 
 Compressed (zipped) Folders Error
 
-``\[Filename] cannot be compressed because it includes characters that cannot be used in a compressed folder such as -. You should rename this file or directory.``
+``\\[Filename] cannot be compressed because it includes characters that cannot be used in a compressed folder such as -. You should rename this file or directory.``
 
-``\- dash``
+``\\- dash``
 
 ‘ apostrophe
 
@@ -182,9 +182,9 @@ boot.ini
 
 autoexec.nt
 
-``systemroot\system32\autoexec.nt``
+``systemroot\\system32\\autoexec.nt``
 
-``MSDOS.SYS \[Windows 9x]``
+``MSDOS.SYS \\[Windows 9x]``
 
 IO.SYS
 
@@ -198,7 +198,7 @@ pagefile.sys
 
 hiberfil.sys
 
-``C:\ProgramData \<DRIVE>:\Documents and Settings\All Users\Application Data``
+``C:\\ProgramData \\<DRIVE>:\\Documents and Settings\\All Users\\Application Data``
 
 ntuser.pol
 
@@ -206,7 +206,7 @@ Thumbs.db
 
 desktop.ini
 
-``setup.inf \<?>``
+``setup.inf \\<?>``
 
 Bitlocker
 
@@ -214,70 +214,70 @@ BitLocker Drive Encryption Administration Utilities (only Windows 8, Windows Ser
 
 Manage-bde; Windows PowerShell cmdlets for BitLocker; BitLocker Recovery Password Viewer for Active Directory; BitLocker Network Unlock Provider
 
-``Junctions in C:\ProgramData``
+``Junctions in C:\\ProgramData``
 
 | **Link**         | **Destination**                             |
 | ---------------- | ------------------------------------------- |
-| Application Data | C:\ProgramData                              |
-| Desktop          | C:\Users\Public\Desktop                     |
-| Documents        | C:\Users\Public\Documents                   |
-| Favorites        | C:\Users\Public\Favorites                   |
-| Start Menu       | C:\ProgramData\Microsoft\Windows\Start Menu |
-| Templates        | C:\ProgramData\Microsoft\Windows\Templates  |
+| Application Data | C:\\ProgramData                              |
+| Desktop          | C:\\Users\\Public\\Desktop                     |
+| Documents        | C:\\Users\\Public\\Documents                   |
+| Favorites        | C:\\Users\\Public\\Favorites                   |
+| Start Menu       | C:\\ProgramData\\Microsoft\\Windows\\Start Menu |
+| Templates        | C:\\ProgramData\\Microsoft\\Windows\\Templates  |
 
-``C:\ProgramData\Microsoft\Windows\Start Menu``
+``C:\\ProgramData\\Microsoft\\Windows\\Start Menu``
 
-``C:\ProgramData\\``
+``C:\\ProgramData\\\\``
 
-└Microsoft
+---
 
-├Assistance
+---
 
-├Crypto
+---
 
-├Device Stage
+---
 
-├DeviceSync
+---
 
-├DRM
+---
 
-├Event Viewer
+---
 
-├HTML Help
+---
 
-├IdentityCRL
+---
 
-├Network
+---
 
-├PlayReady
+---
 
-├RAC
+---
 
-├ServerManager
+---
 
-├User Account Pictures
+---
 
-├Vault
+---
 
-└Windows
+---
 
 #### Volume File System Records {#h.dyvretufswv9" id="h.dyvretufswv9
 
-``C:\System Volume Information``
+``C:\\System Volume Information``
 
-``C:\System Volume Information\SPP\OnlineMetadataCache``
+``C:\\System Volume Information\\SPP\\OnlineMetadataCache``
 
-``{}\_OnDiskSnapshotProp``
+``{}\\\_OnDiskSnapshotProp``
 
-``C:\System Volume Information\SPP\SppCbsHiveStore``
+``C:\\System Volume Information\\SPP\\SppCbsHiveStore``
 
-``C:\System Volume Information\SPP\SppGroupCache``
+``C:\\System Volume Information\\SPP\\SppGroupCache``
 
-``{}\_DriverPackageInfo``
+``{}\\\_DriverPackageInfo``
 
-``{}\_WindowsUpdateInfo``
+``{}\\\_WindowsUpdateInfo``
 
-``C:\System Volume Information\Windows Backup\Catalogs\GlobalCatalogLock.dat``
+``C:\\System Volume Information\\Windows Backup\\Catalogs\\GlobalCatalogLock.dat``
 
 {}
 
@@ -299,21 +299,21 @@ Syscache.hve.LOG2
 
 tracking.log
 
-``C:\Config.Msi``
+``C:\\Config.Msi``
 
-``C:\MSOCache``
+``C:\\MSOCache``
 
-``\[is this mentioned below in the forensics area?]``
+``\\[is this mentioned below in the forensics area?]``
 
 #### Start Menu {#h.u87z04jbg8n7" id="h.u87z04jbg8n7
 
-``More details in the Appendice \_ below``
+``More details in the Appendice \\\_ below``
 
 **Windows XP Start Button**
 
 Default user
 
-``Current User C:\Documents and Settings\\_Username_\ ...``
+``Current User C:\\Documents and Settings\\\\\_Username\_\\ ...``
 
 All Users
 
@@ -321,9 +321,9 @@ All Users
 
 Default user
 
-``Current User C:\Users\\_Username_\AppData\Roaming\Microsoft\Windows\Start Menu``
+``Current User C:\\Users\\\\\_Username\_\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu``
 
-``All Users C:\ProgramData\Microsoft\Windows\Start Menu``
+``All Users C:\\ProgramData\\Microsoft\\Windows\\Start Menu``
 
 **Windows 8**
 
@@ -333,9 +333,9 @@ need detail
 
 wevtvwr.msc
 
-``HKLM\SYSTEM\CurrentControlSet\services\eventlog\Application``
+``HKLM\\SYSTEM\\CurrentControlSet\\services\\eventlog\\Application``
 
-``Default folder C:\Windows\System32\winevt\Logs``
+``Default folder C:\\Windows\\System32\\winevt\\Logs``
 
 syntax examples using GUI to filter
 
@@ -357,7 +357,7 @@ WEvtUtil
 
 Tip: Create a custom view to search all the event logs.
 
-_Server Roles_
+\_Server Roles\_
 
 Administrative Events
 
@@ -367,37 +367,37 @@ Custom Views can import as Xml files
 
 **Windows Logs**
 
-``Application %SystemRoot%\System32\Winevt\Logs\Application.evtx``
+``Application %SystemRoot%\\System32\\Winevt\\Logs\\Application.evtx``
 
-``Security %SystemRoot%\System32\Winevt\Logs\Security.evtx``
+``Security %SystemRoot%\\System32\\Winevt\\Logs\\Security.evtx``
 
-``Setup %SystemRoot%\System32\Winevt\Logs\Setup.evtx``
+``Setup %SystemRoot%\\System32\\Winevt\\Logs\\Setup.evtx``
 
-``System %SystemRoot%\System32\Winevt\Logs\System.evtx``
+``System %SystemRoot%\\System32\\Winevt\\Logs\\System.evtx``
 
-``Forwarded Events %SystemRoot%\System32\Winevt\Logs\ForwardedEvents.evtx``
+``Forwarded Events %SystemRoot%\\System32\\Winevt\\Logs\\ForwardedEvents.evtx``
 
 **Applications and Services Logs**
 
-``ACEEventLog %SystemRoot%\System32\Winevt\Logs\ACEEventLog.evtx``
+``ACEEventLog %SystemRoot%\\System32\\Winevt\\Logs\\ACEEventLog.evtx``
 
-``Hardware Events %SystemRoot%\System32\Winevt\Logs\HardwareEvents.evtx``
+``Hardware Events %SystemRoot%\\System32\\Winevt\\Logs\\HardwareEvents.evtx``
 
-``Internet Explorer %SystemRoot%\System32\Winevt\Logs\Internet Explorer.evtx``
+``Internet Explorer %SystemRoot%\\System32\\Winevt\\Logs\\Internet Explorer.evtx``
 
-``Key Management Service %SystemRoot%\System32\Winevt\Logs\Key Management Service.evtx``
+``Key Management Service %SystemRoot%\\System32\\Winevt\\Logs\\Key Management Service.evtx``
 
-``Media Center %SystemRoot%\System32\Winevt\Logs\Media Center.evtx``
+``Media Center %SystemRoot%\\System32\\Winevt\\Logs\\Media Center.evtx``
 
-_Microsoft_
+\_Microsoft\_
 
-_Windows_
+\_Windows\_
 
-``Microsoft Exchange PSTCapture %SystemRoot%\System32\Winevt\Logs\Microsoft Exchange PSTCapture.evtx``
+``Microsoft Exchange PSTCapture %SystemRoot%\\System32\\Winevt\\Logs\\Microsoft Exchange PSTCapture.evtx``
 
-``Microsoft Office Alerts %SystemRoot%\System32\Winevt\Logs\OAlerts.evtx``
+``Microsoft Office Alerts %SystemRoot%\\System32\\Winevt\\Logs\\OAlerts.evtx``
 
-``Windows PowerShell %SystemRoot%\System32\Winevt\Logs\Windows PowerShell.evtx``
+``Windows PowerShell %SystemRoot%\\System32\\Winevt\\Logs\\Windows PowerShell.evtx``
 
 Source: Eventlog, Event ID: 1100 System Shutdown
 
@@ -435,11 +435,11 @@ You can enable Emergency Management Services console redirection in the Recovery
 
 For specific information about setting Recovery Console Bootcfg parameters for Emergency Management Services, see "Emergency Management Services" at the Microsoft Windows Resource Kits Web site.
 
-``[http://technet.microsoft.com/en-us/library/cc786105%28v=ws.10%29.aspx](http://technet.microsoft.com/en-us/library/cc754361\(v=ws.10\).aspx)``
+``[http://technet.microsoft.com/en-us/library/cc786105%28v=ws.10%29.aspx](http://technet.microsoft.com/en-us/library/cc754361\\(v=ws.10\\).aspx)``
 
 #### Setup log access {#h.za0t6rs6nzti" id="h.za0t6rs6nzti
 
-``\[DELL only?]``
+``\\[DELL only?]``
 
 SAC provides access to the setup logs during GUI-mode Setup. You can press ESC+TAB to switch between the setup logs and SAC. When accessing the setup logs from Emergency Management Services, you can see which portions of Setup have completed and whether any errors have occurred. This is a very useful way to check the progress of your setup and to diagnose setup failures.
 
@@ -455,31 +455,31 @@ setuperr.log Displays any errors that might occur during setup.
 
 **System**
 
-``HKEY\_Local\_Machine\SYSTEM C:\Windows\System32\config\SYSTEM``
+``HKEY\\\_Local\\\_Machine\\SYSTEM C:\\Windows\\System32\\config\\SYSTEM``
 
-``HKEY\_LOCAL\_MACHINE\SOFTWARE C:\Windows\System32\config\SOFTWARE``
+``HKEY\\\_LOCAL\\\_MACHINE\\SOFTWARE C:\\Windows\\System32\\config\\SOFTWARE``
 
-``HKEY\_USERS\\.DEFAULT C:\Windows\System32\config\DEFAULT``
+``HKEY\\\_USERS\\\\.DEFAULT C:\\Windows\\System32\\config\\DEFAULT``
 
-``HKEY\_LOCAL\_MACHINE\SAM, HKEY\_LOCAL\_MACHINE\SECURITY\SAM C:\Windows\System32\config\SAM``
+``HKEY\\\_LOCAL\\\_MACHINE\\SAM, HKEY\\\_LOCAL\\\_MACHINE\\SECURITY\\SAM C:\\Windows\\System32\\config\\SAM``
 
-``HKEY\_LOCAL\_MACHINE\SECURITY C:\Windows\System32\config\SECURITY``
+``HKEY\\\_LOCAL\\\_MACHINE\\SECURITY C:\\Windows\\System32\\config\\SECURITY``
 
 **User**
 
-``HKEY\_Current\_User C:\Users\\_\<username>_\NTUSER.DAT``
+``HKEY\\\_Current\\\_User C:\\Users\\\\\_\\<username>\_\\NTUSER.DAT``
 
 **Service/System User Account Profile**
 
-``SYSTEM (S-1-5-18) %systemroot%\System32\config\systemprofile\ntuser.dat``
+``SYSTEM (S-1-5-18) %systemroot%\\System32\\config\\systemprofile\\ntuser.dat``
 
-``LOCAL SERVICE (S-1-5-19) C:\Windows\ServiceProfiles\LocalService\NTUSER.DAT``
+``LOCAL SERVICE (S-1-5-19) C:\\Windows\\ServiceProfiles\\LocalService\\NTUSER.DAT``
 
-``NETWORK SERVICE (S-1-5-20) C:\Windows\ServiceProfiles\NetworkService\NTUSER.DAT``
+``NETWORK SERVICE (S-1-5-20) C:\\Windows\\ServiceProfiles\\NetworkService\\NTUSER.DAT``
 
 Local Service and Network Service have full profiles including directory tree like a regular user account.
 
-``where is user\software, current\_user?``
+``where is user\\software, current\\\_user?``
 
 NTUSER.INI roaming profile
 
@@ -487,17 +487,17 @@ NTUSER.MAN a ntuser.dat file renamed to become a mandatory profile that the user
 
 More information about Profiles above/below
 
-``C:\Windows\System32\config\RegBack``
+``C:\\Windows\\System32\\config\\RegBack``
 
 #### System Protected Files {#h.9nh67tqaidkk" id="h.9nh67tqaidkk
 
 **Microsoft (R) Windows (R) Resource Checker Version 6.0**
 
-``System File Checker C:\Windows\System32\sfc.exe``
+``System File Checker C:\\Windows\\System32\\sfc.exe``
 
 sfc /verifynow
 
-``Backup copies location %WinDir%\System32\Dllcache\\``
+``Backup copies location %WinDir%\\System32\\Dllcache\\\\``
 
 List of files checked by SFC
 
@@ -507,13 +507,13 @@ Process/Service filename/path
 
 Registry key that stores install source
 
-``Logs C:\Windows\Logs\CBS\CBS.log``
+``Logs C:\\Windows\\Logs\\CBS\\CBS.log``
 
-``findstr /c:"\[SR]" %windir%\Logs\CBS\CBS.log >"%userprofile%\Desktop\sfcdetails.txt"``
+``findstr /c:"\\[SR]" %windir%\\Logs\\CBS\\CBS.log >"%userprofile%\\Desktop\\sfcdetails.txt"``
 
 SFCShowProgress registry entry is missing or is set to 1, and the server is set to scan every time that the computer starts. In this situation, WFP waits for a console logon. Therefore, the RPC server does not start until the scan is performed. The computer has no protection during this time.
 
-``HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SfcScan and others``
+``HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\SfcScan and others``
 
 [http://support.microsoft.com/kb/222193](http://support.microsoft.com/kb/222193)
 
@@ -527,21 +527,21 @@ Some versions cannot create user named “Admin” ?
 
 Administrator, Default, Public, Guest, System
 
-The name cannot be identical to any other user, computer, or group name in the domain. It can contain up to 20 uppercase or lowercase characters except for the following:" / \ \[ ] : ; | = , + \* ? <>
+The name cannot be identical to any other user, computer, or group name in the domain. It can contain up to 20 uppercase or lowercase characters except for the following:" / \\ \\[ ] : ; | = , + \\* ? <>
 
 #### Recycle Bin {#h.83kv3dsi6dgx" id="h.83kv3dsi6dgx
 
-``C:\\$Recycle.Bin\\``
+``C:\\\\$Recycle.Bin\\\\``
 
-``C:\\$Recycle.Bin\S-1-5-21-3171392789-1724324034-2371106253-500``
+``C:\\\\$Recycle.Bin\\S-1-5-21-3171392789-1724324034-2371106253-500``
 
-``Contents renamed to 8.3 files keeping extension and named $\<random alpha-numberic>``
+``Contents renamed to 8.3 files keeping extension and named $\\<random alpha-numberic>``
 
 #### System Restore {#h.lb6oo587b0bt" id="h.lb6oo587b0bt
 
 rstrui.exe
 
-``Windows XP C:\System Volume Information\\\_restore{D86480E3-73EF.....D8}\RP1\Snapshot\ etc``
+``Windows XP C:\\System Volume Information\\\\\\\_restore{D86480E3-73EF.....D8}\\RP1\\Snapshot\\ etc``
 
 **Manual System Restore Process**
 
@@ -615,15 +615,15 @@ Change with boot.ini?
 
 **Memory dump location**
 
-``%SystemRoot%\MEMORY.DMP``
+``%SystemRoot%\\MEMORY.DMP``
 
-``%SystemRoot%\Minidump``
+``%SystemRoot%\\Minidump``
 
 Overwrite any existing file or not?
 
 Tool to analyze memory dumps
 
-``nirsoft [http://nirsoft.net/utils/blue\_screen\_view.html](http://technet.microsoft.com/en-us/library/cc772829\(WS.10\).aspx)``
+``nirsoft [http://nirsoft.net/utils/blue\\\_screen\\\_view.html](http://technet.microsoft.com/en-us/library/cc772829\\(WS.10\\).aspx)``
 
 sysinternals and others?
 
@@ -645,13 +645,13 @@ Uses the scheduled tasks to actually store, but can be created in Event Viewer w
 
 #### ReadyBoost {#h.2b5x4j2hatjb" id="h.2b5x4j2hatjb
 
-``ReadyBoost.sfcache _\<Flash drive>_\ReadyBoost.sfcache``
+``ReadyBoost.sfcache \_\\<Flash drive>\_\\ReadyBoost.sfcache``
 
 Cannot be enabled on Windows Server. Cannot be enabled when Windows is installed on an SSD drive.
 
 #### Offline Files {#h.s645ab5txcss" id="h.s645ab5txcss
 
-``C:\WINDOWS\csc``
+``C:\\WINDOWS\\csc``
 
 "GoOfflineOnSlowLink"=dword:00000000
 
@@ -677,17 +677,17 @@ This is the former name of credential roaming; it translates to Digital ID Manag
 
 #### Network {#h.lptrn5tkidnk" id="h.lptrn5tkidnk
 
-``C:\Windows\System32\drivers\etc\hosts``
+``C:\\Windows\\System32\\drivers\\etc\\hosts``
 
 (Take ownership to edit file)
 
-``C:\Windows\System32\ras``
+``C:\\Windows\\System32\\ras``
 
 Registry
 
-``HKLM\System\CurrentControlSet\Services\Winsock``
+``HKLM\\System\\CurrentControlSet\\Services\\Winsock``
 
-``HKLM\System\CurrentControlSet\Services\Winsock2``
+``HKLM\\System\\CurrentControlSet\\Services\\Winsock2``
 
 **Remote Access Server (RAS)**
 
@@ -709,7 +709,7 @@ symptoms
 
 ping command test
 
-``ping -f -l 1024 \<IP Address>``
+``ping -f -l 1024 \\<IP Address>``
 
 increase the packet size until the packets fail. Add 28 to get the correct MTU size.
 
@@ -721,11 +721,11 @@ registry key
 
 **net.exe**
 
-``net send depreciated with Windows ver (Vista?) or SP \_\_\_ when messenger service was removed/disabled``
+``net send depreciated with Windows ver (Vista?) or SP \\\_\\\_\\\_ when messenger service was removed/disabled``
 
 MSG.EXE
 
-``requires: HKLM\SYSTEM\CurrentControlSet\Control\TerminalServer\AllowRemoteRPC=1``
+``requires: HKLM\\SYSTEM\\CurrentControlSet\\Control\\TerminalServer\\AllowRemoteRPC=1``
 
 net view
 
@@ -747,46 +747,46 @@ Run 'ipconfig /flushdns' to flush the DNS cache, and 'nbtstat -RR' to flush the 
 | ?           | Displays a list of commands.                          |
 | abort       | Discards changes made while in offline mode.          |
 | add         | Adds a configuration entry to a list of entries.      |
-| advfirewall | Changes to the \`netsh advfirewall' context.          |
+| advfirewall | Changes to the \\`netsh advfirewall' context.          |
 | alias       | Adds an alias.                                        |
-| brachcache  | Changes to the \`netsh branchcache' context.          |
-| bridge      | Changes to the \`netsh bridge' context.               |
+| brachcache  | Changes to the \\`netsh branchcache' context.          |
+| bridge      | Changes to the \\`netsh bridge' context.               |
 | bye         | Exits the program.                                    |
 | commit      | Commits changes made while in offline mode.           |
 | delete      | Deletes a configuration entry from a list of entries. |
-| dhcp        | Changes to the \`netsh dhcp' context.                 |
-| dhcpclient  | Changes to the \`netsh dhcpclient' context.           |
-| dnsclient   | Changes to the \`netsh dnsclient' context.            |
+| dhcp        | Changes to the \\`netsh dhcp' context.                 |
+| dhcpclient  | Changes to the \\`netsh dhcpclient' context.           |
+| dnsclient   | Changes to the \\`netsh dnsclient' context.            |
 | dump        | Displays a configuration script.                      |
 | exec        | Runs a script file.                                   |
 | exit        | Exits the program.                                    |
-| firewall    | Changes to the \`netsh firewall' context.             |
+| firewall    | Changes to the \\`netsh firewall' context.             |
 | help        | Displays a list of commands.                          |
-| http        | Changes to the \`netsh http' context.                 |
-| interface   | Changes to the \`netsh interface' context.            |
-| ipsec       | Changes to the \`netsh ipsec' context.                |
-| lan         | Changes to the \`netsh lan' context.                  |
-| mbn         | Changes to the \`netsh mbn' context.                  |
-| namespace   | Changes to the \`netsh namespace' context.            |
-| nap         | Changes to the \`netsh nap' context.                  |
-| netio       | Changes to the \`netsh netio' context.                |
+| http        | Changes to the \\`netsh http' context.                 |
+| interface   | Changes to the \\`netsh interface' context.            |
+| ipsec       | Changes to the \\`netsh ipsec' context.                |
+| lan         | Changes to the \\`netsh lan' context.                  |
+| mbn         | Changes to the \\`netsh mbn' context.                  |
+| namespace   | Changes to the \\`netsh namespace' context.            |
+| nap         | Changes to the \\`netsh nap' context.                  |
+| netio       | Changes to the \\`netsh netio' context.                |
 | offline     | Sets the current mode to offline.                     |
 | online      | Sets the current mode to online.                      |
-| p2p         | Changes to the \`netsh p2p' context.                  |
+| p2p         | Changes to the \\`netsh p2p' context.                  |
 | popd        | Pops a context from the stack.                        |
 | pushd       | Pushes current context on stack.                      |
 | quit        | Exits the program.                                    |
-| ras         | Changes to the \`netsh ras' context.                  |
-| rpc         | Changes to the \`netsh rpc' context.                  |
+| ras         | Changes to the \\`netsh ras' context.                  |
+| rpc         | Changes to the \\`netsh rpc' context.                  |
 | set         | Updates configuration settings.                       |
 | show        | Displays information.                                 |
-| trace       | Changes to the \`netsh trace' context.                |
+| trace       | Changes to the \\`netsh trace' context.                |
 | unalias     | Deletes an alias.                                     |
-| wcn         | Changes to the \`netsh wcn' context.                  |
-| wfp         | Changes to the \`netsh wfp' context.                  |
-| winhttp     | Changes to the \`netsh winhttp' context.              |
-| winsock     | Changes to the \`netsh winsock' context.              |
-| wlan        | Changes to the \`netsh wlan' context.                 |
+| wcn         | Changes to the \\`netsh wcn' context.                  |
+| wfp         | Changes to the \\`netsh wfp' context.                  |
+| winhttp     | Changes to the \\`netsh winhttp' context.              |
+| winsock     | Changes to the \\`netsh winsock' context.              |
+| wlan        | Changes to the \\`netsh wlan' context.                 |
 
 **3 netsh commands that may fix a broken Windows network**
 
@@ -808,7 +808,7 @@ tftp client not installed by default
 
 older versions of windows (NT?) had settings stored ? for services like ftp server (users, default directory), telnet server?, finger?
 
-``\~ftpsvc\~.ckm Annotate FTP directory``
+``\\~ftpsvc\\~.ckm Annotate FTP directory``
 
 [http://support.microsoft.com/kb/141705](http://go.microsoft.com/fwlink/)
 
@@ -818,7 +818,7 @@ older versions of windows (NT?) had settings stored ? for services like ftp serv
 
 [http://windowsitpro.com/windows/jsi-tip-2385-how-do-i-change-windows-2000-telnet-service-greeting-prompt-etc](http://technet.microsoft.com/en-us/library/cc742154.aspx)
 
-``tlntadmn.exe, %SystemRoot%\system32\Login.cmd``
+``tlntadmn.exe, %SystemRoot%\\system32\\Login.cmd``
 
 **Network Monitor**
 
@@ -840,7 +840,7 @@ How to
 
 motd file
 
-``_systemroot_\System32\Drivers\Etc\Quotes. A sample quote file is installed with the Simple TCP/IP Services. If this file is missing, the quote service fails.``
+``\_systemroot\_\\System32\\Drivers\\Etc\\Quotes. A sample quote file is installed with the Simple TCP/IP Services. If this file is missing, the quote service fails.``
 
 **Novell NetWare Client**
 
@@ -852,7 +852,7 @@ Reg Key
 
 add DWORD
 
-``C:\Windows\Debug?\netlogon.log``
+``C:\\Windows\\Debug?\\netlogon.log``
 
 NetSetup.log
 
@@ -957,11 +957,11 @@ If SNMP traps are required, one or more community names must be specified. Trap 
 
 For more information about SNMP, see[ ](http://technet.microsoft.com/en-us/library/cc755189.aspx?LinkId=66006)[Simple Network Management Protocol](http://technet.microsoft.com/en-us/library/cc742081.aspx?LinkId=66006) in TCP/IP Fundamentals for Windows in the Microsoft TechNet Technical Library at http://go.microsoft.com/fwlink/?LinkId=66006.
 
-``mk:@MSITStore:C:\Windows\help\mui\0409\snmp.chm::/html/80366ac5-42bd-42e9-8169-83696087e091.htm``
+``mk:@MSITStore:C:\\Windows\\help\\mui\\0409\\snmp.chm::/html/80366ac5-42bd-42e9-8169-83696087e091.htm``
 
-``mk:@MSITStore:C:\Windows\help\mui\0409\snmp.chm::/html/e2c0fd7c-286c-4b02-a33b-8ed1780a681c.htm``
+``mk:@MSITStore:C:\\Windows\\help\\mui\\0409\\snmp.chm::/html/e2c0fd7c-286c-4b02-a33b-8ed1780a681c.htm``
 
-``mk:@MSITStore:C:\Windows\help\mui\0409\snmp.chm::/html/68219299-c666-4737-ae36-3de0b3dd76cb.htm``
+``mk:@MSITStore:C:\\Windows\\help\\mui\\0409\\snmp.chm::/html/68219299-c666-4737-ae36-3de0b3dd76cb.htm``
 
 **MIB (management information base)**
 
@@ -969,7 +969,7 @@ compile with mibcc.exe
 
 [http://support.microsoft.com/kb/131776](http://support.microsoft.com/kb/131776)
 
-``C:\Windows\System32\\``
+``C:\\Windows\\System32\\\\``
 
 accserv.mib
 
@@ -991,7 +991,7 @@ lmmib2.mib
 
 mcastmib.mib
 
-``mib\_ii.mib``
+``mib\\\_ii.mib``
 
 msft.mib
 
@@ -1017,7 +1017,7 @@ wins.mib
 | ipforwd.mib   |                 |         |
 | lmmib2.mib    |                 |         |
 | mcastmib.mib  |                 |         |
-| mib\_ii.mib   |                 |         |
+| mib\\\_ii.mib   |                 |         |
 | msft.mib      |                 |         |
 | msipbtp.mib   |                 |         |
 | msiprip2.mib  |                 |         |
@@ -1111,15 +1111,15 @@ Network Transport (Microsoft Windows Network)
 
 8.8.4.4
 
-``verified as of \[Publication Date]``
+``verified as of \\[Publication Date]``
 
-_space provided for writing notes_
+\_space provided for writing notes\_
 
-_Suggest writing some addresses on back, inside cover_
+\_Suggest writing some addresses on back, inside cover\_
 
 #### Windows Media Center Shell {#h.yizyj8bzbqyu" id="h.yizyj8bzbqyu
 
-``Tip: remember to put C:Windows\ehome``
+``Tip: remember to put C:Windows\\ehome``
 
 in your Path under Computer -> System Properties -> Advanced -> Environment Variables
 
@@ -1137,9 +1137,9 @@ Autoexec
 
 win.ini ?
 
-_See Active Directory section for logon scripts_
+\_See Active Directory section for logon scripts\_
 
-_See Group Policy for User and Computer start and exit scripts_
+\_See Group Policy for User and Computer start and exit scripts\_
 
 StartUp group
 
@@ -1149,11 +1149,11 @@ StartUp group
 
 **From Sysinternals LoadOrder:**
 
-_Start Value (Image path)_
+\_Start Value (Image path)\_
 
-_Group name (Service)_
+\_Group name (Service)\_
 
-``Boot (system32\drivers)``
+``Boot (system32\\drivers)``
 
 WdfLoadGroup (Wdf01000)
 
@@ -1171,21 +1171,21 @@ Filter (CLFS, PxHlpa64)
 
 Base (KSecDD, CNG, pcw)
 
-``File System (Fs\_Rec)``
+``File System (Fs\\\_Rec)``
 
 NDIS Wrapper (NDIS)
 
 Cryptography (KSecPkg)
 
-``PNP\_TDI (Tcpip)``
+``PNP\\\_TDI (Tcpip)``
 
-``\[Anti-Virus]``
+``\\[Anti-Virus]``
 
 (Disk)
 
 PnP Filter (fvevol)
 
-``\[hwpolicy]``
+``\\[hwpolicy]``
 
 Network (Mup)
 
@@ -1197,7 +1197,7 @@ PnP Filter (rdyboost)
 
 (volsnap)
 
-``System (system32\drivers)``
+``System (system32\\drivers)``
 
 SCSI CDROM Class (cdrom)
 
@@ -1207,7 +1207,7 @@ Video Save (VgaSave, RDPCDD, RDPENCDD, RDPREFMP)
 
 File system (Msfs, Npfs)
 
-``PNP\_TDI (tdx, \[Anti-Virus], NetBT, AFD)``
+``PNP\\\_TDI (tdx, \\[Anti-Virus], NetBT, AFD)``
 
 NDIS (WfpLwf, Psched, nm3)
 
@@ -1215,7 +1215,7 @@ NetBIOSGroup (NetBIOS)
 
 Extended base (Serial)
 
-``\[Anti-Virus]``
+``\\[Anti-Virus]``
 
 (blbdrive)
 
@@ -1227,7 +1227,7 @@ Network (rdbss)
 
 (TermDD, Wanarpv6)
 
-``Automatic (%SystemRoot%\system32)``
+``Automatic (%SystemRoot%\\system32)``
 
 FSFilter Virtualization (luafv)
 
@@ -1237,11 +1237,11 @@ Event Log (AMD External Events Utility, eventlog)
 
 Audio Group (AudioEndpointBuilder, AudioSrv)
 
-``ProfSvc\_Group (CscService, grpsvc, ProfSvc, SENS, Themes)``
+``ProfSvc\\\_Group (CscService, grpsvc, ProfSvc, SENS, Themes)``
 
 UIGroup (UxSms)
 
-``MS\_WindowsLocalValidation (SamSs)``
+``MS\\\_WindowsLocalValidation (SamSs)``
 
 ...
 
@@ -1249,43 +1249,43 @@ UIGroup (UxSms)
 
 Boot Execute
 
-``HKLM\System\CurrentControlSet\Control\Session Manager\BootExecute``
+``HKLM\\System\\CurrentControlSet\\Control\\Session Manager\\BootExecute``
 
-``HKLM\System\CurrentControlSet\Control\ServiceControlManagerExtension``
+``HKLM\\System\\CurrentControlSet\\Control\\ServiceControlManagerExtension``
 
 Services
 
-``HKLM\System\CurrentControlSet\Services``
+``HKLM\\System\\CurrentControlSet\\Services``
 
 Logon
 
-``HKLM\System\CurrentControlSet\Control\Terminal Server\Wds\rdpwd\StartupPrograms``
+``HKLM\\System\\CurrentControlSet\\Control\\Terminal Server\\Wds\\rdpwd\\StartupPrograms``
 
-``HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit``
+``HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Userinit``
 
-``HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\VmApplet``
+``HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\VmApplet``
 
-``HKLM\Software\Microsoft\Windows\CurrentVersion\Group Policy\Scripts\Startup``
+``HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Group Policy\\Scripts\\Startup``
 
-``HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell``
+``HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Shell``
 
-``HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\AlternateShell``
+``HKLM\\SYSTEM\\CurrentControlSet\\Control\\SafeBoot\\AlternateShell``
 
-``HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run``
+``HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run``
 
-``HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run``
+``HKLM\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Run``
 
-``C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup``
+``C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Startup``
 
-``C:\Users\Username\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup``
+``C:\\Users\\Username\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup``
 
-``HKCU\Software\Microsoft\Windows\CurrentVersion\Run``
+``HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run``
 
-``HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce``
+``HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce``
 
 Sidebar Gadgets
 
-``C:\Users\Username\AppData\Local\Microsoft\Windows Sidebar\Settings.ini``
+``C:\\Users\\Username\\AppData\\Local\\Microsoft\\Windows Sidebar\\Settings.ini``
 
 Scheduled Tasks
 
@@ -1293,65 +1293,65 @@ Scheduled Tasks
 
 | **Image Name**            | **Description**                                       | **Command Line**                                                                                                                                                                                                                                                    |
 | ------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| System                    | NT Kernel & System                                    | C:\Windows\system32\ntoskrnl.exe                                                                                                                                                                                                                                    |
-| smss.exe                  | Windows Session Manager                               | \SystemRoot\System32\smss.exe                                                                                                                                                                                                                                       |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k DcomLaunch                                                                                                                                                                                                                       |
-| csrss.exe                 | Client Server Runtime Process                         | %SystemRoot%\system32\csrss.exe ObjectDirectory=\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=winsrv:ConServerDllInitialization,2 ServerDll=sxssrv,4 ProfileC |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k RPCSS                                                                                                                                                                                                                            |
+| System                    | NT Kernel \\& System                                    | C:\\Windows\\system32\\ntoskrnl.exe                                                                                                                                                                                                                                    |
+| smss.exe                  | Windows Session Manager                               | \\SystemRoot\\System32\\smss.exe                                                                                                                                                                                                                                       |
+| svchost.exe               | Host Process for Windows Services                     | C:\\Windows\\system32\\svchost.exe -k DcomLaunch                                                                                                                                                                                                                       |
+| csrss.exe                 | Client Server Runtime Process                         | %SystemRoot%\\system32\\csrss.exe ObjectDirectory=\\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=winsrv:ConServerDllInitialization,2 ServerDll=sxssrv,4 ProfileC |
+| svchost.exe               | Host Process for Windows Services                     | C:\\Windows\\system32\\svchost.exe -k RPCSS                                                                                                                                                                                                                            |
 | wininit.exe               | Windows Start-Up Application                          | wininit.exe                                                                                                                                                                                                                                                         |
-| csrss.exe                 | Client Server Runtime Process                         | %SystemRoot%\system32\csrss.exe ObjectDirectory=\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=winsrv:ConServerDllInitialization,2 ServerDll=sxssrv,4 ProfileC |
+| csrss.exe                 | Client Server Runtime Process                         | %SystemRoot%\\system32\\csrss.exe ObjectDirectory=\\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=winsrv:ConServerDllInitialization,2 ServerDll=sxssrv,4 ProfileC |
 | winlogon.exe              | Windows Logon Application                             | winlogon.exe                                                                                                                                                                                                                                                        |
-| services.exe              | Services and Controller app                           | C:\Windows\system32\services.exe                                                                                                                                                                                                                                    |
-| lsass.exe                 | Local Security Authority Process                      | C:\Windows\system32\lsass.exe                                                                                                                                                                                                                                       |
-| lsm.exe                   | Local Session Manager Service                         | C:\Windows\system32\lsm.exe                                                                                                                                                                                                                                         |
-| atiesrxx.exe              | AMD External Events Service Module                    | C:\Windows\system32\atiesrxx.exe                                                                                                                                                                                                                                    |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted                                                                                                                                                                                                    |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k regsvc                                                                                                                                                                                                                           |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted                                                                                                                                                                                                     |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k netsvcs                                                                                                                                                                                                                          |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k GPSvcGroup                                                                                                                                                                                                                       |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalService                                                                                                                                                                                                                     |
+| services.exe              | Services and Controller app                           | C:\\Windows\\system32\\services.exe                                                                                                                                                                                                                                    |
+| lsass.exe                 | Local Security Authority Process                      | C:\\Windows\\system32\\lsass.exe                                                                                                                                                                                                                                       |
+| lsm.exe                   | Local Session Manager Service                         | C:\\Windows\\system32\\lsm.exe                                                                                                                                                                                                                                         |
+| atiesrxx.exe              | AMD External Events Service Module                    | C:\\Windows\\system32\\atiesrxx.exe                                                                                                                                                                                                                                    |
+| svchost.exe               | Host Process for Windows Services                     | C:\\Windows\\system32\\svchost.exe -k LocalServiceNetworkRestricted                                                                                                                                                                                                    |
+| svchost.exe               | Host Process for Windows Services                     | C:\\Windows\\system32\\svchost.exe -k regsvc                                                                                                                                                                                                                           |
+| svchost.exe               | Host Process for Windows Services                     | C:\\Windows\\system32\\svchost.exe -k LocalSystemNetworkRestricted                                                                                                                                                                                                     |
+| svchost.exe               | Host Process for Windows Services                     | C:\\Windows\\system32\\svchost.exe -k netsvcs                                                                                                                                                                                                                          |
+| svchost.exe               | Host Process for Windows Services                     | C:\\Windows\\system32\\svchost.exe -k GPSvcGroup                                                                                                                                                                                                                       |
+| svchost.exe               | Host Process for Windows Services                     | C:\\Windows\\system32\\svchost.exe -k LocalService                                                                                                                                                                                                                     |
 | atieclxx.exe              | AMD External Events Client Module                     | atieclxx                                                                                                                                                                                                                                                            |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k NetworkService                                                                                                                                                                                                                   |
-| spoolsv.exe               | Spooler SubSystem App                                 | C:\Windows\System32\spoolsv.exe                                                                                                                                                                                                                                     |
-| upeksvr.exe               | Fingerprint Server Process for Vista                  | "C:\Program Files\Common\SPBA\upeksvr.exe"                                                                                                                                                                                                                          |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalServiceAndNoImpersonation                                                                                                                                                                                                   |
-| snmp.exe                  | SNMP Service                                          | C:\Windows\System32\snmp.exe                                                                                                                                                                                                                                        |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalServiceNoNetwork                                                                                                                                                                                                            |
-| armsvc.exe \*32           | Adobe Acrobat Update Service                          | "C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\armsvc.exe"                                                                                                                                                                                                      |
-| dwm.exe                   | Desktop Window Manager                                | "C:\Windows\System32\Dwm.exe"                                                                                                                                                                                                                                       |
-| mDNSResponder.exe         | Bonjour Service                                       | "C:\Program Files\Bonjour\mDNSResponder.exe"                                                                                                                                                                                                                        |
-| inetinfo.exe              | Internet Information Services                         | C:\Windows\system32\inetsrv\inetinfo.exe                                                                                                                                                                                                                            |
-| IPROSetMonitor.exe        | Intel® PROSet Monitoring Service                      | C:\Windows\system32\IPROSetMonitor.exe                                                                                                                                                                                                                              |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k HPZ12                                                                                                                                                                                                                            |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k ipripsvc                                                                                                                                                                                                                         |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k HPZ12                                                                                                                                                                                                                            |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LPDService                                                                                                                                                                                                                       |
-| TCPSVCS.EXE               | TCP/IP Services Application                           | C:\Windows\System32\tcpsvcs.exe                                                                                                                                                                                                                                     |
+| svchost.exe               | Host Process for Windows Services                     | C:\\Windows\\system32\\svchost.exe -k NetworkService                                                                                                                                                                                                                   |
+| spoolsv.exe               | Spooler SubSystem App                                 | C:\\Windows\\System32\\spoolsv.exe                                                                                                                                                                                                                                     |
+| upeksvr.exe               | Fingerprint Server Process for Vista                  | "C:\\Program Files\\Common\\SPBA\\upeksvr.exe"                                                                                                                                                                                                                          |
+| svchost.exe               | Host Process for Windows Services                     | C:\\Windows\\system32\\svchost.exe -k LocalServiceAndNoImpersonation                                                                                                                                                                                                   |
+| snmp.exe                  | SNMP Service                                          | C:\\Windows\\System32\\snmp.exe                                                                                                                                                                                                                                        |
+| svchost.exe               | Host Process for Windows Services                     | C:\\Windows\\system32\\svchost.exe -k LocalServiceNoNetwork                                                                                                                                                                                                            |
+| armsvc.exe \\*32           | Adobe Acrobat Update Service                          | "C:\\Program Files (x86)\\Common Files\\Adobe\\ARM\\1.0\\armsvc.exe"                                                                                                                                                                                                      |
+| dwm.exe                   | Desktop Window Manager                                | "C:\\Windows\\System32\\Dwm.exe"                                                                                                                                                                                                                                       |
+| mDNSResponder.exe         | Bonjour Service                                       | "C:\\Program Files\\Bonjour\\mDNSResponder.exe"                                                                                                                                                                                                                        |
+| inetinfo.exe              | Internet Information Services                         | C:\\Windows\\system32\\inetsrv\\inetinfo.exe                                                                                                                                                                                                                            |
+| IPROSetMonitor.exe        | Intel® PROSet Monitoring Service                      | C:\\Windows\\system32\\IPROSetMonitor.exe                                                                                                                                                                                                                              |
+| svchost.exe               | Host Process for Windows Services                     | C:\\Windows\\system32\\svchost.exe -k HPZ12                                                                                                                                                                                                                            |
+| svchost.exe               | Host Process for Windows Services                     | C:\\Windows\\system32\\svchost.exe -k ipripsvc                                                                                                                                                                                                                         |
+| svchost.exe               | Host Process for Windows Services                     | C:\\Windows\\system32\\svchost.exe -k HPZ12                                                                                                                                                                                                                            |
+| svchost.exe               | Host Process for Windows Services                     | C:\\Windows\\system32\\svchost.exe -k LPDService                                                                                                                                                                                                                       |
+| TCPSVCS.EXE               | TCP/IP Services Application                           | C:\\Windows\\System32\\tcpsvcs.exe                                                                                                                                                                                                                                     |
 | taskhost.exe              | Host Process for Windows Tasks                        | "taskhost.exe"                                                                                                                                                                                                                                                      |
-| conhost                   | Console Windows Host                                  | \\??\C:\Windows\system32\conhost.exe "12270050711036878941764404406-1950549039-509943657-6949245256654769161811869455                                                                                                                                               |
-| wlcrasvc.exe              | Windows Live Mesh Remote Desktop Service              | "C:\Program Files\Windows Live\Mesh\wlcrasvc.exe"                                                                                                                                                                                                                   |
-| WLIDSVC.EXE               | Microsoft® Windows Live ID Service                    | "C:\Program Files\Common Files\Microsoft Shared\Windows Live\WLIDSVC.EXE"                                                                                                                                                                                           |
-| SearchIndexer.exe         | Microsoft Windows Search Indexer                      | C:\Windows\system32\SearchIndexer.exe /Embedding                                                                                                                                                                                                                    |
-| OSPPSVC.EXE               | Microsoft Office Software Protection Platform Service | "C:\Program Files\Common Files\Microsoft Shared\OfficeSoftwareProtectionPlatform\OSPPSVC.EXE"                                                                                                                                                                       |
+| conhost                   | Console Windows Host                                  | \\\\??\\C:\\Windows\\system32\\conhost.exe "12270050711036878941764404406-1950549039-509943657-6949245256654769161811869455                                                                                                                                               |
+| wlcrasvc.exe              | Windows Live Mesh Remote Desktop Service              | "C:\\Program Files\\Windows Live\\Mesh\\wlcrasvc.exe"                                                                                                                                                                                                                   |
+| WLIDSVC.EXE               | Microsoft® Windows Live ID Service                    | "C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live\\WLIDSVC.EXE"                                                                                                                                                                                           |
+| SearchIndexer.exe         | Microsoft Windows Search Indexer                      | C:\\Windows\\system32\\SearchIndexer.exe /Embedding                                                                                                                                                                                                                    |
+| OSPPSVC.EXE               | Microsoft Office Software Protection Platform Service | "C:\\Program Files\\Common Files\\Microsoft Shared\\OfficeSoftwareProtectionPlatform\\OSPPSVC.EXE"                                                                                                                                                                       |
 | WLIDSVCM.EXE              | Microsoft® Windows Live ID Service Monitor            | WLIDSvcM.exe 3260                                                                                                                                                                                                                                                   |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k NetworkServiceNetworkRestricted                                                                                                                                                                                                  |
-| mobsync.exe               | Microsoft Sync Center                                 | C:\Windows\System32\mobsync.exe -Embedding                                                                                                                                                                                                                          |
-| PresentationFontCache.exe | PresentationFontCache.exe                             | C:\Windows\Microsoft.Net\Framework64\v3.0\WPF\PresentationFontCache.exe                                                                                                                                                                                             |
-| svchost.exe               | Host Process for Windows Service                      | C:\Windows\system32\svchost.exe -k SDRSVC                                                                                                                                                                                                                           |
-| csrss.exe                 | Client Server Runtime Process                         | %SystemRoot%\system32\csrss.exe ObjectDirectory=\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=winsrv:ConServerDllInitialization,2 ServerDll=sxssrv,4 ProfileC |
-| splwow64.exe              | Print driver host for 32bit applications              | C:\Windows\splwow64.exe 12288                                                                                                                                                                                                                                       |
-| WmiPrvSE.exe              | WMI Provider Host                                     | C:\Windows\system32\wbem\wmiprvse.exe                                                                                                                                                                                                                               |
-| svchost.exe               | Host Process for Windows Service                      | C:\Windows\system32\svchost.exe -k imgsvc                                                                                                                                                                                                                           |
-| explorer.exe              | Windows Explorer                                      | C:\Windows\explorer.exe /factory,{75dff2b7-6936-4c06-a8bb-676a7b00b24b} -Embedding                                                                                                                                                                                  |
-| vds.exe                   | Virtual Disk Service                                  | C:\Windows\System32\vds.exe                                                                                                                                                                                                                                         |
-| dinotify.exe              | Windows Device Installation                           | "C:\Windows\System32\dinotify.exe" pnpui.dll,SimplifiedDINotification                                                                                                                                                                                               |
+| svchost.exe               | Host Process for Windows Services                     | C:\\Windows\\system32\\svchost.exe -k NetworkServiceNetworkRestricted                                                                                                                                                                                                  |
+| mobsync.exe               | Microsoft Sync Center                                 | C:\\Windows\\System32\\mobsync.exe -Embedding                                                                                                                                                                                                                          |
+| PresentationFontCache.exe | PresentationFontCache.exe                             | C:\\Windows\\Microsoft.Net\\Framework64\\v3.0\\WPF\\PresentationFontCache.exe                                                                                                                                                                                             |
+| svchost.exe               | Host Process for Windows Service                      | C:\\Windows\\system32\\svchost.exe -k SDRSVC                                                                                                                                                                                                                           |
+| csrss.exe                 | Client Server Runtime Process                         | %SystemRoot%\\system32\\csrss.exe ObjectDirectory=\\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=winsrv:ConServerDllInitialization,2 ServerDll=sxssrv,4 ProfileC |
+| splwow64.exe              | Print driver host for 32bit applications              | C:\\Windows\\splwow64.exe 12288                                                                                                                                                                                                                                       |
+| WmiPrvSE.exe              | WMI Provider Host                                     | C:\\Windows\\system32\\wbem\\wmiprvse.exe                                                                                                                                                                                                                               |
+| svchost.exe               | Host Process for Windows Service                      | C:\\Windows\\system32\\svchost.exe -k imgsvc                                                                                                                                                                                                                           |
+| explorer.exe              | Windows Explorer                                      | C:\\Windows\\explorer.exe /factory,{75dff2b7-6936-4c06-a8bb-676a7b00b24b} -Embedding                                                                                                                                                                                  |
+| vds.exe                   | Virtual Disk Service                                  | C:\\Windows\\System32\\vds.exe                                                                                                                                                                                                                                         |
+| dinotify.exe              | Windows Device Installation                           | "C:\\Windows\\System32\\dinotify.exe" pnpui.dll,SimplifiedDINotification                                                                                                                                                                                               |
 
 Services can be tagged with various startup types of classes.
 
-``HKLM\SYSTEM\CurrentControlSet\services``
+``HKLM\\SYSTEM\\CurrentControlSet\\services``
 
-``CurrentControlSet\Control\ServiceGroupOrder``
+``CurrentControlSet\\Control\\ServiceGroupOrder``
 
 DWORD Start, Type
 
@@ -1370,7 +1370,7 @@ Error Type value, If error, can OS startup proceed?
 
 See Install Apps in Safe Mode for allowing installs in safe mode
 
-``HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\MSIServer``
+``HKLM\\SYSTEM\\CurrentControlSet\\Control\\SafeBoot\\Minimal\\MSIServer``
 
 **Order of preference of file extensions for execution**
 
@@ -1390,7 +1390,7 @@ Another list of files Microsoft deems risky is the Blocked Outlook Attachments l
 
 Due to the way the Windows operating system parses names with spaces, a first match can be abused to execute a planted program.
 
-``C:\Program.exe``
+``C:\\Program.exe``
 
 Stealthy places to hide executables or triggers
 
@@ -1402,7 +1402,7 @@ If double-click on shortcut, or single click on start menu won’t open, try rig
 
 How to repair .EXE (.LNK?) after hijack by malware
 
-``What the EXE registry key looks like (CLASSES ROOT exefile ?), HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\\.exe\OpenWithList``
+``What the EXE registry key looks like (CLASSES ROOT exefile ?), HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FileExts\\\\.exe\\OpenWithList``
 
 copy an EXE to .COM to run a program
 
@@ -1416,23 +1416,23 @@ plant a task to open CMD interactive running in System context
 
 Test anti-virus by using the EICAR.com file.
 
-``X 5 O ! P % @ A P \[ 4 \ P Z X 5 4 ( P ^ ) 7 C C ) 7 } $``
+``X 5 O ! P % @ A P \\[ 4 \\ P Z X 5 4 ( P ^ ) 7 C C ) 7 } $``
 
 E I C A R - S T A N D A R D - A N T I V I R U S - T E S T - F I L E !
 
-``$ H + H \*``
+``$ H + H \\*``
 
 #### PowerShell {#h.ji072fdo4adz" id="h.ji072fdo4adz
 
 **PowerShell ISE**
 
-``$Profile C:\Users\\_Username_\Documents\WindowsPowerShell\Microsoft.PowerShell\_profile.ps1``
+``$Profile C:\\Users\\\\\_Username\_\\Documents\\WindowsPowerShell\\Microsoft.PowerShell\\\_profile.ps1``
 
-``PSModule... env var. C:\Windows\system32\WindowsPowerShell\v1.0\Modules\\``
+``PSModule... env var. C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\\\``
 
 signing PowerShell scripts can be done with Digital Certificate for VBA Projects
 
-``C:\Windows\System32\WindowsPowerShell\v1.0\Modules>tree``
+``C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\Modules>tree``
 
 Folder PATH listing for volume OS
 
@@ -1440,45 +1440,45 @@ Volume serial number is A23D-B9F3
 
 C:.
 
-├───FailoverClusters
+---
 
-│ ├───en
+│ ----en
 
-│ ├───en-US
+│ ----en-US
 
-│ └───zh-TW
+│ ----zh-TW
 
-├───GroupPolicy
+---
 
-│ ├───de-DE
+│ ----de-DE
 
-│ ├───en-US
+│ ----en-US
 
-│ └───zh-TW
+│ ----zh-TW
 
-├───NetworkLoadBalancingClusters
+---
 
-│ ├───de
+│ ----de
 
-│ ├───de-DE
+│ ----de-DE
 
-│ ├───en
+│ ----en
 
-│ ├───en-US
+│ ----en-US
 
-│ └───zh-TW
+│ ----zh-TW
 
-├───PSDiagnostics
+---
 
-├───TroubleshootingPack
+---
 
-│ └───en-US
+│ ----en-US
 
-└───WebAdministration
+---
 
-└───en-US
+---
 
-``C:\Windows\System32\WindowsPowerShell\v1.0\Modules>``
+``C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\Modules>``
 
 **file list**
 
@@ -1492,15 +1492,15 @@ Microsoft.GroupPolicy.Commands.dll-Help.xml
 
 bin location for v1 - v3
 
-``C:\Windows\System32\WindowsPowerShell\v1.0\\``
+``C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\\\``
 
 PowerShell 3.0 Task Scheduler storage folder for job definitions
 
-``C:\Users\\_\<UserName>_\Appdata\Local\Microsoft\Windows\PowerShell\ScheduledJobs``
+``C:\\Users\\\\\_\\<UserName>\_\\Appdata\\Local\\Microsoft\\Windows\\PowerShell\\ScheduledJobs``
 
 Import and Export http://www.petri.co.il/export-import-powershell-scheduled-jobs.htm
 
-``HKLM\software\microsoft\powershell\1\shellids\Microsoft.powershell``
+``HKLM\\software\\microsoft\\powershell\\1\\shellids\\Microsoft.powershell``
 
 [http://www.trainsignal.com/blog/jeff-hicks-powershell-challenge-day-4-final-day](http://www.trainsignal.com/blog/jeff-hicks-powershell-challenge-day-4-final-day)
 
@@ -1510,17 +1510,17 @@ see also the Remote section above?
 
 Windows PowerShell Modules
 
-``%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ImportSystemModules``
+``%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe -NoExit -ImportSystemModules``
 
 Active Directory Module for Windows PowerShell
 
-``%windir%\system32\WindowsPowerShell\v1.0\powershell.exe -noexit -command import-module ActiveDirectory``
+``%windir%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe -noexit -command import-module ActiveDirectory``
 
 Exchange Management Shell
 
-``C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command ". 'C:\Program Files\Microsoft\Exchange Server\V14\bin\RemoteExchange.ps1'; Connect-ExchangeServer -auto"``
+``C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noexit -command ". 'C:\\Program Files\\Microsoft\\Exchange Server\\V14\\bin\\RemoteExchange.ps1'; Connect-ExchangeServer -auto"``
 
-``C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command ". 'C:\Program Files\Microsoft\Exchange Server\V14\bin\RemoteExchange.ps1'; Connect-ExchangeServer -ServerFQDN Exchange.Domain.com"``
+``C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noexit -command ". 'C:\\Program Files\\Microsoft\\Exchange Server\\V14\\bin\\RemoteExchange.ps1'; Connect-ExchangeServer -ServerFQDN Exchange.Domain.com"``
 
 Can also be run in ISE
 
@@ -1564,49 +1564,49 @@ Path to Visual Style:
 
 To select Aero type:
 
-``%windir%\resources\Themes\Aero\aero.msstyles``
+``%windir%\\resources\\Themes\\Aero\\aero.msstyles``
 
 To select a different visual style, type:
 
-``ie: \\\\\<server>\share\Corp.msstyles``
+``ie: \\\\\\\\\\<server>\\share\\Corp.msstyles``
 
 To select Windows Classic, leave the box
 
 above blank and enable this setting
 
-``C:\Users\\\<UserName>\AppData\Microsoft\Windows\\...Themes?``
+``C:\\Users\\\\\\<UserName>\\AppData\\Microsoft\\Windows\\\\...Themes?``
 
-``C:\Windows\Resources``
+``C:\\Windows\\Resources``
 
-``C:\Windows\Web\Wallpaper``
+``C:\\Windows\\Web\\Wallpaper``
 
-``C:\Windows\Cursors``
+``C:\\Windows\\Cursors``
 
-``C:\Windows\Media``
+``C:\\Windows\\Media``
 
 **Change Your Picture**
 
 The picture you choose will appear on the Welcome screen and on the Start menu.
 
-``C:\ProgramData\Microsoft\User Account Pictures\Default Pictures\\``
+``C:\\ProgramData\\Microsoft\\User Account Pictures\\Default Pictures\\\\``
 
-``C:\ProgramData\Microsoft\User Account Pictures\Username.dat``
+``C:\\ProgramData\\Microsoft\\User Account Pictures\\Username.dat``
 
-``C:\ProgramData\Microsoft\User Account Pictures\User.bmp``
+``C:\\ProgramData\\Microsoft\\User Account Pictures\\User.bmp``
 
 **Icons**
 
-``C:\Windows\system32\url.dll``
+``C:\\Windows\\system32\\url.dll``
 
-``C:\Windows\System32\explorer.exe (C:\Windows\explorer.exe)``
+``C:\\Windows\\System32\\explorer.exe (C:\\Windows\\explorer.exe)``
 
-``C:\Windows\System32\moricons.dll``
+``C:\\Windows\\System32\\moricons.dll``
 
-``C:\Windows\System32\shell32.dll``
+``C:\\Windows\\System32\\shell32.dll``
 
-``C:\Windows\System32\imageres.dll``
+``C:\\Windows\\System32\\imageres.dll``
 
-``C:\Program Files\Internet Explorer\iexplore.exe``
+``C:\\Program Files\\Internet Explorer\\iexplore.exe``
 
 pifmgr.dll
 
@@ -1640,19 +1640,19 @@ wpdshext.dll
 
 IE
 
-``C:\Users\\_UserName_\AppData\Roaming\Microsoft\Internet Explorer\Internet Explorer Wallpaper.bmp``
+``C:\\Users\\\\\_UserName\_\\AppData\\Roaming\\Microsoft\\Internet Explorer\\Internet Explorer Wallpaper.bmp``
 
 #### Out-of-Box Experience {#h.dn9tu1me6fvq" id="h.dn9tu1me6fvq
 
 **First boot background music**
 
-``C:\WINDOWS\system32\oobe\images\title.wma``
+``C:\\WINDOWS\\system32\\oobe\\images\\title.wma``
 
 **Reset Windows back to First-boot**
 
-``C:\Windows\System32\sysprep\sysprep.exe``
+``C:\\Windows\\System32\\sysprep\\sysprep.exe``
 
-USAGE: sysprep.exe \[/quiet] \[/generalize] \[/audit | /oobe] \[/reboot | /shutdown | /quit] \[/unattend:\<filename>]
+USAGE: sysprep.exe \\[/quiet] \\[/generalize] \\[/audit | /oobe] \\[/reboot | /shutdown | /quit] \\[/unattend:\\<filename>]
 
 If no command-line arguments are provided, a graphical user interface is used to select the desired mode of sysprep operation.
 
@@ -1668,11 +1668,11 @@ RIS, WIM
 
 #### Windows Upgrade {#h.fp1pnt29yzyp" id="h.fp1pnt29yzyp
 
-``C:\Users\Username\AppData\Local\Apps\Windows 7 USB DVD Download Tool\\``
+``C:\\Users\\Username\\AppData\\Local\\Apps\\Windows 7 USB DVD Download Tool\\\\``
 
-``C:\Windows\System32\migwiz.lnk %windir%\system32\migwiz\migwiz.exe``
+``C:\\Windows\\System32\\migwiz.lnk %windir%\\system32\\migwiz\\migwiz.exe``
 
-``C:\Windows\System32\migwiz\migwiz.exe``
+``C:\\Windows\\System32\\migwiz\\migwiz.exe``
 
 User State Migration Tool (USMT)
 
@@ -1680,25 +1680,25 @@ User State Migration Tool (USMT)
 
 **Windows 8 Upgrade Assistant**
 
-``C:\ESD\Windows\Sources``
+``C:\\ESD\\Windows\\Sources``
 
 **Folders created from upgrade process**
 
-``C:\Windows.old\[2]``
+``C:\\Windows.old\\[2]``
 
-``C:\Windows.old\Documents and Settings``
+``C:\\Windows.old\\Documents and Settings``
 
-``C:\Windows.old\Program Files``
+``C:\\Windows.old\\Program Files``
 
-``C:\Windows.old\Windows``
+``C:\\Windows.old\\Windows``
 
-``C:\Windows.old\\?``
+``C:\\Windows.old\\\\?``
 
 **Windows 8.1 Update**
 
 [http://support.microsoft.com/kb/2919355](http://technet.microsoft.com/en-us/library/cc742070.aspx)
 
-``\[April 2014]``
+``\\[April 2014]``
 
 #### Windows Activation {#h.phwfv5lu9ajc" id="h.phwfv5lu9ajc
 
@@ -1722,9 +1722,9 @@ slui.exe 4 manually perform telephone activation
 
 **Registry Keys**
 
-``HKLM\SYSTEM\WPA``
+``HKLM\\SYSTEM\\WPA``
 
-``HKLM\Software\Microsoft\Windows\CurrentVersion\Setup\OOBE\MediaBootInstall``
+``HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Setup\\OOBE\\MediaBootInstall``
 
 **Software Licensing Management Tool**
 
@@ -1738,15 +1738,15 @@ MGATool
 
 KMS troubleshooting
 
-``[http://blogs.technet.com/b/odsupport/archive/2011/11/14/how-to-discover-kms-hosts-via-a-dns-query-and-remove-them-if-need-be.aspx](http://technet.microsoft.com/en-us/library/cc786105\(v=ws.10\).aspx)``
+``[http://blogs.technet.com/b/odsupport/archive/2011/11/14/how-to-discover-kms-hosts-via-a-dns-query-and-remove-them-if-need-be.aspx](http://technet.microsoft.com/en-us/library/cc786105\\(v=ws.10\\).aspx)``
 
 #### Windows Updates {#h.i1j7n0ux0g6y" id="h.i1j7n0ux0g6y
 
-``C:\Windows\\$NTUninstallKB_nnnnnnn_$``
+``C:\\Windows\\\\$NTUninstallKB\_nnnnnnn\_$``
 
-``C:\Windows\ie8``
+``C:\\Windows\\ie8``
 
-``C:\Windows\\$hf\_mig$``
+``C:\\Windows\\\\$hf\\\_mig$``
 
 wuauclt /detectnow
 
@@ -1764,7 +1764,7 @@ How to slipstream hotfixes that replace pre-existing driver files
 
 3rd party tools
 
-``http://en.wikipedia.org/wiki/List\_of\_remastering\_software``
+``http://en.wikipedia.org/wiki/List\\\_of\\\_remastering\\\_software``
 
 nLite
 
@@ -1776,13 +1776,13 @@ RyanVM
 
 #### Install/Uninstall cache {#h.xasz4mskijht" id="h.xasz4mskijht
 
-``? C:\WINDOWS\Installer\[3] is this for programs or patches?``
+``? C:\\WINDOWS\\Installer\\[3] is this for programs or patches?``
 
-``C:\MSOCache\All Users\\``
+``C:\\MSOCache\\All Users\\\\``
 
-``C:\Windows\Downloaded Installations\\{``
+``C:\\Windows\\Downloaded Installations\\\\{``
 
-``Web Platform Installer? \<UserName>\AppData\Local\Microsoft\WebSetup``
+``Web Platform Installer? \\<UserName>\\AppData\\Local\\Microsoft\\WebSetup``
 
 (MSOCache mentioned elsewhere)
 
@@ -1790,7 +1790,7 @@ RyanVM
 
 **msiexec.exe**
 
-``msiexec /i %LogonServer%\netlogon\PSTCaptureAgent.msi``
+``msiexec /i %LogonServer%\\netlogon\\PSTCaptureAgent.msi``
 
 common setup.exe switches
 
@@ -1800,15 +1800,15 @@ msizap for uninstall
 
 **Install apps in safe mode**
 
-``HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\\``
+``HKLM\\SYSTEM\\CurrentControlSet\\Control\\SafeBoot\\Minimal\\\\``
 
 and/or
 
-``HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\MSIServer``
+``HKLM\\SYSTEM\\CurrentControlSet\\Control\\SafeBoot\\Network\\MSIServer``
 
-``REG\_SZ MSIServer=Service``
+``REG\\\_SZ MSIServer=Service``
 
-``REG ADD “HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\MSIServer” /VE /T REG\_SZ /F /D "Service" && net start msiserver``
+``REG ADD “HKLM\\SYSTEM\\CurrentControlSet\\Control\\SafeBoot\\Minimal\\MSIServer” /VE /T REG\\\_SZ /F /D "Service" \\&\\& net start msiserver``
 
 See also 3rd-arty app SafeMSI
 
@@ -1818,7 +1818,7 @@ Windows Update Service (Wuauserv)
 
 #### Scheduled Tasks {#h.wx4y24ic2ga3" id="h.wx4y24ic2ga3
 
-``C:\Windows\System32\Tasks``
+``C:\\Windows\\System32\\Tasks``
 
 AT registry key:
 
@@ -1846,58 +1846,58 @@ For use as a scheduled task
 
 Command line switches
 
-``Selection Scripts (\*.bks)``
+``Selection Scripts (\\*.bks)``
 
-``C:\Documents and Settings\\%Username%\Local Settings\Application Data\Microsoft\Windows NT\NTBackup\data``
+``C:\\Documents and Settings\\\\%Username%\\Local Settings\\Application Data\\Microsoft\\Windows NT\\NTBackup\\data``
 
 Log Results
 
-``C:\Documents and Settings\\%Username%\Local Settings\Application Data\Microsoft\Windows NT\NTBackup\data\backup01.log``
+``C:\\Documents and Settings\\\\%Username%\\Local Settings\\Application Data\\Microsoft\\Windows NT\\NTBackup\\data\\backup01.log``
 
-``Files excluded for all users by default\[4]:``
+``Files excluded for all users by default\\[4]:``
 
 | **Filename**                                                                          | **Application**                                                                                      |
 | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| \\\*.crmlog                                                                           | Microsoft Writer (Bootable State)                                                                    |
-| \hiberfil.sys                                                                         | Power Management                                                                                     |
-| \Pagefile.sys                                                                         | Memory Page File                                                                                     |
-| \System Volume Information\\\*.{7cc467ef-6865-4831-853f-2a4817fd1bca}ALT              | VSS Service Alternate DB                                                                             |
-| \System Volume Information\\\*.{7cc467ef-6865-4831-853f-2a4817fd1bca}DB               | VSS Service DB                                                                                       |
-| \System Volume Information\\\*{3808876B-C176-4e48-B7AE-04046E6CC752}                  | VSS Default Provider                                                                                 |
-| \System Volume Information\DFSR\\\*                                                   | DFSR Database                                                                                        |
-| \System Volume Information\MountPointManagerRemoteDatabase                            | Mount Manager                                                                                        |
-| C:\Documents and Settings\All Users\Application Data\Microsoft\Network\Downloader\\\* | BITS\_metadata                                                                                       |
-| C:\Documents and Settings\All Users\DRM\\\*                                           | DRM                                                                                                  |
-| C:\Documents and Settings\\%Username%\index.dat                                       | Internet Explorer                                                                                    |
-| C:\Documents and Settings\\%Username%\Local Settings\Temp\2\\\*                       | Temporary Files                                                                                      |
-| C:\Windows\csc\\\*                                                                    | Client Side Cache                                                                                    |
-| C:\WINDOWS\Debug\\\*                                                                  | Winlogon debug                                                                                       |
-| C:\WINDOWS\netlogon.chg                                                               | Netlogon                                                                                             |
-| C:\WINDOWS\Registration\\\*.clb                                                       | Microsoft Writer (Bootable State)                                                                    |
-| C:\WINDOWS\repair\asr.err                                                             | ASR Error File                                                                                       |
-| C:\WINDOWS\repair\asr.log                                                             | ASR Log File                                                                                         |
-| C:\WINDOWS\SoftwareDistribution\\\*                                                   | SUS Client                                                                                           |
-| C:\WINDOWS\system32\CatRoot2\\\*                                                      | Catalog Database                                                                                     |
-| C:\WINDOWS\system32\LServer\\\*                                                       | TermServLicensing                                                                                    |
-| C:\WINDOWS\system32\MSDtc\MSDTC.LOG                                                   | MS Distributed Transaction Coordinator                                                               |
-| C:\WINDOWS\system32\MSDtc\trace\dtctrace.log                                          | MS Distributed Transaction Coordinator                                                               |
-| C:\WINDOWS\Tasks\schedlgu.txt                                                         | Task Scheduler                                                                                       |
-| \<drive:path>\DfsrPrivate\\\*                                                         | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
-| \<drive:path>\DfsrPrivate\ConflictedAndDeleted\\\*                                    | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
-| \<drive:path>\DfsrPrivate\Staging\\\*                                                 | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
-| S\system32\MSDtc\trace\dtctrace.log                                                   | DRM                                                                                                  |
+| \\\\\\*.crmlog                                                                           | Microsoft Writer (Bootable State)                                                                    |
+| \\hiberfil.sys                                                                         | Power Management                                                                                     |
+| \\Pagefile.sys                                                                         | Memory Page File                                                                                     |
+| \\System Volume Information\\\\\\*.{7cc467ef-6865-4831-853f-2a4817fd1bca}ALT              | VSS Service Alternate DB                                                                             |
+| \\System Volume Information\\\\\\*.{7cc467ef-6865-4831-853f-2a4817fd1bca}DB               | VSS Service DB                                                                                       |
+| \\System Volume Information\\\\\\*{3808876B-C176-4e48-B7AE-04046E6CC752}                  | VSS Default Provider                                                                                 |
+| \\System Volume Information\\DFSR\\\\\\*                                                   | DFSR Database                                                                                        |
+| \\System Volume Information\\MountPointManagerRemoteDatabase                            | Mount Manager                                                                                        |
+| C:\\Documents and Settings\\All Users\\Application Data\\Microsoft\\Network\\Downloader\\\\\\* | BITS\\\_metadata                                                                                       |
+| C:\\Documents and Settings\\All Users\\DRM\\\\\\*                                           | DRM                                                                                                  |
+| C:\\Documents and Settings\\\\%Username%\\index.dat                                       | Internet Explorer                                                                                    |
+| C:\\Documents and Settings\\\\%Username%\\Local Settings\\Temp\\2\\\\\\*                       | Temporary Files                                                                                      |
+| C:\\Windows\\csc\\\\\\*                                                                    | Client Side Cache                                                                                    |
+| C:\\WINDOWS\\Debug\\\\\\*                                                                  | Winlogon debug                                                                                       |
+| C:\\WINDOWS\\netlogon.chg                                                               | Netlogon                                                                                             |
+| C:\\WINDOWS\\Registration\\\\\\*.clb                                                       | Microsoft Writer (Bootable State)                                                                    |
+| C:\\WINDOWS\\repair\\asr.err                                                             | ASR Error File                                                                                       |
+| C:\\WINDOWS\\repair\\asr.log                                                             | ASR Log File                                                                                         |
+| C:\\WINDOWS\\SoftwareDistribution\\\\\\*                                                   | SUS Client                                                                                           |
+| C:\\WINDOWS\\system32\\CatRoot2\\\\\\*                                                      | Catalog Database                                                                                     |
+| C:\\WINDOWS\\system32\\LServer\\\\\\*                                                       | TermServLicensing                                                                                    |
+| C:\\WINDOWS\\system32\\MSDtc\\MSDTC.LOG                                                   | MS Distributed Transaction Coordinator                                                               |
+| C:\\WINDOWS\\system32\\MSDtc\\trace\\dtctrace.log                                          | MS Distributed Transaction Coordinator                                                               |
+| C:\\WINDOWS\\Tasks\\schedlgu.txt                                                         | Task Scheduler                                                                                       |
+| \\<drive:path>\\DfsrPrivate\\\\\\*                                                         | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
+| \\<drive:path>\\DfsrPrivate\\ConflictedAndDeleted\\\\\\*                                    | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
+| \\<drive:path>\\DfsrPrivate\\Staging\\\\\\*                                                 | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
+| S\\system32\\MSDtc\\trace\\dtctrace.log                                                   | DRM                                                                                                  |
 
-``HKLM\SYSTEM\CurrentControlSet\Control\BackupRestore\FilesNotToBackup``
+``HKLM\\SYSTEM\\CurrentControlSet\\Control\\BackupRestore\\FilesNotToBackup``
 
-``HKLM\SYSTEM\CurrentControlSet\Control\BackupRestore\KeysNotToRestore``
+``HKLM\\SYSTEM\\CurrentControlSet\\Control\\BackupRestore\\KeysNotToRestore``
 
-``HKLM\SYSTEM\CurrentControlSet\Control\BackupRestore\FilesNotToSnapshot``
+``HKLM\\SYSTEM\\CurrentControlSet\\Control\\BackupRestore\\FilesNotToSnapshot``
 
 Is there also a HKCU key?
 
 **Windows Server Backup**
 
-``Wbadmin replaces ntbackup\[5]``
+``Wbadmin replaces ntbackup\\[5]``
 
 [http://technet.microsoft.com/en-us/library/cc770340.aspx](http://technet.microsoft.com/en-us/library/cc770340.aspx)
 
@@ -1915,13 +1915,13 @@ Is there also a HKCU key?
 | [Wbadmin start systemstaterecovery](http://en.wikipedia.org/wiki/Regedit)                                                     | <p>Runs a system state recovery.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>                                                                                                                                                                                           |
 | [Wbadmin start systemstatebackup](http://blogs.technet.com/b/askperf/archive/2010/03/02/windows-7-where-are-my-printers.aspx) | <p>Runs a system state backup.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>                                                                                                                                                                                             |
 | [Wbadmin delete systemstatebackup](http://www.undocprint.org/formats/winspool/spl)                                            | <p>Deletes one or more system state backups.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>                                                                                                                                                                               |
-| [Wbadmin start sysrecovery](http://technet.microsoft.com/en-us/library/cc731865.aspx)                                         | Runs a recovery of the full system (at least all the volumes that contain the operating system's state). _This subcommand applies only to Windows Server 2008, and it is only available if you are using the Windows Recovery Environment._                                                        |
+| [Wbadmin start sysrecovery](http://technet.microsoft.com/en-us/library/cc731865.aspx)                                         | Runs a recovery of the full system (at least all the volumes that contain the operating system's state). \_This subcommand applies only to Windows Server 2008, and it is only available if you are using the Windows Recovery Environment.\_                                                        |
 | [Wbadmin restore catalog](http://technet.microsoft.com/en-us/library/cc742060.aspx)                                           | <p>Recovers a backup catalog from a specified storage location in the case where the backup catalog on the local computer has been corrupted.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>                                                                              |
 | [Wbadmin delete catalog](http://technet.microsoft.com/en-us/library/cc731038.aspx)                                            | <p>Deletes the backup catalog on the local computer. Use this command only if the backup catalog on this computer is corrupted and you have no backups stored at another location that you can use to restore the catalog.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p> |
 
 #### Fax {#h.pbyfyfrqt3za" id="h.pbyfyfrqt3za
 
-``MSFax "C:\ProgramData\Microsoft\Windows NT\MSFax"``
+``MSFax "C:\\ProgramData\\Microsoft\\Windows NT\\MSFax"``
 
 Fax Printer
 
@@ -1931,15 +1931,15 @@ How many modems does each OS support? (Win2k, Win2k3, Win 2k8, SBS)
 
 #### OEM Branding {#h.wwy0nqh6y4fd" id="h.wwy0nqh6y4fd
 
-``C:\Windows\Setup\scripts\\``
+``C:\\Windows\\Setup\\scripts\\\\``
 
-``C:\Windows\System32\oem``
+``C:\\Windows\\System32\\oem``
 
 See also Deployment, OEM
 
 #### Printing {#h.k1vmmpaque47" id="h.k1vmmpaque47
 
-``C:\Windows\System32\spool\PRINTERS``
+``C:\\Windows\\System32\\spool\\PRINTERS``
 
 Special Shell folder to view all printers in Windows 7 without them being consolidated by port.
 
@@ -1953,13 +1953,13 @@ You will need the right PCL/PostScript viewer to read .spl files
 
 [http://www.undocprint.org/formats/winspool/spl](http://technet.microsoft.com/en-us/library/cc772355.aspx)
 
-``prnproc$ C:\Windows\system32\spool\PRTPROCS Printer Drivers``
+``prnproc$ C:\\Windows\\system32\\spool\\PRTPROCS Printer Drivers``
 
-``print$ C:\Windows\system32\spool\drivers Printer Drivers``
+``print$ C:\\Windows\\system32\\spool\\drivers Printer Drivers``
 
 Windows Server 2003 R2 can manage printers as 2003 or 2003R2
 
-``The R2 Print Management C:\WINDOWS\PMCSnap\printmanagement.msc``
+``The R2 Print Management C:\\WINDOWS\\PMCSnap\\printmanagement.msc``
 
 findnetprinters.dll
 
@@ -1985,19 +1985,19 @@ You may have a print job stuck in the spool, or one that crashes the spool servi
 2. delete the spd file
 3. Start the print spooler (net start spool)
 
-``Print Spooler C:\Windows\System32\spool\PRINTERS``
+``Print Spooler C:\\Windows\\System32\\spool\\PRINTERS``
 
-``Printer Drivers C:\Windows\system32\spool\DRIVERS\x64\3\\``
+``Printer Drivers C:\\Windows\\system32\\spool\\DRIVERS\\x64\\3\\\\``
 
-``Inf Path C:\Windows\System32\DriverStore\FileRepository\\...\\...inf``
+``Inf Path C:\\Windows\\System32\\DriverStore\\FileRepository\\\\...\\\\...inf``
 
 **UNC path for shared printer drivers**
 
-``print$ C:\Windows\System32\spool\drivers``
+``print$ C:\\Windows\\System32\\spool\\drivers``
 
 **Terminal Server key fix for no/cannot set default printer**
 
-``HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows\Device``
+``HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\\Device``
 
 Forms
 
@@ -2020,9 +2020,9 @@ Ports
 | [Pubprn.vbs](http://www.petri.co.il/filtering-and-custom-views-in-vista-event-viewer.htm)                                                        | Publishes a printer to the Active Directory directory service.                                                                             |
 | [Rundll32 printui.dll,PrintUIEntry](https://computername:8098/)                                                                                  | Enables you to automate the installation and configuration of printers using scripts or the command prompt.                                |
 
-``rundll32 printui.dll,PrintUIEntry /ga /c\\\machine /n\\\machine\printer /j"LanMan Print Services"``
+``rundll32 printui.dll,PrintUIEntry /ga /c\\\\\\machine /n\\\\\\machine\\printer /j"LanMan Print Services"``
 
-``rundll32 printui.dll,PrintUIEntry /ga /n"\\\AppServer\OKI C530 Admin" /j"LanMan Print Services"``
+``rundll32 printui.dll,PrintUIEntry /ga /n"\\\\\\AppServer\\OKI C530 Admin" /j"LanMan Print Services"``
 
 **Backup or Migrate Printers**
 
@@ -2030,45 +2030,45 @@ Resource Kit? Tool to backup all drivers and shared printers to file and can res
 
 The Microsoft Printer Migrator (Printmig.exe) utility, included in Windows NT 4.0 Resource Kit Supplement 3
 
-``%Systemroot%\System32\Spool\Pm\Pm.CAB``
+``%Systemroot%\\System32\\Spool\\Pm\\Pm.CAB``
 
 Vista and later, Administrative Tools, Print Management. Right-click the Print server, choose Export printers to a file...
 
-``C:\Windows\System32\spool\tools>printbrm.exe -?``
+``C:\\Windows\\System32\\spool\\tools>printbrm.exe -?``
 
 Error: A single mode must be selected!
 
 Access the Backup Recovery Migration tool through a command line interface.
 
-PrintBrm -B|R|Q \[-S \<server>] -F \<file> \[-D \<directory>] \[-O FORCE] \[-P ALL|ORIG] \[-NOBIN] \[-LPR2TCP] \[-C \<config file>] \[-NOACL] \[-?]
+PrintBrm -B|R|Q \\[-S \\<server>] -F \\<file> \\[-D \\<directory>] \\[-O FORCE] \\[-P ALL|ORIG] \\[-NOBIN] \\[-LPR2TCP] \\[-C \\<config file>] \\[-NOACL] \\[-?]
 
-``\-B Backup the server to the specified file``
+``\\-B Backup the server to the specified file``
 
-``\-R Restore the configuration in the file to the server``
+``\\-R Restore the configuration in the file to the server``
 
-``\-Q Query the server or the backup file``
+``\\-Q Query the server or the backup file``
 
-``\-S \<server name> Target server``
+``\\-S \\<server name> Target server``
 
-``\-F \<file name> Target backup File``
+``\\-F \\<file name> Target backup File``
 
-``\-D \<directory> Unpack the backup file to (with -R) or repack a backup file from (with -B) the given directory``
+``\\-D \\<directory> Unpack the backup file to (with -R) or repack a backup file from (with -B) the given directory``
 
-``\-O FORCE Force overwriting of existing objects``
+``\\-O FORCE Force overwriting of existing objects``
 
-\-P ALL|ORIG Publish all printers in directory, or publish printers that were published originally
+\\-P ALL|ORIG Publish all printers in directory, or publish printers that were published originally
 
-``\-NOBIN Omit the binaries from the backup``
+``\\-NOBIN Omit the binaries from the backup``
 
-``\-LPR2TCP Convert LPR ports to Standard TCP/IP ports on restore``
+``\\-LPR2TCP Convert LPR ports to Standard TCP/IP ports on restore``
 
-``\-C \<file name> Use the specified configuration file for BRM``
+``\\-C \\<file name> Use the specified configuration file for BRM``
 
-``\-NOACL Remove ACLs from print queues on restore``
+``\\-NOACL Remove ACLs from print queues on restore``
 
-``\-? Display this help``
+``\\-? Display this help``
 
-``C:\Windows\System32\spool\tools>``
+``C:\\Windows\\System32\\spool\\tools>``
 
 **Print Separator Page**
 
@@ -2101,7 +2101,7 @@ Add Local printer, local port, enter UNC path
 
 Registry key of remembered Wi-Fi connections
 
-``HKLM\SOFTWARE\Microsoft\WZCSVC\Parameters\Interfaces ?``
+``HKLM\\SOFTWARE\\Microsoft\\WZCSVC\\Parameters\\Interfaces ?``
 
 Wireless setup disk config file
 
@@ -2109,9 +2109,9 @@ AUTORUN.INF
 
 setupSNK.exe
 
-``\SMRTNTKY\\``
+``\\SMRTNTKY\\\\``
 
-``\DEVICE\\``
+``\\DEVICE\\\\``
 
 fcw.ico
 
@@ -2129,7 +2129,7 @@ WSETTING.WFC
 
 Back up vault
 
-``Credential Backup Files (\*.crd)``
+``Credential Backup Files (\\*.crd)``
 
 #### Encrypting File System {#h.l1u6dqphtt0n" id="h.l1u6dqphtt0n
 
@@ -2141,7 +2141,7 @@ rekeywiz.exe EFS REKEY wizard
 
 folder path: DSN files
 
-``registry: HKLM\SOFTWARE\ODBC\ODBC.INI``
+``registry: HKLM\\SOFTWARE\\ODBC\\ODBC.INI``
 
 also a user key
 
@@ -2153,13 +2153,13 @@ wuauclt.exe /detectnow (two other places in this document?)
 
 **Sites to add to Internet Explorer Trusted Zone**
 
-``URLs:\[6]``
+``URLs:\\[6]``
 
-``* https://\*.microsoft.com``
+``* https://\\*.microsoft.com``
 * https://download.windowsupdate.com
 * https://update.microsoft.com/windowsupdate
-``* http://\*.update.microsoft.com``
-``* https://\*.update.microsoft.com``
+``* http://\\*.update.microsoft.com``
+``* https://\\*.update.microsoft.com``
 * http://download.windowsupdate.com
 
 Homegroup setup disk?
@@ -2172,7 +2172,7 @@ RegBack from Windows 2000 Server?
 
 #### TWAIN {#h.bnu5zbmyy5s2" id="h.bnu5zbmyy5s2
 
-``C:\Windows\twain\_32``
+``C:\\Windows\\twain\\\_32``
 
 Registry:
 
@@ -2225,33 +2225,33 @@ Which apps run 32-bit as default on 64-bit installation?
 
 ODBC, Media Player, IE
 
-``odbcad32.exe %windir%\SysWOW64\odbcad32.exe``
+``odbcad32.exe %windir%\\SysWOW64\\odbcad32.exe``
 
-``Problem Step Recorder C:\Windows\System32\PSR.exe and/or C:\Windows\SysWOW64``
+``Problem Step Recorder C:\\Windows\\System32\\PSR.exe and/or C:\\Windows\\SysWOW64``
 
-``msconfig C:\Windows\System32 \[Win7] or ? \[WinXP]``
+``msconfig C:\\Windows\\System32 \\[Win7] or ? \\[WinXP]``
 
 god-mode folder Everything.{ED7BA470-8E54-465E-825C-99712043E01C}
 
 (Paths don’t work to launch program...)
 
-``Reliability Monitor C:\Windows\explorer.exe /factory,{ceff45ee-c862-41de-aee2-a022c81eda92} -Embedding``
+``Reliability Monitor C:\\Windows\\explorer.exe /factory,{ceff45ee-c862-41de-aee2-a022c81eda92} -Embedding``
 
-``Reliability Monitor - Shortcut search-ms:displayname=%20Search%20programs%20and%20files\&crumb=System.Generic.String%3Areli\&crumb=location:%3A%3A{DAF95313-E44D-46AF-BE1B-CBACEA2C3065}\View reliability history``
+``Reliability Monitor - Shortcut search-ms:displayname=%20Search%20programs%20and%20files\\\\&crumb=System.Generic.String%3Areli\\\\&crumb=location:%3A%3A{DAF95313-E44D-46AF-BE1B-CBACEA2C3065}\\View reliability history``
 
 Problem Reports
 
-``explorer shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\0\\::{BB64F8A7-BEE7-4E1A-AB8D-7D8273F7FDB6}\pageProblems``
+``explorer shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\\0\\\\::{BB64F8A7-BEE7-4E1A-AB8D-7D8273F7FDB6}\\pageProblems``
 
 To Make Documents as Default Folder to Open by Windows Explorer upon Launching
 
-``%SystemRoot%\explorer.exe /n,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}``
+``%SystemRoot%\\explorer.exe /n,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}``
 
 To Make Computer as Default Folder to Open by Windows Explorer upon Launching
 
-``%SystemRoot%\explorer.exe /n,::{450D8FBA-AD25-11D0-98A8-0800361B1103}``
+``%SystemRoot%\\explorer.exe /n,::{450D8FBA-AD25-11D0-98A8-0800361B1103}``
 
-``C:\Windows``
+``C:\\Windows``
 
 bfsvc.exe Boot File Servicing Utility
 
@@ -2271,9 +2271,9 @@ splwow64.exe Print driver host for 32bit applications
 
 system.ini
 
-``twunk\_16.exe``
+``twunk\\\_16.exe``
 
-``twunk\_32.exe Twain.dll Client’s 32-Bit Thunking Server``
+``twunk\\\_32.exe Twain.dll Client’s 32-Bit Thunking Server``
 
 win.ini
 
@@ -2283,15 +2283,15 @@ write.exe Windows Write
 
 **Explorer.exe Command Line Syntax**
 
-``%SystemRoot%\explorer.exe \[/n]\[/e]\[,/root],X,\[\[/Select],Y]``
+``%SystemRoot%\\explorer.exe \\[/n]\\[/e]\\[,/root],X,\\[\\[/Select],Y]``
 
 X specifies the object, and optionally with sub-object Y. /e switch shows the left Windows Explorer tree view navigation pane together with the right pane in list view, while /n hides the left navigation pane. When the /root parameter is present, Explorer.exe will explore the root object (X) and objects belonging to X. On the other hand, when the /root switch is not present, Explorer.exe explores the object X, its children, and other Explorer objects as well. /Select switch puts the focus on a file or folder.
 
 For example:
 
-``%SystemRoot%\explorer.exe /N,%WinDir%\System32,/Select,%WinDir%\System32\Ping.exe``
+``%SystemRoot%\\explorer.exe /N,%WinDir%\\System32,/Select,%WinDir%\\System32\\Ping.exe``
 
-``Command aboves will explore the \Windows\System32 folder and put the focus on the ping.exe program.``
+``Command aboves will explore the \\Windows\\System32 folder and put the focus on the ping.exe program.``
 
 #### MMC {#h.kzqvf7icqgpe" id="h.kzqvf7icqgpe
 
@@ -2299,7 +2299,7 @@ mmc.exe
 
 mmc /a
 
-``\[there is an MMC section under Remote access admin tools section]``
+``\\[there is an MMC section under Remote access admin tools section]``
 
 snap-ins (MSC)
 
@@ -2345,8 +2345,8 @@ snap-ins (MSC)
 | NAP Client Configuration                        |                                        | Configures and manages NAP Client Configuration settings                                                                                                                                                                        |                                |
 | Online Responder Management                     |                                        | Enables the configuration, monitoring and management of revocation checking services based on the OCSP protocol.                                                                                                                |                                |
 | Performance Monitor                             |                                        | Performance Monitor                                                                                                                                                                                                             |                                |
-| Print Management                                | C:\WINDOWS\PMCSnap\printmanagement.msc | Print Management is a Microsoft Management Console (MMC) snap-in that is used to manage print servers and printers.                                                                                                             | Win2003R2 & others             |
-| Public Folder Management Console                |                                        | Allows management of Exchange Server 2010 public folders. © 2010 Microsoft Corporation. All rights reserved.                                                                                                                    | Exchange 2010 Server Tools\<?> |
+| Print Management                                | C:\\WINDOWS\\PMCSnap\\printmanagement.msc | Print Management is a Microsoft Management Console (MMC) snap-in that is used to manage print servers and printers.                                                                                                             | Win2003R2 \\& others             |
+| Public Folder Management Console                |                                        | Allows management of Exchange Server 2010 public folders. © 2010 Microsoft Corporation. All rights reserved.                                                                                                                    | Exchange 2010 Server Tools\\<?> |
 | Queue Viewer                                    |                                        | Manage Exchange mail queues.                                                                                                                                                                                                    |                                |
 | Remote Desktop Services Manager                 |                                        | Manage Remote Desktop Services sessions                                                                                                                                                                                         |                                |
 | Remote Desktops                                 |                                        | Allows you to connect to remote computers                                                                                                                                                                                       |                                |
@@ -2370,7 +2370,7 @@ snap-ins (MSC)
 
 Active Directory Sites and Services has available extension Group Policy Object Editor
 
-``Active Directory Users and Computers has available extensions Group Policy Object Editor, Remote Desktop Services - Extension, 3rd-party add-on Extension to AD User and Computer for EmployeeID and photo\<?>``
+``Active Directory Users and Computers has available extensions Group Policy Object Editor, Remote Desktop Services - Extension, 3rd-party add-on Extension to AD User and Computer for EmployeeID and photo\\<?>``
 
 Certification Authority has available extension CA Certificate Template Settings
 
@@ -2382,13 +2382,13 @@ DNS (cannot edit) has Classic Event Viewer Extension, Services Extension
 
 Event Viewer has Classic Event Viewer Extension
 
-``Exchange Server 2010 has four Exchange Server 2010 Extensions \[Try disabling and see what changes]``
+``Exchange Server 2010 has four Exchange Server 2010 Extensions \\[Try disabling and see what changes]``
 
 Failover Cluster Manager has Failover Cluster Extensions, Failover Cluster Resource Extensions
 
 Failover Cluster Manager Host has DHCP Extension, Print Management
 
-``Group Policy Management Editor has Administrative Templates (Computers)\*, Administrative Templates (Users)\*, Extended View, Folder Redirection Editor (Users), Group Policy Application Settings\*, Group Policy Computer Control Panel\*, Group Policy Drive Settings\*, Group Policy Environment Settings\*, Group Policy File Settings\*, Group Policy Folder Settings\*, Group Policy Ini File Settings\*, Group Policy Printers Settings\*, Group Policy Registry Settings\*, Group Policy Shortcut Settings\*, Group Policy User Control Panel\*, Internet Explorer Maintenance, Name Resolution Policy, Name Resolution Policy \[?], Policy-based QoS (Computers), Policy-based QoS (Users), Pushed Printer Connection Extension (Computers)\*, Pushed Printer Connection Extension (Users)\*, Scripts (Logon/Logoff)\*, Scripts (Startup/Shutdown)\*, Security Settings\*, Software Installation (Computers), Software Installation (Users)``
+``Group Policy Management Editor has Administrative Templates (Computers)\\*, Administrative Templates (Users)\\*, Extended View, Folder Redirection Editor (Users), Group Policy Application Settings\\*, Group Policy Computer Control Panel\\*, Group Policy Drive Settings\\*, Group Policy Environment Settings\\*, Group Policy File Settings\\*, Group Policy Folder Settings\\*, Group Policy Ini File Settings\\*, Group Policy Printers Settings\\*, Group Policy Registry Settings\\*, Group Policy Shortcut Settings\\*, Group Policy User Control Panel\\*, Internet Explorer Maintenance, Name Resolution Policy, Name Resolution Policy \\[?], Policy-based QoS (Computers), Policy-based QoS (Users), Pushed Printer Connection Extension (Computers)\\*, Pushed Printer Connection Extension (Users)\\*, Scripts (Logon/Logoff)\\*, Scripts (Startup/Shutdown)\\*, Security Settings\\*, Software Installation (Computers), Software Installation (Users)``
 
 Group Policy Object Editor has ...
 
@@ -2431,17 +2431,17 @@ For more information about each of these settings, see the Windows XP Security G
 
 For more information about each of these settings, see the Windows Vista Security Guide (http://go.microsoft.com/fwlink/?LinkID=121852).
 
-``Also in C:\Windows\inf\StarterGPOs``
+``Also in C:\\Windows\\inf\\StarterGPOs``
 
 Security Templates default file list, description, location
 
-``...\Documents\Security\Templates``
+``...\\Documents\\Security\\Templates``
 
 INF files
 
-``\Windows\security\templates\policies``
+``\\Windows\\security\\templates\\policies``
 
-``\Windows\ServiceProfiles\\``
+``\\Windows\\ServiceProfiles\\\\``
 
 LocalService
 
@@ -2451,17 +2451,17 @@ Task Manager
 
 Firewall netsh
 
-``RegEdt32\[7]``
+``RegEdt32\\[7]``
 
 charmap
 
 telnet (not installed by default after Windows XP/2003) (Mentioned in Network section?)
 
-``%windir%\system32\defrag.exe -c``
+``%windir%\\system32\\defrag.exe -c``
 
-``\ntbackup.exe\[8] -``
+``\\ntbackup.exe\\[8] -``
 
-``C:\Windows\system32\mstsc.exe (switches?)``
+``C:\\Windows\\system32\\mstsc.exe (switches?)``
 
 clipboard viewer
 
@@ -2525,7 +2525,7 @@ The Windows CD has a Support folder (see below 5 or 6 pages)
 
 Microsoft Windows 2000, Windows XP, Windows Server 2003 and Windows Server 2003 R2
 
-``Windows XP Setup CD, and then locate the Support\Tools folder``
+``Windows XP Setup CD, and then locate the Support\\Tools folder``
 
 ### Remote {#h.j40pvknrtwar" id="h.j40pvknrtwar
 
@@ -2549,7 +2549,7 @@ rcmd (NT4 ResKit), remote
 
 **winrs**
 
-winrs –r:_ServerName_ cmd.exe
+winrs –r:\_ServerName\_ cmd.exe
 
 **psexec**
 
@@ -2559,7 +2559,7 @@ psexec and more http://serverfault.com/questions/32489/remote-command-execution-
 
 GUI
 
-**mmc & msc**
+**mmc \\& msc**
 
 **RDP (tsclient)**
 
@@ -2587,13 +2587,13 @@ WSUS (2.0, not 3.0)
 
 sconfig.cmd
 
-``\[menu or screenshot]``
+``\\[menu or screenshot]``
 
 sc services
 
-``C:\Windows\System32\SCRegEdit.wsh enable or disable Remote Desktop and configure Windows Update``
+``C:\\Windows\\System32\\SCRegEdit.wsh enable or disable Remote Desktop and configure Windows Update``
 
-``C:\Windows\System32\GatherNetworkInfo.vbs``
+``C:\\Windows\\System32\\GatherNetworkInfo.vbs``
 
 netdom.exe change hostname or join domain
 
@@ -2633,24 +2633,24 @@ Some features/roles not available. 2008 Core can't be converted, 2012 can change
 
 | **Tool Name**                   | **Description**                                                 |
 | ------------------------------- | --------------------------------------------------------------- |
-| About Windows                   | C:\Windows\system32\winver.exe                                  |
-| Change UAC Settings             | C:\Windows\System32\UserAccountControlSettings.exe              |
-| Action Center                   | C:\Windows\System32\wscui.cpl                                   |
-| Windows Troubleshooting         | C:\Windows\System32\control.exe /name Microsoft.Troubleshooting |
-| Computer Management             | C:\Windows\System32\compmgmt.msc                                |
-| System Information              | C:\Windows\System32\msinfo32.exe                                |
-| Event Viewer                    | C:\Windows\System32\eventvwr.exe                                |
-| Programs                        | C:\Windows\System32\appwiz.cpl                                  |
-| System Properties               | C:\Windows\System32\control.exe system                          |
-| Internet Options                | C:\Windows\System32\inetcpl.cpl                                 |
-| Internet Protocol Configuration | C:\Windows\System32\cmd.exe /k %windir%\system32\ipconfig.exe   |
-| Performance Monitor             | C:\Windows\System32\perfmon.exe                                 |
-| Resource Monitor                | C:\Windows\System32\resmon.exe                                  |
-| Task Manager                    | C:\Windows\System32\taskmgr.exe                                 |
-| Command Prompt                  | C:\Windows\System32\cmd.exe                                     |
-| Registry Editor                 | C:\Windows\System32\regedt32.exe                                |
-| Remote Assistance               | C:\Windows\System32\msra.exe                                    |
-| System Restore                  | C:\Windows\System32\rstrui.exe                                  |
+| About Windows                   | C:\\Windows\\system32\\winver.exe                                  |
+| Change UAC Settings             | C:\\Windows\\System32\\UserAccountControlSettings.exe              |
+| Action Center                   | C:\\Windows\\System32\\wscui.cpl                                   |
+| Windows Troubleshooting         | C:\\Windows\\System32\\control.exe /name Microsoft.Troubleshooting |
+| Computer Management             | C:\\Windows\\System32\\compmgmt.msc                                |
+| System Information              | C:\\Windows\\System32\\msinfo32.exe                                |
+| Event Viewer                    | C:\\Windows\\System32\\eventvwr.exe                                |
+| Programs                        | C:\\Windows\\System32\\appwiz.cpl                                  |
+| System Properties               | C:\\Windows\\System32\\control.exe system                          |
+| Internet Options                | C:\\Windows\\System32\\inetcpl.cpl                                 |
+| Internet Protocol Configuration | C:\\Windows\\System32\\cmd.exe /k %windir%\\system32\\ipconfig.exe   |
+| Performance Monitor             | C:\\Windows\\System32\\perfmon.exe                                 |
+| Resource Monitor                | C:\\Windows\\System32\\resmon.exe                                  |
+| Task Manager                    | C:\\Windows\\System32\\taskmgr.exe                                 |
+| Command Prompt                  | C:\\Windows\\System32\\cmd.exe                                     |
+| Registry Editor                 | C:\\Windows\\System32\\regedt32.exe                                |
+| Remote Assistance               | C:\\Windows\\System32\\msra.exe                                    |
+| System Restore                  | C:\\Windows\\System32\\rstrui.exe                                  |
 
 #### Windows Sysinternals {#h.fnxkrjgzgwxc" id="h.fnxkrjgzgwxc
 
@@ -2723,10 +2723,10 @@ ResKit
 | Windows 3.? (WFWG ?)                                      |                         |                          |
 | Windows 95                                                | Documentation and Tools |                          |
 | Windows 98                                                | Documentation and Tools |                          |
-| Windows NT (Workstation & Server)                         |                         |                          |
+| Windows NT (Workstation \\& Server)                         |                         |                          |
 | Windows NT 3.51                                           |                         | 2 Supplements for Server |
-| Windows NT 4.0 (Workstation & Server)                     | Docs, Tools, 3rd party  | 4 supplements for Server |
-| Windows 2000 (Professional & Server)                      |                         | 1 supplement for Server  |
+| Windows NT 4.0 (Workstation \\& Server)                     | Docs, Tools, 3rd party  | 4 supplements for Server |
+| Windows 2000 (Professional \\& Server)                      |                         | 1 supplement for Server  |
 | Windows XP                                                |                         |                          |
 | Windows 2003                                              |                         |                          |
 | Windows XP Professional Resource Kit, Third Edition (SP2) |                         |                          |
@@ -2778,63 +2778,63 @@ and several server products such as SharePoint and Microsoft Exchange Server
 
 Windows 7 (IE version 9)
 
-``C:\Users\\_\<user name>_\Downloads``
+``C:\\Users\\\\\_\\<user name>\_\\Downloads``
 
-``C:\Users\\_\<UserName>_\AppData\Local\Microsoft\Windows\Temporary Internet Files``
+``C:\\Users\\\\\_\\<UserName>\_\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files``
 
-``C:\Windows\Downloaded Program Files``
+``C:\\Windows\\Downloaded Program Files``
 
 Internet Explorer Temp Folder (IE Cache)
 
-``C:\Users\\_\<user name>_\AppData\Local\Microsoft\Windows\Temporary Internet Files``
+``C:\\Users\\\\\_\\<user name>\_\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files``
 
 IE Cookies
 
-``C:\Users\\_\<user name>_\AppData\Roaming\Microsoft\Windows\Cookies``
+``C:\\Users\\\\\_\\<user name>\_\\AppData\\Roaming\\Microsoft\\Windows\\Cookies``
 
 Good to export this file using IE, File, Export when moving a user to another computer.
 
 Internet Explorer History
 
-``C:\Users\\_\<user name>_\AppData\Local\Microsoft\Windows\History``
+``C:\\Users\\\\\_\\<user name>\_\\AppData\\Local\\Microsoft\\Windows\\History``
 
 IE Typed URLs
 
-``HKCU\Software\Microsoft\Internet Explorer\TypedUrls``
+``HKCU\\Software\\Microsoft\\Internet Explorer\\TypedUrls``
 
 ``not be 100% certain, google Julie Amero``
 
 Internet Explorer Forms AutoComplete
 
-``HKCU\Software\Microsoft\Internet Explorer\IntelliForms\Storage1``
+``HKCU\\Software\\Microsoft\\Internet Explorer\\IntelliForms\\Storage1``
 
 obfuscated form
 
 Internet Explorer Password AutoComplete
 
-``HKCU\Software\Microsoft\Internet Explorer\IntelliForms\Storage2``
+``HKCU\\Software\\Microsoft\\Internet Explorer\\IntelliForms\\Storage2``
 
 obfuscated form
 
 **Links and Shortcuts**
 
-``C:\Users\\_\<UserName>_\Links``
+``C:\\Users\\\\\_\\<UserName>\_\\Links``
 
 Windows XP
 
-``C:\Documents and Settings\\_\<UserName>_\Application Data\Microsoft\Internet Explorer\Quick Launch``
+``C:\\Documents and Settings\\\\\_\\<UserName>\_\\Application Data\\Microsoft\\Internet Explorer\\Quick Launch``
 
 Must also enable the Toolbar, right click Toolbars, select
 
 Windows 7
 
-``%APPDATA%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar``
+``%APPDATA%\\Microsoft\\Internet Explorer\\Quick Launch\\User Pinned\\TaskBar``
 
-``HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Taskband``
+``HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Taskband``
 
 **Internet Explorer image in web page, Set as background**
 
-``C:\Users\\_UserName_\AppData\Roaming\Microsoft\Internet Explorer\Internet Explorer Wallpaper.bmp``
+``C:\\Users\\\\\_UserName\_\\AppData\\Roaming\\Microsoft\\Internet Explorer\\Internet Explorer Wallpaper.bmp``
 
 **Internet Security Properties, Sites, Add website to the zone**
 
@@ -2850,21 +2850,21 @@ URL Wildcard Sequence:
 
 Examples of valid patterns:
 
-``\*://\*.microsoft.com``
+``\\*://\\*.microsoft.com``
 
-``http://\*.microsoft.co.jp``
+``http://\\*.microsoft.co.jp``
 
 ftp://157.54.23.41/
 
-``file:\\\localsvr\share``
+``file:\\\\\\localsvr\\share``
 
-``\*://157.54.100-200.\*``
+``\\*://157.54.100-200.\\*``
 
 Examples of invalid patterns:
 
-``http://microsoft.\*.com``
+``http://microsoft.\\*.com``
 
-``ftp://\*``
+``ftp://\\*``
 
 Windows Update URLs to add to Trusted
 
@@ -2874,7 +2874,7 @@ Outlook Emails and Attachments classified under which Security Zone?
 
 URLs to add for viewing system files in MMC
 
-``about:\_?\_``
+``about:\\\_?\\\_``
 
 **Internet Explorer Administration Kit**
 
@@ -2882,21 +2882,21 @@ URLs to add for viewing system files in MMC
 
 #### Windows Live {#h.6kn930frdot9" id="h.6kn930frdot9
 
-``C:\Program Files (x86)\Common Files\Windows Live\\.cache\\``
+``C:\\Program Files (x86)\\Common Files\\Windows Live\\\\.cache\\\\``
 
 #### Outlook Express {#h.x4vc95c6dnco" id="h.x4vc95c6dnco
 
 **Outlook Express E-Mail Storage**
 
-``C:\Documents and Settings\Username\Local\Application Data\Identities``
+``C:\\Documents and Settings\\Username\\Local\\Application Data\\Identities``
 
 **Outlook Express Address Book Contacts**
 
-``Address Book used by Outlook Express\[9]``
+``Address Book used by Outlook Express\\[9]``
 
-``C:\Documents and Settings\\_\<UserName>_\Application Data\Microsoft\Address Book``
+``C:\\Documents and Settings\\\\\_\\<UserName>\_\\Application Data\\Microsoft\\Address Book``
 
-``Do other applications use it? Outlook, Windows? (\*.pab, \*.wab)``
+``Do other applications use it? Outlook, Windows? (\\*.pab, \\*.wab)``
 
 #### Microsoft Office {#h.xcy11a3h6km8" id="h.xcy11a3h6km8
 
@@ -2914,15 +2914,15 @@ Setup Controller Command-Line Help
 
 /admin - Launch the Office Customization Tool
 
-``/adminfile \<admin file> - Specify a customization patch of folder containing a customization patch``
+``/adminfile \\<admin file> - Specify a customization patch of folder containing a customization patch``
 
-``/config \<config file> - Specify a config.xml file``
+``/config \\<config file> - Specify a config.xml file``
 
-``/modify \<product ID> - Enter Maintenance Mode for a product``
+``/modify \\<product ID> - Enter Maintenance Mode for a product``
 
-``/repair \<product ID> - Repair a product``
+``/repair \\<product ID> - Repair a product``
 
-``/uninstall \<product ID> - Uninstall a product``
+``/uninstall \\<product ID> - Uninstall a product``
 
 What are the product IDs?
 
@@ -2966,7 +2966,7 @@ Enable Browsing (requires server support)
 
 **Differences with Service Pack 1**
 
-``Office 2010 Standard with SP1 has the following additional files in the .\Updates folder``
+``Office 2010 Standard with SP1 has the following additional files in the .\\Updates folder``
 
 clientshared32muisp1-en-us.msp
 
@@ -2994,7 +2994,7 @@ As of Microsoft Office 2010, there is no separate download
 
 `SETUP.EXE /admin to open Office Customization Tool`
 
-``Creates a .MSP file to be placed in the .\Updates folder``
+``Creates a .MSP file to be placed in the .\\Updates folder``
 
 Windows Live has Skydrive? which will replicate certain office settings to other computers.
 
@@ -3002,31 +3002,31 @@ These settings include dictionary, word.dot?, ...
 
 Recently Opened Office Docs
 
-``C:\Users\\_\<user name>_\AppData\Roaming\Microsoft\Office\Recent``
+``C:\\Users\\\\\_\\<user name>\_\\AppData\\Roaming\\Microsoft\\Office\\Recent``
 
 **Recovered Office files**
 
-``C:\Users\\_\<UserName>_\AppData\Local\Microsoft\Office\UnsavedFiles``
+``C:\\Users\\\\\_\\<UserName>\_\\AppData\\Local\\Microsoft\\Office\\UnsavedFiles``
 
 **Connect to database and execute SQL**
 
-``Microsoft Query "C:\Program Files\Microsoft Office\Office14\MSQRY32.EXE"``
+``Microsoft Query "C:\\Program Files\\Microsoft Office\\Office14\\MSQRY32.EXE"``
 
 **Custom Dictionary**
 
-``C:\Users\\_\<UserName>_\AppData\Roaming\Microsoft\UProof\CUSTOM.DIC``
+``C:\\Users\\\\\_\\<UserName>\_\\AppData\\Roaming\\Microsoft\\UProof\\CUSTOM.DIC``
 
 **Dictionary (.dic)**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Roaming\Microsoft\UProof``
+``**Windows 7 and Windows Vista** \_drive\_:\\Users\\\\\_user\_\\AppData\\Roaming\\Microsoft\\UProof``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Application Data\Microsoft\UProof``
+``**Windows XP** \_drive\_:\\Documents and Settings\\\\\_user\_\\Application Data\\Microsoft\\UProof``
 
 **Templates (.oft)**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Roaming\Microsoft\Templates``
+``**Windows 7 and Windows Vista** \_drive\_:\\Users\\\\\_user\_\\AppData\\Roaming\\Microsoft\\Templates``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Application Data\Microsoft\Templates``
+``**Windows XP** \_drive\_:\\Documents and Settings\\\\\_user\_\\Application Data\\Microsoft\\Templates``
 
 **Templates**
 
@@ -3034,7 +3034,7 @@ Recently Opened Office Docs
 
 **Data Connections**
 
-``C:\Program Files\Microsoft Office\Office14\QUERIES``
+``C:\\Program Files\\Microsoft Office\\Office14\\QUERIES``
 
 MSN MoneyCentral Investor Currency Rates.iqy
 
@@ -3042,25 +3042,25 @@ MSN MoneyCentral Investor Major Indicies.iqy
 
 MSN MoneyCentral Investor Stock Quotes.iqy
 
-``\[...]\Documents\My Data Sources\\_ServerName_\__SQLInstance_ _DatabaseName_.odc``
+``\\[...]\\Documents\\My Data Sources\\\\\_ServerName\_\\\_\_SQLInstance\_ \_DatabaseName\_.odc``
 
 **Visual Basic for Applications**
 
-``VBA settings migration\[10]``
+``VBA settings migration\\[10]``
 
 In Office 2010, Visual Basic for Applications (VBA) 6.0 was updated to VBA 7.0. VBA 7.0 settings were reset to their defaults after migration instead of automatically repopulating. This occurred because the registry settings for VBA are in a different hive in Office 2010, as shown in the following table.
 
 Office 2000 through Office 2007
 
-``HKCU\SOFTWARE\Microsoft\VBA\6.0\Common``
+``HKCU\\SOFTWARE\\Microsoft\\VBA\\6.0\\Common``
 
 Office 2010
 
-``HKCU\SOFTWARE\Microsoft\VBA\7.0\Common``
+``HKCU\\SOFTWARE\\Microsoft\\VBA\\7.0\\Common``
 
-| Office 9 through Office 12 | HKCU\SOFTWARE\Microsoft\VBA\6.0\Common |
+| Office 9 through Office 12 | HKCU\\SOFTWARE\\Microsoft\\VBA\\6.0\\Common |
 | -------------------------- | -------------------------------------- |
-| Office 14                  | HKCU\SOFTWARE\Microsoft\VBA\7.0\Common |
+| Office 14                  | HKCU\\SOFTWARE\\Microsoft\\VBA\\7.0\\Common |
 
 To correct this problem, copy the VBA 6.0 registry keys from the 6.0 hive to the 7.0 hive.
 
@@ -3068,7 +3068,7 @@ To correct this problem, copy the VBA 6.0 registry keys from the 6.0 hive to the
 
 can also be used to sign PowerShell and documents such as Access databases and installers
 
-``C:\\... usage/switches``
+``C:\\\\... usage/switches``
 
 **other cert tools**
 
@@ -3078,8 +3078,8 @@ customize the Document Inspector by adding Inspector modules
 
 **Microsoft Visio**
 
-``* In Windows 7 and Windows Vista, the **My Shapes** directory is located at C:\Users\\_yourname_\Documents\My Shapes.``
-``* In Windows XP and earlier, the **My Shapes** directory is located at C:\Documents and Settings\\_yourname_\My Documents\My Shapes.``
+``* In Windows 7 and Windows Vista, the **My Shapes** directory is located at C:\\Users\\\\\_yourname\_\\Documents\\My Shapes.``
+``* In Windows XP and earlier, the **My Shapes** directory is located at C:\\Documents and Settings\\\\\_yourname\_\\My Documents\\My Shapes.``
 
 **Microsoft Office 2013 Activation**
 
@@ -3104,7 +3104,7 @@ You can follow these simple steps to fix the problem and successfully activate O
 
 manually uninstall product keys installed by Preview version of Office 2013
 
-``CD C:\Program Files\Microsoft Office\Office15``
+``CD C:\\Program Files\\Microsoft Office\\Office15``
 
 cscript ospp.vbs /dstatus
 
@@ -3112,7 +3112,7 @@ Note down the **last 5 characters of product keys** given in each section.
 
 Now run following command for each product key:
 
-``cscript ospp.vbs /unpkey:_last\_5\_characters\_of\_product\_key_``
+``cscript ospp.vbs /unpkey:\_last\\\_5\\\_characters\\\_of\\\_product\\\_key\_``
 
 For example if the last 5 characters of one product key are ABCDE, then run following command:
 
@@ -3132,11 +3132,11 @@ Sample:
 
 C:.
 
-``│ \[Content\_Types].xml``
+``│ \\[Content\\\_Types].xml``
 
 │
 
-├───customXml
+---
 
 │ │ item1.xml
 
@@ -3144,13 +3144,13 @@ C:.
 
 │ │
 
-``│ └───\_rels``
+``│ ----\\\_rels``
 
 │ item1.xml.rels
 
 │
 
-├───docProps
+---
 
 │ app.xml
 
@@ -3158,7 +3158,7 @@ C:.
 
 │
 
-├───word
+---
 
 │ │ document.xml Contains the content
 
@@ -3174,19 +3174,19 @@ C:.
 
 │ │
 
-│ ├───theme
+│ ----theme
 
 │ │ theme1.xml
 
 │ │
 
-``│ └───\_rels``
+``│ ----\\\_rels``
 
 │ document.xml.rels
 
 │
 
-``└───\_rels``
+``----\\\_rels``
 
 .rels
 
@@ -3196,35 +3196,35 @@ Outlook-specific
 
 Exchange (SMTP):
 
-``HKLM\SOFTWARE\Microsoft\Exchange\ContentFilter\ "ArchiveSCL"=dword:00000001``
+``HKLM\\SOFTWARE\\Microsoft\\Exchange\\ContentFilter\\ "ArchiveSCL"=dword:00000001``
 
 see also: [http://office.microsoft.com/en-us/outlook-help/where-does-microsoft-outlook-2010-save-my-information-and-configurations-HP010354943.aspx](http://technet.microsoft.com/en-us/library/cc732406.aspx)
 
 **64-bit edition**
 
-``Tell if the Outlook 2010 is a 32-bit or 64-bit installation\[11]``
+``Tell if the Outlook 2010 is a 32-bit or 64-bit installation\\[11]``
 
-``HKLM\Software\Microsoft\Office\14.0\Outlook``
+``HKLM\\Software\\Microsoft\\Office\\14.0\\Outlook``
 
 Bitness: x86 or x64
 
-``IF EXIST "%ProgramFiles%\Microsoft Office\Office14\outlook.exe"``
+``IF EXIST "%ProgramFiles%\\Microsoft Office\\Office14\\outlook.exe"``
 
-``or "%ProgramFiles(x86)%\Microsoft Office\Office14\outlook.exe"``
+``or "%ProgramFiles(x86)%\\Microsoft Office\\Office14\\outlook.exe"``
 
-``Social Connectors and other Add-ons are specific to 32 or 64-bit editions. 32-bit compiled add-ons will not work in 64-bit office. See Microsoft notes on this \[Link here]``
+``Social Connectors and other Add-ons are specific to 32 or 64-bit editions. 32-bit compiled add-ons will not work in 64-bit office. See Microsoft notes on this \\[Link here]``
 
-``Calendar settings, Working Hours\[12]``
+``Calendar settings, Working Hours\\[12]``
 
-``HKCU\Software\Microsoft\Office\12.0\Outlook\Options\Calendar\CalDefStart``
+``HKCU\\Software\\Microsoft\\Office\\12.0\\Outlook\\Options\\Calendar\\CalDefStart``
 
-``HKCU\Software\Microsoft\Office\12.0\Outlook\Options\Calendar\CalDefEnd``
+``HKCU\\Software\\Microsoft\\Office\\12.0\\Outlook\\Options\\Calendar\\CalDefEnd``
 
 **Outlook command line switches**
 
-``cannot use "%ProgramFiles%\Microsoft Office\Office14\outlook.exe" /?``
+``cannot use "%ProgramFiles%\\Microsoft Office\\Office14\\outlook.exe" /?``
 
-``sWITCHES DETAILED IN Appendix \_?\_``
+``sWITCHES DETAILED IN Appendix \\\_?\\\_``
 
 .PRF file for Outlook profile
 
@@ -3232,7 +3232,7 @@ outlook.exe /importprf MigrateEmail.PRF
 
 **Security and Attachment file types**
 
-``Attachment file types blocked by Outlook\[13] in the Group 1``
+``Attachment file types blocked by Outlook\\[13] in the Group 1``
 
 Another published Link to Microsoft’s most up to date list
 
@@ -3336,74 +3336,74 @@ The following table identifies the file types that Outlook blocks by default.
 
 Auto-Complete List (File, Options, Mail, Send Messages, Empty Auto-Complete List)
 
-``.NK2 see NirSoft\[14]``
+``.NK2 see NirSoft\\[14]``
 
 Outlook Contacts Auto-Complete List
 
 The Auto-Complete List is a feature which displays suggestions for names and e-mail addresses as you begin to type them. These suggestions are possible matches from a list of names and e-mail addresses from the e-mail messages that you have sent.
 
-In Outlook 2010, the Auto-Complete List file (.nk2) is discontinued. The Auto-Complete List entries are now saved in your Microsoft Exchange Server mailbox or for POP3, IMAP, or Hotmail & Windows Live accounts, in the Outlook Data File (.pst) for your account.
+In Outlook 2010, the Auto-Complete List file (.nk2) is discontinued. The Auto-Complete List entries are now saved in your Microsoft Exchange Server mailbox or for POP3, IMAP, or Hotmail \\& Windows Live accounts, in the Outlook Data File (.pst) for your account.
 
 Temp folder for Outlook attachments
 
-``HKCU\Software\Microsoft\Office\12.0\Outlook\Security``
+``HKCU\\Software\\Microsoft\\Office\\12.0\\Outlook\\Security``
 
-``C:\Users\\_\<UserName>_\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Outlook\\_\<random value>_\\``
+``C:\\Users\\\\\_\\<UserName>\_\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files\\Content.Outlook\\\\\_\\<random value>\_\\\\``
 
 **Personal Storage and Offline Storage**
 
 **Outlook Data File .PST**
 
-``Earlier Outlook on XP, C:\Documents and Settings\\\<UserName>\Local Settings\Application Data\Microsoft\Outlook``
+``Earlier Outlook on XP, C:\\Documents and Settings\\\\\\<UserName>\\Local Settings\\Application Data\\Microsoft\\Outlook``
 
-``Earlier Outlook on Vista C:\Users\\_user_\AppData\Local\Microsoft\Outlook``
+``Earlier Outlook on Vista C:\\Users\\\\\_user\_\\AppData\\Local\\Microsoft\\Outlook``
 
-``For Outlook 2010, C:\Users\\\<Username>\Documents\Outlook``
+``For Outlook 2010, C:\\Users\\\\\\<Username>\\Documents\\Outlook``
 
 Offline Outlook Mailbox
 
-``C:\Users\\_\<user name>_\AppData\Local\Microsoft\Outlook\outlook.ost``
+``C:\\Users\\\\\_\\<user name>\_\\AppData\\Local\\Microsoft\\Outlook\\outlook.ost``
 
 **Outlook Data File .OST**
 
 If you enable use Cached Exchange Mode or to work offline, items in your Exchange mailbox are copied in an offline Outlook Data File (.ost)
 
-``Outlook on XP, C:\Documents and Settings\\_\<UserName>_\Local Settings\Application Data\Microsoft\Outlook``
+``Outlook on XP, C:\\Documents and Settings\\\\\_\\<UserName>\_\\Local Settings\\Application Data\\Microsoft\\Outlook``
 
-``Outlook on Vista C:\Users\\_user_\AppData\Local\Microsoft\Outlook``
+``Outlook on Vista C:\\Users\\\\\_user\_\\AppData\\Local\\Microsoft\\Outlook``
 
 **Outlook Archive**
 
-``Outlook 2010 stores PST in Documents\Email folder?``
+``Outlook 2010 stores PST in Documents\\Email folder?``
 
 **Microsoft Outlook Inbox Repair Tool**
 
-``PST file repair "C:\Program Files\Microsoft Office\Office14\SCANPST.EXE"``
+``PST file repair "C:\\Program Files\\Microsoft Office\\Office14\\SCANPST.EXE"``
 
 **Outlook Temp directory**
 
-``for opening attachments C:\Users\\_\<UserName>_\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Outlook``
+``for opening attachments C:\\Users\\\\\_\\<UserName>\_\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files\\Content.Outlook``
 
 **Outlook logging (troubleshooting)**
 
-``Diagnostics log location\[15] (File, Options, Advanced, Other, Enable troubleshooting logging)``
+``Diagnostics log location\\[15] (File, Options, Advanced, Other, Enable troubleshooting logging)``
 
 The calendar log file is a binary file that cannot be read without a conversion process. Contact Microsoft Support.
 
 MAPI (Exchange), POP3, and SMTP log file:
 
-``* Windows Vista & 7 - c:\Users\\_user name_\AppData\Local\Temp\Outlook Logging\OPMLog.log``
-``* Windows XP - c:\Documents and Settings\\_user name_\Local Settings\Temp\Outlook Logging\OPMLog.log``
-``* %temp%\olkas\yymmdd-time-fb.log ?``
+``* Windows Vista \\& 7 - c:\\Users\\\\\_user name\_\\AppData\\Local\\Temp\\Outlook Logging\\OPMLog.log``
+``* Windows XP - c:\\Documents and Settings\\\\\_user name\_\\Local Settings\\Temp\\Outlook Logging\\OPMLog.log``
+``* %temp%\\olkas\\yymmdd-time-fb.log ?``
 
 IMAP transport name is similar to:
 
-``* Windows Vista & 7 - c:\Users\\_user name_\AppData\Local\Temp\Outlook Logging\IMAP-ExampleCom-07\_19\_2012-14\_03\_44\_865.log``
-``* Windows XP - c:\Documents and Settings\\_user name_\Local Settings\Temp\Outlook Logging\IMAP-ExampleCom-07\_19\_2012-14\_03\_44\_865.log``
+``* Windows Vista \\& 7 - c:\\Users\\\\\_user name\_\\AppData\\Local\\Temp\\Outlook Logging\\IMAP-ExampleCom-07\\\_19\\\_2012-14\\\_03\\\_44\\\_865.log``
+``* Windows XP - c:\\Documents and Settings\\\\\_user name\_\\Local Settings\\Temp\\Outlook Logging\\IMAP-ExampleCom-07\\\_19\\\_2012-14\\\_03\\\_44\\\_865.log``
 
 Outlook Profile
 
-``HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows Messaging Subsystem\Profiles``
+``HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows Messaging Subsystem\\Profiles``
 
 Microsoft Outlook Configuration Analyzer Tool 2.0 (OCAT)
 
@@ -3415,9 +3415,9 @@ Test E-mail AutoConfiguration...
 
 **Personal Address Book (.PAB)**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Local\Microsoft\Outlook``
+``**Windows 7 and Windows Vista** \_drive\_:\\Users\\\\\_user\_\\AppData\\Local\\Microsoft\\Outlook``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Local Settings\Application Data\Microsoft\Outlook``
+``**Windows XP** \_drive\_:\\Documents and Settings\\\\\_user\_\\Local Settings\\Application Data\\Microsoft\\Outlook``
 
 Personal Address Books (.pab) are not supported in Outlook 2010. When you upgrade to Outlook 2010, you are prompted to import any .pab file into Contacts. If you choose not to import the .pab file when you first run Outlook 2010, you can import it later by using the **Import** command in the Microsoft Office Backstage view.
 
@@ -3427,29 +3427,29 @@ The Offline Address Book (.oab) is used by Microsoft Exchange Server accounts. I
 
 You do not have to back up or restore this file. This is file is created and updated automatically.
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Local\Microsoft\Outlook``
+``**Windows 7 and Windows Vista** \_drive\_:\\Users\\\\\_user\_\\AppData\\Local\\Microsoft\\Outlook``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Local Settings\Application Data\Microsoft\Outlook``
+``**Windows XP** \_drive\_:\\Documents and Settings\\\\\_user\_\\Local Settings\\Application Data\\Microsoft\\Outlook``
 
 **Navigation Pane settings (.xml)**
 
 This file includes information about the contents of the Navigation Pane.
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Roaming\Outlook\\_profile name_.xml``
+``**Windows 7 and Windows Vista** \_drive\_:\\Users\\\\\_user\_\\AppData\\Roaming\\Outlook\\\\\_profile name\_.xml``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Application Data\Microsoft\Outlook\\_profile name_.xml``
+``**Windows XP** \_drive\_:\\Documents and Settings\\\\\_user\_\\Application Data\\Microsoft\\Outlook\\\\\_profile name\_.xml``
 
 **Registered Microsoft Exchange extensions (.dat)**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Local\Microsoft\Outlook``
+``**Windows 7 and Windows Vista** \_drive\_:\\Users\\\\\_user\_\\AppData\\Local\\Microsoft\\Outlook``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Local Settings\Application Data\Microsoft\Outlook``
+``**Windows XP** \_drive\_:\\Documents and Settings\\\\\_user\_\\Local Settings\\Application Data\\Microsoft\\Outlook``
 
 **Rules (.rwz)**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Roaming\Microsoft\Outlook``
+``**Windows 7 and Windows Vista** \_drive\_:\\Users\\\\\_user\_\\AppData\\Roaming\\Microsoft\\Outlook``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Application Data\Microsoft\Outlook``
+``**Windows XP** \_drive\_:\\Documents and Settings\\\\\_user\_\\Application Data\\Microsoft\\Outlook``
 
 **Note** If you upgraded to Outlook 2010 from a version of Outlook earlier than Microsoft Outlook 2002, you might have an .rwz file on your computer's hard disk drive. The .rwz file is no longer needed, and the information about rules is now kept on the server running Microsoft Exchange, and in the Outlook Data File (.pst) for POP3 and IMAP e-mail accounts. You can delete the file.
 
@@ -3457,77 +3457,77 @@ If you use the Rules Import and Export feature, the default location for .rwz fi
 
 **Print styles (Outlprnt with no extension)**
 
-``**Windows Vista** _drive_:\Users\\_user_\AppData\Roaming\Microsoft\Outlook``
+``**Windows Vista** \_drive\_:\\Users\\\\\_user\_\\AppData\\Roaming\\Microsoft\\Outlook``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Application Data\Microsoft\Outlook``
+``**Windows XP** \_drive\_:\\Documents and Settings\\\\\_user\_\\Application Data\\Microsoft\\Outlook``
 
 **Signatures (.rtf, .txt, .htm)**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Roaming\Microsoft\Signatures``
+``**Windows 7 and Windows Vista** \_drive\_:\\Users\\\\\_user\_\\AppData\\Roaming\\Microsoft\\Signatures``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Application Data\Microsoft\Signatures``
+``**Windows XP** \_drive\_:\\Documents and Settings\\\\\_user\_\\Application Data\\Microsoft\\Signatures``
 
 A signature named “Company default” will generate the following files and folder structure.
 
-``C:\Users\UserName\AppData\Roaming\Microsoft\Signatures\\``
+``C:\\Users\\UserName\\AppData\\Roaming\\Microsoft\\Signatures\\\\``
 
-├Company default.htm
+---
 
-├Company default.rtf
+---
 
-├Company default.txt
+---
 
-``└Company default\_files\\``
+``-Company default\\\_files\\\\``
 
-├colorschememapping.xml
+---
 
-├filelist.xml
+---
 
-└themedata.thmx
+---
 
 **Stationery (.htm)**
 
 If installed, and personal or computer-wide.
 
-``**Windows 7 and Windows Vista** _drive_:\Program Files\Common Files\Microsoft Shared\Stationery``
+``**Windows 7 and Windows Vista** \_drive\_:\\Program Files\\Common Files\\Microsoft Shared\\Stationery``
 
-``**Windows 7 and Windows Vista 64-bit with Outlook 2010 32-bit** _drive_:\Program Files (x86)\Common Files\Microsoft Shared\Stationery``
+``**Windows 7 and Windows Vista 64-bit with Outlook 2010 32-bit** \_drive\_:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Stationery``
 
-``**Windows XP** _drive_:\Program Files\Common Files\Microsoft Shared\Stationery``
+``**Windows XP** \_drive\_:\\Program Files\\Common Files\\Microsoft Shared\\Stationery``
 
-``C:\Users\UserName\AppData\Roaming\Microsoft\Stationery``
+``C:\\Users\\UserName\\AppData\\Roaming\\Microsoft\\Stationery``
 
 **Custom forms**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Local\Microsoft\Forms``
+``**Windows 7 and Windows Vista** \_drive\_:\\Users\\\\\_user\_\\AppData\\Local\\Microsoft\\Forms``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Local Settings\Application Data\Microsoft\Forms``
+``**Windows XP** \_drive\_:\\Documents and Settings\\\\\_user\_\\Local Settings\\Application Data\\Microsoft\\Forms``
 
 Forms
 
-``Program Files\\\<Office folder>\Office 14\Forms\\\<language ID>``
+``Program Files\\\\\\<Office folder>\\Office 14\\Forms\\\\\\<language ID>``
 
 .ico, cfg, see SCL.CFG commonly used for Exchange/Outlook spam confidence level
 
 **Send/Receive settings (.srs)**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Roaming\Microsoft\Outlook``
+``**Windows 7 and Windows Vista** \_drive\_:\\Users\\\\\_user\_\\AppData\\Roaming\\Microsoft\\Outlook``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Application Data\Microsoft\Outlook``
+``**Windows XP** \_drive\_:\\Documents and Settings\\\\\_user\_\\Application Data\\Microsoft\\Outlook``
 
-``\<Profile Name>.srs``
+``\\<Profile Name>.srs``
 
 **Message (.msg, .htm, .rtf)**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\Documents``
+``**Windows 7 and Windows Vista** \_drive\_:\\Users\\\\\_user\_\\Documents``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\My Documents``
+``**Windows XP** \_drive\_:\\Documents and Settings\\\\\_user\_\\My Documents``
 
 **.PRF file for Outlook profile**
 
-``"%ProgramFiles%\Microsoft Office\Office14\outlook.exe" /importprf %LogonServer%\NETLOGON\MigrateEmail.PRF``
+``"%ProgramFiles%\\Microsoft Office\\Office14\\outlook.exe" /importprf %LogonServer%\\NETLOGON\\MigrateEmail.PRF``
 
-``"%ProgramFiles(x86)%\Microsoft Office\Office14\outlook.exe" /importprf %LogonServer%\NETLOGON\MigrateEmail.PRF``
+``"%ProgramFiles(x86)%\\Microsoft Office\\Office14\\outlook.exe" /importprf %LogonServer%\\NETLOGON\\MigrateEmail.PRF``
 
 Use[ ](http://technet.microsoft.com/en-us/library/cc772168.aspx#heading=h.96ds1q77m2pr)[Microsoft Office Customization Tool](http://technet.microsoft.com/en-us/library/cc753151.aspx#heading=h.96ds1q77m2pr) for creating Outlook Profiles (.PRF)
 
@@ -3541,7 +3541,7 @@ MRMAPI
 
 Files recently accessed by Windows Media Player
 
-``HKCU\Software\Microsoft\MediaPlayer\Player\RecentFileList``
+``HKCU\\Software\\Microsoft\\MediaPlayer\\Player\\RecentFileList``
 
 (XP Only?)
 
@@ -3565,73 +3565,73 @@ How to Backup and Restore Windows Media Player DRM Licenses or Media Usage Right
 
 **User Profile**
 
-``C:\Users\\\<UserName>\AppData\Roaming\Mozilla\Firefox\Profiles``
+``C:\\Users\\\\\\<UserName>\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles``
 
-``%APPDATA%\Mozilla\Firefox\Profiles\\``
+``%APPDATA%\\Mozilla\\Firefox\\Profiles\\\\``
 
 **Bookmarks**
 
-``Firefox bookmarks (favorites)\[16]``
+``Firefox bookmarks (favorites)\\[16]``
 
 The places.sqlite file contains all your Firefox bookmarks and the list of all the websites you’ve visited.
 
 **Custom Dictionary**
 
-``C:\users\\\[username]\AppData\Roaming\Mozilla\Firefox\Profiles\\\[unique-alphanumeric-string].default\persdict.dat``
+``C:\\users\\\\\\[username]\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\\\\\[unique-alphanumeric-string].default\\persdict.dat``
 
-``C:\Documents and Settings\\\[username]\ApplicationData\Mozilla\Firefox\Profiles\\\[unique-alphanumeric-string].default\persdict.dat``
+``C:\\Documents and Settings\\\\\\[username]\\ApplicationData\\Mozilla\\Firefox\\Profiles\\\\\\[unique-alphanumeric-string].default\\persdict.dat``
 
 Firefox:
 
-``C:\Users\\\<user name>\AppData\Local\Mozilla\Firefox\Profiles\\\<some profile number>.default\\``
+``C:\\Users\\\\\\<user name>\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\\\\\<some profile number>.default\\\\``
 
-``\*.sqllite files``
+``\\*.sqllite files``
 
 SQLLiteStudio or http://www.sqlite.org/cvstrac/wiki?p=ManagementTools
 
 Firefox Cached Pages
 
-``C:\Users\\\<user name>\AppData\Local\Mozilla\Firefox\Profiles\\\<some profile number>.default\Cache``
+``C:\\Users\\\\\\<user name>\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\\\\\<some profile number>.default\\Cache``
 
 [http://www.securityfocus.com/infocus/1832](http://www.securityfocus.com/infocus/1832)
 
 Firefox Form History File
 
-``C:\Users\\\<user name>\AppData\Roaming\Mozilla\Firefox\Profiles\\\<some profile number>.default\formhistory.sqlite``
+``C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\\\\\<some profile number>.default\\formhistory.sqlite``
 
 Firefox Passwords File
 
-``C:\Users\\\<user name>\AppData\Roaming\Mozilla\Firefox\Profiles\\\<some profile number>.default\signons.sqlite``
+``C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\\\\\<some profile number>.default\\signons.sqlite``
 
 Firefox Cookies
 
-``C:\Users\\\<user name>\AppData\Roaming\Mozilla\Firefox\Profiles\\\<some profile number>.default\cookies.sqlite``
+``C:\\Users\\\\\\<user name>\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\\\\\<some profile number>.default\\cookies.sqlite``
 
 #### Adobe Flash Player {#h.itnceweu7188" id="h.itnceweu7188
 
 Flash Cookies Location
 
-``C:\Users\\\<username>\AppData\Roaming\Macromedia\Flash Player\\#SharedObjects\\\<random value>\\``
+``C:\\Users\\\\\\<username>\\AppData\\Roaming\\Macromedia\\Flash Player\\\\#SharedObjects\\\\\\<random value>\\\\``
 
 Adobe Flash Player Update Configuration
 
 Adobe Flash Player Background Updater
 
-``C:\Windows\System32\Macromed\Flash\mms.cfg``
+``C:\\Windows\\System32\\Macromed\\Flash\\mms.cfg``
 
-``C:\Windows\SysWOW64\Macromed\Flash\mms.cfg``
+``C:\\Windows\\SysWOW64\\Macromed\\Flash\\mms.cfg``
 
-``Administrator Guide\[17]``
+``Administrator Guide\\[17]``
 
 #### Apple iTunes {#h.79jwcyc34i7c" id="h.79jwcyc34i7c
 
-``Beginning with new installations of version 10.? C:\Users\UserName\Music\iTunes\iTunes Media``
+``Beginning with new installations of version 10.? C:\\Users\\UserName\\Music\\iTunes\\iTunes Media``
 
-``Music C:\Users\UserName\Music\iTunes\iTunes Media\Music``
+``Music C:\\Users\\UserName\\Music\\iTunes\\iTunes Media\\Music``
 
 AudioBooks
 
-``Pickup Folder (Automatically add to itunes) C:\Users\UserName\Music\iTunes\iTunes Media\Automatically Add to iTunes``
+``Pickup Folder (Automatically add to itunes) C:\\Users\\UserName\\Music\\iTunes\\iTunes Media\\Automatically Add to iTunes``
 
 Books
 
@@ -3643,40 +3643,40 @@ Movies
 
 TV Shows
 
-``Compilations C:\Users\UserName\Music\iTunes\iTunes Media\Music\Compilations``
+``Compilations C:\\Users\\UserName\\Music\\iTunes\\iTunes Media\\Music\\Compilations``
 
 Apps
 
-``Device backups C:\Users\UserName\AppData\Roaming\Apple Computer\MobileSync\Backup\78193d251bbc7f3bb18de246a16b8fe6ceba2cf7\ and .\Manifest.mbdb``
+``Device backups C:\\Users\\UserName\\AppData\\Roaming\\Apple Computer\\MobileSync\\Backup\\78193d251bbc7f3bb18de246a16b8fe6ceba2cf7\\ and .\\Manifest.mbdb``
 
-``Device firmware updates C:\Users\\_UserName_\AppData\Roaming\Apple Computer\iTunes\iPod Software Updates``
+``Device firmware updates C:\\Users\\\\\_UserName\_\\AppData\\Roaming\\Apple Computer\\iTunes\\iPod Software Updates``
 
-``Apple Software Updates C:\Users\\_UserName_\AppData\Local\Apple\Apple Software Update``
+``Apple Software Updates C:\\Users\\\\\_UserName\_\\AppData\\Local\\Apple\\Apple Software Update``
 
-``iTunes Library files (\*.itl)\[18] \[sql lite] C:\Users\\_UserName_\Music\iTunes\iTunes Library.itl``
+``iTunes Library files (\\*.itl)\\[18] \\[sql lite] C:\\Users\\\\\_UserName\_\\Music\\iTunes\\iTunes Library.itl``
 
-``iTunes Library file XML C:\Users\\_UserName_\Music\iTunes\iTunes Music Library.xml``
+``iTunes Library file XML C:\\Users\\\\\_UserName\_\\Music\\iTunes\\iTunes Music Library.xml``
 
-``Cover images C:\Users\\_UserName_\Music\iTunes\Album Artwork``
+``Cover images C:\\Users\\\\\_UserName\_\\Music\\iTunes\\Album Artwork``
 
-``the iTunes configuration files (delete the “SC Info.sidb” file)\[19]``
+``the iTunes configuration files (delete the “SC Info.sidb” file)\\[19]``
 
-``* The preference files for Windows Vista and 7\[20] live here:\``
-``C:\Users\username\AppData\Local\Apple Computer\iTunes\``
-``C:\Users\username\AppData\Roaming\Apple Computer\iTunes``
-``* In Windows XP and 2000 the iTunes preference files\[21] are here:\``
-``C:\Documents and Settings\username\Application Data\Apple Computer\iTunes\``
-``C:\Documents and Settings\username\Local Settings\Application Data\Apple Computer\iTunes``
-``* In Windows XP and 2000 the iTunes configuration files\[22] are here:\``
-``C:\Documents and Settings\All Users\Application Data\Apple Computer\iTunes\SC Info``
+``* The preference files for Windows Vista and 7\\[20] live here:\\``
+``C:\\Users\\username\\AppData\\Local\\Apple Computer\\iTunes\\``
+``C:\\Users\\username\\AppData\\Roaming\\Apple Computer\\iTunes``
+``* In Windows XP and 2000 the iTunes preference files\\[21] are here:\\``
+``C:\\Documents and Settings\\username\\Application Data\\Apple Computer\\iTunes\\``
+``C:\\Documents and Settings\\username\\Local Settings\\Application Data\\Apple Computer\\iTunes``
+``* In Windows XP and 2000 the iTunes configuration files\\[22] are here:\\``
+``C:\\Documents and Settings\\All Users\\Application Data\\Apple Computer\\iTunes\\SC Info``
 
 Devices
 
-``C:\Users\UserName\AppData\Local\Apple Computer\iTunes\iPodDevices.xml``
+``C:\\Users\\UserName\\AppData\\Local\\Apple Computer\\iTunes\\iPodDevices.xml``
 
 **iCloud**
 
-``Photostream My Pictures\Photostream\My Photostream ?``
+``Photostream My Pictures\\Photostream\\My Photostream ?``
 
 **Safari**
 
@@ -3684,23 +3684,23 @@ Devices
 
 **Offline MSI Installer files**
 
-``Java doesn’t provide downloads of MSI files. They can be located here during/after installation\[23]``
+``Java doesn’t provide downloads of MSI files. They can be located here during/after installation\\[23]``
 
-``C:\Users\\\<user>\AppData\LocalLow\Sun\Java\jre1.7.0\_09\jre1.7.0\_09.msi``
+``C:\\Users\\\\\\<user>\\AppData\\LocalLow\\Sun\\Java\\jre1.7.0\\\_09\\jre1.7.0\\\_09.msi``
 
-``C:\Documents and Settings\\\<user>\Local Settings\ApplicationData\Sun\Java\jre1.6.0\_37\_x64\jre1.6.0\_37.msi``
+``C:\\Documents and Settings\\\\\\<user>\\Local Settings\\ApplicationData\\Sun\\Java\\jre1.6.0\\\_37\\\_x64\\jre1.6.0\\\_37.msi``
 
 **Autoupdate Registry key**
 
-``HKLM\SOFTWARE\JavaSoft\Java Update\Policy\EnableJavaUpdate=0``
+``HKLM\\SOFTWARE\\JavaSoft\\Java Update\\Policy\\EnableJavaUpdate=0``
 
-``HKLM\SOFTWARE\WOW6432Node\JavaSoft\Java Update\Policy\EnableJavaUpdate=0``
+``HKLM\\SOFTWARE\\WOW6432Node\\JavaSoft\\Java Update\\Policy\\EnableJavaUpdate=0``
 
 **Java Temporary files**
 
-``Jar file cache\[24] (Good to clean in case of virus?)``
+``Jar file cache\\[24] (Good to clean in case of virus?)``
 
-``Java 6 or 7, Windows Vista or above C:\Users\UserName\AppData\LocalLow\Sun\Java\Deployment\cache``
+``Java 6 or 7, Windows Vista or above C:\\Users\\UserName\\AppData\\LocalLow\\Sun\\Java\\Deployment\\cache``
 
 **High-Security Option**
 
@@ -3708,11 +3708,11 @@ Security files area for getting higher level security certificates.
 
 Also settings to help protect from exploits
 
-``HKCU\Software\AppDataLow\Software\JavaSoft\DeploymentProperties\\"deployment.security.level"="HIGH"``
+``HKCU\\Software\\AppDataLow\\Software\\JavaSoft\\DeploymentProperties\\\\"deployment.security.level"="HIGH"``
 
-``Setting the Security Level of the Java Client\[25]``
+``Setting the Security Level of the Java Client\\[25]``
 
-``jre-7u10-windows-i586.exe with flags: /s WEB\_JAVA=1 WEB\_JAVA\_SECURITY\_LEVEL=H``
+``jre-7u10-windows-i586.exe with flags: /s WEB\\\_JAVA=1 WEB\\\_JAVA\\\_SECURITY\\\_LEVEL=H``
 
 **Install**
 
@@ -3724,23 +3724,23 @@ Command Line: (see msiexec)
 
 Windows ® Installer. V 5.0.7601.17514
 
-``msiexec /Option \<Required Parameter> \[Optional Parameter]``
+``msiexec /Option \\<Required Parameter> \\[Optional Parameter]``
 
 Install Options
 
-\</package | /i> \<Product.msi>
+\\</package | /i> \\<Product.msi>
 
 Installs or configures a product
 
-``/a \<Product.msi>``
+``/a \\<Product.msi>``
 
 Administrative install - Installs a product on the network
 
-/j\<u|m> \<Product.msi> \[/t \<Transform List>] \[/g \<Language ID>]
+/j\\<u|m> \\<Product.msi> \\[/t \\<Transform List>] \\[/g \\<Language ID>]
 
 Advertises a product - m to all users, u to current user
 
-\</uninstall | /x> \<Product.msi | ProductCode>
+\\</uninstall | /x> \\<Product.msi | ProductCode>
 
 Uninstalls the product
 
@@ -3754,7 +3754,7 @@ Quiet mode, no user interaction
 
 Unattended mode - progress bar only
 
-/q\[n|b|r|f]
+/q\\[n|b|r|f]
 
 Sets user interface level
 
@@ -3786,7 +3786,7 @@ Always restart the computer after installation
 
 Logging Options
 
-/l\[i|w|e|a|r|u|c|m|o|p|v|x|+|!|\*] \<LogFile>
+/l\\[i|w|e|a|r|u|c|m|o|p|v|x|+|!|\\*] \\<LogFile>
 
 i - Status messages
 
@@ -3812,29 +3812,29 @@ v - Verbose output
 
 x - Extra debugging information
 
-``\+ - Append to existing log file``
+``\\+ - Append to existing log file``
 
 ! - Flush each line to the log
 
-``\* - Log all information, except for v and x options``
+``\\* - Log all information, except for v and x options``
 
-``/log \<LogFile>``
+``/log \\<LogFile>``
 
-``Equivalent of /l\* \<LogFile>``
+``Equivalent of /l\\* \\<LogFile>``
 
 Update Options
 
-``/update \<Update1.msp>\[;Update2.msp]``
+``/update \\<Update1.msp>\\[;Update2.msp]``
 
 Applies update(s)
 
-/uninstall \<PatchCodeGuid>\[;Update2.msp] /package \<Product.msi | ProductCode>
+/uninstall \\<PatchCodeGuid>\\[;Update2.msp] /package \\<Product.msi | ProductCode>
 
 Remove update(s) for a product
 
 Repair Options
 
-/f\[p|e|c|m|s|o|d|a|u|v] \<Product.msi | ProductCode>
+/f\\[p|e|c|m|s|o|d|a|u|v] \\<Product.msi | ProductCode>
 
 Repairs a product
 
@@ -3860,7 +3860,7 @@ v - runs from source and recaches local package
 
 Setting Public Properties
 
-``\[PROPERTY=PropertyValue]``
+``\\[PROPERTY=PropertyValue]``
 
 Consult the Windows ® Installer SDK for additional documentation on the
 
@@ -3878,7 +3878,7 @@ Default folder for extracted drivers
 
 Digital Line Detect
 
-``Internet Name Lookup helper \<sp>``
+``Internet Name Lookup helper \\<sp>``
 
 #### HP {#h.276naol8b2it" id="h.276naol8b2it
 
@@ -3886,13 +3886,13 @@ Default folder for extracted drivers (SPnnnn files and printer drivers)
 
 ### Microsoft Servers and Windows Services {#h.9myl42igo6cu" id="h.9myl42igo6cu
 
-``See appendix \_ for list of all Windows components, features, roles``
+``See appendix \\\_ for list of all Windows components, features, roles``
 
 #### DNS Server {#h.eit8y2gyf1cb" id="h.eit8y2gyf1cb
 
-``C:\Windows\System32\dns``
+``C:\\Windows\\System32\\dns``
 
-``C:\Windows\System32\dns\backup``
+``C:\\Windows\\System32\\dns\\backup``
 
 **DNS Server Tools**
 
@@ -3900,19 +3900,19 @@ Ddnscmd.exe
 
 **Backup/Export AD integrated zone to text file**
 
-``DnsCmd \<ServerName> /ZoneExport \<ZoneName> \<ZoneExportFile>``
+``DnsCmd \\<ServerName> /ZoneExport \\<ZoneName> \\<ZoneExportFile>``
 
 **Enable GlobalNames zone support**
 
 dnscmd . /config /enableglobalnamessupport 1
 
-``HKLM\SYSTEM\CurrentControlSet\services\DNS\Parameters\EnableGlobalNamesSupport = 1``
+``HKLM\\SYSTEM\\CurrentControlSet\\services\\DNS\\Parameters\\EnableGlobalNamesSupport = 1``
 
 #### DHCP Server {#h.sd91ba4gx9g2" id="h.sd91ba4gx9g2
 
-``%systemroot%\System32\dhcp\backup``
+``%systemroot%\\System32\\dhcp\\backup``
 
-``HKLM\SYSTEM\CurrentControlSet\Services\DHCPServer\Parameters``
+``HKLM\\SYSTEM\\CurrentControlSet\\Services\\DHCPServer\\Parameters``
 
 **DHCP Server Tools**
 
@@ -3920,17 +3920,17 @@ DHCP Server Tools includes the DHCP Management Console, the DHCP Server cmdlet m
 
 #### Exchange, SMTP, POP3 Servers {#h.p2aanbf91fkj" id="h.p2aanbf91fkj
 
-``C:\inetpub\mailroot``
+``C:\\inetpub\\mailroot``
 
-``C:\inetpub\mailroot\Badmail must be manually cleaned or spam will fill disk``
+``C:\\inetpub\\mailroot\\Badmail must be manually cleaned or spam will fill disk``
 
-``C:\inetpub\mailroot\Drop local delivery\[26]``
+``C:\\inetpub\\mailroot\\Drop local delivery\\[26]``
 
-``C:\inetpub\mailroot\Pickup starting point for outgoing mail\[27]``
+``C:\\inetpub\\mailroot\\Pickup starting point for outgoing mail\\[27]``
 
-``C:\inetpub\mailroot\Queue``
+``C:\\inetpub\\mailroot\\Queue``
 
-``C:\Windows\System32\LogFiles\SMTPSVC1 SMTP logs``
+``C:\\Windows\\System32\\LogFiles\\SMTPSVC1 SMTP logs``
 
 ex??????.log files
 
@@ -3938,7 +3938,7 @@ POP3 mailboxes
 
 **ESEUTIL**
 
-``C:\Program Files\Microsoft\Exchange Server\V14\Bin``
+``C:\\Program Files\\Microsoft\\Exchange Server\\V14\\Bin``
 
 Extensible Storage Engine Utilities for Microsoft(R) Exchange Server
 
@@ -3950,21 +3950,21 @@ DESCRIPTION: Database utilities for the Extensible Storage Engine for Microsoft(
 
 MODES OF OPERATION:
 
-``Defragmentation: ESEUTIL /d \<database name> \[options]``
+``Defragmentation: ESEUTIL /d \\<database name> \\[options]``
 
-``Recovery: ESEUTIL /r \<logfile base name> \[options]``
+``Recovery: ESEUTIL /r \\<logfile base name> \\[options]``
 
-``Integrity: ESEUTIL /g \<database name> \[options]``
+``Integrity: ESEUTIL /g \\<database name> \\[options]``
 
-``Checksum: ESEUTIL /k \<file name> \[options]``
+``Checksum: ESEUTIL /k \\<file name> \\[options]``
 
-``Repair: ESEUTIL /p \<database name> \[options]``
+``Repair: ESEUTIL /p \\<database name> \\[options]``
 
-``File Dump: ESEUTIL /m\[mode-modifier] \<filename>``
+``File Dump: ESEUTIL /m\\[mode-modifier] \\<filename>``
 
-``Copy File: ESEUTIL /y \<source file> \[options]``
+``Copy File: ESEUTIL /y \\<source file> \\[options]``
 
-``Restore: ESEUTIL /c\[mode-modifier] \<path name> \[options]``
+``Restore: ESEUTIL /c\\[mode-modifier] \\<path name> \\[options]``
 
 <<<<< Press a key for more help >>>>>
 
@@ -3972,7 +3972,7 @@ D=Defragmentation, R=Recovery, G=inteGrity, K=checKsum,
 
 P=rePair, M=file duMp, Y=copY file, C=restore
 
-``\=>``
+``\\=>``
 
 #### Windows Update Server {#h.vhis7vg15mnt" id="h.vhis7vg15mnt
 
@@ -3994,11 +3994,11 @@ Windows Server Update Services Tools include the Windows Server Update Services 
 
 WsusDBHideHidden.sql
 
-``WsusDBMaintenance.sql _Source\[28]_``
+``WsusDBMaintenance.sql \_Source\\[28]\_``
 
-``"c:\Program Files\Microsoft SQL Server\90\Tools\binn\SQLCMD.EXE" -S np:\\\\.\pipe\MSSQL$MICROSOFT##SSEE\sql\query -I -i C:\WSUS\WsusDBHideHidden.sql``
+``"c:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\SQLCMD.EXE" -S np:\\\\\\\\.\\pipe\\MSSQL$MICROSOFT##SSEE\\sql\\query -I -i C:\\WSUS\\WsusDBHideHidden.sql``
 
-``sqlcmd -S np:\\\\.\pipe\MSSQL$MICROSOFT##SSEE\sql\query -I -i C:\WSUS\WsusDBMaintenance.sql``
+``sqlcmd -S np:\\\\\\\\.\\pipe\\MSSQL$MICROSOFT##SSEE\\sql\\query -I -i C:\\WSUS\\WsusDBMaintenance.sql``
 
 Windows Client see the other section above?
 
@@ -4016,7 +4016,7 @@ MDT
 
 DHCP options
 
-**UUID & GUID**
+**UUID \\& GUID**
 
 [https://scriptimus.wordpress.com/2012/03/28/mdt-2012-tip-getting-uuid-serialnumber/](https://scriptimus.wordpress.com/2012/03/28/mdt-2012-tip-getting-uuid-serialnumber/)
 
@@ -4024,7 +4024,7 @@ The last set may often be the MAC address
 
 **Convert**
 
-``\[8 hex]-\[4 hex]-\[4 hex]-\[4 hex]-\[12 hex] (16 bytes?)``
+``\\[8 hex]-\\[4 hex]-\\[4 hex]-\\[4 hex]-\\[12 hex] (16 bytes?)``
 
 Reverse the octet order in the first three words
 
@@ -4052,11 +4052,11 @@ WMIC
 
 File Services Tools include the following: Share and Storage Management Tools; Distributed File System Tools; File Server Resource Manager Tools; Services for NFS Administration Tools; iSCSI management cmdlets for Windows PowerShell
 
-``\- Distributed File System Tools include the DFS Management snap-in, and the **Dfsradmin.exe**, **Dfsrdiag.exe**, **Dfscmd.exe**, **Dfsdiag.exe**, and **Dfsutil.exe** command-line tools.``
+``\\- Distributed File System Tools include the DFS Management snap-in, and the **Dfsradmin.exe**, **Dfsrdiag.exe**, **Dfscmd.exe**, **Dfsdiag.exe**, and **Dfsutil.exe** command-line tools.``
 
-``\- File Server Resource Manager tools include the File Server Resource Manager snap-in, and the **Dirquota.exe**, **Filescrn.exe**, and **Storrept.exe** command line tools.``
+``\\- File Server Resource Manager tools include the File Server Resource Manager snap-in, and the **Dirquota.exe**, **Filescrn.exe**, and **Storrept.exe** command line tools.``
 
-``\- Share and Storage Management Tools include the Share and Storage Management snap-in.``
+``\\- Share and Storage Management Tools include the Share and Storage Management snap-in.``
 
 #### Distributed File System (DFS) {#h.amxths7cmdmm" id="h.amxths7cmdmm
 
@@ -4068,7 +4068,7 @@ DFS Admin Tools listed above/below?
 
 DFS Replication of shared folders will create a temp workspace folder
 
-``\<JUNCTION> D:\UserData\DfsrPrivate \[D:\System Volume Information\DFSR\Private\\{2AB0DFB4-7B9C-4EAE-A77C-``
+``\\<JUNCTION> D:\\UserData\\DfsrPrivate \\[D:\\System Volume Information\\DFSR\\Private\\\\{2AB0DFB4-7B9C-4EAE-A77C-``
 
 1AFF95B5EE9A}-{957BE5CA-9DF9-45C1-8916-7B610DA0C897}]
 
@@ -4076,13 +4076,13 @@ Directory contents:
 
 ConflictAndDeletedManifest.xml
 
-``\<DIR> ConflictAndDeleted``
+``\\<DIR> ConflictAndDeleted``
 
-``\<DIR> Deleted``
+``\\<DIR> Deleted``
 
-``\<DIR> Installing``
+``\\<DIR> Installing``
 
-``\<DIR> Staging``
+``\\<DIR> Staging``
 
 #### Storage Manager {#h.jqv43byvq6fi" id="h.jqv43byvq6fi
 
@@ -4096,61 +4096,61 @@ Storage Manager for SANs Tools include the Storage Manager for SANs snap-in and 
 
 | **File Groups**            | **File Extensions**                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Audio and Video Files\[29] | aac, aif, aiff, asf, asx, au, avi, flac, m3u, mid, midi, mov, mp1, mp2, mp3, mp4, mpa, mpe, mpeg, mpeg2, mpeg3, mpg, ogg, qt, qtw, ram, rm, rmi, rmvb, snd, swf, vob, wav, wax, wma, wmv, wvx                                                                                                                                                                                                                                                                                    |
+| Audio and Video Files\\[29] | aac, aif, aiff, asf, asx, au, avi, flac, m3u, mid, midi, mov, mp1, mp2, mp3, mp4, mpa, mpe, mpeg, mpeg2, mpeg3, mpg, ogg, qt, qtw, ram, rm, rmi, rmvb, snd, swf, vob, wav, wax, wma, wmv, wvx                                                                                                                                                                                                                                                                                    |
 | Backup Files               | bak, bck, bkf, old                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Compressed Files\[30]      | ace, arc, arj, bhx, bz2, cab, gz, gzip, hpk, hqx, jar, lha, lzh, lzx, pak, pit, rar, sea, sit, sqz, tgz, uu, uue, z, zip, zoo                                                                                                                                                                                                                                                                                                                                                    |
+| Compressed Files\\[30]      | ace, arc, arj, bhx, bz2, cab, gz, gzip, hpk, hqx, jar, lha, lzh, lzx, pak, pit, rar, sea, sit, sqz, tgz, uu, uue, z, zip, zoo                                                                                                                                                                                                                                                                                                                                                    |
 | E-mail Files               | eml, idx, mbox, mbx, msg, ost, otf, pab, pst                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Executable Files\[31]      | bat, cmd, com, cpl, exe, inf, js, jse, msh, msi, msp, ocx, pif, pl, ps1, scr, vb, vbs, wsf, wsh                                                                                                                                                                                                                                                                                                                                                                                  |
+| Executable Files\\[31]      | bat, cmd, com, cpl, exe, inf, js, jse, msh, msi, msp, ocx, pif, pl, ps1, scr, vb, vbs, wsf, wsh                                                                                                                                                                                                                                                                                                                                                                                  |
 | Image Files                | bmp, dib, eps, gif, img, jfif, jpe, jpeg, jpg, pcx, png, ps, psd, raw, rif, spiff, tif, tiff                                                                                                                                                                                                                                                                                                                                                                                     |
-| Office Files\[32]          | accdb, accde, accdr, accdt, adn, adp, doc, docm, docx, dot, dotm, dotx, grv, gsa, gta, mad, maf, mda, mda, mda, mdb, mde, mdf, mdf, mdm, mdt, mdw, mdw, mdw, mdz, mpd, mpp, mpt, obt, odb, one, onepkg, pot, potm, potx, ppa, ppam, pps, ppsm, ppsx, ppt, pptm, pptx, pub, pwz, rqy, rtf, rwz, sldm, sldx, slk, thmx, vdx, vsd, vsl, vss, vst, vsu, vsw, vsx, vtx, wbk, wri, xla, xlam, xlb, xlc, xld, xlk, xll, xlm, xls, xlsb, xlsm, xlsx, xlt, xltm, xltx, xlv, xlw, xsf, xsn |
+| Office Files\\[32]          | accdb, accde, accdr, accdt, adn, adp, doc, docm, docx, dot, dotm, dotx, grv, gsa, gta, mad, maf, mda, mda, mda, mdb, mde, mdf, mdf, mdm, mdt, mdw, mdw, mdw, mdz, mpd, mpp, mpt, obt, odb, one, onepkg, pot, potm, potx, ppa, ppam, pps, ppsm, ppsx, ppt, pptm, pptx, pub, pwz, rqy, rtf, rwz, sldm, sldx, slk, thmx, vdx, vsd, vsl, vss, vst, vsu, vsw, vsx, vtx, wbk, wri, xla, xlam, xlb, xlc, xld, xlk, xll, xlm, xls, xlsb, xlsm, xlsx, xlt, xltm, xltx, xlv, xlw, xsf, xsn |
 | System Files               | acm, dll, ocx, sys, vxd                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Temporary Files            | \*.temp, \*.tmp, \~\*                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Text Files\[33]            | asc, text, txt                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Web Page Files\[34]        | asp, aspx, cgi, css, dhtml, hta, htm, html, mht, php, php3, shtml, url                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Temporary Files            | \\*.temp, \\*.tmp, \\~\\*                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Text Files\\[33]            | asc, text, txt                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Web Page Files\\[34]        | asp, aspx, cgi, css, dhtml, hta, htm, html, mht, php, php3, shtml, url                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 Audio and Video Files:
 
-``\*.aac, \*.aif, \*.aiff, \*.asf, \*.asx, \*.au, \*.avi, \*.flac, \*.m3u, \*.mid, \*.midi, \*.mov, \*.mp1, \*.mp2, \*.mp3, \*.mp4, \*.mpa, \*.mpe, \*.mpeg, \*.mpeg2, \*.mpeg3, \*.mpg, \*.ogg, \*.qt, \*.qtw, \*.ram, \*.rm, \*.rmi, \*.rmvb, \*.snd, \*.swf, \*.vob, \*.wav, \*.wax, \*.wma, \*.wmv, \*.wvx``
+``\\*.aac, \\*.aif, \\*.aiff, \\*.asf, \\*.asx, \\*.au, \\*.avi, \\*.flac, \\*.m3u, \\*.mid, \\*.midi, \\*.mov, \\*.mp1, \\*.mp2, \\*.mp3, \\*.mp4, \\*.mpa, \\*.mpe, \\*.mpeg, \\*.mpeg2, \\*.mpeg3, \\*.mpg, \\*.ogg, \\*.qt, \\*.qtw, \\*.ram, \\*.rm, \\*.rmi, \\*.rmvb, \\*.snd, \\*.swf, \\*.vob, \\*.wav, \\*.wax, \\*.wma, \\*.wmv, \\*.wvx``
 
 Backup Files
 
-``\*.bak, \*.bck, \*.bkf, \*.old``
+``\\*.bak, \\*.bck, \\*.bkf, \\*.old``
 
 Compressed Files
 
-``\*.ace, \*.arc, \*.arj, \*.bhx, \*.bz2, \*.cab, \*.gz, \*.gzip, \*.hpk, \*.hqx, \*.jar, \*.lha, \*.lzh, \*.lzx, \*.pak, \*.pit, \*.rar, \*.sea, \*.sit, \*.sqz, \*.tgz, \*.uu, \*.uue, \*.z, \*.zip, \*.zoo``
+``\\*.ace, \\*.arc, \\*.arj, \\*.bhx, \\*.bz2, \\*.cab, \\*.gz, \\*.gzip, \\*.hpk, \\*.hqx, \\*.jar, \\*.lha, \\*.lzh, \\*.lzx, \\*.pak, \\*.pit, \\*.rar, \\*.sea, \\*.sit, \\*.sqz, \\*.tgz, \\*.uu, \\*.uue, \\*.z, \\*.zip, \\*.zoo``
 
 E-mail Files
 
-``\*.eml, \*.idx, \*.mbox, \*.mbx, \*.msg, \*.ost, \*.otf, \*.pab, \*.pst``
+``\\*.eml, \\*.idx, \\*.mbox, \\*.mbx, \\*.msg, \\*.ost, \\*.otf, \\*.pab, \\*.pst``
 
 Executable Files
 
-``\*.bat, \*.cmd, \*.com, \*.cpl, \*.exe, \*.inf, \*.js, \*.jse, \*.msh, \*.msi, \*.msp, \*.ocx, \*.pif, \*.pl, \*.ps1, \*.scr, \*.vb, \*.vbs, \*.wsf, \*.wsh``
+``\\*.bat, \\*.cmd, \\*.com, \\*.cpl, \\*.exe, \\*.inf, \\*.js, \\*.jse, \\*.msh, \\*.msi, \\*.msp, \\*.ocx, \\*.pif, \\*.pl, \\*.ps1, \\*.scr, \\*.vb, \\*.vbs, \\*.wsf, \\*.wsh``
 
 Image Files
 
-``\*.bmp, \*.dib, \*.eps, \*.gif, \*.img, \*.jfif, \*.jpe, \*.jpeg, \*.jpg, \*.pcx, \*.png, \*.ps, \*.psd, \*.raw, \*.rif, \*.spiff, \*.tif, \*.tiff``
+``\\*.bmp, \\*.dib, \\*.eps, \\*.gif, \\*.img, \\*.jfif, \\*.jpe, \\*.jpeg, \\*.jpg, \\*.pcx, \\*.png, \\*.ps, \\*.psd, \\*.raw, \\*.rif, \\*.spiff, \\*.tif, \\*.tiff``
 
 Office Files
 
-``\*.accdb, \*.accde, \*.accdr, \*.accdt, \*.adn, \*.adp, \*.doc, \*.docm, \*.docx, \*.dot, \*.dotm, \*.dotx, \*.grv, \*.gsa, \*.gta, \*.mad, \*.maf, \*.mda, \*.mda, \*.mda, \*.mdb, \*.mde, \*.mdf, \*.mdf, \*.mdm, \*.mdt, \*.mdw, \*.mdw, \*.mdw, \*.mdz, \*.mpd, \*.mpp, \*.mpt, \*.obt, \*.odb, \*.one, \*.onepkg, \*.pot, \*.potm, \*.potx, \*.ppa, \*.ppam, \*.pps, \*.ppsm, \*.ppsx, \*.ppt, \*.pptm, \*.pptx, \*.pub, \*.pwz, \*.rqy, \*.rtf, \*.rwz, \*.sldm, \*.sldx, \*.slk, \*.thmx, \*.vdx, \*.vsd, \*.vsl, \*.vss, \*.vst, \*.vsu, \*.vsw, \*.vsx, \*.vtx, \*.wbk, \*.wri, \*.xla, \*.xlam, \*.xlb, \*.xlc, \*.xld, \*.xlk, \*.xll, \*.xlm, \*.xls, \*.xlsb, \*.xlsm, \*.xlsx, \*.xlt, \*.xltm, \*.xltx, \*.xlv, \*.xlw, \*.xsf, \*.xsn``
+``\\*.accdb, \\*.accde, \\*.accdr, \\*.accdt, \\*.adn, \\*.adp, \\*.doc, \\*.docm, \\*.docx, \\*.dot, \\*.dotm, \\*.dotx, \\*.grv, \\*.gsa, \\*.gta, \\*.mad, \\*.maf, \\*.mda, \\*.mda, \\*.mda, \\*.mdb, \\*.mde, \\*.mdf, \\*.mdf, \\*.mdm, \\*.mdt, \\*.mdw, \\*.mdw, \\*.mdw, \\*.mdz, \\*.mpd, \\*.mpp, \\*.mpt, \\*.obt, \\*.odb, \\*.one, \\*.onepkg, \\*.pot, \\*.potm, \\*.potx, \\*.ppa, \\*.ppam, \\*.pps, \\*.ppsm, \\*.ppsx, \\*.ppt, \\*.pptm, \\*.pptx, \\*.pub, \\*.pwz, \\*.rqy, \\*.rtf, \\*.rwz, \\*.sldm, \\*.sldx, \\*.slk, \\*.thmx, \\*.vdx, \\*.vsd, \\*.vsl, \\*.vss, \\*.vst, \\*.vsu, \\*.vsw, \\*.vsx, \\*.vtx, \\*.wbk, \\*.wri, \\*.xla, \\*.xlam, \\*.xlb, \\*.xlc, \\*.xld, \\*.xlk, \\*.xll, \\*.xlm, \\*.xls, \\*.xlsb, \\*.xlsm, \\*.xlsx, \\*.xlt, \\*.xltm, \\*.xltx, \\*.xlv, \\*.xlw, \\*.xsf, \\*.xsn``
 
 System Files
 
-``\*.acm, \*.dll, \*.ocx, \*.sys, \*.vxd``
+``\\*.acm, \\*.dll, \\*.ocx, \\*.sys, \\*.vxd``
 
 Temporary Files
 
-``\*.temp, \*.tmp, \~\*``
+``\\*.temp, \\*.tmp, \\~\\*``
 
 Text Files
 
-``\*.asc, \*.text, \*.txt``
+``\\*.asc, \\*.text, \\*.txt``
 
 Web Page Files
 
-``\*.asp, \*.aspx, \*.cgi, \*.css, \*.dhtml, \*.hta, \*.htm, \*.html, \*.mht, \*.php, \*.php3, \*.shtml, \*.url``
+``\\*.asp, \\*.aspx, \\*.cgi, \\*.css, \\*.dhtml, \\*.hta, \\*.htm, \\*.html, \\*.mht, \\*.php, \\*.php3, \\*.shtml, \\*.url``
 
 Disk Images
 
@@ -4192,7 +4192,7 @@ Windows Internal Database
 
 **SQL Management Tools**
 
-``"c:\Program Files\Microsoft SQL Server\90\Tools\binn\SQLCMD.EXE"``
+``"c:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\SQLCMD.EXE"``
 
 #### SharePoint {#h.v31lk48cf6c9" id="h.v31lk48cf6c9
 
@@ -4228,7 +4228,7 @@ Network Load Balancing Tools include the Network Load Balancing Manager; Network
 
 #### Remote Desktop Services (Terminal Services/RDP) {#h.2qdbmtub0dzw" id="h.2qdbmtub0dzw
 
-``Remote Desktops (%windir%\system32\tsmmc.msc /s) is a great admin tool. It gives one-click access to every server or PC you add to its console.``
+``Remote Desktops (%windir%\\system32\\tsmmc.msc /s) is a great admin tool. It gives one-click access to every server or PC you add to its console.``
 
 **Connect to console with this switch**
 
@@ -4257,7 +4257,7 @@ Server Manager should be used for administration of all other RDS role services 
 | [Logoff](http://download.microsoft.com/download/3/b/a/3ba6d659-6e39-4cd7-b3a2-9c96482f5353/Managing%20Roaming%20User%20Data%20Deployment%20Guide.doc) | Logs off a user from a session on an RD Session Host server and deletes the session from the server.                   |
 | [Msg](http://technet.microsoft.com/en-us/library/cc725793.aspx)                                                                                       | Sends a message to a user on an RD Session Host server.                                                                |
 | [Mstsc](http://technet.microsoft.com/en-us/library/cc732443.aspx)                                                                                     | Creates connections to RD Session Host servers or other remote computers.                                              |
-| [Qappsrv](http://nirsoft.net/utils/blue\_screen\_view.html)                                                                                           | Displays a list of all RD Session Host servers on the network.                                                         |
+| [Qappsrv](http://nirsoft.net/utils/blue\\\_screen\\\_view.html)                                                                                           | Displays a list of all RD Session Host servers on the network.                                                         |
 | [Qprocess](http://support.microsoft.com/)                                                                                                             | Displays information about processes that are running on an RD Session Host server.                                    |
 | [Query](http://technet.microsoft.com/en-us/library/cc731280.aspx)                                                                                     | Displays information about processes, sessions, and RD Session Host servers.                                           |
 | [Query process](http://technet.microsoft.com/en-us/library/cc732101.aspx)                                                                             | Displays information about processes that are running on an RD Session Host server.                                    |
@@ -4275,7 +4275,7 @@ Server Manager should be used for administration of all other RDS role services 
 | [Tskill](http://technet.microsoft.com/en-us/library/cc754256.aspx)                                                                                    | Ends a process running in a session on an RD Session Host server.                                                      |
 | [Tsprof](http://www.mydigitallife.info/control-windows-media-player-behaviour-with-command-line-parameters/)                                          | Copies the Remote Desktop Services user configuration information from one user to another.                            |
 
-``\[redo to avoid links from copy/paste?]``
+``\\[redo to avoid links from copy/paste?]``
 
 |   |   |
 | - | - |
@@ -4315,7 +4315,7 @@ Remote Desktop Services Licensing Directory
 
 Starting with RDP version ? (client/server), the .RDP file is now text-based.
 
-``\[Link to source describing all the options available]``
+``\\[Link to source describing all the options available]``
 
 #### Volume Activation {#h.yl23qe3sqda0" id="h.yl23qe3sqda0
 
@@ -4399,7 +4399,7 @@ Installing PowerShell https://technet.microsoft.com/en-us/library/hh847837.aspx
 
 #### Administrative {#h.zfvb2ac5uxa1" id="h.zfvb2ac5uxa1
 
-Microsoft Assessment and Planning (MAP) Toolkit performs audits and discovery of operating systems, Exchange & SQL servers
+Microsoft Assessment and Planning (MAP) Toolkit performs audits and discovery of operating systems, Exchange \\& SQL servers
 
 Microsoft Baseline Security Analyzer
 
@@ -4425,7 +4425,7 @@ Web
 
 Scripting (See PowerShell and WMI)
 
-Windows Deployment Kit & Assessment and Deployment Kit (Deploy/WAIK above)
+Windows Deployment Kit \\& Assessment and Deployment Kit (Deploy/WAIK above)
 
 Windows Software Dev Kit
 
@@ -4483,7 +4483,7 @@ Ask Jeeves (installed by Java updates)
 
 Microsoft Bing
 
-``Free Games installed by OEM (Conexant\<?>)``
+``Free Games installed by OEM (Conexant\\<?>)``
 
 **Anti-Virus**
 
@@ -4519,17 +4519,17 @@ Description automatically generated](.gitbook/assets/0.png)
 
 Database folder
 
-``C:\Windows\NTDS``
+``C:\\Windows\\NTDS``
 
 Log files folder
 
-``C:\Windows\NTDS``
+``C:\\Windows\\NTDS``
 
 SYSVOL folder
 
-``C:\Windows SYSVOL``
+``C:\\Windows SYSVOL``
 
-``NTDS and \_?\_ folder location can be customized during installation of Active Directory role.``
+``NTDS and \\\_?\\\_ folder location can be customized during installation of Active Directory role.``
 
 | **DB/Log/Sys** | **File**           |                                                                                                                                                                                |
 | -------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -4545,37 +4545,37 @@ SYSVOL folder
 | SYSVOL         | staging            |                                                                                                                                                                                |
 | SYSVOL         | staging areas      |                                                                                                                                                                                |
 | SYSVOL         | sysvol             |                                                                                                                                                                                |
-|                | domain\Policies    |                                                                                                                                                                                |
-|                | domain\scripts     |                                                                                                                                                                                |
-|                | domain\StarterGPOs |                                                                                                                                                                                |
+|                | domain\\Policies    |                                                                                                                                                                                |
+|                | domain\\scripts     |                                                                                                                                                                                |
+|                | domain\\StarterGPOs |                                                                                                                                                                                |
 
 #### Logon Scripts {#h.afrre0bnquyx" id="h.afrre0bnquyx
 
-``%Systemroot%\System32\Repl\Import\Scripts``
+``%Systemroot%\\System32\\Repl\\Import\\Scripts``
 
-``%SystemRoot%\sysvol\sysvol\\_\<domain DNS name>_\scripts``
+``%SystemRoot%\\sysvol\\sysvol\\\\\_\\<domain DNS name>\_\\scripts``
 
-``\\\\_\<Server>_\NETLOGON``
+``\\\\\\\\\_\\<Server>\_\\NETLOGON``
 
-``\\\\_\<Server>_\SYSVOL\\_\<domain DNS name>_\scripts``
+``\\\\\\\\\_\\<Server>\_\\SYSVOL\\\\\_\\<domain DNS name>\_\\scripts``
 
 **How to reference paths in logon scripts**
 
-``An example of a batch file Logon script that launches a VBScript program is as follows\[35]:``
+``An example of a batch file Logon script that launches a VBScript program is as follows\\[35]:``
 
 @echo off
 
-``wscript %0\\..\NetLogon.vbs``
+``wscript %0\\\\..\\NetLogon.vbs``
 
-``The "%0" in the batch file is interpreted by the command processor to be the name and path of the current file, which is the batch file itself. The string "%0\\..\\" then becomes the folder where the batch file is stored. The batch file above will launch the VBScript program NetLogon.vbs as long as it is saved in the NetLogon share with the batch file. This syntax is preferable to a UNC path, because it does not hard code the name of a Domain Controller. The syntax will work no matter which Domain Controller authenticates the user. The logon script will work no matter which Domain Controllers are available or where in the network the user logs on.``
+``The "%0" in the batch file is interpreted by the command processor to be the name and path of the current file, which is the batch file itself. The string "%0\\\\..\\\\" then becomes the folder where the batch file is stored. The batch file above will launch the VBScript program NetLogon.vbs as long as it is saved in the NetLogon share with the batch file. This syntax is preferable to a UNC path, because it does not hard code the name of a Domain Controller. The syntax will work no matter which Domain Controller authenticates the user. The logon script will work no matter which Domain Controllers are available or where in the network the user logs on.``
 
 Also to force a path to the current directory
 
-``PUSHD %\~dp0``
+``PUSHD %\\~dp0``
 
 #### Replication {#h.bbdnu95mten3" id="h.bbdnu95mten3
 
-``Regular replication of logon scripts, group policy files, performed by \_\_``
+``Regular replication of logon scripts, group policy files, performed by \\\_\\\_``
 
 DFS Replication, see above
 
@@ -4583,31 +4583,31 @@ DFS Replication, see above
 
 Physical Path
 
-``%SystemRoot%\sysvol\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\user\scripts\logon``
+``%SystemRoot%\\sysvol\\sysvol\\\\\_\\<domain DNS name>\_\\Policies\\\\\_\\<GUID>\_\\user\\scripts\\logon``
 
 Network Path
 
-``\\\\_\<AD Server>_\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\user\scripts\logon``
+``\\\\\\\\\_\\<AD Server>\_\\sysvol\\\\\_\\<domain DNS name>\_\\Policies\\\\\_\\<GUID>\_\\user\\scripts\\logon``
 
-``\\\\_\<AD Server>_\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\user\scripts\logoff``
+``\\\\\\\\\_\\<AD Server>\_\\sysvol\\\\\_\\<domain DNS name>\_\\Policies\\\\\_\\<GUID>\_\\user\\scripts\\logoff``
 
-``\\\\_\<AD Server>_\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\machine\scripts\startup``
+``\\\\\\\\\_\\<AD Server>\_\\sysvol\\\\\_\\<domain DNS name>\_\\Policies\\\\\_\\<GUID>\_\\machine\\scripts\\startup``
 
-``\\\\_\<AD Server>_\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\machine\scripts\shutdown``
+``\\\\\\\\\_\\<AD Server>\_\\sysvol\\\\\_\\<domain DNS name>\_\\Policies\\\\\_\\<GUID>\_\\machine\\scripts\\shutdown``
 
-``%SystemRoot%\system32\repl\import\scripts``
+``%SystemRoot%\\system32\\repl\\import\\scripts``
 
 #### GPO Template (.ADMX) files {#h.x7zefdpddhjv" id="h.x7zefdpddhjv
 
 Only need to be present on the machine where the policies are edited from
 
-``.ADMX %systemroot%\PolicyDefinitions``
+``.ADMX %systemroot%\\PolicyDefinitions``
 
-``.ADML %systemroot%\PolicyDefinitions\en-US``
+``.ADML %systemroot%\\PolicyDefinitions\\en-US``
 
 ADM (Group Policy Editor, Add/Remove Template Wizard)
 
-``C:\Windows\PolicyDefinitions``
+``C:\\Windows\\PolicyDefinitions``
 
 **Group Policy Management Tools**
 
@@ -4637,13 +4637,13 @@ Not a file/folder path, but part of UNC and name resolution for network access
 
 |                                 |              |                          |
 | ------------------------------- | ------------ | ------------------------ |
-| mydomainname.com                | SRV          | \_gc.\_tcp               |
-|                                 |              | \_kerberos.\_tcp         |
-|                                 |              | \_kpasswd.\_tcp          |
-|                                 |              | \_ldap.\_tcp             |
-| KMS server                      | SRV          | \_vlmcs.\_tcp            |
-| DomainDnsZones.mydomainname.com | \_sites      | \_ldap.\_tcp.\<sitename> |
-| DomainDnsZones.mydomainname.com | \_ldap.\_tcp |                          |
+| mydomainname.com                | SRV          | \\\_gc.\\\_tcp               |
+|                                 |              | \\\_kerberos.\\\_tcp         |
+|                                 |              | \\\_kpasswd.\\\_tcp          |
+|                                 |              | \\\_ldap.\\\_tcp             |
+| KMS server                      | SRV          | \\\_vlmcs.\\\_tcp            |
+| DomainDnsZones.mydomainname.com | \\\_sites      | \\\_ldap.\\\_tcp.\\<sitename> |
+| DomainDnsZones.mydomainname.com | \\\_ldap.\\\_tcp |                          |
 | ForestDnsZones                  |              |                          |
 
 Exchange uses sites to match users to servers
@@ -4654,7 +4654,7 @@ Exchange autodiscover srv record, autodiscover host name
 
 Cisco Wireless cisco-capwap-controller or cisco-lwapp-controller
 
-``Internet Explorer proxy autoconfig\[36] wpad``
+``Internet Explorer proxy autoconfig\\[36] wpad``
 
 KMS
 
@@ -4666,19 +4666,19 @@ Even Active Directory stored DNS zones can be written to a local file by using t
 
 Example:
 
-``\_\_\_\_\_\_\_\_\_\_?``
+``\\\_\\\_\\\_\\\_\\\_\\\_\\\_\\\_\\\_\\\_?``
 
 They will then be written to the following folder path:
 
-``\_\_\_\_?``
+``\\\_\\\_\\\_\\\_?``
 
-``C:\Windows\System32\dns\backup``
+``C:\\Windows\\System32\\dns\\backup``
 
-``nslookup -type=srv \_vlmcs.\_tcp``
+``nslookup -type=srv \\\_vlmcs.\\\_tcp``
 
 **Backup/Export AD integrated zone to text file**
 
-``DnsCmd \<ServerName> /ZoneExport \<ZoneName> \<ZoneExportFile>``
+``DnsCmd \\<ServerName> /ZoneExport \\<ZoneName> \\<ZoneExportFile>``
 
 #### Certificate Services {#h.k7tbyipc0zj3" id="h.k7tbyipc0zj3
 
@@ -4721,23 +4721,23 @@ A few tools will be included here, see other AD document for better information.
 
 [http://www.ucertify.com/blog/windows-server-2008-tools-used-for-configuring-and-maintaining-active-directory.html](http://www.ucertify.com/blog/windows-server-2008-tools-used-for-configuring-and-maintaining-active-directory.html)
 
-``%windir%\system32\dsac.exe Active Directory Administrative Center``
+``%windir%\\system32\\dsac.exe Active Directory Administrative Center``
 
-``%SystemRoot%\system32\dsa.msc Active Directory Users and Computers``
+``%SystemRoot%\\system32\\dsa.msc Active Directory Users and Computers``
 
-``After Windows version \_?\_ the RAS tab was removed. Exchange 2003? installs extended version in ?``
+``After Windows version \\\_?\\\_ the RAS tab was removed. Exchange 2003? installs extended version in ?``
 
 What attributes are carried across (and which will not) when copying a user.
 
-``ADSI.exe (or mmc or msc?) ADSI Edit MMC (adsiedit.msc)? %SystemRoot%\system32\adsiedit.msc``
+``ADSI.exe (or mmc or msc?) ADSI Edit MMC (adsiedit.msc)? %SystemRoot%\\system32\\adsiedit.msc``
 
-``C:\Windows\System32\LDP.exe``
+``C:\\Windows\\System32\\LDP.exe``
 
-``C:\Windows\System32\ldifde.exe``
+``C:\\Windows\\System32\\ldifde.exe``
 
-``C:\Windows\System32\Ntdsutil.exe (Windows Server 2003, Windows Server 2003 R2, Windows Server 2003 with SP1, Windows Server 2008, Windows Server 2008 R2) (Ntdsutil.exe is built into Windows Server 2008 and Windows Server 2008 R2. It is available if you have the AD DS or the AD LDS server role installed. It is also available if you install the Active Directory Domain Services Tools that are part of the Remote Server Administration Tools (RSAT). If you have the AD LDS server role installed but not the AD DS server role, you can use the dsdbutil.exe and dsmgmt.exe command-line tools to perform the same tasks http://technet.microsoft.com/en-us/library/cc753343%28v=ws.10%29.aspx)``
+``C:\\Windows\\System32\\Ntdsutil.exe (Windows Server 2003, Windows Server 2003 R2, Windows Server 2003 with SP1, Windows Server 2008, Windows Server 2008 R2) (Ntdsutil.exe is built into Windows Server 2008 and Windows Server 2008 R2. It is available if you have the AD DS or the AD LDS server role installed. It is also available if you install the Active Directory Domain Services Tools that are part of the Remote Server Administration Tools (RSAT). If you have the AD LDS server role installed but not the AD DS server role, you can use the dsdbutil.exe and dsmgmt.exe command-line tools to perform the same tasks http://technet.microsoft.com/en-us/library/cc753343%28v=ws.10%29.aspx)``
 
-``C:\Windows\System32\Dsdbutil.exe``
+``C:\\Windows\\System32\\Dsdbutil.exe``
 
 repadmin
 
@@ -4751,7 +4751,7 @@ Schmmgmt.dll Active Directory Schema snap-in
 
 Which AD GUI tools have Advanced views to enable?
 
-``DNS, AD UC (Object tab), AD S\&S (Services)``
+``DNS, AD UC (Object tab), AD S\\\\&S (Services)``
 
 **Delegwiz.inf**
 
@@ -4777,11 +4777,11 @@ and facilitates configuration of AD LDS communication ports and view AD LDS
 
 instances installed on a machine.
 
-``\------------------------\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*--------------------``
+``\\------------------------\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*--------------------``
 
 #### Directory Service Database Util (DSDBUtil) {#h.fo0d5r65ymmq" id="h.fo0d5r65ymmq
 
-``C:\\>dsdbutil.exe /?``
+``C:\\\\>dsdbutil.exe /?``
 
 Microsoft(R) Windows(TM) Directory Service Utilities Version 2.0
 
@@ -4793,7 +4793,7 @@ and facilitates configuration of AD LDS communication ports and view AD LDS
 
 instances installed on a machine.
 
-``C:\Windows\System32>dsmgmt.exe /?``
+``C:\\Windows\\System32>dsmgmt.exe /?``
 
 Microsoft(R) Windows(TM) Directory Service Utilities Version 2.0
 
@@ -4811,13 +4811,13 @@ those which are removed from the network without being uninstalled.
 
 #### DSMove {#h.2fh0o7z9ccwe" id="h.2fh0o7z9ccwe
 
-``C:\Windows\System32>dsmove.exe /?``
+``C:\\Windows\\System32>dsmove.exe /?``
 
 Description: This command moves or renames an object within the directory.
 
 **DS Modify Object (DSMOD)**
 
-``C:\Windows\System32\dsmod.exe /?``
+``C:\\Windows\\System32\\dsmod.exe /?``
 
 Description: This dsmod command modifies existing objects in the directory.
 
@@ -4871,26 +4871,26 @@ dsrm.exe
 | [Net user](http://technet.microsoft.com/en-us/library/cc770592.aspx)                                                                               | Adds or modifies user accounts, or displays user account information.                                                                                                                                               |
 | [Nltest](http://go.microsoft.com/fwlink/)                                                                                                          | Performs network administrative tasks.                                                                                                                                                                              |
 | [Ntdsutil](http://technet.microsoft.com/en-us/library/cc753343.aspx)                                                                               | Provides management facilities for AD DS.                                                                                                                                                                           |
-| [Redircmp](http://technet.microsoft.com/en-us/library/dd297932\(v=exchg.141\).aspx)                                                                | Redirects the default container for newly created computers to a specified target organizational unit (OU) so that newly created computer objects are created in the specific target OU instead of in CN=Computers. |
+| [Redircmp](http://technet.microsoft.com/en-us/library/dd297932\\(v=exchg.141\\).aspx)                                                                | Redirects the default container for newly created computers to a specified target organizational unit (OU) so that newly created computer objects are created in the specific target OU instead of in CN=Computers. |
 | [Redirusr](http://support.microsoft.com/kb/2919355)                                                                                                | Redirects the default container for newly created users to a specified target OU so that newly created user objects are created in the specific target OU instead of in CN=Users.                                   |
 | [Repadmin](http://technet.microsoft.com/en-us/library/ee624057.aspx)                                                                               | Makes it possible for administrators to diagnose Active Directory replication problems between domain controllers running Windows operating systems.                                                                |
 | [Setspn](http://www.windowsnetworking.com/kbase/WindowsTips/WindowsXP/AdminTips/Network/SharedprinterseparatorpageforWindows2000andWindowsXP.html) | Makes it possible for administrators to read, modify, and delete the Service Principal Names (SPN) directory property for an Active Directory service account.                                                      |
 
 **Remote Server Administration Tools technology**
 
-``Active Directory Domain Services (AD DS) Tools and Active Directory Lightweight Directory Services (AD LDS) Tools\[37]``
+``Active Directory Domain Services (AD DS) Tools and Active Directory Lightweight Directory Services (AD LDS) Tools\\[37]``
 
 Active Directory Domain Services (AD DS) and Active Directory Lightweight Directory Services (AD LDS) Tools includes Active Directory Administrative Center; Active Directory Domains and Trusts; Active Directory Sites and Services; Active Directory Users and Computers; ADSI Edit; DCPromo.exe; LDP.exe; NetDom.exe; NTDSUtil.exe; RepAdmin.exe; Active Directory module for Windows PowerShell; DCDiag.exe; DSACLs.exe; DSAdd.exe; DSDBUtil.exe; DSMgmt.exe; DSMod.exe; DSMove.exe; DSQuery.exe; DSRm.exe;
 
 GPFixup.exe; KSetup.exe; KtPass.exe; NlTest.exe; NSLookup.exe; W32tm.exe.
 
-``\- Server for NIS Tools includes an extension to the Active Directory Users and Computers snap-in, and the **Ypclear.exe** command-line tool.``
+``\\- Server for NIS Tools includes an extension to the Active Directory Users and Computers snap-in, and the **Ypclear.exe** command-line tool.``
 
 Move the above into table below
 
 |                            |                                                |
 | -------------------------- | ---------------------------------------------- |
-| %windir%\system32\dsac.exe | Active Directory Administrative Center         |
+| %windir%\\system32\\dsac.exe | Active Directory Administrative Center         |
 | mmc                        | Active Directory Domains and Trusts            |
 | mmc                        | Active Directory Sites and Services            |
 |                            | Active Directory Users and Computers           |
@@ -4930,7 +4930,7 @@ Windows 8
 
 Windows Server 2008 and Windows Server 2008 R2
 
-``Windows 7 (separate download\[38])``
+``Windows 7 (separate download\\[38])``
 
 AD LDS is not supported on Windows Vista and earlier clients.
 
@@ -4938,7 +4938,7 @@ AD LDS is not supported on Windows Vista and earlier clients.
 
 AD LDS features can be installed in the following operating systems:
 
-``Dynamic list of LDAP Data Interchange Format (LDIF) files during instance setup With this feature, you can make custom LDIF files available during AD LDS instance setup—in addition to the default LDIF files that are provided with AD LDS—by adding the files to the %systemroot%\ADAM directory.``
+``Dynamic list of LDAP Data Interchange Format (LDIF) files during instance setup With this feature, you can make custom LDIF files available during AD LDS instance setup—in addition to the default LDIF files that are provided with AD LDS—by adding the files to the %systemroot%\\ADAM directory.``
 
 ``[http://technet.microsoft.com/en-us/library/cc754361%28v=ws.10%29.aspx](http://go.microsoft.com/fwlink/)``
 
@@ -4958,43 +4958,43 @@ KB902838
 
 #### Active Directory Recycle Bin {#h.hfhyke16bavk" id="h.hfhyke16bavk
 
-``1. Not used, group policy or partial solution use \Default\Favorites instead. ↑``
+``1. Not used, group policy or partial solution use \\Default\\Favorites instead. ↑``
 2. [http://support.microsoft.com/kb/971760](http://support.microsoft.com/kb/971760) ↑
 3. [http://support.microsoft.com/kb/2667628](http://support.microsoft.com/kb/2667628) ↑
 4. Source Windows 2003 ↑
 5. [http://support.microsoft.com/?kbid=974674](http://support.microsoft.com/?kbid=974674) ↑
 6. [http://support.microsoft.com/kb/836961](http://support.microsoft.com/kb/836961) ↑
 7. RegEdit.exe can load registry hives and edit registry value security since Windows version ? ↑
-``8.  [http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/ntbackup\_command.mspx?mfr=true](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/ntbackup\_command.mspx?mfr=true)``
+``8.  [http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/ntbackup\\\_command.mspx?mfr=true](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/ntbackup\\\_command.mspx?mfr=true)``
 
     [http://en.wikipedia.org/wiki/NTBackup](http://en.wikipedia.org/wiki/NTBackup) ↑
 9. [http://office.microsoft.com/en-us/outlook-help/copy-outlook-express-address-book-contacts-to-outlook-HA001091960.aspx](http://office.microsoft.com/en-us/outlook-help/copy-outlook-express-address-book-contacts-to-outlook-HA001091960.aspx) ↑
-``10. [http://technet.microsoft.com/en-us/library/cc179199%28v=office.14%29.aspx](http://technet.microsoft.com/en-us/library/cc179199\(v=office.14\).aspx) ↑``
-``11. [http://technet.microsoft.com/en-us/library/cc179110%28v=office.14%29.aspx](http://technet.microsoft.com/en-us/library/cc179110\(v=office.14\).aspx) ↑``
-``12. [http://www.networksteve.com/exchange/topic.php/Different\_work\_day\_times/?TopicId=8284\&Posts=6](http://www.networksteve.com/exchange/topic.php/Different\_work\_day\_times/?TopicId=8284\&Posts=6) ↑``
+``10. [http://technet.microsoft.com/en-us/library/cc179199%28v=office.14%29.aspx](http://technet.microsoft.com/en-us/library/cc179199\\(v=office.14\\).aspx) ↑``
+``11. [http://technet.microsoft.com/en-us/library/cc179110%28v=office.14%29.aspx](http://technet.microsoft.com/en-us/library/cc179110\\(v=office.14\\).aspx) ↑``
+``12. [http://www.networksteve.com/exchange/topic.php/Different\\\_work\\\_day\\\_times/?TopicId=8284\\\\&Posts=6](http://www.networksteve.com/exchange/topic.php/Different\\\_work\\\_day\\\_times/?TopicId=8284\\\\&Posts=6) ↑``
 13. [http://office.microsoft.com/en-us/outlook-help/blocked-attachments-in-outlook-HA001229952.aspx](http://office.microsoft.com/en-us/outlook-help/blocked-attachments-in-outlook-HA001229952.aspx) ↑
-``14. [http://www.nirsoft.net/utils/outlook\_nk2\_edit.html](http://www.nirsoft.net/utils/outlook\_nk2\_edit.html) ↑``
-``15. [Outlook 2010 Home > Outlook 2010 Help and How-To > Getting help - What is the Enable logging (troubleshooting) option?](http://www.google.com/url?q=http%3A%2F%2Foffice.microsoft.com%2Fclient%2Fhelppreview14.aspx%3FAssetId%3DHA010356489%26lcid%3D1033%26NS%3DOUTLOOK%26Version%3D14%26tl%3D2%26respos%3D0%26CTT%3D1%26queryid%3D8a421809%252D143f%252D477d%252D873e%252D1c1c82f79a17%23\_Toc261091100\&sa=D\&sntz=1\&usg=AFQjCNFrnL0SZMZcpmW3f1CaskdXGOpjGQ) ↑``
+``14. [http://www.nirsoft.net/utils/outlook\\\_nk2\\\_edit.html](http://www.nirsoft.net/utils/outlook\\\_nk2\\\_edit.html) ↑``
+``15. [Outlook 2010 Home > Outlook 2010 Help and How-To > Getting help - What is the Enable logging (troubleshooting) option?](http://www.google.com/url?q=http%3A%2F%2Foffice.microsoft.com%2Fclient%2Fhelppreview14.aspx%3FAssetId%3DHA010356489%26lcid%3D1033%26NS%3DOUTLOOK%26Version%3D14%26tl%3D2%26respos%3D0%26CTT%3D1%26queryid%3D8a421809%252D143f%252D477d%252D873e%252D1c1c82f79a17%23\\\_Toc261091100\\\\&sa=D\\\\&sntz=1\\\\&usg=AFQjCNFrnL0SZMZcpmW3f1CaskdXGOpjGQ) ↑``
 16. [http://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data](http://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data) ↑
-``17. [http://www.adobe.com/devnet/flashplayer/articles/flash\_player\_admin\_guide.html](http://www.adobe.com/devnet/flashplayer/articles/flash\_player\_admin\_guide.html) ↑``
+``17. [http://www.adobe.com/devnet/flashplayer/articles/flash\\\_player\\\_admin\\\_guide.html](http://www.adobe.com/devnet/flashplayer/articles/flash\\\_player\\\_admin\\\_guide.html) ↑``
 18. Choose iTunes Library by holding Shift while starting iTunes ↑
 19. [http://www.makeuseof.com/tag/10-top-itunes-troubleshooting-tips-tricks/](http://www.makeuseof.com/tag/10-top-itunes-troubleshooting-tips-tricks/) ↑
 20. [http://support.apple.com/kb/TS1717](http://support.apple.com/kb/TS1717) ↑
 21. [http://support.apple.com/kb/TS1421](http://support.apple.com/kb/TS1421) ↑
 22. [http://support.apple.com/kb/TS1776](http://support.apple.com/kb/TS1776) ↑
-``23. [http://java.com/en/download/help/msi\_install.xml](http://java.com/en/download/help/msi\_install.xml) ↑``
-``24. [http://www.java.com/en/download/help/plugin\_cache.xml](http://www.java.com/en/download/help/plugin\_cache.xml) ↑``
+``23. [http://java.com/en/download/help/msi\\\_install.xml](http://java.com/en/download/help/msi\\\_install.xml) ↑``
+``24. [http://www.java.com/en/download/help/plugin\\\_cache.xml](http://www.java.com/en/download/help/plugin\\\_cache.xml) ↑``
 25. [http://docs.oracle.com/javase/7/docs/technotes/guides/jweb/client-security.html#install](http://docs.oracle.com/javase/7/docs/technotes/guides/jweb/client-security.html#install) ↑
 26. [http://www.mombu.com/microsoft/iis-smtp-and-nntp/t-some-emails-stuck-in-drop-folder-1028192.html](http://www.mombu.com/microsoft/iis-smtp-and-nntp/t-some-emails-stuck-in-drop-folder-1028192.html) ↑
 27. [http://support.microsoft.com/?id=297700](http://support.microsoft.com/?id=297700) ↑
 28. ↑
-``29. I suggest adding \*.divx, \*.mkv, \*.vob, \*.flv ↑``
-``30. I suggest adding \*.tar, \*.7z, \*.ex\_, \*.dl\_ ↑``
-``31. I suggest adding php, perl, ext (.ps1) for powershell2? List of OS recognized ext can be found in reg key \_\_\_? or win.ini? What does Outlook consider level 1? ↑``
-``32. May want to include \*.wp?, \*.pdf, \*.cbx, \*.wk? ↑``
-``33. I suggest adding \*.me, \*.1st, \*.diz ↑``
-``34. I suggest adding \*.webpage for Mozilla shortcuts ? ↑``
+``29. I suggest adding \\*.divx, \\*.mkv, \\*.vob, \\*.flv ↑``
+``30. I suggest adding \\*.tar, \\*.7z, \\*.ex\\\_, \\*.dl\\\_ ↑``
+``31. I suggest adding php, perl, ext (.ps1) for powershell2? List of OS recognized ext can be found in reg key \\\_\\\_\\\_? or win.ini? What does Outlook consider level 1? ↑``
+``32. May want to include \\*.wp?, \\*.pdf, \\*.cbx, \\*.wk? ↑``
+``33. I suggest adding \\*.me, \\*.1st, \\*.diz ↑``
+``34. I suggest adding \\*.webpage for Mozilla shortcuts ? ↑``
 35. [http://www.winvistatips.com/windows-98-logon-scripts-2003server-t675450.html](http://www.winvistatips.com/windows-98-logon-scripts-2003server-t675450.html) ↑
-``36. [http://en.wikipedia.org/wiki/Web\_Proxy\_Autodiscovery\_Protocol](http://en.wikipedia.org/wiki/Web\_Proxy\_Autodiscovery\_Protocol) ↑``
+``36. [http://en.wikipedia.org/wiki/Web\\\_Proxy\\\_Autodiscovery\\\_Protocol](http://en.wikipedia.org/wiki/Web\\\_Proxy\\\_Autodiscovery\\\_Protocol) ↑``
 37. [http://social.technet.microsoft.com/wiki/contents/articles/2202.remote-server-administration-tools-rsat-for-windows-vista-windows-7-windows-8-windows-server-2008-windows-server-2008-r2-and-windows-server-2012-dsforum2wiki.aspx](http://social.technet.microsoft.com/wiki/contents/articles/2202.remote-server-administration-tools-rsat-for-windows-vista-windows-7-windows-8-windows-server-2008-windows-server-2008-r2-and-windows-server-2012-dsforum2wiki.aspx) ↑
 38. [http://www.microsoft.com/en-us/download/details.aspx?id=14683](http://www.microsoft.com/en-us/download/details.aspx?id=14683) ↑
