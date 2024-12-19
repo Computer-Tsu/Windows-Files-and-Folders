@@ -34,7 +34,7 @@ jobs:
             # Uncomment one of the following date formats
 
             # For YYYY-MM
-            sed -i "1i ---\ntitle: \"My Amazing Book\"\nsubtitle: \"Exploring Windows Files and Folders\"\nauthor: \"Mark McDow\"\ndate: \"$(date +'%Y-%m')\"\nkeywords: [Windows, Files, Folders, Forensics]\nabstract: >\n  This book dives into the intricacies of Windows files and folders, providing insights for IT professionals and enthusiasts alike.\nlang: en-US\nfontsize: 12pt\ngeometry: margin=1in\nmainfont: \"DejaVu Sans Mono\"\n---\n" "$file"
+            sed -i "1i ---\ntitle: \"Windows Files and Folders\"\nsubtitle: \"Exploring Windows Files and Folders\"\nauthor: \"Mark McDow\"\ndate: \"$(date +'%Y-%m')\"\nkeywords: [Windows, Files, Folders, Forensics]\nabstract: >\n  This book dives into the intricacies of Windows files and folders, providing insights for IT professionals and enthusiasts alike.\nlang: en-US\nfontsize: 12pt\ngeometry: margin=1in\nmainfont: \"DejaVu Sans Mono\"\n---\n" "$file"
 
             # For ISO 8601 (YYYY-MM-DD)
             # sed -i "1i ---\ntitle: \"My Amazing Book\"\nsubtitle: \"Exploring Windows Files and Folders\"\nauthor: \"Mark McDow\"\ndate: \"$(date +'%Y-%m-%d')\"\nkeywords: [Windows, Files, Folders, Forensics]\nabstract: >\n  This book dives into the intricacies of Windows files and folders, providing insights for IT professionals and enthusiasts alike.\nlang: en-US\nfontsize: 12pt\ngeometry: margin=1in\nmainfont: \"DejaVu Sans Mono\"\n---\n" "$file"
