@@ -4,75 +4,76 @@
 
 Including changes from Windows XP to Vista, Windows 7
 
-``Application Data - Roaming C:\Users\<UserName>\AppData\Roaming``
+Application Data - Roaming `C:\Users\<UserName>\AppData\Roaming`
 
-``Cookies - Shortcut C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Cookies``
+Cookies - Shortcut `C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Cookies`
 
-``Favorites C:\Users\Public\Favorites\[1]``
+Favorites `C:\Users\Public\Favorites`\[1]
 
-``Libraries - Shortcut C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Libraries``
+Libraries - Shortcut `C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Libraries`
 
-``Libraries - Shortcut (2) C:\Users\Public\Libraries``
+Libraries - Shortcut (2) `C:\Users\Public\Libraries`
 
-``Local Settings - Local C:\Users\<UserName>\AppData\Local``
+Local Settings - Local `C:\Users\<UserName>\AppData\Local`
 
-``My Documents - Documents C:\Users\<UserName>\Documents``
+My Documents - Documents `C:\Users\<UserName>\Documents`
 
-``Network Shortcuts - Shortcut "C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Network Shortcuts"``
+Network Shortcuts - Shortcut ``"C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Network Shortcuts"``
 
-``Printer Shortcuts - Shortcut "C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts"``
+Printer Shortcuts - Shortcut ``"C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts"``
 
-``Public Desktop - Shortcut C:\Users\Public\Desktop``
+Public Desktop - Shortcut `C:\Users\Public\Desktop`
 
-``Public Documents - Shortcut C:\Users\Public\Documents``
+Public Documents - Shortcut `C:\Users\Public\Documents`
 
-``Public Downloads - Shortcut C:\Users\Public\Downloads``
+Public Downloads - Shortcut `C:\Users\Public\Downloads`
 
-``Public Music - Shortcut C:\Users\Public\Music``
+Public Music - Shortcut `C:\Users\Public\Music`
 
-``Public Pictures - Shortcut C:\Users\Public\Pictures``
+Public Pictures - Shortcut `C:\Users\Public\Pictures`
 
-``Public Recorded TV - Shortcut "C:\Users\Public\Recorded TV"``
+Public Recorded TV - Shortcut ``"C:\Users\Public\Recorded TV"``
 
-``Public Videos - Shortcut C:\Users\Public\Videos``
+Public Videos - Shortcut `C:\Users\Public\Videos`
 
-``Recent Items - Shortcut C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Recent``
+Recent Items - Shortcut `C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Recent`
 
-``Send to ▶ shortcuts C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\SendTo``
+Send to ▶ shortcuts `C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\SendTo`
 
-``Start Menu - Shortcut (2) "C:\ProgramData\Microsoft\Windows\Start Menu"``
+Start Menu - Shortcut (2) ``"C:\ProgramData\Microsoft\Windows\Start Menu"``
 
-``Start Menu - Shortcut "C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Start Menu"``
+Start Menu - Shortcut ``"C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Start Menu"``
 
-``Templates - Shortcut C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Templates``
+Templates - Shortcut `C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Templates`
 
-``Default User Profile %SystemDrive%\Users\Default``
+Default User Profile `%SystemDrive%\Users\Default`
 
-``Themes files C:\Users\<UserName>\AppData\Local\Microsoft\Windows\Themes``
+Themes files `C:\Users\<UserName>\AppData\Local\Microsoft\Windows\Themes`
 
-``Wallpapers C:\Windows\Web\Wallpaper``
+Wallpapers `C:\Windows\Web\Wallpaper`
 
-``C:\Users\<UserName>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar``
+`C:\Users\<UserName>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar`
 
-``C:\Users\<UserName>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\StartMenu``
+`C:\Users\<UserName>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\StartMenu`
 
 #### Windows Vista/7 Backward Compatible {#Backward-Compatible}
 
 Reparse points, links, junctions, mount points are covered in the File System document.
 
-Warning: RoboCopy (version?) causes a copy-loop with certain /MIR situations.
+Warning: RoboCopy (version?) causes a copy-loop with certain `/MIR` situations.
 
-``DIR C:\Users\<USERNAME> /AL to list Reparse Points``
+`DIR C:\Users\<USERNAME> /AL` to list Reparse Points
 
-``\<JUNCTION> Application Data \[C:\Users\<user name>\AppData\Roaming]``
+```
+\<JUNCTION> Application Data [C:\Users\<user name>\AppData\Roaming]
 
-``\<JUNCTION> Cookies \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Cookies]``
+\<JUNCTION> Cookies [C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Cookies]
 
-``\<JUNCTION> Local Settings \[C:\Users\<user name>\AppData\Local]``
+\<JUNCTION> Local Settings [C:\Users\<user name>\AppData\Local]
 
-``\<JUNCTION> My Documents \[C:\Users\<user name>\Documents]``
+\<JUNCTION> My Documents [C:\Users\<user name>\Documents]
 
-``\<JUNCTION> NetHood \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Network Shortcuts]``
+\<JUNCTION> NetHood [C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Network Shortcuts]
 
 ``\<JUNCTION> PrintHood \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts]``
 
@@ -84,27 +85,33 @@ Warning: RoboCopy (version?) causes a copy-loop with certain /MIR situations.
 
 ``\<JUNCTION> Templates \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Templates]``
 
-``DIR C:\Users /AL``
+`DIR C:\Users /AL`
 
-``\<SYMLINKD> All Users \[C:\ProgramData]``
+```
+<SYMLINKD> All Users [C:\ProgramData]
 
-``\<JUNCTION> Default User \[C:\Users\Default]``
+<JUNCTION> Default User [C:\Users\Default]
+```
 
-``Directory of C:\Users\\_UserName_\AppData\Local``
+Directory of `C:\Users\\_UserName_\AppData\Local`
 
-``\<JUNCTION> Application Data \[C:\Users\\_UserName_\AppData\Local]``
+```
+<JUNCTION> Application Data [C:\Users\\_UserName_\AppData\Local]
 
-``\<JUNCTION> History \[C:\Users\\_UserName_\AppData\Local\Microsoft\Windows\History]``
+<JUNCTION> History [C:\Users\\_UserName_\AppData\Local\Microsoft\Windows\History]
 
-``\<JUNCTION> Temporary Internet Files \[C:\Users\\_UserName_\AppData\Local\Microsoft\Windows\Temporary Internet Files]``
+<JUNCTION> Temporary Internet Files [C:\Users\_UserName_\AppData\Local\Microsoft\Windows\Temporary Internet Files]
+```
 
-``Directory of C:\Users\\_UserName_\Documents``
+Directory of `C:\Users\\_UserName_\Documents`
 
-``\<JUNCTION> My Music \[C:\Users\\_UserName_\Music]``
+```
+<JUNCTION> My Music [C:\Users\\_UserName_\Music]
 
-``\<JUNCTION> My Pictures \[C:\Users\\_UserName_\Pictures]``
+<JUNCTION> My Pictures [C:\Users\\_UserName_\Pictures]
 
-``\<JUNCTION> My Videos \[C:\Users\\_UserName_\Videos]``
+<JUNCTION> My Videos [C:\Users\\_UserName_\Videos]
+```
 
 | **Link**               | **Destination**                                                            |
 | ---------------------- | -------------------------------------------------------------------------- |
@@ -128,7 +135,7 @@ Shortcuts that no longer work
 
 Shortcuts that still work
 
-``Send To %UserProfile%\AppData\Roaming\Microsoft\Windows\SendTo``
+Send To ``%UserProfile%\AppData\Roaming\Microsoft\Windows\SendTo``
 
 Can also use shell:sendto from Start-Run
 
@@ -136,19 +143,19 @@ Can also use shell:sendto from Start-Run
 
 More information will be in the File Systems document.
 
-``\[merge section with reserved names, devices, pipes?]``
+``[merge section with reserved names, devices, pipes?]``
 
-``filename::datastream \<sp?>``
+``filename::datastream <sp?>``
 
 dir /r
 
-Blocked file downloaded from Internet
+#### Blocked file downloaded from Internet
 
 Zone.Identifier
 
 how to remove block from multiple files
 
-other common streams
+#### other common streams
 
 Office document Meta data?
 
@@ -172,7 +179,7 @@ Compressed (zipped) Folders Error
 
 ``\- dash``
 
-‘ apostrophe
+' apostrophe
 
 Unicode characters
 
@@ -182,9 +189,9 @@ boot.ini
 
 autoexec.nt
 
-``systemroot\system32\autoexec.nt``
+`systemroot\system32\autoexec.nt`
 
-``MSDOS.SYS \[Windows 9x]``
+`MSDOS.SYS [Windows 9x]`
 
 IO.SYS
 
@@ -198,7 +205,7 @@ pagefile.sys
 
 hiberfil.sys
 
-``C:\ProgramData \<DRIVE>:\Documents and Settings\All Users\Application Data``
+`C:\ProgramData` `<DRIVE>:\Documents and Settings\All Users\Application Data`
 
 ntuser.pol
 
@@ -206,7 +213,7 @@ Thumbs.db
 
 desktop.ini
 
-``setup.inf \<?>``
+`setup.inf <?>`
 
 Bitlocker
 
@@ -279,6 +286,7 @@ Manage-bde; Windows PowerShell cmdlets for BitLocker; BitLocker Recovery Passwor
 
 ``C:\System Volume Information\Windows Backup\Catalogs\GlobalCatalogLock.dat``
 
+```
 {}
 
 {}{}
@@ -288,6 +296,7 @@ Manage-bde; Windows PowerShell cmdlets for BitLocker; BitLocker Recovery Passwor
 {}{}
 
 {}{}
+```
 
 MountPointManagerRemoteDatabase
 
@@ -399,9 +408,9 @@ _Windows_
 
 ``Windows PowerShell %SystemRoot%\System32\Winevt\Logs\Windows PowerShell.evtx``
 
-Source: Eventlog, Event ID: 1100 System Shutdown
+Source: Eventlog, Event : 1100 System Shutdown
 
-Event ID: 4648 User logon attempted
+Event : 4648 User logon attempted
 
 4624 logon successfull (Type 2 interactive, 3 network)
 
@@ -413,7 +422,7 @@ System, EventLog, 6013 Uptime
 
 Time Changed event
 
-track usb device insert [http://www.swiftforensics.com/2012/08/tracking-usb-first-insertion-in-event.html](http://www.autoitscript.com/autoit3/docs/appendix/clsid.htm)
+track usb device insert [http://www.swiftforensics.com/2012/08/tracking-usb-first-insertion-in-event.html](http://www.autoitscript.com/autoit3/docs/appendix/cls.htm)
 
 links to repair corrupt [http://www.forensickb.com/2009/01/windows-event-logs.html](http://www.mydigitallife.info/command-line-switches-to-display-special-objects-or-folders-when-opening-windows-explorer/)
 
@@ -421,7 +430,7 @@ forensics detect cleared log books.google.com/books?isbn=1118236084
 
 **Security Auditing**
 
-#### Emergency Management Services {#h.57nrxvjy2dv0" id="h.57nrxvjy2dv0
+#### Emergency Management Services {#Emergency-Management}
 
 Windows 2003
 
@@ -437,9 +446,9 @@ For specific information about setting Recovery Console Bootcfg parameters for E
 
 ``[http://technet.microsoft.com/en-us/library/cc786105%28v=ws.10%29.aspx](http://technet.microsoft.com/en-us/library/cc754361\(v=ws.10\).aspx)``
 
-#### Setup log access {#h.za0t6rs6nzti" id="h.za0t6rs6nzti
+#### Setup log access {#setup-log-access}
 
-``\[DELL only?]``
+`[DELL only?]`
 
 SAC provides access to the setup logs during GUI-mode Setup. You can press ESC+TAB to switch between the setup logs and SAC. When accessing the setup logs from Emergency Management Services, you can see which portions of Setup have completed and whether any errors have occurred. This is a very useful way to check the progress of your setup and to diagnose setup failures.
 
@@ -451,19 +460,21 @@ setupact.log Displays any warnings during setup.
 
 setuperr.log Displays any errors that might occur during setup.
 
-#### Registry {#h.dv5d16psp8f9" id="h.dv5d16psp8f9
+#### Registry {#registry}
 
 **System**
 
-``HKEY\_Local\_Machine\SYSTEM C:\Windows\System32\config\SYSTEM``
+```
+HKEY\_Local\_Machine\SYSTEM C:\Windows\System32\config\SYSTEM
 
-``HKEY\_LOCAL\_MACHINE\SOFTWARE C:\Windows\System32\config\SOFTWARE``
+HKEY\_LOCAL\_MACHINE\SOFTWARE C:\Windows\System32\config\SOFTWARE
 
-``HKEY\_USERS\\.DEFAULT C:\Windows\System32\config\DEFAULT``
+HKEY\_USERS\\.DEFAULT C:\Windows\System32\config\DEFAULT
 
-``HKEY\_LOCAL\_MACHINE\SAM, HKEY\_LOCAL\_MACHINE\SECURITY\SAM C:\Windows\System32\config\SAM``
+HKEY\_LOCAL\_MACHINE\SAM, HKEY\_LOCAL\_MACHINE\SECURITY\SAM C:\Windows\System32\config\SAM
 
-``HKEY\_LOCAL\_MACHINE\SECURITY C:\Windows\System32\config\SECURITY``
+HKEY\_LOCAL\_MACHINE\SECURITY C:\Windows\System32\config\SECURITY
+```
 
 **User**
 
@@ -489,7 +500,7 @@ More information about Profiles above/below
 
 ``C:\Windows\System32\config\RegBack``
 
-#### System Protected Files {#h.9nh67tqaidkk" id="h.9nh67tqaidkk
+#### System Protected Files {#system-files}
 
 **Microsoft (R) Windows (R) Resource Checker Version 6.0**
 
@@ -517,7 +528,7 @@ SFCShowProgress registry entry is missing or is set to 1, and the server is set 
 
 [http://support.microsoft.com/kb/222193](http://support.microsoft.com/kb/222193)
 
-#### Reserved names {#h.9nt6fh9kslmx" id="h.9nt6fh9kslmx
+#### Reserved names {#reserved-names}
 
 CON, PRN, AUX, NUL, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9
 
@@ -529,7 +540,7 @@ Administrator, Default, Public, Guest, System
 
 The name cannot be identical to any other user, computer, or group name in the domain. It can contain up to 20 uppercase or lowercase characters except for the following:" / \ \[ ] : ; | = , + \* ? <>
 
-#### Recycle Bin {#h.83kv3dsi6dgx" id="h.83kv3dsi6dgx
+#### Recycle Bin {#recycle-bin}
 
 ``C:\\$Recycle.Bin\\``
 
@@ -537,7 +548,7 @@ The name cannot be identical to any other user, computer, or group name in the d
 
 ``Contents renamed to 8.3 files keeping extension and named $\<random alpha-numberic>``
 
-#### System Restore {#h.lb6oo587b0bt" id="h.lb6oo587b0bt
+#### System Restore {#system-restore}
 
 rstrui.exe
 
@@ -545,7 +556,7 @@ rstrui.exe
 
 **Manual System Restore Process**
 
-#### Performance Monitoring {#h.yt5odnzmfd6" id="h.yt5odnzmfd6
+#### Performance Monitoring {#performance-monitoring}
 
 **perfmon**
 
@@ -643,13 +654,13 @@ Where to get them
 
 Uses the scheduled tasks to actually store, but can be created in Event Viewer with wizard?
 
-#### ReadyBoost {#h.2b5x4j2hatjb" id="h.2b5x4j2hatjb
+#### ReadyBoost {#readyboost}
 
 ``ReadyBoost.sfcache _\<Flash drive>_\ReadyBoost.sfcache``
 
 Cannot be enabled on Windows Server. Cannot be enabled when Windows is installed on an SSD drive.
 
-#### Offline Files {#h.s645ab5txcss" id="h.s645ab5txcss
+#### Offline Files {#offline-files}
 
 ``C:\WINDOWS\csc``
 
@@ -665,7 +676,7 @@ How to reset
 
 Issues with Folder Redirection GPO
 
-#### CSC {#h.rrf4cjfvzktj" id="h.rrf4cjfvzktj
+#### CSC {#cert-service-client}
 
 Certificate Services Client
 
@@ -675,13 +686,13 @@ Certificate Services Client is a core part of Microsoft® Windows® that manages
 
 This is the former name of credential roaming; it translates to Digital ID Management Service. Credential roaming is now part of the CSC. You may continue to see the acronym "DIMS” because it is used in Windows code such as in file names, registry hives, and the Eventlog.
 
-#### Network {#h.lptrn5tkidnk" id="h.lptrn5tkidnk
+#### Network {#network}
 
 ``C:\Windows\System32\drivers\etc\hosts``
 
 (Take ownership to edit file)
 
-``C:\Windows\System32\ras``
+`C:\Windows\System32\ras`
 
 Registry
 
@@ -754,49 +765,49 @@ Run 'ipconfig /flushdns' to flush the DNS cache, and 'nbtstat -RR' to flush the 
 | bye         | Exits the program.                                    |
 | commit      | Commits changes made while in offline mode.           |
 | delete      | Deletes a configuration entry from a list of entries. |
-| dhcp        | Changes to the \`netsh dhcp' context.                 |
-| dhcpclient  | Changes to the \`netsh dhcpclient' context.           |
-| dnsclient   | Changes to the \`netsh dnsclient' context.            |
+| dhcp        | Changes to the `netsh dhcp` context.                 |
+| dhcpclient  | Changes to the `netsh dhcpclient` context.           |
+| dnsclient   | Changes to the `netsh dnsclient` context.            |
 | dump        | Displays a configuration script.                      |
 | exec        | Runs a script file.                                   |
 | exit        | Exits the program.                                    |
-| firewall    | Changes to the \`netsh firewall' context.             |
+| firewall    | Changes to the `netsh firewall` context.             |
 | help        | Displays a list of commands.                          |
-| http        | Changes to the \`netsh http' context.                 |
-| interface   | Changes to the \`netsh interface' context.            |
-| ipsec       | Changes to the \`netsh ipsec' context.                |
-| lan         | Changes to the \`netsh lan' context.                  |
-| mbn         | Changes to the \`netsh mbn' context.                  |
-| namespace   | Changes to the \`netsh namespace' context.            |
-| nap         | Changes to the \`netsh nap' context.                  |
-| netio       | Changes to the \`netsh netio' context.                |
+| http        | Changes to the `netsh http` context.                 |
+| interface   | Changes to the `netsh interface` context.            |
+| ipsec       | Changes to the `netsh ipsec` context.                |
+| lan         | Changes to the `netsh lan` context.                  |
+| mbn         | Changes to the `netsh mbn` context.                  |
+| namespace   | Changes to the `netsh namespace` context.            |
+| nap         | Changes to the `netsh nap` context.                  |
+| netio       | Changes to the `netsh netio` context.                |
 | offline     | Sets the current mode to offline.                     |
 | online      | Sets the current mode to online.                      |
-| p2p         | Changes to the \`netsh p2p' context.                  |
+| p2p         | Changes to the `netsh p2p` context.                  |
 | popd        | Pops a context from the stack.                        |
 | pushd       | Pushes current context on stack.                      |
 | quit        | Exits the program.                                    |
-| ras         | Changes to the \`netsh ras' context.                  |
-| rpc         | Changes to the \`netsh rpc' context.                  |
+| ras         | Changes to the `netsh ras` context.                  |
+| rpc         | Changes to the `netsh rpc` context.                  |
 | set         | Updates configuration settings.                       |
 | show        | Displays information.                                 |
-| trace       | Changes to the \`netsh trace' context.                |
+| trace       | Changes to the `netsh trace` context.                |
 | unalias     | Deletes an alias.                                     |
-| wcn         | Changes to the \`netsh wcn' context.                  |
-| wfp         | Changes to the \`netsh wfp' context.                  |
-| winhttp     | Changes to the \`netsh winhttp' context.              |
-| winsock     | Changes to the \`netsh winsock' context.              |
-| wlan        | Changes to the \`netsh wlan' context.                 |
+| wcn         | Changes to the `netsh wcn` context.                  |
+| wfp         | Changes to the `netsh wfp` context.                  |
+| winhttp     | Changes to the `netsh winhttp` context.              |
+| winsock     | Changes to the `netsh winsock` context.              |
+| wlan        | Changes to the `netsh wlan` context.                 |
 
 **3 netsh commands that may fix a broken Windows network**
 
 Reset TCP/IP Network Stack
 
-netsh int ip reset resetlog.txt
+`netsh int ip reset resetlog.txt`
 
 Reset Winsock using netsh. If you have a LSP that is corrupted and causing network connectivity problems, this command should repair that. Note that if you run this command, you may have to re-install several programs that had LSPs installed previously, such as Google Desktop Search, etc.
 
-netsh winsock reset catalog
+`netsh winsock reset catalog`
 
 [http://support.microsoft.com/?kbid=811259](http://technet.microsoft.com/en-us/library/cc742124.aspx?kbid=811259)
 
@@ -864,7 +875,7 @@ sammui.log?
 
 On Windows 2000, to collect disk information in perfmon, must also install … then run command...?
 
-diskperf -yv
+`diskperf -yv`
 
 Most services have nothing to configure beyond the Startup type and Log on account. SNMP can edit Contact, Location, Traps, Security, Services (Physical, Applications, Datalink and subnetwork, Internet, and End-to-End)
 
@@ -1075,7 +1086,7 @@ scripts to detect Patches, Anti-Virus?
 
 **Browsing Network**
 
-net view
+`net view`
 
 Explorer and shell extensions
 
@@ -1107,11 +1118,13 @@ Network Transport (Microsoft Windows Network)
 
 [www.google.com](http://technet.microsoft.com/en-us/library/cc731038.aspx)
 
+```
 8.8.8.8
 
 8.8.4.4
+```
 
-``verified as of \[Publication Date]``
+``verified as of [Publication Date]``
 
 _space provided for writing notes_
 
@@ -1123,7 +1136,7 @@ _Suggest writing some addresses on back, inside cover_
 
 in your Path under Computer -> System Properties -> Advanced -> Environment Variables
 
-#### Startup and Logon Process {#h.4yvwy3wv5cst" id="h.4yvwy3wv5cst
+#### Startup and Logon Process {#startup-and-logon}
 
 Bitlocker involvement with boot?
 
