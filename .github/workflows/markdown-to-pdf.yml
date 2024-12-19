@@ -63,7 +63,7 @@ jobs:
           set +e  # Allow the script to continue on errors
           echo "Starting Markdown to PDF conversion with Pandoc..."
           mkdir -p pdfs
-          for file in *.md; do
+          find . -name "*.md" -not -path "./.*/*" | while read -r file; do
             echo "Converting $file to PDF..."
             pandoc "$file" --pdf-engine=xelatex -V mainfont="DejaVu Sans Mono" -o "pdfs/${file##*/%.md}.pdf" \
             && echo "Successfully converted $file to PDF." \
