@@ -30,6 +30,7 @@ jobs:
       - name: Add Metadata to Markdown Files
         run: |
           for file in *.md; do
+            echo "Adding metadata to: $file"
             # Uncomment one of the following date formats
 
             # For YYYY-MM
@@ -37,12 +38,15 @@ jobs:
 
             # For ISO 8601 (YYYY-MM-DD)
             # sed -i "1i ---\ntitle: \"My Amazing Book\"\nsubtitle: \"Exploring Windows Files and Folders\"\nauthor: \"Mark McDow\"\ndate: \"$(date +'%Y-%m-%d')\"\nkeywords: [Windows, Files, Folders, Forensics]\nabstract: >\n  This book dives into the intricacies of Windows files and folders, providing insights for IT professionals and enthusiasts alike.\nlang: en-US\nfontsize: 12pt\ngeometry: margin=1in\nmainfont: \"DejaVu Sans Mono\"\n---\n" "$file"
+            echo "Metadata added to: $file"
           done
 
-      # Step 3: Sanitize Markdown files for Latex error with Unicode and backslashes in .md
+      # Step 4: Sanitize Markdown files for Latex error with Unicode and backslashes in .md
       - name: Preprocess Markdown Files
         run: |
+          echo "Starting sed preprocessing for LaTeX compatibility..."
           for file in *.md; do
+            echo "Processing file: $file"
             # Escape LaTeX special characters
             # sed -i 's|%|\\%|g; s|{|\\{|g; s|}|\\}|g; s|_|\\_|g; s|\\|\\\\|g' "$file"
             # Replace box-drawing characters
@@ -50,17 +54,22 @@ jobs:
             # Remove trailing spaces and redundant blank lines
             sed -i 's/[[:space:]]*$//' "$file"
             sed -i '/^$/N;/^\n$/D' "$file"
+            echo "Finished preprocessing: $file"
           done
 
-      # Step 4: Convert Markdown to PDF
+      # Step 5: Convert Markdown to PDF
       - name: Convert Markdown to PDF
         run: |
+          echo "Starting Markdown to PDF conversion with Pandoc..."
           mkdir -p pdfs
           for file in *.md; do
-            pandoc "$file" --pdf-engine=xelatex -V mainfont="DejaVu Sans Mono" -o "pdfs/${file%.md}.pdf" || echo "Failed to convert $file, skipping..."
+            echo "Converting $file to PDF..."
+            pandoc "$file" --pdf-engine=xelatex -V mainfont="DejaVu Sans Mono" -o "pdfs/${file%.md}.pdf" \
+            && echo "Successfully converted $file to PDF." \
+            || echo "Failed to convert $file, skipping..."
           done
 
-      # Step 5: Upload PDFs as Artifact
+      # Step 6: Upload PDFs as Artifact
       - name: Upload PDFs as Artifact
         uses: actions/upload-artifact@v3
         with:
