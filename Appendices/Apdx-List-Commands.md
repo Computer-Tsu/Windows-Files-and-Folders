@@ -1,3 +1,43 @@
+# List of Commands
+
+## Windows Command Prompt Commands
+
+### System Information Commands
+
+### File and Directory Commands
+
+### Network Commands
+
+### Disk Management Commands
+
+### Task Management Commands
+
+## PowerShell Commands
+
+### System Information Cmdlets
+
+### File and Directory Cmdlets
+
+### Network Cmdlets
+
+### Disk Management Cmdlets
+
+### Task Management Cmdlets
+
+## Linux Terminal Commands
+
+### System Information Commands
+
+### File and Directory Commands
+
+### Network Commands
+
+### Disk Management Commands
+
+### Process Management Commands
+
+-----
+
 
 ### List of Microsoft Commands {#hcommand-list}
 
