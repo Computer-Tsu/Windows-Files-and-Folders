@@ -127,7 +127,7 @@ Ways to create the folder
 
 {ed7ba470-8e54-465e-825c-99712043e01c}
 
-**Contents of ‘All Tasks’ folder (Windows 7)**
+**Contents of 'All Tasks' folder (Windows 7)**
 
 **Action Center**
 
@@ -143,9 +143,9 @@ Create and format hard disk partitions
 
 **Color Management**
 
-``**Contents of ‘All Tasks’ folder (Windows Server \_?)**``
+``**Contents of 'All Tasks' folder (Windows Server \_?)**``
 
-**Contents of ‘All Tasks’ folder (Windows 8)**
+**Contents of 'All Tasks' folder (Windows 8)**
 
 ### Shares {#h.6mgfjeh2d4bo" id="h.6mgfjeh2d4bo
 
@@ -169,44 +169,44 @@ More shares found in Active Directory section above
 
 | **Description**                                     | **Key Name**                                                                                                      |
 | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| RegEdit Favorites                                   | HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit\Favorites                                          |
-| CurrentControlSet\[1]                               | HKLM\SYSTEM\Select                                                                                                |
-| LogonUI                                             | HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI                                             |
-| List SID & user accounts\[2]                        | HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList                                                     |
-| Network Shares                                      | HKLM\SYSTEM\CurrentControlSet\services\LanmanServer\Shares                                                        |
-| Environmental variables                             | HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment                                                 |
+| RegEdit Favorites                                   | ``HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit\Favorites``                                      |
+| CurrentControlSet\[1]                               | ``HKLM\SYSTEM\Select``                                                                                            |
+| LogonUI                                             | HKLM\_SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI                                            |
+| List SID & user accounts\[2]                        | HKLM\_SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList                                                    |
+| Network Shares                                      | HKLM\_SYSTEM\CurrentControlSet\services\LanmanServer\Shares                                                       |
+| Environmental variables                             | HKLM\_SYSTEM\CurrentControlSet\Control\Session Manager\Environment                                                |
 | Local Admin (HKCU)                                  | HKEY\_USERS\S-1-5-21-<3171392789-1724324034-2371106253>-500                                                       |
-| Winlogon                                            | HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon                                                        |
-| Environmental variables for User                    | HKCU\Environment                                                                                                  |
+| Winlogon                                            | HKLM\_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon                                                       |
+| Environmental variables for User                    | HKCU\_Environment                                                                                                 |
 | Default User settings                               | HKEY\_USERS\\.DEFAULT                                                                                             |
-| HKCU Desktop                                        | HKCU\Control Panel\Desktop                                                                                        |
-| User Shell Folders                                  | HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders                                        |
+| HKCU Desktop                                        | HKCU\_Control Panel\Desktop                                                                                       |
+| User Shell Folders                                  | HKLM\_SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders                                       |
 |                                                     |                                                                                                                   |
 |                                                     |                                                                                                                   |
-| Start Up                                            | HKCU\Software\Microsoft\Windows\CurrentVersion\Run                                                                |
-| Desktop, Wallpaper, Screen saver                    | HKCU\Control Panel\Desktop                                                                                        |
-| Screen saver                                        | HKCU\Control Panel\Desktop\SCRNSAVE.EXE                                                                           |
-| Screen saver grace period                           | HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\ScreenSaverGracePeriod                                 |
-| Wallpaper                                           | HKCU\Control Panel\Desktop\Wallpaper                                                                              |
-| Default Printer                                     | HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows                                                         |
-| Win7 Printers Folder on Desktop                     | HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\\{2227a280-3aea-1069-a2de-08002b30309d} |
-| Uninstall                                           | HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall                                                          |
-| Offline Files                                       | HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\NetCache                                                           |
+| Start Up                                            | HKCU\_Software\Microsoft\Windows\CurrentVersion\Run                                                               |
+| Desktop, Wallpaper, Screen saver                    | HKCU\_Control Panel\Desktop                                                                                       |
+| Screen saver                                        | HKCU\_Control Panel\Desktop\SCRNSAVE.EXE                                                                          |
+| Screen saver grace period                           | HKLM\_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\ScreenSaverGracePeriod                                |
+| Wallpaper                                           | HKCU\_Control Panel\Desktop\Wallpaper                                                                             |
+| Default Printer                                     | HKCU\_Software\Microsoft\Windows NT\CurrentVersion\Windows                                                        |
+| Win7 Printers Folder on Desktop                     | HKLM\_SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\\{2227a280-3aea-1069-a2de-08002b30309d}|
+| Uninstall                                           | HKLM\_SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall                                                         |
+| Offline Files                                       | HKLM\_SOFTWARE\Microsoft\Windows\CurrentVersion\NetCache                                                          |
 |                                                     |                                                                                                                   |
-| ODBC System DSNs                                    | HKLM\SOFTWARE\ODBC\ODBC.INI                                                                                       |
-| ODBC User DSNs                                      | HKCU\Software\ODBC\ODBC.INI                                                                                       |
-| Do not Block files downloaded from the Internet\[3] | HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments\SaveZoneInformation                           |
-| Fix for default Outlook account\[4]                 | HKCU\Software\Microsoft\Office\14.0\Outlook\Options\Mail\NewItemsUseDefaultSendingAccount                         |
+| ODBC System DSNs                                    | HKLM\_SOFTWARE\ODBC\ODBC.INI                                                                                      |
+| ODBC User DSNs                                      | HKCU\_Software\ODBC\ODBC.INI                                                                                      |
+| Do not Block files downloaded from the Internet\[3] | HKCU\_Software\Microsoft\Windows\CurrentVersion\Policies\Attachments\SaveZoneInformation                          |
+| Fix for default Outlook account\[4]                 | HKCU\_Software\Microsoft\Office\14.0\Outlook\Options\Mail\NewItemsUseDefaultSendingAccount                        |
 |                                                     |                                                                                                                   |
-| MAPI, Mail Profiles                                 | HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows Messaging Subsystem\Profiles                            |
+| MAPI, Mail Profiles                                 | HKCU\_Software\Microsoft\Windows NT\CurrentVersion\Windows Messaging Subsystem\Profiles                           |
 |                                                     |                                                                                                                   |
 | OOBE                                                |                                                                                                                   |
 | SYSTEM\WPA                                          |                                                                                                                   |
 |                                                     |                                                                                                                   |
 | Shares                                              |                                                                                                                   |
 |                                                     |                                                                                                                   |
-| Certificates for User                               | HKCU\Software\Microsoft\\?                                                                                        |
-| Certificates for Local Machine                      | HKLM\Software\Microsoft\\?                                                                                        |
+| Certificates for User                               | HKCU\_Software\Microsoft\\?                                                                                       |
+| Certificates for Local Machine                      | HKLM\_Software\Microsoft\\?                                                                                       |
 |                                                     |                                                                                                                   |
 |                                                     |                                                                                                                   |
 |                                                     |                                                                                                                   |
@@ -421,7 +421,6 @@ If Command Extensions are enabled, then there are several dynamic environment va
 | VerbosePreference               | SilentlyContinue                                                                                   |
 | WarningPreference               | Continue                                                                                           |
 | WhatIfPreference                | False                                                                                              |
-|                                 |                                                                                                    |
 
 #### Group Policy Management Editor {#h.e930dnr9oo0w" id="h.e930dnr9oo0w
 
@@ -429,7 +428,7 @@ Preference extensions support Windows environment variables and generate a numbe
 
 1. Open the Group Policy Management Console. Right-click the Group Policy object (GPO) that contains the preference item that you want to configure, and then click **Edit**.
 2. Item-level targeting, Targeting..., New Item, Environment Variable, Name:
-``3. Press F3 to display a list of variables from which you can select\[6].``
+3. Press F3 to display a list of variables from which you can select\[6].
 
 **Note** By using Registry Match Targeting targeting items, you can define variables at client run-time, and have these control behavior by using the Environment Variable Targeting targeting items or as values in a preference item setting.
 
@@ -439,7 +438,7 @@ Select a System Defined Variable
 
 | **Variable Name**   | **Description**                                                                                                                       |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| AppDataDir          | The current user’s application data directory.                                                                                        |
+| AppDataDir          | The current user's application data directory.                                                                                        |
 | BinaryComputerSid   | The SID of the computer in hexadecimal format.                                                                                        |
 | BinaryUserSid       | The SID of the current user in hexadecimal format.                                                                                    |
 | CommonAppdataDir    | The "all users" Application Data directory.                                                                                           |
@@ -453,9 +452,9 @@ Select a System Defined Variable
 | CurrentThreadId     | The numeric identity of the main thread.                                                                                              |
 | DateTime            | The current time (UTC).                                                                                                               |
 | DateTimeEx          | The current time (UTC) with milliseconds.                                                                                             |
-| DesktopDir          | The current user’s desktop directory.                                                                                                 |
+| DesktopDir          | The current user's desktop directory.                                                                                                 |
 | DomainName          | The domain name or workgroup of the computer.                                                                                         |
-| FavoritesDir        | The current user’s Explorer favorites directory.                                                                                      |
+| FavoritesDir        | The current user's Explorer favorites directory.                                                                                      |
 | GphPath             | The path to the history file.                                                                                                         |
 | GptpPath            | The path to the configuration file.                                                                                                   |
 | GroupPolicyVersion  | The version of the running Group Policy CSE.                                                                                          |
@@ -471,13 +470,13 @@ Select a System Defined Variable
 | LogonUser           | The username of the current user.                                                                                                     |
 | LogonUserSid        | The SID on the logon user.                                                                                                            |
 | MacAddress          | The first detected MAC address on the computer.                                                                                       |
-| NetPlacesDir        | The current user’s my network places directory.                                                                                       |
+| NetPlacesDir        | The current user's my network places directory.                                                                                       |
 | OsVersion           | The operating system: Windows XP \| Windows Server 2003 \| Windows Server 2003 R2 \| Windows Vista \| Windows Server 2008 \| Unknown. |
 | ProgramFilesDir     | The Windows Program Files directory.                                                                                                  |
-| ProgramsDir         | The current user’s programs directory.                                                                                                |
-| RecentDocumentsDir  | The current user’s recent documents directory.                                                                                        |
-| ResultCode          | The client’s exit code.                                                                                                               |
-| ResultText          | The client’s exit code text description.                                                                                              |
+| ProgramsDir         | The current user's programs directory.                                                                                                |
+| RecentDocumentsDir  | The current user's recent documents directory.                                                                                        |
+| ResultCode          | The client's exit code.                                                                                                               |
+| ResultText          | The client's exit code text description.                                                                                              |
 | ReversedComputerSid | The SID on the computer in reversed byte order hexadecimal format.                                                                    |
 | ReversedUserSid     | The SID of the current user in reversed byte order hexadecimal format.                                                                |
 | SendToDir           | The current user's Send to directory.                                                                                                 |
@@ -485,7 +484,7 @@ Select a System Defined Variable
 | StartUpDir          | The current user's Startup directory.                                                                                                 |
 | SystemDir           | The Windows system directory.                                                                                                         |
 | SystemDrive         | The name of the drive from which the operating system is running.                                                                     |
-| TempDir             | The current user’s temp directory as determined by Windows API.                                                                       |
+| TempDir             | The current user's temp directory as determined by Windows API.                                                                       |
 | TimeStamp           | The time stamp of the configurations being executed.                                                                                  |
 | TraceFile           | The path/name of the trace file.                                                                                                      |
 | WindowsDir          | The Windows directory.                                                                                                                |
