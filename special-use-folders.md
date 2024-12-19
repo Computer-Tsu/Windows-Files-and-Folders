@@ -56,7 +56,7 @@ Including changes from Windows XP to Vista, Windows 7
 
 ``C:\Users\<UserName>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\StartMenu``
 
-#### Windows Vista/7 Backward Compatible {#h.sh5o97u17lmp" id="h.sh5o97u17lmp
+#### Windows Vista/7 Backward Compatible {#Backward-Compatible}
 
 Reparse points, links, junctions, mount points are covered in the File System document.
 
@@ -132,7 +132,7 @@ Shortcuts that still work
 
 Can also use shell:sendto from Start-Run
 
-### Alternate Data Streams {#h.n04fsvlxp5ss" id="h.n04fsvlxp5ss
+### Alternate Data Streams {#alternate-data-streams}
 
 More information will be in the File Systems document.
 
@@ -176,7 +176,7 @@ Compressed (zipped) Folders Error
 
 Unicode characters
 
-### Windows system and configuration files {#h.w944nd5ndp0a" id="h.w944nd5ndp0a
+### Windows system and configuration files {#system-config-files}
 
 boot.ini
 
