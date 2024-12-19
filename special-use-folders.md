@@ -75,15 +75,16 @@ Warning: RoboCopy (version?) causes a copy-loop with certain `/MIR` situations.
 
 \<JUNCTION> NetHood [C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Network Shortcuts]
 
-``\<JUNCTION> PrintHood \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts]``
+\<JUNCTION> PrintHood \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts]
 
-``\<JUNCTION> Recent \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Recent]``
+\<JUNCTION> Recent \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Recent]
 
-``\<JUNCTION> SendTo \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\SendTo]``
+\<JUNCTION> SendTo \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\SendTo]
 
-``\<JUNCTION> Start Menu \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Start Menu]``
+\<JUNCTION> Start Menu \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Start Menu]
 
-``\<JUNCTION> Templates \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Templates]``
+\<JUNCTION> Templates \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Templates]
+```
 
 `DIR C:\Users /AL`
 
@@ -147,11 +148,11 @@ More information will be in the File Systems document.
 
 ``filename::datastream <sp?>``
 
-dir /r
+`dir /r`
 
 #### Blocked file downloaded from Internet
 
-Zone.Identifier
+`Zone.Identifier`
 
 how to remove block from multiple files
 
