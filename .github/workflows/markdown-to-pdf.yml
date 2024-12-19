@@ -65,7 +65,7 @@ jobs:
           for file in *.md; do
             echo "Converting $file to PDF..."
             pandoc "$file" --pdf-engine=xelatex -V mainfont="DejaVu Sans Mono" -o "pdfs/${file%.md}.pdf" \
-            && echo "Successfully converted $file to PDF." \
+            --verbose && echo "Successfully converted $file to PDF." \
             || echo "Failed to convert $file, skipping..."
           done
 
