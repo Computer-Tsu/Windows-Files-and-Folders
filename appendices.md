@@ -38,25 +38,25 @@ Biography about the author, information how to contact or follow the author
 
 Other books available: NT File System, AD/LDAP Database, Group Policies, Windows Administration methods, tools, scripts and examples (how-to use tools/commands discussed here and more 3rd-party tools with real-world examples and guides)
 
-Windows Versions
+* Windows Versions
 
-Run... Commands
+* Run... Commands
 
-Windows Start Menu structure and contents
+* Windows Start Menu structure and contents
 
-Windows Components (Add/Remove Features and Roles)
+* Windows Components (Add/Remove Features and Roles)
 
-Microsoft Office Components
+* Microsoft Office Components
 
-Windows Event Logs
+* Windows Event Logs
 
-Windows Explorer and File dialog box
+* Windows Explorer and File dialog box
 
-File and Directory Contents lists
+* File and Directory Contents lists
 
-Command Syntax Help
+* Command Syntax Help
 
-### Windows Versions {#h.61g8r35zg2rq" id="h.61g8r35zg2rq
+### Windows Versions {#windows-versions}
 
 |                           | Kernel Version   |
 | ------------------------- | ---------------- |
@@ -120,7 +120,7 @@ Windows 8
 
 Windows Server 2008 R2 Standard SP1 Version 6.1 (Build 7601: Service Pack 1)
 
-#### Forensically interesting spots in the Windows 7, Vista and XP file system and registry {#h.jgncwjc1fmcj" id="h.jgncwjc1fmcj
+#### Forensically interesting spots in the Windows 7, Vista and XP file system and registry {#Forensically-interesting}
 
 ``[http://www.irongeek.com/i.php?page=security/windows-forensics-registry-and-file-system-spots\&mode=print](http://technet.microsoft.com/en-us/library/cc754051.aspx?page=security/windows-forensics-registry-and-file-system-spots\&mode=print)``
 
@@ -174,11 +174,11 @@ Last logged on user
 
 Event logs
 
-``C:\Windows\System32\config``
+`C:\Windows\System32\config`
 
-``C:\Windows\System32\winevt\Logs``
+`C:\Windows\System32\winevt\Logs`
 
-``\*.evt and \*.evtx``
+`*.evt and *.evtx`
 
 Last key edited by RegEdit
 
@@ -219,7 +219,7 @@ Do “Shell:” commands work here?
 | Add/Remove Programs                                      | appwiz.cpl                                                                                                                                                                                                                             |
 | Administrative Tools                                     | certmgr.msc                                                                                                                                                                                                                            |
 | Antivirus (ThunderByte)                                  | ``tbav.exe ll=2 co hm ld fc hr af fi ex cl lo ap el tn ln=c:\tbav.log C:\\``                                                                                                                                                           |
-| Calls help using POP3 default server user                | `outlook.exe /a.txt /office@yahoo.com \&set msg=my name is %username% and have no help near, have a wheelchair, and live near and, need your assistance\&print%msg%>>a.txt\&set %subject%=have no comm accessdeff\&print%subject%>a.txt` |
+| Calls help using POP3 default server user                | `outlook.exe /a.txt /office@yahoo.com`<br>`&set msg=my name is %username%`<br>`and have no help near, have a wheelchair,`<br>`and live near and, need your assistance`<br>`&print%msg%>>a.txt&set %subject%=have no`<br>`comm accessdeff&print%subject%>a.txt` |
 | Character Map                                            | charmap.exe                                                                                                                                                                                                                            |
 | Check Disk Utility                                       | chkdsk.exe                                                                                                                                                                                                                             |
 | Clipboard Viewer                                         | clipbrd.exe                                                                                                                                                                                                                            |
@@ -388,23 +388,23 @@ order of precedence:
 
 () - grouping
 
-``! \~ - - unary operators``
+``! ~ -`` - unary operators
 
-``\* / % - arithmetic operators``
+``* / %`` - arithmetic operators
 
-``\+ - - arithmetic operators``
+``+ -`` - arithmetic operators
 
-<< >> - logical shift
+``<< >>`` - logical shift
 
-& - bitwise and
+``&`` - bitwise and
 
-^ - bitwise exclusive or
+``^ -`` bitwise exclusive or
 
-\| - bitwise or
+``|`` - bitwise or
 
-``\= \*= /= %= += -= - assignment``
+``= *= /= %= += -=`` - assignment
 
-&= ^= |= <<= >>=
+``&= ^= |= <<= >>=``
 
 , - expression separator
 
