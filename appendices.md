@@ -56,7 +56,7 @@ File and Directory Contents lists
 
 Command Syntax Help
 
-### Windows Versions <a href="#h.61g8r35zg2rq" id="h.61g8r35zg2rq"></a>
+### Windows Versions {#h.61g8r35zg2rq" id="h.61g8r35zg2rq
 
 |                           | Kernel Version   |
 | ------------------------- | ---------------- |
@@ -80,7 +80,7 @@ Command Syntax Help
 | Windows 8                 | 6.2 (Build 9200) |
 | ?                         | 6.4.0800.16383 ? |
 
-`[http://www.askvg.com/revealing-interesting-secret-behind-windows-build-numbers/?utm\_source=feedburner\&utm\_medium=feed\&utm\_campaign=Feed%3A+AskVG+%28AskVG%29](http://stackoverflow.com/questions/3412911/r-exe-rcmd-exe-rscript-exe-and-rterm-exe-whats-the-difference?utm\_source=feedburner\&utm\_medium=feed\&utm\_campaign=Feed:+AskVG+\(AskVG\))`
+``[http://www.askvg.com/revealing-interesting-secret-behind-windows-build-numbers/?utm\_source=feedburner\&utm\_medium=feed\&utm\_campaign=Feed%3A+AskVG+%28AskVG%29](http://stackoverflow.com/questions/3412911/r-exe-rcmd-exe-rscript-exe-and-rterm-exe-whats-the-difference?utm\_source=feedburner\&utm\_medium=feed\&utm\_campaign=Feed:+AskVG+\(AskVG\))``
 
 [http://technet.microsoft.com/en-us/magazine/jj663498.aspx](https://docs.google.com/a/blackchambers.net/document/d/1A9JS-1G0uQMZu8TCnpwCcTVZDw-3lpqf-E-b7eX6xj4/edit)
 
@@ -104,11 +104,11 @@ Windows XP SP1a
 
 Windows XP SP2
 
-`Windows XP SP3 Version 5.1 (Build 2600.xpsp\_sp3\_gdr.080814-1226 : Service Pack 3) or Build 5512?`
+``Windows XP SP3 Version 5.1 (Build 2600.xpsp\_sp3\_gdr.080814-1226 : Service Pack 3) or Build 5512?``
 
 …
 
-`Windows Server 2003 R2 SP2 Version 5.2 R2 (Build 3790.srv03\_sp2\_grd.120821-0338 : Service Pack 2)`
+``Windows Server 2003 R2 SP2 Version 5.2 R2 (Build 3790.srv03\_sp2\_grd.120821-0338 : Service Pack 2)``
 
 Windows Vista SP2 Build 6002 ?
 
@@ -120,39 +120,39 @@ Windows 8
 
 Windows Server 2008 R2 Standard SP1 Version 6.1 (Build 7601: Service Pack 1)
 
-#### Forensically interesting spots in the Windows 7, Vista and XP file system and registry <a href="#h.jgncwjc1fmcj" id="h.jgncwjc1fmcj"></a>
+#### Forensically interesting spots in the Windows 7, Vista and XP file system and registry {#h.jgncwjc1fmcj" id="h.jgncwjc1fmcj
 
-`[http://www.irongeek.com/i.php?page=security/windows-forensics-registry-and-file-system-spots\&mode=print](http://technet.microsoft.com/en-us/library/cc754051.aspx?page=security/windows-forensics-registry-and-file-system-spots\&mode=print)`
+``[http://www.irongeek.com/i.php?page=security/windows-forensics-registry-and-file-system-spots\&mode=print](http://technet.microsoft.com/en-us/library/cc754051.aspx?page=security/windows-forensics-registry-and-file-system-spots\&mode=print)``
 
 Windows Explorer:
 
 Recently opened files from Windows Explorer
 
-`C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Recent`
+``C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Recent``
 
 Network Shortcuts
 
-`C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Network Shortcuts`
+``C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Network Shortcuts``
 
 Items recently ran from the "Run" bar
 
-`HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU`
+``HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU``
 
 common file save/open dialog, recently opened/saved files
 
-`HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidlMRU`
+``HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidlMRU``
 
 Recent Docs
 
-`HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs`
+``HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs``
 
 EXE to main window title cache
 
-`HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache`
+``HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache``
 
 User Assist
 
-`HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist`
+``HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist``
 
 Didier Stevens has a tool for parsing the data here:
 
@@ -162,53 +162,53 @@ Windows:
 
 Temp folder
 
-`C:\Users\\\<user name>\AppData\Local\Temp`
+``C:\Users\\\<user name>\AppData\Local\Temp``
 
 Recycle Bin
 
-`C:\\$Recycle.Bin`
+``C:\\$Recycle.Bin``
 
 Last logged on user
 
-`HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon`
+``HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon``
 
 Event logs
 
-`C:\Windows\System32\config`
+``C:\Windows\System32\config``
 
-`C:\Windows\System32\winevt\Logs`
+``C:\Windows\System32\winevt\Logs``
 
-`\*.evt and \*.evtx`
+``\*.evt and \*.evtx``
 
 Last key edited by RegEdit
 
-`HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit`
+``HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit``
 
 List of Installed USB devices, both connected and unconnected
 
-`HKLM\SYSTEM\CurrentControlSet\Enum\USB`
+``HKLM\SYSTEM\CurrentControlSet\Enum\USB``
 
 List of installed USB storage devices
 
-`HKLM\SYSTEM\CurrentControlSet\Enum\USBSTOR`
+``HKLM\SYSTEM\CurrentControlSet\Enum\USBSTOR``
 
 SetupAPI Device Log
 
-`C:\windows\inf\setupapi.dev.log`
+``C:\windows\inf\setupapi.dev.log``
 
 includes what USB devices have been installed
 
 Windows Prefetch
 
-`C:\Windows\Prefetch`
+``C:\Windows\Prefetch``
 
 meant to speed up commonly executed application and boot load times by recording what on the system is accessed.
 
 Mark McKinnon has a tool you might be interested in for parsing this data. Also, you may want to read the Wikipedia entry: http://en.wikipedia.org/wiki/Prefetcher
 
-### Run... command <a href="#h.11if11o78e06" id="h.11if11o78e06"></a>
+### Run... command {#h.11if11o78e06" id="h.11if11o78e06
 
-`Commands\[1] (Win+R, Run.lnk app on Start Menu\Accessories)`
+``Commands\[1] (Win+R, Run.lnk app on Start Menu\Accessories)``
 
 Do “Shell:” commands work here?
 
@@ -334,17 +334,17 @@ Do “Shell:” commands work here?
 | Windows XP Tour Wizard                                   | tourstart.exe                                                                                                                                                                                                                          |
 | WordPad                                                  | write.exe                                                                                                                                                                                                                              |
 
-### Variables <a href="#h.dp3rawraxu1z" id="h.dp3rawraxu1z"></a>
+### Variables {#h.dp3rawraxu1z" id="h.dp3rawraxu1z
 
-#### Set an Environmental Variable from Command Prompt <a href="#h.n8qvj5gjg3cl" id="h.n8qvj5gjg3cl"></a>
+#### Set an Environmental Variable from Command Prompt {#h.n8qvj5gjg3cl" id="h.n8qvj5gjg3cl
 
 See also: SetX.exe
 
-`C:\\>SET /?`
+``C:\\>SET /?``
 
 Displays, sets, or removes cmd.exe environment variables.
 
-`SET \[variable=\[string]]`
+``SET \[variable=\[string]]``
 
 variable Specifies the environment-variable name.
 
@@ -376,7 +376,7 @@ Two new switches have been added to the SET command:
 
 `SET /A expression`
 
-`SET /P variable=\[promptString]`
+``SET /P variable=\[promptString]``
 
 The /A switch specifies that the string to the right of the equal sign
 
@@ -388,11 +388,11 @@ order of precedence:
 
 () - grouping
 
-`! \~ - - unary operators`
+``! \~ - - unary operators``
 
-`\* / % - arithmetic operators`
+``\* / % - arithmetic operators``
 
-`\+ - - arithmetic operators`
+``\+ - - arithmetic operators``
 
 << >> - logical shift
 
@@ -402,7 +402,7 @@ order of precedence:
 
 \| - bitwise or
 
-`\= \*= /= %= += -= - assignment`
+``\= \*= /= %= += -= - assignment``
 
 &= ^= |= <<= >>=
 
@@ -420,7 +420,7 @@ is specified but is not defined in the current environment, then a value
 
 of zero is used. This allows you to do arithmetic with environment
 
-`variable values without having to type all those % signs to get their`
+``variable values without having to type all those % signs to get their``
 
 values. If SET /A is executed from the command line outside of a
 
@@ -446,7 +446,7 @@ the line of input. The promptString can be empty.
 
 Environment variable substitution has been enhanced as follows:
 
-`%PATH:str1=str2%`
+``%PATH:str1=str2%``
 
 would expand the PATH environment variable, substituting each occurrence
 
@@ -462,7 +462,7 @@ occurrence of the remaining portion of str1.
 
 May also specify substrings for an expansion.
 
-`%PATH:\~10,5%`
+``%PATH:\~10,5%``
 
 would expand the PATH environment variable, and then use only the 5
 
@@ -476,11 +476,11 @@ negative, then the number used is the length of the environment variable
 
 value added to the offset or length specified.
 
-`%PATH:\~-10%`
+``%PATH:\~-10%``
 
 would extract the last 10 characters of the PATH variable.
 
-`%PATH:\~0,-2%`
+``%PATH:\~0,-2%``
 
 would extract all but the last 2 characters of the PATH variable.
 
@@ -500,15 +500,15 @@ demonstrates the problem with immediate variable expansion:
 
 set VAR=before
 
-`if "%VAR%" == "before" (`
+``if "%VAR%" == "before" (``
 
 set VAR=after
 
-`if "%VAR%" == "after" @echo If you see this, it worked`
+``if "%VAR%" == "after" @echo If you see this, it worked``
 
 )
 
-`would never display the message, since the %VAR% in BOTH IF statements`
+``would never display the message, since the %VAR% in BOTH IF statements``
 
 is substituted when the first IF statement is read, since it logically
 
@@ -522,21 +522,21 @@ will not work as expected:
 
 set LIST=
 
-`for %i in (\*) do set LIST=%LIST% %i`
+``for %i in (\*) do set LIST=%LIST% %i``
 
-`echo %LIST%`
+``echo %LIST%``
 
 in that it will NOT build up a list of files in the current directory,
 
 but instead will just set the LIST variable to the last file found.
 
-`Again, this is because the %LIST% is expanded just once when the`
+``Again, this is because the %LIST% is expanded just once when the``
 
 FOR statement is read, and at that time the LIST variable is empty.
 
 So the actual FOR loop we are executing is:
 
-`for %i in (\*) do set LIST= %i`
+``for %i in (\*) do set LIST= %i``
 
 which just keeps setting LIST to the last file found.
 
@@ -550,7 +550,7 @@ examples could be written as follows to work as intended:
 
 set VAR=before
 
-`if "%VAR%" == "before" (`
+``if "%VAR%" == "before" (``
 
 set VAR=after
 
@@ -560,9 +560,9 @@ if "!VAR!" == "after" @echo If you see this, it worked
 
 set LIST=
 
-`for %i in (\*) do set LIST=!LIST! %i`
+``for %i in (\*) do set LIST=!LIST! %i``
 
-`echo %LIST%`
+``echo %LIST%``
 
 If Command Extensions are enabled, then there are several dynamic
 
@@ -576,131 +576,131 @@ If the user explicitly defines a variable with one of these names, then
 
 that definition will override the dynamic one described below:
 
-`%CD% - expands to the current directory string.`
+``%CD% - expands to the current directory string.``
 
-`%DATE% - expands to current date using same format as DATE command.`
+``%DATE% - expands to current date using same format as DATE command.``
 
-`%TIME% - expands to current time using same format as TIME command.`
+``%TIME% - expands to current time using same format as TIME command.``
 
-`%RANDOM% - expands to a random decimal number between 0 and 32767.`
+``%RANDOM% - expands to a random decimal number between 0 and 32767.``
 
-`%ERRORLEVEL% - expands to the current ERRORLEVEL value`
+``%ERRORLEVEL% - expands to the current ERRORLEVEL value``
 
-`%CMDEXTVERSION% - expands to the current Command Processor Extensions`
+``%CMDEXTVERSION% - expands to the current Command Processor Extensions``
 
 version number.
 
-`%CMDCMDLINE% - expands to the original command line that invoked the`
+``%CMDCMDLINE% - expands to the original command line that invoked the``
 
 Command Processor.
 
-`%HIGHESTNUMANODENUMBER% - expands to the highest NUMA node number`
+``%HIGHESTNUMANODENUMBER% - expands to the highest NUMA node number``
 
 on this machine.
 
-`ALLUSERSPROFILE=C:\ProgramData`
+``ALLUSERSPROFILE=C:\ProgramData``
 
-`APPDATA=C:\Users\\\<UserName>\AppData\Roaming`
+``APPDATA=C:\Users\\\<UserName>\AppData\Roaming``
 
-`CommonProgramFiles=C:\Program Files\Common Files`
+``CommonProgramFiles=C:\Program Files\Common Files``
 
-`CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files`
+``CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files``
 
-`CommonProgramW6432=C:\Program Files\Common Files`
+``CommonProgramW6432=C:\Program Files\Common Files``
 
 COMPUTERNAME=ITTECH
 
-`ComSpec=C:\Windows\system32\cmd.exe`
+``ComSpec=C:\Windows\system32\cmd.exe``
 
-`FP\_NO\_HOST\_CHECK=NO`
+``FP\_NO\_HOST\_CHECK=NO``
 
 HOMEDRIVE=M:
 
-`HOMEPATH=\\`
+``HOMEPATH=\\``
 
-`HOMESHARE=\\\Server\\\<UserName>`
+``HOMESHARE=\\\Server\\\<UserName>``
 
-`LOCALAPPDATA=C:\Users\\\<UserName>\AppData\Local`
+``LOCALAPPDATA=C:\Users\\\<UserName>\AppData\Local``
 
-`LOGONSERVER=\\\SERVER`
+``LOGONSERVER=\\\SERVER``
 
-`NUMBER\_OF\_PROCESSORS=4`
+``NUMBER\_OF\_PROCESSORS=4``
 
-`OS=Windows\_NT`
+``OS=Windows\_NT``
 
 PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 
-`PROCESSOR\_ARCHITECTURE=AMD64`
+``PROCESSOR\_ARCHITECTURE=AMD64``
 
-`PROCESSOR\_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel`
+``PROCESSOR\_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel``
 
-`PROCESSOR\_LEVEL=6`
+``PROCESSOR\_LEVEL=6``
 
-`PROCESSOR\_REVISION=2a07`
+``PROCESSOR\_REVISION=2a07``
 
-`ProgramData=C:\ProgramData`
+``ProgramData=C:\ProgramData``
 
-`ProgramFiles=C:\Program Files`
+``ProgramFiles=C:\Program Files``
 
-`ProgramFiles(x86)=C:\Program Files (x86)`
+``ProgramFiles(x86)=C:\Program Files (x86)``
 
-`ProgramW6432=C:\Program Files`
+``ProgramW6432=C:\Program Files``
 
 PROMPT=$P$G
 
-`PSModulePath=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\\`
+``PSModulePath=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\\``
 
-`PUBLIC=C:\Users\Public`
+``PUBLIC=C:\Users\Public``
 
 SESSIONNAME=Console
 
 SystemDrive=C:
 
-`SystemRoot=C:\Windows`
+``SystemRoot=C:\Windows``
 
-`TEMP=C:\Users\\_JSMITH\~1_\AppData\Local\Temp`
+``TEMP=C:\Users\\_JSMITH\~1_\AppData\Local\Temp``
 
-`TMP=C:\Users\\_JSMITH\~1_\AppData\Local\Temp`
+``TMP=C:\Users\\_JSMITH\~1_\AppData\Local\Temp``
 
 USERDNSDOMAIN=_MYDOMAIN.COM_
 
 USERDOMAIN=_MYDOMAIN_
 
-`USERNAME=\<UserName>`
+``USERNAME=\<UserName>``
 
-`USERPROFILE=C:\Users\\\<UserName>`
+``USERPROFILE=C:\Users\\\<UserName>``
 
-`windir=C:\Windows`
+``windir=C:\Windows``
 
-`windows\_tracing\_flags=3`
+``windows\_tracing\_flags=3``
 
 PowerShell
 
-`\[PS] C:\\>get-variable`
+``\[PS] C:\\>get-variable``
 
 Name Value
 
-`\---- -----`
+``\---- -----``
 
-`$ \~\history.csv`
+``$ \~\history.csv``
 
 ? True
 
 ^ Get-History
 
-`\_`
+``\_``
 
 args {}
 
-`CommonConnectFunctions\_Loca... {res\_0005, res\_0004, res\_0001, res\_0000, res\_0003, res\_0002}`
+``CommonConnectFunctions\_Loca... {res\_0005, res\_0004, res\_0001, res\_0000, res\_0003, res\_0002}``
 
-`ConfigurationPath C:\Program Files\Microsoft\Exchange Server\V14\bin\Microsoft.Exchange.Configuration.O...`
+``ConfigurationPath C:\Program Files\Microsoft\Exchange Server\V14\bin\Microsoft.Exchange.Configuration.O...``
 
 ConfirmPreference High
 
 connectedFqdn MYSERVER.mydomain.com
 
-`ConnectFunctions\_LocalizedS... {res\_0001, res\_0000, res\_0003, res\_0002, res\_0005, res\_0004, res\_0007, res\_0006, res\_...`
+``ConnectFunctions\_LocalizedS... {res\_0001, res\_0000, res\_0003, res\_0002, res\_0005, res\_0004, res\_0007, res\_0006, res\_...``
 
 ConsoleFileName
 
@@ -712,15 +712,15 @@ ErrorActionPreference Continue
 
 ErrorView NormalView
 
-`exbin C:\Program Files\Microsoft\Exchange Server\V14\bin\\`
+``exbin C:\Program Files\Microsoft\Exchange Server\V14\bin\\``
 
 ExecutionContext System.Management.Automation.EngineIntrinsics
 
-`exinstall C:\Program Files\Microsoft\Exchange Server\V14\\`
+``exinstall C:\Program Files\Microsoft\Exchange Server\V14\\``
 
 exrandom System.Random
 
-`exscripts C:\Program Files\Microsoft\Exchange Server\V14\scripts\\`
+``exscripts C:\Program Files\Microsoft\Exchange Server\V14\scripts\\``
 
 false False
 
@@ -728,7 +728,7 @@ FormatEnumerationLimit 16
 
 getLiveIDCredCode using System;...
 
-`HOME M:\\`
+``HOME M:\\``
 
 Host System.Management.Automation.Internal.Host.InternalHost
 
@@ -738,7 +738,7 @@ input System.Collections.ArrayList+ArrayListEnumeratorSimple
 
 LASTEXITCODE 0
 
-`ManagementPath C:\Program Files\Microsoft\Exchange Server\V14\bin\Microsoft.Exchange.Management.dll`
+``ManagementPath C:\Program Files\Microsoft\Exchange Server\V14\bin\Microsoft.Exchange.Management.dll``
 
 MaximumAliasCount 4096
 
@@ -760,11 +760,11 @@ null
 
 OutputEncoding System.Text.ASCIIEncoding
 
-`partialTypeFile C:\Program Files\Microsoft\Exchange Server\V14\bin\Exchange.partial.Types.ps1xml`
+``partialTypeFile C:\Program Files\Microsoft\Exchange Server\V14\bin\Exchange.partial.Types.ps1xml``
 
 PID 8600
 
-`PROFILE \\\AppServer\Users\Mark McDow\Data\Documents\WindowsPowerShell\Microsoft.PowerShell\_pr...`
+``PROFILE \\\AppServer\Users\Mark McDow\Data\Documents\WindowsPowerShell\Microsoft.PowerShell\_pr...``
 
 ProgressPreference Continue
 
@@ -774,7 +774,7 @@ PSCulture en-US
 
 PSEmailServer
 
-`PSHOME C:\Windows\System32\WindowsPowerShell\v1.0`
+``PSHOME C:\Windows\System32\WindowsPowerShell\v1.0``
 
 PSSessionApplicationName wsman
 
@@ -786,9 +786,9 @@ PSUICulture en-US
 
 PSVersionTable {CLRVersion, BuildVersion, PSVersion, WSManStackVersion, PSCompatibleVersions, Serial...
 
-`PWD C:\\`
+``PWD C:\\``
 
-`RemoteExchange\_LocalizedStr... {res\_0003, res\_help\_for\_cmdlet, res\_0005, res\_0007, res\_0009, res\_general\_help, res\_t...`
+``RemoteExchange\_LocalizedStr... {res\_0003, res\_help\_for\_cmdlet, res\_0005, res\_0007, res\_0009, res\_general\_help, res\_t...``
 
 remoteSession System.Management.Automation.Runspaces.PSSession
 
@@ -808,7 +808,7 @@ StackTrace at System.Management.Automation.CommandDiscovery.LookupCommandInfo(St
 
 true True
 
-`typeFilePath C:\Program Files\Microsoft\Exchange Server\V14\bin\exchange.types.ps1xml`
+``typeFilePath C:\Program Files\Microsoft\Exchange Server\V14\bin\exchange.types.ps1xml``
 
 typeListToCheck
 
@@ -820,7 +820,7 @@ WarningPreference Continue
 
 WhatIfPreference False
 
-### The god Mode <a href="#h.122q6fk9du3z" id="h.122q6fk9du3z"></a>
+### The god Mode {#h.122q6fk9du3z" id="h.122q6fk9du3z
 
 All Tasks folder
 
@@ -828,7 +828,7 @@ All Tasks folder
 
 Do not use in Vista 64-bit?
 
-#### Windows 7 <a href="#h.6a5hg4azm10u" id="h.6a5hg4azm10u"></a>
+#### Windows 7 {#h.6a5hg4azm10u" id="h.6a5hg4azm10u
 
 | **Application**                   | **Name**                                                                       | **Keywords** |
 | --------------------------------- | ------------------------------------------------------------------------------ | ------------ |
@@ -1101,7 +1101,7 @@ Do not use in Vista 64-bit?
 | Windows Update                    | Turn automatic updating on or off                                              |              |
 |                                   |                                                                                |              |
 
-#### Windows 8.1 <a href="#h.f7jxzgccckgr" id="h.f7jxzgccckgr"></a>
+#### Windows 8.1 {#h.f7jxzgccckgr" id="h.f7jxzgccckgr
 
 There are 244 items in the Windows 8.1 folder
 
@@ -1153,27 +1153,27 @@ Windows Anytime Upgrade
 
 Windows Cardspace
 
-### Windows Start Menu <a href="#h.ukzyswluatcb" id="h.ukzyswluatcb"></a>
+### Windows Start Menu {#h.ukzyswluatcb" id="h.ukzyswluatcb
 
 Windows XP, Vista, 7
 
 See Start Menu above
 
-`C:\ProgramData\Microsoft\Windows\Start Menu`
+``C:\ProgramData\Microsoft\Windows\Start Menu``
 
-`C:\Users\\_Username_\AppData\Roaming\Microsoft\Windows\Start Menu`
+``C:\Users\\_Username_\AppData\Roaming\Microsoft\Windows\Start Menu``
 
 Default Programs
 
-`Programs\\`
+``Programs\\``
 
-`Accessories\\`
+``Accessories\\``
 
-`Ease of Access\\`
+``Ease of Access\\``
 
 Windows Speech Recognition
 
-`System Tools\\`
+``System Tools\\``
 
 Character Map
 
@@ -1195,7 +1195,7 @@ Windows Easy Transfer Reports ?
 
 Windows Easy Transfer ?
 
-`Tablet PC\\`
+``Tablet PC\\``
 
 Personalize Handwriting Recognition
 
@@ -1203,7 +1203,7 @@ Tablet PC Input Panel
 
 Windows Journal
 
-`Windows PowerShell\\`
+``Windows PowerShell\\``
 
 Windows PowerShell (x86)
 
@@ -1237,37 +1237,37 @@ Sync Center
 
 Windows DVD Maker ?
 
-`Windows Mobility Center %windir%\system32\mblctr.exe /open (Opens the Windows Mobility Center so you can adjust display brightness, volume, power options, and other mobile PC settings.)`
+``Windows Mobility Center %windir%\system32\mblctr.exe /open (Opens the Windows Mobility Center so you can adjust display brightness, volume, power options, and other mobile PC settings.)``
 
 WordPad
 
-`Administrative Tools\\`
+``Administrative Tools\\``
 
-`Dell\\`
+``Dell\\``
 
-`Games\\`
+``Games\\``
 
-`Google Chrome\\`
+``Google Chrome\\``
 
-`Intel\\`
+``Intel\\``
 
-`iTunes\\`
+``iTunes\\``
 
-`Maintenance\\`
+``Maintenance\\``
 
-`Microsoft Exchange Server 2010\\`
+``Microsoft Exchange Server 2010\\``
 
-`Microsoft Office\\`
+``Microsoft Office\\``
 
-`Microsoft Silverlight\\`
+``Microsoft Silverlight\\``
 
-`Mozilla\\`
+``Mozilla\\``
 
-`Startup\\`
+``Startup\\``
 
-`Windows Live\\`
+``Windows Live\\``
 
-`Windows Virtual PC\\`
+``Windows Virtual PC\\``
 
 Adobe Reader X ?
 
@@ -1297,7 +1297,7 @@ Windows Media Player
 
 XPS Viewer
 
-`C:\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu>tree /f`
+``C:\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu>tree /f``
 
 Folder PATH listing for volume OS
 
@@ -1345,9 +1345,9 @@ C:.
 
 Help.lnk
 
-`C:\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu>`
+``C:\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu>``
 
-### Windows Components <a href="#h.wq6w7qebqpgx" id="h.wq6w7qebqpgx"></a>
+### Windows Components {#h.wq6w7qebqpgx" id="h.wq6w7qebqpgx
 
 Windows XP (Home, Pro, Media Center), Vista, 7, 8
 
@@ -1359,13 +1359,13 @@ Installable (RSAT, Windows Live, )
 
 SQL, Exchange, ?
 
-`See \_\_ above for Command-line for Windows 7, Server 2008, 2008 Core`
+``See \_\_ above for Command-line for Windows 7, Server 2008, 2008 Core``
 
-`Matrix of features/components and Windows version can be found in document \_\_\_`
+``Matrix of features/components and Windows version can be found in document \_\_\_``
 
 UNIX compatibility now a separate download
 
-#### Windows (7) Turn features on or off <a href="#h.ws0k4tpvo993" id="h.ws0k4tpvo993"></a>
+#### Windows (7) Turn features on or off {#h.ws0k4tpvo993" id="h.ws0k4tpvo993
 
 Games (Standard inbox games.)
 
@@ -1451,9 +1451,9 @@ XPS Services
 
 XPS Viewer
 
-#### Windows Server 2008 R2 Roles <a href="#h.l9sfxzv9mgx9" id="h.l9sfxzv9mgx9"></a>
+#### Windows Server 2008 R2 Roles {#h.l9sfxzv9mgx9" id="h.l9sfxzv9mgx9
 
-`Some roles (\_\_\_) not available under Core`
+``Some roles (\_\_\_) not available under Core``
 
 Active Directory Certificate Services
 
@@ -1493,7 +1493,7 @@ Windows Server Update Services
 
 Additional role services can be added from the Roles home page.
 
-#### Windows 2008 R2 Features <a href="#h.eh53aicwzjmw" id="h.eh53aicwzjmw"></a>
+#### Windows 2008 R2 Features {#h.eh53aicwzjmw" id="h.eh53aicwzjmw
 
 .NET Framework 3.5.1 Features
 
@@ -1601,263 +1601,263 @@ Wireless LAN Service
 
 XPS Viewer
 
-#### Microsoft Office <a href="#h.tra4txeegr0s" id="h.tra4txeegr0s"></a>
+#### Microsoft Office {#h.tra4txeegr0s" id="h.tra4txeegr0s
 
 Microsoft Office
 
-`\-- +Microsoft Excel`
+``\-- +Microsoft Excel``
 
-`\-- .NET Programmability Support`
+``\-- .NET Programmability Support``
 
-`\-- +Add-ins`
+``\-- +Add-ins``
 
-`\-- Euro Currency Tools`
+``\-- Euro Currency Tools``
 
-`\-- Analysis ToolPak`
+``\-- Analysis ToolPak``
 
-`\-- Solver`
+``\-- Solver``
 
-`\-- Sample Files`
+``\-- Sample Files``
 
-`\-- +Microsoft OneNote`
+``\-- +Microsoft OneNote``
 
-`\-- Handwriting Fonts`
+``\-- Handwriting Fonts``
 
-`\-- .NET Programmability Support`
+``\-- .NET Programmability Support``
 
-`\-- +Send to OneNote Add-ins`
+``\-- +Send to OneNote Add-ins``
 
-`\-- Internet Explorer Integration`
+``\-- Internet Explorer Integration``
 
-`\-- Outlook Integration`
+``\-- Outlook Integration``
 
-`\-- +Microsoft Outlook`
+``\-- +Microsoft Outlook``
 
-`\-- .NET Programmability Support`
+``\-- .NET Programmability Support``
 
-`\-- +Importers and Exporters`
+``\-- +Importers and Exporters``
 
-`\-- +Import from Other Formats`
+``\-- +Import from Other Formats``
 
-`\-- Act 3.0`
+``\-- Act 3.0``
 
-`\-- Text (DOS)`
+``\-- Text (DOS)``
 
-`\-- Text (Win)`
+``\-- Text (Win)``
 
-`\-- ODBC`
+``\-- ODBC``
 
-`\-- Lotus Organizer`
+``\-- Lotus Organizer``
 
-`\-- PAB`
+``\-- PAB``
 
-`\-- Visual Basic Scripting Support`
+``\-- Visual Basic Scripting Support``
 
-`\-- +Outlook Messaging Components`
+``\-- +Outlook Messaging Components``
 
-`\-- +Outlook Mapi Service Providers`
+``\-- +Outlook Mapi Service Providers``
 
-`\-- Outlook Address Book`
+``\-- Outlook Address Book``
 
-`\-- Microsoft Exchange Server`
+``\-- Microsoft Exchange Server``
 
-`\-- Microsoft LDAP Directory`
+``\-- Microsoft LDAP Directory``
 
-`\-- Personal Folders`
+``\-- Personal Folders``
 
-`\-- +Outlook Add-Ins`
+``\-- +Outlook Add-Ins``
 
-`\-- SharePoint Server Colleague Recommendations Add-In`
+``\-- SharePoint Server Colleague Recommendations Add-In``
 
-`\-- Outlook Social Connector`
+``\-- Outlook Social Connector``
 
-`\-- +Outlook Stationery`
+``\-- +Outlook Stationery``
 
-`\-- Outlook Stationery - Basic Files`
+``\-- Outlook Stationery - Basic Files``
 
-`\-- Outlook Stationery - Extended Files`
+``\-- Outlook Stationery - Extended Files``
 
-`\-- Outlook Templates`
+``\-- Outlook Templates``
 
-`\-- +Microsoft PowerPoint`
+``\-- +Microsoft PowerPoint``
 
-`\-- Organization Chart Add-in for Microsoft Office programs`
+``\-- Organization Chart Add-in for Microsoft Office programs``
 
-`\-- .NET Programmability Support`
+``\-- .NET Programmability Support``
 
-`\-- Animation Sound Effects`
+``\-- Animation Sound Effects``
 
-`\-- +Microsoft Publisher`
+``\-- +Microsoft Publisher``
 
-`\-- .NET Programmability Support`
+``\-- .NET Programmability Support``
 
-`\-- +Office Shared Features`
+``\-- +Office Shared Features``
 
-`\-- +Clip Organizer`
+``\-- +Clip Organizer``
 
-`\-- +Clip Organizer Collections`
+``\-- +Clip Organizer Collections``
 
-`\-- +Popular Clip Art`
+``\-- +Popular Clip Art``
 
-`\-- Clips`
+``\-- Clips``
 
-`\-- +AutoShapes and Themes`
+``\-- +AutoShapes and Themes``
 
-`\-- Clips`
+``\-- Clips``
 
-`\-- +Converters and Filters`
+``\-- +Converters and Filters``
 
-`\-- +Graphics Filters`
+``\-- +Graphics Filters``
 
-`\-- Computer Graphics Metafile (CGM) File Import`
+``\-- Computer Graphics Metafile (CGM) File Import``
 
-`\-- Encapsulated Postscript (EPS) File Import`
+``\-- Encapsulated Postscript (EPS) File Import``
 
-`\-- Graphics Interchange Format (GIF) File Import`
+``\-- Graphics Interchange Format (GIF) File Import``
 
-`\-- Joint Photographic Experts Group (JPEG) File Import`
+``\-- Joint Photographic Experts Group (JPEG) File Import``
 
-`\-- Macintosh Graphics (PICT) File Import`
+``\-- Macintosh Graphics (PICT) File Import``
 
-`\-- Portable Network Graphics (PNG) File Import`
+``\-- Portable Network Graphics (PNG) File Import``
 
-`\-- WordPerfect Graphics (WPG) File Import`
+``\-- WordPerfect Graphics (WPG) File Import``
 
-`\-- +Text Converters`
+``\-- +Text Converters``
 
-`\-- Works 7.0-9.0 Converter for Windows`
+``\-- Works 7.0-9.0 Converter for Windows``
 
-`\-- Recover Text Converter`
+``\-- Recover Text Converter``
 
-`\-- WordPerfect 5.x Converter`
+``\-- WordPerfect 5.x Converter``
 
-`\-- WordPerfect 6.x Converter`
+``\-- WordPerfect 6.x Converter``
 
-`\-- Word 97-2003/Open XML Format Converter`
+``\-- Word 97-2003/Open XML Format Converter``
 
-`\-- +International Support`
+``\-- +International Support``
 
-`\-- Universal Font`
+``\-- Universal Font``
 
-`\-- Japanese Font`
+``\-- Japanese Font``
 
-`\-- Microsoft Office Themes`
+``\-- Microsoft Office Themes``
 
-`\-- Digital Certificate for VBA Projects`
+``\-- Digital Certificate for VBA Projects``
 
-`\-- +Proofing Tools`
+``\-- +Proofing Tools``
 
-`\-- Translation Core Files`
+``\-- Translation Core Files``
 
-`\-- +English Proofing Tools`
+``\-- +English Proofing Tools``
 
-`\-- Find All Word Forms`
+``\-- Find All Word Forms``
 
-`\-- Hyphenation`
+``\-- Hyphenation``
 
-`\-- Optical Character Recognition Modules`
+``\-- Optical Character Recognition Modules``
 
-`\-- Spelling and Grammar Checkers`
+``\-- Spelling and Grammar Checkers``
 
-`\-- Thesaurus`
+``\-- Thesaurus``
 
-`\-- +French Proofing Tools`
+``\-- +French Proofing Tools``
 
-`\-- Find All Word Forms`
+``\-- Find All Word Forms``
 
-`\-- Hyphenation`
+``\-- Hyphenation``
 
-`\-- Optical Character Recognition Modules`
+``\-- Optical Character Recognition Modules``
 
-`\-- Spelling and Grammar Checkers`
+``\-- Spelling and Grammar Checkers``
 
-`\-- Thesaurus`
+``\-- Thesaurus``
 
-`\-- English - French Translation`
+``\-- English - French Translation``
 
-`\-- +Spanish Proofing Tools`
+``\-- +Spanish Proofing Tools``
 
-`\-- Find All Word Forms`
+``\-- Find All Word Forms``
 
-`\-- Hyphenation`
+``\-- Hyphenation``
 
-`\-- Optical Character Recognition Modules`
+``\-- Optical Character Recognition Modules``
 
-`\-- Spelling and Grammar Checkers`
+``\-- Spelling and Grammar Checkers``
 
-`\-- Thesaurus`
+``\-- Thesaurus``
 
-`\-- English - Spanish Translation`
+``\-- English - Spanish Translation``
 
-`\-- +Fonts`
+``\-- +Fonts``
 
-`\-- Additional TrueType Fonts`
+``\-- Additional TrueType Fonts``
 
-`\-- Microsoft Office Download Control`
+``\-- Microsoft Office Download Control``
 
-`\-- +Web Themes`
+``\-- +Web Themes``
 
-`\-- Additional Web Themes`
+``\-- Additional Web Themes``
 
-`\-- Typical Web Themes`
+``\-- Typical Web Themes``
 
-`\-- Visual Basic for Applications`
+``\-- Visual Basic for Applications``
 
-`\-- +Office Tools`
+``\-- +Office Tools``
 
-`\-- Microsoft Forms 2.0 .NET Programmability Support`
+``\-- Microsoft Forms 2.0 .NET Programmability Support``
 
-`\-- +Microsoft Graph`
+``\-- +Microsoft Graph``
 
-`\-- .NET Programmability Support`
+``\-- .NET Programmability Support``
 
-`\-- Optical Character Recognition (OCR)`
+``\-- Optical Character Recognition (OCR)``
 
-`\-- +Actions Plugins`
+``\-- +Actions Plugins``
 
-`\-- Measurement Converter Actions Plugin`
+``\-- Measurement Converter Actions Plugin``
 
-`\-- Bibliographic Information Actions Plugin`
+``\-- Bibliographic Information Actions Plugin``
 
-`\-- Date Actions Plugin`
+``\-- Date Actions Plugin``
 
-`\-- Instant Messaging Contact Actions Plugin`
+``\-- Instant Messaging Contact Actions Plugin``
 
-`\-- Name Actions Plugin`
+``\-- Name Actions Plugin``
 
-`\-- Addresses and Places Actions Plugin`
+``\-- Addresses and Places Actions Plugin``
 
-`\-- Stocks && Funds Actions Plugin`
+``\-- Stocks && Funds Actions Plugin``
 
-`\-- Microsoft Office Picture Manager`
+``\-- Microsoft Office Picture Manager``
 
-`\-- +Microsoft SharePoint Foundation Support`
+``\-- +Microsoft SharePoint Foundation Support``
 
-`\-- Microsoft Access Web Datasheet Component`
+``\-- Microsoft Access Web Datasheet Component``
 
-`\-- Microsoft SharePoint Foundation Support`
+``\-- Microsoft SharePoint Foundation Support``
 
-`\-- Microsoft Query`
+``\-- Microsoft Query``
 
-`\-- Language Settings Tool`
+``\-- Language Settings Tool``
 
-`\-- Actions .NET Programmability Support`
+``\-- Actions .NET Programmability Support``
 
-`\-- Hosted Webs`
+``\-- Hosted Webs``
 
-`\-- Equation Editor`
+``\-- Equation Editor``
 
-`\-- +Microsoft Word`
+``\-- +Microsoft Word``
 
-`\-- .NET Programmability Support`
+``\-- .NET Programmability Support``
 
-`\-- Page Border Art`
+``\-- Page Border Art``
 
-`\-- Quick Formatting Files`
+``\-- Quick Formatting Files``
 
-### Windows (7) Event Log <a href="#h.dgqjcakmo7w9" id="h.dgqjcakmo7w9"></a>
+### Windows (7) Event Log {#h.dgqjcakmo7w9" id="h.dgqjcakmo7w9
 
-#### Custom Views <a href="#h.8vpbm97preop" id="h.8vpbm97preop"></a>
+#### Custom Views {#h.8vpbm97preop" id="h.8vpbm97preop
 
 **Server Roles**
 
@@ -1867,51 +1867,51 @@ Microsoft Exchange with Database Availability Group Events
 
 Custom Views can import as Xml files
 
-#### Windows Logs <a href="#h.k1mlra2iuj8w" id="h.k1mlra2iuj8w"></a>
+#### Windows Logs {#h.k1mlra2iuj8w" id="h.k1mlra2iuj8w
 
-`Application %SystemRoot%\System32\Winevt\Logs\Application.evtx`
+``Application %SystemRoot%\System32\Winevt\Logs\Application.evtx``
 
-`Security %SystemRoot%\System32\Winevt\Logs\Security.evtx`
+``Security %SystemRoot%\System32\Winevt\Logs\Security.evtx``
 
-`Setup %SystemRoot%\System32\Winevt\Logs\Setup.evtx`
+``Setup %SystemRoot%\System32\Winevt\Logs\Setup.evtx``
 
-`System %SystemRoot%\System32\Winevt\Logs\System.evtx`
+``System %SystemRoot%\System32\Winevt\Logs\System.evtx``
 
-`Forwarded Events %SystemRoot%\System32\Winevt\Logs\ForwardedEvents.evtx`
+``Forwarded Events %SystemRoot%\System32\Winevt\Logs\ForwardedEvents.evtx``
 
-#### Applications and Services Logs <a href="#h.dngf5u4tmugc" id="h.dngf5u4tmugc"></a>
+#### Applications and Services Logs {#h.dngf5u4tmugc" id="h.dngf5u4tmugc
 
-`ACEEventLog %SystemRoot%\System32\Winevt\Logs\ACEEventLog.evtx`
+``ACEEventLog %SystemRoot%\System32\Winevt\Logs\ACEEventLog.evtx``
 
-`Hardware Events %SystemRoot%\System32\Winevt\Logs\HardwareEvents.evtx`
+``Hardware Events %SystemRoot%\System32\Winevt\Logs\HardwareEvents.evtx``
 
-`Internet Explorer %SystemRoot%\System32\Winevt\Logs\Internet Explorer.evtx`
+``Internet Explorer %SystemRoot%\System32\Winevt\Logs\Internet Explorer.evtx``
 
-`Key Management Service %SystemRoot%\System32\Winevt\Logs\Key Management Service.evtx`
+``Key Management Service %SystemRoot%\System32\Winevt\Logs\Key Management Service.evtx``
 
-`Media Center %SystemRoot%\System32\Winevt\Logs\Media Center.evtx`
+``Media Center %SystemRoot%\System32\Winevt\Logs\Media Center.evtx``
 
 _Microsoft_
 
 **Windows**
 
-`API-Tracing/Operational \<Default>\Microsoft-Windows-API-Tracing%4Operational.evtx`
+``API-Tracing/Operational \<Default>\Microsoft-Windows-API-Tracing%4Operational.evtx``
 
 AppID/Operational
 
-`Application Server-Applications/Admin \<Default>\Microsoft-Windows-Application Server-Applications%4Admin.evtx`
+``Application Server-Applications/Admin \<Default>\Microsoft-Windows-Application Server-Applications%4Admin.evtx``
 
-`Application Server-Applications/Operational \<Default>\Microsoft-Windows-Application Server-Applications%4Operational.evtx`
+``Application Server-Applications/Operational \<Default>\Microsoft-Windows-Application Server-Applications%4Operational.evtx``
 
-`Application-Experience/Problem-Steps-Recorder \<Default>\Microsoft-Windows-Application-Experience%4Problem-Steps-Recorder.evtx`
+``Application-Experience/Problem-Steps-Recorder \<Default>\Microsoft-Windows-Application-Experience%4Problem-Steps-Recorder.evtx``
 
-`Application-Experience/Program-Compatibility-Assistant \<Default>\Microsoft-Windows-Application-Experience%4Program-Compatibility-Assistant.evtx`
+``Application-Experience/Program-Compatibility-Assistant \<Default>\Microsoft-Windows-Application-Experience%4Program-Compatibility-Assistant.evtx``
 
-`Application-Experience/Program-Compatibility-Troubleshooter \<Default>\Microsoft-Windows-Application-Experience%4Program-Compatibility-Troubleshooter.evtx`
+``Application-Experience/Program-Compatibility-Troubleshooter \<Default>\Microsoft-Windows-Application-Experience%4Program-Compatibility-Troubleshooter.evtx``
 
-`Application-Experience/Program-Inventory \<Default>\Microsoft-Windows-Application-Experience%4Program-Inventory.evtx`
+``Application-Experience/Program-Inventory \<Default>\Microsoft-Windows-Application-Experience%4Program-Inventory.evtx``
 
-`Application-Experience/Program-Telemetry \<Default>\Microsoft-Windows-Application-Experience%4Program-Telemetry.evtx`
+``Application-Experience/Program-Telemetry \<Default>\Microsoft-Windows-Application-Experience%4Program-Telemetry.evtx``
 
 AppLocker/EXE and DLL
 
@@ -1927,9 +1927,9 @@ Backup/Operational
 
 Biometrics/Operational
 
-`Bits-Client/Analytic \<Default>\Microsoft-Windows-Bits-Client%4Analytic.evtx`
+``Bits-Client/Analytic \<Default>\Microsoft-Windows-Bits-Client%4Analytic.evtx``
 
-`Bits-Client/Operational \<Default>\Microsoft-Windows-Bits-Client%4Operational.evtx`
+``Bits-Client/Operational \<Default>\Microsoft-Windows-Bits-Client%4Operational.evtx``
 
 Bluetooth-MTPEnum/Operational
 
@@ -1955,21 +1955,21 @@ DeviceSync/Operational
 
 Dhcp-Client
 
-`Microsoft-Windows DHCP Client Events/Admin \<Default>\Microsoft-Windows-Dhcp-Client%4Admin.evtx`
+``Microsoft-Windows DHCP Client Events/Admin \<Default>\Microsoft-Windows-Dhcp-Client%4Admin.evtx``
 
-`Microsoft-Windows DHCP Client Events/Operational \<Default>\Microsoft-Windows-Dhcp-Client%4Operational.evtx`
+``Microsoft-Windows DHCP Client Events/Operational \<Default>\Microsoft-Windows-Dhcp-Client%4Operational.evtx``
 
 Dhcp-Nap-Enforcement-Client
 
-`Microsoft-Windows-DHCPNap/Admin \<Default>\Microsoft-Windows-DhcpNap%4Admin.evtx`
+``Microsoft-Windows-DHCPNap/Admin \<Default>\Microsoft-Windows-DhcpNap%4Admin.evtx``
 
-`Microsoft-Windows-DHCPNap/Operational \<Default>\Microsoft-Windows-DhcpNap%4Operational.evtx`
+``Microsoft-Windows-DHCPNap/Operational \<Default>\Microsoft-Windows-DhcpNap%4Operational.evtx``
 
 DHCPv6-Client
 
-`Microsoft-Windows-DHCP Client Events/Operational \<Default>\Microsoft-Windows-Dhcpv6-Client%4Operational.evtx`
+``Microsoft-Windows-DHCP Client Events/Operational \<Default>\Microsoft-Windows-Dhcpv6-Client%4Operational.evtx``
 
-`Microsoft-Windows-DHCPv6 Client Events/Admin \<Default>\Microsoft-Windows-Dhcpv6-Client%4Admin.evtx`
+``Microsoft-Windows-DHCPv6 Client Events/Admin \<Default>\Microsoft-Windows-Dhcpv6-Client%4Admin.evtx``
 
 Diagnosis-DPS/Operational
 
@@ -1979,9 +1979,9 @@ Diagnosis-PLA/Operational
 
 Diagnosis-Schedule/Operational
 
-`Diagnosis-Scripted/Admin \<Default>\Microsoft-Windows-Diagnosis-Scripted%4Admin.evtx`
+``Diagnosis-Scripted/Admin \<Default>\Microsoft-Windows-Diagnosis-Scripted%4Admin.evtx``
 
-`Diagnosis-Scripted/Operational \<Default>\Microsoft-Windows-Diagnosis-Scripted%4Operational.evtx`
+``Diagnosis-Scripted/Operational \<Default>\Microsoft-Windows-Diagnosis-Scripted%4Operational.evtx``
 
 Diagnosis-ScriptedDiagnosticsProvider/Operational
 
@@ -2011,9 +2011,9 @@ Fault-Tolerant-Heap/Operational
 
 FMS/Operational
 
-`Folder Redirection/Operational \<Default>\Microsoft-Windows-Folder Redirection%4Operational.evtx`
+``Folder Redirection/Operational \<Default>\Microsoft-Windows-Folder Redirection%4Operational.evtx``
 
-`GroupPolicy/Operational \<Default>\Microsoft-Windows-GroupPolicy%4Operational.evtx`
+``GroupPolicy/Operational \<Default>\Microsoft-Windows-GroupPolicy%4Operational.evtx``
 
 Help/Operational
 
@@ -2033,7 +2033,7 @@ International-RegionalOptionsControlPanel/Operational
 
 Iphlpsvc/Operational
 
-`Kernel-EventTracing/Admin \<Default>\Microsoft-Windows-Kernel-EventTracing%4Admin.evtx`
+``Kernel-EventTracing/Admin \<Default>\Microsoft-Windows-Kernel-EventTracing%4Admin.evtx``
 
 Kernel-Power/Thermal-Operational
 
@@ -2057,9 +2057,9 @@ MemoryDiagnostics-Results/Debug
 
 MSPaint/Admin
 
-`MUI/Admin \<Default>\Microsoft-Windows-MUI%4Admin.evtx`
+``MUI/Admin \<Default>\Microsoft-Windows-MUI%4Admin.evtx``
 
-`MUI/Operational \<Default>\Microsoft-Windows-MUI%4Operational.evtx`
+``MUI/Operational \<Default>\Microsoft-Windows-MUI%4Operational.evtx``
 
 NCSI/Operational
 
@@ -2077,7 +2077,7 @@ NTLM/Operational
 
 OfflineFiles/Operational
 
-`ParentalControls/Operational \<Default>\Microsoft-Windows-ParentalControls%4Operational.evtx`
+``ParentalControls/Operational \<Default>\Microsoft-Windows-ParentalControls%4Operational.evtx``
 
 PeopleNearMe/Operational
 
@@ -2087,9 +2087,9 @@ PrimaryNetworkIcon
 
 Microsoft-Windows-NetworkLocationWizard/Operational
 
-`PrintService/Admin \<Default>\Microsoft-Windows-PrintService%4Admin.evtx`
+``PrintService/Admin \<Default>\Microsoft-Windows-PrintService%4Admin.evtx``
 
-`PrintService/Operational \<Default>\Microsoft-Windows-PrintService%4Operational.evtx`
+``PrintService/Operational \<Default>\Microsoft-Windows-PrintService%4Operational.evtx``
 
 ReadyBoost/Operational
 
@@ -2099,13 +2099,13 @@ Recovery/Operational
 
 Reliability-Analysis-Engine/Operational
 
-`RemoteApp and Desktop Connections/Admin \<Default>\Microsoft-Windows-RemoteApp and Desktop Connections%4Admin.evtx`
+``RemoteApp and Desktop Connections/Admin \<Default>\Microsoft-Windows-RemoteApp and Desktop Connections%4Admin.evtx``
 
-`RemoteAssistance/Admin \<Default>\Microsoft-Windows-RemoteAssistance%4Admin.evtx`
+``RemoteAssistance/Admin \<Default>\Microsoft-Windows-RemoteAssistance%4Admin.evtx``
 
-`RemoteAssistance/Operational \<Default>\Microsoft-Windows-RemoteAssistance%4Operational.evtx`
+``RemoteAssistance/Operational \<Default>\Microsoft-Windows-RemoteAssistance%4Operational.evtx``
 
-`RemoteDesktopServices-RemoteDesktopSessionManager/Admin \<Default>\microsoft-windows-RemoteDesktopServices-RemoteDesktopSessionManager%4Admin.evtx`
+``RemoteDesktopServices-RemoteDesktopSessionManager/Admin \<Default>\microsoft-windows-RemoteDesktopServices-RemoteDesktopSessionManager%4Admin.evtx``
 
 Resource-Exhaustion-Detector/Operational
 
@@ -2123,27 +2123,27 @@ Service Reporting API/Debug
 
 StickyNotes/Admin
 
-`TaskScheduler/Operational \<Default>\Microsoft-Windows-TaskScheduler%4Operational.evtx`
+``TaskScheduler/Operational \<Default>\Microsoft-Windows-TaskScheduler%4Operational.evtx``
 
 TerminalServices-ClientActiveXCore
 
 Microsoft-Windows-TerminalServices-RDPClient/Operational
 
-`TerminalServices-ClientUSBDevices/Admin \<Default>\Microsoft-Windows-TerminalServices-ClientUSBDevices%4Admin.evtx`
+``TerminalServices-ClientUSBDevices/Admin \<Default>\Microsoft-Windows-TerminalServices-ClientUSBDevices%4Admin.evtx``
 
-`TerminalServices-ClientUSBDevices/Operational \<Default>\Microsoft-Windows-TerminalServices-ClientUSBDevices%4Operational.evtx`
+``TerminalServices-ClientUSBDevices/Operational \<Default>\Microsoft-Windows-TerminalServices-ClientUSBDevices%4Operational.evtx``
 
-`TerminalServices-LocalSessionManager/Admin \<Default>\Microsoft-Windows-TerminalServices-LocalSessionManager%4Admin.evtx`
+``TerminalServices-LocalSessionManager/Admin \<Default>\Microsoft-Windows-TerminalServices-LocalSessionManager%4Admin.evtx``
 
-`TerminalServices-LocalSessionManager/Operational \<Default>\Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx`
+``TerminalServices-LocalSessionManager/Operational \<Default>\Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx``
 
-`TerminalServices-PnPDevices/Admin \<Default>\Microsoft-Windows-TerminalServices-PnPDevices%4Admin.evtx`
+``TerminalServices-PnPDevices/Admin \<Default>\Microsoft-Windows-TerminalServices-PnPDevices%4Admin.evtx``
 
-`TerminalServices-PnPDevices/Operational \<Default>\Microsoft-Windows-TerminalServices-PnPDevices%4Operational.evtx`
+``TerminalServices-PnPDevices/Operational \<Default>\Microsoft-Windows-TerminalServices-PnPDevices%4Operational.evtx``
 
-`TerminalServices-RemoteConnectionManager/Admin \<Default>\Microsoft-Windows-TerminalServices-RemoteConnectionManager%4Admin.evtx`
+``TerminalServices-RemoteConnectionManager/Admin \<Default>\Microsoft-Windows-TerminalServices-RemoteConnectionManager%4Admin.evtx``
 
-`TerminalServices-RemoteConnectionManager/Operational \<Default>\Microsoft-Windows-TerminalServices-RemoteConnectionManager%4Operational.evtx`
+``TerminalServices-RemoteConnectionManager/Operational \<Default>\Microsoft-Windows-TerminalServices-RemoteConnectionManager%4Operational.evtx``
 
 TZUtil/Operational
 
@@ -2151,7 +2151,7 @@ UAC/Operational
 
 IAC-FileVirtualization/Operational
 
-`User Profile Service/Operational \<Default>\Microsoft-Windows-User Profile Service%4Operational.evtx`
+``User Profile Service/Operational \<Default>\Microsoft-Windows-User Profile Service%4Operational.evtx``
 
 VDRVROOT/Operational
 
@@ -2171,21 +2171,21 @@ Operational
 
 WindowsDefender
 
-`Operational \<Default>\Microsoft-Windows-Windows Defender%4Operational.evtx`
+``Operational \<Default>\Microsoft-Windows-Windows Defender%4Operational.evtx``
 
-`WHC \<Default>\Microsoft-Windows-Windows Defender%4WHC.evtx`
+``WHC \<Default>\Microsoft-Windows-Windows Defender%4WHC.evtx``
 
-`Windows Firewall With Advanced Security/ConnectionSecurity \<Default>\Microsoft-Windows-Windows Firewall With Advanced Security%4ConnectionSecurity.evtx`
+``Windows Firewall With Advanced Security/ConnectionSecurity \<Default>\Microsoft-Windows-Windows Firewall With Advanced Security%4ConnectionSecurity.evtx``
 
-`Windows Firewall With Advanced Security/ConnectionSecurityVerbose \<Default>\Microsoft-Windows-Windows Firewall With Advanced Security%4ConnectionSecurityVerbose.evtx`
+``Windows Firewall With Advanced Security/ConnectionSecurityVerbose \<Default>\Microsoft-Windows-Windows Firewall With Advanced Security%4ConnectionSecurityVerbose.evtx``
 
-`Windows Firewall With Advanced Security/Firewall \<Default>\Microsoft-Windows-Windows Firewall With Advanced Security%4Firewall.evtx`
+``Windows Firewall With Advanced Security/Firewall \<Default>\Microsoft-Windows-Windows Firewall With Advanced Security%4Firewall.evtx``
 
-`Windows Firewall With Advanced Security/FirewallVerbose \<Default>\Microsoft-Windows-Windows Firewall With Advanced Security%4FirewallVerbose.evtx`
+``Windows Firewall With Advanced Security/FirewallVerbose \<Default>\Microsoft-Windows-Windows Firewall With Advanced Security%4FirewallVerbose.evtx``
 
 Windows Remote Management/Operational
 
-`WindowsBackup/ActionCenter \<Default>\Microsoft-Windows-WindowsBackup%4ActionCenter.evtx`
+``WindowsBackup/ActionCenter \<Default>\Microsoft-Windows-WindowsBackup%4ActionCenter.evtx``
 
 WindowsColorSystem/Operational
 
@@ -2195,7 +2195,7 @@ WindowsUpdateClient/Operational
 
 WinHttp
 
-`NDF/Diagnostic \<Default>\Microsoft-Windows-WinHTTP-NDF%4Diagnostic.evtx`
+``NDF/Diagnostic \<Default>\Microsoft-Windows-WinHTTP-NDF%4Diagnostic.evtx``
 
 Winlogon/Operational
 
@@ -2207,7 +2207,7 @@ Wired-AutoConfig/Operational
 
 WLAN-AutoConfig/Operational
 
-`Wordpad/Admin \<Default>\Microsoft-Windows-Wordpad%4Admin.evtx`
+``Wordpad/Admin \<Default>\Microsoft-Windows-Wordpad%4Admin.evtx``
 
 WPD-ClassInstaller/Operational
 
@@ -2215,15 +2215,15 @@ WPD-CompositeClassDriver/Operational
 
 WPD-MTPClassDriver/Operational
 
-`Microsoft Exchange PSTCapture %SystemRoot%\System32\Winevt\Logs\Microsoft Exchange PSTCapture.evtx`
+``Microsoft Exchange PSTCapture %SystemRoot%\System32\Winevt\Logs\Microsoft Exchange PSTCapture.evtx``
 
-`Microsoft Office Alerts %SystemRoot%\System32\Winevt\Logs\OAlerts.evtx`
+``Microsoft Office Alerts %SystemRoot%\System32\Winevt\Logs\OAlerts.evtx``
 
-`Windows PowerShell %SystemRoot%\System32\Winevt\Logs\Windows PowerShell.evtx`
+``Windows PowerShell %SystemRoot%\System32\Winevt\Logs\Windows PowerShell.evtx``
 
-#### Audit Policy Categories and Subcategories <a href="#h.vwasogroz128" id="h.vwasogroz128"></a>
+#### Audit Policy Categories and Subcategories {#h.vwasogroz128" id="h.vwasogroz128
 
-`C:\Windows\System32>Auditpol /list /subcategory:\*`
+``C:\Windows\System32>Auditpol /list /subcategory:\*``
 
 **System**
 
@@ -2349,9 +2349,9 @@ Other Account Logon Events
 
 Kerberos Authentication Service
 
-### Windows File control and explorer (7) <a href="#h.q6bwbcldm6im" id="h.q6bwbcldm6im"></a>
+### Windows File control and explorer (7) {#h.q6bwbcldm6im" id="h.q6bwbcldm6im
 
-#### Favorites <a href="#h.rtude3w470ph" id="h.rtude3w470ph"></a>
+#### Favorites {#h.rtude3w470ph" id="h.rtude3w470ph
 
 Desktop
 
@@ -2361,7 +2361,7 @@ Recent Places
 
 Recent Places, Desktop, Libraries, Computer, Network
 
-#### Explorer Tree pane <a href="#h.mya07fun9ecj" id="h.mya07fun9ecj"></a>
+#### Explorer Tree pane {#h.mya07fun9ecj" id="h.mya07fun9ecj
 
 Favorites
 
@@ -2387,121 +2387,121 @@ Computer
 
 Network
 
-### Windows directory contents <a href="#h.ftspvbyphj9k" id="h.ftspvbyphj9k"></a>
+### Windows directory contents {#h.ftspvbyphj9k" id="h.ftspvbyphj9k
 
-`\addins`
+``\addins``
 
-`\AppCompat`
+``\AppCompat``
 
-`\AppPatch`
+``\AppPatch``
 
-`\assembly`
+``\assembly``
 
-`\Boot`
+``\Boot``
 
-`\Branding`
+``\Branding``
 
-`\CSC`
+``\CSC``
 
-`\Cursors`
+``\Cursors``
 
-`\debug`
+``\debug``
 
-`\diagnostics`
+``\diagnostics``
 
-`\DigitalLocker`
+``\DigitalLocker``
 
-`\dot3svc`
+``\dot3svc``
 
-`\Downloaded Program Files`
+``\Downloaded Program Files``
 
-`\ehome`
+``\ehome``
 
-`\en-US`
+``\en-US``
 
-`\Fonts`
+``\Fonts``
 
-`\Globalization`
+``\Globalization``
 
-`\Help`
+``\Help``
 
-`\IME`
+``\IME``
 
-`\inf`
+``\inf``
 
-`\L2Schemas`
+``\L2Schemas``
 
-`\LiveKernelReports`
+``\LiveKernelReports``
 
-`\Logs`
+``\Logs``
 
-`\Media`
+``\Media``
 
-`\Microsoft.NET`
+``\Microsoft.NET``
 
-`\ModemLogs`
+``\ModemLogs``
 
-`\Offline Web Pages`
+``\Offline Web Pages``
 
-`\Panther`
+``\Panther``
 
-`\Performance\WinSAT\ (part of Windows Experience Index assessment score)?`
+``\Performance\WinSAT\ (part of Windows Experience Index assessment score)?``
 
-`\PLA`
+``\PLA``
 
-`\PolicyDefinitions Group Policy templates? More found ...?`
+``\PolicyDefinitions Group Policy templates? More found ...?``
 
-`\PreFetch`
+``\PreFetch``
 
-`\Registration`
+``\Registration``
 
-`\rescache`
+``\rescache``
 
-`\Resources`
+``\Resources``
 
-`\SchCache`
+``\SchCache``
 
-`\schemas`
+``\schemas``
 
-`\security`
+``\security``
 
-`\ServiceProfiles`
+``\ServiceProfiles``
 
-`\servicing`
+``\servicing``
 
-`\Setup`
+``\Setup``
 
-`\ShellNew Templates for right-click New... More templates found in ...?`
+``\ShellNew Templates for right-click New... More templates found in ...?``
 
-`\SoftwareDistribution`
+``\SoftwareDistribution``
 
-`\Speech`
+``\Speech``
 
-`\system`
+``\system``
 
-`\System32`
+``\System32``
 
-`\SysWOW64`
+``\SysWOW64``
 
-`\TAPI`
+``\TAPI``
 
-`\Tasks`
+``\Tasks``
 
-`\Temp`
+``\Temp``
 
-`\tracing`
+``\tracing``
 
-`\twain\_32`
+``\twain\_32``
 
-`\Vss`
+``\Vss``
 
-`\Web`
+``\Web``
 
-`\winsxs side-by-side component store enables activating features without providing installation media`
+``\winsxs side-by-side component store enables activating features without providing installation media``
 
-`\wlansvc`
+``\wlansvc``
 
-`#### C:\Windows\System32 <a href="#h.vhgia951cvmw" id="h.vhgia951cvmw"></a>`
+``#### C:\Windows\System32 <a href="#h.vhgia951cvmw" id="h.vhgia951cvmw"></a>``
 
 0409
 
@@ -2609,7 +2609,7 @@ oobe
 
 pl-PL
 
-`Printing\_Admin\_Scripts`
+``Printing\_Admin\_Scripts``
 
 pt-BR
 
@@ -2823,9 +2823,9 @@ audiodg.exe Windows Audio Device Graph Isolation
 
 auditpol.exe Audit Policy Program
 
-`autochk.exe Auto Check Utility \*`
+``autochk.exe Auto Check Utility \*``
 
-`autoconv.exe Auto File System Conversion Utility \*`
+``autoconv.exe Auto File System Conversion Utility \*``
 
 autofmt.exe Auto File System Format Utility
 
@@ -2893,7 +2893,7 @@ cmmon32.exe Microsoft Connection Manager Monitor
 
 cmstp.exe Microsoft Connection Manager Profile Installer
 
-`cofire.exe Corrupted File Recovery Client \*`
+``cofire.exe Corrupted File Recovery Client \*``
 
 colorcpl.exe Microsoft Color Control Panel
 
@@ -2905,7 +2905,7 @@ CompMgmtLauncher.exe Computer Management Snapin Launcher
 
 ComputerDefaults.exe Set Program Access and Computer Defaults Control Panel
 
-`conhost.exe Console Window Host \*`
+``conhost.exe Console Window Host \*``
 
 consent.exe Consent UI for administrative applications
 
@@ -3013,7 +3013,7 @@ eventvwr.exe
 
 expand.exe LZ Expansion Utility
 
-`extrac32.exe Microsoft CAB File Extract Utility \*`
+``extrac32.exe Microsoft CAB File Extract Utility \*``
 
 fc.exe
 
@@ -3341,11 +3341,11 @@ resmon.exe
 
 RMActivate.exe
 
-`RMActivate\_isv.exe`
+``RMActivate\_isv.exe``
 
-`RMActivate\_ssp.exe`
+``RMActivate\_ssp.exe``
 
-`RMActivate\_ssp\_isv.exe`
+``RMActivate\_ssp\_isv.exe``
 
 RmClient.exe
 
@@ -3653,11 +3653,11 @@ xpsrchvw.exe
 
 xwizard.exe
 
-`#### C:\Windows\SysWOW64\ <a href="#h.68y30a4v3j7" id="h.68y30a4v3j7"></a>`
+``#### C:\Windows\SysWOW64\ <a href="#h.68y30a4v3j7" id="h.68y30a4v3j7"></a>``
 
-`C:\Windows>cd SysWOW64`
+``C:\Windows>cd SysWOW64``
 
-`C:\Windows\SysWOW64>dir \*.cpl /b`
+``C:\Windows\SysWOW64>dir \*.cpl /b``
 
 appwiz.cpl
 
@@ -3697,7 +3697,7 @@ timedate.cpl
 
 wscui.cpl
 
-`C:\Windows\SysWOW64>dir \*.msc /b`
+``C:\Windows\SysWOW64>dir \*.msc /b``
 
 adsiedit.msc
 
@@ -3753,7 +3753,7 @@ tpm.msc
 
 WF.msc
 
-`C:\Windows\SysWOW64>dir \*.com /b`
+``C:\Windows\SysWOW64>dir \*.com /b``
 
 chcp.com
 
@@ -3769,25 +3769,25 @@ more.com
 
 tree.com
 
-`C:\Windows\SysWOW64>dir \*.cmd /b`
+``C:\Windows\SysWOW64>dir \*.cmd /b``
 
 winrm.cmd
 
-`C:\Windows\SysWOW64>dir \*.bat /b`
+``C:\Windows\SysWOW64>dir \*.bat /b``
 
 File Not Found
 
-`C:\Windows\SysWOW64>dir \*.wsh /b`
+``C:\Windows\SysWOW64>dir \*.wsh /b``
 
 File Not Found
 
-`C:\Windows\SysWOW64>dir \*.vbs /b`
+``C:\Windows\SysWOW64>dir \*.vbs /b``
 
 slmgr.vbs
 
 winrm.vbs
 
-`C:\Windows\SysWOW64>dir \*.exe /b`
+``C:\Windows\SysWOW64>dir \*.exe /b``
 
 AdapterTroubleshooter.exe
 
@@ -4231,11 +4231,11 @@ resmon.exe
 
 RMActivate.exe
 
-`RMActivate\_isv.exe`
+``RMActivate\_isv.exe``
 
-`RMActivate\_ssp.exe`
+``RMActivate\_ssp.exe``
 
-`RMActivate\_ssp\_isv.exe`
+``RMActivate\_ssp\_isv.exe``
 
 RmClient.exe
 
@@ -4439,7 +4439,7 @@ xpsrchvw.exe
 
 xwizard.exe
 
-`C:\Windows\SysWOW64>`
+``C:\Windows\SysWOW64>``
 
 **Sysinternals GUI Tools**
 
@@ -4523,7 +4523,7 @@ pssuspend.exe
 
 **Other Sysinternals Tools**
 
-### List of Microsoft Commands <a href="#h.kobq43mphrp8" id="h.kobq43mphrp8"></a>
+### List of Microsoft Commands {#h.kobq43mphrp8" id="h.kobq43mphrp8
 
 Adprep
 
@@ -5283,7 +5283,7 @@ Dsquery quota
 
 Dsquery partition
 
-`Dsquery \*`
+``Dsquery \*``
 
 Dsrm
 
@@ -5927,7 +5927,7 @@ Powercfg
 
 PowerShell
 
-`PowerShell\_Ise`
+``PowerShell\_Ise``
 
 Print
 
@@ -6607,15 +6607,15 @@ Thank you for your feedback
 
 Bottom of Form
 
-### Command Syntax <a href="#h.h9kyurjnqqeg" id="h.h9kyurjnqqeg"></a>
+### Command Syntax {#h.h9kyurjnqqeg" id="h.h9kyurjnqqeg
 
-#### msiexec.exe <a href="#h.2ycpi6o977gd" id="h.2ycpi6o977gd"></a>
+#### msiexec.exe {#h.2ycpi6o977gd" id="h.2ycpi6o977gd
 
-`C:\\>msiexec /?`
+``C:\\>msiexec /?``
 
 Windows ® Installer. V 5.0.7601.17514
 
-`msiexec /Option \<Required Parameter> \[Optional Parameter]`
+``msiexec /Option \<Required Parameter> \[Optional Parameter]``
 
 Install Options
 
@@ -6623,7 +6623,7 @@ Install Options
 
 Installs or configures a product
 
-`/a \<Product.msi>`
+``/a \<Product.msi>``
 
 Administrative install - Installs a product on the network
 
@@ -6703,19 +6703,19 @@ v - Verbose output
 
 x - Extra debugging information
 
-`\+ - Append to existing log file`
+``\+ - Append to existing log file``
 
 ! - Flush each line to the log
 
-`\* - Log all information, except for v and x options`
+``\* - Log all information, except for v and x options``
 
-`/log \<LogFile>`
+``/log \<LogFile>``
 
-`Equivalent of /l\* \<LogFile>`
+``Equivalent of /l\* \<LogFile>``
 
 Update Options
 
-`/update \<Update1.msp>\[;Update2.msp]`
+``/update \<Update1.msp>\[;Update2.msp]``
 
 Applies update(s)
 
@@ -6751,7 +6751,7 @@ v - runs from source and recaches local package
 
 Setting Public Properties
 
-`\[PROPERTY=PropertyValue]`
+``\[PROPERTY=PropertyValue]``
 
 Consult the Windows ® Installer SDK for additional documentation on the
 
@@ -6761,9 +6761,9 @@ Copyright © Microsoft Corporation. All rights reserved.
 
 Portions of this software are based in part on the work of the Independent JPEG Group.
 
-#### at.exe <a href="#h.gcuqkw03gqk" id="h.gcuqkw03gqk"></a>
+#### at.exe {#h.gcuqkw03gqk" id="h.gcuqkw03gqk
 
-`C:\Windows\System32>at.exe /?`
+``C:\Windows\System32>at.exe /?``
 
 The AT command schedules commands and programs to run on a computer at
 
@@ -6773,11 +6773,11 @@ the AT command.
 
 AT \[\\\computername] \[ \[id] \[/DELETE] | /DELETE \[/YES]]
 
-`AT \[\\\computername] time \[/INTERACTIVE]`
+``AT \[\\\computername] time \[/INTERACTIVE]``
 
 \[ /EVERY:date\[,...] | /NEXT:date\[,...]] "command"
 
-`\\\computername Specifies a remote computer. Commands are scheduled on the`
+``\\\computername Specifies a remote computer. Commands are scheduled on the``
 
 local computer if this parameter is omitted.
 
@@ -6799,13 +6799,13 @@ time Specifies the time when command is to run.
 
 who is logged on at the time the job runs.
 
-`/every:date\[,...] Runs the command on each specified day(s) of the week or`
+``/every:date\[,...] Runs the command on each specified day(s) of the week or``
 
 month. If date is omitted, the current day of the month
 
 is assumed.
 
-`/next:date\[,...] Runs the specified command on the next occurrence of the`
+``/next:date\[,...] Runs the specified command on the next occurrence of the``
 
 day (for example, next Thursday). If date is omitted, the
 
@@ -6813,13 +6813,13 @@ current day of the month is assumed.
 
 "command" Is the Windows NT command, or batch program to be run.
 
-#### slmgr.vbs <a href="#h.zc9j54yy8xyy" id="h.zc9j54yy8xyy"></a>
+#### slmgr.vbs {#h.zc9j54yy8xyy" id="h.zc9j54yy8xyy
 
 Software Licensing Management Tool (slmgr.vbs)
 
 Syntax
 
-`slmgr \[MachineName \[Username Password]] \[Option]`
+``slmgr \[MachineName \[Username Password]] \[Option]``
 
 Key
 
@@ -6833,7 +6833,7 @@ Options
 
 /ato Activate Windows license and product key against Microsoft’s server.
 
-`/atp Confirmation\_ID Activate Windows with user-provided Confirmation ID`
+``/atp Confirmation\_ID Activate Windows with user-provided Confirmation ID``
 
 /ckms Clear the name of KMS server used to default and port to default.
 
@@ -6847,7 +6847,7 @@ Options
 
 /ipk Key Enter a new product key supplied as xxxxx-xxxxx-xxxxx-xxxxx-xxxxx
 
-`/ilc License\_file Install license`
+``/ilc License\_file Install license``
 
 /rilc Re-install system license files
 
@@ -6893,19 +6893,19 @@ Note that this could lead to KMS starvation, depending on what other application
 
 /xpr Show the expiry date of current license (if not permanently activated)
 
-#### slui.exe <a href="#h.eh19dc1dc5mi" id="h.eh19dc1dc5mi"></a>
+#### slui.exe {#h.eh19dc1dc5mi" id="h.eh19dc1dc5mi
 
 no command line or GUI help?
 
-#### sysprep.exe <a href="#h.29uv2zcpcsx6" id="h.29uv2zcpcsx6"></a>
+#### sysprep.exe {#h.29uv2zcpcsx6" id="h.29uv2zcpcsx6
 
-`C:\Windows\System32\sysprep\sysprep.exe`
+``C:\Windows\System32\sysprep\sysprep.exe``
 
 USAGE: sysprep.exe \[/quiet] \[/generalize] \[/audit | /oobe] \[/reboot | /shutdown | /quit] \[/unattend:\<filename>]
 
 If no command-line arguments are provided, a graphical user interface is used to select the desired mode of sysprep operation.
 
-#### ehshell.exe <a href="#h.9qk6rclzcgm8" id="h.9qk6rclzcgm8"></a>
+#### ehshell.exe {#h.9qk6rclzcgm8" id="h.9qk6rclzcgm8
 
 **Windows Media Center Shell (ehshell.exe) Command Line Switches and Options**
 
@@ -6915,21 +6915,21 @@ Windows Media Center is a digital home entertainment hub application included in
 
 ehshell.exe supports the following command line switches:
 
-`**ehshell.exe /entrypoint:{APP\_GUID}\\{ENTRYPOINT\_GUID}**`
+``**ehshell.exe /entrypoint:{APP\_GUID}\\{ENTRYPOINT\_GUID}**``
 
-`This parameter starts Windows Media Center and navigates directly to a registered entry point. APP\_GUID and ENTRYPOINT\_GUID are strings that match the GUIDs of the desired application and entry point identifiers for the entry point to be launched. You must have previously registered the application using the RegisterApplication API or RegisterMceApp.exe for this command line switch to work correctly.`
+``This parameter starts Windows Media Center and navigates directly to a registered entry point. APP\_GUID and ENTRYPOINT\_GUID are strings that match the GUIDs of the desired application and entry point identifiers for the entry point to be launched. You must have previously registered the application using the RegisterApplication API or RegisterMceApp.exe for this command line switch to work correctly.``
 
-`**ehshell.exe /url:\<url>**`
+``**ehshell.exe /url:\<url>**``
 
-`This parameter starts Windows Media Center and navigates directly to a Hosted HTML application or XBAP application specified by \<url>.`
+``This parameter starts Windows Media Center and navigates directly to a Hosted HTML application or XBAP application specified by \<url>.``
 
-`**ehshell.exe /homepage:\<url>**`
+``**ehshell.exe /homepage:\<url>**``
 
-`This parameter starts Windows Media Center and navigates directly to a Windows Media Center Presentation Layer Web Application specified by \<url>.`
+``This parameter starts Windows Media Center and navigates directly to a Windows Media Center Presentation Layer Web Application specified by \<url>.``
 
-`**ehshell.exe /addinfallbackpath:\<path>**`
+``**ehshell.exe /addinfallbackpath:\<path>**``
 
-`This parameter starts Windows Media Center and causes it to use to locate and load add-in assemblies. This location is only used after Windows Media Center attempts to load add-in assemblies from the global assembly cache (GAC) and %windir%\ehome. This switch can be combined with the /entrypoint switch described above to allow prototyping of Windows Media Center applications without needing to install an updated assembly to the GAC each time you rebuild your project in Visual Studio.`
+``This parameter starts Windows Media Center and causes it to use to locate and load add-in assemblies. This location is only used after Windows Media Center attempts to load add-in assemblies from the global assembly cache (GAC) and %windir%\ehome. This switch can be combined with the /entrypoint switch described above to allow prototyping of Windows Media Center applications without needing to install an updated assembly to the GAC each time you rebuild your project in Visual Studio.``
 
 **ehshell.exe /gdi**
 
@@ -6967,25 +6967,25 @@ Launches Windows Media Center in full screen mode and navigates to the picture l
 
 Launches Windows Media Center in full screen mode and begins playback of the disc in the drive by reusing AutoRun code, a new switch as part of Windows HotStart feature that can be used to launch Windows Media Center and cause it to navigate directly to one of the built-in experiences.
 
-#### wmplayer.exe <a href="#h.any6oacfguwq" id="h.any6oacfguwq"></a>
+#### wmplayer.exe {#h.any6oacfguwq" id="h.any6oacfguwq
 
 [http://www.mydigitallife.info/control-windows-media-player-behaviour-with-command-line-parameters/](http://technet.microsoft.com/en-us/library/cc754352.aspx)
 
 [http://msdn2.microsoft.com/en-us/library/ms984439.aspx](http://technet.microsoft.com/en-us/library/cc725833.aspx)
 
-#### Control Windows Media Player Behaviour with Command Line Parameters <a href="#h.4pjm6sqvyf4b" id="h.4pjm6sqvyf4b"></a>
+#### Control Windows Media Player Behaviour with Command Line Parameters {#h.4pjm6sqvyf4b" id="h.4pjm6sqvyf4b
 
 Windows Media Player (wmplayer) including WMPlayer 9, WMP 10 and Windows Media Player 11 supports set of command line parameters and operators that specify how the Windows Media Player behaves when it starts or launches. The parameters are good for WMPlayer users who wants to use command prompt to control and modify the behavior or condition of Windows Media Player. These command line operators or parameters can also be added to Windows shortcut to Windows Media Player as option for the target of shortcut, i.e. wmplayer.exe.
 
 According to[ ](http://technet.microsoft.com/en-us/library/cc753980.aspx)[MSDN](http://technet.microsoft.com/en-us/library/cc725868.aspx), the command line parameters that available for Windows Media Player include (with syntax and the changed behavior):
 
-`“path\filename” (e.g. wmplayer “c:\filename.wma”) – Start the Player and play the file.`
+``“path\filename” (e.g. wmplayer “c:\filename.wma”) – Start the Player and play the file.``
 
-`“path\filename” /fullscreen (e.g.: wmplayer “c:\filename.wmv” /fullscreen) – Play the specified file in full-screen mode. The path and file name of the content to play must be specified.`
+``“path\filename” /fullscreen (e.g.: wmplayer “c:\filename.wmv” /fullscreen) – Play the specified file in full-screen mode. The path and file name of the content to play must be specified.``
 
 /Device:{DVD|AudioCD} (e.g.: wmplayer /device:audio CD) – Play a DVD or audio CD.
 
-`“path\filename”?WMPSkin=skin name (e.g.: wmplayer “c:\filename.wma”?wmpskin=headspace) – Open the Player, applying the specified skin.`
+``“path\filename”?WMPSkin=skin name (e.g.: wmplayer “c:\filename.wma”?wmpskin=headspace) – Open the Player, applying the specified skin.``
 
 /Service:keyname – Open the Player showing the online store specified by keyname. (WMP10 and above only).
 
@@ -7011,11 +7011,11 @@ According to[ ](http://technet.microsoft.com/en-us/library/cc753980.aspx)[MSDN](
 
 /Playlist PlaylistName – Open the Player and play the specified playlist.
 
-#### winrm.cmd <a href="#h.pr5dvw6cgx0z" id="h.pr5dvw6cgx0z"></a>
+#### winrm.cmd {#h.pr5dvw6cgx0z" id="h.pr5dvw6cgx0z
 
 Windows Remote Management
 
-`C:\\>winrm.cmd`
+``C:\\>winrm.cmd``
 
 Windows Remote Management Command Line Tool
 
@@ -7027,25 +7027,25 @@ with local and remote computers using web services.
 
 Usage:
 
-`winrm OPERATION RESOURCE\_URI \[-SWITCH:VALUE \[-SWITCH:VALUE] ...]`
+``winrm OPERATION RESOURCE\_URI \[-SWITCH:VALUE \[-SWITCH:VALUE] ...]``
 
-`\[@{KEY=VALUE\[;KEY=VALUE]...}]`
+``\[@{KEY=VALUE\[;KEY=VALUE]...}]``
 
 For help on a specific operation:
 
-`winrm g\[et] -? Retrieving management information.`
+``winrm g\[et] -? Retrieving management information.``
 
-`winrm s\[et] -? Modifying management information.`
+``winrm s\[et] -? Modifying management information.``
 
-`winrm c\[reate] -? Creating new instances of management resources.`
+``winrm c\[reate] -? Creating new instances of management resources.``
 
-`winrm d\[elete] -? Remove an instance of a management resource.`
+``winrm d\[elete] -? Remove an instance of a management resource.``
 
-`winrm e\[numerate] -? List all instances of a management resource.`
+``winrm e\[numerate] -? List all instances of a management resource.``
 
-`winrm i\[nvoke] -? Executes a method on a management resource.`
+``winrm i\[nvoke] -? Executes a method on a management resource.``
 
-`winrm id\[entify] -? Determines if a WS-Management implementation is`
+``winrm id\[entify] -? Determines if a WS-Management implementation is``
 
 running on the remote machine.
 
@@ -7077,13 +7077,13 @@ winrm help switches Other switches such as formatting, options, etc.
 
 winrm help proxy Providing proxy information.
 
-`C:\\>winrm g -?`
+``C:\\>winrm g -?``
 
 Windows Remote Management Command Line Tool
 
-`winrm get RESOURCE\_URI \[-SWITCH:VALUE \[-SWITCH:VALUE] ...]`
+``winrm get RESOURCE\_URI \[-SWITCH:VALUE \[-SWITCH:VALUE] ...]``
 
-`Retrieves instances of RESOURCE\_URI using specified`
+``Retrieves instances of RESOURCE\_URI using specified``
 
 options and key-value pairs.
 
@@ -7091,15 +7091,15 @@ Example: Retrieve current configuration in XML format:
 
 winrm get winrm/config -format:pretty
 
-`Example: Retrieve spooler instance of Win32\_Service class:`
+``Example: Retrieve spooler instance of Win32\_Service class:``
 
-`winrm get wmicimv2/Win32\_Service?Name=spooler`
+``winrm get wmicimv2/Win32\_Service?Name=spooler``
 
 Example: Retrieve a certmapping entry on this machine:
 
 winrm get winrm/config/service/certmapping?Issuer=1212131238d84023982e381f2039
 
-`1a2935301923+Subject=\*.example.com+URI=wmicimv2/\*`
+``1a2935301923+Subject=\*.example.com+URI=wmicimv2/\*``
 
 See also:
 
@@ -7109,17 +7109,17 @@ winrm help aliases
 
 winrm help switches
 
-`C:\\>winrm s -?`
+``C:\\>winrm s -?``
 
 Windows Remote Management Command Line Tool
 
-`winrm set RESOURCE\_URI \[-SWITCH:VALUE \[-SWITCH:VALUE] ...]`
+``winrm set RESOURCE\_URI \[-SWITCH:VALUE \[-SWITCH:VALUE] ...]``
 
-`\[@{KEY="VALUE"\[;KEY="VALUE"]}]`
+``\[@{KEY="VALUE"\[;KEY="VALUE"]}]``
 
-`\[-file:VALUE]`
+``\[-file:VALUE]``
 
-`Modifies settings in RESOURCE\_URI using specified switches`
+``Modifies settings in RESOURCE\_URI using specified switches``
 
 and input of changed values via key-value pairs or updated
 
@@ -7131,13 +7131,13 @@ winrm set winrm/config @{MaxEnvelopeSizekb="100"}
 
 Example: Disable a listener on this machine:
 
-`winrm set winrm/config/Listener?Address=\*+Transport=HTTPS @{Enabled="false"}`
+``winrm set winrm/config/Listener?Address=\*+Transport=HTTPS @{Enabled="false"}``
 
 Example: Disable a certmapping entry on this machine:
 
 Winrm set winrm/config/service/certmapping?Issuer=1212131238d84023982e381f2039
 
-`1a2935301923+Subject=\*.example.com+URI=wmicimv2/\* @{Enabled="false"}`
+``1a2935301923+Subject=\*.example.com+URI=wmicimv2/\* @{Enabled="false"}``
 
 See also:
 
@@ -7149,17 +7149,17 @@ winrm help input
 
 winrm help switches
 
-`C:\\>winrm c -?`
+``C:\\>winrm c -?``
 
 Windows Remote Management Command Line Tool
 
-`winrm create RESOURCE\_URI \[-SWITCH:VALUE \[-SWITCH:VALUE] ...]`
+``winrm create RESOURCE\_URI \[-SWITCH:VALUE \[-SWITCH:VALUE] ...]``
 
-`\[@{KEY="VALUE"\[;KEY="VALUE"]}]`
+``\[@{KEY="VALUE"\[;KEY="VALUE"]}]``
 
-`\[-file:VALUE]`
+``\[-file:VALUE]``
 
-`Spawns an instance of RESOURCE\_URI using specified`
+``Spawns an instance of RESOURCE\_URI using specified``
 
 key-value pairs or input file.
 
@@ -7171,7 +7171,7 @@ ort=HTTP
 
 Example: Create instance of HTTPS Listener on all IPs:
 
-`winrm create winrm/config/Listener?Address=\*+Transport=HTTPS @{Hostname="HOST"`
+``winrm create winrm/config/Listener?Address=\*+Transport=HTTPS @{Hostname="HOST"``
 
 ;CertificateThumbprint="XXXXXXXXXX"}
 
@@ -7185,7 +7185,7 @@ Example: Create a CertMapping entry:
 
 winrm create winrm/config/service/certmapping?Issuer=1212131238d84023982e381f2
 
-`0391a2935301923+Subject=\*.example.com+URI=wmicimv2/\* @{UserName="USERNAME";Passw`
+``0391a2935301923+Subject=\*.example.com+URI=wmicimv2/\* @{UserName="USERNAME";Passw``
 
 ord="PASSWORD"} -remote:localhost
 
@@ -7199,13 +7199,13 @@ winrm help input
 
 winrm help switches
 
-`C:\\>winrm d -?`
+``C:\\>winrm d -?``
 
 Windows Remote Management Command Line Tool
 
-`winrm delete RESOURCE\_URI \[-SWITCH:VALUE \[-SWITCH:VALUE] ...]`
+``winrm delete RESOURCE\_URI \[-SWITCH:VALUE \[-SWITCH:VALUE] ...]``
 
-`Removes an instance of RESOURCE\_URI.`
+``Removes an instance of RESOURCE\_URI.``
 
 Example: delete the HTTP listener on this machine for given IP address:
 
@@ -7215,7 +7215,7 @@ Example: delete a certmapping entry:
 
 winrm delete winrm/config/service/certmapping?Issuer=1212131238d84023982e381f2
 
-`0391a2935301923+Subject=\*.example.com+URI=wmicimv2/\*`
+``0391a2935301923+Subject=\*.example.com+URI=wmicimv2/\*``
 
 See also:
 
@@ -7225,15 +7225,15 @@ winrm help aliases
 
 winrm help switches
 
-`C:\\>winrm e -?`
+``C:\\>winrm e -?``
 
 Windows Remote Management Command Line Tool
 
-`winrm enumerate RESOURCE\_URI \[-ReturnType:Value] \[-Shallow]`
+``winrm enumerate RESOURCE\_URI \[-ReturnType:Value] \[-Shallow]``
 
-`\[-BasePropertiesOnly] \[-SWITCH:VALUE \[-SWITCH:VALUE] ...]`
+``\[-BasePropertiesOnly] \[-SWITCH:VALUE \[-SWITCH:VALUE] ...]``
 
-`Lists instances of RESOURCE\_URI.`
+``Lists instances of RESOURCE\_URI.``
 
 Can limit the instances returned by using a filter and dialect if the
 
@@ -7241,7 +7241,7 @@ resource supports these.
 
 ReturnType
 
-`\----------`
+``\----------``
 
 returnType is an optional switch that determines the type of data returned.
 
@@ -7263,7 +7263,7 @@ are returned.
 
 Shallow
 
-`\-------`
+``\-------``
 
 Enumerate only instances of the base class specified in the resource URI.
 
@@ -7273,7 +7273,7 @@ the resource URI and all its derived classes are returned.
 
 BasePropertiesOnly
 
-`\------------------`
+``\------------------``
 
 Includes only those properties that are part of the base class specified
 
@@ -7283,9 +7283,9 @@ Example: List all WinRM listeners on this machine:
 
 winrm enumerate winrm/config/Listener
 
-`Example: List all instances of Win32\_Service class:`
+``Example: List all instances of Win32\_Service class:``
 
-`winrm enumerate wmicimv2/Win32\_Service`
+``winrm enumerate wmicimv2/Win32\_Service``
 
 Example: List all shell instances on a machine:
 
@@ -7309,39 +7309,39 @@ winrm help filters
 
 winrm help switches
 
-`C:\\>winrm i -?`
+``C:\\>winrm i -?``
 
 Windows Remote Management Command Line Tool
 
-`winrm invoke ACTION RESOURCE\_URI \[-SWITCH:VALUE \[-SWITCH:VALUE] ...]`
+``winrm invoke ACTION RESOURCE\_URI \[-SWITCH:VALUE \[-SWITCH:VALUE] ...]``
 
-`\[@{KEY="VALUE"\[;KEY="VALUE"]}]`
+``\[@{KEY="VALUE"\[;KEY="VALUE"]}]``
 
-`\[-file:VALUE]`
+``\[-file:VALUE]``
 
-`Executes method specified by ACTION on target object specified by RESOURCE\_URI`
+``Executes method specified by ACTION on target object specified by RESOURCE\_URI``
 
 with parameters specified by key-value pairs.
 
 Example: Call StartService method on Spooler service:
 
-`winrm invoke StartService wmicimv2/Win32\_Service?Name=spooler`
+``winrm invoke StartService wmicimv2/Win32\_Service?Name=spooler``
 
 Example: Call StopService method on Spooler service using XML file:
 
-`winrm invoke StopService wmicimv2/Win32\_Service?Name=spooler -file:input.xml`
+``winrm invoke StopService wmicimv2/Win32\_Service?Name=spooler -file:input.xml``
 
 Where input.xml:
 
-`\<p:StopService\_INPUT xmlns:p="http://schemas.microsoft.com/wbem/wsman/1/wmi/root`
+``\<p:StopService\_INPUT xmlns:p="http://schemas.microsoft.com/wbem/wsman/1/wmi/root``
 
-`/cimv2/Win32\_Service"/>`
+``/cimv2/Win32\_Service"/>``
 
-`Example: Call Create method of Win32\_Process class with specified parameters:`
+``Example: Call Create method of Win32\_Process class with specified parameters:``
 
-`winrm invoke Create wmicimv2/Win32\_Process @{CommandLine="notepad.exe";Current`
+``winrm invoke Create wmicimv2/Win32\_Process @{CommandLine="notepad.exe";Current``
 
-`Directory="C:\\"}`
+``Directory="C:\\"}``
 
 Example: Restore the default winrm configuration:
 
@@ -7365,11 +7365,11 @@ winrm help input
 
 winrm help switches
 
-`C:\\>winrm id -?`
+``C:\\>winrm id -?``
 
 Windows Remote Management Command Line Tool
 
-`winrm identify \[-SWITCH:VALUE \[-SWITCH:VALUE] ...]`
+``winrm identify \[-SWITCH:VALUE \[-SWITCH:VALUE] ...]``
 
 Issues an operation against a remote machine to see if the WS-Management
 
@@ -7377,7 +7377,7 @@ service is running. This operation must be run with the '-remote' switch.
 
 To run this operation unauthenticated against the remote machine use the
 
-`\-auth:none`
+``\-auth:none``
 
 Example: identify if WS-Management is running on www.example.com:
 
@@ -7389,41 +7389,41 @@ winrm help switches
 
 winrm help remoting
 
-`C:\\>winrm quickconfig -?`
+``C:\\>winrm quickconfig -?``
 
 Windows Remote Management Command Line Tool
 
-`winrm quickconfig \[-quiet] \[-transport:VALUE] \[-force]`
+``winrm quickconfig \[-quiet] \[-transport:VALUE] \[-force]``
 
 Performs configuration actions to enable this machine for remote management.
 
 Includes:
 
-`1\. Start the WinRM service`
+``1\. Start the WinRM service``
 
-`2\. Set the WinRM service type to auto start`
+``2\. Set the WinRM service type to auto start``
 
-`3\. Create a listener to accept request on any IP address`
+``3\. Create a listener to accept request on any IP address``
 
-`4\. Enable firewall exception for WS-Management traffic (for http only)`
+``4\. Enable firewall exception for WS-Management traffic (for http only)``
 
-`\-q\[uiet]`
+``\-q\[uiet]``
 
-`\--------`
+``\--------``
 
 If present, quickconfig will not prompt for confirmation.
 
-`\-transport:VALUE`
+``\-transport:VALUE``
 
-`\----------------`
+``\----------------``
 
 Perform quickconfig for specific transport.
 
 Possible options are http and https. Defaults to http.
 
-`\-force`
+``\-force``
 
-`\--------`
+``\--------``
 
 If present, quickconfig will not prompt for confirmation, and will enable
 
@@ -7433,7 +7433,7 @@ See also:
 
 winrm help config
 
-`C:\\>winrm help config`
+``C:\\>winrm help config``
 
 Windows Remote Management Command Line Tool
 
@@ -7471,7 +7471,7 @@ Listeners are identified by two selectors: Address and Transport.
 
 Address must be one of:
 
-`\* - Listen on all IPs on the machine`
+``\* - Listen on all IPs on the machine``
 
 IP:1.2.3.4 - Listen only on the specified IP address
 
@@ -7507,7 +7507,7 @@ certificate.
 
 Example: To listen for requests on HTTP on all IPs on the machine:
 
-`winrm create winrm/config/listener?Address=\*+Transport=HTTP`
+``winrm create winrm/config/listener?Address=\*+Transport=HTTP``
 
 Example: To disable a given listener
 
@@ -7521,7 +7521,7 @@ winrm set winrm/config/client/auth @{Basic="true"}
 
 Example: To enable Negotiate for all workgroup machines.
 
-`winrm set winrm/config/client @{TrustedHosts="\<local>"}`
+``winrm set winrm/config/client @{TrustedHosts="\<local>"}``
 
 See also:
 
@@ -7535,61 +7535,61 @@ winrm help input
 
 winrm help switches
 
-`C:\\>`
+``C:\\>``
 
-#### winrs.exe <a href="#h.4py3p5s070q1" id="h.4py3p5s070q1"></a>
+#### winrs.exe {#h.4py3p5s070q1" id="h.4py3p5s070q1
 
 Windows Remote Shell
 
-`C:\\>winrs /?`
+``C:\\>winrs /?``
 
 USAGE
 
-`\=====`
+``\=====``
 
 (ALL UPPER-CASE = value that must be supplied by user.)
 
-`winrs \[-/SWITCH\[:VALUE]] COMMAND`
+``winrs \[-/SWITCH\[:VALUE]] COMMAND``
 
 COMMAND - Any string that can be executed as a command in the cmd.exe shell.
 
 SWITCHES
 
-`\========`
+``\========``
 
 (All switches accept both short form or long form. For example both -r and
 
-`\-remote are valid.)`
+``\-remote are valid.)``
 
-`\-r\[emote]:ENDPOINT - The target endpoint using a NetBIOS name or the standard connection URL: \[TRANSPORT://]TARGET\[:PORT]. If not specified`
+``\-r\[emote]:ENDPOINT - The target endpoint using a NetBIOS name or the standard connection URL: \[TRANSPORT://]TARGET\[:PORT]. If not specified``
 
-`\-r:localhost is used.`
+``\-r:localhost is used.``
 
-`\-un\[encrypted] - Specify that the messages to the remote shell will not be encrypted. This is useful for troubleshooting, or when the network traffic is already encrypted using ipsec, or when physical security is enforced. By default the messages are encrypted using Kerberos or NTLM keys. This switch is ignored when HTTPS transport is selected.`
+``\-un\[encrypted] - Specify that the messages to the remote shell will not be encrypted. This is useful for troubleshooting, or when the network traffic is already encrypted using ipsec, or when physical security is enforced. By default the messages are encrypted using Kerberos or NTLM keys. This switch is ignored when HTTPS transport is selected.``
 
-`\-u\[sername]:USERNAME - Specify username on command line. If not specified the tool will use Negotiate authentication or prompt for the name.`
+``\-u\[sername]:USERNAME - Specify username on command line. If not specified the tool will use Negotiate authentication or prompt for the name.``
 
 If -username is specified, -password must be as well.
 
-`\-p\[assword]:PASSWORD - Specify password on command line. If -password is not specified but -username is the tool will prompt for the password. If -password is specified, -user must be specified as well.`
+``\-p\[assword]:PASSWORD - Specify password on command line. If -password is not specified but -username is the tool will prompt for the password. If -password is specified, -user must be specified as well.``
 
-`\-t\[imeout]:SECONDS - This option is deprecated.`
+``\-t\[imeout]:SECONDS - This option is deprecated.``
 
-`\-d\[irectory]:PATH - Specifies starting directory for remote shell. If not specified the remote shell will start in the user's home directory defined by the environment variable %USERPROFILE%.`
+``\-d\[irectory]:PATH - Specifies starting directory for remote shell. If not specified the remote shell will start in the user's home directory defined by the environment variable %USERPROFILE%.``
 
-`\-env\[ironment]:STRING=VALUE - Specifies a single environment variable to be set when shell starts, which allows changing default environment for shell. Multiple occurrences of this switch must be used to specify multiple environment variables.`
+``\-env\[ironment]:STRING=VALUE - Specifies a single environment variable to be set when shell starts, which allows changing default environment for shell. Multiple occurrences of this switch must be used to specify multiple environment variables.``
 
-`\-noe\[cho] - Specifies that echo should be disabled. This may be necessary to ensure that user's answers to remote prompts are not displayed locally. By default echo is "on".`
+``\-noe\[cho] - Specifies that echo should be disabled. This may be necessary to ensure that user's answers to remote prompts are not displayed locally. By default echo is "on".``
 
-`\-nop\[rofile] - Specifies that the user's profile should not be loaded. By default the server will attempt to load the user profile. If the remote user is not a local administrator on the target system then this option will be required (the default will result in error).`
+``\-nop\[rofile] - Specifies that the user's profile should not be loaded. By default the server will attempt to load the user profile. If the remote user is not a local administrator on the target system then this option will be required (the default will result in error).``
 
-`\-a\[llow]d\[elegate] - Specifies that the user's credentials can be used to access a remote share, for example, found on a different machine than the target endpoint.`
+``\-a\[llow]d\[elegate] - Specifies that the user's credentials can be used to access a remote share, for example, found on a different machine than the target endpoint.``
 
-`\-comp\[ression] - Turn on compression. Older installations on remote machines may not support compression so it is off by default.`
+``\-comp\[ression] - Turn on compression. Older installations on remote machines may not support compression so it is off by default.``
 
-`\-\[use]ssl - Use an SSL connection when using a remote endpoint. Specifying this instead of the transport "https:" will use the default WinRM default port.`
+``\-\[use]ssl - Use an SSL connection when using a remote endpoint. Specifying this instead of the transport "https:" will use the default WinRM default port.``
 
-`\-? - Help`
+``\-? - Help``
 
 To terminate the remote command the user can type Ctrl-C or Ctrl-Break, which will be sent to the remote shell. The second Ctrl-C will force termination of winrs.exe.
 
@@ -7607,21 +7607,21 @@ winrs -r:http://127.0.0.1 command
 
 winrs -r:http://169.51.2.101:80 -unencrypted command
 
-`winrs -r:https://\[::FFFF:129.144.52.38] command`
+``winrs -r:https://\[::FFFF:129.144.52.38] command``
 
-`winrs -r:http://\[1080:0:0:0:8:800:200C:417A]:80 command`
+``winrs -r:http://\[1080:0:0:0:8:800:200C:417A]:80 command``
 
-`winrs -r:https://myserver.com -t:600 -u:administrator -p:$%fgh7 ipconfig`
+``winrs -r:https://myserver.com -t:600 -u:administrator -p:$%fgh7 ipconfig``
 
-`winrs -r:myserver -env:PATH=^%PATH^%;c:\tools -env:TEMP=d:\temp config.cmd`
+``winrs -r:myserver -env:PATH=^%PATH^%;c:\tools -env:TEMP=d:\temp config.cmd``
 
-`winrs -r:myserver netdom join myserver /domain:testdomain /userd:johns /passwordd:$%fgh789`
+``winrs -r:myserver netdom join myserver /domain:testdomain /userd:johns /passwordd:$%fgh789``
 
-`winrs -r:myserver -ad -u:administrator -p:$%fgh7 dir \\\anotherserver\share`
+``winrs -r:myserver -ad -u:administrator -p:$%fgh7 dir \\\anotherserver\share``
 
-`C:\\>`
+``C:\\>``
 
-#### SFC <a href="#h.otdn2ca088zj" id="h.otdn2ca088zj"></a>
+#### SFC {#h.otdn2ca088zj" id="h.otdn2ca088zj
 
 Microsoft (R) Windows (R) Resource Checker Version 6.0
 
@@ -7629,9 +7629,9 @@ Copyright (c) 2006 Microsoft Corporation. All rights reserved.
 
 Scans the integrity of all protected system files and replaces incorrect versions with correct Microsoft versions.
 
-`SFC \[/SCANNOW] \[/VERIFYONLY] \[/SCANFILE=\<file>] \[/VERIFYFILE=\<file>]`
+``SFC \[/SCANNOW] \[/VERIFYONLY] \[/SCANFILE=\<file>] \[/VERIFYFILE=\<file>]``
 
-`\[/OFFWINDIR=\<offline windows directory> /OFFBOOTDIR=\<offline boot directory>]`
+``\[/OFFWINDIR=\<offline windows directory> /OFFBOOTDIR=\<offline boot directory>]``
 
 /SCANNOW Scans integrity of all protected system files and repairs files with
 
@@ -7643,9 +7643,9 @@ performed.
 
 /SCANFILE Scans integrity of the referenced file, repairs file if problems are
 
-`identified. Specify full path \<file>`
+``identified. Specify full path \<file>``
 
-`/VERIFYFILE Verifies the integrity of the file with full path \<file>. No repair`
+``/VERIFYFILE Verifies the integrity of the file with full path \<file>. No repair``
 
 operation is performed.
 
@@ -7657,19 +7657,19 @@ e.g.
 
 sfc /SCANNOW
 
-`sfc /VERIFYFILE=c:\windows\system32\kernel32.dll`
+``sfc /VERIFYFILE=c:\windows\system32\kernel32.dll``
 
-`sfc /SCANFILE=d:\windows\system32\kernel32.dll /OFFBOOTDIR=d:\ /OFFWINDIR=d:\windows`
+``sfc /SCANFILE=d:\windows\system32\kernel32.dll /OFFBOOTDIR=d:\ /OFFWINDIR=d:\windows``
 
 sfc /VERIFYONLY
 
-#### NET <a href="#h.ak894l7e5hth" id="h.ak894l7e5hth"></a>
+#### NET {#h.ak894l7e5hth" id="h.ak894l7e5hth
 
-`C:\\>NET HELP`
+``C:\\>NET HELP``
 
 command
 
-`\-or-`
+``\-or-``
 
 NET command /HELP
 
@@ -7697,7 +7697,7 @@ NET HELP SYNTAX explains how to read NET HELP syntax lines.
 
 NET HELP command | MORE displays Help one screen at a time.
 
-`C:\\>net help names`
+``C:\\>net help names``
 
 The syntax of this command is:
 
@@ -7761,31 +7761,31 @@ is preceded by two backslashes, and the sharename is
 
 preceded by one backslash (for example,
 
-`\\\SERVER1\RESOURCE).`
+``\\\SERVER1\RESOURCE).``
 
 Path The location of a directory. A path can consist of a
 
 devicename and one or more directory names. A
 
-`backslash (\\) precedes each directory name (for example,`
+``backslash (\\) precedes each directory name (for example,``
 
-`C:\CUSTOMER\CORP\ACCT).`
+``C:\CUSTOMER\CORP\ACCT).``
 
 Pathname A path and a filename. The filename is preceded by a
 
-`backslash (\\) (for example, C:\CUSTOMER\CORP\REPORT.DOC).`
+``backslash (\\) (for example, C:\CUSTOMER\CORP\REPORT.DOC).``
 
 Sharename A name that identifies a shared resource on a computer. A
 
 sharename is used with the computer's computername to form
 
-`a network path (as in \\\SERVER\RESOURCE).`
+``a network path (as in \\\SERVER\RESOURCE).``
 
 Username The name a person supplies when logging on at
 
 a computer.
 
-`C:\\>net help services`
+``C:\\>net help services``
 
 The syntax of this command is:
 
@@ -7839,9 +7839,9 @@ be enclosed in quotation marks. For example, NET START "NET LOGON"
 
 starts the net logon service.
 
-#### netsh <a href="#h.8hlv2eqiapm" id="h.8hlv2eqiapm"></a>
+#### netsh {#h.8hlv2eqiapm" id="h.8hlv2eqiapm
 
-`C:\\>netsh ?`
+``C:\\>netsh ?``
 
 netsh>?
 
@@ -7857,13 +7857,13 @@ abort - Discards changes made while in offline mode.
 
 add - Adds a configuration entry to a list of entries.
 
-`advfirewall - Changes to the \`netsh advfirewall' context.`
+``advfirewall - Changes to the \`netsh advfirewall' context.``
 
 alias - Adds an alias.
 
-`branchcache - Changes to the \`netsh branchcache' context.`
+``branchcache - Changes to the \`netsh branchcache' context.``
 
-`bridge - Changes to the \`netsh bridge' context.`
+``bridge - Changes to the \`netsh bridge' context.``
 
 bye - Exits the program.
 
@@ -7871,11 +7871,11 @@ commit - Commits changes made while in offline mode.
 
 delete - Deletes a configuration entry from a list of entries.
 
-`dhcp - Changes to the \`netsh dhcp' context.`
+``dhcp - Changes to the \`netsh dhcp' context.``
 
-`dhcpclient - Changes to the \`netsh dhcpclient' context.`
+``dhcpclient - Changes to the \`netsh dhcpclient' context.``
 
-`dnsclient - Changes to the \`netsh dnsclient' context.`
+``dnsclient - Changes to the \`netsh dnsclient' context.``
 
 dump - Displays a configuration script.
 
@@ -7883,31 +7883,31 @@ exec - Runs a script file.
 
 exit - Exits the program.
 
-`firewall - Changes to the \`netsh firewall' context.`
+``firewall - Changes to the \`netsh firewall' context.``
 
 help - Displays a list of commands.
 
-`http - Changes to the \`netsh http' context.`
+``http - Changes to the \`netsh http' context.``
 
-`interface - Changes to the \`netsh interface' context.`
+``interface - Changes to the \`netsh interface' context.``
 
-`ipsec - Changes to the \`netsh ipsec' context.`
+``ipsec - Changes to the \`netsh ipsec' context.``
 
-`lan - Changes to the \`netsh lan' context.`
+``lan - Changes to the \`netsh lan' context.``
 
-`mbn - Changes to the \`netsh mbn' context.`
+``mbn - Changes to the \`netsh mbn' context.``
 
-`namespace - Changes to the \`netsh namespace' context.`
+``namespace - Changes to the \`netsh namespace' context.``
 
-`nap - Changes to the \`netsh nap' context.`
+``nap - Changes to the \`netsh nap' context.``
 
-`netio - Changes to the \`netsh netio' context.`
+``netio - Changes to the \`netsh netio' context.``
 
 offline - Sets the current mode to offline.
 
 online - Sets the current mode to online.
 
-`p2p - Changes to the \`netsh p2p' context.`
+``p2p - Changes to the \`netsh p2p' context.``
 
 popd - Pops a context from the stack.
 
@@ -7915,27 +7915,27 @@ pushd - Pushes current context on stack.
 
 quit - Exits the program.
 
-`ras - Changes to the \`netsh ras' context.`
+``ras - Changes to the \`netsh ras' context.``
 
-`rpc - Changes to the \`netsh rpc' context.`
+``rpc - Changes to the \`netsh rpc' context.``
 
 set - Updates configuration settings.
 
 show - Displays information.
 
-`trace - Changes to the \`netsh trace' context.`
+``trace - Changes to the \`netsh trace' context.``
 
 unalias - Deletes an alias.
 
-`wcn - Changes to the \`netsh wcn' context.`
+``wcn - Changes to the \`netsh wcn' context.``
 
-`wfp - Changes to the \`netsh wfp' context.`
+``wfp - Changes to the \`netsh wfp' context.``
 
-`winhttp - Changes to the \`netsh winhttp' context.`
+``winhttp - Changes to the \`netsh winhttp' context.``
 
-`winsock - Changes to the \`netsh winsock' context.`
+``winsock - Changes to the \`netsh winsock' context.``
 
-`wlan - Changes to the \`netsh wlan' context.`
+``wlan - Changes to the \`netsh wlan' context.``
 
 The following sub-contexts are available:
 
@@ -7945,15 +7945,15 @@ To view help for a command, type the command, followed by a space, and then
 
 type ?.
 
-#### sysprep <a href="#h.ay13tnsqgyz2" id="h.ay13tnsqgyz2"></a>
+#### sysprep {#h.ay13tnsqgyz2" id="h.ay13tnsqgyz2
 
 USAGE: sysprep.exe \[/quiet] \[/generalize] \[/audit | /oobe] \[/reboot | /shutdown | /quit] \[/unattend:\<filename>]
 
 If no command-line arguments are provided, a graphical user interface is used to select the desired mode of sysprep operation.
 
-#### ipconfig.exe <a href="#h.ottiavvmm3mz" id="h.ottiavvmm3mz"></a>
+#### ipconfig.exe {#h.ottiavvmm3mz" id="h.ottiavvmm3mz
 
-`C:\Windows\System32\ipconfig.exe /?`
+``C:\Windows\System32\ipconfig.exe /?``
 
 USAGE:
 
@@ -7971,13 +7971,13 @@ ipconfig \[/allcompartments] \[/? | /all |
 
 /showclassid6 adapter |
 
-`/setclassid6 adapter \[classid] ]`
+``/setclassid6 adapter \[classid] ]``
 
 where
 
 adapter Connection name
 
-`(wildcard characters \* and ? allowed, see examples)`
+``(wildcard characters \* and ? allowed, see examples)``
 
 Options:
 
@@ -8015,35 +8015,35 @@ For Setclassid and Setclassid6, if no ClassId is specified, then the ClassId is 
 
 Examples:
 
-`\> ipconfig ... Show information`
+``\> ipconfig ... Show information``
 
-`\> ipconfig /all ... Show detailed information`
+``\> ipconfig /all ... Show detailed information``
 
-`\> ipconfig /renew ... renew all adapters`
+``\> ipconfig /renew ... renew all adapters``
 
-`\> ipconfig /renew EL\* ... renew any connection that has its`
+``\> ipconfig /renew EL\* ... renew any connection that has its``
 
 name starting with EL
 
-`\> ipconfig /release \*Con\* ... release all matching connections,`
+``\> ipconfig /release \*Con\* ... release all matching connections,``
 
 eg. "Local Area Connection 1" or
 
 "Local Area Connection 2"
 
-`\> ipconfig /allcompartments ... Show information about all`
+``\> ipconfig /allcompartments ... Show information about all``
 
 compartments
 
-`\> ipconfig /allcompartments /all ... Show detailed information about all`
+``\> ipconfig /allcompartments /all ... Show detailed information about all``
 
 compartments
 
-`C:\Windows\System32>`
+``C:\Windows\System32>``
 
-#### sc.exe <a href="#h.xj97epqun85h" id="h.xj97epqun85h"></a>
+#### sc.exe {#h.xj97epqun85h" id="h.xj97epqun85h
 
-`C:\Windows\System32\sc.exe`
+``C:\Windows\System32\sc.exe``
 
 DESCRIPTION:
 
@@ -8053,11 +8053,11 @@ Service Control Manager and services.
 
 USAGE:
 
-`sc \<server> \[command] \[service name] \<option1> \<option2>...`
+``sc \<server> \[command] \[service name] \<option1> \<option2>...``
 
-`The option \<server> has the form "\\\ServerName"`
+``The option \<server> has the form "\\\ServerName"``
 
-`Further help on commands can be obtained by typing: "sc \[command]"`
+``Further help on commands can be obtained by typing: "sc \[command]"``
 
 Commands:
 
@@ -8131,7 +8131,7 @@ EnumDepend------Enumerates Service Dependencies.
 
 The following commands don't require a service name:
 
-`sc \<server> \<command> \<option>`
+``sc \<server> \<command> \<option>``
 
 boot------------(ok | bad) Indicates whether the last boot should
 
@@ -8203,11 +8203,11 @@ sc query type= interact - Enumerates all interactive services
 
 sc query type= driver group= NDIS - Enumerates all NDIS drivers
 
-`C:\\>`
+``C:\\>``
 
-#### dsmod.exe <a href="#h.6h8t9i93kt0u" id="h.6h8t9i93kt0u"></a>
+#### dsmod.exe {#h.6h8t9i93kt0u" id="h.6h8t9i93kt0u
 
-`C:\Windows\System32\dsmod.exe /?`
+``C:\Windows\System32\dsmod.exe /?``
 
 Description: This dsmod command modifies existing objects in the directory.
 
@@ -8229,9 +8229,9 @@ dsmod quota - modifies an existing quota specification in the directory.
 
 dsmod partition - modifies an existing partition specification in the directory.
 
-`For help on a specific command, type "dsmod \<ObjectType> /?" where`
+``For help on a specific command, type "dsmod \<ObjectType> /?" where``
 
-`\<ObjectType> is one of the supported object types shown above.`
+``\<ObjectType> is one of the supported object types shown above.``
 
 For example, dsmod ou /?.
 
@@ -8239,13 +8239,13 @@ Remarks:
 
 The dsmod commands support piping of input to allow you to pipe results from the dsquery commands as input to the dsmod commands and modify the objects found by the dsquery commands.
 
-`Commas that are not used as separators in distinguished names must be escaped with the backslash ("\\") character`
+``Commas that are not used as separators in distinguished names must be escaped with the backslash ("\\") character``
 
-`(for example, "CN=Company\\, Inc.,CN=Users,DC=microsoft,DC=com").`
+``(for example, "CN=Company\\, Inc.,CN=Users,DC=microsoft,DC=com").``
 
 Backslashes used in distinguished names must be escaped with a backslash
 
-`(for example, "CN=Sales\\\ Latin America,OU=Distribution Lists,DC=microsoft,DC=com").`
+``(for example, "CN=Sales\\\ Latin America,OU=Distribution Lists,DC=microsoft,DC=com").``
 
 Examples:
 
@@ -8271,25 +8271,25 @@ dsquery /? - help for finding objects matching search criteria.
 
 dsrm /? - help for deleting objects.
 
-#### dsmove.exe <a href="#h.yezh1iab40z" id="h.yezh1iab40z"></a>
+#### dsmove.exe {#h.yezh1iab40z" id="h.yezh1iab40z
 
-`C:\Windows\System32>dsmove.exe /?`
+``C:\Windows\System32>dsmove.exe /?``
 
 Description: This command moves or renames an object within the directory.
 
-`Syntax: dsmove \<ObjectDN>`
+``Syntax: dsmove \<ObjectDN>``
 
-`\[-newparent \<ParentDN>]`
+``\[-newparent \<ParentDN>]``
 
-`\[-newname \<NewName>]`
+``\[-newname \<NewName>]``
 
 \[{-s \<Server> | -d \<Domain>}]
 
-`\[-u \<UserName>]`
+``\[-u \<UserName>]``
 
 \[-p {\<Password> | \*}]
 
-`\[-q]`
+``\[-q]``
 
 \[{-uc | -uco | -uci}]
 
@@ -8297,7 +8297,7 @@ Parameters:
 
 Value Description
 
-`\<ObjectDN> Required/stdin. Distinguished name (DN)`
+``\<ObjectDN> Required/stdin. Distinguished name (DN)``
 
 of object to move or rename.
 
@@ -8305,47 +8305,47 @@ If this parameter is omitted it
 
 will be taken from standard input (stdin).
 
-`\-newparent \<ParentDN> DN of the new parent location to which object`
+``\-newparent \<ParentDN> DN of the new parent location to which object``
 
 should be moved.
 
-`\-newname \<NewName> New relative distinguished name (RDN) value`
+``\-newname \<NewName> New relative distinguished name (RDN) value``
 
 to which object should be renamed.
 
 {-s \<Server> | -d \<Domain>}
 
-`\-s \<Server> connects to the AD DC/LDS instance`
+``\-s \<Server> connects to the AD DC/LDS instance``
 
-`with name \<Server>.`
+``with name \<Server>.``
 
-`\-d \<Domain> connects to an AD DC in domain \<Domain>.`
+``\-d \<Domain> connects to an AD DC in domain \<Domain>.``
 
 Default: an AD DC in the logon domain.
 
-`\-u \<UserName> Connect as \<UserName>. Default: the logged in user.`
+``\-u \<UserName> Connect as \<UserName>. Default: the logged in user.``
 
-`User name can be: user name, domain\user name,`
+``User name can be: user name, domain\user name,``
 
 or user principal name (UPN).
 
-`\-p \<Password> Password for the user \<UserName>.`
+``\-p \<Password> Password for the user \<UserName>.``
 
-`If \* is used, then the command prompts for a`
+``If \* is used, then the command prompts for a``
 
 password.
 
-`\-q Quiet mode: suppress all output to standard output.`
+``\-q Quiet mode: suppress all output to standard output.``
 
 {-uc | -uco | -uci} -uc Specifies that input from or output to pipe is
 
 formatted in Unicode.
 
-`\-uco Specifies that output to pipe or file is`
+``\-uco Specifies that output to pipe or file is``
 
 formatted in Unicode.
 
-`\-uci Specifies that input from pipe or file is`
+``\-uci Specifies that input from pipe or file is``
 
 formatted in Unicode.
 
@@ -8361,15 +8361,15 @@ If you enter multiple values, the values must be separated by spaces
 
 Commas that are not used as separators in distinguished names must be
 
-`escaped with the backslash ("\\") character`
+``escaped with the backslash ("\\") character``
 
-`(for example, "CN=Company\\, Inc.,CN=Users,DC=microsoft,DC=com").`
+``(for example, "CN=Company\\, Inc.,CN=Users,DC=microsoft,DC=com").``
 
 Backslashes used in distinguished names must be escaped with a backslash
 
 (for example,
 
-`"CN=Sales\\\ Latin America,OU=Distribution Lists,DC=microsoft,DC=com").`
+``"CN=Sales\\\ Latin America,OU=Distribution Lists,DC=microsoft,DC=com").``
 
 Examples:
 
@@ -8385,7 +8385,7 @@ organization with the following command:
 
 dsmove "cn=Jane Doe,ou=sales,dc=microsoft,dc=com"
 
-`\-newparent ou=Marketing,dc=microsoft,dc=com`
+``\-newparent ou=Marketing,dc=microsoft,dc=com``
 
 The rename and move operations for the user can be combined with the
 
@@ -8393,7 +8393,7 @@ following command:
 
 dsmove "cn=Jane Doe,ou=sales,dc=microsoft,dc=com"
 
-`\-newparent ou=Marketing,dc=microsoft,dc=com -newname "Jane Jones"`
+``\-newparent ou=Marketing,dc=microsoft,dc=com -newname "Jane Jones"``
 
 Directory Service command-line tools help:
 
@@ -8411,9 +8411,9 @@ dsrm /? - help for deleting objects.
 
 dsmove succeeded
 
-#### dsmgmt.exe <a href="#h.8tqrhhpv4mdt" id="h.8tqrhhpv4mdt"></a>
+#### dsmgmt.exe {#h.8tqrhhpv4mdt" id="h.8tqrhhpv4mdt
 
-`C:\Windows\System32>dsmgmt.exe /?`
+``C:\Windows\System32>dsmgmt.exe /?``
 
 Microsoft(R) Windows(TM) Directory Service Utilities Version 2.0
 
@@ -8465,11 +8465,11 @@ Set DSRM Password - Reset directory service restore mode
 
 administrator account password
 
-#### dsdbutil.exe <a href="#h.es1tu2tbmz39" id="h.es1tu2tbmz39"></a>
+#### dsdbutil.exe {#h.es1tu2tbmz39" id="h.es1tu2tbmz39
 
 Directory Service Database Util (DSDBUtil)
 
-`C:\\>dsdbutil.exe /?`
+``C:\\>dsdbutil.exe /?``
 
 Microsoft(R) Windows(TM) Directory Service Utilities Version 2.0
 
@@ -8485,17 +8485,17 @@ This is an interactive tool. Type "help" at the prompt for more information.
 
 ? - Show this help information
 
-`Activate Instance %s - Set "NTDS" or a specific AD LDS instance`
+``Activate Instance %s - Set "NTDS" or a specific AD LDS instance``
 
 as the active instance.
 
 Authoritative restore - Authoritatively restore the DIT database
 
-`Change Service Account %s1 %s2 - Change AD DS/LDS Service Account to`
+``Change Service Account %s1 %s2 - Change AD DS/LDS Service Account to``
 
-`username %s1 and password %s2.`
+``username %s1 and password %s2.``
 
-`Use "NULL" for blank password, \* to`
+``Use "NULL" for blank password, \* to``
 
 enter password from the console.
 
@@ -8505,7 +8505,7 @@ Help - Show this help information
 
 IFM - IFM media creation
 
-`LDAP Port %d - Configure LDAP Port for an AD LDS Instance.`
+``LDAP Port %d - Configure LDAP Port for an AD LDS Instance.``
 
 List Instances - List all AD LDS instances installed
 
@@ -8521,9 +8521,9 @@ Semantic database analysis - Semantic Checker
 
 Snapshot - Snapshot management
 
-`SSL Port %d - Configure SSL Port for an AD LDS Instance.`
+``SSL Port %d - Configure SSL Port for an AD LDS Instance.``
 
-#### ldifde.exe <a href="#h.w1kihb42zl2m" id="h.w1kihb42zl2m"></a>
+#### ldifde.exe {#h.w1kihb42zl2m" id="h.w1kihb42zl2m
 
 LDAP Import/Export File (LDIFDE)
 
@@ -8533,15 +8533,15 @@ LDIF Directory Exchange
 
 General Parameters
 
-`\==================`
+``\==================``
 
-`\-i Turn on Import Mode (The default is Export)`
+``\-i Turn on Import Mode (The default is Export)``
 
-`\-f filename Input or Output filename`
+``\-f filename Input or Output filename``
 
-`\-s servername The server to bind to (Default to DC of computer's domain)`
+``\-s servername The server to bind to (Default to DC of computer's domain)``
 
-`\-c FromDN ToDN Replace occurences of FromDN to ToDN`
+``\-c FromDN ToDN Replace occurences of FromDN to ToDN``
 
 If either FromDN or ToDN ends with #attributeName, the
 
@@ -8551,79 +8551,79 @@ replace #attributeName. See example for "Macro expansion
 
 in DNs".
 
-`\-v Turn on Verbose Mode`
+``\-v Turn on Verbose Mode``
 
-`\-j path Log File Location`
+``\-j path Log File Location``
 
-`\-t port Port Number (default = 389)`
+``\-t port Port Number (default = 389)``
 
-`\-u Use Unicode format`
+``\-u Use Unicode format``
 
-`\-w timeout Terminate execution if the server takes longer than the`
+``\-w timeout Terminate execution if the server takes longer than the``
 
 specified number of seconds to respond to an operation
 
 (default = no timeout specified)
 
-`\-h Enable SASL layer encryption`
+``\-h Enable SASL layer encryption``
 
-`\-? Help`
+``\-? Help``
 
 Export Specific
 
-`\===============`
+``\===============``
 
-`\-d RootDN The root of the LDAP search (Default to Naming Context)`
+``\-d RootDN The root of the LDAP search (Default to Naming Context)``
 
-`\-r Filter LDAP search filter (Default to "(objectClass=\*)")`
+``\-r Filter LDAP search filter (Default to "(objectClass=\*)")``
 
-`\-p SearchScope Search Scope (Base/OneLevel/Subtree)`
+``\-p SearchScope Search Scope (Base/OneLevel/Subtree)``
 
-`\-l list List of attributes (comma separated) to look for`
+``\-l list List of attributes (comma separated) to look for``
 
 in an LDAP search
 
-`\-o list List of attributes (comma separated) to omit from`
+``\-o list List of attributes (comma separated) to omit from``
 
 input.
 
-`\-g Disable Paged Search.`
+``\-g Disable Paged Search.``
 
-`\-m Enable the SAM logic on export.`
+``\-m Enable the SAM logic on export.``
 
-`\-n Do not export binary values`
+``\-n Do not export binary values``
 
-`\-x Include deleted objects (tombstones)`
+``\-x Include deleted objects (tombstones)``
 
-`\-1 Retain only the important replPropertyMetadata`
+``\-1 Retain only the important replPropertyMetadata``
 
 Import
 
-`\======`
+``\======``
 
-`\-k The import will go on ignoring 'Constraint Violation'`
+``\-k The import will go on ignoring 'Constraint Violation'``
 
 and 'Object Already Exists' errors
 
-`\-y The import will use lazy commit for better performance`
+``\-y The import will use lazy commit for better performance``
 
 (enabled by default)
 
-`\-e The import will not use lazy commit`
+``\-e The import will not use lazy commit``
 
-`\-q threads The import will use the specified number of threads`
+``\-q threads The import will use the specified number of threads``
 
 (default is 1)
 
-`\-z Continue importing irrespective of errors.`
+``\-z Continue importing irrespective of errors.``
 
-`\-x Enable tombstone reanimation support (passes deleted`
+``\-x Enable tombstone reanimation support (passes deleted``
 
 objects control with ldap modify requests)
 
 Credentials Establishment
 
-`\=========================`
+``\=========================``
 
 Note that if no credentials is specified, LDIFDE will bind as the currently
 
@@ -8645,13 +8645,13 @@ Example: Export of specific domain with credentials
 
 ldifde -m -f OUTPUT.LDF
 
-`\-b USERNAME DOMAINNAME \*`
+``\-b USERNAME DOMAINNAME \*``
 
-`\-s SERVERNAME`
+``\-s SERVERNAME``
 
-`\-d "cn=users,DC=DOMAINNAME,DC=Microsoft,DC=Com"`
+``\-d "cn=users,DC=DOMAINNAME,DC=Microsoft,DC=Com"``
 
-`\-r "(objectClass=user)"`
+``\-r "(objectClass=user)"``
 
 Example: Macro expansion in DNs
 
@@ -8663,7 +8663,7 @@ No log files were written. In order to generate a log file, please
 
 specify the log file path via the -j option.
 
-#### ntdsutil.exe <a href="#h.96rj0f2vfdwa" id="h.96rj0f2vfdwa"></a>
+#### ntdsutil.exe {#h.96rj0f2vfdwa" id="h.96rj0f2vfdwa
 
 Directory Service Utility (NTDSUtil)
 
@@ -8683,17 +8683,17 @@ This is an interactive tool. Type "help" at the prompt for more information.
 
 ? - Show this help information
 
-`Activate Instance %s - Set "NTDS" or a specific AD LDS instance`
+``Activate Instance %s - Set "NTDS" or a specific AD LDS instance``
 
 as the active instance.
 
 Authoritative restore - Authoritatively restore the DIT database
 
-`Change Service Account %s1 %s2 - Change AD DS/LDS Service Account to`
+``Change Service Account %s1 %s2 - Change AD DS/LDS Service Account to``
 
-`username %s1 and password %s2.`
+``username %s1 and password %s2.``
 
-`Use "NULL" for blank password, \* to`
+``Use "NULL" for blank password, \* to``
 
 enter password from the console.
 
@@ -8713,7 +8713,7 @@ IFM - IFM media creation
 
 LDAP policies - Manage LDAP protocol policies
 
-`LDAP Port %d - Configure LDAP Port for an AD LDS Instance.`
+``LDAP Port %d - Configure LDAP Port for an AD LDS Instance.``
 
 List Instances - List all AD LDS instances installed
 
@@ -8745,9 +8745,9 @@ administrator account password
 
 Snapshot - Snapshot management
 
-`SSL Port %d - Configure SSL Port for an AD LDS Instance.`
+``SSL Port %d - Configure SSL Port for an AD LDS Instance.``
 
-`\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*-------------------------\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*`
+``\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*-------------------------\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*``
 
 ntdsutil
 
@@ -8755,17 +8755,17 @@ ntdsutil: ?
 
 ? - Show this help information
 
-`Activate Instance %s - Set "NTDS" or a specific AD LDS instance`
+``Activate Instance %s - Set "NTDS" or a specific AD LDS instance``
 
 as the active instance.
 
 Authoritative restore - Authoritatively restore the DIT database
 
-`Change Service Account %s1 %s2 - Change AD DS/LDS Service Account to`
+``Change Service Account %s1 %s2 - Change AD DS/LDS Service Account to``
 
-`username %s1 and password %s2.`
+``username %s1 and password %s2.``
 
-`Use "NULL" for blank password, \* to`
+``Use "NULL" for blank password, \* to``
 
 enter password from the console.
 
@@ -8785,7 +8785,7 @@ IFM - IFM media creation
 
 LDAP policies - Manage LDAP protocol policies
 
-`LDAP Port %d - Configure LDAP Port for an AD LDS Instance.`
+``LDAP Port %d - Configure LDAP Port for an AD LDS Instance.``
 
 List Instances - List all AD LDS instances installed
 
@@ -8817,23 +8817,23 @@ administrator account password
 
 Snapshot - Snapshot management
 
-`SSL Port %d - Configure SSL Port for an AD LDS Instance.`
+``SSL Port %d - Configure SSL Port for an AD LDS Instance.``
 
 ntdsutil:
 
-#### dnscmd.exe <a href="#h.lpv0kdomhmpd" id="h.lpv0kdomhmpd"></a>
+#### dnscmd.exe {#h.lpv0kdomhmpd" id="h.lpv0kdomhmpd
 
-`C:\Windows\System32>dnscmd /?`
+``C:\Windows\System32>dnscmd /?``
 
-`Usage: DnsCmd \<ServerName> \<Command> \[\<Command Parameters>]`
+``Usage: DnsCmd \<ServerName> \<Command> \[\<Command Parameters>]``
 
-`\<ServerName>:`
+``\<ServerName>:``
 
 IP address or host name -- remote or local DNS server
 
 . -- DNS server on local machine
 
-`\<Command>:`
+``\<Command>:``
 
 /Info -- Get server information
 
@@ -8877,7 +8877,7 @@ IP address or host name -- remote or local DNS server
 
 /ZoneResetType -- Change zone type
 
-`/ZoneResetSecondaries -- Reset secondary\notify information for a zone`
+``/ZoneResetSecondaries -- Reset secondary\notify information for a zone``
 
 /ZoneResetScavengeServers -- Reset scavenging servers for a zone
 
@@ -8923,13 +8923,13 @@ IP address or host name -- remote or local DNS server
 
 /OfflineSign -- Offline signing zone files, including key generation/deletion
 
-`\<Command Parameters>:`
+``\<Command Parameters>:``
 
-`DnsCmd \<CommandName> /? -- For help info on specific Command`
+``DnsCmd \<CommandName> /? -- For help info on specific Command``
 
-`C:\Windows\System32>`
+``C:\Windows\System32>``
 
-`C:\Windows\System32>dnscmd /offlinesign /?`
+``C:\Windows\System32>dnscmd /offlinesign /?``
 
 To see usage for generating a self-signed certificate with private key:
 
@@ -8949,25 +8949,25 @@ To see usage for importing a key from BIND private key file:
 
 DnsCmd /OfflineSign /ImportKey
 
-`C:\Windows\System32>dnscmd /exportsettings /?`
+``C:\Windows\System32>dnscmd /exportsettings /?``
 
 . completed successfully.
 
-`C:\Windows\System32>dnscmd /zoneexport /?`
+``C:\Windows\System32>dnscmd /zoneexport /?``
 
-`Usage: DnsCmd \<ServerName> /ZoneExport \<ZoneName> \<ZoneExportFile>`
+``Usage: DnsCmd \<ServerName> /ZoneExport \<ZoneName> \<ZoneExportFile>``
 
-`\<ZoneName> -- FQDN of zone to export`
+``\<ZoneName> -- FQDN of zone to export``
 
 /Cache to export cache
 
-`C:\Windows\System32>`
+``C:\Windows\System32>``
 
-`C:\Windows\System32>dnscmd /info /?`
+``C:\Windows\System32>dnscmd /info /?``
 
-`Usage: DnsCmd \<Server> /Info \[\<Property>]`
+``Usage: DnsCmd \<Server> /Info \[\<Property>]``
 
-`\<Property> -- server property to view`
+``\<Property> -- server property to view``
 
 Examples:
 
@@ -9031,13 +9031,13 @@ DefaultNoRefreshInterval
 
 DefaultRefreshInterval
 
-`C:\Windows\System32>`
+``C:\Windows\System32>``
 
-#### mstsc.exe <a href="#h.nvr31pgwbc45" id="h.nvr31pgwbc45"></a>
+#### mstsc.exe {#h.nvr31pgwbc45" id="h.nvr31pgwbc45
 
 Remote Desktop Connection
 
-`%windir%\system32\mstsc.exe`
+``%windir%\system32\mstsc.exe``
 
 Remote Desktop Connection Usage
 
@@ -9045,15 +9045,15 @@ MSTSC \[\<connection file>] \[/v:\<server\[:port]> \[/admin] \[/f\[ullscreen]] \
 
 “connection file” -- Specifies the name of an .RDP file for the connection.
 
-`/v:\<server\[:port]> -- Specifies the remote computer to which you want to connect.`
+``/v:\<server\[:port]> -- Specifies the remote computer to which you want to connect.``
 
 /admin -- Connects you to the session for administering a server.
 
 /f -- Starts Remote Desktop in full-screen mode.
 
-`/w:\<width> -- Specifies the width of the Remote Desktop window.`
+``/w:\<width> -- Specifies the width of the Remote Desktop window.``
 
-`/h:\<height> -- Specifies the height of the Remote Desktop window.`
+``/h:\<height> -- Specifies the height of the Remote Desktop window.``
 
 /public -- Runs Remote Desktop in public mode.
 
@@ -9065,9 +9065,9 @@ MSTSC \[\<connection file>] \[/v:\<server\[:port]> \[/admin] \[/f\[ullscreen]] \
 
 /migrate -- Migrates legacy connection files that were created with Client Connection Manager to new .RDP connection files.
 
-#### wevtutil.exe <a href="#h.3pl14weu2l32" id="h.3pl14weu2l32"></a>
+#### wevtutil.exe {#h.3pl14weu2l32" id="h.3pl14weu2l32
 
-`C:\\>wevtutil /?`
+``C:\\>wevtutil /?``
 
 Windows Events Command Line Utility.
 
@@ -9085,7 +9085,7 @@ options and option values are not case-sensitive.
 
 Variables are noted in all upper-case.
 
-`wevtutil COMMAND \[ARGUMENT \[ARGUMENT] ...] \[/OPTION:VALUE \[/OPTION:VALUE] ...]`
+``wevtutil COMMAND \[ARGUMENT \[ARGUMENT] ...] \[/OPTION:VALUE \[/OPTION:VALUE] ...]``
 
 Commands:
 
@@ -9125,11 +9125,11 @@ name. Options /im and /um do not support remote operations.
 
 Specify a different user to log on to the remote computer. VALUE is a user name
 
-`in the form domain\user or user. Only applicable when option /r is specified.`
+``in the form domain\user or user. Only applicable when option /r is specified.``
 
 /{p | password}:VALUE
 
-`Password for the specified user. If not specified, or if VALUE is "\*", the user`
+``Password for the specified user. If not specified, or if VALUE is "\*", the user``
 
 will be prompted to enter a password. Only applicable when the /u option is
 
@@ -9147,15 +9147,15 @@ To learn more about a specific command, type the following:
 
 wevtutil COMMAND /?
 
-`C:\\>`
+``C:\\>``
 
-#### eventcreate.exe <a href="#h.9kwnw88tei32" id="h.9kwnw88tei32"></a>
+#### eventcreate.exe {#h.9kwnw88tei32" id="h.9kwnw88tei32
 
-`C:\\>eventcreate /?`
+``C:\\>eventcreate /?``
 
-`EVENTCREATE \[/S system \[/U username \[/P \[password]]]] /ID eventid`
+``EVENTCREATE \[/S system \[/U username \[/P \[password]]]] /ID eventid``
 
-`\[/L logname] \[/SO srcname] /T type /D description`
+``\[/L logname] \[/SO srcname] /T type /D description``
 
 Description:
 
@@ -9167,11 +9167,11 @@ Parameter List:
 
 /S system Specifies the remote system to connect to.
 
-`/U \[domain\\]user Specifies the user context under which`
+``/U \[domain\\]user Specifies the user context under which``
 
 the command should execute.
 
-`/P \[password] Specifies the password for the given`
+``/P \[password] Specifies the password for the given``
 
 user context. Prompts for input if omitted.
 
@@ -9221,13 +9221,13 @@ EVENTCREATE /S system /U user /P password /ID 1 /T ERROR
 
 /L APPLICATION /D "User access failed due to invalid user credentials"
 
-`C:\\>`
+``C:\\>``
 
-#### WMIC <a href="#h.di0atv7puoor" id="h.di0atv7puoor"></a>
+#### WMIC {#h.di0atv7puoor" id="h.di0atv7puoor
 
-`C:\\>wmic.exe /?`
+``C:\\>wmic.exe /?``
 
-`\[global switches] \<command>`
+``\[global switches] \<command>``
 
 The following global switches are available:
 
@@ -9263,7 +9263,7 @@ The following global switches are available:
 
 /AGGREGATE Sets or resets aggregate mode.
 
-`/AUTHORITY Specifies the \<authority type> for the connection.`
+``/AUTHORITY Specifies the \<authority type> for the connection.``
 
 /?\[:\<BRIEF|FULL>] Usage information.
 
@@ -9447,25 +9447,25 @@ QUIT/EXIT - Exits the program.
 
 For more information on CLASS/PATH/CONTEXT, type: (CLASS | PATH | CONTEXT) /?
 
-`C:\\>`
+``C:\\>``
 
-#### arp.exe <a href="#h.48bo45mhu8d0" id="h.48bo45mhu8d0"></a>
+#### arp.exe {#h.48bo45mhu8d0" id="h.48bo45mhu8d0
 
-`C:\\>arp -?`
+``C:\\>arp -?``
 
 Displays and modifies the IP-to-Physical address translation tables used by
 
 address resolution protocol (ARP).
 
-`ARP -s inet\_addr eth\_addr \[if\_addr]`
+``ARP -s inet\_addr eth\_addr \[if\_addr]``
 
-`ARP -d inet\_addr \[if\_addr]`
+``ARP -d inet\_addr \[if\_addr]``
 
-`ARP -a \[inet\_addr] \[-N if\_addr] \[-v]`
+``ARP -a \[inet\_addr] \[-N if\_addr] \[-v]``
 
-`\-a Displays current ARP entries by interrogating the current`
+``\-a Displays current ARP entries by interrogating the current``
 
-`protocol data. If inet\_addr is specified, the IP and Physical`
+``protocol data. If inet\_addr is specified, the IP and Physical``
 
 addresses for only the specified computer are displayed. If
 
@@ -9473,33 +9473,33 @@ more than one network interface uses ARP, entries for each ARP
 
 table are displayed.
 
-`\-g Same as -a.`
+``\-g Same as -a.``
 
-`\-v Displays current ARP entries in verbose mode. All invalid`
+``\-v Displays current ARP entries in verbose mode. All invalid``
 
 entries and entries on the loop-back interface will be shown.
 
-`inet\_addr Specifies an internet address.`
+``inet\_addr Specifies an internet address.``
 
-`\-N if\_addr Displays the ARP entries for the network interface specified`
+``\-N if\_addr Displays the ARP entries for the network interface specified``
 
-`by if\_addr.`
+``by if\_addr.``
 
-`\-d Deletes the host specified by inet\_addr. inet\_addr may be`
+``\-d Deletes the host specified by inet\_addr. inet\_addr may be``
 
-`wildcarded with \* to delete all hosts.`
+``wildcarded with \* to delete all hosts.``
 
-`\-s Adds the host and associates the Internet address inet\_addr`
+``\-s Adds the host and associates the Internet address inet\_addr``
 
-`with the Physical address eth\_addr. The Physical address is`
+``with the Physical address eth\_addr. The Physical address is``
 
 given as 6 hexadecimal bytes separated by hyphens. The entry
 
 is permanent.
 
-`eth\_addr Specifies a physical address.`
+``eth\_addr Specifies a physical address.``
 
-`if\_addr If present, this specifies the Internet address of the`
+``if\_addr If present, this specifies the Internet address of the``
 
 interface whose address translation table should be modified.
 
@@ -9507,43 +9507,43 @@ If not present, the first applicable interface will be used.
 
 Example:
 
-`\> arp -s 157.55.85.212 00-aa-00-62-c6-09 .... Adds a static entry.`
+``\> arp -s 157.55.85.212 00-aa-00-62-c6-09 .... Adds a static entry.``
 
-`\> arp -a .... Displays the arp table.`
+``\> arp -a .... Displays the arp table.``
 
-#### nbtstat.exe <a href="#h.7cusilarkcdi" id="h.7cusilarkcdi"></a>
+#### nbtstat.exe {#h.7cusilarkcdi" id="h.7cusilarkcdi
 
-`C:\\>nbtstat /?`
+``C:\\>nbtstat /?``
 
 Displays protocol statistics and current TCP/IP connections using NBT
 
 (NetBIOS over TCP/IP).
 
-`NBTSTAT \[ \[-a RemoteName] \[-A IP address] \[-c] \[-n]`
+``NBTSTAT \[ \[-a RemoteName] \[-A IP address] \[-c] \[-n]``
 
-`\[-r] \[-R] \[-RR] \[-s] \[-S] \[interval] ]`
+``\[-r] \[-R] \[-RR] \[-s] \[-S] \[interval] ]``
 
-`\-a (adapter status) Lists the remote machine's name table given its name`
+``\-a (adapter status) Lists the remote machine's name table given its name``
 
-`\-A (Adapter status) Lists the remote machine's name table given its`
+``\-A (Adapter status) Lists the remote machine's name table given its``
 
 IP address.
 
-`\-c (cache) Lists NBT's cache of remote \[machine] names and their IP addresses`
+``\-c (cache) Lists NBT's cache of remote \[machine] names and their IP addresses``
 
-`\-n (names) Lists local NetBIOS names.`
+``\-n (names) Lists local NetBIOS names.``
 
-`\-r (resolved) Lists names resolved by broadcast and via WINS`
+``\-r (resolved) Lists names resolved by broadcast and via WINS``
 
-`\-R (Reload) Purges and reloads the remote cache name table`
+``\-R (Reload) Purges and reloads the remote cache name table``
 
-`\-S (Sessions) Lists sessions table with the destination IP addresses`
+``\-S (Sessions) Lists sessions table with the destination IP addresses``
 
-`\-s (sessions) Lists sessions table converting destination IP`
+``\-s (sessions) Lists sessions table converting destination IP``
 
 addresses to computer NETBIOS names.
 
-`\-RR (ReleaseRefresh) Sends Name Release packets to WINS and then, starts Refresh`
+``\-RR (ReleaseRefresh) Sends Name Release packets to WINS and then, starts Refresh``
 
 RemoteName Remote host machine name.
 
@@ -9555,17 +9555,17 @@ between each display. Press Ctrl+C to stop redisplaying
 
 statistics.
 
-#### netstat.exe <a href="#h.bdmftey7iug2" id="h.bdmftey7iug2"></a>
+#### netstat.exe {#h.bdmftey7iug2" id="h.bdmftey7iug2
 
-`C:\\>netstat -?`
+``C:\\>netstat -?``
 
 Displays protocol statistics and current TCP/IP network connections.
 
-`NETSTAT \[-a] \[-b] \[-e] \[-f] \[-n] \[-o] \[-p proto] \[-r] \[-s] \[-t] \[interval]`
+``NETSTAT \[-a] \[-b] \[-e] \[-f] \[-n] \[-o] \[-p proto] \[-r] \[-s] \[-t] \[interval]``
 
-`\-a Displays all connections and listening ports.`
+``\-a Displays all connections and listening ports.``
 
-`\-b Displays the executable involved in creating each connection or`
+``\-b Displays the executable involved in creating each connection or``
 
 listening port. In some cases well-known executables host
 
@@ -9575,7 +9575,7 @@ sequence of components involved in creating the connection
 
 or listening port is displayed. In this case the executable
 
-`name is in \[] at the bottom, on top is the component it called,`
+``name is in \[] at the bottom, on top is the component it called,``
 
 and so forth until TCP/IP was reached. Note that this option
 
@@ -9583,19 +9583,19 @@ can be time-consuming and will fail unless you have sufficient
 
 permissions.
 
-`\-e Displays Ethernet statistics. This may be combined with the -s`
+``\-e Displays Ethernet statistics. This may be combined with the -s``
 
 option.
 
-`\-f Displays Fully Qualified Domain Names (FQDN) for foreign`
+``\-f Displays Fully Qualified Domain Names (FQDN) for foreign``
 
 addresses.
 
-`\-n Displays addresses and port numbers in numerical form.`
+``\-n Displays addresses and port numbers in numerical form.``
 
-`\-o Displays the owning process ID associated with each connection.`
+``\-o Displays the owning process ID associated with each connection.``
 
-`\-p proto Shows connections for the protocol specified by proto; proto`
+``\-p proto Shows connections for the protocol specified by proto; proto``
 
 may be any of: TCP, UDP, TCPv6, or UDPv6. If used with the -s
 
@@ -9603,15 +9603,15 @@ option to display per-protocol statistics, proto may be any of:
 
 IP, IPv6, ICMP, ICMPv6, TCP, TCPv6, UDP, or UDPv6.
 
-`\-r Displays the routing table.`
+``\-r Displays the routing table.``
 
-`\-s Displays per-protocol statistics. By default, statistics are`
+``\-s Displays per-protocol statistics. By default, statistics are``
 
 shown for IP, IPv6, ICMP, ICMPv6, TCP, TCPv6, UDP, and UDPv6;
 
 the -p option may be used to specify a subset of the default.
 
-`\-t Displays the current connection offload state.`
+``\-t Displays the current connection offload state.``
 
 interval Redisplays selected statistics, pausing interval seconds
 
@@ -9621,117 +9621,117 @@ statistics. If omitted, netstat will print the current
 
 configuration information once.
 
-#### nslookup.exe <a href="#h.4h3lycmpdf0p" id="h.4h3lycmpdf0p"></a>
+#### nslookup.exe {#h.4h3lycmpdf0p" id="h.4h3lycmpdf0p
 
-`C:\\>nslookup /?`
+``C:\\>nslookup /?``
 
 Usage:
 
-`nslookup \[-opt ...] # interactive mode using default server`
+``nslookup \[-opt ...] # interactive mode using default server``
 
-`nslookup \[-opt ...] - server # interactive mode using 'server'`
+``nslookup \[-opt ...] - server # interactive mode using 'server'``
 
-`nslookup \[-opt ...] host # just look up 'host' using default server`
+``nslookup \[-opt ...] host # just look up 'host' using default server``
 
-`nslookup \[-opt ...] host server # just look up 'host' using 'server'`
+``nslookup \[-opt ...] host server # just look up 'host' using 'server'``
 
-#### ping.exe <a href="#h.u0s7oy6qolo2" id="h.u0s7oy6qolo2"></a>
+#### ping.exe {#h.u0s7oy6qolo2" id="h.u0s7oy6qolo2
 
-`C:\\>ping -?`
+``C:\\>ping -?``
 
-`Usage: ping \[-t] \[-a] \[-n count] \[-l size] \[-f] \[-i TTL] \[-v TOS]`
+``Usage: ping \[-t] \[-a] \[-n count] \[-l size] \[-f] \[-i TTL] \[-v TOS]``
 
 \[-r count] \[-s count] \[\[-j host-list] | \[-k host-list]]
 
-`\[-w timeout] \[-R] \[-S srcaddr] \[-4] \[-6] target\_name`
+``\[-w timeout] \[-R] \[-S srcaddr] \[-4] \[-6] target\_name``
 
 Options:
 
-`\-t Ping the specified host until stopped.`
+``\-t Ping the specified host until stopped.``
 
 To see statistics and continue - type Control-Break;
 
 To stop - type Control-C.
 
-`\-a Resolve addresses to hostnames.`
+``\-a Resolve addresses to hostnames.``
 
-`\-n count Number of echo requests to send.`
+``\-n count Number of echo requests to send.``
 
-`\-l size Send buffer size.`
+``\-l size Send buffer size.``
 
-`\-f Set Don't Fragment flag in packet (IPv4-only).`
+``\-f Set Don't Fragment flag in packet (IPv4-only).``
 
-`\-i TTL Time To Live.`
+``\-i TTL Time To Live.``
 
-`\-v TOS Type Of Service (IPv4-only. This setting has been deprecated`
+``\-v TOS Type Of Service (IPv4-only. This setting has been deprecated``
 
 and has no effect on the type of service field in the IP Header).
 
-`\-r count Record route for count hops (IPv4-only).`
+``\-r count Record route for count hops (IPv4-only).``
 
-`\-s count Timestamp for count hops (IPv4-only).`
+``\-s count Timestamp for count hops (IPv4-only).``
 
-`\-j host-list Loose source route along host-list (IPv4-only).`
+``\-j host-list Loose source route along host-list (IPv4-only).``
 
-`\-k host-list Strict source route along host-list (IPv4-only).`
+``\-k host-list Strict source route along host-list (IPv4-only).``
 
-`\-w timeout Timeout in milliseconds to wait for each reply.`
+``\-w timeout Timeout in milliseconds to wait for each reply.``
 
-`\-R Use routing header to test reverse route also (IPv6-only).`
+``\-R Use routing header to test reverse route also (IPv6-only).``
 
-`\-S srcaddr Source address to use.`
+``\-S srcaddr Source address to use.``
 
-`\-4 Force using IPv4.`
+``\-4 Force using IPv4.``
 
-`\-6 Force using IPv6.`
+``\-6 Force using IPv6.``
 
-#### pathping.exe <a href="#h.973uehfsh5gg" id="h.973uehfsh5gg"></a>
+#### pathping.exe {#h.973uehfsh5gg" id="h.973uehfsh5gg
 
-`C:\\>pathping -?`
+``C:\\>pathping -?``
 
-`Usage: pathping \[-g host-list] \[-h maximum\_hops] \[-i address] \[-n]`
+``Usage: pathping \[-g host-list] \[-h maximum\_hops] \[-i address] \[-n]``
 
-`\[-p period] \[-q num\_queries] \[-w timeout]`
+``\[-p period] \[-q num\_queries] \[-w timeout]``
 
-`\[-4] \[-6] target\_name`
+``\[-4] \[-6] target\_name``
 
 Options:
 
-`\-g host-list Loose source route along host-list.`
+``\-g host-list Loose source route along host-list.``
 
-`\-h maximum\_hops Maximum number of hops to search for target.`
+``\-h maximum\_hops Maximum number of hops to search for target.``
 
-`\-i address Use the specified source address.`
+``\-i address Use the specified source address.``
 
-`\-n Do not resolve addresses to hostnames.`
+``\-n Do not resolve addresses to hostnames.``
 
-`\-p period Wait period milliseconds between pings.`
+``\-p period Wait period milliseconds between pings.``
 
-`\-q num\_queries Number of queries per hop.`
+``\-q num\_queries Number of queries per hop.``
 
-`\-w timeout Wait timeout milliseconds for each reply.`
+``\-w timeout Wait timeout milliseconds for each reply.``
 
-`\-4 Force using IPv4.`
+``\-4 Force using IPv4.``
 
-`\-6 Force using IPv6.`
+``\-6 Force using IPv6.``
 
-#### route.exe <a href="#h.93xd9wgptoyw" id="h.93xd9wgptoyw"></a>
+#### route.exe {#h.93xd9wgptoyw" id="h.93xd9wgptoyw
 
-`C:\\>route.exe -?`
+``C:\\>route.exe -?``
 
 Manipulates network routing tables.
 
 ROUTE \[-f] \[-p] \[-4|-6] command \[destination]
 
-`\[MASK netmask] \[gateway] \[METRIC metric] \[IF interface]`
+``\[MASK netmask] \[gateway] \[METRIC metric] \[IF interface]``
 
-`\-f Clears the routing tables of all gateway entries. If this is`
+``\-f Clears the routing tables of all gateway entries. If this is``
 
 used in conjunction with one of the commands, the tables are
 
 cleared prior to running the command.
 
-`\-p When used with the ADD command, makes a route persistent across`
+``\-p When used with the ADD command, makes a route persistent across``
 
 boots of the system. By default, routes are not preserved
 
@@ -9741,9 +9741,9 @@ which always affect the appropriate persistent routes. This
 
 option is not supported in Windows 95.
 
-`\-4 Force using IPv4.`
+``\-4 Force using IPv4.``
 
-`\-6 Force using IPv6.`
+``\-6 Force using IPv6.``
 
 command One of these:
 
@@ -9777,13 +9777,13 @@ database file HOSTS.
 
 If the command is PRINT or DELETE. Destination or gateway can be a wildcard,
 
-`(wildcard is specified as a star '\*'), or the gateway argument may be omitted.`
+``(wildcard is specified as a star '\*'), or the gateway argument may be omitted.``
 
-`If Dest contains a \* or ?, it is treated as a shell pattern, and only`
+``If Dest contains a \* or ?, it is treated as a shell pattern, and only``
 
-`matching destination routes are printed. The '\*' matches any string,`
+``matching destination routes are printed. The '\*' matches any string,``
 
-`and '?' matches any one char. Examples: 157.\*.1, 157.\*, 127.\*, \*224\*.`
+``and '?' matches any one char. Examples: 157.\*.1, 157.\*, 127.\*, \*224\*.``
 
 Pattern match is only allowed in PRINT command.
 
@@ -9797,15 +9797,15 @@ The route addition failed: The specified mask parameter is invalid. (Destination
 
 Examples:
 
-`\> route PRINT`
+``\> route PRINT``
 
-`\> route PRINT -4`
+``\> route PRINT -4``
 
-`\> route PRINT -6`
+``\> route PRINT -6``
 
-`\> route PRINT 157\* .... Only prints those matching 157\*`
+``\> route PRINT 157\* .... Only prints those matching 157\*``
 
-`\> route ADD 157.0.0.0 MASK 255.0.0.0 157.55.80.1 METRIC 3 IF 2`
+``\> route ADD 157.0.0.0 MASK 255.0.0.0 157.55.80.1 METRIC 3 IF 2``
 
 destination^ ^mask ^gateway metric^ ^
 
@@ -9815,53 +9815,53 @@ If IF is not given, it tries to find the best interface for a given
 
 gateway.
 
-`\> route ADD 3ffe::/32 3ffe::1`
+``\> route ADD 3ffe::/32 3ffe::1``
 
-`\> route CHANGE 157.0.0.0 MASK 255.0.0.0 157.55.80.5 METRIC 2 IF 2`
+``\> route CHANGE 157.0.0.0 MASK 255.0.0.0 157.55.80.5 METRIC 2 IF 2``
 
 CHANGE is used to modify gateway and/or metric only.
 
-`\> route DELETE 157.0.0.0`
+``\> route DELETE 157.0.0.0``
 
-`\> route DELETE 3ffe::/32`
+``\> route DELETE 3ffe::/32``
 
-#### tracert.exe <a href="#h.qxnx8bxafrv9" id="h.qxnx8bxafrv9"></a>
+#### tracert.exe {#h.qxnx8bxafrv9" id="h.qxnx8bxafrv9
 
-`C:\\>tracert.exe -?`
+``C:\\>tracert.exe -?``
 
-`Usage: tracert \[-d] \[-h maximum\_hops] \[-j host-list] \[-w timeout]`
+``Usage: tracert \[-d] \[-h maximum\_hops] \[-j host-list] \[-w timeout]``
 
-`\[-R] \[-S srcaddr] \[-4] \[-6] target\_name`
+``\[-R] \[-S srcaddr] \[-4] \[-6] target\_name``
 
 Options:
 
-`\-d Do not resolve addresses to hostnames.`
+``\-d Do not resolve addresses to hostnames.``
 
-`\-h maximum\_hops Maximum number of hops to search for target.`
+``\-h maximum\_hops Maximum number of hops to search for target.``
 
-`\-j host-list Loose source route along host-list (IPv4-only).`
+``\-j host-list Loose source route along host-list (IPv4-only).``
 
-`\-w timeout Wait timeout milliseconds for each reply.`
+``\-w timeout Wait timeout milliseconds for each reply.``
 
-`\-R Trace round-trip path (IPv6-only).`
+``\-R Trace round-trip path (IPv6-only).``
 
-`\-S srcaddr Source address to use (IPv6-only).`
+``\-S srcaddr Source address to use (IPv6-only).``
 
-`\-4 Force using IPv4.`
+``\-4 Force using IPv4.``
 
-`\-6 Force using IPv6.`
+``\-6 Force using IPv6.``
 
-#### hostname <a href="#h.98fm7mpngwo3" id="h.98fm7mpngwo3"></a>
+#### hostname {#h.98fm7mpngwo3" id="h.98fm7mpngwo3
 
-`C:\\>hostname -?`
+``C:\\>hostname -?``
 
 Prints the name of the current host.
 
 hostname
 
-#### whoami <a href="#h.tiha9jcuzq6m" id="h.tiha9jcuzq6m"></a>
+#### whoami {#h.tiha9jcuzq6m" id="h.tiha9jcuzq6m
 
-`C:\\>whoami -?`
+``C:\\>whoami -?``
 
 WhoAmI has three ways of working:
 
@@ -9871,11 +9871,11 @@ WHOAMI \[/UPN | /FQDN | /LOGONID]
 
 Syntax 2:
 
-`WHOAMI { \[/USER] \[/GROUPS] \[/PRIV] } \[/FO format] \[/NH]`
+``WHOAMI { \[/USER] \[/GROUPS] \[/PRIV] } \[/FO format] \[/NH]``
 
 Syntax 3:
 
-`WHOAMI /ALL \[/FO format] \[/NH]`
+``WHOAMI /ALL \[/FO format] \[/NH]``
 
 Description:
 
@@ -9889,7 +9889,7 @@ on the local system. i.e. who is the current logged on user?
 
 If no switch is specified, tool displays the user name in NTLM
 
-`format (domain\username).`
+``format (domain\username).``
 
 Parameter List:
 
@@ -9977,19 +9977,19 @@ WHOAMI /ALL /FO CSV /NH
 
 WHOAMI /?
 
-`C:\\>`
+``C:\\>``
 
-#### nslookup.exe <a href="#h.15mj2e40omqx" id="h.15mj2e40omqx"></a>
+#### nslookup.exe {#h.15mj2e40omqx" id="h.15mj2e40omqx
 
-`C:\\>nslookup`
+``C:\\>nslookup``
 
 Default Server: appserver.medlinkmanagement.com
 
 Address: 192.168.1.99
 
-`\> ?`
+``\> ?``
 
-`Commands: (identifiers are shown in uppercase, \[] means optional)`
+``Commands: (identifiers are shown in uppercase, \[] means optional)``
 
 NAME - print info about the host/domain NAME using default server
 
@@ -10001,21 +10001,21 @@ set OPTION - set an option
 
 all - print options, current server and host
 
-`\[no]debug - print debugging information`
+``\[no]debug - print debugging information``
 
-`\[no]d2 - print exhaustive debugging information`
+``\[no]d2 - print exhaustive debugging information``
 
-`\[no]defname - append domain name to each query`
+``\[no]defname - append domain name to each query``
 
-`\[no]recurse - ask for recursive answer to query`
+``\[no]recurse - ask for recursive answer to query``
 
-`\[no]search - use domain search list`
+``\[no]search - use domain search list``
 
-`\[no]vc - always use a virtual circuit`
+``\[no]vc - always use a virtual circuit``
 
 domain=NAME - set default domain name to NAME
 
-`srchlist=N1\[/N2/.../N6] - set domain to N1 and search list to N1,N2, etc.`
+``srchlist=N1\[/N2/.../N6] - set domain to N1 and search list to N1,N2, etc.``
 
 root=NAME - set root server to NAME
 
@@ -10029,7 +10029,7 @@ querytype=X - same as type
 
 class=X - set query class (ex. IN (Internet), ANY)
 
-`\[no]msxfr - use MS fast zone transfer`
+``\[no]msxfr - use MS fast zone transfer``
 
 ixfrver=X - current version to use in IXFR transfer request
 
@@ -10039,21 +10039,21 @@ lserver NAME - set default server to NAME, using initial server
 
 root - set current default server to the root
 
-`ls \[opt] DOMAIN \[> FILE] - list addresses in DOMAIN (optional: output to FILE)`
+``ls \[opt] DOMAIN \[> FILE] - list addresses in DOMAIN (optional: output to FILE)``
 
-`\-a - list canonical names and aliases`
+``\-a - list canonical names and aliases``
 
-`\-d - list all records`
+``\-d - list all records``
 
-`\-t TYPE - list records of the given RFC record type (ex. A,CNAME,MX,NS,PTR etc.)`
+``\-t TYPE - list records of the given RFC record type (ex. A,CNAME,MX,NS,PTR etc.)``
 
 view FILE - sort an 'ls' output file and view it with pg
 
 exit - exit the program
 
-`\>`
+``\>``
 
-#### telnet.exe <a href="#h.ijpbch98x73b" id="h.ijpbch98x73b"></a>
+#### telnet.exe {#h.ijpbch98x73b" id="h.ijpbch98x73b
 
 Welcome to Microsoft Telnet Client
 
@@ -10067,7 +10067,7 @@ c - close close current connection
 
 d - display display operating parameters
 
-`o - open hostname \[port] connect to hostname (default port 23).`
+``o - open hostname \[port] connect to hostname (default port 23).``
 
 q - quit exit telnet
 
@@ -10125,9 +10125,9 @@ Preferred term type is ANSI
 
 Microsoft Telnet>
 
-#### diskperf.exe <a href="#h.r8a90dycvukd" id="h.r8a90dycvukd"></a>
+#### diskperf.exe {#h.r8a90dycvukd" id="h.r8a90dycvukd
 
-`C:\\>diskperf -?`
+``C:\\>diskperf -?``
 
 DISKPERF=====================
 
@@ -10157,27 +10157,27 @@ are automatically enabled.
 
 DISKPERF \[-Y\[D|V] | -N\[D|V]] \[\\\computername]
 
-`\-Y Sets the system to start all disk performance counters`
+``\-Y Sets the system to start all disk performance counters``
 
 when the system is restarted.
 
-`\-YD Enables the disk performance counters for physical drives.`
+``\-YD Enables the disk performance counters for physical drives.``
 
 when the system is restarted.
 
-`\-YV Enables the disk performance counters for logical drives`
+``\-YV Enables the disk performance counters for logical drives``
 
 or storage volumes when the system is restarted.
 
-`\-N Sets the system to disable all disk performance counters`
+``\-N Sets the system to disable all disk performance counters``
 
 when the system is restarted.
 
-`\-ND Disables the disk performance counters for physical drives.`
+``\-ND Disables the disk performance counters for physical drives.``
 
-`\-NV Disables the disk performance counters for logical drives.`
+``\-NV Disables the disk performance counters for logical drives.``
 
-`\\\computername Is the name of the computer you want to`
+``\\\computername Is the name of the computer you want to``
 
 see or set disk performance counter use.
 
@@ -10187,13 +10187,13 @@ NOTE: Disk performance counters are permanently enabled on
 
 systems beyond Windows 2000.
 
-`C:\\>`
+``C:\\>``
 
-#### schtasks.exe <a href="#h.d48jkgkmc5mk" id="h.d48jkgkmc5mk"></a>
+#### schtasks.exe {#h.d48jkgkmc5mk" id="h.d48jkgkmc5mk
 
-`C:\Windows\System32>schtasks /?`
+``C:\Windows\System32>schtasks /?``
 
-`SCHTASKS /parameter \[arguments]`
+``SCHTASKS /parameter \[arguments]``
 
 Description:
 
@@ -10239,9 +10239,9 @@ SCHTASKS /Change /?
 
 SCHTASKS /ShowSid /?
 
-`C:\Windows\System32>schtasks /Query /?`
+``C:\Windows\System32>schtasks /Query /?``
 
-`SCHTASKS /Query \[/S system \[/U username \[/P \[password]]]]`
+``SCHTASKS /Query \[/S system \[/U username \[/P \[password]]]]``
 
 \[/FO format | /XML \[xml\_type]] \[/NH] \[/V] \[/TN taskname] \[/?]
 
@@ -10259,7 +10259,7 @@ Parameter List:
 
 which schtasks.exe should execute.
 
-`/P \[password] Specifies the password for the given`
+``/P \[password] Specifies the password for the given``
 
 user context. Prompts for input if omitted.
 
@@ -10279,11 +10279,11 @@ valid only for TABLE format.
 
 retrieve the information, else all of them.
 
-`/XML \[xml\_type] Displays task definitions in XML format.`
+``/XML \[xml\_type] Displays task definitions in XML format.``
 
-`If xml\_type is ONE then the output will be one valid XML file.`
+``If xml\_type is ONE then the output will be one valid XML file.``
 
-`If xml\_type is not present then the output will be`
+``If xml\_type is not present then the output will be``
 
 the concatenation of all XML task definitions.
 
@@ -10301,13 +10301,13 @@ SCHTASKS /Query /FO LIST /V /S system /U user /P password
 
 SCHTASKS /Query /FO TABLE /NH /V
 
-`C:\Windows\System32>schtasks /Create /?`
+``C:\Windows\System32>schtasks /Create /?``
 
-`SCHTASKS /Create \[/S system \[/U username \[/P \[password]]]]`
+``SCHTASKS /Create \[/S system \[/U username \[/P \[password]]]]``
 
-`\[/RU username \[/RP password]] /SC schedule \[/MO modifier] \[/D day]`
+``\[/RU username \[/RP password]] /SC schedule \[/MO modifier] \[/D day]``
 
-`\[/M months] \[/I idletime] /TN taskname /TR taskrun \[/ST starttime]`
+``\[/M months] \[/I idletime] /TN taskname /TR taskrun \[/ST starttime]``
 
 \[/RI interval] \[ {/ET endtime | /DU duration} \[/K] \[/XML xmlfile] \[/V1]]
 
@@ -10329,7 +10329,7 @@ the system parameter defaults to the local system.
 
 should execute.
 
-`/P \[password] Specifies the password for the given user context.`
+``/P \[password] Specifies the password for the given user context.``
 
 Prompts for input if omitted.
 
@@ -10337,21 +10337,21 @@ Prompts for input if omitted.
 
 under which the task runs. For the system account,
 
-`valid values are "", "NT AUTHORITY\SYSTEM"`
+``valid values are "", "NT AUTHORITY\SYSTEM"``
 
 or "SYSTEM".
 
-`For v2 tasks, "NT AUTHORITY\LOCALSERVICE" and`
+``For v2 tasks, "NT AUTHORITY\LOCALSERVICE" and``
 
-`"NT AUTHORITY\NETWORKSERVICE" are also available as well`
+``"NT AUTHORITY\NETWORKSERVICE" are also available as well``
 
 as the well known SIDs for all three.
 
-`/RP \[password] Specifies the password for the "run as" user.`
+``/RP \[password] Specifies the password for the "run as" user.``
 
 To prompt for the password, the value must be either
 
-`"\*" or none. This password is ignored for the`
+``"\*" or none. This password is ignored for the``
 
 system account. Must be combined with either /RU or
 
@@ -10375,13 +10375,13 @@ values: MON, TUE, WED, THU, FRI, SAT, SUN and for
 
 MONTHLY schedules 1 - 31 (days of the month).
 
-`Wildcard "\*" specifies all days.`
+``Wildcard "\*" specifies all days.``
 
 /M months Specifies month(s) of the year. Defaults to the first
 
 day of the month. Valid values: JAN, FEB, MAR, APR,
 
-`MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC. Wildcard "\*"`
+``MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC. Wildcard "\*"``
 
 specifies all months.
 
@@ -10399,7 +10399,7 @@ identifies this scheduled task.
 
 run at the scheduled time.
 
-`Example: C:\windows\system32\calc.exe`
+``Example: C:\windows\system32\calc.exe``
 
 /ST starttime Specifies the start time to run the task. The time
 
@@ -10529,7 +10529,7 @@ ONEVENT: XPath event query string.
 
 Examples:
 
-`\==> Creates a scheduled task "doc" on the remote machine "ABC"`
+``\==> Creates a scheduled task "doc" on the remote machine "ABC"``
 
 which runs notepad.exe every hour under user "runasuser".
 
@@ -10537,27 +10537,27 @@ SCHTASKS /Create /S ABC /U user /P password /RU runasuser
 
 /RP runaspassword /SC HOURLY /TN doc /TR notepad
 
-`\==> Creates a scheduled task "accountant" on the remote machine`
+``\==> Creates a scheduled task "accountant" on the remote machine``
 
 "ABC" to run calc.exe every five minutes from the specified
 
 start time to end time between the start date and end date.
 
-`SCHTASKS /Create /S ABC /U domain\user /P password /SC MINUTE`
+``SCHTASKS /Create /S ABC /U domain\user /P password /SC MINUTE``
 
 /MO 5 /TN accountant /TR calc.exe /ST 12:00 /ET 14:00
 
 /SD 06/06/2006 /ED 06/06/2006 /RU runasuser /RP userpassword
 
-`\==> Creates a scheduled task "gametime" to run freecell on the`
+``\==> Creates a scheduled task "gametime" to run freecell on the``
 
 first Sunday of every month.
 
 SCHTASKS /Create /SC MONTHLY /MO first /D SUN /TN gametime
 
-`/TR c:\windows\system32\freecell`
+``/TR c:\windows\system32\freecell``
 
-`\==> Creates a scheduled task "report" on remote machine "ABC"`
+``\==> Creates a scheduled task "report" on remote machine "ABC"``
 
 to run notepad.exe every week.
 
@@ -10565,7 +10565,7 @@ SCHTASKS /Create /S ABC /U user /P password /RU runasuser
 
 /RP runaspassword /SC WEEKLY /TN report /TR notepad.exe
 
-`\==> Creates a scheduled task "logtracker" on remote machine "ABC"`
+``\==> Creates a scheduled task "logtracker" on remote machine "ABC"``
 
 to run notepad.exe every five minutes starting from the
 
@@ -10573,31 +10573,31 @@ specified start time with no end time. The /RP password will be
 
 prompted for.
 
-`SCHTASKS /Create /S ABC /U domain\user /P password /SC MINUTE`
+``SCHTASKS /Create /S ABC /U domain\user /P password /SC MINUTE``
 
 /MO 5 /TN logtracker
 
-`/TR c:\windows\system32\notepad.exe /ST 18:30`
+``/TR c:\windows\system32\notepad.exe /ST 18:30``
 
 /RU runasuser /RP
 
-`\==> Creates a scheduled task "gaming" to run freecell.exe starting`
+``\==> Creates a scheduled task "gaming" to run freecell.exe starting``
 
 at 12:00 and automatically terminating at 14:00 hours every day
 
-`SCHTASKS /Create /SC DAILY /TN gaming /TR c:\freecell /ST 12:00`
+``SCHTASKS /Create /SC DAILY /TN gaming /TR c:\freecell /ST 12:00``
 
 /ET 14:00 /K
 
-`\==> Creates a scheduled task "EventLog" to run wevtvwr.msc starting`
+``\==> Creates a scheduled task "EventLog" to run wevtvwr.msc starting``
 
 whenever event 101 is published in the System channel
 
 SCHTASKS /Create /TN EventLog /TR wevtvwr.msc /SC ONEVENT
 
-`/EC System /MO \*\[System/EventID=101]`
+``/EC System /MO \*\[System/EventID=101]``
 
-`\==> Spaces in file paths can be used by using two sets of quotes, one`
+``\==> Spaces in file paths can be used by using two sets of quotes, one``
 
 set for CMD.EXE and one for SchTasks.exe. The outer quotes for CMD
 
@@ -10607,29 +10607,29 @@ escaped double quotes:
 
 SCHTASKS /Create
 
-`/tr "'c:\program files\internet explorer\iexplorer.exe'`
+``/tr "'c:\program files\internet explorer\iexplorer.exe'``
 
-`\\"c:\log data\today.xml\\"" ...`
+``\\"c:\log data\today.xml\\"" ...``
 
-`C:\Windows\System32>`
+``C:\Windows\System32>``
 
-#### SetX.exe <a href="#h.gdu3xlo8yd9f" id="h.gdu3xlo8yd9f"></a>
+#### SetX.exe {#h.gdu3xlo8yd9f" id="h.gdu3xlo8yd9f
 
-`C:\Windows\System32>setx.exe /?`
+``C:\Windows\System32>setx.exe /?``
 
 SetX has three ways of working:
 
 Syntax 1:
 
-`SETX \[/S system \[/U \[domain\\]user \[/P \[password]]]] var value \[/M]`
+``SETX \[/S system \[/U \[domain\\]user \[/P \[password]]]] var value \[/M]``
 
 Syntax 2:
 
-`SETX \[/S system \[/U \[domain\\]user \[/P \[password]]]] var /K regpath \[/M]`
+``SETX \[/S system \[/U \[domain\\]user \[/P \[password]]]] var /K regpath \[/M]``
 
 Syntax 3:
 
-`SETX \[/S system \[/U \[domain\\]user \[/P \[password]]]]`
+``SETX \[/S system \[/U \[domain\\]user \[/P \[password]]]]``
 
 /F file {var {/A x,y | /R x,y string}\[/M] | /X} \[/D delimiters]
 
@@ -10645,11 +10645,11 @@ Parameter List:
 
 /S system Specifies the remote system to connect to.
 
-`/U \[domain\\]user Specifies the user context under which`
+``/U \[domain\\]user Specifies the user context under which``
 
 the command should execute.
 
-`/P \[password] Specifies the password for the given`
+``/P \[password] Specifies the password for the given``
 
 user context. Prompts for input if omitted.
 
@@ -10665,11 +10665,11 @@ on information from a registry key.
 
 Path should be specified in the format of
 
-`hive\key\\...\value. For example,`
+``hive\key\\...\value. For example,``
 
-`HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\\`
+``HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\\``
 
-`Control\TimeZoneInformation\StandardName.`
+``Control\TimeZoneInformation\StandardName.``
 
 /F file Specifies the filename of the text file
 
@@ -10687,11 +10687,11 @@ respect to "string" as the search parameters.
 
 /M Specifies that the variable should be set in
 
-`the system wide (HKEY\_LOCAL\_MACHINE)`
+``the system wide (HKEY\_LOCAL\_MACHINE)``
 
 environment. The default is to set the
 
-`variable under the HKEY\_CURRENT\_USER`
+``variable under the HKEY\_CURRENT\_USER``
 
 environment.
 
@@ -10699,7 +10699,7 @@ environment.
 
 /D delimiters Specifies additional delimiters such as ","
 
-`or "\\". The built-in delimiters are space,`
+``or "\\". The built-in delimiters are space,``
 
 tab, carriage return, and linefeed. Any
 
@@ -10713,27 +10713,27 @@ including the built-in delimiters, is 15.
 
 NOTE: 1) SETX writes variables to the master environment in the registry.
 
-`2\) On a local system, variables created or modified by this tool`
+``2\) On a local system, variables created or modified by this tool``
 
 will be available in future command windows but not in the
 
 current CMD.exe command window.
 
-`3\) On a remote system, variables created or modified by this tool`
+``3\) On a remote system, variables created or modified by this tool``
 
 will be available at the next logon session.
 
-`4\) The valid Registry Key data types are REG\_DWORD, REG\_EXPAND\_SZ,`
+``4\) The valid Registry Key data types are REG\_DWORD, REG\_EXPAND\_SZ,``
 
-`REG\_SZ, REG\_MULTI\_SZ.`
+``REG\_SZ, REG\_MULTI\_SZ.``
 
-`5\) Supported hives: HKEY\_LOCAL\_MACHINE (HKLM),`
+``5\) Supported hives: HKEY\_LOCAL\_MACHINE (HKLM),``
 
-`HKEY\_CURRENT\_USER (HKCU).`
+``HKEY\_CURRENT\_USER (HKCU).``
 
-`6\) Delimiters are case sensitive.`
+``6\) Delimiters are case sensitive.``
 
-`7\) REG\_DWORD values are extracted from the registry in decimal`
+``7\) REG\_DWORD values are extracted from the registry in decimal``
 
 format.
 
@@ -10743,51 +10743,51 @@ Examples:
 
 `SETX MACHINE "COMPAQ COMPUTER" /M`
 
-`SETX MYPATH "%PATH%"`
+``SETX MYPATH "%PATH%"``
 
-`SETX MYPATH \~PATH\~`
+``SETX MYPATH \~PATH\~``
 
 `SETX /S system /U user /P password MACHINE COMPAQ`
 
-`SETX /S system /U user /P password MYPATH ^%PATH^%`
+``SETX /S system /U user /P password MYPATH ^%PATH^%``
 
-`SETX TZONE /K HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\\`
+``SETX TZONE /K HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\\``
 
-`Control\TimeZoneInformation\StandardName`
+``Control\TimeZoneInformation\StandardName``
 
-`SETX BUILD /K "HKEY\_LOCAL\_MACHINE\Software\Microsoft\Windows`
+``SETX BUILD /K "HKEY\_LOCAL\_MACHINE\Software\Microsoft\Windows``
 
-`NT\CurrentVersion\CurrentBuildNumber" /M`
+``NT\CurrentVersion\CurrentBuildNumber" /M``
 
-`SETX /S system /U user /P password TZONE /K HKEY\_LOCAL\_MACHINE\\`
+``SETX /S system /U user /P password TZONE /K HKEY\_LOCAL\_MACHINE\\``
 
-`System\CurrentControlSet\Control\TimeZoneInformation\\`
+``System\CurrentControlSet\Control\TimeZoneInformation\\``
 
 StandardName
 
 `SETX /S system /U user /P password BUILD /K`
 
-`"HKEY\_LOCAL\_MACHINE\Software\Microsoft\Windows NT\\`
+``"HKEY\_LOCAL\_MACHINE\Software\Microsoft\Windows NT\\``
 
-`CurrentVersion\CurrentBuildNumber" /M`
+``CurrentVersion\CurrentBuildNumber" /M``
 
 `SETX /F ipconfig.out /X`
 
 `SETX IPADDR /F ipconfig.out /A 5,11`
 
-`SETX OCTET1 /F ipconfig.out /A 5,3 /D "#$\*."`
+``SETX OCTET1 /F ipconfig.out /A 5,3 /D "#$\*."``
 
 `SETX IPGATEWAY /F ipconfig.out /R 0,7 Gateway`
 
-`SETX /S system /U user /P password /F c:\ipconfig.out /X`
+``SETX /S system /U user /P password /F c:\ipconfig.out /X``
 
-`C:\Windows\System32>`
+``C:\Windows\System32>``
 
-#### auditpol.exe <a href="#h.4bvv3hc75hy2" id="h.4bvv3hc75hy2"></a>
+#### auditpol.exe {#h.4bvv3hc75hy2" id="h.4bvv3hc75hy2
 
-`C:\Windows\System32>auditpol.exe /?`
+``C:\Windows\System32>auditpol.exe /?``
 
-`Usage: AuditPol command \[\<sub-command>\<options>]`
+``Usage: AuditPol command \[\<sub-command>\<options>]``
 
 Commands (only one command permitted per execution)
 
@@ -10809,9 +10809,9 @@ Commands (only one command permitted per execution)
 
 /resourceSACL Configure global resource SACLs
 
-`Use AuditPol \<command> /? for details on each command`
+``Use AuditPol \<command> /? for details on each command``
 
-`C:\Windows\System32>auditpol.exe /get /?`
+``C:\Windows\System32>auditpol.exe /get /?``
 
 Usage: AuditPol /get \[/user\[:\<username>|<{sid}>]]
 
@@ -10819,11 +10819,11 @@ Usage: AuditPol /get \[/user\[:\<username>|<{sid}>]]
 
 \[/subcategory:\<name>|<{guid}>\[,:\<name>|<{guid}>...]]
 
-`\[/option:\<option name>]`
+``\[/option:\<option name>]``
 
-`\[/sd]`
+``\[/sd]``
 
-`\[/r]`
+``\[/r]``
 
 This command displays the current audit policy.
 
@@ -10843,7 +10843,7 @@ the system audit policy is queried.
 
 /category One or more audit categories specified by GUID or name.
 
-`An asterisk ("\*") may be used to indicate that all audit`
+``An asterisk ("\*") may be used to indicate that all audit``
 
 categories should be queried.
 
@@ -10865,7 +10865,7 @@ AuditBaseDirectories.
 
 Sample usage:
 
-`auditpol /get /user:domain\user /Category:"Detailed Tracking","Object Access"`
+``auditpol /get /user:domain\user /Category:"Detailed Tracking","Object Access"``
 
 auditpol /get /Subcategory:{0cce9212-69ae-11d9-bed3-505054503030} /r
 
@@ -10875,7 +10875,7 @@ auditpol /get /user:{S-1-5-21-397123417-1234567} /Category:"System"
 
 auditpol /get /sd
 
-`C:\Windows\System32>auditpol.exe /set /?`
+``C:\Windows\System32>auditpol.exe /set /?``
 
 Usage: AuditPol /set
 
@@ -10965,7 +10965,7 @@ DACL.
 
 Example:
 
-`auditpol /set /user:domain\user /Category:"System" /success:enable /include`
+``auditpol /set /user:domain\user /Category:"System" /success:enable /include``
 
 auditpol /set /subcategory:{0cce9212-69ae-11d9-bed3-505054503030} /failure:disable
 
@@ -10975,13 +10975,13 @@ auditpol /set /sd:D:(A;;DCSWRPDTRC;;;BA)(A;;DCSWRPDTRC;;;SY)
 
 The command was successfully executed.
 
-`C:\Windows\System32>auditpol.exe /list /?`
+``C:\Windows\System32>auditpol.exe /list /?``
 
 Usage: AuditPol /list
 
 \[/user|/category|/subcategory\[:\<categoryname>|<{guid}>|\*]
 
-`\[/v] \[/r]`
+``\[/v] \[/r]``
 
 This command lists audit policy categories, subcategories, or lists users for
 
@@ -11019,7 +11019,7 @@ auditpol /list /category /v
 
 auditpol /list /subcategory:"Detailed Tracking","Object Access"
 
-`C:\Windows\System32>Auditpol /list /subcategory:\*`
+``C:\Windows\System32>Auditpol /list /subcategory:\*``
 
 Category/Subcategory
 
@@ -11147,13 +11147,13 @@ Other Account Logon Events
 
 Kerberos Authentication Service
 
-`C:\Windows\System32>`
+``C:\Windows\System32>``
 
-#### bitsadmin.exe <a href="#h.lp81vy51i0ky" id="h.lp81vy51i0ky"></a>
+#### bitsadmin.exe {#h.lp81vy51i0ky" id="h.lp81vy51i0ky
 
-`C:\Windows\System32>bitsadmin.exe /?`
+``C:\Windows\System32>bitsadmin.exe /?``
 
-`BITSADMIN version 3.0 \[ 7.5.7601 ]`
+``BITSADMIN version 3.0 \[ 7.5.7601 ]``
 
 BITS administration utility.
 
@@ -11179,47 +11179,47 @@ The following commands are available:
 
 /PEERS /? Prints the list of peer management commands
 
-`/LIST \[/ALLUSERS] \[/VERBOSE] List the jobs`
+``/LIST \[/ALLUSERS] \[/VERBOSE] List the jobs``
 
-`/MONITOR \[/ALLUSERS] \[/REFRESH sec] Monitors the copy manager`
+``/MONITOR \[/ALLUSERS] \[/REFRESH sec] Monitors the copy manager``
 
-`/RESET \[/ALLUSERS] Deletes all jobs in the manager`
+``/RESET \[/ALLUSERS] Deletes all jobs in the manager``
 
-`/TRANSFER \<job name> \[type] \[/PRIORITY priority] \[/ACLFLAGS flags]`
+``/TRANSFER \<job name> \[type] \[/PRIORITY priority] \[/ACLFLAGS flags]``
 
-`remote\_url local\_name`
+``remote\_url local\_name``
 
 Transfers one of more files.
 
-`\[type] may be /DOWNLOAD or /UPLOAD; default is download`
+``\[type] may be /DOWNLOAD or /UPLOAD; default is download``
 
 Multiple URL/file pairs may be specified.
 
-`Unlike most commands, \<job name> may only be a name and not a GUID.`
+``Unlike most commands, \<job name> may only be a name and not a GUID.``
 
-`/CREATE \[type] \<job name> Creates a job`
+``/CREATE \[type] \<job name> Creates a job``
 
-`\[type] may be /DOWNLOAD, /UPLOAD, or /UPLOAD-REPLY; default is download`
+``\[type] may be /DOWNLOAD, /UPLOAD, or /UPLOAD-REPLY; default is download``
 
-`Unlike most commands, \<job name> may only be a name and not a GUID.`
+``Unlike most commands, \<job name> may only be a name and not a GUID.``
 
-`/INFO \<job> \[/VERBOSE] Displays information about the job`
+``/INFO \<job> \[/VERBOSE] Displays information about the job``
 
-`/ADDFILE \<job> \<remote\_url> \<local\_name> Adds a file to the job`
+``/ADDFILE \<job> \<remote\_url> \<local\_name> Adds a file to the job``
 
-`/ADDFILESET \<job> \<textfile> Adds multiple files to the job`
+``/ADDFILESET \<job> \<textfile> Adds multiple files to the job``
 
-`Each line of \<textfile> lists a file's remote name and local name, separated`
+``Each line of \<textfile> lists a file's remote name and local name, separated``
 
 by spaces. A line beginning with '#' is treated as a comment.
 
 Once the file set is read into memory, the contents are added to the job.
 
-`/ADDFILEWITHRANGES \<job> \<remote\_url> \<local\_name range\_list>`
+``/ADDFILEWITHRANGES \<job> \<remote\_url> \<local\_name range\_list>``
 
 Like /ADDFILE, but BITS will read only selected byte ranges of the URL.
 
-`range\_list is a comma-delimited series of offset and length pairs.`
+``range\_list is a comma-delimited series of offset and length pairs.``
 
 For example,
 
@@ -11229,29 +11229,29 @@ instructs BITS to read 100 bytes starting at offset zero, 100 bytes starting
 
 at offset 2000, and the remainder of the URL starting at offset 5000.
 
-`/REPLACEREMOTEPREFIX \<job> \<old\_prefix> \<new\_prefix>`
+``/REPLACEREMOTEPREFIX \<job> \<old\_prefix> \<new\_prefix>``
 
-`All files whose URL begins with \<old\_prefix> are changed to use \<new\_prefix>`
+``All files whose URL begins with \<old\_prefix> are changed to use \<new\_prefix>``
 
 Note that BITS currently supports HTTP/HTTPS downloads and uploads.
 
 It also supports UNC paths and file:// paths as URLS
 
-`/LISTFILES \<job> Lists the files in the job`
+``/LISTFILES \<job> Lists the files in the job``
 
-`/SUSPEND \<job> Suspends the job`
+``/SUSPEND \<job> Suspends the job``
 
-`/RESUME \<job> Resumes the job`
+``/RESUME \<job> Resumes the job``
 
-`/CANCEL \<job> Cancels the job`
+``/CANCEL \<job> Cancels the job``
 
-`/COMPLETE \<job> Completes the job`
+``/COMPLETE \<job> Completes the job``
 
-`/GETTYPE \<job> Retrieves the job type`
+``/GETTYPE \<job> Retrieves the job type``
 
-`/GETACLFLAGS \<job> Retrieves the ACL propagation flags`
+``/GETACLFLAGS \<job> Retrieves the ACL propagation flags``
 
-`/SETACLFLAGS \<job> \<ACL\_flags> Sets the ACL propagation flags for the job`
+``/SETACLFLAGS \<job> \<ACL\_flags> Sets the ACL propagation flags for the job``
 
 O - OWNER G - GROUP
 
@@ -11263,37 +11263,37 @@ bitsadmin /setaclflags MyJob OGDS
 
 bitsadmin /setaclflags MyJob OGD
 
-`/GETBYTESTOTAL \<job> Retrieves the size of the job`
+``/GETBYTESTOTAL \<job> Retrieves the size of the job``
 
-`/GETBYTESTRANSFERRED \<job> Retrieves the number of bytes transferred`
+``/GETBYTESTRANSFERRED \<job> Retrieves the number of bytes transferred``
 
-`/GETFILESTOTAL \<job> Retrieves the number of files in the job`
+``/GETFILESTOTAL \<job> Retrieves the number of files in the job``
 
-`/GETFILESTRANSFERRED \<job> Retrieves the number of files transferred`
+``/GETFILESTRANSFERRED \<job> Retrieves the number of files transferred``
 
-`/GETCREATIONTIME \<job> Retrieves the job creation time`
+``/GETCREATIONTIME \<job> Retrieves the job creation time``
 
-`/GETMODIFICATIONTIME \<job> Retrieves the job modification time`
+``/GETMODIFICATIONTIME \<job> Retrieves the job modification time``
 
-`/GETCOMPLETIONTIME \<job> Retrieves the job completion time`
+``/GETCOMPLETIONTIME \<job> Retrieves the job completion time``
 
-`/GETSTATE \<job> Retrieves the job state`
+``/GETSTATE \<job> Retrieves the job state``
 
-`/GETERROR \<job> Retrieves detailed error information`
+``/GETERROR \<job> Retrieves detailed error information``
 
-`/GETOWNER \<job> Retrieves the job owner`
+``/GETOWNER \<job> Retrieves the job owner``
 
-`/GETDISPLAYNAME \<job> Retrieves the job display name`
+``/GETDISPLAYNAME \<job> Retrieves the job display name``
 
-`/SETDISPLAYNAME \<job> \<display\_name> Sets the job display name`
+``/SETDISPLAYNAME \<job> \<display\_name> Sets the job display name``
 
-`/GETDESCRIPTION \<job> Retrieves the job description`
+``/GETDESCRIPTION \<job> Retrieves the job description``
 
-`/SETDESCRIPTION \<job> \<description> Sets the job description`
+``/SETDESCRIPTION \<job> \<description> Sets the job description``
 
-`/GETPRIORITY \<job> Retrieves the job priority`
+``/GETPRIORITY \<job> Retrieves the job priority``
 
-`/SETPRIORITY \<job> \<priority> Sets the job priority`
+``/SETPRIORITY \<job> \<priority> Sets the job priority``
 
 Priority usage choices:
 
@@ -11305,29 +11305,29 @@ NORMAL
 
 LOW
 
-`/GETNOTIFYFLAGS \<job> Retrieves the notify flags`
+``/GETNOTIFYFLAGS \<job> Retrieves the notify flags``
 
-`/SETNOTIFYFLAGS \<job> \<notify\_flags> Sets the notify flags`
+``/SETNOTIFYFLAGS \<job> \<notify\_flags> Sets the notify flags``
 
 For more help on this option, please refer to the MSDN help page for SetNotifyFlags
 
-`/GETNOTIFYINTERFACE \<job> Determines if notify interface is registered`
+``/GETNOTIFYINTERFACE \<job> Determines if notify interface is registered``
 
-`/GETMINRETRYDELAY \<job> Retrieves the retry delay in seconds`
+``/GETMINRETRYDELAY \<job> Retrieves the retry delay in seconds``
 
-`/SETMINRETRYDELAY \<job> \<retry\_delay> Sets the retry delay in seconds`
+``/SETMINRETRYDELAY \<job> \<retry\_delay> Sets the retry delay in seconds``
 
-`/GETNOPROGRESSTIMEOUT \<job> Retrieves the no progress timeout in seconds`
+``/GETNOPROGRESSTIMEOUT \<job> Retrieves the no progress timeout in seconds``
 
-`/SETNOPROGRESSTIMEOUT \<job> \<timeout> Sets the no progress timeout in seconds`
+``/SETNOPROGRESSTIMEOUT \<job> \<timeout> Sets the no progress timeout in seconds``
 
-`/GETMAXDOWNLOADTIME \<job> Retrieves the download timeout in seconds`
+``/GETMAXDOWNLOADTIME \<job> Retrieves the download timeout in seconds``
 
-`/SETMAXDOWNLOADTIME \<job> \<timeout> Sets the download timeout in seconds`
+``/SETMAXDOWNLOADTIME \<job> \<timeout> Sets the download timeout in seconds``
 
-`/GETERRORCOUNT \<job> Retrieves an error count for the job`
+``/GETERRORCOUNT \<job> Retrieves an error count for the job``
 
-`/SETPROXYSETTINGS \<job> \<usage> Sets the proxy usage`
+``/SETPROXYSETTINGS \<job> \<usage> Sets the proxy usage``
 
 usage choices:
 
@@ -11335,7 +11335,7 @@ PRECONFIG - Use the owner's default Internet settings.
 
 AUTODETECT - Force autodetection of proxy.
 
-`NO\_PROXY - Do not use a proxy server.`
+``NO\_PROXY - Do not use a proxy server.``
 
 OVERRIDE - Use an explicit proxy list and bypass list.
 
@@ -11349,21 +11349,21 @@ bitsadmin /setproxysettings MyJob PRECONFIG
 
 bitsadmin /setproxysettings MyJob AUTODETECT
 
-`bitsadmin /setproxysettings MyJob NO\_PROXY`
+``bitsadmin /setproxysettings MyJob NO\_PROXY``
 
-`bitsadmin /setproxysettings MyJob OVERRIDE proxy1:80 "\<local>"`
+``bitsadmin /setproxysettings MyJob OVERRIDE proxy1:80 "\<local>"``
 
 bitsadmin /setproxysettings MyJob OVERRIDE proxy1,proxy2,proxy3 NULL
 
-`/GETPROXYUSAGE \<job> Retrieves the proxy usage setting`
+``/GETPROXYUSAGE \<job> Retrieves the proxy usage setting``
 
-`/GETPROXYLIST \<job> Retrieves the proxy list`
+``/GETPROXYLIST \<job> Retrieves the proxy list``
 
-`/GETPROXYBYPASSLIST \<job> Retrieves the proxy bypass list`
+``/GETPROXYBYPASSLIST \<job> Retrieves the proxy bypass list``
 
-`/TAKEOWNERSHIP \<job> Take ownership of the job`
+``/TAKEOWNERSHIP \<job> Take ownership of the job``
 
-`/SETNOTIFYCMDLINE \<job> \<program\_name> \[program\_parameters]`
+``/SETNOTIFYCMDLINE \<job> \<program\_name> \[program\_parameters]``
 
 Sets a program to execute for notification, and optionally parameters.
 
@@ -11375,59 +11375,59 @@ first parameter.
 
 Examples:
 
-`bitsadmin /SetNotifyCmdLine MyJob c:\winnt\system32\notepad.exe NULL`
+``bitsadmin /SetNotifyCmdLine MyJob c:\winnt\system32\notepad.exe NULL``
 
-`bitsadmin /SetNotifyCmdLine MyJob c:\foo.exe "c:\foo.exe parm1 parm2"`
+``bitsadmin /SetNotifyCmdLine MyJob c:\foo.exe "c:\foo.exe parm1 parm2"``
 
 bitsadmin /SetNotifyCmdLine MyJob NULL NULL
 
-`/GETNOTIFYCMDLINE \<job> Returns the job's notification command line`
+``/GETNOTIFYCMDLINE \<job> Returns the job's notification command line``
 
-`/SETCREDENTIALS \<job> \<target> \<scheme> \<username> \<password>`
+``/SETCREDENTIALS \<job> \<target> \<scheme> \<username> \<password>``
 
 Adds credentials to a job.
 
-`\<target> may be either SERVER or PROXY`
+``\<target> may be either SERVER or PROXY``
 
-`\<scheme> may be BASIC, DIGEST, NTLM, NEGOTIATE, or PASSPORT.`
+``\<scheme> may be BASIC, DIGEST, NTLM, NEGOTIATE, or PASSPORT.``
 
-`/REMOVECREDENTIALS \<job> \<target> \<scheme>`
+``/REMOVECREDENTIALS \<job> \<target> \<scheme>``
 
 Removes credentials from a job.
 
-`/GETCUSTOMHEADERS \<job> Gets the Custom HTTP Headers`
+``/GETCUSTOMHEADERS \<job> Gets the Custom HTTP Headers``
 
-`/SETCUSTOMHEADERS \<job> \<header1> \<header2> <...> Sets the Custom HTTP Headers`
+``/SETCUSTOMHEADERS \<job> \<header1> \<header2> <...> Sets the Custom HTTP Headers``
 
-`/GETCLIENTCERTIFICATE \<job> Gets the job's Client Certificate Information`
+``/GETCLIENTCERTIFICATE \<job> Gets the job's Client Certificate Information``
 
-`/SETCLIENTCERTIFICATEBYID \<job> \<store\_location> \<store\_name> \<hexa-decimal\_cert\_id>`
-
-Sets a client authentication certificate to a job.
-
-`\<store\_location> may be`
-
-`1(CURRENT\_USER), 2(LOCAL\_MACHINE), 3(CURRENT\_SERVICE),`
-
-`4(SERVICES), 5(USERS), 6(CURRENT\_USER\_GROUP\_POLICY),`
-
-`7(LOCAL\_MACHINE\_GROUP\_POLICY) or 8(LOCAL\_MACHINE\_ENTERPRISE).`
-
-`/SETCLIENTCERTIFICATEBYNAME \<job> \<store\_location> \<store\_name> \<subject\_name>`
+``/SETCLIENTCERTIFICATEBYID \<job> \<store\_location> \<store\_name> \<hexa-decimal\_cert\_id>``
 
 Sets a client authentication certificate to a job.
 
-`\<store\_location> may be`
+``\<store\_location> may be``
 
-`1(CURRENT\_USER), 2(LOCAL\_MACHINE), 3(CURRENT\_SERVICE),`
+``1(CURRENT\_USER), 2(LOCAL\_MACHINE), 3(CURRENT\_SERVICE),``
 
-`4(SERVICES), 5(USERS), 6(CURRENT\_USER\_GROUP\_POLICY),`
+``4(SERVICES), 5(USERS), 6(CURRENT\_USER\_GROUP\_POLICY),``
 
-`7(LOCAL\_MACHINE\_GROUP\_POLICY) or 8(LOCAL\_MACHINE\_ENTERPRISE).`
+``7(LOCAL\_MACHINE\_GROUP\_POLICY) or 8(LOCAL\_MACHINE\_ENTERPRISE).``
 
-`/REMOVECLIENTCERTIFICATE \<job> Removes the Client Certificate Information from the job`
+``/SETCLIENTCERTIFICATEBYNAME \<job> \<store\_location> \<store\_name> \<subject\_name>``
 
-`/SETSECURITYFLAGS \<job> \<value>`
+Sets a client authentication certificate to a job.
+
+``\<store\_location> may be``
+
+``1(CURRENT\_USER), 2(LOCAL\_MACHINE), 3(CURRENT\_SERVICE),``
+
+``4(SERVICES), 5(USERS), 6(CURRENT\_USER\_GROUP\_POLICY),``
+
+``7(LOCAL\_MACHINE\_GROUP\_POLICY) or 8(LOCAL\_MACHINE\_ENTERPRISE).``
+
+``/REMOVECLIENTCERTIFICATE \<job> Removes the Client Certificate Information from the job``
+
+``/SETSECURITYFLAGS \<job> \<value>``
 
 Sets the HTTP security flags for URL redirection and checks performed on the server certificate during the transfer.
 
@@ -11455,31 +11455,31 @@ Redirection policy : Controlled by the 9th-11th bits from right
 
 Allow redirection from HTTPS to HTTP : Set the 12th bit from right
 
-`/GETSECURITYFLAGS \<job>`
+``/GETSECURITYFLAGS \<job>``
 
 Reports the HTTP security flags for URL redirection and checks performed on the server certificate during the transfer.
 
 /SETVALIDATIONSTATE \<job> \<file-index> \<true|false>
 
-`\<file-index> starts from 0`
+``\<file-index> starts from 0``
 
 Sets the content-validation state of the given file within the job.
 
-`/GETVALIDATIONSTATE \<job> \<file-index>`
+``/GETVALIDATIONSTATE \<job> \<file-index>``
 
-`\<file-index> starts from 0`
+``\<file-index> starts from 0``
 
 Reports the content-validation state of the given file within the job.
 
-`/GETTEMPORARYNAME \<job> \<file-index>`
+``/GETTEMPORARYNAME \<job> \<file-index>``
 
-`\<file-index> starts from 0`
+``\<file-index> starts from 0``
 
 Reports the temporary filename of the given file within the job.
 
 The following options control peercaching of a particular job:
 
-`/SETPEERCACHINGFLAGS \<job> \<value>`
+``/SETPEERCACHINGFLAGS \<job> \<value>``
 
 Sets the flags for the job's peercaching behavior.
 
@@ -11489,19 +11489,19 @@ Allow the job's data to be downloaded from a peer : Set the least significant bi
 
 Allow the job's data to be served to peers : Set the 2nd bit from right
 
-`/GETPEERCACHINGFLAGS \<job>`
+``/GETPEERCACHINGFLAGS \<job>``
 
 Reports the flags for the job's peercaching behavior.
 
 The following options are valid for UPLOAD-REPLY jobs only:
 
-`/GETREPLYFILENAME \<job> Gets the path of the file containing the server reply`
+``/GETREPLYFILENAME \<job> Gets the path of the file containing the server reply``
 
-`/SETREPLYFILENAME \<job> \<path> Sets the path of the file containing the server reply`
+``/SETREPLYFILENAME \<job> \<path> Sets the path of the file containing the server reply``
 
-`/GETREPLYPROGRESS \<job> Gets the size and progress of the server reply`
+``/GETREPLYPROGRESS \<job> Gets the size and progress of the server reply``
 
-`/GETREPLYDATA \<job> Dumps the server's reply data in hex format`
+``/GETREPLYDATA \<job> Dumps the server's reply data in hex format``
 
 The following options can be placed before the command:
 
@@ -11513,15 +11513,15 @@ The following options can be placed before the command:
 
 The /RAWRETURN option strips new line characters and formatting.
 
-`It is recognized by the /CREATE and /GET\* commands.`
+``It is recognized by the /CREATE and /GET\* commands.``
 
-`Commands that take a \<job> parameter will accept either a job name or a job ID`
+``Commands that take a \<job> parameter will accept either a job name or a job ID``
 
 GUID inside braces. BITSADMIN reports an error if a name is ambiguous.
 
-`C:\Windows\System32>bitsadmin.exe /LIST`
+``C:\Windows\System32>bitsadmin.exe /LIST``
 
-`BITSADMIN version 3.0 \[ 7.5.7601 ]`
+``BITSADMIN version 3.0 \[ 7.5.7601 ]``
 
 BITS administration utility.
 
@@ -11533,9 +11533,9 @@ Administrative tools for the BITS service are now provided by BITS PowerShell cm
 
 Listed 0 job(s).
 
-`C:\Windows\System32>bitsadmin.exe /UTIL /?`
+``C:\Windows\System32>bitsadmin.exe /UTIL /?``
 
-`BITSADMIN version 3.0 \[ 7.5.7601 ]`
+``BITSADMIN version 3.0 \[ 7.5.7601 ]``
 
 BITS administration utility.
 
@@ -11547,13 +11547,13 @@ Administrative tools for the BITS service are now provided by BITS PowerShell cm
 
 The following UTIL commands are available:
 
-`/UTIL /SETIEPROXY \<account> \<usage> \[/CONN \<connection name>]`
+``/UTIL /SETIEPROXY \<account> \<usage> \[/CONN \<connection name>]``
 
-`Sets the Internet proxy settings for the \<account> system account.`
+``Sets the Internet proxy settings for the \<account> system account.``
 
 Settings are applied to the default network connection, unless
 
-`\<connection name> is specified.`
+``\<connection name> is specified.``
 
 account choices:
 
@@ -11565,11 +11565,11 @@ LOCALSERVICE
 
 usage choices:
 
-`NO\_PROXY - Specify direct connection (no proxy server).`
+``NO\_PROXY - Specify direct connection (no proxy server).``
 
 AUTODETECT - Turn on autodetection of proxy.
 
-`MANUAL\_PROXY - Use an explicit proxy list and bypass list.`
+``MANUAL\_PROXY - Use an explicit proxy list and bypass list.``
 
 Must be followed by a proxy list and a proxy bypass list.
 
@@ -11591,23 +11591,23 @@ Examples:
 
 bitsadmin /util /setieproxy localsystem AUTODETECT
 
-`bitsadmin /util /setieproxy networkservice NO\_PROXY`
+``bitsadmin /util /setieproxy networkservice NO\_PROXY``
 
-`bitsadmin /util /setieproxy localsystem MANUAL\_PROXY proxy1:80 "\<local>"`
+``bitsadmin /util /setieproxy localsystem MANUAL\_PROXY proxy1:80 "\<local>"``
 
-`bitsadmin /util /setieproxy localsystem MANUAL\_PROXY pxy1,pxy2,pxy3 NULL`
+``bitsadmin /util /setieproxy localsystem MANUAL\_PROXY pxy1,pxy2,pxy3 NULL``
 
 bitsadmin /util /setieproxy networkservice AUTOSCRIPT http://server/get.asp
 
-`bitsadmin /util /setieproxy networkservice NO\_PROXY /CONN "XYZ Dialup"`
+``bitsadmin /util /setieproxy networkservice NO\_PROXY /CONN "XYZ Dialup"``
 
-`/UTIL /GETIEPROXY \<account> \[/CONN \<connection name>]`
+``/UTIL /GETIEPROXY \<account> \[/CONN \<connection name>]``
 
-`Retrieves the Internet proxy settings for the \<account> system`
+``Retrieves the Internet proxy settings for the \<account> system``
 
 account. Settings refer to the default network connection, unless
 
-`\<connection name> is specified.`
+``\<connection name> is specified.``
 
 account choices:
 
@@ -11625,7 +11625,7 @@ will be used (usually the LAN connection). To get a list of possible
 
 connection names, use /CONN /?.
 
-`/UTIL /VERSION \[/VERBOSE]`
+``/UTIL /VERSION \[/VERBOSE]``
 
 Displays the version of BITS currently active on the system.
 
@@ -11633,7 +11633,7 @@ The switch /VERBOSE prints additional information useful for
 
 troubleshooting purposes.
 
-`/UTIL /REPAIRSERVICE \[/FORCE]`
+``/UTIL /REPAIRSERVICE \[/FORCE]``
 
 Attempts to repair a malfunctioning BITS service by inspecting some of the
 
@@ -11653,17 +11653,17 @@ Note that for /SETIEPROXY, /ENABLEANALYTICCHANNEL, and /REPAIRSERVICE commands a
 
 are required.
 
-`C:\Windows\System32>`
+``C:\Windows\System32>``
 
-#### Get-BitsTransfer (PS) <a href="#h.kugcnc7ckidb" id="h.kugcnc7ckidb"></a>
+#### Get-BitsTransfer (PS) {#h.kugcnc7ckidb" id="h.kugcnc7ckidb
 
-`PowerShell equivalent of BITSADMIN.\[2]`
+``PowerShell equivalent of BITSADMIN.\[2]``
 
 Get-BitsTransfer -AllUsers | select -ExpandProperty FileList
 
-#### printbrm.exe <a href="#h.is4i98v4q2ae" id="h.is4i98v4q2ae"></a>
+#### printbrm.exe {#h.is4i98v4q2ae" id="h.is4i98v4q2ae
 
-`C:\Windows\System32\spool\tools>printbrm.exe -?`
+``C:\Windows\System32\spool\tools>printbrm.exe -?``
 
 Error: A single mode must be selected!
 
@@ -11671,51 +11671,51 @@ Access the Backup Recovery Migration tool through a command line interface.
 
 PrintBrm -B|R|Q \[-S \<server>] -F \<file> \[-D \<directory>] \[-O FORCE] \[-P ALL|ORIG] \[-NOBIN] \[-LPR2TCP] \[-C \<config file>] \[-NOACL] \[-?]
 
-`\-B Backup the server to the specified file`
+``\-B Backup the server to the specified file``
 
-`\-R Restore the configuration in the file to the server`
+``\-R Restore the configuration in the file to the server``
 
-`\-Q Query the server or the backup file`
+``\-Q Query the server or the backup file``
 
-`\-S \<server name> Target server`
+``\-S \<server name> Target server``
 
-`\-F \<file name> Target backup File`
+``\-F \<file name> Target backup File``
 
-`\-D \<directory> Unpack the backup file to (with -R) or repack a backup file from (with -B) the given directory`
+``\-D \<directory> Unpack the backup file to (with -R) or repack a backup file from (with -B) the given directory``
 
-`\-O FORCE Force overwriting of existing objects`
+``\-O FORCE Force overwriting of existing objects``
 
 \-P ALL|ORIG Publish all printers in directory, or publish printers that were published originally
 
-`\-NOBIN Omit the binaries from the backup`
+``\-NOBIN Omit the binaries from the backup``
 
-`\-LPR2TCP Convert LPR ports to Standard TCP/IP ports on restore`
+``\-LPR2TCP Convert LPR ports to Standard TCP/IP ports on restore``
 
-`\-C \<file name> Use the specified configuration file for BRM`
+``\-C \<file name> Use the specified configuration file for BRM``
 
-`\-NOACL Remove ACLs from print queues on restore`
+``\-NOACL Remove ACLs from print queues on restore``
 
-`\-? Display this help`
+``\-? Display this help``
 
-`C:\Windows\System32\spool\tools>`
+``C:\Windows\System32\spool\tools>``
 
-#### RegSvr32.exe <a href="#h.qyybo8erkc2p" id="h.qyybo8erkc2p"></a>
+#### RegSvr32.exe {#h.qyybo8erkc2p" id="h.qyybo8erkc2p
 
-`C:\Windows\System32\regsvr32.exe`
+``C:\Windows\System32\regsvr32.exe``
 
 To register a module, you must provide a binary name.
 
-`Usage: regsvr32 \[/u] \[/s] \[/n] \[/i\[:cmdline]] dllname`
+``Usage: regsvr32 \[/u] \[/s] \[/n] \[/i\[:cmdline]] dllname``
 
 /u - Unregister server
 
 /s - Silent; display no message boxes
 
-`/i - Call DllInstall passing it an optional \[cmdline]; when used with /u calls dll uninstall`
+``/i - Call DllInstall passing it an optional \[cmdline]; when used with /u calls dll uninstall``
 
 /n - do not call DllRegisterServer; this option must be used with /i
 
-#### mmc.exe <a href="#h.qnjsjazfhtq3" id="h.qnjsjazfhtq3"></a>
+#### mmc.exe {#h.qnjsjazfhtq3" id="h.qnjsjazfhtq3
 
 mmc path\filename.msc \[/a] \[/{64|32}]
 
@@ -11727,9 +11727,9 @@ path/filename Opens a saved console
 
 /32 Opens the 32-bit version of MMC (MMC32). When running a Microsoft 64-bit operating system, you can run 32-bit snap-ins by opening MMC with this command-line option when you have 32-bit only snap-ins.
 
-#### Bcdboot.exe <a href="#h.n0ys4lbhe2or" id="h.n0ys4lbhe2or"></a>
+#### Bcdboot.exe {#h.n0ys4lbhe2or" id="h.n0ys4lbhe2or
 
-`C:\Windows\System32>bcdboot /?`
+``C:\Windows\System32>bcdboot /?``
 
 Bcdboot - Bcd boot file creation and repair tool.
 
@@ -11737,9 +11737,9 @@ The bcdboot.exe command-line tool is used to copy critical boot files to the
 
 system partition and to create a new system BCD store.
 
-`bcdboot \<source> \[/l \<locale>] \[/s \<volume-letter>] \[/v]`
+``bcdboot \<source> \[/l \<locale>] \[/s \<volume-letter>] \[/v]``
 
-`\[/m \[{OS Loader ID}]]`
+``\[/m \[{OS Loader ID}]]``
 
 source Specifies the location of the windows system root.
 
@@ -11763,15 +11763,15 @@ given loader object with the system template to produce a
 
 bootable entry. Otherwise, only global objects are merged.
 
-`Examples: bcdboot c:\windows /l en-us`
+``Examples: bcdboot c:\windows /l en-us``
 
-`bcdboot c:\windows /s h:`
+``bcdboot c:\windows /s h:``
 
-`bcdboot c:\windows /m {d58d10c6-df53-11dc-878f-00064f4f4e08}`
+``bcdboot c:\windows /m {d58d10c6-df53-11dc-878f-00064f4f4e08}``
 
-#### bcdedit.exe <a href="#h.mr7oaj2nombp" id="h.mr7oaj2nombp"></a>
+#### bcdedit.exe {#h.mr7oaj2nombp" id="h.mr7oaj2nombp
 
-`C:\Windows\System32>bcdedit /?`
+``C:\Windows\System32>bcdedit /?``
 
 BCDEDIT - Boot Configuration Data Store Editor
 
@@ -11789,7 +11789,7 @@ use Bcdedit.exe to add, delete, edit, and append entries in the boot
 
 configuration data store.
 
-`For detailed command and option information, type bcdedit.exe /? \<command>. For`
+``For detailed command and option information, type bcdedit.exe /? \<command>. For``
 
 example, to display detailed information about the /createstore command, type:
 
@@ -11799,7 +11799,7 @@ For an alphabetical list of topics in this help file, run "bcdedit /? TOPICS".
 
 Commands that operate on a store
 
-`\================================`
+``\================================``
 
 /createstore Creates a new and empty boot configuration data store.
 
@@ -11819,7 +11819,7 @@ the system store device is ambiguous).
 
 Commands that operate on entries in a store
 
-`\===========================================`
+``\===========================================``
 
 /copy Makes copies of entries in the store.
 
@@ -11833,7 +11833,7 @@ Run bcdedit /? ID for information about identifiers used by these commands.
 
 Commands that operate on entry options
 
-`\======================================`
+``\======================================``
 
 /deletevalue Deletes entry options from the store.
 
@@ -11845,7 +11845,7 @@ Run bcdedit /? FORMATS for a list of valid data formats.
 
 Commands that control output
 
-`\============================`
+``\============================``
 
 /enum Lists entries in the store.
 
@@ -11861,7 +11861,7 @@ Running "bcdedit" by itself is equivalent to running "bcdedit /enum ACTIVE".
 
 Commands that control the boot manager
 
-`\======================================`
+``\======================================``
 
 /bootsequence Sets the one-time boot sequence for the boot manager.
 
@@ -11879,7 +11879,7 @@ the tools menu.
 
 Commands that control Emergency Management Services for a boot application
 
-`\==========================================================================`
+``\==========================================================================``
 
 /bootems Enables or disables Emergency Management Services
 
@@ -11893,7 +11893,7 @@ operating system entry.
 
 Command that control debugging
 
-`\==============================`
+``\==============================``
 
 /bootdebug Enables or disables boot debugging for a boot application.
 
@@ -11905,11 +11905,11 @@ entry.
 
 /hypervisorsettings Sets the hypervisor parameters.
 
-`C:\Windows\System32>`
+``C:\Windows\System32>``
 
-#### compact.exe <a href="#h.sz4aseeppgbp" id="h.sz4aseeppgbp"></a>
+#### compact.exe {#h.sz4aseeppgbp" id="h.sz4aseeppgbp
 
-`C:\Windows\System32>compact /?`
+``C:\Windows\System32>compact /?``
 
 Displays or alters the compression of files on NTFS partitions.
 
@@ -11957,11 +11957,11 @@ filenames and wildcards. You must put spaces between multiple
 
 parameters.
 
-`C:\Windows\System32>`
+``C:\Windows\System32>``
 
-#### csvde.exe <a href="#h.dpg2d0eaaozw" id="h.dpg2d0eaaozw"></a>
+#### csvde.exe {#h.dpg2d0eaaozw" id="h.dpg2d0eaaozw
 
-`C:\Windows\System32>csvde -?`
+``C:\Windows\System32>csvde -?``
 
 Unknown Option
 
@@ -11969,59 +11969,59 @@ CSV Directory Exchange
 
 General Parameters
 
-`\==================`
+``\==================``
 
-`\-i Turn on Import Mode (The default is Export)`
+``\-i Turn on Import Mode (The default is Export)``
 
-`\-f filename Input or Output filename`
+``\-f filename Input or Output filename``
 
-`\-s servername The server to bind to (Default to DC of computer's domain)`
+``\-s servername The server to bind to (Default to DC of computer's domain)``
 
-`\-v Turn on Verbose Mode`
+``\-v Turn on Verbose Mode``
 
-`\-c FromDN ToDN Replace occurences of FromDN to ToDN`
+``\-c FromDN ToDN Replace occurences of FromDN to ToDN``
 
-`\-j path Log File Location`
+``\-j path Log File Location``
 
-`\-t port Port Number (default = 389)`
+``\-t port Port Number (default = 389)``
 
-`\-u Use Unicode format`
+``\-u Use Unicode format``
 
-`\-? Help`
+``\-? Help``
 
 Export Specific
 
-`\===============`
+``\===============``
 
-`\-d RootDN The root of the LDAP search (Default to Naming Context)`
+``\-d RootDN The root of the LDAP search (Default to Naming Context)``
 
-`\-r Filter LDAP search filter (Default to "(objectClass=\*)")`
+``\-r Filter LDAP search filter (Default to "(objectClass=\*)")``
 
-`\-p SearchScope Search Scope (Base/OneLevel/Subtree)`
+``\-p SearchScope Search Scope (Base/OneLevel/Subtree)``
 
-`\-l list List of attributes (comma separated) to look for in an`
+``\-l list List of attributes (comma separated) to look for in an``
 
 LDAP search
 
-`\-o list List of attributes (comma separated) to omit from input.`
+``\-o list List of attributes (comma separated) to omit from input.``
 
-`\-g Disable Paged Search.`
+``\-g Disable Paged Search.``
 
-`\-m Enable the SAM logic on export.`
+``\-m Enable the SAM logic on export.``
 
-`\-n Do not export binary values`
+``\-n Do not export binary values``
 
 Import
 
-`\======`
+``\======``
 
-`\-k The import will go on ignoring 'Constraint Violation' and`
+``\-k The import will go on ignoring 'Constraint Violation' and``
 
 'Object Already Exists' errors
 
 Credentials Establishment
 
-`\=========================`
+``\=========================``
 
 Note that if no credentials is specified, CSVDE will bind as the currently
 
@@ -12043,27 +12043,27 @@ Example: Export of specific domain with credentials
 
 csvde -m -f OUTPUT.CSV
 
-`\-b USERNAME DOMAINNAME \*`
+``\-b USERNAME DOMAINNAME \*``
 
-`\-s SERVERNAME`
+``\-s SERVERNAME``
 
-`\-d "cn=users,DC=DOMAINNAME,DC=Microsoft,DC=Com"`
+``\-d "cn=users,DC=DOMAINNAME,DC=Microsoft,DC=Com"``
 
-`\-r "(objectClass=user)"`
+``\-r "(objectClass=user)"``
 
 No log files were written. In order to generate a log file, please
 
 specify the log file path via the -j option.
 
-#### diantz.exe <a href="#h.in7pggjkhzqe" id="h.in7pggjkhzqe"></a>
+#### diantz.exe {#h.in7pggjkhzqe" id="h.in7pggjkhzqe
 
-`C:\Windows\System32>diantz /?`
+``C:\Windows\System32>diantz /?``
 
 Cabinet Maker - Lossless Data Compression Tool
 
-`MAKECAB \[/V\[n]] \[/D var=value ...] \[/L dir] source \[destination]`
+``MAKECAB \[/V\[n]] \[/D var=value ...] \[/L dir] source \[destination]``
 
-`MAKECAB \[/V\[n]] \[/D var=value ...] /F directive\_file \[...]`
+``MAKECAB \[/V\[n]] \[/D var=value ...] /F directive\_file \[...]``
 
 source File to compress.
 
@@ -12071,21 +12071,21 @@ destination File name to give compressed file. If omitted, the
 
 last character of the source file name is replaced
 
-`with an underscore (\_) and used as the destination.`
+``with an underscore (\_) and used as the destination.``
 
 /F directives A file with MakeCAB directives (may be repeated). Refer to
 
-`Microsoft Cabinet SDK for information on directive\_file.`
+``Microsoft Cabinet SDK for information on directive\_file.``
 
 /D var=value Defines variable with specified value.
 
 /L dir Location to place destination (default is current directory).
 
-`/V\[n] Verbosity level (1..3).`
+``/V\[n] Verbosity level (1..3).``
 
-#### diskraid.exe <a href="#h.lwdtyeqzkcta" id="h.lwdtyeqzkcta"></a>
+#### diskraid.exe {#h.lwdtyeqzkcta" id="h.lwdtyeqzkcta
 
-`C:\Windows\System32>diskraid /?`
+``C:\Windows\System32>diskraid /?``
 
 Microsoft DiskRAID version 6.1.7601
 
@@ -12099,7 +12099,7 @@ Launches the DiskRAID application.
 
 /? specifies that DiskRAID should display this usage text.
 
-`/s \<script> specifies that DiskRAID should execute commands from the script`
+``/s \<script> specifies that DiskRAID should execute commands from the script``
 
 file at the location specified.
 
@@ -12113,11 +12113,11 @@ DISKRAID
 
 DISKRAID /v
 
-`C:\Windows\System32>`
+``C:\Windows\System32>``
 
-#### vssadmin.exe <a href="#h.em4pf6v16n18" id="h.em4pf6v16n18"></a>
+#### vssadmin.exe {#h.em4pf6v16n18" id="h.em4pf6v16n18
 
-`C:\Windows\System32>vssadmin`
+``C:\Windows\System32>vssadmin``
 
 vssadmin 1.1 - Volume Shadow Copy Service administrative command-line tool
 
@@ -12125,7 +12125,7 @@ vssadmin 1.1 - Volume Shadow Copy Service administrative command-line tool
 
 Error: Invalid command.
 
-`\---- Commands Supported ----`
+``\---- Commands Supported ----``
 
 Delete Shadows - Delete volume shadow copies
 
@@ -12141,41 +12141,41 @@ List Writers - List subscribed volume shadow copy writers
 
 Resize ShadowStorage - Resize a volume shadow copy storage association
 
-`C:\Windows\System32>`
+``C:\Windows\System32>``
 
-#### cipher.exe <a href="#h.pamigd89rng4" id="h.pamigd89rng4"></a>
+#### cipher.exe {#h.pamigd89rng4" id="h.pamigd89rng4
 
-`C:\\>cipher /?`
+``C:\\>cipher /?``
 
-`Displays or alters the encryption of directories \[files] on NTFS partitions.`
+``Displays or alters the encryption of directories \[files] on NTFS partitions.``
 
 CIPHER \[/E | /D | /C]
 
-`\[/S:directory] \[/B] \[/H] \[pathname \[...]]`
+``\[/S:directory] \[/B] \[/H] \[pathname \[...]]``
 
 CIPHER /K \[/ECC:256|384|521]
 
 CIPHER /R:filename \[/SMARTCARD] \[/ECC:256|384|521]
 
-`CIPHER /U \[/N]`
+``CIPHER /U \[/N]``
 
 CIPHER /W:directory
 
-`CIPHER /X\[:efsfile] \[filename]`
+``CIPHER /X\[:efsfile] \[filename]``
 
 CIPHER /Y
 
 CIPHER /ADDUSER \[/CERTHASH:hash | /CERTFILE:filename | /USER:username]
 
-`\[/S:directory] \[/B] \[/H] \[pathname \[...]]`
+``\[/S:directory] \[/B] \[/H] \[pathname \[...]]``
 
-`CIPHER /FLUSHCACHE \[/SERVER:servername]`
+``CIPHER /FLUSHCACHE \[/SERVER:servername]``
 
 CIPHER /REMOVEUSER /CERTHASH:hash
 
-`\[/S:directory] \[/B] \[/H] \[pathname \[...]]`
+``\[/S:directory] \[/B] \[/H] \[pathname \[...]]``
 
-`CIPHER /REKEY \[pathname \[...]]`
+``CIPHER /REKEY \[pathname \[...]]``
 
 /B Abort if an error is encountered. By default, CIPHER continues
 
@@ -12315,7 +12315,7 @@ current directory and any files it contains. You may use multiple directory
 
 names and wildcards. You must put spaces between multiple parameters.
 
-`C:\\>cipher /w:C:\\`
+``C:\\>cipher /w:C:\\``
 
 To remove as much data as possible, please close all other applications while
 
@@ -12333,7 +12333,7 @@ Writing Random Numbers
 
 ..............................................................................................................................
 
-`C:\\>`
+``C:\\>``
 
 zipfldr.dll
 
@@ -12343,15 +12343,15 @@ Restore missing Send to Compressed file
 
 krdeploy.cmd
 
-#### msg.exe <a href="#h.9we2ibcuigvi" id="h.9we2ibcuigvi"></a>
+#### msg.exe {#h.9we2ibcuigvi" id="h.9we2ibcuigvi
 
-`C:\Windows\System32>msg.exe /?`
+``C:\Windows\System32>msg.exe /?``
 
 Send a message to a user.
 
 MSG {username | sessionname | sessionid | @filename | \*}
 
-`\[/SERVER:servername] \[/TIME:seconds] \[/V] \[/W] \[message]`
+``\[/SERVER:servername] \[/TIME:seconds] \[/V] \[/W] \[message]``
 
 username Identifies the specified username.
 
@@ -12363,7 +12363,7 @@ sessionid The ID of the session.
 
 sessionnames, and sessionids to send the message to.
 
-`\* Send message to all sessions on specified server.`
+``\* Send message to all sessions on specified server.``
 
 /SERVER:servername server to contact (default is current).
 
@@ -12377,9 +12377,9 @@ message Message to send. If none specified, prompts for it
 
 or reads from stdin.
 
-`C:\Windows\System32>`
+``C:\Windows\System32>``
 
-#### outlook.exe <a href="#h.u4nnvx2slo9w" id="h.u4nnvx2slo9w"></a>
+#### outlook.exe {#h.u4nnvx2slo9w" id="h.u4nnvx2slo9w
 
 [http://office.microsoft.com/en-us/outlook-help/command-line-switches-for-outlook-2010-HP010354956.aspx](http://office.microsoft.com/en-us/outlook-help/command-line-switches-for-outlook-2010-HP010354956.aspx)
 
@@ -12466,5 +12466,5 @@ who can see Notes on ADUC Telephone tab
 
 default container for PC joining domain
 
-`1. [http://en.wikipedia.org/wiki/Run\_command](http://en.wikipedia.org/wiki/Run\_command) ↑`
+``1. [http://en.wikipedia.org/wiki/Run\_command](http://en.wikipedia.org/wiki/Run\_command) ↑``
 2. [http://blogs.technet.com/b/cmpfekevin/archive/2014/01/29/troubleshooting-bits-with-powershell.aspx](http://blogs.technet.com/b/cmpfekevin/archive/2014/01/29/troubleshooting-bits-with-powershell.aspx) ↑
