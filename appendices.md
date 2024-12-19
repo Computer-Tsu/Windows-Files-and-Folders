@@ -219,7 +219,7 @@ Do “Shell:” commands work here?
 | Add/Remove Programs                                      | appwiz.cpl                                                                                                                                                                                                                             |
 | Administrative Tools                                     | certmgr.msc                                                                                                                                                                                                                            |
 | Antivirus (ThunderByte)                                  | ``tbav.exe ll=2 co hm ld fc hr af fi ex cl lo ap el tn ln=c:\tbav.log C:\\``                                                                                                                                                           |
-| Calls help using POP3 default server user                | outlook.exe /a.txt /office@yahoo.com \&set msg=my name is %username% and have no help near, have a wheelchair, and live near and, need your assistance\&print%msg%>>a.txt\&set %subject%=have no comm accessdeff\&print%subject%>a.txt |
+| Calls help using POP3 default server user                | `outlook.exe /a.txt /office@yahoo.com \&set msg=my name is %username% and have no help near, have a wheelchair, and live near and, need your assistance\&print%msg%>>a.txt\&set %subject%=have no comm accessdeff\&print%subject%>a.txt` |
 | Character Map                                            | charmap.exe                                                                                                                                                                                                                            |
 | Check Disk Utility                                       | chkdsk.exe                                                                                                                                                                                                                             |
 | Clipboard Viewer                                         | clipbrd.exe                                                                                                                                                                                                                            |
@@ -320,10 +320,10 @@ Do “Shell:” commands work here?
 | System File Checker Utility (set cache size to size xxx) | sfc.exe /cachesize=xxx                                                                                                                                                                                                                 |
 | System Information                                       | systeminfo.exe                                                                                                                                                                                                                         |
 | System Properties                                        | sysdm.cpl                                                                                                                                                                                                                              |
-| System Restore                                           | %windir%\system32\restore\rstrui.exe                                                                                                                                                                                                   |
+| System Restore                                           | `%windir%\system32\restore\rstrui.exe`                                                                                                                                                                                                 |
 | Task Manager                                             | taskmgr.exe                                                                                                                                                                                                                            |
 | Telnet Client                                            | telnet.exe                                                                                                                                                                                                                             |
-| Traceroute homepage                                      | tracert <%homepage%>                                                                                                                                                                                                                   |
+| Traceroute homepage                                      | `tracert <%homepage%>`                                                                                                                                                                                                                 |
 | Users Account Manager                                    | nusrmgr.cpl                                                                                                                                                                                                                            |
 | Utility Manager                                          | utilman.exe                                                                                                                                                                                                                            |
 | Windows Firewall                                         | firewall.cpl                                                                                                                                                                                                                           |
@@ -7663,7 +7663,7 @@ sfc /SCANNOW
 
 sfc /VERIFYONLY
 
-#### NET {#h.ak894l7e5hth" id="h.ak894l7e5hth
+#### NET {#net.exe}
 
 ``C:\\>NET HELP``
 
