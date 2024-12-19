@@ -108,19 +108,19 @@ Warning: RoboCopy (version?) causes a copy-loop with certain /MIR situations.
 
 | **Link**               | **Destination**                                                            |
 | ---------------------- | -------------------------------------------------------------------------- |
-| Documents and Settings | C:\Users                                                                   |
-| All Users              | C:\ProgramData                                                             |
-| Default User           | C:\Users\Default                                                           |
-| Application Data       | C:\Users\<user name>\AppData\Roaming                                     |
-| Cookies                | C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Cookies           |
-| Local Settings         | C:\Users\<user name>\AppData\Local                                       |
-| My Documents           | C:\Users\<user name>\Documents                                           |
-| NetHood                | C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Network Shortcuts |
-| PrintHood              | C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts |
-| Recent                 | C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Recent            |
-| SendTo                 | C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\SendTo            |
-| Start Menu             | C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Start Menu        |
-| Templates              | C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Templates         |
+| Documents and Settings | `C:\Users`                                                                 |
+| All Users              | `C:\ProgramData`                                                           |
+| Default User           | `C:\Users\Default`                                                         |
+| Application Data       | `C:\Users\<user name>\AppData\Roaming`                                     |
+| Cookies                | `C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Cookies`           |
+| Local Settings         | `C:\Users\<user name>\AppData\Local`                                       |
+| My Documents           | `C:\Users\<user name>\Documents`                                           |
+| NetHood                | `C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Network Shortcuts` |
+| PrintHood              | `C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts` |
+| Recent                 | `C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Recent`            |
+| SendTo                 | `C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\SendTo`            |
+| Start Menu             | `C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Start Menu`        |
+| Templates              | `C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Templates`         |
 
 What changes in Windows 8
 
@@ -218,16 +218,16 @@ Manage-bde; Windows PowerShell cmdlets for BitLocker; BitLocker Recovery Passwor
 
 | **Link**         | **Destination**                             |
 | ---------------- | ------------------------------------------- |
-| Application Data | C:\ProgramData                              |
-| Desktop          | C:\Users\Public\Desktop                     |
-| Documents        | C:\Users\Public\Documents                   |
-| Favorites        | C:\Users\Public\Favorites                   |
-| Start Menu       | C:\ProgramData\Microsoft\Windows\Start Menu |
-| Templates        | C:\ProgramData\Microsoft\Windows\Templates  |
+| Application Data | `C:\ProgramData`                              |
+| Desktop          | `C:\Users\Public\Desktop`                     |
+| Documents        | `C:\Users\Public\Documents`                   |
+| Favorites        | `C:\Users\Public\Favorites`                   |
+| Start Menu       | `C:\ProgramData\Microsoft\Windows\Start Menu` |
+| Templates        | `C:\ProgramData\Microsoft\Windows\Templates`  |
 
 ``C:\ProgramData\Microsoft\Windows\Start Menu``
 
-``C:\ProgramData\\``
+``C:\ProgramData\``
 
 +--Microsoft
 
@@ -261,7 +261,7 @@ Manage-bde; Windows PowerShell cmdlets for BitLocker; BitLocker Recovery Passwor
 
 +--Windows
 
-#### Volume File System Records {#h.dyvretufswv9" id="h.dyvretufswv9
+#### Volume File System Records {#Volume-System-Records}
 
 ``C:\System Volume Information``
 
@@ -305,7 +305,7 @@ tracking.log
 
 ``\[is this mentioned below in the forensics area?]``
 
-#### Start Menu {#h.u87z04jbg8n7" id="h.u87z04jbg8n7
+#### Start Menu {#start-menu}
 
 ``More details in the Appendice \_ below``
 
@@ -321,7 +321,7 @@ All Users
 
 Default user
 
-``Current User C:\Users\\_Username_\AppData\Roaming\Microsoft\Windows\Start Menu``
+``Current User C:\Users\_Username_\AppData\Roaming\Microsoft\Windows\Start Menu``
 
 ``All Users C:\ProgramData\Microsoft\Windows\Start Menu``
 
@@ -329,7 +329,7 @@ Default user
 
 need detail
 
-#### Event Log {#h.pujqf6hynlde" id="h.pujqf6hynlde
+#### Event Log {#event-log}
 
 wevtvwr.msc
 
