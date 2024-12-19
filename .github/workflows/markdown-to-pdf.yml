@@ -60,6 +60,7 @@ jobs:
       # Step 5: Convert Markdown to PDF
       - name: Convert Markdown to PDF
         run: |
+          set +e  # Allow the script to continue on errors
           echo "Starting Markdown to PDF conversion with Pandoc..."
           mkdir -p pdfs
           for file in *.md; do
