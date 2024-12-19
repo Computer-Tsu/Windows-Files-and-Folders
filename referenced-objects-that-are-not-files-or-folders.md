@@ -10,11 +10,11 @@ Libraries touched upon here? (More at: [http://www.grimadmin.com/article.php/cre
 
 note see apendice for shell extension clsid?
 
-### Shell Namespace Extensions <a href="#h.br0a2v347mfz" id="h.br0a2v347mfz"></a>
+### Shell Namespace Extensions {#h.br0a2v347mfz" id="h.br0a2v347mfz
 
 [http://www.autoitscript.com/autoit3/docs/appendix/clsid.htm](http://technet.microsoft.com/en-us/library/cc770963.aspx)
 
-#### How to call or activate <a href="#h.5ehiahqn5b5a" id="h.5ehiahqn5b5a"></a>
+#### How to call or activate {#h.5ehiahqn5b5a" id="h.5ehiahqn5b5a
 
 | **Folder**               | **Value for the File\_\_\_'s directory parameter** |
 | ------------------------ | -------------------------------------------------- |
@@ -49,79 +49,79 @@ Network Neighborhood with comments Network.{208d2c60-3aea-1069-a2d7-08002b30309d
 
 **My Computer**
 
-`%SystemRoot%\explorer.exe /E,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}`
+``%SystemRoot%\explorer.exe /E,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}``
 
 **My Documents**
 
-`%SystemRoot%\explorer.exe /N,::{450D8FBA-AD25-11D0-98A8-0800361B1103}`
+``%SystemRoot%\explorer.exe /N,::{450D8FBA-AD25-11D0-98A8-0800361B1103}``
 
 **Recycle Bin**
 
-`%SystemRoot%\explorer.exe /N,::{645FF040-5081-101B-9F08-00AA002F954E}`
+``%SystemRoot%\explorer.exe /N,::{645FF040-5081-101B-9F08-00AA002F954E}``
 
 **Network Neighborhood**
 
-`%SystemRoot%\explorer.exe /N,::{208D2C60-3AEA-1069-A2D7-08002B30309D}`
+``%SystemRoot%\explorer.exe /N,::{208D2C60-3AEA-1069-A2D7-08002B30309D}``
 
 **Default Web Browser or Navigator** (IE, Firefox, Safari, Google Chrome)
 
-`%SystemRoot%\explorer.exe /N,::{871C5380-42A0-1069-A2EA-08002B30309D}`
+``%SystemRoot%\explorer.exe /N,::{871C5380-42A0-1069-A2EA-08002B30309D}``
 
 **Computer Search Results Folder**
 
-`%SystemRoot%\explorer.exe /N,::{1F4DE370-D627-11D1-BA4F-00A0C91EEDBA}`
+``%SystemRoot%\explorer.exe /N,::{1F4DE370-D627-11D1-BA4F-00A0C91EEDBA}``
 
 **Network Search Results Folder**
 
-`%SystemRoot%\explorer.exe /N,::{E17D4FC0-5564-11D1-83F2-00A0C90DC849}`
+``%SystemRoot%\explorer.exe /N,::{E17D4FC0-5564-11D1-83F2-00A0C90DC849}``
 
 **Web Folders**
 
-`%SystemRoot%\explorer.exe /N,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\::{BDEADF00-C265-11D0-BCED-00A0C90AB50F}`
+``%SystemRoot%\explorer.exe /N,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\::{BDEADF00-C265-11D0-BCED-00A0C90AB50F}``
 
 **Control Panel**
 
-`%SystemRoot%\explorer.exe /N,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\::{21EC2020-3AEA-1069-A2DD-08002B30309D}`
+``%SystemRoot%\explorer.exe /N,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\::{21EC2020-3AEA-1069-A2DD-08002B30309D}``
 
 **Printers and Faxes**
 
-`%SystemRoot%\explorer.exe /N,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\::{21EC2020-3AEA-1069-A2DD-08002B30309D}\\::{2227A280-3AEA-1069-A2DE-08002B30309D}`
+``%SystemRoot%\explorer.exe /N,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\::{21EC2020-3AEA-1069-A2DD-08002B30309D}\\::{2227A280-3AEA-1069-A2DE-08002B30309D}``
 
 **Scanners and Cameras**
 
-`%SystemRoot%\explorer.exe /N,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\::{21EC2020-3AEA-1069-A2DD-08002B30309D}\\::{E211B736-43FD-11D1-9EFB-0000F8757FCD}`
+``%SystemRoot%\explorer.exe /N,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\::{21EC2020-3AEA-1069-A2DD-08002B30309D}\\::{E211B736-43FD-11D1-9EFB-0000F8757FCD}``
 
 **Fonts**
 
-`%SystemRoot%\explorer.exe /N,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\::{21EC2020-3AEA-1069-A2DD-08002B30309D}\\::{D20EA4E1-3957-11d2-A40B-0C5020524152}`
+``%SystemRoot%\explorer.exe /N,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\::{21EC2020-3AEA-1069-A2DD-08002B30309D}\\::{D20EA4E1-3957-11d2-A40B-0C5020524152}``
 
 **Network Connections or My Network Place**
 
-`%SystemRoot%\explorer.exe /N,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\::{21EC2020-3AEA-1069-A2DD-08002B30309D}\\::{7007ACC7-3202-11D1-AAD2-00805FC1270E}`
+``%SystemRoot%\explorer.exe /N,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\::{21EC2020-3AEA-1069-A2DD-08002B30309D}\\::{7007ACC7-3202-11D1-AAD2-00805FC1270E}``
 
 **Administrative Tools**
 
-`%SystemRoot%\explorer.exe /N,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\::{21EC2020-3AEA-1069-A2DD-08002B30309D}\\::{D20EA4E1-3957-11d2-A40B-0C5020524153}`
+``%SystemRoot%\explorer.exe /N,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\::{21EC2020-3AEA-1069-A2DD-08002B30309D}\\::{D20EA4E1-3957-11d2-A40B-0C5020524153}``
 
 **Tasks Scheduler**
 
-`%SystemRoot%\explorer.exe /N,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\::{21EC2020-3AEA-1069-A2DD-08002B30309D}\\::{D6277990-4C6A-11CF-8D87-00AA0060F5BF}`
+``%SystemRoot%\explorer.exe /N,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\::{21EC2020-3AEA-1069-A2DD-08002B30309D}\\::{D6277990-4C6A-11CF-8D87-00AA0060F5BF}``
 
 Games
 
-`%SystemRoot%explorer.exe /E,::{ED228FDF-9EA8-4870-83b1-96b02CFE0D52}`
+``%SystemRoot%explorer.exe /E,::{ED228FDF-9EA8-4870-83b1-96b02CFE0D52}``
 
 Hyper-V Remote File Browsing (2012 only?)
 
-`The path "::{0907616E-F5E6-48D8-9D61-A91C3D28106D}\HYPER-V-TEST" is to tell shell (explorer or common file dialog) that it is hosting/pointing to the RemoteFileBrowsing shell namespace extension on the HYPER-V-TEST. The guid is Hyper-V remotefilebrowsing shell namespace extension GUID. However, due to the limitation on common file browser, it is not able to translated into "Hyper-V Remote File Browsing".`
+``The path "::{0907616E-F5E6-48D8-9D61-A91C3D28106D}\HYPER-V-TEST" is to tell shell (explorer or common file dialog) that it is hosting/pointing to the RemoteFileBrowsing shell namespace extension on the HYPER-V-TEST. The guid is Hyper-V remotefilebrowsing shell namespace extension GUID. However, due to the limitation on common file browser, it is not able to translated into "Hyper-V Remote File Browsing".``
 
 Bug and Workaround caused by Audit Object Browsing http://workinghardinit.wordpress.com/2013/01/10/remote-file-browsing-issue-in-windows-server-2012-hyper-v-leaves-results-pane-empty-workaround/
 
-`::{0907616E-F5E6-48D8-9D61-A91C3D28106D}\VM-SERVERNAME\D:\hyper-v\virtual hard disks`
+``::{0907616E-F5E6-48D8-9D61-A91C3D28106D}\VM-SERVERNAME\D:\hyper-v\virtual hard disks``
 
-#### All Tasks folder (“God-Mode”) <a href="#h.8as2ptd62m47" id="h.8as2ptd62m47"></a>
+#### All Tasks folder (“God-Mode”) {#h.8as2ptd62m47" id="h.8as2ptd62m47
 
-`Available in \_ operating systems`
+``Available in \_ operating systems``
 
 Ways to create the folder
 
@@ -143,11 +143,11 @@ Create and format hard disk partitions
 
 **Color Management**
 
-`**Contents of ‘All Tasks’ folder (Windows Server \_?)**`
+``**Contents of ‘All Tasks’ folder (Windows Server \_?)**``
 
 **Contents of ‘All Tasks’ folder (Windows 8)**
 
-### Shares <a href="#h.6mgfjeh2d4bo" id="h.6mgfjeh2d4bo"></a>
+### Shares {#h.6mgfjeh2d4bo" id="h.6mgfjeh2d4bo
 
 ADMIN$
 
@@ -165,7 +165,7 @@ PRINT$
 
 More shares found in Active Directory section above
 
-### Windows Registry keys <a href="#h.2tkqexxuulel" id="h.2tkqexxuulel"></a>
+### Windows Registry keys {#h.2tkqexxuulel" id="h.2tkqexxuulel
 
 | **Description**                                     | **Key Name**                                                                                                      |
 | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -215,17 +215,17 @@ More shares found in Active Directory section above
 
 [http://en.wikipedia.org/wiki/Regedit#Editing](http://office.microsoft.com/en-us/outlook-help/where-does-microsoft-outlook-2010-save-my-information-and-configurations-HP010354943.aspx#Editing) for additional .REG file format, command-line, and system registry file locations.
 
-### Environmental Variables <a href="#h.27tpyo2kf7eg" id="h.27tpyo2kf7eg"></a>
+### Environmental Variables {#h.27tpyo2kf7eg" id="h.27tpyo2kf7eg
 
 `SET`
 
 `SETX.EXE`
 
-`HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment`
+``HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment``
 
-`HKCU\Environment`
+``HKCU\Environment``
 
-`TEMP, TMP %USERPROFILE%\AppData\Local\Temp`
+``TEMP, TMP %USERPROFILE%\AppData\Local\Temp``
 
 | ALLUSERSPROFILE         | C:\ProgramData                                        |
 | ----------------------- | ----------------------------------------------------- |
@@ -268,7 +268,7 @@ More shares found in Active Directory section above
 | windows\_tracing\_flags | 3                                                     |
 |                         |                                                       |
 
-#### Additional Common Values <a href="#h.32ephbb6tky6" id="h.32ephbb6tky6"></a>
+#### Additional Common Values {#h.32ephbb6tky6" id="h.32ephbb6tky6
 
 **OS**
 
@@ -283,13 +283,13 @@ More shares found in Active Directory section above
 | Windows 2012    |             |
 |                 |             |
 
-`PROCESSOR\_ARCHITECTURE`
+``PROCESSOR\_ARCHITECTURE``
 
 Environmental variables unique to Remote Desktop (Terminal Server)
 
 SESSIONNAME=
 
-#### Command Prompt <a href="#h.vfs8cpaz69uc" id="h.vfs8cpaz69uc"></a>
+#### Command Prompt {#h.vfs8cpaz69uc" id="h.vfs8cpaz69uc
 
 Changing the Prompt in CMD.EXE can use the following variables in addition to environmental variables.
 
@@ -316,13 +316,13 @@ Note: Dynamic variables can be used but are not updated.
 | $+  | **\*** zero or more plus sign (+) characters depending upon the depth of the PUSHD directory stack, one character for each level pushed. |
 | $M  | **\*** Displays the remote name associated with the current drive letter or the empty string if current drive is not a network drive.    |
 
-`**\*** Requires Command Extensions are enabled`
+``**\*** Requires Command Extensions are enabled``
 
 See also: The TITLE Command which uses System and User Environmental Variables but not compatible with PROMPT variables.
 
 PROMPT can be set as an environmental variable in Windows 7.
 
-#### Dynamic Environmental Variables <a href="#h.ndj554lbgu8i" id="h.ndj554lbgu8i"></a>
+#### Dynamic Environmental Variables {#h.ndj554lbgu8i" id="h.ndj554lbgu8i
 
 If Command Extensions are enabled, then there are several dynamic environment variables that can be expanded but which don't show up in the list of variables displayed by SET. These variable values are computed dynamically each time the value of the variable is expanded. If the user explicitly defines a variable with one of these names, then that definition will override the dynamic one described below:
 
@@ -338,17 +338,17 @@ If Command Extensions are enabled, then there are several dynamic environment va
 | %0                      | expands to be the path and filename of the current file.                 |
 | %1, %2, %3, …           | arguments included on the command line.                                  |
 
-#### PowerShell Variables <a href="#h.dly4nf7wad2" id="h.dly4nf7wad2"></a>
+#### PowerShell Variables {#h.dly4nf7wad2" id="h.dly4nf7wad2
 
-`about\_Environment\_Variables`
+``about\_Environment\_Variables``
 
 [http://technet.microsoft.com/en-us/library/hh847808.aspx](http://technet.microsoft.com/en-us/library/hh847808.aspx)
 
-`PSModulePath=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\\`
+``PSModulePath=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\\``
 
-`http://msdn.microsoft.com/en-us/library/windows/desktop/dd878326%28v=vs.85%29.aspx`
+``http://msdn.microsoft.com/en-us/library/windows/desktop/dd878326%28v=vs.85%29.aspx``
 
-`\[PS] C:\\>get-variable`
+``\[PS] C:\\>get-variable``
 
 | **Name**                        | **Value**                                                                                          |
 | ------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -423,13 +423,13 @@ If Command Extensions are enabled, then there are several dynamic environment va
 | WhatIfPreference                | False                                                                                              |
 |                                 |                                                                                                    |
 
-#### Group Policy Management Editor <a href="#h.e930dnr9oo0w" id="h.e930dnr9oo0w"></a>
+#### Group Policy Management Editor {#h.e930dnr9oo0w" id="h.e930dnr9oo0w
 
 Preference extensions support Windows environment variables and generate a number of additional process environment variables.
 
 1. Open the Group Policy Management Console. Right-click the Group Policy object (GPO) that contains the preference item that you want to configure, and then click **Edit**.
 2. Item-level targeting, Targeting..., New Item, Environment Variable, Name:
-`3. Press F3 to display a list of variables from which you can select\[6].`
+``3. Press F3 to display a list of variables from which you can select\[6].``
 
 **Note** By using Registry Match Targeting targeting items, you can define variables at client run-time, and have these control behavior by using the Environment Variable Targeting targeting items or as values in a preference item setting.
 
@@ -494,11 +494,11 @@ Select a System Defined Variable
 
 **Note**
 
-`You can prevent the resolution of a variable before it is applied to client computers (so that the variable instead of the resolved value appears in the preference setting on client computers). To do this for a preference process variable, clear the **Resolve Variable** check box. This inserts **<>** between the **%** **%** delimiters and the variable name (for example, %\<ProgramFiles>%). Preference extensions remove **< >** characters from the text and leave the unresolved variable. You can also use this syntax with a Windows environment variable.`
+``You can prevent the resolution of a variable before it is applied to client computers (so that the variable instead of the resolved value appears in the preference setting on client computers). To do this for a preference process variable, clear the **Resolve Variable** check box. This inserts **<>** between the **%** **%** delimiters and the variable name (for example, %\<ProgramFiles>%). Preference extensions remove **< >** characters from the text and leave the unresolved variable. You can also use this syntax with a Windows environment variable.``
 
-`1. [http://technet.microsoft.com/en-us/library/cc783264%28v=ws.10%29.aspx](http://technet.microsoft.com/en-us/library/cc783264\(v=ws.10\).aspx) ↑`
+``1. [http://technet.microsoft.com/en-us/library/cc783264%28v=ws.10%29.aspx](http://technet.microsoft.com/en-us/library/cc783264\(v=ws.10\).aspx) ↑``
 2. [http://support.microsoft.com/kb/154599](http://support.microsoft.com/kb/154599) ↑
 3. [http://superuser.com/questions/38476/this-file-came-from-another-computer-how-can-i-unblock-all-the-files-in-a](http://superuser.com/questions/38476/this-file-came-from-another-computer-how-can-i-unblock-all-the-files-in-a) ↑
 4. [http://www.slipstick.com/outlook/2010/multiple-accounts-and-the-default-account/](http://www.slipstick.com/outlook/2010/multiple-accounts-and-the-default-account/) ↑
-`5. See ANSI.SYS [http://academic.evergreen.edu/projects/biophysics/technotes/program/ansi\_esc.htm](http://academic.evergreen.edu/projects/biophysics/technotes/program/ansi\_esc.htm) ↑`
+``5. See ANSI.SYS [http://academic.evergreen.edu/projects/biophysics/technotes/program/ansi\_esc.htm](http://academic.evergreen.edu/projects/biophysics/technotes/program/ansi\_esc.htm) ↑``
 6. Variables in Preference Items ↑
