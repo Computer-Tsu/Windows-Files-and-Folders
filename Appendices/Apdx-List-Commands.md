@@ -7941,10 +7941,18 @@ or reads from stdin.
 | /v _vcffilename_                                                                                                        | Opens the specified .vcf file.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | /vcal _vcsfilename_                                                                                                     | Opens the specified .vcs file.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
-dcpromo
+
+#### wsh
+
+#### cscript
+
+#### dcpromo
 
 /adv
 
 /force
 
-regini.exe
+#### regini.exe
+
+reg and other regedit commands
+
