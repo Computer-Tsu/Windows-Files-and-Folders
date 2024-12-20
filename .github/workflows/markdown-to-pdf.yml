@@ -50,7 +50,7 @@ jobs:
             # Escape LaTeX special characters
             # sed -i 's|%|\\%|g; s|{|\\{|g; s|}|\\}|g; s|_|\\_|g; s|\\|\\\\|g' "$file"
             # Replace box-drawing characters
-            # sed -i 's/├/|--/g; s/└/`--/g; s/│/|   /g; s/\xE2\x94\x80/--/g' "$file"
+            sed -i 's/├/|--/g; s/└/`--/g; s/│/|   /g; s/\xE2\x94\x80/--/g' "$file"
             # Remove trailing spaces and redundant blank lines
             sed -i 's/[[:space:]]*$//' "$file"
             sed -i '/^$/N;/^\n$/D' "$file"
@@ -65,7 +65,10 @@ jobs:
           mkdir -p pdfs
           find . -name "*.md" -not -path "./.*/*" | while read -r file; do
             echo "Converting $file to PDF..."
-            pandoc "$file" --pdf-engine=xelatex -V mainfont="DejaVu Sans Mono" -o "pdfs/${file##*/%.md}.pdf" \
+            output_file="pdfs/${file#./}.pdf"  # Adjust the path to match the directory structure
+            output_dir=$(dirname "$output_file")
+            # alternate font "DejaVu Sans Mono"
+            pandoc "$file" --pdf-engine=xelatex -V mainfont="Consolas" -o "$output_file" \
             && echo "Successfully converted $file to PDF." \
             || echo "Failed to convert $file, skipping..."
           done
