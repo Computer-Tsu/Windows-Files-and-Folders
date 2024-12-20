@@ -67,8 +67,8 @@ jobs:
             echo "Converting $file to PDF..."
             output_file="pdfs/${file#./}.pdf"  # Adjust the path to match the directory structure
             output_dir=$(dirname "$output_file")
-            # alternate font "DejaVu Sans Mono"
-            pandoc "$file" --pdf-engine=xelatex -V mainfont="Consolas" -o "$output_file" \
+            # alternate font "Consolas"
+            pandoc "$file" --pdf-engine=xelatex -V mainfont="DejaVu Sans Mono" -o "$output_file" \
             && echo "Successfully converted $file to PDF." \
             || echo "Failed to convert $file, skipping..."
           done
