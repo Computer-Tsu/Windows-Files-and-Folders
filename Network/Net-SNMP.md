@@ -86,20 +86,19 @@ If SNMP traps are required, one or more community names must be specified. Trap 
 **Trap destinations**: Lists trap destinations, which are SNMP management systems that receive SNMP trap messages from any SNMP host in the selected community.
 
 **Add**: Adds an SNMP management system to the list of trap destinations for the selected community.
-
 **Edit**: Provides a dialog box to edit the host name or IP address of the selected trap destination.
-
 **Remove**: Removes the selected SNMP management system from the list of trap destinations for the selected community.
 
 **Additional references**
 
 For more information about SNMP, see[ ](http://technet.microsoft.com/en-us/library/cc755189.aspx?LinkId=66006)[Simple Network Management Protocol](http://technet.microsoft.com/en-us/library/cc742081.aspx?LinkId=66006) in TCP/IP Fundamentals for Windows in the Microsoft TechNet Technical Library at http://go.microsoft.com/fwlink/?LinkId=66006.
 
-``mk:@MSITStore:C:\Windows\help\mui\0409\snmp.chm::/html/80366ac5-42bd-42e9-8169-83696087e091.htm``
-
-``mk:@MSITStore:C:\Windows\help\mui\0409\snmp.chm::/html/e2c0fd7c-286c-4b02-a33b-8ed1780a681c.htm``
-
-``mk:@MSITStore:C:\Windows\help\mui\0409\snmp.chm::/html/68219299-c666-4737-ae36-3de0b3dd76cb.htm``
+**Note:** *These links to help documents (`.chm`) may not be compatible in current Windows and the content is surely no longer included.*
+```
+mk:@MSITStore:C:\Windows\help\mui\0409\snmp.chm::/html/80366ac5-42bd-42e9-8169-83696087e091.htm
+mk:@MSITStore:C:\Windows\help\mui\0409\snmp.chm::/html/e2c0fd7c-286c-4b02-a33b-8ed1780a681c.htm
+mk:@MSITStore:C:\Windows\help\mui\0409\snmp.chm::/html/68219299-c666-4737-ae36-3de0b3dd76cb.htm
+```
 
 **MIB (management information base)**
 
@@ -107,41 +106,26 @@ compile with mibcc.exe
 
 [http://support.microsoft.com/kb/131776](http://support.microsoft.com/kb/131776)
 
-``C:\Windows\System32\\``
-
+```
+C:\Windows\System32\
 accserv.mib
-
 authserv.mib
-
 dhcp.mib
-
 ftp.mib
-
 hostmib.mib
-
 [http.mib](http.mib)
-
 inetsrv.mib
-
 ipforwd.mib
-
 lmmib2.mib
-
 mcastmib.mib
-
-``mib\_ii.mib``
-
+mib_ii.mib
 msft.mib
-
 msipbtp.mib
-
 msiprip2.mib
-
 rfc2571.mib
-
 smi.mib
-
 wins.mib
+```
 
 | **File Name** | **Description** | **OID** |
 | ------------- | --------------- | ------- |
