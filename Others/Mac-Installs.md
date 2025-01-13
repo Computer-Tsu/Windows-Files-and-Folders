@@ -2,14 +2,18 @@ Apple, Mac, OS X, iOS.
 Boot Camp, iPhone, iTunes, MacOS downloads
 
 
+Table of Mac OS Versions, names, dates
+
+-----
 
 EveryMac.com
 
-How to download and install macOS
-https://support.apple.com/en-us/102662
+-----
 
-macOS Catalina (https://apps.apple.com/sg/app/macos-catalina/id1466841314?mt=12)
-macOS Mojave(https://apps.apple.com/gb/app/macos-mojave/id1398502828?mt=12)
+[How to download and install macOS](https://support.apple.com/en-us/102662)
+
+[macOS Catalina](https://apps.apple.com/sg/app/macos-catalina/id1466841314?mt=12)<br>
+macOS Mojave(https://apps.apple.com/gb/app/macos-mojave/id1398502828?mt=12)<br>
 macOS High Sierra(https://apps.apple.com/us/app/macos-high-sierra/id1246284741?ls=1&mt=12)
 
 To get versions before these, you need to download them without the App Store. Currently, Apple offers direct links going as far back as OS X Yosemite (10.10). 
@@ -148,3 +152,6 @@ Apple also sells some older Mac OS X versions for convenience:
 - [Buy Lion from Apple for $20](https://www.apple.com/shop/product/D6106Z/A/os-x-lion)
 - [Buy Snow Leopard from Apple](https://www.apple.com/shop/product/MC573Z/A/mac-os-x-106-snow-leopard)
 
+-----
+
+If you have a Mac computer and have connected an Apple ID to the Apple Store, then you may be able to download that OS version for free in the future even if it was one of the Paid versions. Unsure if you first have to "purchase" it in the store to add it to your library (purchased app history for free) and have future rights to download it again using the App store.
