@@ -9,7 +9,7 @@
 | Network Shares                                      | `HKLM\SYSTEM\CurrentControlSet\services\LanmanServer\Shares`                                                       |
 | Environmental variables                             | `HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment`                                                |
 | Local Admin (HKCU)                                  | `HKEY\USERS\S-1-5-21-<3171392789-1724324034-2371106253>-500`                                                       |
-| Winlogon                                            | `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogo`n                                                       |
+| Winlogon                                            | `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon`                                                       |
 | Environmental variables for User                    | `HKCU\Environment`                                                                                                 |
 | Default User settings                               | `HKEY\USERS\.DEFAULT`                                                                                             |
 | HKCU Desktop                                        | `HKCU\Control Panel\Desktop`                                                                                       |
