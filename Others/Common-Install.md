@@ -11,7 +11,7 @@ Last tested 2012
 [Adobe® Shockwave® Player](http://www.adobe.com/products/shockwaveplayer/shwv_distribution3.html)
 
 
-## "Google Chrome Download for Enterprise Deployment",
+## Google Chrome Download for Enterprise Deployment
     "primaryURL": "https://chromeenterprise.google/download/",
 [Chrome Enterprise](https://www.google.com/intl/en/chrome/business/browser/admin/)
 
@@ -20,7 +20,7 @@ Last tested 2012
 ## Microsoft Edge/IE11 Download for Enterprise Deployment",
     "note": "Now only on Win 7 and Sever 2008"
 
-## ": "Microsoft Updates for manual install",
+## Microsoft Updates for manual install
 
 ## Microsoft Group Policy Templates and Documentation Download
 
@@ -144,8 +144,7 @@ Office Offline Installer
 https://support.microsoft.com/office/f0a85fe7-118f-41cb-a791-d59cef96ad1c
 
 
-Deprecated
-Security updates are available on ISO-9660 DVD5 image files from the Microsoft Download Center
+**Deprecated** Security updates were available on ISO-9660 DVD5 image files from the Microsoft Download Center
 https://support.microsoft.com/en-us/topic/security-updates-are-available-on-iso-9660-dvd5-image-files-from-the-microsoft-download-center-50177732-8960-24c7-44c1-d2adbb302c0b
 
 
@@ -202,27 +201,6 @@ System Center/Config Manager
 
 Windows ISOs
 
-### Uninstaller/Removal Tool for McAfee, Norton, Trend Micro, Bitdefender, Webroot
-
-McAfee Consumer Product Removal Tool, [MCPR](https://download.mcafee.com/molbin/iss-loc/SupportTools/MCPR/MCPR.exe)
-Alt: https://www.mcafee.com/support/s/article/000001616?language=en_US
-Validation is case-sensitive. MCPR doesn't remove McAfee PC Optimizer.
-
-Download and run the Norton Remove and Reinstall tool for Windows
-(https://support.norton.com/sp/en/us/home/current/solutions/v60392881)
-
-Bitdefender
-https://www.bitdefender.com/business/support/en/77209-80124-using-the-uninstall-tool-to-remove-bitdefender-endpoint-security-tools.html)
-https://www.bitdefender.com/business/support/en/71263-427319-uninstall-tools-for-business-products.html
-(https://www.bitdefender.com/links/uninstall_consumer_paid.html)
-https://www.bitdefender.com/consumer/support/answer/2791/
-
-Webroot Personal
-  If you receive the error "SecureAnywhere is currently managed by the Web Console and all changes need to be applied centrally" the PC has a business license.
-Webroot for Business (https://answers.webroot.com/Webroot/ukp.aspx?pid=17&app=vw&vw=1&solutionid=1101)
-`C:\Program Files\Webroot\WRSA.exe -uninstall`
-`C:\Program Files (x86)\Webroot\WRSA.exe -uninstall`
-Delete the **WRData** and **WRCore** directories (if present) from **%ProgramData%**
 
 MSI Orca
 https://learn.microsoft.com/en-us/windows/win32/msi/orca-exe
@@ -288,6 +266,8 @@ winget install PuTTY.PuTTY
 https://www.7-zip.org/download.html
 winget install 7zip.7zip
 
+# Network Tools
+
 AngryIP Scanner
 winget install angryziber.AngryIPScanner
 
@@ -339,9 +319,7 @@ You can view the entire Sysinternals Live tools directory in a browser or Window
 nirsoft BlueScreenView, Cd-Key, Password Tools
 
 
-DiffView
-https://www.adlice.com/diffview/
-https://www.adlice.com/diffview/#alt_download
+Jellybean Key Finder
 
 
 [**Process Hacker**](https://processhacker.sourceforge.io/)
@@ -360,48 +338,76 @@ hex editor
 
 
 
-#AV
+## AV
 
-## kaspersky
+### Uninstaller/Removal Tool for McAfee, Norton, Trend Micro, Bitdefender, Webroot
 
-## Avira
-run setup.exe in program files, choose uninstall
+### McAfee
 
-## McAfee
+#### McAfee Consumer Product Removal Tool
+[MCPR](https://download.mcafee.com/molbin/iss-loc/SupportTools/MCPR/MCPR.exe)
+Alt: https://www.mcafee.com/support/s/article/000001616?language=en_US
+Validation is case-sensitive. MCPR doesn't remove McAfee PC Optimizer.
 
-## Malewarebytes
-install
-uninstall
+### Norton
 
-## CCleaner
+#### NAV
+Download and run the [Norton Remove and Reinstall tool for Windows](https://support.norton.com/sp/en/us/home/current/solutions/v60392881)
 
-## Norton
+#### Bitdefender
+https://www.bitdefender.com/business/support/en/77209-80124-using-the-uninstall-tool-to-remove-bitdefender-endpoint-security-tools.html)
+https://www.bitdefender.com/business/support/en/71263-427319-uninstall-tools-for-business-products.html
+(https://www.bitdefender.com/links/uninstall_consumer_paid.html)
+https://www.bitdefender.com/consumer/support/answer/2791/
 
-## Webroot
+### Webroot
 Boot into Safe Mode with Networking, open the Command Prompt, type in “C:\Program Files\Webroot\WRSA.exe” -uninstall
 https://gist.github.com/mark05e/708123de4c095ffb4f735c131d8cc783
 2 tools at https://answers.webroot.com/Webroot/ukp.aspx?pid=12&app=vw&vw=1&login=1&solutionid=1034
 
-## AVG
+#### Webroot Personal
+  If you receive the error "SecureAnywhere is currently managed by the Web Console and all changes need to be applied centrally" the PC has a business license.
+Webroot for Business (https://answers.webroot.com/Webroot/ukp.aspx?pid=17&app=vw&vw=1&solutionid=1101)
+`C:\Program Files\Webroot\WRSA.exe -uninstall`
+`C:\Program Files (x86)\Webroot\WRSA.exe -uninstall`
+Delete the **WRData** and **WRCore** directories (if present) from **%ProgramData%**
+
+### kaspersky
+
+### Avira
+run setup.exe in program files, choose uninstall
+
+### Malewarebytes
+install
+uninstall
+
+### CCleaner
+*Disparaging remark about CCleaner?*
+
+### AVG
 https://support.avg.com/kA60N0000004aGy?name=uninstall-avg-software-clear-remover&language=en_US
 (https://honzik.avcdn.net/setup/avg-av/release/avg_av_clear.exe)
 For AVG AntiVirus Free version 18.8 (Windows XP compatible), download the following file:[AVG Uninstall Tool (Windows XP)](https://install.avcdn.net/avg/iavs9x-xp/avgclear.exe)
 AVG Internet Security. Click the button below to download the <u>AVG Uninstall Tool</u> and save it to a familiar location on your PC (by default, downloaded files are saved to your **Downloads** folder). [Download the AVG Uninstall Tool](https://download.avgbrowser.com/avg_secure_browser_uninstall.exe)
 
-## ESET
+### ESET
 
 
+## Microsoft VMs and Dev Testing Evals
 
 https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/
 https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise
 https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise
-Get-FileHash C:\Users\user1\Downloads\Contoso8_1_ENT.iso	[Windows11EnterpriseHashValues.pdf](https://go.microsoft.com/fwlink/?linkid=2206412)
+
+`Get-FileHash C:\Users\user1\Downloads\Contoso8_1_ENT.iso`	[Windows11EnterpriseHashValues.pdf](https://go.microsoft.com/fwlink/?linkid=2206412)
 
 https://support.microsoft.com/en-us/windows/using-the-windows-activation-troubleshooter-d717cdff-cf19-9770-7198-40119c2a696c
 
 https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-office-365-lab-kit
 
+There used to be VMs for Internet Explorer/Edge web developer testing?
 
+https://www.microsoft.com/en-us/evalcenter
 
 
 
@@ -432,14 +438,23 @@ FileZilla	https://filezilla-project.org/download.php?show_all=1
 
 WinSCP	https://winscp.net/eng/downloads.php
 
+
+
 WinMerge https://winmerge.org/downloads/?lang=en
+
 WinDiff	https://en.wikipedia.org/wiki/WinDiff	https://learn.microsoft.com/en-us/troubleshoot/windows-client/shell-experience/how-to-use-windiff-utility
+
+DiffView
+https://www.adlice.com/diffview/
+https://www.adlice.com/diffview/#alt_download
+
 
 
 Foxit
 
 PDFCreator
 
+Microsoft Windows has included Print to PDF since version _ ?
 
 
 ## Libre or Open Office
@@ -451,6 +466,10 @@ winget install Apache.OpenOffice	(updated 2023-12)
 https://ninite.com/openoffice/ninite.exe
 
 Zoom
+
+Cisco WebEx
+
+Citrix client for VMs and apps
 
 Java (Oracle or Adopt), (JRE or JDK)
 
@@ -473,16 +492,44 @@ https://github.com/EricZimmerman/Get-ZimmermanTools/blob/master/Get-ZimmermanToo
 https://www.sans.org/tools/ez-tools/
 
 
-GPO templates
-Microsoft
-Chrome	https://dl.google.com/dl/edgedl/chrome/policy/policy_templates.zip
-Firefox	https://mozilla.github.io/policy-templates/
-Adobe	https://www.adobe.com/devnet-docs/acrobatetk/tools/DesktopDeployment/gpo.html#gpo-registry-template
+# GPO templates
 
+* Microsoft (https://admx.help/)
+  * AD
+  * Office
+  * Windows 10
+  * Edge/IE
+  * MDOP
+* Chrome	https://dl.google.com/dl/edgedl/chrome/policy/policy_templates.zip
+* Firefox	https://mozilla.github.io/policy-templates/
+* Adobe	https://www.adobe.com/devnet-docs/acrobatetk/tools/DesktopDeployment/gpo.html#gpo-registry-template
 
-CMTrace
+#### Log viewers
+
+**Microsoft**
+*Bundled with certain servers and can be downloaded*
+CMTrace (SMS, Config Manager - Installed feature and in SCCM Service Packs)
 OneTrace (Intune Config Manager Support Center)
 
-https://www.microsoft.com/en-us/evalcenter
+# Remote Monitoring and Management
+
+## Install Common MSP RMM Agents
+
+Connectwise
+Kaseya VSA (9 & 10)
+Atera
+NinjaRMM
+TeamViewer Remote Management
+DattoRMM
+
+## Uninstall Common MSP RMM Agents
+
+### Uninstall Remote Control
+
+TeamViewer
+ScreenConnect, has a unique GUID
+LogMeIn
+Jump Desktop
+
 
 
