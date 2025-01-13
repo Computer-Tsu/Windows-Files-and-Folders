@@ -4,9 +4,18 @@ Mixed formatting (MD) a few sections not completed, but lots of raw info despite
     "primaryURL": "https://get.adobe.com/reader/enterprise/",
     "secondaryURLs": "https://community.adobe.com/t5/acrobat-reader-discussions/distribute-and-install-the-free-acrobat-reader-dc-software-app-in-volume-offline-installer/td-p/10883059"
     "note": "You need to agree to Adobe licensing before you can distribute from these links"
+[Adobe® Reader® Software](http://get.adobe.com/reader/enterprise/)
+Last tested 2012
+[Adobe® AIR® Runtime](http://www.adobe.com/products/air/runtime_distribution3.html)
+[Adobe® Flash® Player](http://www.adobe.com/products/flashplayer/fp_distribution3.html)
+[Adobe® Shockwave® Player](http://www.adobe.com/products/shockwaveplayer/shwv_distribution3.html)
+
 
 ## "Google Chrome Download for Enterprise Deployment",
     "primaryURL": "https://chromeenterprise.google/download/",
+[Chrome Enterprise](https://www.google.com/intl/en/chrome/business/browser/admin/)
+
+
 
 ## Microsoft Edge/IE11 Download for Enterprise Deployment",
     "note": "Now only on Win 7 and Sever 2008"
@@ -93,25 +102,30 @@ Drivers for imaging HP, Dell, Lenovo
 
 Begin Group for Microsoft Office
 
-[
-  "Here are the download links , enjoy. (English Versions, some US and some German region?)  ",
-  "[Office Professional 2016](http://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/de-DE/ProfessionalRetail.img)  ",
-  "[Office Home and Business 2016](http://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/de-DE/HomeBusinessRetail.img)  ",
-  "[Office Home and Student 2016](http://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/de-DE/HomeStudentRetail.img)  ",
-  "[Office Home and Student 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/HomeStudentRetail.img)  ",
-  "[Office Home and Business 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/HomeBusinessRetail.img)  ",
-  "[Office Professional 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/ProfessionalRetail.img)  ",
-  "[Word 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/de-DE/WordRetail.img)  ",
-  "[Excel 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/de-DE/ExcelRetail.img)  ",
-  "[PowerPoint 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/de-DE/PowerPointRetail.img)  ",
-  "[OneNote 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/de-DE/OneNoteRetail.img)  ",
-  "[Publisher 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/de-DE/PublisherRetail.img)  ",
-  "[Access 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/de-DE/AccessRetail.img)  ",
-  "[Project Standard 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/de-DE/ProjectStdRetail.img)  ",
-  "[Project Professional 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/de-DE/ProjectProRetail.img)   ",
-  "[Visio Standard 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/de-DE/VisioStdRetail.img)  ",
-  "[Visio Professional 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/de-DE/VisioProRetail.img)"
-]
+### 2016 Suite
+[Office Professional 2016](http://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/ProfessionalRetail.img)  *verified 10/21/2024*
+[​Office Home and Business 2016](http://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/HomeBusinessRetail.img)  
+[Office Home and Student 2016](http://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/HomeStudentRetail.img)  
+
+### 2013 Suite
+[Office Professional 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/ProfessionalRetail.img)  
+[Office Home and Business 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/HomeBusinessRetail.img)  
+[Office Home and Student 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/HomeStudentRetail.img)  *verified 10/21/2024*
+
+#### 2013 Programs
+[Word 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/WordRetail.img)  
+[Excel 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/ExcelRetail.img)  
+[PowerPoint 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/PowerPointRetail.img)  
+[OneNote 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/OneNoteRetail.img)  
+[Publisher 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/PublisherRetail.img)  
+[Access 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/AccessRetail.img)  
+[Project Standard 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/ProjectStdRetail.img)  
+[Project Professional 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/ProjectProRetail.img)   
+[Visio Standard 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/VisioStdRetail.img)  
+[Visio Professional 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/VisioProRetail.img)
+
+*can change `en-US` to `de-DE`*
+
 
 
 Office Deployment Tool
@@ -160,10 +174,13 @@ Windows Hardware Lab Kit (HLK)
 HLK supplemental test content
 
 Remote Server Administration Tools for Windows 10 (RSAT)
-https://www.microsoft.com/en-us/download/details.aspx?id=45520
+[**RSAT Tools**](https://www.microsoft.com/en-my/download/details.aspx?id=45520) for Windows 10
+
 IMPORTANT: Starting with Windows 10 October 2018 Update, RSAT is included as a set of "Features on Demand" in Windows 10 itself. The downloadable packages above can still be used to install RSAT on Windows 10 version 1607
 https://download.microsoft.com/download/1/D/8/1D8B5022-5477-4B9A-8104-6A71FF9D98AB/WindowsTH-KB2693643-x64.msu
 https://download.microsoft.com/download/1/D/8/1D8B5022-5477-4B9A-8104-6A71FF9D98AB/WindowsTH-KB2693643-x86.msu
+
+
 
 ### SQL Server and servicepacks
 https://learn.microsoft.com/en-us/troubleshoot/sql/releases/download-and-install-latest-updates
@@ -238,6 +255,234 @@ MSP RMM spreadsheet (reddit or mspuser)
 
 ### For third party portal if not already added https://endoflife.date/
 
------
 
-VS Code, Sysinternals
+### VS Code
+
+
+
+### Intuit QuickBooks
+
+https://downloads.quickbooks.com/app/qbdt/products
+United States (US), Canada (CA), United Kingdom (UK)
+QuickBooks Desktop Pro [2010-2024]
+QuickBooks Desktop Premier [2011-2024]
+QuickBooks Desktop Accountant [Bookkeeper Edition 2012-2013, Accountant 2011-2024]
+QuickBooks Desktop Enterprise [10-24]
+QuickBooks Mac Desktop [2012-2024]
+QuickBooks Point of Sale [Basic 19, Pro 19, Pro Multi-Store 19]
+
+[CAMPs](https://camps.quickbooks.com)
+
+
+[Ninite](https://ninite.com/)
+
+[Chocolatey](https://chocolatey.org/install)
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('http://internal/odata/repo/ChocolateyInstall.ps1'))
+
+
+[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+winget install PuTTY.PuTTY
+
+
+#### 7Zip 7-Zip
+https://www.7-zip.org/download.html
+winget install 7zip.7zip
+
+AngryIP Scanner
+winget install angryziber.AngryIPScanner
+
+[IP Scanner powered by Lansweeper](https://www.lansweeper.com/resources/free-tools/ip-scanner/)
+winget install Lansweeper.LsAgent
+
+[Wireshark](https://www.wireshark.org/download.html)
+winget install WiresharkFoundation.Wireshark
+
+
+winget install Insecure.Npcap
+
+winget install Insecure.Nmap
+
+see also Pcap, WinPcap, libpcap
+
+[Message Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=44226)
+
+[Microsoft Network Monitor 3.4](https://www.microsoft.com/en-us/download/details.aspx?id=4865) 2020-10-30
+Windows XP-8, Server 2003-2012
+
+
+[Clonezilla](https://clonezilla.org/downloads.php)
+
+
+PowerShell ISE & add-ons [Script Browser](https://www.powershellgallery.com/packages/ScriptBrowser/1.3.1.0), [Script Analyzer](https://www.powershellgallery.com/packages/ISEScriptAnalyzerAddOn/1.0)
+```
+Install-Module -Name Scriptbrowser
+Install-Module -Name ISEScriptAnalyzerAddOn
+Enable-ScriptBrowser
+Enable-ScriptAnalyzer
+```
+
+
+
+## [**Sysinternals**](https://docs.microsoft.com/en-us/sysinternals/downloads/) Suite
+
+https://learn.microsoft.com/en-us/sysinternals/#sysinternals-live
+## Sysinternals Live
+
+Sysinternals Live is a service that enables you to run Sysinternals tools directly from the Web without manually downloading them.
+
+Enter a tool's Sysinternals Live path in Windows Explorer as `live.sysinternals.com/<toolname>` or `\\live.sysinternals.com\tools\<toolname>`. In a command prompt use `\\live.sysinternals.com\tools\<toolname>`.
+
+You can view the entire Sysinternals Live tools directory in a browser or Windows Explorer at [https://live.sysinternals.com/](https://live.sysinternals.com/).
+
+
+
+nirsoft BlueScreenView, Cd-Key, Password Tools
+
+
+DiffView
+https://www.adlice.com/diffview/
+https://www.adlice.com/diffview/#alt_download
+
+
+[**Process Hacker**](https://processhacker.sourceforge.io/)
+
+
+
+*untested*
+## [**Notepad ++**](https://notepad-plus-plus.org/download/)
+winget install Notepad++.Notepad++
+
+sublime
+
+hex editor
+
+
+
+
+
+#AV
+
+## kaspersky
+
+## Avira
+run setup.exe in program files, choose uninstall
+
+## McAfee
+
+## Malewarebytes
+install
+uninstall
+
+## CCleaner
+
+## Norton
+
+## Webroot
+Boot into Safe Mode with Networking, open the Command Prompt, type in “C:\Program Files\Webroot\WRSA.exe” -uninstall
+https://gist.github.com/mark05e/708123de4c095ffb4f735c131d8cc783
+2 tools at https://answers.webroot.com/Webroot/ukp.aspx?pid=12&app=vw&vw=1&login=1&solutionid=1034
+
+## AVG
+https://support.avg.com/kA60N0000004aGy?name=uninstall-avg-software-clear-remover&language=en_US
+(https://honzik.avcdn.net/setup/avg-av/release/avg_av_clear.exe)
+For AVG AntiVirus Free version 18.8 (Windows XP compatible), download the following file:[AVG Uninstall Tool (Windows XP)](https://install.avcdn.net/avg/iavs9x-xp/avgclear.exe)
+AVG Internet Security. Click the button below to download the <u>AVG Uninstall Tool</u> and save it to a familiar location on your PC (by default, downloaded files are saved to your **Downloads** folder). [Download the AVG Uninstall Tool](https://download.avgbrowser.com/avg_secure_browser_uninstall.exe)
+
+## ESET
+
+
+
+https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/
+https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise
+https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise
+Get-FileHash C:\Users\user1\Downloads\Contoso8_1_ENT.iso	[Windows11EnterpriseHashValues.pdf](https://go.microsoft.com/fwlink/?linkid=2206412)
+
+https://support.microsoft.com/en-us/windows/using-the-windows-activation-troubleshooter-d717cdff-cf19-9770-7198-40119c2a696c
+
+https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-office-365-lab-kit
+
+
+
+
+
+https://www.netwrix.com/freeware_tools.html
+### [Netwrix Auditor Free Community Edition](https://www.netwrix.com/free_community_edition.html)
+[Netwrix Auditor Free Community Edition Limitations](https://www.netwrix.com/freeware_limitations.html)
+### [Netwrix Auditor for SQL Server](https://www.netwrix.com/netwrix_change_notifier_for_sql_server.html)
+### [Netwrix Auditor for Active Directory](https://www.netwrix.com/netwrix_change_notifier_for_active_directory.html)
+### [Netwrix Account Lockout Examiner](https://www.netwrix.com/account_lockout_examiner.html)
+### [Netwrix Inactive User Tracker](https://www.netwrix.com/netwrix_inactive_user_tracker.html)
+### [Netwrix Password Expiration Notifier](https://www.netwrix.com/netwrix_password_expiration_notifier.html)
+### [Netwrix Service Monitor](https://www.netwrix.com/windows_services_monitoring_freeware.html)
+
+## [**Netwrix Account Lockout Examiner**](https://www.netwrix.com/account_lockout_examiner.html)
+
+
+#### Tftpd64 (TFTP, DNS, DHCP, SNTP, Syslog)
+https://bitbucket.org/phjounin/tftpd64/wiki/Download%20Tftpd64.md
+https://pjo2.github.io/tftpd64/
+
+
+https://www.solarwinds.com/free-tools
+### [TFTP Server](https://www.solarwinds.com/free-tools/free-tftp-server)
+### [ipMonitor Free Edition](https://www.solarwinds.com/free-tools/ipmonitor-free)
+winget install SolarWinds.KiwiSyslogServer
+
+FileZilla	https://filezilla-project.org/download.php?show_all=1
+
+WinSCP	https://winscp.net/eng/downloads.php
+
+WinMerge https://winmerge.org/downloads/?lang=en
+WinDiff	https://en.wikipedia.org/wiki/WinDiff	https://learn.microsoft.com/en-us/troubleshoot/windows-client/shell-experience/how-to-use-windiff-utility
+
+
+Foxit
+
+PDFCreator
+
+
+
+## Libre or Open Office
+
+winget install TheDocumentFoundation.LibreOffice	(updated 2024)
+https://ninite.com/libreoffice/ninite.exe
+
+winget install Apache.OpenOffice	(updated 2023-12)
+https://ninite.com/openoffice/ninite.exe
+
+Zoom
+
+Java (Oracle or Adopt), (JRE or JDK)
+
+WinDirStat or WizTree
+
+
+Firefox, and ESR
+
+
+downloads for Microsoft Action Pack
+	https://www.microsoft.com/msppdd/
+downloads for MSDN
+downloads for Volume License
+Downloads & Keys - Visual Studio Subscriptions
+	https://my.visualstudio.com/Downloads/Featured?mkt=en-us
+
+
+Zimmerman Tools
+https://github.com/EricZimmerman/Get-ZimmermanTools/blob/master/Get-ZimmermanTools.ps1
+https://www.sans.org/tools/ez-tools/
+
+
+GPO templates
+Microsoft
+Chrome	https://dl.google.com/dl/edgedl/chrome/policy/policy_templates.zip
+Firefox	https://mozilla.github.io/policy-templates/
+Adobe	https://www.adobe.com/devnet-docs/acrobatetk/tools/DesktopDeployment/gpo.html#gpo-registry-template
+
+
+CMTrace
+OneTrace (Intune Config Manager Support Center)
+
+https://www.microsoft.com/en-us/evalcenter
+
+
