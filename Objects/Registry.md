@@ -1,9 +1,9 @@
-### Windows Registry keys {#h.2tkqexxuulel" id="h.2tkqexxuulel
+### Windows Registry keys {#RegistryKeys}
 
 | **Description**                                     | **Key Name**                                                                                                      |
 | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| RegEdit Favorites                                   | ``HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit\Favorites``                                      |
-| CurrentControlSet\[1]                               | ``HKLM\SYSTEM\Select``                                                                                            |
+| RegEdit Favorites                                   | `HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit\Favorites`                                        |
+| CurrentControlSet\[1]                               | `HKLM\SYSTEM\Select`                                                                                              |
 | LogonUI                                             | `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI`                                            |
 | List SID & user accounts\[2]                        | `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList`                                                    |
 | Network Shares                                      | `HKLM\SYSTEM\CurrentControlSet\services\LanmanServer\Shares`                                                       |
@@ -38,8 +38,8 @@
 |                                                     |                                                                                                                   |
 | Shares                                              |                                                                                                                   |
 |                                                     |                                                                                                                   |
-| Certificates for User                               | `HKCU\_Software\Microsoft\\?`                                                                                       |
-| Certificates for Local Machine                      | `HKLM\_Software\Microsoft\\?`                                                                                       |
+| Certificates for User                               | `HKCU_Software\Microsoft\?`                                                                                       |
+| Certificates for Local Machine                      | `HKLM_Software\Microsoft\?`                                                                                       |
 |                                                     |                                                                                                                   |
 |                                                     |                                                                                                                   |
 |                                                     |                                                                                                                   |
