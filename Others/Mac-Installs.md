@@ -126,10 +126,11 @@ Also, be aware that some of these older downloads will come as a .dmg file. To u
 
 ### macOS Monterey 12 Installers
 
-- [MacOS Monterey 12.7.6](https://swcdn.apple.com/content/downloads/34/21/062-40406-A_GZQ27OUQER/ggclib72ow1omcvfexvp84bc9x5ei5tyqu/InstallAssistant.pkg)
+MacOS Monterey 12 (Direct InstallAssistant.pkg links):
+- [MacOS Monterey 12.7.6 InstallAssistant.pkg](https://swcdn.apple.com/content/downloads/34/21/062-40406-A_GZQ27OUQER/ggclib72ow1omcvfexvp84bc9x5ei5tyqu/InstallAssistant.pkg)
 - [macOS Monterey 12.7.5](https://swcdn.apple.com/content/downloads/02/18/052-96238-A_V534Q7DYXO/lj721dkb4wvu0l3ucuhqfjk7i5uwq1s8tz/InstallAssistant.pkg)
-- [macOS Monterey 12.7.4 InstallAssistant.pkg](https://swcdn.apple.com/content/downloads/46/57/052-60131-A_KM2RH04C2D/9yzvba1uvpem2wuo95r459qno57qaizwf2/InstallAssistant.pkg)
-- MacOS Monterey 12 (Direct InstallAssistant.pkg links: [macOS Monterey 12.7.3](https://swcdn.apple.com/content/downloads/53/08/052-33037-A_AKHX79ZA4S/z7yb5wdcrk453a3hi7c3hc9n6zzju9di7f/InstallAssistant.pkg)
+- [macOS Monterey 12.7.4](https://swcdn.apple.com/content/downloads/46/57/052-60131-A_KM2RH04C2D/9yzvba1uvpem2wuo95r459qno57qaizwf2/InstallAssistant.pkg)
+- [macOS Monterey 12.7.3](https://swcdn.apple.com/content/downloads/53/08/052-33037-A_AKHX79ZA4S/z7yb5wdcrk453a3hi7c3hc9n6zzju9di7f/InstallAssistant.pkg)
 - [12.7.2](https://swcdn.apple.com/content/downloads/50/04/052-14528-A_IPPECDAUDT/rhoymx9618x6bk4fe7zfijtdgd55t4y2lh/InstallAssistant.pkg)
 - [12.7.1](https://swcdn.apple.com/content/downloads/45/36/042-82938-A_MYEQ3DT1O2/by641pp6vwoo8w5i75d4e5j3rq3qdf1xe7/InstallAssistant.pkg)
 - [12.7](http://swcdn.apple.com/content/downloads/15/25/042-55586-A_3K88VDWWUI/sjuqtms3bl3dpjg6ii9i5bjkhihj59qxaj/InstallAssistant.pkg)
@@ -141,7 +142,7 @@ Also, be aware that some of these older downloads will come as a .dmg file. To u
 - [12.6.2](https://swcdn.apple.com/content/downloads/55/35/032-12843-A_35UCTHBNLI/z1twfbx3mhypq6g7ljtz52z6nsv0n7e4o5/InstallAssistant.pkg)
 - [12.6.1](https://swcdn.apple.com/content/downloads/36/13/012-90254-A_BJQ1VMPD44/z225i7bzise31eo21e4kgfkafz7zq0q9tu/InstallAssistant.pkg)
 
-* [App Store link](https://apps.apple.com/us/app/macos-monterey/id1576738294))
+* [App Store link](https://apps.apple.com/us/app/macos-monterey/id1576738294)
 
 ### macOS Big Sur 11 Installers
 
