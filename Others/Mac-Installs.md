@@ -1,8 +1,9 @@
-Apple, Mac, OS X, iOS.
-Boot Camp, iPhone, iTunes, MacOS downloads
+# Apple, Mac, OS X, iOS
+
+# Boot Camp, iPhone (iPad), iTunes, MacOS downloads
 
 
-Table of Mac OS Versions, names, dates
+## Table of Mac OS Versions, names, dates
 
 | Version Number | Codename       | Release Date | End of Support Date |
 |----------------|----------------|--------------|---------------------|
@@ -57,25 +58,25 @@ EveryMac.com
 
 -----
 
+## MacOS Downloads
+
 [How to download and install macOS](https://support.apple.com/en-us/102662)
 
-[macOS Catalina](https://apps.apple.com/sg/app/macos-catalina/id1466841314?mt=12)<br>
-macOS Mojave(https://apps.apple.com/gb/app/macos-mojave/id1398502828?mt=12)<br>
-macOS High Sierra(https://apps.apple.com/us/app/macos-high-sierra/id1246284741?ls=1&mt=12)
+- 10.15 [macOS Catalina](https://apps.apple.com/sg/app/macos-catalina/id1466841314?mt=12)
+- 10.14 [macOS Mojave](https://apps.apple.com/gb/app/macos-mojave/id1398502828?mt=12)
+- 10.13 [macOS High Sierra](https://apps.apple.com/us/app/macos-high-sierra/id1246284741?ls=1&mt=12)
 
 To get versions before these, you need to download them without the App Store. Currently, Apple offers direct links going as far back as OS X Yosemite (10.10). 
 
 
-macOS Sierra(http://updates-http.cdn-apple.com/2019/cert/061-39476-20191023-48f365f4-0015-4c41-9f44-39d3d2aca067/InstallOS.dmg)
-OS X El Capitan(http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg)
-OS X Yosemite(http://updates-http.cdn-apple.com/2019/cert/061-41343-20191023-02465f92-3ab5-4c92-bfe2-b725447a070d/InstallMacOSX.dmg)
+- 10.12 [macOS Sierra](http://updates-http.cdn-apple.com/2019/cert/061-39476-20191023-48f365f4-0015-4c41-9f44-39d3d2aca067/InstallOS.dmg)
+- 10.11 [OS X El Capitan](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg)
+- 10.10 [OS X Yosemite](http://updates-http.cdn-apple.com/2019/cert/061-41343-20191023-02465f92-3ab5-4c92-bfe2-b725447a070d/InstallMacOSX.dmg)
 Also, be aware that some of these older downloads will come as a .dmg file. To use those, you need to double-click them so they’re mounted. Then run the .pkg file inside them. This will add the relevant macOS installer to your Applications folder.
 
 
 
 ### macOS Sonoma 14 Installers
-
-MacOS Sonoma 14 is currently the latest stable version of MacOS system software from Apple:
 
 - [macOS Sonoma 14.6.1 InstallAssistant.pkg](https://swcdn.apple.com/content/downloads/30/63/062-58676-A_ECWQ492BNE/hrlydsxfk837el7k95venauqmn8ruizw3e/InstallAssistant.pkg) (Separately: [MacOS Sonoma 14.6.1 IPSW](https://updates.cdn-apple.com/2024SummerFCS/fullrestores/062-52859/932E0A8F-6644-4759-82DA-F8FA8DEA806A/UniversalMac_14.6.1_23G93_Restore.ipsw))
 - [MacOS Sonoma 14.6](https://swcdn.apple.com/content/downloads/00/11/052-69919-A_USBF3SRH1R/doynj295laqw3fo9i3fmhlljb0prsmzw0y/InstallAssistant.pkg) (Separately: [Sonoma 14.6 IPSW](https://updates.cdn-apple.com/2024SummerFCS/fullrestores/052-69922/F5DA2B64-25EB-4370-9E89-FA5689859796/UniversalMac_14.6_23G80_Restore.ipsw))
@@ -158,6 +159,8 @@ Older versions of Mac OS X installers can often be downloaded as well, but from 
 
 For earlier versions of Mac OS X, including Mac OS X Mavericks 10.9, Mac OS X Mountain Lion 10.8, Mac OS X Lion 10.7, Mac OS X Snow Leopard 10.6, Mac OS X Leopard 10.5, Mac OS X Tiger 10.4, and before, the process to obtain those installers differs a bit.
 
+## Additional Download Methods
+
 ### Downloading MacOS Installers via Terminal
 
 Mac users can download the latest macOS installer available from the Terminal by using the following command string:
@@ -174,7 +177,7 @@ For example, to get macOS 11.3.1 the syntax would be as follows:
 
 ### Downloading Mac OS X Installers from App Store “Purchases”
 
-If you had at one point in time purchased or downloaded a version of MacOS or Mac OS X from the Mac App Store, then you should be able to re-download it from the Mac App Store by going go the “Purchases” section. This can typically be used to access downloads for installers for MacOS Mojave, High Sierra, Sierra, Mavericks, and Mountain Lion, though there are some caveats and exceptions.
+If you had at one point in time purchased or downloaded a version of MacOS or Mac OS X from the Mac App Store, then you should be able to re-download it from the Mac App Store by going go the “Purchases” section. This can typically be used to access downloads for installers for MacOS **10.14** Mojave, **10.13** High Sierra, **10.12** Sierra, **10.9** Mavericks, and **10.8** Mountain Lion, though there are some caveats and exceptions.
 
 1. Open the App Store
 2. Go to the “Purchases” section (newer App Store versions must go to Account &gt; Purchases)
@@ -184,7 +187,7 @@ This works particularly well if the Mac you’re downloading the software onto i
 
 This approach for [re-downloading older OS X installers from App Store Purchases section](https://osxdaily.com/2014/02/24/re-download-older-os-x-version-from-mac-app-store/) works for obtaining many older versions of Mac OS X, particularly if the machine doing the downloading is running an older Mac release too. For example, [re-downloading Mavericks from Yosemite](https://osxdaily.com/2014/12/30/re-download-os-x-mavericks-installer-from-os-x-yosemite-app-store/), whereas if you’re running the App Store from newer versions of MacOS you’d need to follow the links further above to download the installers directly, or via the App Store links.
 
-### Downloading Mac OS X Snow Leopard
+### Downloading 10.6 Mac OS X Snow Leopard
 
 If you’re a registered Apple developer then you may be able to [download Mac OS X Snow Leopard and Mac OS X Leopard directly from Apple ADC](https://osxdaily.com/2015/01/26/download-mac-os-x-snow-leopard-from-apple-adc/) using the following links:
 
@@ -193,11 +196,11 @@ If you’re a registered Apple developer then you may be able to [download Mac O
 
 ### Downloading / Buying Mac OS X Mountain Lion, Lion, Mac OS X Snow Leopard
 
-Apple also sells some older Mac OS X versions for convenience:
+Apple also sells some older Mac OS X versions (**10.8**, **10.7**, **10.6**) for convenience:
 
-- [Buy Mountain Lion from Apple for $20](https://www.apple.com/shop/product/D6377Z/A/os-x-mountain-lion)
-- [Buy Lion from Apple for $20](https://www.apple.com/shop/product/D6106Z/A/os-x-lion)
-- [Buy Snow Leopard from Apple](https://www.apple.com/shop/product/MC573Z/A/mac-os-x-106-snow-leopard)
+- [Buy Mountain Lion from Apple for $20](https://www.apple.com/shop/product/D6377Z/A/os-x-mountain-lion) 10.8
+- [Buy Lion from Apple for $20](https://www.apple.com/shop/product/D6106Z/A/os-x-lion) 10.7
+- [Buy Snow Leopard from Apple](https://www.apple.com/shop/product/MC573Z/A/mac-os-x-106-snow-leopard) 10.6
 
 -----
 
