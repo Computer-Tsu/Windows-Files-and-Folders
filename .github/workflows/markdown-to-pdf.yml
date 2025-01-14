@@ -74,9 +74,19 @@ jobs:
             || echo "Failed to convert $file, skipping..."
           done
 
+      - name: Get date of most recent commit
+      id: commit-date
+      run: |
+        DATE=$(git log -1 --format=%cs)
+        echo "commit_date=${DATE}" >> $GITHUB_ENV
+
+      - name: Create a ZIP archive
+      run: |
+        zip -r "package-pdfs-${{ env.commit_date }}.zip" output/
+        
       # Step 6: Upload PDFs as Artifact
-      - name: Upload PDFs as Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: package-pdfs
-          path: pdfs/
+      - name: Upload the ZIP file
+      uses: actions/upload-artifact@v3
+      with:
+        name: package-pdfs-${{ env.commit_date }}
+        path: package-pdfs-${{ env.commit_date }}.zip
