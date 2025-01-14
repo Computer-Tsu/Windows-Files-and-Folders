@@ -3,8 +3,6 @@
 
 #### Internet Explorer {#h.6ottd7anoz6k" id="h.6ottd7anoz6k
 
-#### Internet Explorer {#h.6ottd7anoz6k" id="h.6ottd7anoz6k
-
 Windows 7 (IE version 9)
 
 `C:\Users\<user name>\Downloads`
@@ -113,8 +111,7 @@ URLs to add for viewing system files in MMC
 
 **Outlook Express Address Book Contacts**
 
-``Address Book used by Outlook Express\[9]``
-
+Address Book used by Outlook Express ``[9]``<br>
 ``C:\Documents and Settings\<UserName>\Application Data\Microsoft\Address Book``
 
 Do other applications use it? Outlook, Windows? (`*.pab`, `*.wab`)
@@ -134,11 +131,11 @@ Setup Controller Command-Line Help
 
 /? - Display this command-line help
 /admin - Launch the Office Customization Tool
-/adminfile \<admin file> - Specify a customization patch of folder containing a customization patch
-/config \<config file> - Specify a config.xml file
-/modify \<product ID> - Enter Maintenance Mode for a product
-/repair \<product ID> - Repair a product
-/uninstall \<product ID> - Uninstall a product
+/adminfile <admin file> - Specify a customization patch of folder containing a customization patch
+/config <config file> - Specify a config.xml file
+/modify <product ID> - Enter Maintenance Mode for a product
+/repair <product ID> - Repair a product
+/uninstall <product ID> - Uninstall a product
 ```
 
 What are the product IDs?
@@ -192,21 +189,17 @@ Windows Live has Skydrive? which will replicate certain office settings to other
 
 These settings include dictionary, word.dot?, ...
 
-Recently Opened Office Docs
+Recently Opened Office Docs<br>
+``C:\Users\<user name>\AppData\Roaming\Microsoft\Office\Recent``
 
-``C:\Users\\_\<user name>_\AppData\Roaming\Microsoft\Office\Recent``
+**Recovered Office files**<br>
+`C:\Users\<UserName>\AppData\Local\Microsoft\Office\UnsavedFiles`
 
-**Recovered Office files**
+**Connect to database and execute SQL**<br>
+Microsoft Query `"C:\Program Files\Microsoft Office\Office14\MSQRY32.EXE"`
 
-``C:\Users\\_\<UserName>_\AppData\Local\Microsoft\Office\UnsavedFiles``
-
-**Connect to database and execute SQL**
-
-``Microsoft Query "C:\Program Files\Microsoft Office\Office14\MSQRY32.EXE"``
-
-**Custom Dictionary**
-
-``C:\Users\\_\<UserName>_\AppData\Roaming\Microsoft\UProof\CUSTOM.DIC``
+**Custom Dictionary**<br>
+`C:\Users\<UserName>\AppData\Roaming\Microsoft\UProof\CUSTOM.DIC`
 
 **Dictionary (.dic)**
 
@@ -235,16 +228,14 @@ MSN MoneyCentral Investor Stock Quotes.iqy
 
 **Visual Basic for Applications**
 
-``VBA settings migration\[10]``
+VBA settings migration ``[10]``
 
 In Office 2010, Visual Basic for Applications (VBA) 6.0 was updated to VBA 7.0. VBA 7.0 settings were reset to their defaults after migration instead of automatically repopulating. This occurred because the registry settings for VBA are in a different hive in Office 2010, as shown in the following table.
 
-Office 2000 through Office 2007
-
+Office 2000 through Office 2007<br>
 ``HKCU\SOFTWARE\Microsoft\VBA\6.0\Common``
-
-Office 2010
-
+<br>
+Office 2010<br>
 ``HKCU\SOFTWARE\Microsoft\VBA\7.0\Common``
 
 
@@ -260,7 +251,7 @@ can also be used to sign PowerShell and documents such as Access databases and i
 
 ``C:\...`` usage & switches
 ```
-
+add stuff here
 ```
 
 **other cert tools**
@@ -287,11 +278,10 @@ You can follow these simple steps to fix the problem and successfully activate O
 1. Open **Control Panel** and click on **Programs and Features** icon.
 2. Now click on **Microsoft Office 2013** entry given in the list and then click on **Change** button given in the toolbar.
 3. It'll open Office 2013 setup wizard and will show following options to select:
-
-* Add or Remove Features
-* Repair
-* Remove
-* Enter a Product Key
+  * Add or Remove Features
+  * Repair
+  * Remove
+  * Enter a Product Key
 
 manually uninstall product keys installed by Preview version of Office 2013
 
@@ -360,9 +350,8 @@ Exchange (SMTP):
 
 see also: [http://office.microsoft.com/en-us/outlook-help/where-does-microsoft-outlook-2010-save-my-information-and-configurations-HP010354943.aspx](http://technet.microsoft.com/en-us/library/cc732406.aspx)
 
-**64-bit edition**
-
-``Tell if the Outlook 2010 is a 32-bit or 64-bit installation\[11]``
+**64-bit edition**<br>
+Tell if the Outlook 2010 is a 32-bit or 64-bit installation ``[11]``
 
 ``HKLM\Software\Microsoft\Office\14.0\Outlook``
 
@@ -373,9 +362,9 @@ or ``"%ProgramFiles(x86)%\Microsoft Office\Office14\outlook.exe"``
 
 ``Social Connectors and other Add-ons are specific to 32 or 64-bit editions. 32-bit compiled add-ons will not work in 64-bit office. See Microsoft notes on this \[Link here]``
 
-``Calendar settings, Working Hours\[12]``
+Calendar settings, Working Hours ``[12]``
 
-``HKCU\Software\Microsoft\Office\12.0\Outlook\Options\Calendar\CalDefStart``
+``HKCU\Software\Microsoft\Office\12.0\Outlook\Options\Calendar\CalDefStart``<br>
 ``HKCU\Software\Microsoft\Office\12.0\Outlook\Options\Calendar\CalDefEnd``
 
 **Outlook command line switches**
@@ -384,9 +373,8 @@ or ``"%ProgramFiles(x86)%\Microsoft Office\Office14\outlook.exe"``
 
 ``Switches Detailed in Appendix \_?\_``
 
-.PRF file for Outlook profile
-
-outlook.exe /importprf MigrateEmail.PRF
+.PRF file for Outlook profile<br>
+`outlook.exe /importprf MigrateEmail.PRF`
 
 **Security and Attachment file types**
 
@@ -504,9 +492,8 @@ In Outlook 2010, the Auto-Complete List file (.nk2) is discontinued. The Auto-Co
 
 Temp folder for Outlook attachments
 
-``HKCU\Software\Microsoft\Office\12.0\Outlook\Security``
-
-``C:\Users\\_\<UserName>_\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Outlook\\_\<random value>_\\``
+``HKCU\Software\Microsoft\Office\12.0\Outlook\Security``<br>
+``C:\Users\<UserName>\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Outlook\<random value>\``
 
 **Personal Storage and Offline Storage**
 
@@ -540,7 +527,7 @@ for opening attachments `C:\Users\<UserName>\AppData\Local\Microsoft\Windows\Tem
 
 **Outlook logging (troubleshooting)**
 
-``Diagnostics log location\[15] (File, Options, Advanced, Other, Enable troubleshooting logging)``
+Diagnostics log location`[15]` (File, Options, Advanced, Other, Enable troubleshooting logging)
 
 The calendar log file is a binary file that cannot be read without a conversion process. Contact Microsoft Support.
 
@@ -714,7 +701,7 @@ How to Backup and Restore Windows Media Player DRM Licenses or Media Usage Right
 
 **Bookmarks**
 
-``Firefox bookmarks (favorites)\[16]``
+Firefox bookmarks (favorites)``[16]``
 
 The places.sqlite file contains all your Firefox bookmarks and the list of all the websites you’ve visited.
 
@@ -763,45 +750,36 @@ Administrator Guide``[17]``
 
 #### Apple iTunes {#h.79jwcyc34i7c" id="h.79jwcyc34i7c
 
-``Beginning with new installations of version 10.? C:\Users\UserName\Music\iTunes\iTunes Media``
+Beginning with new installations of version 10.? `C:\Users\UserName\Music\iTunes\iTunes Media`
 
-``Music C:\Users\UserName\Music\iTunes\iTunes Media\Music``
+Music `C:\Users\<UserName>\Music\iTunes\iTunes Media\Music`
 
-AudioBooks
+AudioBooks<br>
+Pickup Folder (Automatically add to itunes) ``C:\Users\UserName\Music\iTunes\iTunes Media\Automatically Add to iTunes``<br>
+Books<br>
+Podcasts<br>
+iTunes U<br>
+Movies<br>
+TV Shows<br>
+Compilations ``C:\Users\<UserName>\Music\iTunes\iTunes Media\Music\Compilations``<br>
+Apps<br>
+Device backups `C:\Users\<UserName>\AppData\Roaming\Apple Computer\MobileSync\Backup\78193d251bbc7f3bb18de246a16b8fe6ceba2cf7\` and `.\Manifest.mbdb`<br>
+Device firmware updates `C:\Users\<UserName>\AppData\Roaming\Apple Computer\iTunes\iPod Software Updates``<br>
+Apple Software Updates `C:\Users\<UserName>\AppData\Local\Apple\Apple Software Update``<br>
+iTunes Library files (*.itl)\`[18]` \[sql lite] C:\Users\<UserName>\Music\iTunes\iTunes Library.itl`<br>
+iTunes Library file XML `C:\Users\<UserName>\Music\iTunes\iTunes Music Library.xml`<br>
+Cover images `C:\Users\<UserName>\Music\iTunes\Album Artwork`<br>
 
-``Pickup Folder (Automatically add to itunes) C:\Users\UserName\Music\iTunes\iTunes Media\Automatically Add to iTunes``
+the iTunes configuration files (delete the "SC Info.sidb" file)``9]``
 
-Books
-
-Podcasts
-
-iTunes U
-
-Movies
-
-TV Shows
-
-``Compilations C:\Users\UserName\Music\iTunes\iTunes Media\Music\Compilations``
-
-Apps
-
-Device backups `C:\Users\UserName\AppData\Roaming\Apple Computer\MobileSync\Backup\78193d251bbc7f3bb18de246a16b8fe6ceba2cf7\ and .\Manifest.mbdb``<br>
-Device firmware updates `C:\Users\\_UserName_\AppData\Roaming\Apple Computer\iTunes\iPod Software Updates``<br>
-Apple Software Updates `C:\Users\\_UserName_\AppData\Local\Apple\Apple Software Update``<br>
-iTunes Library files `(\*.itl)\[18] \[sql lite] C:\Users\\_UserName_\Music\iTunes\iTunes Library.itl`<br>
-iTunes Library file XML `C:\Users\\_UserName_\Music\iTunes\iTunes Music Library.xml`<br>
-Cover images `C:\Users\\_UserName_\Music\iTunes\Album Artwork`<br>
-
-the iTunes configuration files (delete the "SC Info.sidb" file)``[19]``
-
-``* The preference files for Windows Vista and 7\[20] live here:\``
-``C:\Users\username\AppData\Local\Apple Computer\iTunes\``
-``C:\Users\username\AppData\Roaming\Apple Computer\iTunes``
-``* In Windows XP and 2000 the iTunes preference files\[21] are here:\``
-``C:\Documents and Settings\username\Application Data\Apple Computer\iTunes\``
-``C:\Documents and Settings\username\Local Settings\Application Data\Apple Computer\iTunes``
-``* In Windows XP and 2000 the iTunes configuration files\[22] are here:\``
-``C:\Documents and Settings\All Users\Application Data\Apple Computer\iTunes\SC Info``
+ * The preference files for Windows Vista and 7 `[20]` are here:
+   - ``C:\Users\username\AppData\Local\Apple Computer\iTunes\``
+   - ``C:\Users\username\AppData\Roaming\Apple Computer\iTunes``
+ * In Windows XP and 2000 the iTunes preference files`[21]` are here:
+   - ``C:\Documents and Settings\username\Application Data\Apple Computer\iTunes\``
+   - ``C:\Documents and Settings\username\Local Settings\Application Data\Apple Computer\iTunes``
+ * In Windows XP and 2000 the iTunes configuration files `[22]` are here:
+   - ``C:\Documents and Settings\All Users\Application Data\Apple Computer\iTunes\SC Info``
 
 Devices
 
@@ -817,10 +795,8 @@ Devices
 
 **Offline MSI Installer files**
 
-``Java doesn’t provide downloads of MSI files. They can be located here during/after installation\[23]``
-
-``C:\Users\<user>\AppData\LocalLow\Sun\Java\jre1.7.0\_09\jre1.7.0\_09.msi``
-
+Java doesn’t provide downloads of MSI files. They can be located here during/after installation``[23]``<br>
+``C:\Users\<user>\AppData\LocalLow\Sun\Java\jre1.7.0_09\jre1.7.0_09.msi``<br>
 ``C:\Documents and Settings\<user>\Local Settings\ApplicationData\Sun\Java\jre1.6.0_37_x64\jre1.6.0_37.msi``
 
 **Autoupdate Registry key**
@@ -830,20 +806,16 @@ Devices
 
 **Java Temporary files**
 
-``Jar file cache\[24] (Good to clean in case of virus?)``
-
-``Java 6 or 7, Windows Vista or above C:\Users\UserName\AppData\LocalLow\Sun\Java\Deployment\cache``
+Jar file cache``[24]`` (Good to clean following of virus?)<br>
+Java 6 or 7, Windows Vista or above `C:\Users\UserName\AppData\LocalLow\Sun\Java\Deployment\cache`
 
 **High-Security Option**
 
 Security files area for getting higher level security certificates.
 
-Also settings to help protect from exploits
-
-``HKCU\Software\AppDataLow\Software\JavaSoft\DeploymentProperties\\"deployment.security.level"="HIGH"``
-
-``Setting the Security Level of the Java Client\[25]``
-
+Also settings to help protect from exploits<br>
+``HKCU\Software\AppDataLow\Software\JavaSoft\DeploymentProperties\\"deployment.security.level"="HIGH"``<br>
+Setting the Security Level of the Java Client``[25]``<br>
 ``jre-7u10-windows-i586.exe with flags: /s WEB\_JAVA=1 WEB\_JAVA\_SECURITY\_LEVEL=H``
 
 **Install**
@@ -858,148 +830,79 @@ Windows ® Installer. V 5.0.7601.17514
 msiexec /Option \<Required Parameter> \[Optional Parameter]
 
 Install Options
-
 </package | /i> <Product.msi>
-
 Installs or configures a product
-
 /a <Product.msi>
-
 Administrative install - Installs a product on the network
-
 /j<u|m> <Product.msi> [/t <Transform List>] [/g <Language ID>]
-
 Advertises a product - m to all users, u to current user
-
-\</uninstall | /x> \<Product.msi | ProductCode>
-
+</uninstall | /x> <Product.msi | ProductCode>
 Uninstalls the product
-
 Display Options
-
 /quiet
-
 Quiet mode, no user interaction
-
 /passive
-
 Unattended mode - progress bar only
-
-/q\[n|b|r|f]
-
+/q[n|b|r|f]
 Sets user interface level
-
 n - No UI
-
 b - Basic UI
-
 r - Reduced UI
-
 f - Full UI (default)
-
 /help
-
 Help information
-
 Restart Options
-
 /norestart
-
 Do not restart after the installation is complete
-
 /promptrestart
-
 Prompts the user for restart if necessary
-
 /forcerestart
-
 Always restart the computer after installation
-
 Logging Options
-
-/l\[i|w|e|a|r|u|c|m|o|p|v|x|+|!|\*] \<LogFile>
-
+/l[i|w|e|a|r|u|c|m|o|p|v|x|+|!|*] <LogFile>
 i - Status messages
-
 w - Nonfatal warnings
-
 e - All error messages
-
 a - Start up of actions
-
 r - Action-specific records
-
 u - User requests
-
 c - Initial UI parameters
-
 m - Out-of-memory or fatal exit information
-
 o - Out-of-disk-space messages
-
 p - Terminal properties
-
 v - Verbose output
-
 x - Extra debugging information
-
-``\+ - Append to existing log file``
-
++ - Append to existing log file
 ! - Flush each line to the log
-
-``\* - Log all information, except for v and x options``
-
-``/log \<LogFile>``
-
-``Equivalent of /l\* \<LogFile>``
-
+* - Log all information, except for v and x options
+/log <LogFile>
+Equivalent of /l* <LogFile>
 Update Options
-
-``/update \<Update1.msp>\[;Update2.msp]``
-
+/update <Update1.msp>[;Update2.msp]
 Applies update(s)
-
-/uninstall \<PatchCodeGuid>\[;Update2.msp] /package \<Product.msi | ProductCode>
-
+/uninstall <PatchCodeGuid>[;Update2.msp] /package <Product.msi | ProductCode>
 Remove update(s) for a product
-
 Repair Options
-
-/f\[p|e|c|m|s|o|d|a|u|v] \<Product.msi | ProductCode>
-
+/f[p|e|c|m|s|o|d|a|u|v] <Product.msi | ProductCode>
 Repairs a product
-
 p - only if file is missing
-
 o - if file is missing or an older version is installed (default)
-
 e - if file is missing or an equal or older version is installed
-
 d - if file is missing or a different version is installed
-
 c - if file is missing or checksum does not match the calculated value
-
 a - forces all files to be reinstalled
-
 u - all required user-specific registry entries (default)
-
 m - all required computer-specific registry entries (default)
-
 s - all existing shortcuts (default)
-
 v - runs from source and recaches local package
-
 Setting Public Properties
+[PROPERTY=PropertyValue]
 
-``\[PROPERTY=PropertyValue]``
-
-Consult the Windows ® Installer SDK for additional documentation on the
-
-command line syntax.
+Consult the Windows ® Installer SDK for additional documentation on the command line syntax.
 
 Copyright © Microsoft Corporation. All rights reserved.
-
 Portions of this software are based in part on the work of the Independent JPEG Group.
+```
 
 #### Dell {#h.1toqrykete5x" id="h.1toqrykete5x
 
