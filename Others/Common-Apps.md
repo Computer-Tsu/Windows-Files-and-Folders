@@ -7,42 +7,37 @@
 
 Windows 7 (IE version 9)
 
-``C:\Users\\_\<user name>_\Downloads``
+`C:\Users\<user name>\Downloads`
 
-``C:\Users\\_\<UserName>_\AppData\Local\Microsoft\Windows\Temporary Internet Files``
+`C:\Users\_<UserName>_\AppData\Local\Microsoft\Windows\Temporary Internet Files`
 
-``C:\Windows\Downloaded Program Files``
+`C:\Windows\Downloaded Program Files`
 
 Internet Explorer Temp Folder (IE Cache)
 
-``C:\Users\\_\<user name>_\AppData\Local\Microsoft\Windows\Temporary Internet Files``
+``C:\Users\_<user name>_\AppData\Local\Microsoft\Windows\Temporary Internet Files``
 
 IE Cookies
 
-``C:\Users\\_\<user name>_\AppData\Roaming\Microsoft\Windows\Cookies``
+`C:\Users\username\AppData\Roaming\Microsoft\Windows\Cookies`
 
 Good to export this file using IE, File, Export when moving a user to another computer.
 
 Internet Explorer History
 
-``C:\Users\\_\<user name>_\AppData\Local\Microsoft\Windows\History``
+`C:\Users\<user name>\AppData\Local\Microsoft\Windows\History`
 
-IE Typed URLs
+IE Typed URLs<br>
+`HKCU\Software\Microsoft\Internet Explorer\TypedUrls`
 
-``HKCU\Software\Microsoft\Internet Explorer\TypedUrls``
+not be 100% certain, google Julie Amero
 
-``not be 100% certain, google Julie Amero``
-
-Internet Explorer Forms AutoComplete
-
-``HKCU\Software\Microsoft\Internet Explorer\IntelliForms\Storage1``
-
+Internet Explorer Forms AutoComplete<br>
+`HKCU\Software\Microsoft\Internet Explorer\IntelliForms\Storage1`<br>
 obfuscated form
 
-Internet Explorer Password AutoComplete
-
-``HKCU\Software\Microsoft\Internet Explorer\IntelliForms\Storage2``
-
+Internet Explorer Password AutoComplete<br>
+`HKCU\Software\Microsoft\Internet Explorer\IntelliForms\Storage2`<br>
 obfuscated form
 
 **Links and Shortcuts**
@@ -78,22 +73,19 @@ Internet/Untrusted
 URL Wildcard Sequence:
 
 Examples of valid patterns:
-
-``\*://\*.microsoft.com``
-
-``http://\*.microsoft.co.jp``
-
+```
+*://*.microsoft.com
+http://\*.microsoft.co.jp
 ftp://157.54.23.41/
-
-``file:\localsvr\share``
-
-``\*://157.54.100-200.\*``
+file:\localsvr\share
+*://157.54.100-200.*
+```
 
 Examples of invalid patterns:
-
-``http://microsoft.\*.com``
-
-``ftp://\*``
+```
+http://microsoft.*.com
+ftp://*
+```
 
 Windows Update URLs to add to Trusted
 
@@ -107,11 +99,11 @@ URLs to add for viewing system files in MMC
 
 **Internet Explorer Administration Kit**
 
-.ins automatic configuration file for customized browser configuration settings created with the Profile Manager
+`.ins` automatic configuration file for customized browser configuration settings created with the Profile Manager
 
 #### Windows Live {#h.6kn930frdot9" id="h.6kn930frdot9
 
-``C:\Program Files (x86)\Common Files\Windows Live\\.cache\\``
+``C:\Program Files (x86)\Common Files\Windows Live\.cache\``
 
 #### Outlook Express {#h.x4vc95c6dnco" id="h.x4vc95c6dnco
 
@@ -123,9 +115,9 @@ URLs to add for viewing system files in MMC
 
 ``Address Book used by Outlook Express\[9]``
 
-``C:\Documents and Settings\\_\<UserName>_\Application Data\Microsoft\Address Book``
+``C:\Documents and Settings\<UserName>\Application Data\Microsoft\Address Book``
 
-``Do other applications use it? Outlook, Windows? (\*.pab, \*.wab)``
+Do other applications use it? Outlook, Windows? (`*.pab`, `*.wab`)
 
 #### Microsoft Office {#h.xcy11a3h6km8" id="h.xcy11a3h6km8
 
@@ -153,46 +145,31 @@ What are the product IDs?
 
 **Changes to Installation**
 
-Excel auto save now included, used to require manual selection
-
-Outlook Social Connector still requires manual install of 3rd-party add ons
-
-Does converters and graphics filters affect file preview of .GIF, .JPG?
-
-OCR tools removed from 64-bit. Were part of discontinued Picture/Imaging Manager? Some work arounds include installing Sharepoint designer? or using OneNote and TIF file?
+* Excel auto save now included, used to require manual selection
+* Outlook Social Connector still requires manual install of 3rd-party add ons
+* Does converters and graphics filters affect file preview of .GIF, .JPG?
+* OCR tools removed from 64-bit. Were part of discontinued Picture/Imaging Manager? Some work arounds include installing Sharepoint designer? or using OneNote and TIF file?
 
 **How To Outlook LDAP directory to use AD**
 
-Add account, Address Books tab, Microsoft LDAP Directory
-
-Server Name: FQDN to server
-
-Logon Information
-
-This server requires me to log on: Checked (User Name and Password can be left blank)
-
-Require Secure Password Authentication (SPA) Checked
-
-More Settings ... button
-
-Connection tab
-
-Display Name: The name of the address book your users will see
-
-Connection Details: no change needed
-
-Search tab
-
-Specify the maximum number of entries you want to return after a successful search: 200
-
-Search Base, Custom: dc=domainname,dc=com
-
-Enable Browsing (requires server support)
+1. Add account, Address Books tab, Microsoft LDAP Directory
+2. Server Name: FQDN to server
+3. Logon Information
+4. This server requires me to log on: Checked (User Name and Password can be left blank)
+5. Require Secure Password Authentication (SPA) Checked
+6. More Settings ... button
+7. Connection tab
+8. Display Name: The name of the address book your users will see
+10. Connection Details: no change needed
+11. Search tab
+12. Specify the maximum number of entries you want to return after a successful search: 200
+13. Search Base, Custom: `dc=domainname,dc=com`
+14. Enable Browsing **(requires server support)**
 
 **Differences with Service Pack 1**
 
 ``Office 2010 Standard with SP1 has the following additional files in the .\Updates folder``
-
+```
 clientshared32muisp1-en-us.msp
 clientshared32wwsp1-x-none.msp
 clientsharedmuisp1-en-us.msp
@@ -203,14 +180,13 @@ proofsp1-en-us.msp
 proofsp1-es-es.msp
 proofsp1-fr-fr.msp
 README.TXT
+```
 
 **Microsoft Office Customization Tool**
 
 As of Microsoft Office 2010, there is no separate download
-
-`SETUP.EXE /admin to open Office Customization Tool`
-
-``Creates a .MSP file to be placed in the .\Updates folder``
+1. `SETUP.EXE /admin` to open Office Customization Tool<br>
+2. Creates a `.MSP` file to be placed in the `.\Updates` folder
 
 Windows Live has Skydrive? which will replicate certain office settings to other computers.
 
@@ -234,15 +210,13 @@ Recently Opened Office Docs
 
 **Dictionary (.dic)**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Roaming\Microsoft\UProof``
-
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Application Data\Microsoft\UProof``
+**Windows 7 and Windows Vista** `_drive_:\Users\<username>\AppData\Roaming\Microsoft\UProof`<br>
+**Windows XP** `_drive_:\Documents and Settings\<username>\Application Data\Microsoft\UProof`
 
 **Templates (.oft)**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Roaming\Microsoft\Templates``
-
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Application Data\Microsoft\Templates``
+**Windows 7 and Windows Vista** `_drive_:\Users\<username>\AppData\Roaming\Microsoft\Templates`<br>
+**Windows XP** `_drive_:\Documents and Settings\<username>\Application Data\Microsoft\Templates`
 
 **Templates**
 
@@ -251,14 +225,13 @@ Recently Opened Office Docs
 **Data Connections**
 
 ``C:\Program Files\Microsoft Office\Office14\QUERIES``
-
+```
 MSN MoneyCentral Investor Currency Rates.iqy
-
 MSN MoneyCentral Investor Major Indicies.iqy
-
 MSN MoneyCentral Investor Stock Quotes.iqy
+```
 
-``\[...]\Documents\My Data Sources\\_ServerName_\__SQLInstance_ _DatabaseName_.odc``
+``%USERPROFILE%\Documents\My Data Sources\<ServerName>\__SQLInstance_ _DatabaseName_.odc``
 
 **Visual Basic for Applications**
 
@@ -274,9 +247,10 @@ Office 2010
 
 ``HKCU\SOFTWARE\Microsoft\VBA\7.0\Common``
 
+
+| Office 9 through Office 12 | Office 14|
 | -------------------------- | -------------------------------------- |
-| Office 9 through Office 12 | HKCU\SOFTWARE\Microsoft\VBA\6.0\Common |
-| Office 14                  | HKCU\SOFTWARE\Microsoft\VBA\7.0\Common |
+|   HKCU\SOFTWARE\Microsoft\VBA\6.0\Common  | HKCU\SOFTWARE\Microsoft\VBA\7.0\Common |
 
 To correct this problem, copy the VBA 6.0 registry keys from the 6.0 hive to the 7.0 hive.
 
@@ -284,7 +258,10 @@ To correct this problem, copy the VBA 6.0 registry keys from the 6.0 hive to the
 
 can also be used to sign PowerShell and documents such as Access databases and installers
 
-``C:\\... usage/switches``
+``C:\...`` usage & switches
+```
+
+```
 
 **other cert tools**
 
@@ -294,8 +271,8 @@ customize the Document Inspector by adding Inspector modules
 
 **Microsoft Visio**
 
-``* In Windows 7 and Windows Vista, the **My Shapes** directory is located at C:\Users\\_yourname_\Documents\My Shapes.``
-``* In Windows XP and earlier, the **My Shapes** directory is located at C:\Documents and Settings\\_yourname_\My Documents\My Shapes.``
+* In Windows 7 and Windows Vista, the **My Shapes** directory is located at `C:\Users\<username>\Documents\My Shapes`.
+* In Windows XP and earlier, the **My Shapes** directory is located at `C:\Documents and Settings\<username>\My Documents\My Shapes`.
 
 **Microsoft Office 2013 Activation**
 
@@ -307,11 +284,9 @@ Don't activate the product using your account credentials. Just enter your produ
 
 You can follow these simple steps to fix the problem and successfully activate Office 2013 in your system:
 
-**1.** Open **Control Panel** and click on **Programs and Features** icon.
-
-**2.** Now click on **Microsoft Office 2013** entry given in the list and then click on **Change** button given in the toolbar.
-
-**3.** It'll open Office 2013 setup wizard and will show following options to select:
+1. Open **Control Panel** and click on **Programs and Features** icon.
+2. Now click on **Microsoft Office 2013** entry given in the list and then click on **Change** button given in the toolbar.
+3. It'll open Office 2013 setup wizard and will show following options to select:
 
 * Add or Remove Features
 * Repair
@@ -320,21 +295,17 @@ You can follow these simple steps to fix the problem and successfully activate O
 
 manually uninstall product keys installed by Preview version of Office 2013
 
-``CD C:\Program Files\Microsoft Office\Office15``
+```
+CD C:\Program Files\Microsoft Office\Office15
+cscript ospp.vbs /dstatus
+```
 
-`cscript ospp.vbs /dstatus`
-
-Note down the **last 5 characters of product keys** given in each section.
-
+Note down the **last 5 characters of product keys** given in each section.<br>
 Now run following command for each product key:
-
 ``cscript ospp.vbs /unpkey:_last_5_characters_of_product_key_``
-
 For example if the last 5 characters of one product key are ABCDE, then run following command:
-
 `cscript ospp.vbs /unpkey:ABCDE`
-
-uninstall all existing versions of Office from your system and then reinstall Office 2013. Now it should activate itself without any problem.
+Uninstall all existing versions of Office from your system and then reinstall Office 2013. Now it should activate itself without any problem.
 
 **Microsoft Office 2007-2013 File Format**
 
@@ -385,7 +356,7 @@ Outlook-specific
 
 Exchange (SMTP):
 
-``HKLM\SOFTWARE\Microsoft\Exchange\ContentFilter\ "ArchiveSCL"=dword:00000001``
+``HKLM\SOFTWARE\Microsoft\Exchange\ContentFilter\`` `"ArchiveSCL"=dword:00000001`
 
 see also: [http://office.microsoft.com/en-us/outlook-help/where-does-microsoft-outlook-2010-save-my-information-and-configurations-HP010354943.aspx](http://technet.microsoft.com/en-us/library/cc732406.aspx)
 
@@ -527,9 +498,9 @@ Auto-Complete List (File, Options, Mail, Send Messages, Empty Auto-Complete List
 
 Outlook Contacts Auto-Complete List
 
-The Auto-Complete List is a feature which displays suggestions for names and e-mail addresses as you begin to type them. These suggestions are possible matches from a list of names and e-mail addresses from the e-mail messages that you have sent.
-
-In Outlook 2010, the Auto-Complete List file (.nk2) is discontinued. The Auto-Complete List entries are now saved in your Microsoft Exchange Server mailbox or for POP3, IMAP, or Hotmail \& Windows Live accounts, in the Outlook Data File (.pst) for your account.
+The Auto-Complete List is a feature which displays suggestions for names and e-mail addresses as you begin to type them. These suggestions are possible matches from a list of names and e-mail addresses from the e-mail messages that you have sent.<br>
+<br>
+In Outlook 2010, the Auto-Complete List file (.nk2) is discontinued. The Auto-Complete List entries are now saved in your Microsoft Exchange Server mailbox or for POP3, IMAP, or Hotmail \& Windows Live accounts, in the Outlook Data File (.pst) for your account.<br>
 
 Temp folder for Outlook attachments
 
@@ -541,35 +512,31 @@ Temp folder for Outlook attachments
 
 **Outlook Data File .PST**
 
-``Earlier Outlook on XP, C:\Documents and Settings\<UserName>\Local Settings\Application Data\Microsoft\Outlook``
+Earlier Outlook on XP, `C:\Documents and Settings\<UserName>\Local Settings\Application Data\Microsoft\Outlook`<br>
+Earlier Outlook on Vista `C:\Users\\<username>\AppData\Local\Microsoft\Outlook`<br>
+For Outlook 2010, `C:\Users\<Username>\Documents\Outlook`<br>
 
-``Earlier Outlook on Vista C:\Users\\_user_\AppData\Local\Microsoft\Outlook``
-
-``For Outlook 2010, C:\Users\<Username>\Documents\Outlook``
-
-Offline Outlook Mailbox
-
-``C:\Users\\_\<user name>_\AppData\Local\Microsoft\Outlook\outlook.ost``
+Offline Outlook Mailbox<br>
+``C:\Users\<user name>\AppData\Local\Microsoft\Outlook\outlook.ost``
 
 **Outlook Data File .OST**
 
 If you enable use Cached Exchange Mode or to work offline, items in your Exchange mailbox are copied in an offline Outlook Data File (.ost)
 
-``Outlook on XP, C:\Documents and Settings\\_\<UserName>_\Local Settings\Application Data\Microsoft\Outlook``
-
-``Outlook on Vista C:\Users\\_user_\AppData\Local\Microsoft\Outlook``
+Outlook on XP, `C:\Documents and Settings\<UserName>\Local Settings\Application Data\Microsoft\Outlook`<br>
+Outlook on Vista `C:\Users\<username>\AppData\Local\Microsoft\Outlook`
 
 **Outlook Archive**
 
-``Outlook 2010 stores PST in Documents\Email folder?``
+Outlook 2010 stores PST in `Documents\Email` folder?
 
 **Microsoft Outlook Inbox Repair Tool**
 
-``PST file repair "C:\Program Files\Microsoft Office\Office14\SCANPST.EXE"``
+PST file repair `"C:\Program Files\Microsoft Office\Office14\SCANPST.EXE"`
 
 **Outlook Temp directory**
 
-``for opening attachments C:\Users\\_\<UserName>_\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Outlook``
+for opening attachments `C:\Users\<UserName>\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Outlook`
 
 **Outlook logging (troubleshooting)**
 
@@ -579,14 +546,14 @@ The calendar log file is a binary file that cannot be read without a conversion 
 
 MAPI (Exchange), POP3, and SMTP log file:
 
-``* Windows Vista \\& 7 - c:\Users\\_user name_\AppData\Local\Temp\Outlook Logging\OPMLog.log``
-``* Windows XP - c:\Documents and Settings\\_user name_\Local Settings\Temp\Outlook Logging\OPMLog.log``
-``* %temp%\olkas\yymmdd-time-fb.log ?``
+* Windows Vista \& 7 - `c:\Users\<user name>\AppData\Local\Temp\Outlook Logging\OPMLog.log`
+* Windows XP - `c:\Documents and Settings\<user name>\Local Settings\Temp\Outlook Logging\OPMLog.log`
+* `%temp%\olkas\yymmdd-time-fb.log` ?
 
 IMAP transport name is similar to:
 
-``* Windows Vista \\& 7 - c:\Users\\_user name_\AppData\Local\Temp\Outlook Logging\IMAP-ExampleCom-07\_19\_2012-14\_03\_44\_865.log``
-``* Windows XP - c:\Documents and Settings\\_user name_\Local Settings\Temp\Outlook Logging\IMAP-ExampleCom-07\_19\_2012-14\_03\_44\_865.log``
+* Windows Vista \& 7 - `c:\Users\<user name>\AppData\Local\Temp\Outlook Logging\IMAP-ExampleCom-07\_19\_2012-14\_03\_44\_865.log`
+* Windows XP - `c:\Documents and Settings\<username>\Local Settings\Temp\Outlook Logging\IMAP-ExampleCom-07\_19\_2012-14\_03\_44\_865.log`
 
 Outlook Profile
 
@@ -596,15 +563,14 @@ Microsoft Outlook Configuration Analyzer Tool 2.0 (OCAT)
 
 **Outlook Autodiscover**
 
-Ctrl+Right click on Outlook icon in System Tray
+`Ctrl+Right click` on Outlook icon in System Tray
 
 Test E-mail AutoConfiguration...
 
 **Personal Address Book (.PAB)**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Local\Microsoft\Outlook``
-
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Local Settings\Application Data\Microsoft\Outlook``
+**Windows 7 and Windows Vista** `_drive_:\Users\\<username>\AppData\Local\Microsoft\Outlook`<br>
+**Windows XP** `_drive_:\Documents and Settings\\<username>\Local Settings\Application Data\Microsoft\Outlook`
 
 Personal Address Books (.pab) are not supported in Outlook 2010. When you upgrade to Outlook 2010, you are prompted to import any .pab file into Contacts. If you choose not to import the .pab file when you first run Outlook 2010, you can import it later by using the **Import** command in the Microsoft Office Backstage view.
 
@@ -614,29 +580,27 @@ The Offline Address Book (.oab) is used by Microsoft Exchange Server accounts. I
 
 You do not have to back up or restore this file. This is file is created and updated automatically.
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Local\Microsoft\Outlook``
-
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Local Settings\Application Data\Microsoft\Outlook``
+**Windows 7 and Windows Vista** `_drive_:\Users\<username>\AppData\Local\Microsoft\Outlook`<br>
+**Windows XP** `_drive_:\Documents and Settings\<username>\Local Settings\Application Data\Microsoft\Outlook`
 
 **Navigation Pane settings (.xml)**
 
 This file includes information about the contents of the Navigation Pane.
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Roaming\Outlook\\_profile name_.xml``
-
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Application Data\Microsoft\Outlook\\_profile name_.xml``
+**Windows 7 and Windows Vista** `_drive_:\Users\<username>\AppData\Roaming\Outlook\<profile name>.xml`<br>
+**Windows XP** `_drive_:\Documents and Settings\<username>\Application Data\Microsoft\Outlook\<profile name>.xml`
 
 **Registered Microsoft Exchange extensions (.dat)**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Local\Microsoft\Outlook``
+**Windows 7 and Windows Vista**  `_drive_:\Users\\<username>\AppData\Local\Microsoft\Outlook``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Local Settings\Application Data\Microsoft\Outlook``
+**Windows XP**  `_drive_:\Documents and Settings\\<username>\Local Settings\Application Data\Microsoft\Outlook``
 
 **Rules (.rwz)**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Roaming\Microsoft\Outlook``
+**Windows 7 and Windows Vista**  `_drive_:\Users\\<username>\AppData\Roaming\Microsoft\Outlook``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Application Data\Microsoft\Outlook``
+**Windows XP**  `_drive_:\Documents and Settings\\<username>\Application Data\Microsoft\Outlook``
 
 **Note** If you upgraded to Outlook 2010 from a version of Outlook earlier than Microsoft Outlook 2002, you might have an .rwz file on your computer's hard disk drive. The .rwz file is no longer needed, and the information about rules is now kept on the server running Microsoft Exchange, and in the Outlook Data File (.pst) for POP3 and IMAP e-mail accounts. You can delete the file.
 
@@ -644,51 +608,45 @@ If you use the Rules Import and Export feature, the default location for .rwz fi
 
 **Print styles (Outlprnt with no extension)**
 
-``**Windows Vista** _drive_:\Users\\_user_\AppData\Roaming\Microsoft\Outlook``
+``**Windows Vista** _drive_:\Users\\<username>\AppData\Roaming\Microsoft\Outlook``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Application Data\Microsoft\Outlook``
+**Windows XP**  `_drive_:\Documents and Settings\\<username>\Application Data\Microsoft\Outlook``
 
 **Signatures (.rtf, .txt, .htm)**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Roaming\Microsoft\Signatures``
+**Windows 7 and Windows Vista**  `_drive_:\Users\\<username>\AppData\Roaming\Microsoft\Signatures``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Application Data\Microsoft\Signatures``
+**Windows XP**  `_drive_:\Documents and Settings\\<username>\Application Data\Microsoft\Signatures``
 
-A signature named “Company default” will generate the following files and folder structure.
-
-``C:\Users\UserName\AppData\Roaming\Microsoft\Signatures\\``
-
+A signature named “Company default” will generate the following files and folder structure.<br>
+```
+C:\Users\UserName\AppData\Roaming\Microsoft\Signatures\`
 +--Company default.htm
-
 +--Company default.rtf
-
 +--Company default.txt
-
-``+--Company default\_files\\``
-
++--Company default\files\
 +--colorschememapping.xml
-
 +--filelist.xml
-
 +--themedata.thmx
+```
 
 **Stationery (.htm)**
 
 If installed, and personal or computer-wide.
 
-``**Windows 7 and Windows Vista** _drive_:\Program Files\Common Files\Microsoft Shared\Stationery``
+**Windows 7 and Windows Vista**  `_drive_:\Program Files\Common Files\Microsoft Shared\Stationery``
 
 ``**Windows 7 and Windows Vista 64-bit with Outlook 2010 32-bit** _drive_:\Program Files (x86)\Common Files\Microsoft Shared\Stationery``
 
-``**Windows XP** _drive_:\Program Files\Common Files\Microsoft Shared\Stationery``
+**Windows XP**  `_drive_:\Program Files\Common Files\Microsoft Shared\Stationery``
 
 ``C:\Users\UserName\AppData\Roaming\Microsoft\Stationery``
 
 **Custom forms**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Local\Microsoft\Forms``
+**Windows 7 and Windows Vista**  `_drive_:\Users\\<username>\AppData\Local\Microsoft\Forms``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Local Settings\Application Data\Microsoft\Forms``
+**Windows XP**  `_drive_:\Documents and Settings\\<username>\Local Settings\Application Data\Microsoft\Forms``
 
 Forms
 
@@ -698,22 +656,21 @@ Forms
 
 **Send/Receive settings (.srs)**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\AppData\Roaming\Microsoft\Outlook``
+**Windows 7 and Windows Vista**  `_drive_:\Users\<username>\AppData\Roaming\Microsoft\Outlook``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\Application Data\Microsoft\Outlook``
+**Windows XP**  `_drive_:\Documents and Settings\<username>\Application Data\Microsoft\Outlook``
 
 ``\<Profile Name>.srs``
 
 **Message (.msg, .htm, .rtf)**
 
-``**Windows 7 and Windows Vista** _drive_:\Users\\_user_\Documents``
+**Windows 7 and Windows Vista**  `_drive_:\Users\<username>\Documents``
 
-``**Windows XP** _drive_:\Documents and Settings\\_user_\My Documents``
+**Windows XP**  `_drive_:\Documents and Settings\<username>\My Documents``
 
 **.PRF file for Outlook profile**
 
-``"%ProgramFiles%\Microsoft Office\Office14\outlook.exe" /importprf %LogonServer%\NETLOGON\MigrateEmail.PRF``
-
+``"%ProgramFiles%\Microsoft Office\Office14\outlook.exe" /importprf %LogonServer%\NETLOGON\MigrateEmail.PRF``<br>
 ``"%ProgramFiles(x86)%\Microsoft Office\Office14\outlook.exe" /importprf %LogonServer%\NETLOGON\MigrateEmail.PRF``
 
 Use[ ](http://technet.microsoft.com/en-us/library/cc772168.aspx#heading=h.96ds1q77m2pr)[Microsoft Office Customization Tool](http://technet.microsoft.com/en-us/library/cc753151.aspx#heading=h.96ds1q77m2pr) for creating Outlook Profiles (.PRF)
@@ -752,9 +709,8 @@ How to Backup and Restore Windows Media Player DRM Licenses or Media Usage Right
 
 **User Profile**
 
-``C:\Users\<UserName>\AppData\Roaming\Mozilla\Firefox\Profiles``
-
-``%APPDATA%\Mozilla\Firefox\Profiles\\``
+``C:\Users\<UserName>\AppData\Roaming\Mozilla\Firefox\Profiles``<br>
+``%APPDATA%\Mozilla\Firefox\Profiles\``
 
 **Bookmarks**
 
@@ -764,17 +720,17 @@ The places.sqlite file contains all your Firefox bookmarks and the list of all t
 
 **Custom Dictionary**
 
-``C:\users\[username]\AppData\Roaming\Mozilla\Firefox\Profiles\[unique-alphanumeric-string].default\persdict.dat``
-
+``C:\users\[username]\AppData\Roaming\Mozilla\Firefox\Profiles\[unique-alphanumeric-string].default\persdict.dat``<br>
 ``C:\Documents and Settings\[username]\ApplicationData\Mozilla\Firefox\Profiles\[unique-alphanumeric-string].default\persdict.dat``
 
 Firefox:
 
-``C:\Users\<user name>\AppData\Local\Mozilla\Firefox\Profiles\<some profile number>.default\\``
+``C:\Users\<user name>\AppData\Local\Mozilla\Firefox\Profiles\<some profile number>.default\``
 
 ``\*.sqllite files``
 
-SQLLiteStudio or http://www.sqlite.org/cvstrac/wiki?p=ManagementTools
+* [SQLLiteStudio](http://www.sqlite.org/cvstrac/wiki?p=ManagementTools)
+* dBeaver
 
 Firefox Cached Pages
 
@@ -782,33 +738,28 @@ Firefox Cached Pages
 
 [http://www.securityfocus.com/infocus/1832](http://www.securityfocus.com/infocus/1832)
 
-Firefox Form History File
-
+Firefox Form History File<br>
 ``C:\Users\<user name>\AppData\Roaming\Mozilla\Firefox\Profiles\<some profile number>.default\formhistory.sqlite``
 
-Firefox Passwords File
-
+Firefox Passwords File<br>
 ``C:\Users\<user name>\AppData\Roaming\Mozilla\Firefox\Profiles\<some profile number>.default\signons.sqlite``
 
-Firefox Cookies
-
+Firefox Cookies<br>
 ``C:\Users\<user name>\AppData\Roaming\Mozilla\Firefox\Profiles\<some profile number>.default\cookies.sqlite``
 
-#### Adobe Flash Player {#h.itnceweu7188" id="h.itnceweu7188
+#### Adobe Flash Player {#FlashPlayer}
 
-Flash Cookies Location
-
-``C:\Users\<username>\AppData\Roaming\Macromedia\Flash Player\\#SharedObjects\<random value>\\``
+Flash Cookies Location<br>
+``C:\Users\<username>\AppData\Roaming\Macromedia\Flash Player\\#SharedObjects\<random value>\``
 
 Adobe Flash Player Update Configuration
 
 Adobe Flash Player Background Updater
 
-``C:\Windows\System32\Macromed\Flash\mms.cfg``
-
+``C:\Windows\System32\Macromed\Flash\mms.cfg``<br>
 ``C:\Windows\SysWOW64\Macromed\Flash\mms.cfg``
 
-``Administrator Guide\[17]``
+Administrator Guide``[17]``
 
 #### Apple iTunes {#h.79jwcyc34i7c" id="h.79jwcyc34i7c
 
@@ -834,19 +785,14 @@ TV Shows
 
 Apps
 
-``Device backups C:\Users\UserName\AppData\Roaming\Apple Computer\MobileSync\Backup\78193d251bbc7f3bb18de246a16b8fe6ceba2cf7\ and .\Manifest.mbdb``
+Device backups `C:\Users\UserName\AppData\Roaming\Apple Computer\MobileSync\Backup\78193d251bbc7f3bb18de246a16b8fe6ceba2cf7\ and .\Manifest.mbdb``<br>
+Device firmware updates `C:\Users\\_UserName_\AppData\Roaming\Apple Computer\iTunes\iPod Software Updates``<br>
+Apple Software Updates `C:\Users\\_UserName_\AppData\Local\Apple\Apple Software Update``<br>
+iTunes Library files `(\*.itl)\[18] \[sql lite] C:\Users\\_UserName_\Music\iTunes\iTunes Library.itl`<br>
+iTunes Library file XML `C:\Users\\_UserName_\Music\iTunes\iTunes Music Library.xml`<br>
+Cover images `C:\Users\\_UserName_\Music\iTunes\Album Artwork`<br>
 
-``Device firmware updates C:\Users\\_UserName_\AppData\Roaming\Apple Computer\iTunes\iPod Software Updates``
-
-``Apple Software Updates C:\Users\\_UserName_\AppData\Local\Apple\Apple Software Update``
-
-``iTunes Library files (\*.itl)\[18] \[sql lite] C:\Users\\_UserName_\Music\iTunes\iTunes Library.itl``
-
-``iTunes Library file XML C:\Users\\_UserName_\Music\iTunes\iTunes Music Library.xml``
-
-``Cover images C:\Users\\_UserName_\Music\iTunes\Album Artwork``
-
-``the iTunes configuration files (delete the “SC Info.sidb” file)\[19]``
+the iTunes configuration files (delete the "SC Info.sidb" file)``[19]``
 
 ``* The preference files for Windows Vista and 7\[20] live here:\``
 ``C:\Users\username\AppData\Local\Apple Computer\iTunes\``
@@ -875,12 +821,11 @@ Devices
 
 ``C:\Users\<user>\AppData\LocalLow\Sun\Java\jre1.7.0\_09\jre1.7.0\_09.msi``
 
-``C:\Documents and Settings\<user>\Local Settings\ApplicationData\Sun\Java\jre1.6.0\_37\_x64\jre1.6.0\_37.msi``
+``C:\Documents and Settings\<user>\Local Settings\ApplicationData\Sun\Java\jre1.6.0_37_x64\jre1.6.0_37.msi``
 
 **Autoupdate Registry key**
 
-``HKLM\SOFTWARE\JavaSoft\Java Update\Policy\EnableJavaUpdate=0``
-
+``HKLM\SOFTWARE\JavaSoft\Java Update\Policy\EnableJavaUpdate=0``<br>
 ``HKLM\SOFTWARE\WOW6432Node\JavaSoft\Java Update\Policy\EnableJavaUpdate=0``
 
 **Java Temporary files**
@@ -908,22 +853,21 @@ Download site: http://java.com/en/download/manual.jsp
 Admin guide:
 
 Command Line: (see msiexec)
-
+```
 Windows ® Installer. V 5.0.7601.17514
-
-``msiexec /Option \<Required Parameter> \[Optional Parameter]``
+msiexec /Option \<Required Parameter> \[Optional Parameter]
 
 Install Options
 
-\</package | /i> \<Product.msi>
+</package | /i> <Product.msi>
 
 Installs or configures a product
 
-``/a \<Product.msi>``
+/a <Product.msi>
 
 Administrative install - Installs a product on the network
 
-/j\<u|m> \<Product.msi> \[/t \<Transform List>] \[/g \<Language ID>]
+/j<u|m> <Product.msi> [/t <Transform List>] [/g <Language ID>]
 
 Advertises a product - m to all users, u to current user
 
@@ -1065,7 +1009,7 @@ Default folder for extracted drivers
 
 Digital Line Detect
 
-``Internet Name Lookup helper \<sp>``
+Internet Name Lookup helper(sp?)
 
 #### HP {#h.276naol8b2it" id="h.276naol8b2it
 
