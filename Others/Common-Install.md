@@ -91,17 +91,22 @@ https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8
 ## Access Runtime
 
 ## Windows Installer (WinGet for new Windows installs)
+### Issues with first time run on new systems. Running as Admin on Standard USer account.
+`winget config .yaml`
+`winget add .json`
+`winget update --all`
+`winget pin add --id Microsoft.Teams`
 
 ## Windows Terminal
 
-PowerToys
+## PowerToys
 
 Microsoft Security Compliance Toolkit 1.0<br>
 https://www.microsoft.com/en-us/download/details.aspx?id=55319
 
-Drivers for imaging HP, Dell, Lenovo
+## Drivers for imaging HP, Dell, Lenovo
 
-Begin Group for Microsoft Office
+## Microsoft Office
 
 ### 2016 Suite
 [Office Professional 2016](http://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/ProfessionalRetail.img)  *verified 10/21/2024*
@@ -185,6 +190,12 @@ https://download.microsoft.com/download/1/D/8/1D8B5022-5477-4B9A-8104-6A71FF9D98
 ### SQL Server and servicepacks
 https://learn.microsoft.com/en-us/troubleshoot/sql/releases/download-and-install-latest-updates
 
+2024<br>
+
+2022<br>
+
+2019<br>
+
 2016<br>
 https://support.microsoft.com/en-us/topic/kb3177534-how-to-obtain-the-latest-service-pack-for-sql-server-2016-8dea89cc-c50b-dccd-374b-9933e960ab52
 
@@ -192,7 +203,7 @@ https://support.microsoft.com/en-us/topic/kb3177534-how-to-obtain-the-latest-ser
 https://support.microsoft.com/en-us/topic/how-to-obtain-the-latest-service-pack-for-sql-server-2014-c5ea7a16-2e09-e38f-e10e-160e5530ad9a
 
 
-Exchange service packs
+## Exchange service packs
 
 Java Downloads for All Operating Systems<br>
 https://www.java.com/en/download/manual.jsp<br>
@@ -200,7 +211,7 @@ Please review the terms carefully before downloading and using this product. An 
 
 System Center/Config Manager
 
-Windows ISOs
+## Windows ISOs
 
 
 ### MSI Orca
@@ -263,12 +274,13 @@ United States (US), Canada (CA), United Kingdom (UK)
 [Ninite](https://ninite.com/)
 
 [Chocolatey](https://chocolatey.org/install)
-Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('http://internal/odata/repo/ChocolateyInstall.ps1'))
+iex <br>
+`Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('http://internal/odata/repo/ChocolateyInstall.ps1'))`
 
 ## Remote Client Conection Terminal Managers
 
-[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
-winget install PuTTY.PuTTY
+[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)<br>
+`winget install PuTTY.PuTTY`
 
 MobaXTerm
 
@@ -277,30 +289,30 @@ mRemoteNG
 Microsoft RDP Manager<name?>
 
 #### 7Zip 7-Zip
-https://www.7-zip.org/download.html
-winget install 7zip.7zip
+https://www.7-zip.org/download.html<br>
+`winget install 7zip.7zip`
 
 # Network Tools
 
-AngryIP Scanner
-winget install angryziber.AngryIPScanner
+AngryIP Scanner<br>
+`winget install angryziber.AngryIPScanner`
 
-[IP Scanner powered by Lansweeper](https://www.lansweeper.com/resources/free-tools/ip-scanner/)
-winget install Lansweeper.LsAgent
+[IP Scanner powered by Lansweeper](https://www.lansweeper.com/resources/free-tools/ip-scanner/)<br>
+`winget install Lansweeper.LsAgent`
 
-[Wireshark](https://www.wireshark.org/download.html)
-winget install WiresharkFoundation.Wireshark
+[Wireshark](https://www.wireshark.org/download.html)<br>
+`winget install WiresharkFoundation.Wireshark`
 
 
-winget install Insecure.Npcap
+`winget install Insecure.Npcap`
 
-winget install Insecure.Nmap
+`winget install Insecure.Nmap`
 
 see also Pcap, WinPcap, libpcap
 
 [Message Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=44226)
 
-[Microsoft Network Monitor 3.4](https://www.microsoft.com/en-us/download/details.aspx?id=4865) 2020-10-30
+[Microsoft Network Monitor 3.4](https://www.microsoft.com/en-us/download/details.aspx?id=4865) 2020-10-30<br>
 Windows XP-8, Server 2003-2012
 
 
@@ -345,7 +357,7 @@ Recover Keys
 
 *untested*
 ### [**Notepad ++**](https://notepad-plus-plus.org/download/)
-winget install Notepad++.Notepad++
+`winget install Notepad++.Notepad++`
 
 sublime
 
@@ -368,7 +380,7 @@ GPU-Z
 
 AIDA64 Engineer
 
-Kiwi System Info
+Kiwi System Info ? see also SolarWinds Kiwi syslog and event viewer
 
 
 
@@ -430,7 +442,7 @@ AVG Internet Security. Click the button below to download the <u>AVG Uninstall T
 
 ## Microsoft VMs and Dev Testing Evals
 
-https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/<br>
+https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/ Has been unavailable for over a year (starting Oct 2024)<br>
 https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise<br>
 https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise<br>
 
@@ -489,7 +501,7 @@ Foxit
 
 PDFCreator
 
-Microsoft Windows has included Print to PDF since version _ ?
+Microsoft Windows has included Print to PDF since version 10 ?
 
 
 ## Libre or Open Office
@@ -546,7 +558,7 @@ https://www.sans.org/tools/ez-tools/
 #### Log viewers
 
 **Microsoft**
-*Bundled with certain servers and can be downloaded*
+*Bundled with certain servers and can be downloaded*<br>
 CMTrace (SMS, Config Manager - Installed feature and in SCCM Service Packs)<br>
 OneTrace (Intune Config Manager Support Center)
 
