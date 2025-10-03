@@ -36,25 +36,25 @@ Public Recorded TV - Shortcut ``"C:\Users\Public\Recorded TV"``
 
 Public Videos - Shortcut `C:\Users\Public\Videos`
 
-Recent Items - Shortcut `C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Recent`
+Recent Items - Shortcut `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Recent`
 
-Send to ▶ shortcuts `C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\SendTo`
+Send to ▶ shortcuts `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\SendTo`
 
 Start Menu - Shortcut (2) ``"C:\ProgramData\Microsoft\Windows\Start Menu"``
 
-Start Menu - Shortcut ``"C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Start Menu"``
+Start Menu - Shortcut ``"C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu"``
 
-Templates - Shortcut `C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Templates`
+Templates - Shortcut `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Templates`
 
 Default User Profile `%SystemDrive%\Users\Default`
 
-Themes files `C:\Users\<UserName>\AppData\Local\Microsoft\Windows\Themes`
+Themes files `C:\Users\<USERNAME>\AppData\Local\Microsoft\Windows\Themes`
 
 Wallpapers `C:\Windows\Web\Wallpaper`
 
-`C:\Users\<UserName>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar`
+`C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar`
 
-`C:\Users\<UserName>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\StartMenu`
+`C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\StartMenu`
 
 #### Windows Vista/7 Backward Compatible {#Backward-Compatible}
 
@@ -65,25 +65,25 @@ Warning: RoboCopy (version?) causes a copy-loop with certain `/MIR` situations.
 `DIR C:\Users\<USERNAME> /AL` to list Reparse Points
 
 ```
-\<JUNCTION> Application Data [C:\Users\<user name>\AppData\Roaming]
+\<JUNCTION> Application Data [C:\Users\<USERNAME>\AppData\Roaming]
 
-\<JUNCTION> Cookies [C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Cookies]
+\<JUNCTION> Cookies [C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Cookies]
 
-\<JUNCTION> Local Settings [C:\Users\<user name>\AppData\Local]
+\<JUNCTION> Local Settings [C:\Users\<USERNAME>\AppData\Local]
 
-\<JUNCTION> My Documents [C:\Users\<user name>\Documents]
+\<JUNCTION> My Documents [C:\Users\<USERNAME>\Documents]
 
-\<JUNCTION> NetHood [C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Network Shortcuts]
+\<JUNCTION> NetHood [C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Network Shortcuts]
 
-\<JUNCTION> PrintHood \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts]
+\<JUNCTION> PrintHood \[C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts]
 
-\<JUNCTION> Recent \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Recent]
+\<JUNCTION> Recent \[C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Recent]
 
-\<JUNCTION> SendTo \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\SendTo]
+\<JUNCTION> SendTo \[C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\SendTo]
 
-\<JUNCTION> Start Menu \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Start Menu]
+\<JUNCTION> Start Menu \[C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu]
 
-\<JUNCTION> Templates \[C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Templates]
+\<JUNCTION> Templates \[C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Templates]
 ```
 
 `DIR C:\Users /AL`
@@ -97,21 +97,21 @@ Warning: RoboCopy (version?) causes a copy-loop with certain `/MIR` situations.
 Directory of `C:\Users\\_UserName_\AppData\Local`
 
 ```
-<JUNCTION> Application Data [C:\Users\\_UserName_\AppData\Local]
+<JUNCTION> Application Data [C:\Users\<USERNAME>\AppData\Local]
 
-<JUNCTION> History [C:\Users\\_UserName_\AppData\Local\Microsoft\Windows\History]
+<JUNCTION> History [C:\Users\<USERNAME>\AppData\Local\Microsoft\Windows\History]
 
-<JUNCTION> Temporary Internet Files [C:\Users\_UserName_\AppData\Local\Microsoft\Windows\Temporary Internet Files]
+<JUNCTION> Temporary Internet Files [C:\Users\<USERNAME>\AppData\Local\Microsoft\Windows\Temporary Internet Files]
 ```
 
 Directory of `C:\Users\\_UserName_\Documents`
 
 ```
-<JUNCTION> My Music [C:\Users\\_UserName_\Music]
+<JUNCTION> My Music [C:\Users\<USERNAME>\Music]
 
-<JUNCTION> My Pictures [C:\Users\\_UserName_\Pictures]
+<JUNCTION> My Pictures [C:\Users\<USERNAME>\Pictures]
 
-<JUNCTION> My Videos [C:\Users\\_UserName_\Videos]
+<JUNCTION> My Videos [C:\Users\<USERNAME>\Videos]
 ```
 
 | **Link**               | **Destination**                                                            |
@@ -255,6 +255,7 @@ Manage-bde; Windows PowerShell cmdlets for BitLocker; BitLocker Recovery Passwor
 +--Windows
 
 #### Volume File System Records {#Volume-System-Records}
+[SVI](SysVol.md)
 
 ``C:\System Volume Information``
 
