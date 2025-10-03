@@ -1,19 +1,19 @@
-### Popular Applications {#h.8dwdprfc5vfh" id="h.8dwdprfc5vfh
+### Popular Applications
 [Common Applications](Common-Apps.md)
 
-#### Internet Explorer {#h.6ottd7anoz6k" id="h.6ottd7anoz6k
+#### Internet Explorer
 
 Windows 7 (IE version 9)
 
-`C:\Users\<user name>\Downloads`
+`C:\Users\<USERNAME>\Downloads`
 
-`C:\Users\_<UserName>_\AppData\Local\Microsoft\Windows\Temporary Internet Files`
+`C:\Users\UserName\AppData\Local\Microsoft\Windows\Temporary Internet Files`
 
 `C:\Windows\Downloaded Program Files`
 
 Internet Explorer Temp Folder (IE Cache)
 
-``C:\Users\_<user name>_\AppData\Local\Microsoft\Windows\Temporary Internet Files``
+``C:\Users\UserName\AppData\Local\Microsoft\Windows\Temporary Internet Files``
 
 IE Cookies
 
@@ -23,7 +23,7 @@ Good to export this file using IE, File, Export when moving a user to another co
 
 Internet Explorer History
 
-`C:\Users\<user name>\AppData\Local\Microsoft\Windows\History`
+`C:\Users\<USERNAME>\AppData\Local\Microsoft\Windows\History`
 
 IE Typed URLs<br>
 `HKCU\Software\Microsoft\Internet Explorer\TypedUrls`
@@ -40,11 +40,11 @@ obfuscated form
 
 **Links and Shortcuts**
 
-``C:\Users\\_\<UserName>_\Links``
+``C:\Users\UserName\Links``
 
 Windows XP
 
-``C:\Documents and Settings\\_\<UserName>_\Application Data\Microsoft\Internet Explorer\Quick Launch``
+``C:\Documents and Settings\<UserName>\Application Data\Microsoft\Internet Explorer\Quick Launch``
 
 Must also enable the Toolbar, right click Toolbars, select
 
@@ -56,7 +56,7 @@ Windows 7
 
 **Internet Explorer image in web page, Set as background**
 
-``C:\Users\\_UserName_\AppData\Roaming\Microsoft\Internet Explorer\Internet Explorer Wallpaper.bmp``
+``C:\Users\UserName\AppData\Roaming\Microsoft\Internet Explorer\Internet Explorer Wallpaper.bmp``
 
 **Internet Security Properties, Sites, Add website to the zone**
 
@@ -73,7 +73,7 @@ URL Wildcard Sequence:
 Examples of valid patterns:
 ```
 *://*.microsoft.com
-http://\*.microsoft.co.jp
+http://*.microsoft.co.jp
 ftp://157.54.23.41/
 file:\localsvr\share
 *://157.54.100-200.*
@@ -99,11 +99,11 @@ URLs to add for viewing system files in MMC
 
 `.ins` automatic configuration file for customized browser configuration settings created with the Profile Manager
 
-#### Windows Live {#h.6kn930frdot9" id="h.6kn930frdot9
+#### Windows Live
 
 ``C:\Program Files (x86)\Common Files\Windows Live\.cache\``
 
-#### Outlook Express {#h.x4vc95c6dnco" id="h.x4vc95c6dnco
+#### Outlook Express
 
 **Outlook Express E-Mail Storage**
 
@@ -116,7 +116,7 @@ Address Book used by Outlook Express ``[9]``<br>
 
 Do other applications use it? Outlook, Windows? (`*.pab`, `*.wab`)
 
-#### Microsoft Office {#h.xcy11a3h6km8" id="h.xcy11a3h6km8
+#### Microsoft Office
 
 Components
 
@@ -190,7 +190,7 @@ Windows Live has Skydrive? which will replicate certain office settings to other
 These settings include dictionary, word.dot?, ...
 
 Recently Opened Office Docs<br>
-``C:\Users\<user name>\AppData\Roaming\Microsoft\Office\Recent``
+``C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Office\Recent``
 
 **Recovered Office files**<br>
 `C:\Users\<UserName>\AppData\Local\Microsoft\Office\UnsavedFiles`
@@ -203,13 +203,13 @@ Microsoft Query `"C:\Program Files\Microsoft Office\Office14\MSQRY32.EXE"`
 
 **Dictionary (.dic)**
 
-**Windows 7 and Windows Vista** `_drive_:\Users\<username>\AppData\Roaming\Microsoft\UProof`<br>
-**Windows XP** `_drive_:\Documents and Settings\<username>\Application Data\Microsoft\UProof`
+**Windows 7 and Windows Vista** `<DRIVE>:\Users\<USERNAME>\AppData\Roaming\Microsoft\UProof`<br>
+**Windows XP** `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\UProof`
 
 **Templates (.oft)**
 
-**Windows 7 and Windows Vista** `_drive_:\Users\<username>\AppData\Roaming\Microsoft\Templates`<br>
-**Windows XP** `_drive_:\Documents and Settings\<username>\Application Data\Microsoft\Templates`
+**Windows 7 and Windows Vista** `<DRIVE>:\Users\<USERNAME>\AppData\Roaming\Microsoft\Templates`<br>
+**Windows XP** `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Templates`
 
 **Templates**
 
@@ -262,8 +262,8 @@ customize the Document Inspector by adding Inspector modules
 
 **Microsoft Visio**
 
-* In Windows 7 and Windows Vista, the **My Shapes** directory is located at `C:\Users\<username>\Documents\My Shapes`.
-* In Windows XP and earlier, the **My Shapes** directory is located at `C:\Documents and Settings\<username>\My Documents\My Shapes`.
+* In Windows 7 and Windows Vista, the **My Shapes** directory is located at `C:\Users\<USERNAME>\Documents\My Shapes`.
+* In Windows XP and earlier, the **My Shapes** directory is located at `C:\Documents and Settings\<USERNAME>\My Documents\My Shapes`.
 
 **Microsoft Office 2013 Activation**
 
@@ -340,7 +340,7 @@ C:.
 .rels
 ```
 
-#### Microsoft Outlook {#h.41zogueol3x2" id="h.41zogueol3x2
+#### Microsoft Outlook
 
 Outlook-specific
 
@@ -500,18 +500,18 @@ Temp folder for Outlook attachments
 **Outlook Data File .PST**
 
 Earlier Outlook on XP, `C:\Documents and Settings\<UserName>\Local Settings\Application Data\Microsoft\Outlook`<br>
-Earlier Outlook on Vista `C:\Users\\<username>\AppData\Local\Microsoft\Outlook`<br>
+Earlier Outlook on Vista `C:\Users\<USERNAME>\AppData\Local\Microsoft\Outlook`<br>
 For Outlook 2010, `C:\Users\<Username>\Documents\Outlook`<br>
 
 Offline Outlook Mailbox<br>
-``C:\Users\<user name>\AppData\Local\Microsoft\Outlook\outlook.ost``
+``C:\Users\<USERNAME>\AppData\Local\Microsoft\Outlook\outlook.ost``
 
 **Outlook Data File .OST**
 
 If you enable use Cached Exchange Mode or to work offline, items in your Exchange mailbox are copied in an offline Outlook Data File (.ost)
 
 Outlook on XP, `C:\Documents and Settings\<UserName>\Local Settings\Application Data\Microsoft\Outlook`<br>
-Outlook on Vista `C:\Users\<username>\AppData\Local\Microsoft\Outlook`
+Outlook on Vista `C:\Users\<USERNAME>\AppData\Local\Microsoft\Outlook`
 
 **Outlook Archive**
 
@@ -533,14 +533,14 @@ The calendar log file is a binary file that cannot be read without a conversion 
 
 MAPI (Exchange), POP3, and SMTP log file:
 
-* Windows Vista \& 7 - `c:\Users\<user name>\AppData\Local\Temp\Outlook Logging\OPMLog.log`
-* Windows XP - `c:\Documents and Settings\<user name>\Local Settings\Temp\Outlook Logging\OPMLog.log`
+* Windows Vista \& 7 - `c:\Users\<USERNAME>\AppData\Local\Temp\Outlook Logging\OPMLog.log`
+* Windows XP - `c:\Documents and Settings\<USERNAME>\Local Settings\Temp\Outlook Logging\OPMLog.log`
 * `%temp%\olkas\yymmdd-time-fb.log` ?
 
 IMAP transport name is similar to:
 
-* Windows Vista \& 7 - `c:\Users\<user name>\AppData\Local\Temp\Outlook Logging\IMAP-ExampleCom-07\_19\_2012-14\_03\_44\_865.log`
-* Windows XP - `c:\Documents and Settings\<username>\Local Settings\Temp\Outlook Logging\IMAP-ExampleCom-07\_19\_2012-14\_03\_44\_865.log`
+* Windows Vista \& 7 - `c:\Users\<USERNAME>\AppData\Local\Temp\Outlook Logging\IMAP-ExampleCom-07\_19\_2012-14\_03\_44\_865.log`
+* Windows XP - `c:\Documents and Settings\<USERNAME>\Local Settings\Temp\Outlook Logging\IMAP-ExampleCom-07\_19\_2012-14\_03\_44\_865.log`
 
 Outlook Profile
 
@@ -556,8 +556,8 @@ Test E-mail AutoConfiguration...
 
 **Personal Address Book (.PAB)**
 
-**Windows 7 and Windows Vista** `_drive_:\Users\\<username>\AppData\Local\Microsoft\Outlook`<br>
-**Windows XP** `_drive_:\Documents and Settings\\<username>\Local Settings\Application Data\Microsoft\Outlook`
+**Windows 7 and Windows Vista** `<DRIVE>:\Users\<USERNAME>\AppData\Local\Microsoft\Outlook`<br>
+**Windows XP** `<DRIVE>:\Documents and Settings\<USERNAME>\Local Settings\Application Data\Microsoft\Outlook`
 
 Personal Address Books (.pab) are not supported in Outlook 2010. When you upgrade to Outlook 2010, you are prompted to import any .pab file into Contacts. If you choose not to import the .pab file when you first run Outlook 2010, you can import it later by using the **Import** command in the Microsoft Office Backstage view.
 
@@ -567,27 +567,27 @@ The Offline Address Book (.oab) is used by Microsoft Exchange Server accounts. I
 
 You do not have to back up or restore this file. This is file is created and updated automatically.
 
-**Windows 7 and Windows Vista** `_drive_:\Users\<username>\AppData\Local\Microsoft\Outlook`<br>
-**Windows XP** `_drive_:\Documents and Settings\<username>\Local Settings\Application Data\Microsoft\Outlook`
+**Windows 7 and Windows Vista** `<DRIVE>:\Users\<USERNAME>\AppData\Local\Microsoft\Outlook`<br>
+**Windows XP** `<DRIVE>:\Documents and Settings\<USERNAME>\Local Settings\Application Data\Microsoft\Outlook`
 
 **Navigation Pane settings (.xml)**
 
 This file includes information about the contents of the Navigation Pane.
 
-**Windows 7 and Windows Vista** `_drive_:\Users\<username>\AppData\Roaming\Outlook\<profile name>.xml`<br>
-**Windows XP** `_drive_:\Documents and Settings\<username>\Application Data\Microsoft\Outlook\<profile name>.xml`
+**Windows 7 and Windows Vista** `<DRIVE>:\Users\<USERNAME>\AppData\Roaming\Outlook\<profile name>.xml`<br>
+**Windows XP** `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Outlook\<profile name>.xml`
 
 **Registered Microsoft Exchange extensions (.dat)**
 
-**Windows 7 and Windows Vista**  `_drive_:\Users\\<username>\AppData\Local\Microsoft\Outlook``
+**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\AppData\Local\Microsoft\Outlook``
 
-**Windows XP**  `_drive_:\Documents and Settings\\<username>\Local Settings\Application Data\Microsoft\Outlook``
+**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Local Settings\Application Data\Microsoft\Outlook``
 
 **Rules (.rwz)**
 
-**Windows 7 and Windows Vista**  `_drive_:\Users\\<username>\AppData\Roaming\Microsoft\Outlook``
+**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\AppData\Roaming\Microsoft\Outlook``
 
-**Windows XP**  `_drive_:\Documents and Settings\\<username>\Application Data\Microsoft\Outlook``
+**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Outlook``
 
 **Note** If you upgraded to Outlook 2010 from a version of Outlook earlier than Microsoft Outlook 2002, you might have an .rwz file on your computer's hard disk drive. The .rwz file is no longer needed, and the information about rules is now kept on the server running Microsoft Exchange, and in the Outlook Data File (.pst) for POP3 and IMAP e-mail accounts. You can delete the file.
 
@@ -595,15 +595,15 @@ If you use the Rules Import and Export feature, the default location for .rwz fi
 
 **Print styles (Outlprnt with no extension)**
 
-``**Windows Vista** _drive_:\Users\\<username>\AppData\Roaming\Microsoft\Outlook``
+``**Windows Vista** <DRIVE>:\Users\<USERNAME>\AppData\Roaming\Microsoft\Outlook``
 
-**Windows XP**  `_drive_:\Documents and Settings\\<username>\Application Data\Microsoft\Outlook``
+**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Outlook``
 
 **Signatures (.rtf, .txt, .htm)**
 
-**Windows 7 and Windows Vista**  `_drive_:\Users\\<username>\AppData\Roaming\Microsoft\Signatures``
+**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\AppData\Roaming\Microsoft\Signatures``
 
-**Windows XP**  `_drive_:\Documents and Settings\\<username>\Application Data\Microsoft\Signatures``
+**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Signatures``
 
 A signature named “Company default” will generate the following files and folder structure.<br>
 ```
@@ -621,19 +621,19 @@ C:\Users\UserName\AppData\Roaming\Microsoft\Signatures\`
 
 If installed, and personal or computer-wide.
 
-**Windows 7 and Windows Vista**  `_drive_:\Program Files\Common Files\Microsoft Shared\Stationery``
+**Windows 7 and Windows Vista**  `<DRIVE>:\Program Files\Common Files\Microsoft Shared\Stationery``
 
-``**Windows 7 and Windows Vista 64-bit with Outlook 2010 32-bit** _drive_:\Program Files (x86)\Common Files\Microsoft Shared\Stationery``
+``**Windows 7 and Windows Vista 64-bit with Outlook 2010 32-bit** <DRIVE>:\Program Files (x86)\Common Files\Microsoft Shared\Stationery``
 
-**Windows XP**  `_drive_:\Program Files\Common Files\Microsoft Shared\Stationery``
+**Windows XP**  `<DRIVE>:\Program Files\Common Files\Microsoft Shared\Stationery``
 
 ``C:\Users\UserName\AppData\Roaming\Microsoft\Stationery``
 
 **Custom forms**
 
-**Windows 7 and Windows Vista**  `_drive_:\Users\\<username>\AppData\Local\Microsoft\Forms``
+**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\AppData\Local\Microsoft\Forms``
 
-**Windows XP**  `_drive_:\Documents and Settings\\<username>\Local Settings\Application Data\Microsoft\Forms``
+**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Local Settings\Application Data\Microsoft\Forms``
 
 Forms
 
@@ -643,17 +643,17 @@ Forms
 
 **Send/Receive settings (.srs)**
 
-**Windows 7 and Windows Vista**  `_drive_:\Users\<username>\AppData\Roaming\Microsoft\Outlook``
+**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\AppData\Roaming\Microsoft\Outlook``
 
-**Windows XP**  `_drive_:\Documents and Settings\<username>\Application Data\Microsoft\Outlook``
+**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Outlook``
 
 ``\<Profile Name>.srs``
 
 **Message (.msg, .htm, .rtf)**
 
-**Windows 7 and Windows Vista**  `_drive_:\Users\<username>\Documents``
+**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\Documents``
 
-**Windows XP**  `_drive_:\Documents and Settings\<username>\My Documents``
+**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\My Documents``
 
 **.PRF file for Outlook profile**
 
@@ -668,7 +668,7 @@ MFCMAPI
 
 MRMAPI
 
-#### Microsoft Media Player {#h.w3s6l6576v3j" id="h.w3s6l6576v3j
+#### Microsoft Media Player
 
 Files recently accessed by Windows Media Player
 
@@ -676,7 +676,7 @@ Files recently accessed by Windows Media Player
 
 (XP Only?)
 
-#### Microsoft Media Center {#h.3whiub1u4n16" id="h.3whiub1u4n16
+#### Microsoft Media Center
 
 Windows 8 Media Center includes DVD playing CODEC, not Blu-Ray, and codec doesn’t work for Media Player.
 
@@ -692,7 +692,7 @@ How to Backup and Restore Windows Media Player DRM Licenses or Media Usage Right
 
 [http://www.mydigitallife.info/individualize-windows-media-player-wmp-for-fairuse4wm-and-invalid-license-error/](http://www.mydigitallife.info/individualize-windows-media-player-wmp-for-fairuse4wm-and-invalid-license-error/)
 
-#### Mozilla Firefox {#h.4gaxhfbgx3zj" id="h.4gaxhfbgx3zj
+#### Mozilla Firefox
 
 **User Profile**
 
@@ -712,7 +712,7 @@ The places.sqlite file contains all your Firefox bookmarks and the list of all t
 
 Firefox:
 
-``C:\Users\<user name>\AppData\Local\Mozilla\Firefox\Profiles\<some profile number>.default\``
+``C:\Users\<USERNAME>\AppData\Local\Mozilla\Firefox\Profiles\<some profile number>.default\``
 
 ``\*.sqllite files``
 
@@ -721,23 +721,23 @@ Firefox:
 
 Firefox Cached Pages
 
-``C:\Users\<user name>\AppData\Local\Mozilla\Firefox\Profiles\<some profile number>.default\Cache``
+``C:\Users\<USERNAME>\AppData\Local\Mozilla\Firefox\Profiles\<some profile number>.default\Cache``
 
 [http://www.securityfocus.com/infocus/1832](http://www.securityfocus.com/infocus/1832)
 
 Firefox Form History File<br>
-``C:\Users\<user name>\AppData\Roaming\Mozilla\Firefox\Profiles\<some profile number>.default\formhistory.sqlite``
+``C:\Users\<USERNAME>\AppData\Roaming\Mozilla\Firefox\Profiles\<some profile number>.default\formhistory.sqlite``
 
 Firefox Passwords File<br>
-``C:\Users\<user name>\AppData\Roaming\Mozilla\Firefox\Profiles\<some profile number>.default\signons.sqlite``
+``C:\Users\<USERNAME>\AppData\Roaming\Mozilla\Firefox\Profiles\<some profile number>.default\signons.sqlite``
 
 Firefox Cookies<br>
-``C:\Users\<user name>\AppData\Roaming\Mozilla\Firefox\Profiles\<some profile number>.default\cookies.sqlite``
+``C:\Users\<USERNAME>\AppData\Roaming\Mozilla\Firefox\Profiles\<some profile number>.default\cookies.sqlite``
 
 #### Adobe Flash Player {#FlashPlayer}
 
 Flash Cookies Location<br>
-``C:\Users\<username>\AppData\Roaming\Macromedia\Flash Player\\#SharedObjects\<random value>\``
+``C:\Users\<USERNAME>\AppData\Roaming\Macromedia\Flash Player\\#SharedObjects\<random value>\``
 
 Adobe Flash Player Update Configuration
 
@@ -748,7 +748,7 @@ Adobe Flash Player Background Updater
 
 Administrator Guide``[17]``
 
-#### Apple iTunes {#h.79jwcyc34i7c" id="h.79jwcyc34i7c
+#### Apple iTunes
 
 Beginning with new installations of version 10.? `C:\Users\UserName\Music\iTunes\iTunes Media`
 
@@ -797,7 +797,7 @@ Devices
 
 Java doesn’t provide downloads of MSI files. They can be located here during/after installation``[23]``<br>
 ``C:\Users\<user>\AppData\LocalLow\Sun\Java\jre1.7.0_09\jre1.7.0_09.msi``<br>
-``C:\Documents and Settings\<user>\Local Settings\ApplicationData\Sun\Java\jre1.6.0_37_x64\jre1.6.0_37.msi``
+``C:\Documents and Settings\<USERNAME>\Local Settings\ApplicationData\Sun\Java\jre1.6.0_37_x64\jre1.6.0_37.msi``
 
 **Autoupdate Registry key**
 
@@ -904,7 +904,7 @@ Copyright © Microsoft Corporation. All rights reserved.
 Portions of this software are based in part on the work of the Independent JPEG Group.
 ```
 
-#### Dell {#h.1toqrykete5x" id="h.1toqrykete5x
+#### Dell
 
 Get/Convert Service Tag and Express Service Code
 
@@ -914,7 +914,7 @@ Digital Line Detect
 
 Internet Name Lookup helper(sp?)
 
-#### HP {#h.276naol8b2it" id="h.276naol8b2it
+#### HP
 
-Default folder for extracted drivers (SPnnnn files and printer drivers)
+Default folder for extracted drivers (SP*nnnn* files and printer drivers)
 
