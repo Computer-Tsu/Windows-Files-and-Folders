@@ -297,6 +297,8 @@ https://www.7-zip.org/download.html<br>
 AngryIP Scanner<br>
 `winget install angryziber.AngryIPScanner`
 
+https://www.nirsoft.net/utils/lan_ip_scanner.html
+
 [IP Scanner powered by Lansweeper](https://www.lansweeper.com/resources/free-tools/ip-scanner/)<br>
 `winget install Lansweeper.LsAgent`
 
