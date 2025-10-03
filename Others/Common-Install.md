@@ -35,8 +35,8 @@ https://learn.microsoft.com/en-us/troubleshoot/windows-client/windows-troublesho
 
 
 ## Microsoft XML Notepad download
-DL:<br>
-Alt: (http://microsoft.github.io/XmlNotepad)
+DL:[XML Notepad 2007 (Legacy)](http://www.microsoft.com/en-us/download/details.aspx?id=7973)<br>
+Alt: (http://microsoft.github.io/XmlNotepad) or `winget add -e --id Microsoft.XMLNotepad`
 
 ### Microsoft .NET Runtime download
 https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48
@@ -64,7 +64,7 @@ EOL<br>
 https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net40-web-installer<br>
 https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net40-offline-installer
 
-
+### Microsoft VCR
 Visual C++ Redistributable for Visual Studio 2015<br>
 https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe<br>
 https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x86.exe
@@ -90,6 +90,10 @@ https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8
 
 ## Access Runtime
 
+Microsoft Access 365(https://support.microsoft.com/en-us/office/download-and-install-microsoft-365-access-runtime-185c5a32-8ba9-491e-ac76-91cbe3ea09c9)
+Microsoft Access 2016(https://www.microsoft.com/en-us/download/details.aspx?id=50040)
+Microsoft Access 2013(https://www.microsoft.com/en-us/download/details.aspx?id=39358)
+
 ## Windows Installer (WinGet for new Windows installs)
 ### Issues with first time run on new systems. Running as Admin on Standard USer account.
 `winget config .yaml`
@@ -101,7 +105,7 @@ https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8
 
 ## PowerToys
 
-Microsoft Security Compliance Toolkit 1.0<br>
+#### Microsoft Security Compliance Toolkit 1.0
 https://www.microsoft.com/en-us/download/details.aspx?id=55319
 
 ## Drivers for imaging HP, Dell, Lenovo
@@ -130,7 +134,7 @@ https://www.microsoft.com/en-us/download/details.aspx?id=55319
 [Visio Standard 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/VisioStdRetail.img)  
 [Visio Professional 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/VisioProRetail.img)
 
-*can change `en-US` to `de-DE`*
+*can change `en-US` to `de-DE` or fr-FR, es-ES, it-IT, pt-BR, ja-JP, zh-CN, and ru-RU*
 
 
 
