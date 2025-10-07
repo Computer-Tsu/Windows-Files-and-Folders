@@ -32,6 +32,40 @@ More shares found in Active Directory section above
 
 ### Environmental Variables {#h.27tpyo2kf7eg" id="h.27tpyo2kf7eg
 
+
+### Credential (Password) Storage
+
+#### Credential Manager Command Line Utility
+
+`%WinDir%\System32\cmdkey.exe /list`
+
+
+```
+Install-Module -Name CredentialManager -Scope CurrentUser
+# This shows target names and some metadata
+Get-StoredCredential -Target "TargetName"
+```
+
+`Get-StoredCredential -All | Format-Table Target, UserName`
+
+`Remove-StoredCredential -Target "TERMSRV/myserver.example.com"`
+
+
+#### Windows Vault (Web/Windows Credentials)
+
+`vaultcmd /list`
+
+`vaultcmd /listcreds /vault:"Windows Credentials"'
+
+
+#### Open Credential Manager (GUI):
+
+`control /name Microsoft.CredentialManager`
+
+`rundll32.exe keymgr.dll,KRShowKeyMgr`
+
+
+
 ``1. [http://technet.microsoft.com/en-us/library/cc783264%28v=ws.10%29.aspx](http://technet.microsoft.com/en-us/library/cc783264\(v=ws.10\).aspx) ↑``
 2. [http://support.microsoft.com/kb/154599](http://support.microsoft.com/kb/154599) ↑
 3. [http://superuser.com/questions/38476/this-file-came-from-another-computer-how-can-i-unblock-all-the-files-in-a](http://superuser.com/questions/38476/this-file-came-from-another-computer-how-can-i-unblock-all-the-files-in-a) ↑
