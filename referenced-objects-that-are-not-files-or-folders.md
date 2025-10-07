@@ -55,7 +55,7 @@ Get-StoredCredential -Target "TargetName"
 
 `vaultcmd /list`
 
-`vaultcmd /listcreds /vault:"Windows Credentials"'
+`vaultcmd /listcreds /vault:"Windows Credentials"`
 
 
 #### Open Credential Manager (GUI):
