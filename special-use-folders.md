@@ -185,7 +185,7 @@ BitLocker Drive Encryption Administration Utilities (only Windows 8, Windows Ser
 
 Manage-bde; Windows PowerShell cmdlets for BitLocker; BitLocker Recovery Password Viewer for Active Directory; BitLocker Network Unlock Provider
 
-``Junctions in C:\ProgramData``
+Junctions in `C:\ProgramData`
 
 | **Link**         | **Destination**                             |
 | ---------------- | ------------------------------------------- |
@@ -198,8 +198,8 @@ Manage-bde; Windows PowerShell cmdlets for BitLocker; BitLocker Recovery Passwor
 
 ``C:\ProgramData\Microsoft\Windows\Start Menu``
 
-``C:\ProgramData\``
-
+```
+C:\ProgramData\
 +--Microsoft
 +--Assistance
 +--Crypto
@@ -216,6 +216,7 @@ Manage-bde; Windows PowerShell cmdlets for BitLocker; BitLocker Recovery Passwor
 +--User Account Pictures
 +--Vault
 +--Windows
+```
 
 #### Volume File System Records {#Volume-System-Records}
 [SVI](SysVol.md)
