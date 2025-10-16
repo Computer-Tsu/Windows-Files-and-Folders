@@ -4,11 +4,11 @@
 
 See also: SetX.exe
 
-``C:\\>SET /?``
+``C:\>SET /?``
 
 Displays, sets, or removes cmd.exe environment variables.
 
-``SET \[variable=\[string]]``
+``SET [variable=[string]]``
 
 variable Specifies the environment-variable name.
 
@@ -40,7 +40,7 @@ Two new switches have been added to the SET command:
 
 `SET /A expression`
 
-``SET /P variable=\[promptString]``
+``SET /P variable=[promptString]``
 
 The /A switch specifies that the string to the right of the equal sign
 
@@ -88,15 +88,15 @@ would expand the PATH environment variable, substituting each occurrence of "str
 
 May also specify substrings for an expansion.
 
-``%PATH:\~10,5%``
+``%PATH:~10,5%``
 
 would expand the PATH environment variable, and then use only the 5 characters that begin at the 11th (offset 10) character of the expanded result. If the length is not specified, then it defaults to the remainder of the variable value. If either number (offset or length) is negative, then the number used is the length of the environment variable value added to the offset or length specified.
 
-``%PATH:\~-10%``
+``%PATH:~-10%``
 
 would extract the last 10 characters of the PATH variable.
 
-``%PATH:\~0,-2%``
+``%PATH:~0,-2%``
 
 would extract all but the last 2 characters of the PATH variable.
 
@@ -130,7 +130,7 @@ in that it will NOT build up a list of files in the current directory, but inste
 
 So the actual FOR loop we are executing is:
 
-``for %i in (\*) do set LIST= %i``
+``for %i in (*) do set LIST= %i``
 
 which just keeps setting LIST to the last file found.
 
@@ -160,17 +160,7 @@ for %i in (*) do set LIST=!LIST! %i
 echo %LIST%
 ```
 
-If Command Extensions are enabled, then there are several dynamic
-
-environment variables that can be expanded but which don't show up in
-
-the list of variables displayed by SET. These variable values are
-
-computed dynamically each time the value of the variable is expanded.
-
-If the user explicitly defines a variable with one of these names, then
-
-that definition will override the dynamic one described below:
+If Command Extensions are enabled, then there are several dynamic environment variables that can be expanded but which don't show up in the list of variables displayed by SET. These variable values are computed dynamically each time the value of the variable is expanded. If the user explicitly defines a variable with one of these names, then that definition will override the dynamic one described below:
 
 ``%CD% - expands to the current directory string.``
 
@@ -204,31 +194,31 @@ version number.
 
 ``ComSpec=C:\Windows\system32\cmd.exe``
 
-``FP\_NO\_HOST\_CHECK=NO``
+``FP_NO_HOST_CHECK=NO``
 
 `HOMEDRIVE=M:`
 
 ``HOMEPATH=\\``
 
-``HOMESHARE=\\\Server\\\<UserName>``
+``HOMESHARE=\\Server\<UserName>``
 
-``LOCALAPPDATA=C:\Users\\\<UserName>\AppData\Local``
+``LOCALAPPDATA=C:\Users\<UserName>\AppData\Local``
 
-``LOGONSERVER=\\\SERVER``
+``LOGONSERVER=\\SERVER``
 
-``NUMBER\_OF\_PROCESSORS=4``
+``NUMBER_OF_PROCESSORS=4``
 
-``OS=Windows\_NT``
+``OS=Windows_NT``
 
 `PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC`
 
-``PROCESSOR\_ARCHITECTURE=AMD64``
+``PROCESSOR_ARCHITECTURE=AMD64``
 
-``PROCESSOR\_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel``
+``PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel``
 
-``PROCESSOR\_LEVEL=6``
+``PROCESSOR_LEVEL=6``
 
-``PROCESSOR\_REVISION=2a07``
+``PROCESSOR_REVISION=2a07``
 
 ``ProgramData=C:\ProgramData``
 
@@ -240,7 +230,7 @@ version number.
 
 PROMPT=$P$G
 
-``PSModulePath=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\\``
+``PSModulePath=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\``
 
 ``PUBLIC=C:\Users\Public``
 
@@ -250,25 +240,25 @@ SystemDrive=C:
 
 ``SystemRoot=C:\Windows``
 
-``TEMP=C:\Users\\_JSMITH\~1_\AppData\Local\Temp``
+``TEMP=C:\Users\_JSMITH~1_\AppData\Local\Temp``
 
-``TMP=C:\Users\\_JSMITH\~1_\AppData\Local\Temp``
+``TMP=C:\Users\_JSMITH~1_\AppData\Local\Temp``
 
 USERDNSDOMAIN=_MYDOMAIN.COM_
 
 USERDOMAIN=_MYDOMAIN_
 
-``USERNAME=\<UserName>``
+``USERNAME=<UserName>``
 
-``USERPROFILE=C:\Users\\\<UserName>``
+``USERPROFILE=C:\Users\<UserName>``
 
 ``windir=C:\Windows``
 
-``windows\_tracing\_flags=3``
+``windows_tracing_flags=3``
 
 PowerShell
 
-``\[PS] C:\>get-variable``
+``[PS] C:\>get-variable``
 
 ```
 Name Value
@@ -276,13 +266,13 @@ Name Value
 $ ~\history.csv
 ? True
 ^ Get-History
-\_
+_
 args {}
-CommonConnectFunctions\_Loca... {res\_0005, res\_0004, res\_0001, res\_0000, res\_0003, res\_0002}
+CommonConnectFunctions_Loca... {res_0005, res_0004, res_0001, res_0000, res_0003, res_0002}
 ConfigurationPath C:\Program Files\Microsoft\Exchange Server\V14\bin\Microsoft.Exchange.Configuration.O...
 ConfirmPreference High
 connectedFqdn MYSERVER.mydomain.com
-ConnectFunctions\_LocalizedS... {res\_0001, res\_0000, res\_0003, res\_0002, res\_0005, res\_0004, res\_0007, res\_0006, res\_...
+ConnectFunctions_LocalizedS... {res_0001, res_0000, res_0003, res_0002, res_0005, res_0004, res_0007, res_0006, res_...
 ConsoleFileName
 DebugPreference SilentlyContinue
 Error {The term 'testpath' is not recognized as the name of a cmdlet, function, script file...
@@ -314,7 +304,7 @@ null
 OutputEncoding System.Text.ASCIIEncoding
 partialTypeFile C:\Program Files\Microsoft\Exchange Server\V14\bin\Exchange.partial.Types.ps1xml
 PID 8600
-PROFILE \\AppServer\Users\User Name\Data\Documents\WindowsPowerShell\Microsoft.PowerShell\_pr...
+PROFILE \\AppServer\Users\User Name\Data\Documents\WindowsPowerShell\Microsoft.PowerShell_pr...
 ProgressPreference Continue
 PSBoundParameters {}
 PSCulture en-US
@@ -326,7 +316,7 @@ PSSessionOption System.Management.Automation.Remoting.PSSessionOption
 PSUICulture en-US
 PSVersionTable {CLRVersion, BuildVersion, PSVersion, WSManStackVersion, PSCompatibleVersions, Serial...
 PWD C:\
-RemoteExchange\_LocalizedStr... {res\_0003, res\_help\_for\_cmdlet, res\_0005, res\_0007, res\_0009, res\_general\_help, res\_t...
+RemoteExchange_LocalizedStr... {res_0003, res_help_for_cmdlet, res_0005, res_0007, res_0009, res_general_help, res_t...
 remoteSession System.Management.Automation.Runspaces.PSSession
 ReportErrorShowExceptionClass 0
 ReportErrorShowInnerException 0
