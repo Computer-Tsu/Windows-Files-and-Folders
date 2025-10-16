@@ -472,9 +472,8 @@ Some versions cannot create user named “Admin” ?
 
 Administrator, Default, Public, Guest, System
 
-The name cannot be identical to any other user, computer, or group name in the domain. It can contain up to 20 uppercase or lowercase characters except for the following:```
-" / \ [ ] : ; | = , + * ? <>
-```
+The name cannot be identical to any other user, computer, or group name in the domain. It can contain up to 20 uppercase or lowercase characters except for the following: `" / \ [ ] : ; | = , + * ? <> `
+
 
 #### Recycle Bin {#recycle-bin}
 
@@ -691,7 +690,7 @@ Cryptography (KSecPkg)
 
 PnP Filter (fvevol)
 
-``\[hwpolicy]``
+``[hwpolicy]``
 
 Network (Mup)
 
@@ -713,7 +712,7 @@ Video Save (VgaSave, RDPCDD, RDPENCDD, RDPREFMP)
 
 File system (Msfs, Npfs)
 
-``PNP\_TDI (tdx, \[Anti-Virus], NetBT, AFD)``
+``PNP_TDI (tdx, [Anti-Virus], NetBT, AFD)``
 
 NDIS (WfpLwf, Psched, nm3)
 
@@ -721,7 +720,7 @@ NetBIOSGroup (NetBIOS)
 
 Extended base (Serial)
 
-``\[Anti-Virus]``
+``[Anti-Virus]``
 
 (blbdrive)
 
@@ -743,11 +742,11 @@ Event Log (AMD External Events Utility, eventlog)
 
 Audio Group (AudioEndpointBuilder, AudioSrv)
 
-``ProfSvc\_Group (CscService, grpsvc, ProfSvc, SENS, Themes)``
+``ProfSvc_Group (CscService, grpsvc, ProfSvc, SENS, Themes)``
 
 UIGroup (UxSms)
 
-``MS\_WindowsLocalValidation (SamSs)``
+``MS_WindowsLocalValidation (SamSs)``
 
 ...
 
@@ -799,7 +798,7 @@ Scheduled Tasks
 
 | **Image Name**            | **Description**                                       | **Command Line**                                                                                                                                                                                                                                                    |
 | ------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| System                    | NT Kernel \\& System                                    | C:\Windows\system32\ntoskrnl.exe                                                                                                                                                                                                                                    |
+| System                    | NT Kernel & System                                    | C:\Windows\system32\ntoskrnl.exe                                                                                                                                                                                                                                    |
 | smss.exe                  | Windows Session Manager                               | \SystemRoot\System32\smss.exe                                                                                                                                                                                                                                       |
 | svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k DcomLaunch                                                                                                                                                                                                                       |
 | csrss.exe                 | Client Server Runtime Process                         | %SystemRoot%\system32\csrss.exe ObjectDirectory=\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=winsrv:ConServerDllInitialization,2 ServerDll=sxssrv,4 ProfileC |
@@ -908,7 +907,7 @@ If double-click on shortcut, or single click on start menu won’t open, try rig
 
 How to repair .EXE (.LNK?) after hijack by malware
 
-``What the EXE registry key looks like (CLASSES ROOT exefile ?), HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\\.exe\OpenWithList``
+What the EXE registry key looks like (CLASSES ROOT exefile ?), ``HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\\.exe\OpenWithList``
 
 copy an EXE to .COM to run a program
 
@@ -922,17 +921,17 @@ plant a task to open CMD interactive running in System context
 
 Test anti-virus by using the EICAR.com file.
 
-``X 5 O ! P % @ A P \[ 4 \ P Z X 5 4 ( P ^ ) 7 C C ) 7 } $``
-
+```
+X 5 O ! P % @ A P \[ 4 \ P Z X 5 4 ( P ^ ) 7 C C ) 7 } $
 E I C A R - S T A N D A R D - A N T I V I R U S - T E S T - F I L E !
-
-``$ H + H \*``
+$ H + H \*
+```
 
 #### PowerShell {#h.ji072fdo4adz" id="h.ji072fdo4adz
 
 **PowerShell ISE**
 
-``$Profile C:\Users\\_Username_\Documents\WindowsPowerShell\Microsoft.PowerShell\_profile.ps1``
+$Profile `C:\Users\\_Username_\Documents\WindowsPowerShell\Microsoft.PowerShell\_profile.ps1`
 
 ``PSModule... env var. C:\Windows\system32\WindowsPowerShell\v1.0\Modules\\``
 
@@ -941,7 +940,7 @@ signing PowerShell scripts can be done with Digital Certificate for VBA Projects
 ``C:\Windows\System32\WindowsPowerShell\v1.0\Modules>tree``
 
 Folder PATH listing for volume OS
-
+```
 Volume serial number is A23D-B9F3
 C:.
 +-----FailoverClusters
@@ -963,6 +962,7 @@ C:.
 | +-----en-US
 +-----WebAdministration
 +-----en-US
+```
 
 ``C:\Windows\System32\WindowsPowerShell\v1.0\Modules>``
 
@@ -978,11 +978,11 @@ Microsoft.GroupPolicy.Commands.dll-Help.xml
 
 bin location for v1 - v3
 
-``C:\Windows\System32\WindowsPowerShell\v1.0\\``
+``C:\Windows\System32\WindowsPowerShell\v1.0\``
 
 PowerShell 3.0 Task Scheduler storage folder for job definitions
 
-``C:\Users\\_\<UserName>_\Appdata\Local\Microsoft\Windows\PowerShell\ScheduledJobs``
+``C:\Users\<UserName>\Appdata\Local\Microsoft\Windows\PowerShell\ScheduledJobs``
 
 Import and Export http://www.petri.co.il/export-import-powershell-scheduled-jobs.htm
 
@@ -1060,7 +1060,7 @@ To select Windows Classic, leave the box
 
 above blank and enable this setting
 
-``C:\Users\<UserName>\AppData\Microsoft\Windows\\...Themes?``
+``C:\Users\<UserName>\AppData\Microsoft\Windows\...Themes?``
 
 ``C:\Windows\Resources``
 
@@ -1073,13 +1073,11 @@ above blank and enable this setting
 **Change Your Picture**
 
 The picture you choose will appear on the Welcome screen and on the Start menu.
-
-``C:\ProgramData\Microsoft\User Account Pictures\Default Pictures\\``
-
-``C:\ProgramData\Microsoft\User Account Pictures\Username.dat``
-
-``C:\ProgramData\Microsoft\User Account Pictures\User.bmp``
-
+```
+C:\ProgramData\Microsoft\User Account Pictures\Default Pictures\
+C:\ProgramData\Microsoft\User Account Pictures\Username.dat
+C:\ProgramData\Microsoft\User Account Pictures\User.bmp
+```
 **Icons**
 
 ``C:\Windows\system32\url.dll``
@@ -1154,7 +1152,7 @@ RIS, WIM
 
 #### Windows Upgrade {#h.fp1pnt29yzyp" id="h.fp1pnt29yzyp
 
-``C:\Users\Username\AppData\Local\Apps\Windows 7 USB DVD Download Tool\\``
+``C:\Users\Username\AppData\Local\Apps\Windows 7 USB DVD Download Tool\``
 
 ``C:\Windows\System32\migwiz.lnk %windir%\system32\migwiz\migwiz.exe``
 
@@ -1178,13 +1176,13 @@ User State Migration Tool (USMT)
 
 ``C:\Windows.old\Windows``
 
-``C:\Windows.old\\?``
+``C:\Windows.old\?``
 
 **Windows 8.1 Update**
 
 [http://support.microsoft.com/kb/2919355](http://technet.microsoft.com/en-us/library/cc742070.aspx)
 
-``\[April 2014]``
+``[April 2014]``
 
 #### Windows Activation {#h.phwfv5lu9ajc" id="h.phwfv5lu9ajc
 
@@ -1250,7 +1248,7 @@ How to slipstream hotfixes that replace pre-existing driver files
 
 3rd party tools
 
-``http://en.wikipedia.org/wiki/List\_of\_remastering\_software``
+``http://en.wikipedia.org/wiki/List_of_remastering_software``
 
 nLite
 
@@ -1264,9 +1262,9 @@ RyanVM
 
 ``? C:\WINDOWS\Installer\[3] is this for programs or patches?``
 
-``C:\MSOCache\All Users\\``
+``C:\MSOCache\All Users\``
 
-``C:\Windows\Downloaded Installations\\{``
+``C:\Windows\Downloaded Installations\{``
 
 ``Web Platform Installer? \<UserName>\AppData\Local\Microsoft\WebSetup``
 
@@ -1286,7 +1284,7 @@ msizap for uninstall
 
 **Install apps in safe mode**
 
-``HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\\``
+``HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\``
 
 and/or
 
@@ -1294,7 +1292,7 @@ and/or
 
 ``REG\_SZ MSIServer=Service``
 
-``REG ADD “HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\MSIServer” /VE /T REG\_SZ /F /D "Service" \\&& net start msiserver``
+``REG ADD “HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\MSIServer” /VE /T REG\_SZ /F /D "Service" && net start msiserver``
 
 See also 3rd-arty app SafeMSI
 
@@ -1332,13 +1330,13 @@ For use as a scheduled task
 
 Command line switches
 
-``Selection Scripts (\*.bks)``
+``Selection Scripts (*.bks)``
 
-``C:\Documents and Settings\\%Username%\Local Settings\Application Data\Microsoft\Windows NT\NTBackup\data``
+``C:\Documents and Settings\%Username%\Local Settings\Application Data\Microsoft\Windows NT\NTBackup\data``
 
 Log Results
 
-``C:\Documents and Settings\\%Username%\Local Settings\Application Data\Microsoft\Windows NT\NTBackup\data\backup01.log``
+``C:\Documents and Settings\%Username%\Local Settings\Application Data\Microsoft\Windows NT\NTBackup\data\backup01.log``
 
 ``Files excluded for all users by default\[4]:``
 
@@ -1407,7 +1405,7 @@ Is there also a HKCU key?
 
 #### Fax {#h.pbyfyfrqt3za" id="h.pbyfyfrqt3za
 
-``MSFax "C:\ProgramData\Microsoft\Windows NT\MSFax"``
+MSFax `"C:\ProgramData\Microsoft\Windows NT\MSFax"`
 
 Fax Printer
 
@@ -1697,7 +1695,7 @@ ODBC, Media Player, IE
 
 ``odbcad32.exe %windir%\SysWOW64\odbcad32.exe``
 
-``Problem Step Recorder C:\Windows\System32\PSR.exe and/or C:\Windows\SysWOW64``
+Problem Step Recorder `C:\Windows\System32\PSR.exe` and/or `C:\Windows\SysWOW64`
 
 ``msconfig C:\Windows\System32 \[Win7] or ? \[WinXP]``
 
@@ -1705,13 +1703,13 @@ god-mode folder Everything.{ED7BA470-8E54-465E-825C-99712043E01C}
 
 (Paths don’t work to launch program...)
 
-``Reliability Monitor C:\Windows\explorer.exe /factory,{ceff45ee-c862-41de-aee2-a022c81eda92} -Embedding``
+Reliability Monitor `C:\Windows\explorer.exe /factory,{ceff45ee-c862-41de-aee2-a022c81eda92} -Embedding`
 
-``Reliability Monitor - Shortcut search-ms:displayname=%20Search%20programs%20and%20files\&crumb=System.Generic.String%3Areli\&crumb=location:%3A%3A{DAF95313-E44D-46AF-BE1B-CBACEA2C3065}\View reliability history``
+Reliability Monitor - Shortcut `search-ms:displayname=%20Search%20programs%20and%20files\&crumb=System.Generic.String%3Areli\&crumb=location:%3A%3A{DAF95313-E44D-46AF-BE1B-CBACEA2C3065}\View reliability history`
 
 Problem Reports
 
-``explorer shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\0\\::{BB64F8A7-BEE7-4E1A-AB8D-7D8273F7FDB6}\pageProblems``
+explorer `shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\0\\::{BB64F8A7-BEE7-4E1A-AB8D-7D8273F7FDB6}\pageProblems`
 
 To Make Documents as Default Folder to Open by Windows Explorer upon Launching
 
@@ -1741,9 +1739,9 @@ splwow64.exe Print driver host for 32bit applications
 
 system.ini
 
-``twunk\_16.exe``
+``twunk_16.exe``
 
-``twunk\_32.exe Twain.dll Client’s 32-Bit Thunking Server``
+``twunk_32.exe Twain.dll Client’s 32-Bit Thunking Server``
 
 win.ini
 
@@ -1753,7 +1751,7 @@ write.exe Windows Write
 
 **Explorer.exe Command Line Syntax**
 
-``%SystemRoot%\explorer.exe \[/n]\[/e]\[,/root],X,\[\[/Select],Y]``
+`%SystemRoot%\explorer.exe [/n][/e][,/root],X,[[/Select],Y]`
 
 X specifies the object, and optionally with sub-object Y. /e switch shows the left Windows Explorer tree view navigation pane together with the right pane in list view, while /n hides the left navigation pane. When the /root parameter is present, Explorer.exe will explore the root object (X) and objects belonging to X. On the other hand, when the /root switch is not present, Explorer.exe explores the object X, its children, and other Explorer objects as well. /Select switch puts the focus on a file or folder.
 
@@ -1861,6 +1859,27 @@ Failover Cluster Manager Host has DHCP Extension, Print Management
 ``Group Policy Management Editor has Administrative Templates (Computers)\*, Administrative Templates (Users)\*, Extended View, Folder Redirection Editor (Users), Group Policy Application Settings\*, Group Policy Computer Control Panel\*, Group Policy Drive Settings\*, Group Policy Environment Settings\*, Group Policy File Settings\*, Group Policy Folder Settings\*, Group Policy Ini File Settings\*, Group Policy Printers Settings\*, Group Policy Registry Settings\*, Group Policy Shortcut Settings\*, Group Policy User Control Panel\*, Internet Explorer Maintenance, Name Resolution Policy, Name Resolution Policy \[?], Policy-based QoS (Computers), Policy-based QoS (Users), Pushed Printer Connection Extension (Computers)\*, Pushed Printer Connection Extension (Users)\*, Scripts (Logon/Logoff)\*, Scripts (Startup/Shutdown)\*, Security Settings\*, Software Installation (Computers), Software Installation (Users)``
 
 Group Policy Object Editor has ...
+```
+Administrative Templates (Computers)\*
+Administrative Templates (Users)\*
+Extended View, Folder Redirection Editor (Users), Group Policy Application Settings\*
+Group Policy Computer Control Panel\*
+Group Policy Drive Settings\*
+Group Policy Environment Settings\*
+Group Policy File Settings\*
+Group Policy Folder Settings\*
+Group Policy Ini File Settings\*
+Group Policy Printers Settings\*
+Group Policy Registry Settings\*
+Group Policy Shortcut Settings\*
+Group Policy User Control Panel\*
+Internet Explorer Maintenance, Name Resolution Policy, Name Resolution Policy [?], Policy-based QoS (Computers), Policy-based QoS (Users), Pushed Printer Connection Extension (Computers)\*
+Pushed Printer Connection Extension (Users)\*
+Scripts (Logon/Logoff)\*
+Scripts (Startup/Shutdown)\*
+Security Settings\*
+Software Installation (Computers), Software Installation (Users)
+```
 
 Internet Information.6.. has ASP.NET Management Extension, Extended View, SMTP Protocol
 
@@ -1911,7 +1930,7 @@ INF files
 
 ``\Windows\security\templates\policies``
 
-``\Windows\ServiceProfiles\\``
+``\Windows\ServiceProfiles\``
 
 LocalService
 
@@ -1921,7 +1940,7 @@ Task Manager
 
 Firewall netsh
 
-``RegEdt32\[7]``
+``RegEdt32``[7]
 
 charmap
 
@@ -2029,7 +2048,7 @@ psexec and more http://serverfault.com/questions/32489/remote-command-execution-
 
 GUI
 
-**mmc \& msc**
+**mmc & msc**
 
 **RDP (tsclient)**
 
@@ -2057,7 +2076,7 @@ WSUS (2.0, not 3.0)
 
 sconfig.cmd
 
-``\[menu or screenshot]``
+``[menu or screenshot]``
 
 sc services
 
@@ -2193,10 +2212,10 @@ ResKit
 | Windows 3.? (WFWG ?)                                      |                         |                          |
 | Windows 95                                                | Documentation and Tools |                          |
 | Windows 98                                                | Documentation and Tools |                          |
-| Windows NT (Workstation \& Server)                         |                         |                          |
+| Windows NT (Workstation & Server)                         |                         |                          |
 | Windows NT 3.51                                           |                         | 2 Supplements for Server |
-| Windows NT 4.0 (Workstation \& Server)                     | Docs, Tools, 3rd party  | 4 supplements for Server |
-| Windows 2000 (Professional \& Server)                      |                         | 1 supplement for Server  |
+| Windows NT 4.0 (Workstation & Server)                     | Docs, Tools, 3rd party  | 4 supplements for Server |
+| Windows 2000 (Professional & Server)                      |                         | 1 supplement for Server  |
 | Windows XP                                                |                         |                          |
 | Windows 2003                                              |                         |                          |
 | Windows XP Professional Resource Kit, Third Edition (SP2) |                         |                          |
@@ -2246,7 +2265,7 @@ and several server products such as SharePoint and Microsoft Exchange Server
 [Common Applications](Common-Apps.md)
 ### Microsoft Servers and Windows Services {#h.9myl42igo6cu" id="h.9myl42igo6cu
 
-``See appendix \_ for list of all Windows components, features, roles``
+``See appendix _ for list of all Windows components, features, roles``
 
 #### DNS Server {#h.eit8y2gyf1cb" id="h.eit8y2gyf1cb
 
@@ -2260,13 +2279,13 @@ Ddnscmd.exe
 
 **Backup/Export AD integrated zone to text file**
 
-``DnsCmd \<ServerName> /ZoneExport \<ZoneName> \<ZoneExportFile>``
+``DnsCmd <ServerName> /ZoneExport <ZoneName> <ZoneExportFile>``
 
 **Enable GlobalNames zone support**
 
 dnscmd . /config /enableglobalnamessupport 1
 
-``HKLM\SYSTEM\CurrentControlSet\services\DNS\Parameters\EnableGlobalNamesSupport = 1``
+`HKLM\SYSTEM\CurrentControlSet\services\DNS\Parameters\EnableGlobalNamesSupport` = `1`
 
 #### DHCP Server {#h.sd91ba4gx9g2" id="h.sd91ba4gx9g2
 
@@ -2284,9 +2303,9 @@ DHCP Server Tools includes the DHCP Management Console, the DHCP Server cmdlet m
 
 ``C:\inetpub\mailroot\Badmail must be manually cleaned or spam will fill disk``
 
-``C:\inetpub\mailroot\Drop local delivery\[26]``
+`C:\inetpub\mailroot\Drop local delivery\`[26]
 
-``C:\inetpub\mailroot\Pickup starting point for outgoing mail\[27]``
+`C:\inetpub\mailroot\Pickup starting point for outgoing mail\`[27]
 
 ``C:\inetpub\mailroot\Queue``
 
@@ -2300,39 +2319,25 @@ POP3 mailboxes
 
 ``C:\Program Files\Microsoft\Exchange Server\V14\Bin``
 
+```
 Extensible Storage Engine Utilities for Microsoft(R) Exchange Server
-
 Version 14.02
-
 Copyright (C) Microsoft Corporation. All Rights Reserved.
-
 DESCRIPTION: Database utilities for the Extensible Storage Engine for Microsoft(R) Exchange Server.
-
 MODES OF OPERATION:
-
-``Defragmentation: ESEUTIL /d \<database name> \[options]``
-
-``Recovery: ESEUTIL /r \<logfile base name> \[options]``
-
-``Integrity: ESEUTIL /g \<database name> \[options]``
-
-``Checksum: ESEUTIL /k \<file name> \[options]``
-
-``Repair: ESEUTIL /p \<database name> \[options]``
-
-``File Dump: ESEUTIL /m\[mode-modifier] \<filename>``
-
-``Copy File: ESEUTIL /y \<source file> \[options]``
-
-``Restore: ESEUTIL /c\[mode-modifier] \<path name> \[options]``
-
+Defragmentation: ESEUTIL /d <database name> [options]
+Recovery: ESEUTIL /r <logfile base name> [options]
+Integrity: ESEUTIL /g <database name> [options]
+Checksum: ESEUTIL /k <file name> [options]
+Repair: ESEUTIL /p <database name> [options]
+File Dump: ESEUTIL /m[mode-modifier] <filename>
+Copy File: ESEUTIL /y <source file> [options]
+Restore: ESEUTIL /c[mode-modifier] <path name> [options]
 <<<<< Press a key for more help >>>>>
-
 D=Defragmentation, R=Recovery, G=inteGrity, K=checKsum,
-
 P=rePair, M=file duMp, Y=copY file, C=restore
-
-``\=>``
+=>
+```
 
 #### Windows Update Server {#h.vhis7vg15mnt" id="h.vhis7vg15mnt
 
@@ -2354,7 +2359,7 @@ Windows Server Update Services Tools include the Windows Server Update Services 
 
 WsusDBHideHidden.sql
 
-``WsusDBMaintenance.sql _Source\[28]_``
+``WsusDBMaintenance.sql _Source``[28]
 
 ``"c:\Program Files\Microsoft SQL Server\90\Tools\binn\SQLCMD.EXE" -S np:_\.\pipe\MSSQL$MICROSOFT##SSEE\sql\query -I -i C:\WSUS\WsusDBHideHidden.sql``
 
@@ -2376,7 +2381,7 @@ MDT
 
 DHCP options
 
-**UUID \\& GUID**
+**UUID & GUID**
 
 [https://scriptimus.wordpress.com/2012/03/28/mdt-2012-tip-getting-uuid-serialnumber/](https://scriptimus.wordpress.com/2012/03/28/mdt-2012-tip-getting-uuid-serialnumber/)
 
@@ -2384,7 +2389,7 @@ The last set may often be the MAC address
 
 **Convert**
 
-``\[8 hex]-\[4 hex]-\[4 hex]-\[4 hex]-\[12 hex] (16 bytes?)``
+``[8 hex]-[4 hex]-[4 hex]-[4 hex]-[12 hex] (16 bytes?)``
 
 Reverse the octet order in the first three words
 
@@ -2412,11 +2417,9 @@ WMIC
 
 File Services Tools include the following: Share and Storage Management Tools; Distributed File System Tools; File Server Resource Manager Tools; Services for NFS Administration Tools; iSCSI management cmdlets for Windows PowerShell
 
-``\- Distributed File System Tools include the DFS Management snap-in, and the **Dfsradmin.exe**, **Dfsrdiag.exe**, **Dfscmd.exe**, **Dfsdiag.exe**, and **Dfsutil.exe** command-line tools.``
-
-``\- File Server Resource Manager tools include the File Server Resource Manager snap-in, and the **Dirquota.exe**, **Filescrn.exe**, and **Storrept.exe** command line tools.``
-
-``\- Share and Storage Management Tools include the Share and Storage Management snap-in.``
+ - Distributed File System Tools include the DFS Management snap-in, and the **Dfsradmin.exe**, **Dfsrdiag.exe**, **Dfscmd.exe**, **Dfsdiag.exe**, and **Dfsutil.exe** command-line tools.
+ - File Server Resource Manager tools include the File Server Resource Manager snap-in, and the **Dirquota.exe**, **Filescrn.exe**, and **Storrept.exe** command line tools.
+ - Share and Storage Management Tools include the Share and Storage Management snap-in.
 
 #### Distributed File System (DFS) {#h.amxths7cmdmm" id="h.amxths7cmdmm
 
@@ -2428,17 +2431,17 @@ DFS Admin Tools listed above/below?
 
 DFS Replication of shared folders will create a temp workspace folder
 
-``\<JUNCTION> D:\UserData\DfsrPrivate \[D:\System Volume Information\DFSR\Private\\{2AB0DFB4-7B9C-4EAE-A77C-``
+``<JUNCTION> D:\UserData\DfsrPrivate [D:\System Volume Information\DFSR\Private\{2AB0DFB4-7B9C-4EAE-A77C-``
 
 1AFF95B5EE9A}-{957BE5CA-9DF9-45C1-8916-7B610DA0C897}]
 
 Directory contents:
 
 ConflictAndDeletedManifest.xml
-``\<DIR> ConflictAndDeleted``
-``\<DIR> Deleted``
-``\<DIR> Installing``
-``\<DIR> Staging``
+``<DIR> ConflictAndDeleted``
+``<DIR> Deleted``
+``<DIR> Installing``
+``<DIR> Staging``
 
 #### Storage Manager {#h.jqv43byvq6fi" id="h.jqv43byvq6fi
 
@@ -2452,61 +2455,61 @@ Storage Manager for SANs Tools include the Storage Manager for SANs snap-in and 
 
 | **File Groups**            | **File Extensions**                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Audio and Video Files\[29] | aac, aif, aiff, asf, asx, au, avi, flac, m3u, mid, midi, mov, mp1, mp2, mp3, mp4, mpa, mpe, mpeg, mpeg2, mpeg3, mpg, ogg, qt, qtw, ram, rm, rmi, rmvb, snd, swf, vob, wav, wax, wma, wmv, wvx                                                                                                                                                                                                                                                                                    |
+| Audio and Video Files[29] | aac, aif, aiff, asf, asx, au, avi, flac, m3u, mid, midi, mov, mp1, mp2, mp3, mp4, mpa, mpe, mpeg, mpeg2, mpeg3, mpg, ogg, qt, qtw, ram, rm, rmi, rmvb, snd, swf, vob, wav, wax, wma, wmv, wvx                                                                                                                                                                                                                                                                                    |
 | Backup Files               | bak, bck, bkf, old                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Compressed Files\[30]      | ace, arc, arj, bhx, bz2, cab, gz, gzip, hpk, hqx, jar, lha, lzh, lzx, pak, pit, rar, sea, sit, sqz, tgz, uu, uue, z, zip, zoo                                                                                                                                                                                                                                                                                                                                                    |
+| Compressed Files[30]      | ace, arc, arj, bhx, bz2, cab, gz, gzip, hpk, hqx, jar, lha, lzh, lzx, pak, pit, rar, sea, sit, sqz, tgz, uu, uue, z, zip, zoo                                                                                                                                                                                                                                                                                                                                                    |
 | E-mail Files               | eml, idx, mbox, mbx, msg, ost, otf, pab, pst                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Executable Files\[31]      | bat, cmd, com, cpl, exe, inf, js, jse, msh, msi, msp, ocx, pif, pl, ps1, scr, vb, vbs, wsf, wsh                                                                                                                                                                                                                                                                                                                                                                                  |
+| Executable Files[31]      | bat, cmd, com, cpl, exe, inf, js, jse, msh, msi, msp, ocx, pif, pl, ps1, scr, vb, vbs, wsf, wsh                                                                                                                                                                                                                                                                                                                                                                                  |
 | Image Files                | bmp, dib, eps, gif, img, jfif, jpe, jpeg, jpg, pcx, png, ps, psd, raw, rif, spiff, tif, tiff                                                                                                                                                                                                                                                                                                                                                                                     |
-| Office Files\[32]          | accdb, accde, accdr, accdt, adn, adp, doc, docm, docx, dot, dotm, dotx, grv, gsa, gta, mad, maf, mda, mda, mda, mdb, mde, mdf, mdf, mdm, mdt, mdw, mdw, mdw, mdz, mpd, mpp, mpt, obt, odb, one, onepkg, pot, potm, potx, ppa, ppam, pps, ppsm, ppsx, ppt, pptm, pptx, pub, pwz, rqy, rtf, rwz, sldm, sldx, slk, thmx, vdx, vsd, vsl, vss, vst, vsu, vsw, vsx, vtx, wbk, wri, xla, xlam, xlb, xlc, xld, xlk, xll, xlm, xls, xlsb, xlsm, xlsx, xlt, xltm, xltx, xlv, xlw, xsf, xsn |
+| Office Files[32]          | accdb, accde, accdr, accdt, adn, adp, doc, docm, docx, dot, dotm, dotx, grv, gsa, gta, mad, maf, mda, mda, mda, mdb, mde, mdf, mdf, mdm, mdt, mdw, mdw, mdw, mdz, mpd, mpp, mpt, obt, odb, one, onepkg, pot, potm, potx, ppa, ppam, pps, ppsm, ppsx, ppt, pptm, pptx, pub, pwz, rqy, rtf, rwz, sldm, sldx, slk, thmx, vdx, vsd, vsl, vss, vst, vsu, vsw, vsx, vtx, wbk, wri, xla, xlam, xlb, xlc, xld, xlk, xll, xlm, xls, xlsb, xlsm, xlsx, xlt, xltm, xltx, xlv, xlw, xsf, xsn |
 | System Files               | acm, dll, ocx, sys, vxd                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Temporary Files            | \*.temp, \*.tmp, \~\*                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Text Files\[33]            | asc, text, txt                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Web Page Files\[34]        | asp, aspx, cgi, css, dhtml, hta, htm, html, mht, php, php3, shtml, url                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Temporary Files            | *.temp, *.tmp, ~*                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Text Files[33]            | asc, text, txt                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Web Page Files[34]        | asp, aspx, cgi, css, dhtml, hta, htm, html, mht, php, php3, shtml, url                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 Audio and Video Files:
 
-``\*.aac, \*.aif, \*.aiff, \*.asf, \*.asx, \*.au, \*.avi, \*.flac, \*.m3u, \*.mid, \*.midi, \*.mov, \*.mp1, \*.mp2, \*.mp3, \*.mp4, \*.mpa, \*.mpe, \*.mpeg, \*.mpeg2, \*.mpeg3, \*.mpg, \*.ogg, \*.qt, \*.qtw, \*.ram, \*.rm, \*.rmi, \*.rmvb, \*.snd, \*.swf, \*.vob, \*.wav, \*.wax, \*.wma, \*.wmv, \*.wvx``
+``*.aac, *.aif, *.aiff, *.asf, *.asx, *.au, *.avi, *.flac, *.m3u, *.mid, *.midi, *.mov, *.mp1, *.mp2, *.mp3, *.mp4, *.mpa, *.mpe, *.mpeg, *.mpeg2, *.mpeg3, *.mpg, *.ogg, *.qt, *.qtw, *.ram, *.rm, *.rmi, *.rmvb, *.snd, *.swf, *.vob, *.wav, *.wax, *.wma, *.wmv, *.wvx``
 
 Backup Files
 
-``\*.bak, \*.bck, \*.bkf, \*.old``
+``*.bak, *.bck, *.bkf, *.old``
 
 Compressed Files
 
-``\*.ace, \*.arc, \*.arj, \*.bhx, \*.bz2, \*.cab, \*.gz, \*.gzip, \*.hpk, \*.hqx, \*.jar, \*.lha, \*.lzh, \*.lzx, \*.pak, \*.pit, \*.rar, \*.sea, \*.sit, \*.sqz, \*.tgz, \*.uu, \*.uue, \*.z, \*.zip, \*.zoo``
+``*.ace, *.arc, *.arj, *.bhx, *.bz2, *.cab, *.gz, *.gzip, *.hpk, *.hqx, *.jar, *.lha, *.lzh, *.lzx, *.pak, *.pit, *.rar, *.sea, *.sit, *.sqz, *.tgz, *.uu, *.uue, *.z, *.zip, *.zoo``
 
 E-mail Files
 
-``\*.eml, \*.idx, \*.mbox, \*.mbx, \*.msg, \*.ost, \*.otf, \*.pab, \*.pst``
+``*.eml, *.idx, *.mbox, *.mbx, *.msg, *.ost, *.otf, *.pab, *.pst``
 
 Executable Files
 
-``\*.bat, \*.cmd, \*.com, \*.cpl, \*.exe, \*.inf, \*.js, \*.jse, \*.msh, \*.msi, \*.msp, \*.ocx, \*.pif, \*.pl, \*.ps1, \*.scr, \*.vb, \*.vbs, \*.wsf, \*.wsh``
+``*.bat, *.cmd, *.com, *.cpl, *.exe, *.inf, *.js, *.jse, *.msh, *.msi, *.msp, *.ocx, *.pif, *.pl, *.ps1, *.scr, *.vb, *.vbs, *.wsf, *.wsh``
 
 Image Files
 
-``\*.bmp, \*.dib, \*.eps, \*.gif, \*.img, \*.jfif, \*.jpe, \*.jpeg, \*.jpg, \*.pcx, \*.png, \*.ps, \*.psd, \*.raw, \*.rif, \*.spiff, \*.tif, \*.tiff``
+``*.bmp, *.dib, *.eps, *.gif, *.img, *.jfif, *.jpe, *.jpeg, *.jpg, *.pcx, *.png, *.ps, *.psd, *.raw, *.rif, *.spiff, *.tif, *.tiff``
 
 Office Files
 
-``\*.accdb, \*.accde, \*.accdr, \*.accdt, \*.adn, \*.adp, \*.doc, \*.docm, \*.docx, \*.dot, \*.dotm, \*.dotx, \*.grv, \*.gsa, \*.gta, \*.mad, \*.maf, \*.mda, \*.mda, \*.mda, \*.mdb, \*.mde, \*.mdf, \*.mdf, \*.mdm, \*.mdt, \*.mdw, \*.mdw, \*.mdw, \*.mdz, \*.mpd, \*.mpp, \*.mpt, \*.obt, \*.odb, \*.one, \*.onepkg, \*.pot, \*.potm, \*.potx, \*.ppa, \*.ppam, \*.pps, \*.ppsm, \*.ppsx, \*.ppt, \*.pptm, \*.pptx, \*.pub, \*.pwz, \*.rqy, \*.rtf, \*.rwz, \*.sldm, \*.sldx, \*.slk, \*.thmx, \*.vdx, \*.vsd, \*.vsl, \*.vss, \*.vst, \*.vsu, \*.vsw, \*.vsx, \*.vtx, \*.wbk, \*.wri, \*.xla, \*.xlam, \*.xlb, \*.xlc, \*.xld, \*.xlk, \*.xll, \*.xlm, \*.xls, \*.xlsb, \*.xlsm, \*.xlsx, \*.xlt, \*.xltm, \*.xltx, \*.xlv, \*.xlw, \*.xsf, \*.xsn``
+``*.accdb, *.accde, *.accdr, *.accdt, *.adn, *.adp, *.doc, *.docm, *.docx, *.dot, *.dotm, *.dotx, *.grv, *.gsa, *.gta, *.mad, *.maf, *.mda, *.mda, *.mda, *.mdb, *.mde, *.mdf, *.mdf, *.mdm, *.mdt, *.mdw, *.mdw, *.mdw, *.mdz, *.mpd, *.mpp, *.mpt, *.obt, *.odb, *.one, *.onepkg, *.pot, *.potm, *.potx, *.ppa, *.ppam, *.pps, *.ppsm, *.ppsx, *.ppt, *.pptm, *.pptx, *.pub, *.pwz, *.rqy, *.rtf, *.rwz, *.sldm, *.sldx, *.slk, *.thmx, *.vdx, *.vsd, *.vsl, *.vss, *.vst, *.vsu, *.vsw, *.vsx, *.vtx, *.wbk, *.wri, *.xla, *.xlam, *.xlb, *.xlc, *.xld, *.xlk, *.xll, *.xlm, *.xls, *.xlsb, *.xlsm, *.xlsx, *.xlt, *.xltm, *.xltx, *.xlv, *.xlw, *.xsf, *.xsn``
 
 System Files
 
-``\*.acm, \*.dll, \*.ocx, \*.sys, \*.vxd``
+``*.acm, *.dll, *.ocx, *.sys, *.vxd``
 
 Temporary Files
 
-``\*.temp, \*.tmp, \~\*``
+``*.temp, *.tmp, ~*``
 
 Text Files
 
-``\*.asc, \*.text, \*.txt``
+``*.asc, *.text, *.txt``
 
 Web Page Files
 
-``\*.asp, \*.aspx, \*.cgi, \*.css, \*.dhtml, \*.hta, \*.htm, \*.html, \*.mht, \*.php, \*.php3, \*.shtml, \*.url``
+``*.asp, *.aspx, *.cgi, *.css, *.dhtml, *.hta, *.htm, *.html, *.mht, *.php, *.php3, *.shtml, *.url``
 
 Disk Images
 
@@ -2584,13 +2587,13 @@ Network Load Balancing Tools include the Network Load Balancing Manager; Network
 
 #### Remote Desktop Services (Terminal Services/RDP) {#h.2qdbmtub0dzw" id="h.2qdbmtub0dzw
 
-``Remote Desktops (%windir%\system32\tsmmc.msc /s) is a great admin tool. It gives one-click access to every server or PC you add to its console.``
+Remote Desktops (`%windir%\system32\tsmmc.msc /s`) is a great admin tool. It gives one-click access to every server or PC you add to its console.
 
 **Connect to console with this switch**
 
 A few programs won’t install in a term session, connect on the console.
 
-mstsc.exe /v:myserver /admin
+`mstsc.exe /v:myserver /admin`
 
 **Remote Desktop Services Tools**
 
@@ -2671,7 +2674,7 @@ Remote Desktop Services Licensing Directory
 
 Starting with RDP version ? (client/server), the .RDP file is now text-based.
 
-``\[Link to source describing all the options available]``
+``[Link to source describing all the options available]``
 
 #### Volume Activation {#h.yl23qe3sqda0" id="h.yl23qe3sqda0
 
@@ -2781,7 +2784,7 @@ Web
 
 Scripting (See PowerShell and WMI)
 
-Windows Deployment Kit \\& Assessment and Deployment Kit (Deploy/WAIK above)
+Windows Deployment Kit & Assessment and Deployment Kit (Deploy/WAIK above)
 
 Windows Software Dev Kit
 
@@ -2839,7 +2842,7 @@ Ask Jeeves (installed by Java updates)
 
 Microsoft Bing
 
-``Free Games installed by OEM (Conexant\<?>)``
+``Free Games installed by OEM (Conexant<?>)``
 
 **Anti-Virus**
 
@@ -2885,7 +2888,7 @@ SYSVOL folder
 
 ``C:\Windows SYSVOL``
 
-``NTDS and \_?\_ folder location can be customized during installation of Active Directory role.``
+``NTDS and _?_ folder location can be customized during installation of Active Directory role.``
 
 | **DB/Log/Sys** | **File**           |                                                                                                                                                                                |
 | -------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -2911,9 +2914,9 @@ SYSVOL folder
 
 ``%SystemRoot%\sysvol\sysvol\\_\<domain DNS name>_\scripts``
 
-``_\_\<Server>_\NETLOGON``
+``\\<Server>\NETLOGON``
 
-``_\_\<Server>_\SYSVOL\\_\<domain DNS name>_\scripts``
+``\\<Server>\SYSVOL\_<domain DNS name>_\scripts``
 
 **How to reference paths in logon scripts**
 
@@ -2931,7 +2934,7 @@ Also to force a path to the current directory
 
 #### Replication {#h.bbdnu95mten3" id="h.bbdnu95mten3
 
-``Regular replication of logon scripts, group policy files, performed by \_\_``
+``Regular replication of logon scripts, group policy files, performed by __``
 
 DFS Replication, see above
 
@@ -2939,7 +2942,7 @@ DFS Replication, see above
 
 Physical Path
 
-``%SystemRoot%\sysvol\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\user\scripts\logon``
+``%SystemRoot%\sysvol\sysvol\_<domain DNS name>_\Policies\_<GUID>_\user\scripts\logon``
 
 Network Path
 
@@ -2993,13 +2996,13 @@ Not a file/folder path, but part of UNC and name resolution for network access
 
 |                                 |              |                          |
 | ------------------------------- | ------------ | ------------------------ |
-| mydomainname.com                | SRV          | \_gc.\_tcp               |
-|                                 |              | \_kerberos.\_tcp         |
-|                                 |              | \_kpasswd.\_tcp          |
-|                                 |              | \_ldap.\_tcp             |
-| KMS server                      | SRV          | \_vlmcs.\_tcp            |
-| DomainDnsZones.mydomainname.com | \_sites      | \_ldap.\_tcp.\<sitename> |
-| DomainDnsZones.mydomainname.com | \_ldap.\_tcp |                          |
+| mydomainname.com                | SRV          | _gc._tcp               |
+|                                 |              | _kerberos._tcp         |
+|                                 |              | _kpasswd._tcp          |
+|                                 |              | _ldap._tcp             |
+| KMS server                      | SRV          | _vlmcs._tcp            |
+| DomainDnsZones.mydomainname.com | _sites      | _ldap._tcp.<sitename> |
+| DomainDnsZones.mydomainname.com | _ldap._tcp |                          |
 | ForestDnsZones                  |              |                          |
 
 Exchange uses sites to match users to servers
@@ -3022,19 +3025,19 @@ Even Active Directory stored DNS zones can be written to a local file by using t
 
 Example:
 
-``\_\_\_\_\_\_\_\_\_\_?``
+``__________?``
 
 They will then be written to the following folder path:
 
-``\_\_\_\_?``
+``____?``
 
 ``C:\Windows\System32\dns\backup``
 
-``nslookup -type=srv \_vlmcs.\_tcp``
+``nslookup -type=srv _vlmcs._tcp``
 
 **Backup/Export AD integrated zone to text file**
 
-``DnsCmd \<ServerName> /ZoneExport \<ZoneName> \<ZoneExportFile>``
+``DnsCmd <ServerName> /ZoneExport <ZoneName> <ZoneExportFile>``
 
 #### Certificate Services {#h.k7tbyipc0zj3" id="h.k7tbyipc0zj3
 
@@ -3081,7 +3084,7 @@ A few tools will be included here, see other AD document for better information.
 
 ``%SystemRoot%\system32\dsa.msc Active Directory Users and Computers``
 
-``After Windows version \_?\_ the RAS tab was removed. Exchange 2003? installs extended version in ?``
+``After Windows version _?_ the RAS tab was removed. Exchange 2003? installs extended version in ?``
 
 What attributes are carried across (and which will not) when copying a user.
 
@@ -3107,7 +3110,7 @@ Schmmgmt.dll Active Directory Schema snap-in
 
 Which AD GUI tools have Advanced views to enable?
 
-``DNS, AD UC (Object tab), AD S\&S (Services)``
+``DNS, AD UC (Object tab), AD S&S (Services)``
 
 **Delegwiz.inf**
 
@@ -3133,11 +3136,11 @@ and facilitates configuration of AD LDS communication ports and view AD LDS
 
 instances installed on a machine.
 
-``\------------------------\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*--------------------``
+``------------------------*************************--------------------``
 
 #### Directory Service Database Util (DSDBUtil) {#h.fo0d5r65ymmq" id="h.fo0d5r65ymmq
 
-``C:\\>dsdbutil.exe /?``
+``C:\>dsdbutil.exe /?``
 
 Microsoft(R) Windows(TM) Directory Service Utilities Version 2.0
 
@@ -3150,18 +3153,14 @@ and facilitates configuration of AD LDS communication ports and view AD LDS
 instances installed on a machine.
 
 ``C:\Windows\System32>dsmgmt.exe /?``
-
+```
 Microsoft(R) Windows(TM) Directory Service Utilities Version 2.0
-
 Copyright (C) Microsoft Corporation 1991-2002. All Rights Reserved.
-
 dsmgmt facilitates managing AD DS/LDS application partitions, management
-
 and control of the Flexible Single Master Operations (FSMO),
-
 and cleaning up of metadata left behind by abandoned AD DCs/LDS instances,
-
 those which are removed from the network without being uninstalled.
+```
 
 #### Edit Objects in Active Directory {#h.5ueexcyelrvy" id="h.5ueexcyelrvy
 
@@ -3332,7 +3331,7 @@ KB902838
 ``14. [http://www.nirsoft.net/utils/outlook\_nk2\_edit.html](http://www.nirsoft.net/utils/outlook\_nk2\_edit.html) ↑``
 ``15. [Outlook 2010 Home > Outlook 2010 Help and How-To > Getting help - What is the Enable logging (troubleshooting) option?](http://www.google.com/url?q=http%3A%2F%2Foffice.microsoft.com%2Fclient%2Fhelppreview14.aspx%3FAssetId%3DHA010356489%26lcid%3D1033%26NS%3DOUTLOOK%26Version%3D14%26tl%3D2%26respos%3D0%26CTT%3D1%26queryid%3D8a421809%252D143f%252D477d%252D873e%252D1c1c82f79a17%23\_Toc261091100\&sa=D\&sntz=1\&usg=AFQjCNFrnL0SZMZcpmW3f1CaskdXGOpjGQ) ↑``
 16. [http://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data](http://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data) ↑
-``17. [http://www.adobe.com/devnet/flashplayer/articles/flash\_player\_admin\_guide.html](http://www.adobe.com/devnet/flashplayer/articles/flash\_player\_admin\_guide.html) ↑``
+``17. [http://www.adobe.com/devnet/flashplayer/articles/flash_player_admin_guide.html](http://www.adobe.com/devnet/flashplayer/articles/flash_player_admin_guide.html) ↑``
 18. Choose iTunes Library by holding Shift while starting iTunes ↑
 19. [http://www.makeuseof.com/tag/10-top-itunes-troubleshooting-tips-tricks/](http://www.makeuseof.com/tag/10-top-itunes-troubleshooting-tips-tricks/) ↑
 20. [http://support.apple.com/kb/TS1717](http://support.apple.com/kb/TS1717) ↑
@@ -3344,12 +3343,12 @@ KB902838
 26. [http://www.mombu.com/microsoft/iis-smtp-and-nntp/t-some-emails-stuck-in-drop-folder-1028192.html](http://www.mombu.com/microsoft/iis-smtp-and-nntp/t-some-emails-stuck-in-drop-folder-1028192.html) ↑
 27. [http://support.microsoft.com/?id=297700](http://support.microsoft.com/?id=297700) ↑
 28. ↑
-``29. I suggest adding \*.divx, \*.mkv, \*.vob, \*.flv ↑``
-``30. I suggest adding \*.tar, \*.7z, \*.ex\_, \*.dl\_ ↑``
-``31. I suggest adding php, perl, ext (.ps1) for powershell2? List of OS recognized ext can be found in reg key \_\_\_? or win.ini? What does Outlook consider level 1? ↑``
-``32. May want to include \*.wp?, \*.pdf, \*.cbx, \*.wk? ↑``
-``33. I suggest adding \*.me, \*.1st, \*.diz ↑``
-``34. I suggest adding \*.webpage for Mozilla shortcuts ? ↑``
+``29. I suggest adding *.divx, *.mkv, *.vob, *.flv ↑``
+``30. I suggest adding *.tar, *.7z, *.ex_, *.dl_ ↑``
+``31. I suggest adding php, perl, ext (.ps1) for powershell2? List of OS recognized ext can be found in reg key ___? or win.ini? What does Outlook consider level 1? ↑``
+``32. May want to include *.wp?, *.pdf, *.cbx, *.wk? ↑``
+``33. I suggest adding *.me, *.1st, *.diz ↑``
+``34. I suggest adding *.webpage for Mozilla shortcuts ? ↑``
 35. [http://www.winvistatips.com/windows-98-logon-scripts-2003server-t675450.html](http://www.winvistatips.com/windows-98-logon-scripts-2003server-t675450.html) ↑
 ``36. [http://en.wikipedia.org/wiki/Web\_Proxy\_Autodiscovery\_Protocol](http://en.wikipedia.org/wiki/Web\_Proxy\_Autodiscovery\_Protocol) ↑``
 37. [http://social.technet.microsoft.com/wiki/contents/articles/2202.remote-server-administration-tools-rsat-for-windows-vista-windows-7-windows-8-windows-server-2008-windows-server-2008-r2-and-windows-server-2012-dsforum2wiki.aspx](http://social.technet.microsoft.com/wiki/contents/articles/2202.remote-server-administration-tools-rsat-for-windows-vista-windows-7-windows-8-windows-server-2008-windows-server-2008-r2-and-windows-server-2012-dsforum2wiki.aspx) ↑
