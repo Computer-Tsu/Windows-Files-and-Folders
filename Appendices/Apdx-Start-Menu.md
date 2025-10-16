@@ -7,19 +7,19 @@ See Start Menu above
 
 ``C:\ProgramData\Microsoft\Windows\Start Menu``
 
-``C:\Users\\_Username_\AppData\Roaming\Microsoft\Windows\Start Menu``
-
+``C:\Users\_Username_\AppData\Roaming\Microsoft\Windows\Start Menu``
+```
 Default Programs
 |
-``Programs\\``
+Programs\
 |
-``Accessories\\``
+Accessories\
 |
-``Ease of Access\\``
+Ease of Access\
 |
 Windows Speech Recognition
 |
-``System Tools\\``
+System Tools\
 |
 Character Map
 |
@@ -41,7 +41,7 @@ Windows Easy Transfer Reports ?
 |
 Windows Easy Transfer ?
 |
-``Tablet PC\\``
+Tablet PC\
 |
 Personalize Handwriting Recognition
 |
@@ -49,7 +49,7 @@ Tablet PC Input Panel
 |
 Windows Journal
 |
-``Windows PowerShell\\``
+Windows PowerShell\
 |
 Windows PowerShell (x86)
 |
@@ -83,37 +83,37 @@ Sync Center
 |
 Windows DVD Maker ?
 |
-``Windows Mobility Center %windir%\system32\mblctr.exe /open (Opens the Windows Mobility Center so you can adjust display brightness, volume, power options, and other mobile PC settings.)``
+Windows Mobility Center `%windir%\system32\mblctr.exe /open` (Opens the Windows Mobility Center so you can adjust display brightness, volume, power options, and other mobile PC settings.)
 |
 WordPad
 |
-``Administrative Tools\\``
+Administrative Tools\
 |
-``Dell\\``
+Dell\
 |
-``Games\\``
+Games\
 |
-``Google Chrome\\``
+Google Chrome\
 |
-``Intel\\``
+Intel\
 |
-``iTunes\\``
+iTunes\
 |
-``Maintenance\\``
+Maintenance\
 |
-``Microsoft Exchange Server 2010\\``
+Microsoft Exchange Server 2010\
 |
-``Microsoft Office\\``
+Microsoft Office\
 |
-``Microsoft Silverlight\\``
+Microsoft Silverlight\
 |
-``Mozilla\\``
+Mozilla\
 |
-``Startup\\``
+Startup\
 |
-``Windows Live\\``
+Windows Live\
 |
-``Windows Virtual PC\\``
+Windows Virtual PC\
 |
 Adobe Reader X ?
 |
@@ -142,7 +142,7 @@ Windows Media Center
 Windows Media Player
 |
 XPS Viewer
-
+```
 ``C:\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu>tree /f``
 
 ```
