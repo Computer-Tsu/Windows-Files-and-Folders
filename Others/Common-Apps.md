@@ -623,11 +623,11 @@ If installed, and personal or computer-wide.
 
 **Windows 7 and Windows Vista**  `<DRIVE>:\Program Files\Common Files\Microsoft Shared\Stationery``
 
-``**Windows 7 and Windows Vista 64-bit with Outlook 2010 32-bit** <DRIVE>:\Program Files (x86)\Common Files\Microsoft Shared\Stationery``
+**Windows 7 and Windows Vista 64-bit with Outlook 2010 32-bit** ``<DRIVE>:\Program Files (x86)\Common Files\Microsoft Shared\Stationery``
 
-**Windows XP**  `<DRIVE>:\Program Files\Common Files\Microsoft Shared\Stationery``
-
-``C:\Users\UserName\AppData\Roaming\Microsoft\Stationery``
+**Windows XP**<br>
+`<DRIVE>:\Program Files\Common Files\Microsoft Shared\Stationery`<br>
+`C:\Users\UserName\AppData\Roaming\Microsoft\Stationery`
 
 **Custom forms**
 
