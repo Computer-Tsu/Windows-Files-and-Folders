@@ -3,57 +3,34 @@
 ### Special-use Folders
 
 Including changes from Windows XP to Vista, Windows 7
+|       |       |
+| ----- | ----- |
+| Application Data - Roaming  |  `C:\Users\<UserName>\AppData\Roaming` |
+| Cookies - Shortcut  |  `C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Cookies` |
+| Favorites  |  `C:\Users\Public\Favorites`\[1] |
+| Libraries - Shortcut  |  `C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Libraries` |
+| Libraries - Shortcut (2)  |  `C:\Users\Public\Libraries` |
+| Local Settings - Local  |  `C:\Users\<UserName>\AppData\Local` |
+| My Documents - Documents  |  `C:\Users\<UserName>\Documents` |
+| Network Shortcuts - Shortcut  |  ``"C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Network Shortcuts"`` |
+| Printer Shortcuts - Shortcut  |  ``"C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts"`` |
+| Public Desktop - Shortcut  |  `C:\Users\Public\Desktop` |
+| Public Documents - Shortcut  |  `C:\Users\Public\Documents` |
+| Public Downloads - Shortcut  |  `C:\Users\Public\Downloads` |
+| Public Music - Shortcut  |  `C:\Users\Public\Music` |
+| Public Pictures - Shortcut  |  `C:\Users\Public\Pictures` |
+| Public Recorded TV - Shortcut  |  ``"C:\Users\Public\Recorded TV"`` |
+| Public Videos - Shortcut  |  `C:\Users\Public\Videos` |
+| Recent Items - Shortcut  |  `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Recent` |
+| Send to ▶ shortcuts  |  `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\SendTo` |
+| Start Menu - Shortcut (2)  |  ``"C:\ProgramData\Microsoft\Windows\Start Menu"`` |
+| Start Menu - Shortcut  |  ``"C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu"`` |
+| Templates - Shortcut  |  `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Templates` |
+| Default User Profile  |  `%SystemDrive%\Users\Default` |
+| Themes files  |  `C:\Users\<USERNAME>\AppData\Local\Microsoft\Windows\Themes` |
+| Wallpapers  |  `C:\Windows\Web\Wallpaper` |
 
-Application Data - Roaming `C:\Users\<UserName>\AppData\Roaming`
-
-Cookies - Shortcut `C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Cookies`
-
-Favorites `C:\Users\Public\Favorites`\[1]
-
-Libraries - Shortcut `C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Libraries`
-
-Libraries - Shortcut (2) `C:\Users\Public\Libraries`
-
-Local Settings - Local `C:\Users\<UserName>\AppData\Local`
-
-My Documents - Documents `C:\Users\<UserName>\Documents`
-
-Network Shortcuts - Shortcut ``"C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Network Shortcuts"``
-
-Printer Shortcuts - Shortcut ``"C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts"``
-
-Public Desktop - Shortcut `C:\Users\Public\Desktop`
-
-Public Documents - Shortcut `C:\Users\Public\Documents`
-
-Public Downloads - Shortcut `C:\Users\Public\Downloads`
-
-Public Music - Shortcut `C:\Users\Public\Music`
-
-Public Pictures - Shortcut `C:\Users\Public\Pictures`
-
-Public Recorded TV - Shortcut ``"C:\Users\Public\Recorded TV"``
-
-Public Videos - Shortcut `C:\Users\Public\Videos`
-
-Recent Items - Shortcut `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Recent`
-
-Send to ▶ shortcuts `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\SendTo`
-
-Start Menu - Shortcut (2) ``"C:\ProgramData\Microsoft\Windows\Start Menu"``
-
-Start Menu - Shortcut ``"C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu"``
-
-Templates - Shortcut `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Templates`
-
-Default User Profile `%SystemDrive%\Users\Default`
-
-Themes files `C:\Users\<USERNAME>\AppData\Local\Microsoft\Windows\Themes`
-
-Wallpapers `C:\Windows\Web\Wallpaper`
-
-`C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar`
-
+`C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar`<br>
 `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\StartMenu`
 
 #### Windows Vista/7 Backward Compatible {#Backward-Compatible}
@@ -65,32 +42,22 @@ Warning: RoboCopy (version?) causes a copy-loop with certain `/MIR` situations.
 `DIR C:\Users\<USERNAME> /AL` to list Reparse Points
 
 ```
-\<JUNCTION> Application Data [C:\Users\<USERNAME>\AppData\Roaming]
-
-\<JUNCTION> Cookies [C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Cookies]
-
-\<JUNCTION> Local Settings [C:\Users\<USERNAME>\AppData\Local]
-
-\<JUNCTION> My Documents [C:\Users\<USERNAME>\Documents]
-
-\<JUNCTION> NetHood [C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Network Shortcuts]
-
-\<JUNCTION> PrintHood \[C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts]
-
-\<JUNCTION> Recent \[C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Recent]
-
-\<JUNCTION> SendTo \[C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\SendTo]
-
-\<JUNCTION> Start Menu \[C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu]
-
-\<JUNCTION> Templates \[C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Templates]
+<JUNCTION> Application Data [C:\Users\<USERNAME>\AppData\Roaming]
+<JUNCTION> Cookies [C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Cookies]
+<JUNCTION> Local Settings [C:\Users\<USERNAME>\AppData\Local]
+<JUNCTION> My Documents [C:\Users\<USERNAME>\Documents]
+<JUNCTION> NetHood [C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Network Shortcuts]
+<JUNCTION> PrintHood \[C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts]
+<JUNCTION> Recent [C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Recent]
+<JUNCTION> SendTo [C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\SendTo]
+<JUNCTION> Start Menu [C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu]
+<JUNCTION> Templates [C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Templates]
 ```
 
 `DIR C:\Users /AL`
 
 ```
 <SYMLINKD> All Users [C:\ProgramData]
-
 <JUNCTION> Default User [C:\Users\Default]
 ```
 
@@ -98,9 +65,7 @@ Directory of `C:\Users\\_UserName_\AppData\Local`
 
 ```
 <JUNCTION> Application Data [C:\Users\<USERNAME>\AppData\Local]
-
 <JUNCTION> History [C:\Users\<USERNAME>\AppData\Local\Microsoft\Windows\History]
-
 <JUNCTION> Temporary Internet Files [C:\Users\<USERNAME>\AppData\Local\Microsoft\Windows\Temporary Internet Files]
 ```
 
@@ -108,9 +73,7 @@ Directory of `C:\Users\\_UserName_\Documents`
 
 ```
 <JUNCTION> My Music [C:\Users\<USERNAME>\Music]
-
 <JUNCTION> My Pictures [C:\Users\<USERNAME>\Pictures]
-
 <JUNCTION> My Videos [C:\Users\<USERNAME>\Videos]
 ```
 
@@ -176,7 +139,7 @@ AVG .dat files have GUIDs? ex. 36bc5203-fa71-4f47-b52a-d972668bff5d
 
 Compressed (zipped) Folders Error
 
-``\[Filename] cannot be compressed because it includes characters that cannot be used in a compressed folder such as -. You should rename this file or directory.``
+``[Filename] cannot be compressed because it includes characters that cannot be used in a compressed folder such as -. You should rename this file or directory.``
 
 ``\- dash``
 
@@ -261,27 +224,23 @@ Manage-bde; Windows PowerShell cmdlets for BitLocker; BitLocker Recovery Passwor
 
 ``C:\System Volume Information\SPP\OnlineMetadataCache``
 
-``{}\_OnDiskSnapshotProp``
+``{}_OnDiskSnapshotProp``
 
 ``C:\System Volume Information\SPP\SppCbsHiveStore``
 
 ``C:\System Volume Information\SPP\SppGroupCache``
 
-``{}\_DriverPackageInfo``
+``{}_DriverPackageInfo``
 
-``{}\_WindowsUpdateInfo``
+``{}_WindowsUpdateInfo``
 
 ``C:\System Volume Information\Windows Backup\Catalogs\GlobalCatalogLock.dat``
 
 ```
 {}
-
 {}{}
-
 {}{}
-
 {}{}
-
 {}{}
 ```
 
@@ -302,7 +261,7 @@ C:\MSOCache
 
 Default user
 
-``Current User C:\Documents and Settings\\_Username_\ ...``
+``Current User C:\Documents and Settings\Username\...``
 
 All Users
 
@@ -310,7 +269,7 @@ All Users
 
 Default user
 
-``Current User C:\Users\_Username_\AppData\Roaming\Microsoft\Windows\Start Menu``
+``Current User C:\Users\Username\AppData\Roaming\Microsoft\Windows\Start Menu``
 
 ``All Users C:\ProgramData\Microsoft\Windows\Start Menu``
 
