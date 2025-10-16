@@ -414,19 +414,17 @@ setuperr.log Displays any errors that might occur during setup.
 
 **User**
 
-``HKEY\_Current\_User C:\Users\\_\<username>_\NTUSER.DAT``
+`HKEY_Current_User` `C:\Users\<username>\NTUSER.DAT`
 
 **Service/System User Account Profile**
 
-``SYSTEM (S-1-5-18) %systemroot%\System32\config\systemprofile\ntuser.dat``
-
-``LOCAL SERVICE (S-1-5-19) C:\Windows\ServiceProfiles\LocalService\NTUSER.DAT``
-
-``NETWORK SERVICE (S-1-5-20) C:\Windows\ServiceProfiles\NetworkService\NTUSER.DAT``
+`SYSTEM (S-1-5-18) %systemroot%\System32\config\systemprofile\ntuser.dat`
+`LOCAL SERVICE (S-1-5-19) C:\Windows\ServiceProfiles\LocalService\NTUSER.DAT`
+`NETWORK SERVICE (S-1-5-20) C:\Windows\ServiceProfiles\NetworkService\NTUSER.DAT`
 
 Local Service and Network Service have full profiles including directory tree like a regular user account.
 
-where is user\software, current\_user?
+where is user\software, current_user?
 
 NTUSER.INI roaming profile
 
@@ -444,7 +442,7 @@ More information about Profiles above/below
 
 sfc /verifynow
 
-``Backup copies location %WinDir%\System32\Dllcache\\``
+Backup copies location `%WinDir%\System32\Dllcache\`
 
 List of files checked by SFC
 
@@ -454,7 +452,7 @@ Process/Service filename/path
 
 Registry key that stores install source
 
-``Logs C:\Windows\Logs\CBS\CBS.log``
+Logs `C:\Windows\Logs\CBS\CBS.log`
 
 ``findstr /c:"\[SR]" %windir%\Logs\CBS\CBS.log >"%userprofile%\Desktop\sfcdetails.txt"``
 
