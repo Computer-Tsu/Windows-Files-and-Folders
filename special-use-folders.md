@@ -245,14 +245,16 @@ C:\ProgramData\
 {}{}
 ```
 
-```MountPointManagerRemoteDatabase
+```
+MountPointManagerRemoteDatabase
 Syscache.hve
 Syscache.hve.LOG1
 Syscache.hve.LOG2
 tracking.log
 C:\Config.Msi
 C:\MSOCache
-[is this mentioned below in the forensics area?]```
+```
+[is this mentioned below in the forensics area?]
 
 #### Start Menu {#start-menu}
 
@@ -316,27 +318,33 @@ Custom Views can import as Xml files
 
 **Windows Logs**
 
-``Application %SystemRoot%\System32\Winevt\Logs\Application.evtx``
-``Security %SystemRoot%\System32\Winevt\Logs\Security.evtx``
-``Setup %SystemRoot%\System32\Winevt\Logs\Setup.evtx``
-``System %SystemRoot%\System32\Winevt\Logs\System.evtx``
-``Forwarded Events %SystemRoot%\System32\Winevt\Logs\ForwardedEvents.evtx``
+|  Name  |  Path  |
+| ----- | ----- |
+| Application  |  `%SystemRoot%\System32\Winevt\Logs\Application.evtx`
+| Security  |  `%SystemRoot%\System32\Winevt\Logs\Security.evtx` |
+| Setup  |  `%SystemRoot%\System32\Winevt\Logs\Setup.evtx` |
+| System  |  `%SystemRoot%\System32\Winevt\Logs\System.evtx` |
+| Forwarded Events  |  `%SystemRoot%\System32\Winevt\Logs\ForwardedEvents.evtx` |
 
 **Applications and Services Logs**
 
-``ACEEventLog %SystemRoot%\System32\Winevt\Logs\ACEEventLog.evtx``
-``Hardware Events %SystemRoot%\System32\Winevt\Logs\HardwareEvents.evtx``
-``Internet Explorer %SystemRoot%\System32\Winevt\Logs\Internet Explorer.evtx``
-``Key Management Service %SystemRoot%\System32\Winevt\Logs\Key Management Service.evtx``
-``Media Center %SystemRoot%\System32\Winevt\Logs\Media Center.evtx``
+|  Name  |  Path  |
+| ----- | ----- |
+| ACEEventLog  |  `%SystemRoot%\System32\Winevt\Logs\ACEEventLog.evtx` |
+| Hardware Events  |  `%SystemRoot%\System32\Winevt\Logs\HardwareEvents.evtx` |
+| Internet Explorer  |  `%SystemRoot%\System32\Winevt\Logs\Internet Explorer.evtx` |
+| Key Management Service  |  `%SystemRoot%\System32\Winevt\Logs\Key Management Service.evtx` |
+| Media Center  |  `%SystemRoot%\System32\Winevt\Logs\Media Center.evtx` |
 
 _Microsoft_
 
 _Windows_
 
-``Microsoft Exchange PSTCapture %SystemRoot%\System32\Winevt\Logs\Microsoft Exchange PSTCapture.evtx``
-``Microsoft Office Alerts %SystemRoot%\System32\Winevt\Logs\OAlerts.evtx``
-``Windows PowerShell %SystemRoot%\System32\Winevt\Logs\Windows PowerShell.evtx``
+|  Name  |  Path  |
+| ----- | ----- |
+| Microsoft Exchange PSTCapture  |  `%SystemRoot%\System32\Winevt\Logs\Microsoft Exchange PSTCapture.evtx` |
+| Microsoft Office Alerts  |  `%SystemRoot%\System32\Winevt\Logs\OAlerts.evtx` |
+| Windows PowerShell  |  `%SystemRoot%\System32\Winevt\Logs\Windows PowerShell.evtx` |
 
 Source: Eventlog, Event : 1100 System Shutdown
 
