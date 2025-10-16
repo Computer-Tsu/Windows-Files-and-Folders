@@ -1,6 +1,6 @@
 # OID
 
-*See also:* [SNMP](Network/Net-SNMP.md)
+*See also:* [SNMP](,,/,,/Network/Net-SNMP.md)
 
 ## Windows
 
