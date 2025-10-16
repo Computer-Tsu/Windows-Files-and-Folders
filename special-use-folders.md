@@ -1451,7 +1451,7 @@ How many modems does each OS support? (Win2k, Win2k3, Win 2k8, SBS)
 
 #### OEM Branding {#h.wwy0nqh6y4fd" id="h.wwy0nqh6y4fd
 
-``C:\Windows\Setup\scripts\\``
+``C:\Windows\Setup\scripts\``
 
 ``C:\Windows\System32\oem``
 
@@ -1473,9 +1473,9 @@ You will need the right PCL/PostScript viewer to read .spl files
 
 [http://www.undocprint.org/formats/winspool/spl](http://technet.microsoft.com/en-us/library/cc772355.aspx)
 
-``prnproc$ C:\Windows\system32\spool\PRTPROCS Printer Drivers``
+``prnproc$`` ``C:\Windows\system32\spool\PRTPROCS Printer Drivers``
 
-``print$ C:\Windows\system32\spool\drivers Printer Drivers``
+``print$`` ``C:\Windows\system32\spool\drivers Printer Drivers``
 
 Windows Server 2003 R2 can manage printers as 2003 or 2003R2
 
@@ -1507,13 +1507,13 @@ You may have a print job stuck in the spool, or one that crashes the spool servi
 
 ``Print Spooler C:\Windows\System32\spool\PRINTERS``
 
-``Printer Drivers C:\Windows\system32\spool\DRIVERS\x64\3\\``
+``Printer Drivers C:\Windows\system32\spool\DRIVERS\x64\3\``
 
-``Inf Path C:\Windows\System32\DriverStore\FileRepository\\...\\...inf``
+``Inf Path C:\Windows\System32\DriverStore\FileRepository\...\...inf``
 
 **UNC path for shared printer drivers**
 
-``print$ C:\Windows\System32\spool\drivers``
+``print$`` ``C:\Windows\System32\spool\drivers``
 
 **Terminal Server key fix for no/cannot set default printer**
 
@@ -1555,37 +1555,34 @@ The Microsoft Printer Migrator (Printmig.exe) utility, included in Windows NT 4.
 Vista and later, Administrative Tools, Print Management. Right-click the Print server, choose Export printers to a file...
 
 ``C:\Windows\System32\spool\tools>printbrm.exe -?``
-
+```
 Error: A single mode must be selected!
 
 Access the Backup Recovery Migration tool through a command line interface.
 
-PrintBrm -B|R|Q \[-S \<server>] -F \<file> \[-D \<directory>] \[-O FORCE] \[-P ALL|ORIG] \[-NOBIN] \[-LPR2TCP] \[-C \<config file>] \[-NOACL] \[-?]
-``\-B Backup the server to the specified file``
-``\-R Restore the configuration in the file to the server``
-``\-Q Query the server or the backup file``
-``\-S \<server name> Target server``
-``\-F \<file name> Target backup File``
-``\-D \<directory> Unpack the backup file to (with -R) or repack a backup file from (with -B) the given directory``
-``\-O FORCE Force overwriting of existing objects``
-\-P ALL|ORIG Publish all printers in directory, or publish printers that were published originally
-``\-NOBIN Omit the binaries from the backup``
-``\-LPR2TCP Convert LPR ports to Standard TCP/IP ports on restore``
-``\-C \<file name> Use the specified configuration file for BRM``
-``\-NOACL Remove ACLs from print queues on restore``
-``\-? Display this help``
-
+PrintBrm -B|R|Q [-S <server>] -F <file> [-D <directory>] [-O FORCE] [-P ALL|ORIG] [-NOBIN] [-LPR2TCP] [-C <config file>] [-NOACL] [-?]
+-B Backup the server to the specified file
+-R Restore the configuration in the file to the server
+-Q Query the server or the backup file
+-S <server name> Target server
+-F <file name> Target backup File
+-D <directory> Unpack the backup file to (with -R) or repack a backup file from (with -B) the given directory
+-O FORCE Force overwriting of existing objects
+-P ALL|ORIG Publish all printers in directory, or publish printers that were published originally
+-NOBIN Omit the binaries from the backup
+-LPR2TCP Convert LPR ports to Standard TCP/IP ports on restore
+-C <file name> Use the specified configuration file for BRM
+-NOACL Remove ACLs from print queues on restore
+-? Display this help
+```
 ``C:\Windows\System32\spool\tools>``
 
 **Print Separator Page**
 
-pcl.sep
-
-pscript.sep
-
-sysprint.sep
-
-sysprtj.sep
+`pcl.sep`<br>
+`pscript.sep`<br>
+`sysprint.sep`<br>
+`sysprtj.sep`<br>
 
 [http://www.windowsnetworking.com/kbase/WindowsTips/WindowsXP/AdminTips/Network/SharedprinterseparatorpageforWindows2000andWindowsXP.html](http://technet.microsoft.com/en-us/library/cc753907.aspx)
 
@@ -1616,9 +1613,9 @@ AUTORUN.INF
 
 setupSNK.exe
 
-``\SMRTNTKY\\``
+``\SMRTNTKY\``
 
-``\DEVICE\\``
+``\DEVICE\``
 
 fcw.ico
 
@@ -1636,7 +1633,7 @@ WSETTING.WFC
 
 Back up vault
 
-``Credential Backup Files (\*.crd)``
+``Credential Backup Files (*.crd)``
 
 #### Encrypting File System {#h.l1u6dqphtt0n" id="h.l1u6dqphtt0n
 
@@ -1656,7 +1653,7 @@ also a user key
 
 **command to trigger search for updates**
 
-wuauclt.exe /detectnow (two other places in this document?)
+`wuauclt.exe /detectnow` (two other places in this document?)
 
 **Sites to add to Internet Explorer Trusted Zone**
 
@@ -1679,7 +1676,7 @@ RegBack from Windows 2000 Server?
 
 #### TWAIN {#h.bnu5zbmyy5s2" id="h.bnu5zbmyy5s2
 
-``C:\Windows\twain\_32``
+``C:\Windows\twain_32``
 
 Registry:
 
