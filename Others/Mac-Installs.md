@@ -242,4 +242,10 @@ If you have a Mac computer and have connected an Apple ID to the Apple Store, th
 
 ### Bootcamp
 
+Macs with Apple Silicon (M1, M2, M3, etc) do not support Boot Camp (only Windows virtualization).
+
+[Bootcamp manuals and downloads](https://support.apple.com/en-us/docs/mac/pp38)
+
+[Bootcamp 5.1.5769](https://support.apple.com/en-us/106378)
+
 
