@@ -237,3 +237,9 @@ Apple also sells some older Mac OS X versions (**10.8**, **10.7**, **10.6**) for
 -----
 
 If you have a Mac computer and have connected an Apple ID to the Apple Store, then you may be able to download that OS version for free in the future even if it was one of the Paid versions. Unsure if you first have to "purchase" it in the store to add it to your library (purchased app history for free) and have future rights to download it again using the App store.
+
+## Other Downloads
+
+### Bootcamp
+
+
