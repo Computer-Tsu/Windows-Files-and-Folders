@@ -92,6 +92,7 @@
     * [Apdx CLI Usage - ](Appendices/CLI-Help-.md)
     * [Apdx CLI Usage - ](Appendices/CLI-Help-.md)
     * [Apdx CLI Usage - ](Appendices/CLI-Help-.md)
+    * [Apdx Regitry Keys](Appendices/Apdx-Registry-Keys.md)
 
 * [Page 1](page-1/README.md)
   * [page1b](page-1/page1b.md)
