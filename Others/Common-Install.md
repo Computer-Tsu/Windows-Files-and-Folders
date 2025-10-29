@@ -90,9 +90,9 @@ https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8
 
 ## Access Runtime
 
-Microsoft Access 365(https://support.microsoft.com/en-us/office/download-and-install-microsoft-365-access-runtime-185c5a32-8ba9-491e-ac76-91cbe3ea09c9)
-Microsoft Access 2016(https://www.microsoft.com/en-us/download/details.aspx?id=50040)
-Microsoft Access 2013(https://www.microsoft.com/en-us/download/details.aspx?id=39358)
+ - [Microsoft Access 365](https://support.microsoft.com/en-us/office/download-and-install-microsoft-365-access-runtime-185c5a32-8ba9-491e-ac76-91cbe3ea09c9)
+ - [Microsoft Access 2016](https://www.microsoft.com/en-us/download/details.aspx?id=50040)
+ - [Microsoft Access 2013](https://www.microsoft.com/en-us/download/details.aspx?id=39358)
 
 ## Windows Installer (WinGet for new Windows installs)
 ### Issues with first time run on new systems. Running as Admin on Standard USer account.
@@ -113,26 +113,26 @@ https://www.microsoft.com/en-us/download/details.aspx?id=55319
 ## Microsoft Office
 
 ### 2016 Suite
-[Office Professional 2016](http://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/ProfessionalRetail.img)  *verified 10/21/2024*
-[​Office Home and Business 2016](http://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/HomeBusinessRetail.img)  
-[Office Home and Student 2016](http://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/HomeStudentRetail.img)  
+ - [Office Professional 2016](http://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/ProfessionalRetail.img)  *verified 10/21/2024*
+ - [​Office Home and Business 2016](http://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/HomeBusinessRetail.img)  
+ - [Office Home and Student 2016](http://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/HomeStudentRetail.img)  
 
 ### 2013 Suite
-[Office Professional 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/ProfessionalRetail.img)  
-[Office Home and Business 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/HomeBusinessRetail.img)  
-[Office Home and Student 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/HomeStudentRetail.img)  *verified 10/21/2024*
+ - [Office Professional 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/ProfessionalRetail.img)  
+ - [Office Home and Business 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/HomeBusinessRetail.img)  
+ - [Office Home and Student 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/HomeStudentRetail.img)  *verified 10/21/2024*
 
 #### 2013 Programs
-[Word 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/WordRetail.img)  
-[Excel 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/ExcelRetail.img)  
-[PowerPoint 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/PowerPointRetail.img)  
-[OneNote 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/OneNoteRetail.img)  
-[Publisher 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/PublisherRetail.img)  
-[Access 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/AccessRetail.img)  
-[Project Standard 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/ProjectStdRetail.img)  
-[Project Professional 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/ProjectProRetail.img)   
-[Visio Standard 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/VisioStdRetail.img)  
-[Visio Professional 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/VisioProRetail.img)
+ - [Word 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/WordRetail.img)  
+ - [Excel 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/ExcelRetail.img)  
+ - [PowerPoint 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/PowerPointRetail.img)  
+ - [OneNote 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/OneNoteRetail.img)  
+ - [Publisher 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/PublisherRetail.img)  
+ - [Access 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/AccessRetail.img)  
+ - [Project Standard 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/ProjectStdRetail.img)  
+ - [Project Professional 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/ProjectProRetail.img)   
+ - [Visio Standard 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/VisioStdRetail.img)  
+ - [Visio Professional 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/VisioProRetail.img)
 
 *can change `en-US` to `de-DE` or fr-FR, es-ES, it-IT, pt-BR, ja-JP, zh-CN, and ru-RU*
 
