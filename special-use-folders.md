@@ -823,7 +823,7 @@ Scheduled Tasks
 | svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalServiceAndNoImpersonation                                                                                                                                                                                                   |
 | snmp.exe                  | SNMP Service                                          | C:\Windows\System32\snmp.exe                                                                                                                                                                                                                                        |
 | svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalServiceNoNetwork                                                                                                                                                                                                            |
-| armsvc.exe \*32           | Adobe Acrobat Update Service                          | "C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\armsvc.exe"                                                                                                                                                                                                      |
+| armsvc.exe *32           | Adobe Acrobat Update Service                          | "C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\armsvc.exe"                                                                                                                                                                                                      |
 | dwm.exe                   | Desktop Window Manager                                | "C:\Windows\System32\Dwm.exe"                                                                                                                                                                                                                                       |
 | mDNSResponder.exe         | Bonjour Service                                       | "C:\Program Files\Bonjour\mDNSResponder.exe"                                                                                                                                                                                                                        |
 | inetinfo.exe              | Internet Information Services                         | C:\Windows\system32\inetsrv\inetinfo.exe                                                                                                                                                                                                                            |
@@ -931,7 +931,7 @@ $ H + H \*
 
 **PowerShell ISE**
 
-$Profile `C:\Users\\_Username_\Documents\WindowsPowerShell\Microsoft.PowerShell\_profile.ps1`
+$Profile `C:\Users\_Username_\Documents\WindowsPowerShell\Microsoft.PowerShell\_profile.ps1`
 
 ``PSModule... env var. C:\Windows\system32\WindowsPowerShell\v1.0\Modules\\``
 
@@ -1003,11 +1003,10 @@ Active Directory Module for Windows PowerShell
 ``%windir%\system32\WindowsPowerShell\v1.0\powershell.exe -noexit -command import-module ActiveDirectory``
 
 Exchange Management Shell
-
-``C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command ". 'C:\Program Files\Microsoft\Exchange Server\V14\bin\RemoteExchange.ps1'; Connect-ExchangeServer -auto"``
-
-``C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command ". 'C:\Program Files\Microsoft\Exchange Server\V14\bin\RemoteExchange.ps1'; Connect-ExchangeServer -ServerFQDN Exchange.Domain.com"``
-
+```
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command ". 'C:\Program Files\Microsoft\Exchange Server\V14\bin\RemoteExchange.ps1'; Connect-ExchangeServer -auto"
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command ". 'C:\Program Files\Microsoft\Exchange Server\V14\bin\RemoteExchange.ps1'; Connect-ExchangeServer -ServerFQDN Exchange.Domain.com"
+```
 Can also be run in ISE
 
 ``[http://technet.microsoft.com/en-us/library/dd297932%28v=exchg.141%29.aspx](http://technet.microsoft.com/en-us/library/cc742041.aspx)``
@@ -1018,25 +1017,16 @@ iSCSI management cmdlets for Windows PowerShell
 
 PowerShell Pack is available as part of the Windows 7 Resource Kit.
 
-DotNet Explore loaded types, find commands that can work with a type, and explore how you can use PowerShell, DotNet and COM together
-
-FileSystem Monitor files and folders, check for duplicate files, and check disk space
-
-IsePack Supercharge your scripting in the Integrated Scripting Environment with over 35 shortcuts
-
-PSCodeGen Generates PowerShell scripts, C# code, and P/Invoke
-
-PSImageTools Convert, rotate, scale, and crop images and get image metadata
-
-PSRSS Harness the FeedStore from PowerShell
-
-PSSystemTools Get Operating System or Hardware Information
-
-PSUserTools Get the users on a system, check for elevation, and start-processaadministrator
-
-TaskScheduler List scheduled tasks, create or delete tasks
-
-WPK Create rich user interfaces quickly and easily from Windows PowerShell. Think HTA, but easy. Over 600 scripts to help you build quick user interfaces
+- **DotNet** Explore loaded types, find commands that can work with a type, and explore how you can use PowerShell, DotNet and COM together
+- **FileSystem** Monitor files and folders, check for duplicate files, and check disk space
+- **IsePack** Supercharge your scripting in the Integrated Scripting Environment with over 35 shortcuts
+- **PSCodeGen** Generates PowerShell scripts, C# code, and P/Invoke
+- **PSImageTools** Convert, rotate, scale, and crop images and get image metadata
+- **PSRSS** Harness the FeedStore from PowerShell
+- **PSSystemTools** Get Operating System or Hardware Information
+- **PSUserTools** Get the users on a system, check for elevation, and start-processaadministrator
+- **TaskScheduler** List scheduled tasks, create or delete tasks
+- **WPK** Create rich user interfaces quickly and easily from Windows PowerShell. Think HTA, but easy. Over 600 scripts to help you build quick user interfaces
 
 **Desired State Configuration (DSC)**
 
@@ -1050,25 +1040,22 @@ Path to Visual Style:
 
 To select Aero type:
 
-``%windir%\resources\Themes\Aero\aero.msstyles``
+%windir%\resources\Themes\Aero\aero.msstyles`
 
-To select a different visual style, type:
-
-``ie: \\<server>\share\Corp.msstyles``
-
-To select Windows Classic, leave the box
-
+To select a different visual style, type:<br>
+ie: `\\<server>\share\Corp.msstyles`<br>
+To select Windows Classic, leave the box<br>
 above blank and enable this setting
 
-``C:\Users\<UserName>\AppData\Microsoft\Windows\...Themes?``
+`C:\Users\<UserName>\AppData\Microsoft\Windows\...Themes`?
 
-``C:\Windows\Resources``
+`C:\Windows\Resources`
 
-``C:\Windows\Web\Wallpaper``
+`C:\Windows\Web\Wallpaper`
 
-``C:\Windows\Cursors``
+`C:\Windows\Cursors`
 
-``C:\Windows\Media``
+`C:\Windows\Media`
 
 **Change Your Picture**
 
@@ -1078,68 +1065,51 @@ C:\ProgramData\Microsoft\User Account Pictures\Default Pictures\
 C:\ProgramData\Microsoft\User Account Pictures\Username.dat
 C:\ProgramData\Microsoft\User Account Pictures\User.bmp
 ```
+
 **Icons**
 
-``C:\Windows\system32\url.dll``
-
-``C:\Windows\System32\explorer.exe (C:\Windows\explorer.exe)``
-
-``C:\Windows\System32\moricons.dll``
-
-``C:\Windows\System32\shell32.dll``
-
-``C:\Windows\System32\imageres.dll``
-
-``C:\Program Files\Internet Explorer\iexplore.exe``
-
-pifmgr.dll
-
-accessibilitycpl.dll
-
-ddores.dll
-
-gameux.dll
-
-mmcndmg?
-
-mmres.dll
-
-netcenter.dll
-
-netshell?
-
-networkexplorer.dll
-
-pnidui.dll
-
-sensorscpl.dll
-
-setupapi.dll
-
-wmploc?
-
-wpdshext.dll
+- `C:\Windows\system32\url.dll`
+- `C:\Windows\System32\explorer.exe` (`C:\Windows\explorer.exe`)
+- `C:\Windows\System32\moricons.dll`
+- `C:\Windows\System32\shell32.dll`
+- `C:\Windows\System32\imageres.dll`
+- `C:\Program Files\Internet Explorer\iexplore.exe`
+- `pifmgr.dll`
+- `accessibilitycpl.dll`
+- `ddores.dll`
+- `gameux.dll`
+- `mmcndmg`?
+- `mmres.dll`
+- `netcenter.dll`
+- `netshell`?
+- `networkexplorer.dll`
+- `pnidui.dll`
+- `sensorscpl.dll`
+- `setupapi.dll`
+- `wmploc`?
+- `wpdshext.dll`
 
 **Wallpaper**
 
 IE
 
-``C:\Users\\_UserName_\AppData\Roaming\Microsoft\Internet Explorer\Internet Explorer Wallpaper.bmp``
+`C:\Users\_UserName_\AppData\Roaming\Microsoft\Internet Explorer\Internet Explorer Wallpaper.bmp`
 
 #### Out-of-Box Experience {#h.dn9tu1me6fvq" id="h.dn9tu1me6fvq
 
 **First boot background music**
 
-``C:\WINDOWS\system32\oobe\images\title.wma``
+`C:\WINDOWS\system32\oobe\images\title.wma`
 
 **Reset Windows back to First-boot**
 
-``C:\Windows\System32\sysprep\sysprep.exe``
+```
+C:\Windows\System32\sysprep\sysprep.exe
 
-USAGE: sysprep.exe \[/quiet] \[/generalize] \[/audit | /oobe] \[/reboot | /shutdown | /quit] \[/unattend:\<filename>]
+USAGE: sysprep.exe [/quiet] [/generalize] [/audit | /oobe] [/reboot | /shutdown | /quit] [/unattend:<filename>]
 
 If no command-line arguments are provided, a graphical user interface is used to select the desired mode of sysprep operation.
-
+```
 #### Deploying Windows {#h.bvne4mhxkpgs" id="h.bvne4mhxkpgs
 
 Deploying is also in the Server Features area
@@ -1152,11 +1122,11 @@ RIS, WIM
 
 #### Windows Upgrade {#h.fp1pnt29yzyp" id="h.fp1pnt29yzyp
 
-``C:\Users\Username\AppData\Local\Apps\Windows 7 USB DVD Download Tool\``
+`C:\Users\Username\AppData\Local\Apps\Windows 7 USB DVD Download Tool\`
 
-``C:\Windows\System32\migwiz.lnk %windir%\system32\migwiz\migwiz.exe``
+`C:\Windows\System32\migwiz.lnk %windir%\system32\migwiz\migwiz.exe`
 
-``C:\Windows\System32\migwiz\migwiz.exe``
+`C:\Windows\System32\migwiz\migwiz.exe`
 
 User State Migration Tool (USMT)
 
@@ -1164,19 +1134,19 @@ User State Migration Tool (USMT)
 
 **Windows 8 Upgrade Assistant**
 
-``C:\ESD\Windows\Sources``
+`C:\ESD\Windows\Sources`
 
 **Folders created from upgrade process**
 
-``C:\Windows.old\[2]``
+`C:\Windows.old\`[2]
 
-``C:\Windows.old\Documents and Settings``
+`C:\Windows.old\Documents and Settings`
 
-``C:\Windows.old\Program Files``
+`C:\Windows.old\Program Files`
 
-``C:\Windows.old\Windows``
+`C:\Windows.old\Windows`
 
-``C:\Windows.old\?``
+`C:\Windows.old\`?
 
 **Windows 8.1 Update**
 
@@ -1222,15 +1192,15 @@ MGATool
 
 KMS troubleshooting
 
-``[http://blogs.technet.com/b/odsupport/archive/2011/11/14/how-to-discover-kms-hosts-via-a-dns-query-and-remove-them-if-need-be.aspx](http://technet.microsoft.com/en-us/library/cc786105\(v=ws.10\).aspx)``
+[http://blogs.technet.com/b/odsupport/archive/2011/11/14/how-to-discover-kms-hosts-via-a-dns-query-and-remove-them-if-need-be.aspx](http://technet.microsoft.com/en-us/library/cc786105\(v=ws.10\).aspx)
 
 #### Windows Updates {#h.i1j7n0ux0g6y" id="h.i1j7n0ux0g6y
 
-``C:\Windows\\$NTUninstallKB_nnnnnnn_$``
+`C:\Windows\$NTUninstallKB_nnnnnnn_$`
 
-``C:\Windows\ie8``
+`C:\Windows\ie8`
 
-``C:\Windows\\$hf\_mig$``
+`C:\Windows\$hf_mig$`
 
 wuauclt /detectnow
 
@@ -1248,7 +1218,7 @@ How to slipstream hotfixes that replace pre-existing driver files
 
 3rd party tools
 
-``http://en.wikipedia.org/wiki/List_of_remastering_software``
+(http://en.wikipedia.org/wiki/List_of_remastering_software)
 
 nLite
 
@@ -1260,13 +1230,13 @@ RyanVM
 
 #### Install/Uninstall cache {#h.xasz4mskijht" id="h.xasz4mskijht
 
-``? C:\WINDOWS\Installer\[3] is this for programs or patches?``
+? `C:\WINDOWS\Installer`[3] is this for programs or patches?
 
-``C:\MSOCache\All Users\``
+`C:\MSOCache\All Users\`
 
-``C:\Windows\Downloaded Installations\{``
+`C:\Windows\Downloaded Installations\{`
 
-``Web Platform Installer? \<UserName>\AppData\Local\Microsoft\WebSetup``
+Web Platform Installer? `<UserName>\AppData\Local\Microsoft\WebSetup`
 
 (MSOCache mentioned elsewhere)
 
@@ -1274,7 +1244,7 @@ RyanVM
 
 **msiexec.exe**
 
-``msiexec /i %LogonServer%\netlogon\PSTCaptureAgent.msi``
+`msiexec /i %LogonServer%\netlogon\PSTCaptureAgent.msi`
 
 common setup.exe switches
 
@@ -1288,11 +1258,11 @@ msizap for uninstall
 
 and/or
 
-``HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\MSIServer``
+`HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\MSIServer`
 
-``REG\_SZ MSIServer=Service``
+REG_SZ `MSIServer=Service`
 
-``REG ADD “HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\MSIServer” /VE /T REG\_SZ /F /D "Service" && net start msiserver``
+`REG ADD “HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\MSIServer” /VE /T REG_SZ /F /D "Service" && net start msiserver`
 
 See also 3rd-arty app SafeMSI
 
@@ -1302,7 +1272,7 @@ Windows Update Service (Wuauserv)
 
 #### Scheduled Tasks {#h.wx4y24ic2ga3" id="h.wx4y24ic2ga3
 
-``C:\Windows\System32\Tasks``
+`C:\Windows\System32\Tasks`
 
 AT registry key:
 
@@ -1312,7 +1282,7 @@ Uses Schedule service
 
 The syntax for specifying days is:
 
-M Tu W Th F Sa Su
+`M Tu W Th F Sa Su`
 
 **schtasks.exe**
 
@@ -1332,13 +1302,12 @@ Command line switches
 
 ``Selection Scripts (*.bks)``
 
-``C:\Documents and Settings\%Username%\Local Settings\Application Data\Microsoft\Windows NT\NTBackup\data``
+`C:\Documents and Settings\%Username%\Local Settings\Application Data\Microsoft\Windows NT\NTBackup\data`
 
-Log Results
+Log Results<br>
+`C:\Documents and Settings\%Username%\Local Settings\Application Data\Microsoft\Windows NT\NTBackup\data\backup01.log`
 
-``C:\Documents and Settings\%Username%\Local Settings\Application Data\Microsoft\Windows NT\NTBackup\data\backup01.log``
-
-``Files excluded for all users by default\[4]:``
+`Files excluded for all users by default\[4]:
 
 | **Filename**                                                                          | **Application**                                                                                      |
 | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
@@ -1371,17 +1340,15 @@ Log Results
 | \<drive:path>\DfsrPrivate\Staging\*                                                 | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
 | S\system32\MSDtc\trace\dtctrace.log                                                   | DRM                                                                                                  |
 
-``HKLM\SYSTEM\CurrentControlSet\Control\BackupRestore\FilesNotToBackup``
-
-``HKLM\SYSTEM\CurrentControlSet\Control\BackupRestore\KeysNotToRestore``
-
-``HKLM\SYSTEM\CurrentControlSet\Control\BackupRestore\FilesNotToSnapshot``
+`HKLM\SYSTEM\CurrentControlSet\Control\BackupRestore\FilesNotToBackup`<br>
+`HKLM\SYSTEM\CurrentControlSet\Control\BackupRestore\KeysNotToRestore`<br>
+`HKLM\SYSTEM\CurrentControlSet\Control\BackupRestore\FilesNotToSnapshot`
 
 Is there also a HKCU key?
 
 **Windows Server Backup**
 
-``Wbadmin replaces ntbackup\[5]``
+Wbadmin replaces ntbackup[5]
 
 [http://technet.microsoft.com/en-us/library/cc770340.aspx](http://technet.microsoft.com/en-us/library/cc770340.aspx)
 
@@ -1423,7 +1390,7 @@ See also Deployment, OEM
 
 #### Printing {#h.k1vmmpaque47" id="h.k1vmmpaque47
 
-``C:\Windows\System32\spool\PRINTERS``
+`C:\Windows\System32\spool\PRINTERS`
 
 Special Shell folder to view all printers in Windows 7 without them being consolidated by port.
 
@@ -1443,7 +1410,7 @@ You will need the right PCL/PostScript viewer to read .spl files
 
 Windows Server 2003 R2 can manage printers as 2003 or 2003R2
 
-``The R2 Print Management C:\WINDOWS\PMCSnap\printmanagement.msc``
+The R2 Print Management `C:\WINDOWS\PMCSnap\printmanagement.msc`
 
 findnetprinters.dll
 
@@ -1504,9 +1471,8 @@ Ports
 | [Pubprn.vbs](http://www.petri.co.il/filtering-and-custom-views-in-vista-event-viewer.htm)                                                        | Publishes a printer to the Active Directory directory service.                                                                             |
 | [Rundll32 printui.dll,PrintUIEntry](https://computername:8098/)                                                                                  | Enables you to automate the installation and configuration of printers using scripts or the command prompt.                                |
 
-``rundll32 printui.dll,PrintUIEntry /ga /c\machine /n\machine\printer /j"LanMan Print Services"``
-
-``rundll32 printui.dll,PrintUIEntry /ga /n"\AppServer\OKI C530 Admin" /j"LanMan Print Services"``
+`rundll32 printui.dll,PrintUIEntry /ga /c\machine /n\machine\printer /j"LanMan Print Services"`<br>
+`rundll32 printui.dll,PrintUIEntry /ga /n"\AppServer\OKI C530 Admin" /j"LanMan Print Services"`
 
 **Backup or Migrate Printers**
 
@@ -1514,11 +1480,11 @@ Resource Kit? Tool to backup all drivers and shared printers to file and can res
 
 The Microsoft Printer Migrator (Printmig.exe) utility, included in Windows NT 4.0 Resource Kit Supplement 3
 
-``%Systemroot%\System32\Spool\Pm\Pm.CAB``
+`%Systemroot%\System32\Spool\Pm\Pm.CAB`
 
 Vista and later, Administrative Tools, Print Management. Right-click the Print server, choose Export printers to a file...
 
-``C:\Windows\System32\spool\tools>printbrm.exe -?``
+`C:\Windows\System32\spool\tools>printbrm.exe -?`<br>
 ```
 Error: A single mode must be selected!
 
@@ -1539,7 +1505,6 @@ PrintBrm -B|R|Q [-S <server>] -F <file> [-D <directory>] [-O FORCE] [-P ALL|ORIG
 -NOACL Remove ACLs from print queues on restore
 -? Display this help
 ```
-``C:\Windows\System32\spool\tools>``
 
 **Print Separator Page**
 
@@ -1567,27 +1532,21 @@ Add Local printer, local port, enter UNC path
 
 (Move to Networking?)
 
-Registry key of remembered Wi-Fi connections
-
-``HKLM\SOFTWARE\Microsoft\WZCSVC\Parameters\Interfaces ?``
+Registry key of remembered Wi-Fi connections<br>
+`HKLM\SOFTWARE\Microsoft\WZCSVC\Parameters\Interfaces` ?
 
 Wireless setup disk config file
 
+```
 AUTORUN.INF
-
 setupSNK.exe
-
-``\SMRTNTKY\``
-
-``\DEVICE\``
-
+\SMRTNTKY\
+\DEVICE\
 fcw.ico
-
 MessageB.txt
-
 WSETTING.TXT
-
 WSETTING.WFC
+```
 
 #### Windows logon password {#h.34sklueb7143" id="h.34sklueb7143
 
@@ -1597,19 +1556,19 @@ WSETTING.WFC
 
 Back up vault
 
-``Credential Backup Files (*.crd)``
+`Credential Backup Files (*.crd)`
 
 #### Encrypting File System {#h.l1u6dqphtt0n" id="h.l1u6dqphtt0n
 
 Manage your file encryption certificates
 
-rekeywiz.exe EFS REKEY wizard
+`rekeywiz.exe` EFS REKEY wizard
 
 #### ODBC {#h.mgj5021muc2a" id="h.mgj5021muc2a
 
 folder path: DSN files
 
-``registry: HKLM\SOFTWARE\ODBC\ODBC.INI``
+`registry: HKLM\SOFTWARE\ODBC\ODBC.INI`
 
 also a user key
 
@@ -1621,15 +1580,15 @@ also a user key
 
 **Sites to add to Internet Explorer Trusted Zone**
 
-``URLs:\[6]``
-
-``* https://\*.microsoft.com``
+URLs:[6]
+```
+* https://\*.microsoft.com
 * https://download.windowsupdate.com
 * https://update.microsoft.com/windowsupdate
-``* http://\*.update.microsoft.com``
-``* https://\*.update.microsoft.com``
+* http://\*.update.microsoft.com
+* https://\*.update.microsoft.com
 * http://download.windowsupdate.com
-
+```
 Homegroup setup disk?
 
 ICS (Internet Connection Sharing) setup disk?
@@ -1640,7 +1599,7 @@ RegBack from Windows 2000 Server?
 
 #### TWAIN {#h.bnu5zbmyy5s2" id="h.bnu5zbmyy5s2
 
-``C:\Windows\twain_32``
+`C:\Windows\twain_32`
 
 Registry:
 
@@ -1671,11 +1630,11 @@ Prevent windows from being automatically arranged when moved to the edge of the 
 
 Underline keyboard shortcuts and access keys has been moved to Make it easier to use keyboard shortcuts.
 
-sethc.exe - Sticky Keys
+`sethc.exe` - Sticky Keys
 
-Magnify.exe
+`Magnify.exe`
 
-Narrator.exe
+`Narrator.exe`
 
 **Registry keys to disable and prevent accidental activation.**
 
@@ -1693,13 +1652,13 @@ Which apps run 32-bit as default on 64-bit installation?
 
 ODBC, Media Player, IE
 
-``odbcad32.exe %windir%\SysWOW64\odbcad32.exe``
+`odbcad32.exe %windir%\SysWOW64\odbcad32.exe`
 
 Problem Step Recorder `C:\Windows\System32\PSR.exe` and/or `C:\Windows\SysWOW64`
 
-``msconfig C:\Windows\System32 \[Win7] or ? \[WinXP]``
+msconfig C:\Windows\System32 [Win7] or ? [WinXP]
 
-god-mode folder Everything.{ED7BA470-8E54-465E-825C-99712043E01C}
+god-mode folder `Everything.{ED7BA470-8E54-465E-825C-99712043E01C}`
 
 (Paths don’t work to launch program...)
 
@@ -1717,35 +1676,35 @@ To Make Documents as Default Folder to Open by Windows Explorer upon Launching
 
 To Make Computer as Default Folder to Open by Windows Explorer upon Launching
 
-``%SystemRoot%\explorer.exe /n,::{450D8FBA-AD25-11D0-98A8-0800361B1103}``
+`%SystemRoot%\explorer.exe /n,::{450D8FBA-AD25-11D0-98A8-0800361B1103}`
 
-``C:\Windows``
+`C:\Windows`
 
-bfsvc.exe Boot File Servicing Utility
+`bfsvc.exe` Boot File Servicing Utility
 
-explorer.exe
+`explorer.exe`
 
-fveupdate.exe BitLocker Drive Encryption Servicing Utility
+`fveupdate.exe` BitLocker Drive Encryption Servicing Utility
 
-HelpPane.exe Microsoft Help and Support
+`HelpPane.exe` Microsoft Help and Support
 
-hh.exe Microsoft HTML Help Executable
+`hh.exe` Microsoft HTML Help Executable
 
 notepad.exe
 
-regedit.exe Registry Editor
+`regedit.exe` Registry Editor
 
-splwow64.exe Print driver host for 32bit applications
+`splwow64.exe` Print driver host for 32bit applications
 
-system.ini
+`system.ini`
 
-``twunk_16.exe``
+`twunk_16.exe`
 
-``twunk_32.exe Twain.dll Client’s 32-Bit Thunking Server``
+`twunk_32.exe` Twain.dll Client’s 32-Bit Thunking Server
 
-win.ini
+`win.ini`
 
-winhlp32.exe
+`winhlp32.exe`
 
 write.exe Windows Write
 
@@ -1755,11 +1714,9 @@ write.exe Windows Write
 
 X specifies the object, and optionally with sub-object Y. /e switch shows the left Windows Explorer tree view navigation pane together with the right pane in list view, while /n hides the left navigation pane. When the /root parameter is present, Explorer.exe will explore the root object (X) and objects belonging to X. On the other hand, when the /root switch is not present, Explorer.exe explores the object X, its children, and other Explorer objects as well. /Select switch puts the focus on a file or folder.
 
-For example:
-
-``%SystemRoot%\explorer.exe /N,%WinDir%\System32,/Select,%WinDir%\System32\Ping.exe``
-
-``Command aboves will explore the \Windows\System32 folder and put the focus on the ping.exe program.``
+For example:<br>
+`%SystemRoot%\explorer.exe /N,%WinDir%\System32,/Select,%WinDir%\System32\Ping.exe`<br>
+Command aboves will explore the \Windows\System32 folder and put the focus on the ping.exe program.
 
 #### MMC {#h.kzqvf7icqgpe" id="h.kzqvf7icqgpe
 
