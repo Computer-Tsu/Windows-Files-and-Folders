@@ -262,7 +262,7 @@ A self-signed certificate is only for personal use. If you need an authenticated
 
 [Click here for a list of commercial certificate authorites](https://learn.microsoft.com/en-us/previous-versions/ms995347(v=msdn.10)?redirectedfrom=MSDN)
 
-_Y_our certificate's name:
+_Y_our certificate's name:<br>
 <kbd> OK </kbd> <kbd> Cancel </kbd>
 
 
@@ -561,12 +561,12 @@ MAPI (Exchange), POP3, and SMTP log file:
 
 IMAP transport name is similar to:
 
-* Windows Vista \& 7 - `c:\Users\<USERNAME>\AppData\Local\Temp\Outlook Logging\IMAP-ExampleCom-07\_19\_2012-14\_03\_44\_865.log`
-* Windows XP - `c:\Documents and Settings\<USERNAME>\Local Settings\Temp\Outlook Logging\IMAP-ExampleCom-07\_19\_2012-14\_03\_44\_865.log`
+* Windows Vista \& 7 - `c:\Users\<USERNAME>\AppData\Local\Temp\Outlook Logging\IMAP-ExampleCom-07_19_2012-14_03_44_865.log`
+* Windows XP - `c:\Documents and Settings\<USERNAME>\Local Settings\Temp\Outlook Logging\IMAP-ExampleCom-07_19_2012-14_03_44_865.log`
 
 Outlook Profile
 
-``HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows Messaging Subsystem\Profiles``
+`HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows Messaging Subsystem\Profiles`
 
 Microsoft Outlook Configuration Analyzer Tool 2.0 (OCAT)
 
@@ -601,15 +601,15 @@ This file includes information about the contents of the Navigation Pane.
 
 **Registered Microsoft Exchange extensions (.dat)**
 
-**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\AppData\Local\Microsoft\Outlook``
+**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\AppData\Local\Microsoft\Outlook`
 
-**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Local Settings\Application Data\Microsoft\Outlook``
+**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Local Settings\Application Data\Microsoft\Outlook`
 
 **Rules (.rwz)**
 
-**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\AppData\Roaming\Microsoft\Outlook``
+**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\AppData\Roaming\Microsoft\Outlook`
 
-**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Outlook``
+**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Outlook`
 
 **Note** If you upgraded to Outlook 2010 from a version of Outlook earlier than Microsoft Outlook 2002, you might have an .rwz file on your computer's hard disk drive. The .rwz file is no longer needed, and the information about rules is now kept on the server running Microsoft Exchange, and in the Outlook Data File (.pst) for POP3 and IMAP e-mail accounts. You can delete the file.
 
@@ -617,15 +617,15 @@ If you use the Rules Import and Export feature, the default location for .rwz fi
 
 **Print styles (Outlprnt with no extension)**
 
-``**Windows Vista** <DRIVE>:\Users\<USERNAME>\AppData\Roaming\Microsoft\Outlook``
+`**Windows Vista** <DRIVE>:\Users\<USERNAME>\AppData\Roaming\Microsoft\Outlook`
 
-**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Outlook``
+**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Outlook`
 
 **Signatures (.rtf, .txt, .htm)**
 
-**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\AppData\Roaming\Microsoft\Signatures``
+**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\AppData\Roaming\Microsoft\Signatures`
 
-**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Signatures``
+**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Signatures`
 
 A signature named “Company default” will generate the following files and folder structure.<br>
 ```
@@ -643,9 +643,9 @@ C:\Users\UserName\AppData\Roaming\Microsoft\Signatures\`
 
 If installed, and personal or computer-wide.
 
-**Windows 7 and Windows Vista**  `<DRIVE>:\Program Files\Common Files\Microsoft Shared\Stationery``
+**Windows 7 and Windows Vista**  `<DRIVE>:\Program Files\Common Files\Microsoft Shared\Stationery`
 
-**Windows 7 and Windows Vista 64-bit with Outlook 2010 32-bit** ``<DRIVE>:\Program Files (x86)\Common Files\Microsoft Shared\Stationery``
+**Windows 7 and Windows Vista 64-bit with Outlook 2010 32-bit** `<DRIVE>:\Program Files (x86)\Common Files\Microsoft Shared\Stationery`
 
 **Windows XP**<br>
 `<DRIVE>:\Program Files\Common Files\Microsoft Shared\Stationery`<br>
@@ -653,9 +653,9 @@ If installed, and personal or computer-wide.
 
 **Custom forms**
 
-**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\AppData\Local\Microsoft\Forms``
+**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\AppData\Local\Microsoft\Forms`
 
-**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Local Settings\Application Data\Microsoft\Forms``
+**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Local Settings\Application Data\Microsoft\Forms`
 
 Forms
 
@@ -665,22 +665,22 @@ Forms
 
 **Send/Receive settings (.srs)**
 
-**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\AppData\Roaming\Microsoft\Outlook``
+**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\AppData\Roaming\Microsoft\Outlook`
 
-**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Outlook``
+**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Outlook`
 
 ``\<Profile Name>.srs``
 
 **Message (.msg, .htm, .rtf)**
 
-**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\Documents``
+**Windows 7 and Windows Vista**  `<DRIVE>:\Users\<USERNAME>\Documents`
 
-**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\My Documents``
+**Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\My Documents`
 
 **.PRF file for Outlook profile**
 
-``"%ProgramFiles%\Microsoft Office\Office14\outlook.exe" /importprf %LogonServer%\NETLOGON\MigrateEmail.PRF``<br>
-``"%ProgramFiles(x86)%\Microsoft Office\Office14\outlook.exe" /importprf %LogonServer%\NETLOGON\MigrateEmail.PRF``
+`"%ProgramFiles%\Microsoft Office\Office14\outlook.exe" /importprf %LogonServer%\NETLOGON\MigrateEmail.PRF`<br>
+`"%ProgramFiles(x86)%\Microsoft Office\Office14\outlook.exe" /importprf %LogonServer%\NETLOGON\MigrateEmail.PRF`
 
 Use[ ](http://technet.microsoft.com/en-us/library/cc772168.aspx#heading=h.96ds1q77m2pr)[Microsoft Office Customization Tool](http://technet.microsoft.com/en-us/library/cc753151.aspx#heading=h.96ds1q77m2pr) for creating Outlook Profiles (.PRF)
 
@@ -694,7 +694,7 @@ MRMAPI
 
 Files recently accessed by Windows Media Player
 
-``HKCU\Software\Microsoft\MediaPlayer\Player\RecentFileList``
+`HKCU\Software\Microsoft\MediaPlayer\Player\RecentFileList`
 
 (XP Only?)
 
@@ -768,7 +768,7 @@ Adobe Flash Player Background Updater
 ``C:\Windows\System32\Macromed\Flash\mms.cfg``<br>
 ``C:\Windows\SysWOW64\Macromed\Flash\mms.cfg``
 
-Administrator Guide``[17]``
+Administrator Guide[17]
 
 #### Apple iTunes
 
@@ -792,7 +792,7 @@ iTunes Library files (*.itl)\`[18]` \[sql lite] C:\Users\<UserName>\Music\iTunes
 iTunes Library file XML `C:\Users\<UserName>\Music\iTunes\iTunes Music Library.xml`<br>
 Cover images `C:\Users\<UserName>\Music\iTunes\Album Artwork`<br>
 
-the iTunes configuration files (delete the "SC Info.sidb" file)``9]``
+the iTunes configuration files (delete the "SC Info.sidb" file)[19]
 
  * The preference files for Windows Vista and 7 `[20]` are here:
    - ``C:\Users\username\AppData\Local\Apple Computer\iTunes\``
