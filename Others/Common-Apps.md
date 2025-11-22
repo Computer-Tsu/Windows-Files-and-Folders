@@ -247,14 +247,36 @@ To correct this problem, copy the VBA 6.0 registry keys from the 6.0 hive to the
 
 **Digital Certificate for VBA**
 
-can also be used to sign PowerShell and documents such as Access databases and installers
+`SelfCert.exe` can also be used to sign PowerShell and documents such as Access databases and installers
 
-``C:\...`` usage & switches
-```
-add stuff here
-```
+`C:\Program Files\Microsoft Office\root\Office16\SelfCert.exe` usage & switches
+
+**Create Digital Certificate**<br>
+This program creates a self-signed digital certificate that beats the name you type below. This type of certificate does not verify your identity.
+
+Since a self-signed digital certificate might be a forgery, users will receive a security warning when they open a file that contains a macro project with a self-signed signature.
+
+Office will only allow you to trust a self-signed certificate on the machine on which it was created.
+
+A self-signed certificate is only for personal use. If you need an authenticated code signing certificate for signing commercial or broadly distributed macros, you will need to contact a certification authority.
+
+[Click here for a list of commercial certificate authorites](https://learn.microsoft.com/en-us/previous-versions/ms995347(v=msdn.10)?redirectedfrom=MSDN)
+
+_Y_our certificate's name:
+<kbd> OK </kbd> <kbd> Cancel </kbd>
+
 
 **other cert tools**
+
+certutil
+
+signtool
+
+certreq
+
+mmc.exe cert*.msc (certmgr and certlm)
+
+additional MMC .MSC for AD CS
 
 **Document Inspector**
 
