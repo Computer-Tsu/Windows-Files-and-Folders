@@ -10,3 +10,6 @@ Windows Store edition<br>
 Java edition<br>
 `C:\Users\USERNAME\AppData\Roaming\.minecraft`
 
+## Where Saved files are stores
+
+## Where settings are stored
