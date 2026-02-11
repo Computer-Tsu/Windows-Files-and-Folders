@@ -1,3 +1,6 @@
+# Common Windows Applications
+programs bundle included with Microsoft Windows
+
 ### Popular Applications
 [Common Applications](Common-Apps.md)
 
@@ -50,12 +53,10 @@ Must also enable the Toolbar, right click Toolbars, select
 
 Windows 7
 
-``%APPDATA%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar``
-
+``%APPDATA%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar``<br>
 ``HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Taskband``
 
-**Internet Explorer image in web page, Set as background**
-
+**Internet Explorer image in web page, Set as background**<br>
 ``C:\Users\UserName\AppData\Roaming\Microsoft\Internet Explorer\Internet Explorer Wallpaper.bmp``
 
 **Internet Security Properties, Sites, Add website to the zone**
@@ -95,8 +96,7 @@ URLs to add for viewing system files in MMC
 
 ``about:\_?\_``
 
-**Internet Explorer Administration Kit**
-
+**Internet Explorer Administration Kit**<br>
 `.ins` automatic configuration file for customized browser configuration settings created with the Profile Manager
 
 #### Windows Live
@@ -105,8 +105,7 @@ URLs to add for viewing system files in MMC
 
 #### Outlook Express
 
-**Outlook Express E-Mail Storage**
-
+**Outlook Express E-Mail Storage**<br>
 ``C:\Documents and Settings\Username\Local\Application Data\Identities``
 
 **Outlook Express Address Book Contacts**
@@ -147,7 +146,7 @@ What are the product IDs?
 * Does converters and graphics filters affect file preview of .GIF, .JPG?
 * OCR tools removed from 64-bit. Were part of discontinued Picture/Imaging Manager? Some work arounds include installing Sharepoint designer? or using OneNote and TIF file?
 
-**How To Outlook LDAP directory to use AD**
+**How To configure Outlook LDAP directory to use AD**
 
 1. Add account, Address Books tab, Microsoft LDAP Directory
 2. Server Name: FQDN to server
@@ -165,7 +164,7 @@ What are the product IDs?
 
 **Differences with Service Pack 1**
 
-``Office 2010 Standard with SP1 has the following additional files in the .\Updates folder``
+Office 2010 Standard with SP1 has the following additional files in the .\Updates folder
 ```
 clientshared32muisp1-en-us.msp
 clientshared32wwsp1-x-none.msp
