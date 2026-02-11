@@ -256,7 +256,7 @@ MSP RMM spreadsheet (reddit or mspuser)
 
 ### Intuit QuickBooks
 
-https://downloads.quickbooks.com/app/qbdt/products
+https://downloads.quickbooks.com/app/qbdt/products <br>
 United States (US), Canada (CA), United Kingdom (UK)
 * QuickBooks Desktop Pro [2010-2024]
   - 2025
@@ -279,7 +279,8 @@ United States (US), Canada (CA), United Kingdom (UK)
 
 [Chocolatey](https://chocolatey.org/install)
 iex <br>
-`Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('http://internal/odata/repo/ChocolateyInstall.ps1'))`
+`Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('http://internal/odata/repo/ChocolateyInstall.ps1'))` OR<br>
+`Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`
 
 ## Remote Client Conection Terminal Managers
 
@@ -310,8 +311,7 @@ https://www.nirsoft.net/utils/lan_ip_scanner.html
 `winget install WiresharkFoundation.Wireshark`
 
 
-`winget install Insecure.Npcap`
-
+`winget install Insecure.Npcap`<br>
 `winget install Insecure.Nmap`
 
 see also Pcap, WinPcap, libpcap
@@ -325,7 +325,9 @@ Windows XP-8, Server 2003-2012
 [Clonezilla](https://clonezilla.org/downloads.php)
 
 
-PowerShell ISE & add-ons [Script Browser](https://www.powershellgallery.com/packages/ScriptBrowser/1.3.1.0), [Script Analyzer](https://www.powershellgallery.com/packages/ISEScriptAnalyzerAddOn/1.0)
+PowerShell ISE & add-ons
+ * [Script Browser](https://www.powershellgallery.com/packages/ScriptBrowser/1.3.1.0)
+ * [Script Analyzer](https://www.powershellgallery.com/packages/ISEScriptAnalyzerAddOn/1.0)
 ```
 Install-Module -Name Scriptbrowser
 Install-Module -Name ISEScriptAnalyzerAddOn
@@ -466,7 +468,7 @@ https://www.microsoft.com/en-us/evalcenter
 
 https://www.netwrix.com/freeware_tools.html
 * [Netwrix Auditor Free Community Edition](https://www.netwrix.com/free_community_edition.html)
-[Netwrix Auditor Free Community Edition Limitations](https://www.netwrix.com/freeware_limitations.html)
+  * [Netwrix Auditor Free Community Edition Limitations](https://www.netwrix.com/freeware_limitations.html)
 * [Netwrix Auditor for SQL Server](https://www.netwrix.com/netwrix_change_notifier_for_sql_server.html)
 * [Netwrix Auditor for Active Directory](https://www.netwrix.com/netwrix_change_notifier_for_active_directory.html)
 * [Netwrix Account Lockout Examiner](https://www.netwrix.com/account_lockout_examiner.html)
@@ -478,7 +480,7 @@ https://www.netwrix.com/freeware_tools.html
 
 
 #### Tftpd64 (TFTP, DNS, DHCP, SNTP, Syslog)
-https://bitbucket.org/phjounin/tftpd64/wiki/Download%20Tftpd64.md
+https://bitbucket.org/phjounin/tftpd64/wiki/Download%20Tftpd64.md<br>
 https://pjo2.github.io/tftpd64/
 
 
@@ -487,7 +489,7 @@ https://www.solarwinds.com/free-tools
 * [ipMonitor Free Edition](https://www.solarwinds.com/free-tools/ipmonitor-free)
 winget install SolarWinds.KiwiSyslogServer
 
-FileZilla	https://filezilla-project.org/download.php?show_all=1
+[FileZilla](https://filezilla-project.org/download.php?show_all=1)
 
 WinSCP	https://winscp.net/eng/downloads.php
 
@@ -495,7 +497,8 @@ WinSCP	https://winscp.net/eng/downloads.php
 
 WinMerge https://winmerge.org/downloads/?lang=en
 
-WinDiff	https://en.wikipedia.org/wiki/WinDiff	https://learn.microsoft.com/en-us/troubleshoot/windows-client/shell-experience/how-to-use-windiff-utility
+WinDiff	https://en.wikipedia.org/wiki/WinDiff<br>
+https://learn.microsoft.com/en-us/troubleshoot/windows-client/shell-experience/how-to-use-windiff-utility
 
 DiffView<br>
 https://www.adlice.com/diffview/
@@ -557,7 +560,7 @@ https://www.sans.org/tools/ez-tools/
   * Windows 10
   * Edge/IE
   * MDOP
-* [Chrome]((https://dl.google.com/dl/edgedl/chrome/policy/policy_templates.zip)
+* [Chrome](https://dl.google.com/dl/edgedl/chrome/policy/policy_templates.zip)
 * [Firefox](https://mozilla.github.io/policy-templates/)
 * [Adobe](https://www.adobe.com/devnet-docs/acrobatetk/tools/DesktopDeployment/gpo.html#gpo-registry-template)
 
