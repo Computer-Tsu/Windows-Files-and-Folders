@@ -16,8 +16,7 @@ Any product and company names belong to those companies.
 
 ![GitHub](https://img.shields.io/github/license/Computer-Tsu/Windows-Files-and-Folders)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Computer-Tsu/Windows-Files-and-Folders)
-![Lines of code](https://img.shields.io/tokei/lines/github.com/Computer-Tsu/Windows-Files-and-Folders)
-![Lines of code](https://img.shields.io/tokei/lines/github/Computer-Tsu/Windows-Files-and-Folders)
+![Lines of Code](https://img.shields.io/endpoint?url=https://ghloc.vercel.app/api/Computer-Tsu/Windows-Files-and-Folders/badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/Computer-Tsu/Windows-Files-and-Folders)
 ![GitHub language](https://img.shields.io/github/languages/top/Computer-Tsu/Windows-Files-and-Folders)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Computer-Tsu/Windows-Files-and-Folders)
