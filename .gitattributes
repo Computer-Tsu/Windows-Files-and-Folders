@@ -1,0 +1,3 @@
+# Force Markdown to be counted in language stats
+*.md linguist-detectable=true
+*.md linguist-language=Markdown
