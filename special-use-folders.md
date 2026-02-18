@@ -477,23 +477,21 @@ The name cannot be identical to any other user, computer, or group name in the d
 
 #### Recycle Bin {#recycle-bin}
 
-``C:\\$Recycle.Bin\\``
-
-``C:\\$Recycle.Bin\S-1-5-21-3171392789-1724324034-2371106253-500``
-
-``Contents renamed to 8.3 files keeping extension and named $\<random alpha-numberic>``
+`C:\$Recycle.Bin\`<br>
+`C:\$Recycle.Bin\S-1-5-21-3171392789-1724324034-2371106253-500` user subfolder<br>
+Contents renamed to 8.3 files keeping extension and named $<random alpha-numberic>
 
 #### System Restore {#system-restore}
 
-rstrui.exe
+RstrUI.exe
 
-``Windows XP C:\System Volume Information\_restore{D86480E3-73EF.....D8}\RP1\Snapshot\ etc``
+Windows XP `C:\System Volume Information\_restore{D86480E3-73EF.....D8}\RP1\Snapshot\` etc
 
 **Manual System Restore Process**
 
 #### Performance Monitoring {#performance-monitoring}
 
-**perfmon**
+**PerfMon**
 
 traces
 
@@ -501,7 +499,9 @@ captures
 
 event triggers
 
-**taskman**
+`perfmon.exe /report` (takes 60 seconds)
+
+**TaskMan**
 
 columns available
 
