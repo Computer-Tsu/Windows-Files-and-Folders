@@ -10,7 +10,7 @@
 
 ## Command Line Enhancements
 
-### Bandwich
+### Bandwhich
 
 ### Caligula (USB image burner)
 
