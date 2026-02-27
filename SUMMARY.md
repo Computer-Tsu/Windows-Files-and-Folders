@@ -6,6 +6,7 @@
     * [Games](Others/Common-Games.md)
   * [Popular Software Install Downloads](Others/Common-Install.md)
   * [Apple Mac downloads](Others/Mac-Installs.md)
+  * [Linux Package Installs](Others/Linux-Installs.md)
   * [Network](Network.md)
     * [SNMP](Network/Net-SNMP.md)
   * [SVI](SysVol.md)
