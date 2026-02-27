@@ -16,7 +16,7 @@
 
 ### kew (music player)
 
-### nnn n^3 (folder navigation)
+### nnn n<sup>3</sup> (folder navigation)
 
 ## GUI (X10 Window Manager)
 
