@@ -12,26 +12,31 @@ Including changes from Windows XP to Vista, Windows 7
 | Libraries - Shortcut (2)  |  `C:\Users\Public\Libraries` |
 | Local Settings - Local  |  `C:\Users\<UserName>\AppData\Local` |
 | My Documents - Documents  |  `C:\Users\<UserName>\Documents` |
-| Network Shortcuts - Shortcut  |  ``"C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Network Shortcuts"`` |
-| Printer Shortcuts - Shortcut  |  ``"C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts"`` |
+| Network Shortcuts - Shortcut  |  `"C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Network Shortcuts"` |
+| Printer Shortcuts - Shortcut  |  `"C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts"` |
 | Public Desktop - Shortcut  |  `C:\Users\Public\Desktop` |
 | Public Documents - Shortcut  |  `C:\Users\Public\Documents` |
 | Public Downloads - Shortcut  |  `C:\Users\Public\Downloads` |
 | Public Music - Shortcut  |  `C:\Users\Public\Music` |
 | Public Pictures - Shortcut  |  `C:\Users\Public\Pictures` |
-| Public Recorded TV - Shortcut  |  ``"C:\Users\Public\Recorded TV"`` |
+| Public Recorded TV - Shortcut  |  `"C:\Users\Public\Recorded TV"` |
 | Public Videos - Shortcut  |  `C:\Users\Public\Videos` |
 | Recent Items - Shortcut  |  `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Recent` |
 | Send to ▶ shortcuts  |  `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\SendTo` |
-| Start Menu - Shortcut (2)  |  ``"C:\ProgramData\Microsoft\Windows\Start Menu"`` |
-| Start Menu - Shortcut  |  ``"C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu"`` |
+| Start Menu - Shortcut (2)  |  `"C:\ProgramData\Microsoft\Windows\Start Menu"` |
+| Start Menu - Shortcut  |  `"C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu"` |
 | Templates - Shortcut  |  `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Templates` |
 | Default User Profile  |  `%SystemDrive%\Users\Default` |
 | Themes files  |  `C:\Users\<USERNAME>\AppData\Local\Microsoft\Windows\Themes` |
 | Wallpapers  |  `C:\Windows\Web\Wallpaper` |
+| Lockscreen  |  `C:\Users\<USERNAME>\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets` |
 
 `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar`<br>
 `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\StartMenu`
+
+C:\Users\<USERNAME>\AppData\Local\Microsoft\WinGet\Links\<br>
+Sample:<br>
+C:\Program Files\WinGet\Packages\yt-dlp.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-N-121938-g2456a39581-win64-gpl\bin>ffmpeg.exe
 
 #### Windows Vista/7 Backward Compatible {#Backward-Compatible}
 
@@ -61,7 +66,7 @@ Warning: RoboCopy (version?) causes a copy-loop with certain `/MIR` situations.
 <JUNCTION> Default User [C:\Users\Default]
 ```
 
-Directory of `C:\Users\\_UserName_\AppData\Local`
+Directory of `C:\Users\<UserName>\AppData\Local`
 
 ```
 <JUNCTION> Application Data [C:\Users\<USERNAME>\AppData\Local]
@@ -99,7 +104,7 @@ Shortcuts that no longer work
 
 Shortcuts that still work
 
-Send To ``%UserProfile%\AppData\Roaming\Microsoft\Windows\SendTo``
+Send To `%UserProfile%\AppData\Roaming\Microsoft\Windows\SendTo`
 
 Can also use shell:sendto from Start-Run
 
@@ -107,9 +112,9 @@ Can also use shell:sendto from Start-Run
 
 More information will be in the File Systems document.
 
-``[merge section with reserved names, devices, pipes?]``
+[merge section with reserved names, devices, pipes?]
 
-``filename::datastream <sp?>``
+`filename::datastream` <sp?>
 
 `dir /r`
 
@@ -139,12 +144,10 @@ AVG .dat files have GUIDs? ex. 36bc5203-fa71-4f47-b52a-d972668bff5d
 
 Compressed (zipped) Folders Error
 
-``[Filename] cannot be compressed because it includes characters that cannot be used in a compressed folder such as -. You should rename this file or directory.``
+`[Filename] cannot be compressed because it includes characters that cannot be used in a compressed folder such as -. You should rename this file or directory.`
 
-``\- dash``
-
-' apostrophe
-
+- dash<br>
+' apostrophe<br>
 Unicode characters
 
 ### Windows system and configuration files {#system-config-files}
@@ -155,7 +158,7 @@ autoexec.nt
 
 `systemroot\system32\autoexec.nt`
 
-`MSDOS.SYS [Windows 9x]`
+`MSDOS.SYS` [Windows 9x]
 
 IO.SYS
 
@@ -177,7 +180,7 @@ Thumbs.db
 
 desktop.ini
 
-`setup.inf <?>`
+`setup.inf` <?>
 
 Bitlocker
 
@@ -196,7 +199,7 @@ Junctions in `C:\ProgramData`
 | Start Menu       | `C:\ProgramData\Microsoft\Windows\Start Menu` |
 | Templates        | `C:\ProgramData\Microsoft\Windows\Templates`  |
 
-``C:\ProgramData\Microsoft\Windows\Start Menu``
+`C:\ProgramData\Microsoft\Windows\Start Menu`
 
 ```
 C:\ProgramData\
@@ -221,21 +224,21 @@ C:\ProgramData\
 #### Volume File System Records {#Volume-System-Records}
 [SVI](SysVol.md)
 
-``C:\System Volume Information``
+`C:\System Volume Information`
 
-``C:\System Volume Information\SPP\OnlineMetadataCache``
+`C:\System Volume Information\SPP\OnlineMetadataCache`
 
-``{}_OnDiskSnapshotProp``
+`{}_OnDiskSnapshotProp`
 
-``C:\System Volume Information\SPP\SppCbsHiveStore``
+`C:\System Volume Information\SPP\SppCbsHiveStore`
 
-``C:\System Volume Information\SPP\SppGroupCache``
+`C:\System Volume Information\SPP\SppGroupCache`
 
-``{}_DriverPackageInfo``
+`{}_DriverPackageInfo`
 
-``{}_WindowsUpdateInfo``
+`{}_WindowsUpdateInfo`
 
-``C:\System Volume Information\Windows Backup\Catalogs\GlobalCatalogLock.dat``
+`C:\System Volume Information\Windows Backup\Catalogs\GlobalCatalogLock.dat`
 
 ```
 {}
@@ -258,13 +261,13 @@ C:\MSOCache
 
 #### Start Menu {#start-menu}
 
-``More details in the Appendice \_ below``
+`More details in the Appendice \ below`
 
 **Windows XP Start Button**
 
 Default user
 
-``Current User C:\Documents and Settings\Username\...``
+`Current User C:\Documents and Settings\Username\...`
 
 All Users
 
@@ -272,9 +275,9 @@ All Users
 
 Default user
 
-``Current User C:\Users\Username\AppData\Roaming\Microsoft\Windows\Start Menu``
+`Current User C:\Users\Username\AppData\Roaming\Microsoft\Windows\Start Menu`
 
-``All Users C:\ProgramData\Microsoft\Windows\Start Menu``
+`All Users C:\ProgramData\Microsoft\Windows\Start Menu`
 
 **Windows 8**
 
@@ -284,9 +287,9 @@ need detail
 
 wevtvwr.msc
 
-``HKLM\SYSTEM\CurrentControlSet\services\eventlog\Application``
+`HKLM\SYSTEM\CurrentControlSet\services\eventlog\Application`
 
-``Default folder C:\Windows\System32\winevt\Logs``
+`Default folder C:\Windows\System32\winevt\Logs`
 
 syntax examples using GUI to filter
 
@@ -382,11 +385,11 @@ You can enable Emergency Management Services console redirection in the Recovery
 
 For specific information about setting Recovery Console Bootcfg parameters for Emergency Management Services, see "Emergency Management Services" at the Microsoft Windows Resource Kits Web site.
 
-``[http://technet.microsoft.com/en-us/library/cc786105%28v=ws.10%29.aspx](http://technet.microsoft.com/en-us/library/cc754361\(v=ws.10\).aspx)``
+`[http://technet.microsoft.com/en-us/library/cc786105%28v=ws.10%29.aspx](http://technet.microsoft.com/en-us/library/cc754361\(v=ws.10\).aspx)`
 
 #### Setup log access {#setup-log-access}
 
-`[DELL only?]`
+[DELL only?]
 
 SAC provides access to the setup logs during GUI-mode Setup. You can press ESC+TAB to switch between the setup logs and SAC. When accessing the setup logs from Emergency Management Services, you can see which portions of Setup have completed and whether any errors have occurred. This is a very useful way to check the progress of your setup and to diagnose setup failures.
 
@@ -404,11 +407,11 @@ setuperr.log Displays any errors that might occur during setup.
 
 | Reg tree | Storage File |
 | -------- | ------------ |
-| ``HKEY_Local_Machine\SYSTEM`` | ``C:\Windows\System32\config\SYSTEM`` |
-| ``HKEY_LOCAL_MACHINE\SOFTWARE`` | ``C:\Windows\System32\config\SOFTWARE`` |
-| ``HKEY_USERS\.DEFAULT`` | ``C:\Windows\System32\config\DEFAULT`` |
-| ``HKEY_LOCAL_MACHINE\SAM``<br>``HKEY_LOCAL_MACHINE\SECURITY\SAM`` | ``C:\Windows\System32\config\SAM`` |
-| ``HKEY_LOCAL_MACHINE\SECURITY`` | ``C:\Windows\System32\config\SECURITY`` |
+| `HKEY_Local_Machine\SYSTEM` | `C:\Windows\System32\config\SYSTEM` |
+| `HKEY_LOCAL_MACHINE\SOFTWARE` | `C:\Windows\System32\config\SOFTWARE` |
+| `HKEY_USERS\.DEFAULT` | `C:\Windows\System32\config\DEFAULT` |
+| `HKEY_LOCAL_MACHINE\SAM`<br>`HKEY_LOCAL_MACHINE\SECURITY\SAM` | `C:\Windows\System32\config\SAM` |
+| `HKEY_LOCAL_MACHINE\SECURITY` | `C:\Windows\System32\config\SECURITY` |
 
 
 
@@ -432,13 +435,13 @@ NTUSER.MAN a ntuser.dat file renamed to become a mandatory profile that the user
 
 More information about Profiles above/below
 
-``C:\Windows\System32\config\RegBack``
+`C:\Windows\System32\config\RegBack`
 
 #### System Protected Files {#system-files}
 
 **Microsoft (R) Windows (R) Resource Checker Version 6.0**
 
-``System File Checker C:\Windows\System32\sfc.exe``
+`System File Checker C:\Windows\System32\sfc.exe`
 
 sfc /verifynow
 
@@ -454,11 +457,11 @@ Registry key that stores install source
 
 Logs `C:\Windows\Logs\CBS\CBS.log`
 
-``findstr /c:"\[SR]" %windir%\Logs\CBS\CBS.log >"%userprofile%\Desktop\sfcdetails.txt"``
+`findstr /c:"\[SR]" %windir%\Logs\CBS\CBS.log >"%userprofile%\Desktop\sfcdetails.txt"`
 
 SFCShowProgress registry entry is missing or is set to 1, and the server is set to scan every time that the computer starts. In this situation, WFP waits for a console logon. Therefore, the RPC server does not start until the scan is performed. The computer has no protection during this time.
 
-``HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SfcScan and others``
+`HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SfcScan and others`
 
 [http://support.microsoft.com/kb/222193](http://support.microsoft.com/kb/222193)
 
@@ -515,7 +518,8 @@ reg key
 
 Network Diagnostic wizard
 
-net statistics workstation | server
+`net statistics workstation`<br>
+`net statistics server`
 
 domain network diagnostic command
 
@@ -543,7 +547,7 @@ See also Emergency Management Services for method, remote connection to monitor
 
 **disable auto-reboot**
 
-F8 on start up
+<key>F8</key> on start up
 
 Reg key
 
@@ -561,15 +565,14 @@ Change with boot.ini?
 
 **Memory dump location**
 
-``%SystemRoot%\MEMORY.DMP``
-
-``%SystemRoot%\Minidump``
+`%SystemRoot%\MEMORY.DMP`<br>
+`%SystemRoot%\Minidump`
 
 Overwrite any existing file or not?
 
 Tool to analyze memory dumps
 
-``nirsoft [http://nirsoft.net/utils/blue\_screen\_view.html](http://technet.microsoft.com/en-us/library/cc772829\(WS.10\).aspx)``
+`nirsoft [http://nirsoft.net/utils/blue\_screen\_view.html](http://technet.microsoft.com/en-us/library/cc772829\(WS.10\).aspx)`
 
 sysinternals and others?
 
@@ -591,13 +594,13 @@ Uses the scheduled tasks to actually store, but can be created in Event Viewer w
 
 #### ReadyBoost {#readyboost}
 
-``ReadyBoost.sfcache _\<Flash drive>_\ReadyBoost.sfcache``
+`ReadyBoost.sfcache _\<Flash drive>_\ReadyBoost.sfcache`
 
 Cannot be enabled on Windows Server. Cannot be enabled when Windows is installed on an SSD drive.
 
 #### Offline Files {#offline-files}
 
-``C:\WINDOWS\csc``
+`C:\WINDOWS\csc`
 
 "GoOfflineOnSlowLink"=dword:00000000
 
@@ -624,7 +627,7 @@ This is the former name of credential roaming; it translates to Digital ID Manag
 
 #### Windows Media Center Shell {#mcentersh}
 
-``Tip: remember to put C:Windows\ehome``
+Tip: remember to put `C:\Windows\ehome`
 
 in your Path under Computer -> System Properties -> Advanced -> Environment Variables
 
@@ -658,7 +661,7 @@ _Start Value (Image path)_
 
 _Group name (Service)_
 
-``Boot (system32\drivers)``
+Boot (system32\drivers)
 
 WdfLoadGroup (Wdf01000)
 
@@ -676,21 +679,21 @@ Filter (CLFS, PxHlpa64)
 
 Base (KSecDD, CNG, pcw)
 
-``File System (Fs\_Rec)``
+File System (Fs_Rec)
 
 NDIS Wrapper (NDIS)
 
 Cryptography (KSecPkg)
 
-``PNP\_TDI (Tcpip)``
+PNP\TDI (Tcpip)
 
-``\[Anti-Virus]``
+[Anti-Virus]
 
 (Disk)
 
 PnP Filter (fvevol)
 
-``[hwpolicy]``
+[hwpolicy]
 
 Network (Mup)
 
@@ -702,7 +705,7 @@ PnP Filter (rdyboost)
 
 (volsnap)
 
-``System (system32\drivers)``
+System (system32\drivers)
 
 SCSI CDROM Class (cdrom)
 
@@ -712,7 +715,7 @@ Video Save (VgaSave, RDPCDD, RDPENCDD, RDPREFMP)
 
 File system (Msfs, Npfs)
 
-``PNP_TDI (tdx, [Anti-Virus], NetBT, AFD)``
+PNP_TDI (tdx, [Anti-Virus], NetBT, AFD)
 
 NDIS (WfpLwf, Psched, nm3)
 
@@ -720,7 +723,7 @@ NetBIOSGroup (NetBIOS)
 
 Extended base (Serial)
 
-``[Anti-Virus]``
+[Anti-Virus]
 
 (blbdrive)
 
@@ -732,7 +735,7 @@ Network (rdbss)
 
 (TermDD, Wanarpv6)
 
-``Automatic (%SystemRoot%\system32)``
+Automatic (`%SystemRoot%\system32`)
 
 FSFilter Virtualization (luafv)
 
@@ -742,11 +745,11 @@ Event Log (AMD External Events Utility, eventlog)
 
 Audio Group (AudioEndpointBuilder, AudioSrv)
 
-``ProfSvc_Group (CscService, grpsvc, ProfSvc, SENS, Themes)``
+ProfSvc_Group (CscService, grpsvc, ProfSvc, SENS, Themes)
 
 UIGroup (UxSms)
 
-``MS_WindowsLocalValidation (SamSs)``
+MS_WindowsLocalValidation (SamSs)
 
 ...
 
@@ -754,109 +757,97 @@ UIGroup (UxSms)
 
 Boot Execute
 
-``HKLM\System\CurrentControlSet\Control\Session Manager\BootExecute``
-
-``HKLM\System\CurrentControlSet\Control\ServiceControlManagerExtension``
+`HKLM\System\CurrentControlSet\Control\Session Manager\BootExecute`<br>
+`HKLM\System\CurrentControlSet\Control\ServiceControlManagerExtension`
 
 Services
 
-``HKLM\System\CurrentControlSet\Services``
+`HKLM\System\CurrentControlSet\Services`
 
 Logon
 
-``HKLM\System\CurrentControlSet\Control\Terminal Server\Wds\rdpwd\StartupPrograms``
-
-``HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit``
-
-``HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\VmApplet``
-
-``HKLM\Software\Microsoft\Windows\CurrentVersion\Group Policy\Scripts\Startup``
-
-``HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell``
-
-``HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\AlternateShell``
-
-``HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run``
-
-``HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run``
-
-``C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup``
-
-``C:\Users\Username\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup``
-
-``HKCU\Software\Microsoft\Windows\CurrentVersion\Run``
-
-``HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce``
+ * `HKLM\System\CurrentControlSet\Control\Terminal Server\Wds\rdpwd\StartupPrograms`
+ * `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit`
+ * `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\VmApplet`
+ * `HKLM\Software\Microsoft\Windows\CurrentVersion\Group Policy\Scripts\Startup`
+ * `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell`
+ * `HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\AlternateShell`
+ * `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run`
+ * `HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run`
+ * `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup`
+ * `C:\Users\Username\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+ * `HKCU\Software\Microsoft\Windows\CurrentVersion\Run`
+ * `HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce`
 
 Sidebar Gadgets
 
-``C:\Users\Username\AppData\Local\Microsoft\Windows Sidebar\Settings.ini``
+`C:\Users\Username\AppData\Local\Microsoft\Windows Sidebar\Settings.ini`
 
 Scheduled Tasks
 
 **Services normally running**
 
 | **Image Name**            | **Description**                                       | **Command Line**                                                                                                                                                                                                                                                    |
-| ------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| System                    | NT Kernel & System                                    | C:\Windows\system32\ntoskrnl.exe                                                                                                                                                                                                                                    |
-| smss.exe                  | Windows Session Manager                               | \SystemRoot\System32\smss.exe                                                                                                                                                                                                                                       |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k DcomLaunch                                                                                                                                                                                                                       |
+| ------------------------- | ----------------------------------------------------- | ----------------------------------------------- |
+| System                    | NT Kernel & System                                    | C:\Windows\system32\ntoskrnl.exe                   |
+| smss.exe                  | Windows Session Manager                               | \SystemRoot\System32\smss.exe                               |
+| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k DcomLaunch                   |
 | csrss.exe                 | Client Server Runtime Process                         | %SystemRoot%\system32\csrss.exe ObjectDirectory=\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=winsrv:ConServerDllInitialization,2 ServerDll=sxssrv,4 ProfileC |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k RPCSS                                                                                                                                                                                                                            |
-| wininit.exe               | Windows Start-Up Application                          | wininit.exe                                                                                                                                                                                                                                                         |
+| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k RPCSS               |
+| wininit.exe               | Windows Start-Up Application                          | wininit.exe                                              |
 | csrss.exe                 | Client Server Runtime Process                         | %SystemRoot%\system32\csrss.exe ObjectDirectory=\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=winsrv:ConServerDllInitialization,2 ServerDll=sxssrv,4 ProfileC |
-| winlogon.exe              | Windows Logon Application                             | winlogon.exe                                                                                                                                                                                                                                                        |
-| services.exe              | Services and Controller app                           | C:\Windows\system32\services.exe                                                                                                                                                                                                                                    |
-| lsass.exe                 | Local Security Authority Process                      | C:\Windows\system32\lsass.exe                                                                                                                                                                                                                                       |
-| lsm.exe                   | Local Session Manager Service                         | C:\Windows\system32\lsm.exe                                                                                                                                                                                                                                         |
-| atiesrxx.exe              | AMD External Events Service Module                    | C:\Windows\system32\atiesrxx.exe                                                                                                                                                                                                                                    |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted                                                                                                                                                                                                    |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k regsvc                                                                                                                                                                                                                           |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted                                                                                                                                                                                                     |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k netsvcs                                                                                                                                                                                                                          |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k GPSvcGroup                                                                                                                                                                                                                       |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalService                                                                                                                                                                                                                     |
-| atieclxx.exe              | AMD External Events Client Module                     | atieclxx                                                                                                                                                                                                                                                            |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k NetworkService                                                                                                                                                                                                                   |
-| spoolsv.exe               | Spooler SubSystem App                                 | C:\Windows\System32\spoolsv.exe                                                                                                                                                                                                                                     |
-| upeksvr.exe               | Fingerprint Server Process for Vista                  | "C:\Program Files\Common\SPBA\upeksvr.exe"                                                                                                                                                                                                                          |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalServiceAndNoImpersonation                                                                                                                                                                                                   |
-| snmp.exe                  | SNMP Service                                          | C:\Windows\System32\snmp.exe                                                                                                                                                                                                                                        |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalServiceNoNetwork                                                                                                                                                                                                            |
-| armsvc.exe *32           | Adobe Acrobat Update Service                          | "C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\armsvc.exe"                                                                                                                                                                                                      |
-| dwm.exe                   | Desktop Window Manager                                | "C:\Windows\System32\Dwm.exe"                                                                                                                                                                                                                                       |
-| mDNSResponder.exe         | Bonjour Service                                       | "C:\Program Files\Bonjour\mDNSResponder.exe"                                                                                                                                                                                                                        |
-| inetinfo.exe              | Internet Information Services                         | C:\Windows\system32\inetsrv\inetinfo.exe                                                                                                                                                                                                                            |
-| IPROSetMonitor.exe        | Intel® PROSet Monitoring Service                      | C:\Windows\system32\IPROSetMonitor.exe                                                                                                                                                                                                                              |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k HPZ12                                                                                                                                                                                                                            |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k ipripsvc                                                                                                                                                                                                                         |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k HPZ12                                                                                                                                                                                                                            |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LPDService                                                                                                                                                                                                                       |
-| TCPSVCS.EXE               | TCP/IP Services Application                           | C:\Windows\System32\tcpsvcs.exe                                                                                                                                                                                                                                     |
-| taskhost.exe              | Host Process for Windows Tasks                        | "taskhost.exe"                                                                                                                                                                                                                                                      |
-| conhost                   | Console Windows Host                                  | \\??\C:\Windows\system32\conhost.exe "12270050711036878941764404406-1950549039-509943657-6949245256654769161811869455                                                                                                                                               |
-| wlcrasvc.exe              | Windows Live Mesh Remote Desktop Service              | "C:\Program Files\Windows Live\Mesh\wlcrasvc.exe"                                                                                                                                                                                                                   |
-| WLIDSVC.EXE               | Microsoft® Windows Live ID Service                    | "C:\Program Files\Common Files\Microsoft Shared\Windows Live\WLIDSVC.EXE"                                                                                                                                                                                           |
-| SearchIndexer.exe         | Microsoft Windows Search Indexer                      | C:\Windows\system32\SearchIndexer.exe /Embedding                                                                                                                                                                                                                    |
-| OSPPSVC.EXE               | Microsoft Office Software Protection Platform Service | "C:\Program Files\Common Files\Microsoft Shared\OfficeSoftwareProtectionPlatform\OSPPSVC.EXE"                                                                                                                                                                       |
-| WLIDSVCM.EXE              | Microsoft® Windows Live ID Service Monitor            | WLIDSvcM.exe 3260                                                                                                                                                                                                                                                   |
-| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k NetworkServiceNetworkRestricted                                                                                                                                                                                                  |
-| mobsync.exe               | Microsoft Sync Center                                 | C:\Windows\System32\mobsync.exe -Embedding                                                                                                                                                                                                                          |
-| PresentationFontCache.exe | PresentationFontCache.exe                             | C:\Windows\Microsoft.Net\Framework64\v3.0\WPF\PresentationFontCache.exe                                                                                                                                                                                             |
-| svchost.exe               | Host Process for Windows Service                      | C:\Windows\system32\svchost.exe -k SDRSVC                                                                                                                                                                                                                           |
+| winlogon.exe              | Windows Logon Application                             | winlogon.exe                                                     |
+| services.exe              | Services and Controller app                           | C:\Windows\system32\services.exe                                                                   |
+| lsass.exe                 | Local Security Authority Process                      | C:\Windows\system32\lsass.exe                                                                  |
+| lsm.exe                   | Local Session Manager Service                         | C:\Windows\system32\lsm.exe                                                            |
+| atiesrxx.exe              | AMD External Events Service Module                    | C:\Windows\system32\atiesrxx.exe                                                         |
+| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted     |
+| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k regsvc                                                                           |
+| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted                                                     |
+| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k netsvcs                |
+| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k GPSvcGroup           |
+| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalService                    |
+| atieclxx.exe              | AMD External Events Client Module                     | atieclxx                                                  |
+| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k NetworkService                   |
+| spoolsv.exe               | Spooler SubSystem App                                 | C:\Windows\System32\spoolsv.exe                                                                    |
+| upeksvr.exe               | Fingerprint Server Process for Vista                  | "C:\Program Files\Common\SPBA\upeksvr.exe"                        |
+| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalServiceAndNoImpersonation        |
+| snmp.exe                  | SNMP Service                                          | C:\Windows\System32\snmp.exe                                                                       |
+| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LocalServiceNoNetwork                                          |
+| armsvc.exe *32            | Adobe Acrobat Update Service                          | "C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\armsvc.exe"                   |
+| dwm.exe                   | Desktop Window Manager                                | "C:\Windows\System32\Dwm.exe"                                                                              |
+| mDNSResponder.exe         | Bonjour Service                                       | "C:\Program Files\Bonjour\mDNSResponder.exe"                                                                      |
+| inetinfo.exe              | Internet Information Services                         | C:\Windows\system32\inetsrv\inetinfo.exe                                                                     |
+| IPROSetMonitor.exe        | Intel® PROSet Monitoring Service                      | C:\Windows\system32\IPROSetMonitor.exe                                                      |
+| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k HPZ12                        |
+| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k ipripsvc                       |
+| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k HPZ12                            |
+| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k LPDService                      |
+| TCPSVCS.EXE               | TCP/IP Services Application                           | C:\Windows\System32\tcpsvcs.exe                                 |
+| taskhost.exe              | Host Process for Windows Tasks                        | "taskhost.exe"                                               |
+| conhost                   | Console Windows Host                                  | \\??\C:\Windows\system32\conhost.exe "12270050711036878941764404406-1950549039-509943657-6949245256654769161811869455                          |
+| wlcrasvc.exe              | Windows Live Mesh Remote Desktop Service              | "C:\Program Files\Windows Live\Mesh\wlcrasvc.exe"                     |
+| WLIDSVC.EXE               | Microsoft® Windows Live ID Service                    | "C:\Program Files\Common Files\Microsoft Shared\Windows Live\WLIDSVC.EXE"                     |
+| SearchIndexer.exe         | Microsoft Windows Search Indexer                      | C:\Windows\system32\SearchIndexer.exe /Embedding                        |
+| OSPPSVC.EXE               | Microsoft Office Software Protection Platform Service | "C:\Program Files\Common Files\Microsoft Shared\OfficeSoftwareProtectionPlatform\OSPPSVC.EXE"                           |
+| WLIDSVCM.EXE              | Microsoft® Windows Live ID Service Monitor            | WLIDSvcM.exe 3260                                          |
+| svchost.exe               | Host Process for Windows Services                     | C:\Windows\system32\svchost.exe -k NetworkServiceNetworkRestricted                    |
+| mobsync.exe               | Microsoft Sync Center                                 | C:\Windows\System32\mobsync.exe -Embedding                         |
+| PresentationFontCache.exe | PresentationFontCache.exe                             | C:\Windows\Microsoft.Net\Framework64\v3.0\WPF\PresentationFontCache.exe                    |
+| svchost.exe               | Host Process for Windows Service                      | C:\Windows\system32\svchost.exe -k SDRSVC                      |
 | csrss.exe                 | Client Server Runtime Process                         | %SystemRoot%\system32\csrss.exe ObjectDirectory=\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=winsrv:ConServerDllInitialization,2 ServerDll=sxssrv,4 ProfileC |
-| splwow64.exe              | Print driver host for 32bit applications              | C:\Windows\splwow64.exe 12288                                                                                                                                                                                                                                       |
-| WmiPrvSE.exe              | WMI Provider Host                                     | C:\Windows\system32\wbem\wmiprvse.exe                                                                                                                                                                                                                               |
-| svchost.exe               | Host Process for Windows Service                      | C:\Windows\system32\svchost.exe -k imgsvc                                                                                                                                                                                                                           |
-| explorer.exe              | Windows Explorer                                      | C:\Windows\explorer.exe /factory,{75dff2b7-6936-4c06-a8bb-676a7b00b24b} -Embedding                                                                                                                                                                                  |
-| vds.exe                   | Virtual Disk Service                                  | C:\Windows\System32\vds.exe                                                                                                                                                                                                                                         |
-| dinotify.exe              | Windows Device Installation                           | "C:\Windows\System32\dinotify.exe" pnpui.dll,SimplifiedDINotification                                                                                                                                                                                               |
+| splwow64.exe              | Print driver host for 32bit applications              | C:\Windows\splwow64.exe 12288                                  |
+| WmiPrvSE.exe              | WMI Provider Host                                     | C:\Windows\system32\wbem\wmiprvse.exe                  |
+| svchost.exe               | Host Process for Windows Service                      | C:\Windows\system32\svchost.exe -k imgsvc                       |
+| explorer.exe              | Windows Explorer                                      | C:\Windows\explorer.exe /factory,{75dff2b7-6936-4c06-a8bb-676a7b00b24b} -Embedding                       |
+| vds.exe                   | Virtual Disk Service                                  | C:\Windows\System32\vds.exe                               |
+| dinotify.exe              | Windows Device Installation                           | "C:\Windows\System32\dinotify.exe" pnpui.dll,SimplifiedDINotification                      |
 
 Services can be tagged with various startup types of classes.
 
-``HKLM\SYSTEM\CurrentControlSet\services``
+`HKLM\SYSTEM\CurrentControlSet\services`
 
-``CurrentControlSet\Control\ServiceGroupOrder``
+`CurrentControlSet\Control\ServiceGroupOrder`
 
 DWORD Start, Type
 
@@ -875,7 +866,7 @@ Error Type value, If error, can OS startup proceed?
 
 See Install Apps in Safe Mode for allowing installs in safe mode
 
-``HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\MSIServer``
+`HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\MSIServer`
 
 **Order of preference of file extensions for execution**
 
@@ -887,7 +878,7 @@ backward compatibility in WIN.INI ?
 
 Environmental variable
 
-PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+`PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC`
 
 **Vulnerabilities, Malware, Virus**
 
@@ -895,7 +886,7 @@ Another list of files Microsoft deems risky is the Blocked Outlook Attachments l
 
 Due to the way the Windows operating system parses names with spaces, a first match can be abused to execute a planted program.
 
-``C:\Program.exe``
+`C:\Program.exe`
 
 Stealthy places to hide executables or triggers
 
@@ -907,7 +898,7 @@ If double-click on shortcut, or single click on start menu won’t open, try rig
 
 How to repair .EXE (.LNK?) after hijack by malware
 
-What the EXE registry key looks like (CLASSES ROOT exefile ?), ``HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\\.exe\OpenWithList``
+What the EXE registry key looks like (CLASSES ROOT exefile ?), `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\\.exe\OpenWithList`
 
 copy an EXE to .COM to run a program
 
@@ -933,11 +924,11 @@ $ H + H \*
 
 $Profile `C:\Users\_Username_\Documents\WindowsPowerShell\Microsoft.PowerShell\_profile.ps1`
 
-``PSModule... env var. C:\Windows\system32\WindowsPowerShell\v1.0\Modules\\``
+PSModule... env var. `C:\Windows\system32\WindowsPowerShell\v1.0\Modules\`
 
 signing PowerShell scripts can be done with Digital Certificate for VBA Projects
 
-``C:\Windows\System32\WindowsPowerShell\v1.0\Modules>tree``
+`C:\Windows\System32\WindowsPowerShell\v1.0\Modules>tree`
 
 Folder PATH listing for volume OS
 ```
@@ -964,7 +955,7 @@ C:.
 +-----en-US
 ```
 
-``C:\Windows\System32\WindowsPowerShell\v1.0\Modules>``
+`C:\Windows\System32\WindowsPowerShell\v1.0\Modules>`
 
 **file list**
 
@@ -978,15 +969,15 @@ Microsoft.GroupPolicy.Commands.dll-Help.xml
 
 bin location for v1 - v3
 
-``C:\Windows\System32\WindowsPowerShell\v1.0\``
+`C:\Windows\System32\WindowsPowerShell\v1.0\`
 
 PowerShell 3.0 Task Scheduler storage folder for job definitions
 
-``C:\Users\<UserName>\Appdata\Local\Microsoft\Windows\PowerShell\ScheduledJobs``
+`C:\Users\<UserName>\Appdata\Local\Microsoft\Windows\PowerShell\ScheduledJobs`
 
 Import and Export http://www.petri.co.il/export-import-powershell-scheduled-jobs.htm
 
-``HKLM\software\microsoft\powershell\1\shellids\Microsoft.powershell``
+`HKLM\software\microsoft\powershell\1\shellids\Microsoft.powershell`
 
 [http://www.trainsignal.com/blog/jeff-hicks-powershell-challenge-day-4-final-day](http://www.trainsignal.com/blog/jeff-hicks-powershell-challenge-day-4-final-day)
 
@@ -996,11 +987,11 @@ see also the Remote section above?
 
 Windows PowerShell Modules
 
-``%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ImportSystemModules``
+`%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ImportSystemModules`
 
 Active Directory Module for Windows PowerShell
 
-``%windir%\system32\WindowsPowerShell\v1.0\powershell.exe -noexit -command import-module ActiveDirectory``
+`%windir%\system32\WindowsPowerShell\v1.0\powershell.exe -noexit -command import-module ActiveDirectory`
 
 Exchange Management Shell
 ```
@@ -1009,7 +1000,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command ". 'C
 ```
 Can also be run in ISE
 
-``[http://technet.microsoft.com/en-us/library/dd297932%28v=exchg.141%29.aspx](http://technet.microsoft.com/en-us/library/cc742041.aspx)``
+`[http://technet.microsoft.com/en-us/library/dd297932%28v=exchg.141%29.aspx](http://technet.microsoft.com/en-us/library/cc742041.aspx)`
 
 iSCSI management cmdlets for Windows PowerShell
 
@@ -1040,7 +1031,7 @@ Path to Visual Style:
 
 To select Aero type:
 
-%windir%\resources\Themes\Aero\aero.msstyles`
+`%windir%\resources\Themes\Aero\aero.msstyles`
 
 To select a different visual style, type:<br>
 ie: `\\<server>\share\Corp.msstyles`<br>
@@ -1091,14 +1082,15 @@ C:\ProgramData\Microsoft\User Account Pictures\User.bmp
 
 **Wallpaper**
 
-IE
-
+IE<br>
 `C:\Users\_UserName_\AppData\Roaming\Microsoft\Internet Explorer\Internet Explorer Wallpaper.bmp`
+
+**Lockscreen**<br>
+Windows 10, 11 download random images into the Assets folder in the user's AppData folder.
 
 #### Out-of-Box Experience {#h.dn9tu1me6fvq" id="h.dn9tu1me6fvq
 
-**First boot background music**
-
+**First boot background music** <br>
 `C:\WINDOWS\system32\oobe\images\title.wma`
 
 **Reset Windows back to First-boot**
@@ -1152,7 +1144,7 @@ User State Migration Tool (USMT)
 
 [http://support.microsoft.com/kb/2919355](http://technet.microsoft.com/en-us/library/cc742070.aspx)
 
-``[April 2014]``
+`[April 2014]`
 
 #### Windows Activation {#h.phwfv5lu9ajc" id="h.phwfv5lu9ajc
 
@@ -1160,25 +1152,24 @@ see also volume activation in another section (under domain, volume activation t
 
 **Windows Activation Utilities**
 
-slmgr.vbs
+`slmgr.vbs`
 
-slui.exe
+`slui.exe`
 
-slmgr.vbs /ipk XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+`slmgr.vbs /ipk XXXXX-XXXXX-XXXXX-XXXXX-XXXXX`
 
-slmgr.vbs /ato
+`slmgr.vbs /ato`
 
 **Windows Activation Client**
 
-slui.exe 3 change product key (require elevated command prompt?) or activate Enterprise edition
-
-slui.exe 4 manually perform telephone activation
+`slui.exe 3` change product key (require elevated command prompt?) or activate Enterprise edition<br>
+`slui.exe 4` manually perform telephone activation
 
 **Registry Keys**
 
-``HKLM\SYSTEM\WPA``
+`HKLM\SYSTEM\WPA`
 
-``HKLM\Software\Microsoft\Windows\CurrentVersion\Setup\OOBE\MediaBootInstall``
+`HKLM\Software\Microsoft\Windows\CurrentVersion\Setup\OOBE\MediaBootInstall`
 
 **Software Licensing Management Tool**
 
@@ -1202,7 +1193,7 @@ KMS troubleshooting
 
 `C:\Windows\$hf_mig$`
 
-wuauclt /detectnow
+`wuauclt /detectnow`
 
 chain updates
 
@@ -1254,7 +1245,7 @@ msizap for uninstall
 
 **Install apps in safe mode**
 
-``HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\``
+`HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\`
 
 and/or
 
@@ -1286,12 +1277,11 @@ The syntax for specifying days is:
 
 **schtasks.exe**
 
-use /V1 to create task on remote XP computer from Vista or above.
+use `/V1` to create task on remote XP computer from Vista or above.
 
 #### Windows Backup {#h.7vaxonnn2u22" id="h.7vaxonnn2u22
 
-MediaID.bin
-
+MediaID.bin<br>
 GlobalCatalog.wbcat
 
 **NTBackup**
@@ -1321,8 +1311,8 @@ Log Results<br>
 | \System Volume Information\MountPointManagerRemoteDatabase                            | Mount Manager                                                                                        |
 | C:\Documents and Settings\All Users\Application Data\Microsoft\Network\Downloader\* | BITS\_metadata                                                                                       |
 | C:\Documents and Settings\All Users\DRM\*                                           | DRM                                                                                                  |
-| C:\Documents and Settings\\%Username%\index.dat                                       | Internet Explorer                                                                                    |
-| C:\Documents and Settings\\%Username%\Local Settings\Temp\2\*                       | Temporary Files                                                                                      |
+| C:\Documents and Settings\%Username%\index.dat                                       | Internet Explorer                                                                                    |
+| C:\Documents and Settings\%Username%\Local Settings\Temp\2\*                       | Temporary Files                                                                                      |
 | C:\Windows\csc\*                                                                    | Client Side Cache                                                                                    |
 | C:\WINDOWS\Debug\*                                                                  | Winlogon debug                                                                                       |
 | C:\WINDOWS\netlogon.chg                                                               | Netlogon                                                                                             |
@@ -1335,9 +1325,9 @@ Log Results<br>
 | C:\WINDOWS\system32\MSDtc\MSDTC.LOG                                                   | MS Distributed Transaction Coordinator                                                               |
 | C:\WINDOWS\system32\MSDtc\trace\dtctrace.log                                          | MS Distributed Transaction Coordinator                                                               |
 | C:\WINDOWS\Tasks\schedlgu.txt                                                         | Task Scheduler                                                                                       |
-| \<drive:path>\DfsrPrivate\*                                                         | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
-| \<drive:path>\DfsrPrivate\ConflictedAndDeleted\*                                    | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
-| \<drive:path>\DfsrPrivate\Staging\*                                                 | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
+| <drive:path>\DfsrPrivate\*                                                         | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
+| <drive:path>\DfsrPrivate\ConflictedAndDeleted\*                                    | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
+| <drive:path>\DfsrPrivate\Staging\*                                                 | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
 | S\system32\MSDtc\trace\dtctrace.log                                                   | DRM                                                                                                  |
 
 `HKLM\SYSTEM\CurrentControlSet\Control\BackupRestore\FilesNotToBackup`<br>
@@ -1382,9 +1372,8 @@ How many modems does each OS support? (Win2k, Win2k3, Win 2k8, SBS)
 
 #### OEM Branding {#h.wwy0nqh6y4fd" id="h.wwy0nqh6y4fd
 
-``C:\Windows\Setup\scripts\``
-
-``C:\Windows\System32\oem``
+`C:\Windows\Setup\scripts\`<br>
+`C:\Windows\System32\oem`
 
 See also Deployment, OEM
 
@@ -1404,28 +1393,20 @@ You will need the right PCL/PostScript viewer to read .spl files
 
 [http://www.undocprint.org/formats/winspool/spl](http://technet.microsoft.com/en-us/library/cc772355.aspx)
 
-``prnproc$`` ``C:\Windows\system32\spool\PRTPROCS Printer Drivers``
-
-``print$`` ``C:\Windows\system32\spool\drivers Printer Drivers``
+`prnproc$` `C:\Windows\system32\spool\PRTPROCS Printer Drivers`<br>
+`print$` `C:\Windows\system32\spool\drivers Printer Drivers`
 
 Windows Server 2003 R2 can manage printers as 2003 or 2003R2
 
 The R2 Print Management `C:\WINDOWS\PMCSnap\printmanagement.msc`
 
-findnetprinters.dll
-
-fnprinters.com
-
-fnprinters.exe
-
-pmcsnap.DLL
-
-ppcsnap.dll
-
-printmanagement.msc
-
-puiobj.DLL
-
+findnetprinters.dll<br>
+fnprinters.com<br>
+fnprinters.exe<br>
+pmcsnap.DLL<br>
+ppcsnap.dll<br>
+printmanagement.msc<br>
+puiobj.DLL<br>
 pushprinterconnections.exe
 
 **Stuck job**
@@ -1436,19 +1417,17 @@ You may have a print job stuck in the spool, or one that crashes the spool servi
 2. delete the spd file
 3. Start the print spooler (net start spool)
 
-``Print Spooler C:\Windows\System32\spool\PRINTERS``
-
-``Printer Drivers C:\Windows\system32\spool\DRIVERS\x64\3\``
-
-``Inf Path C:\Windows\System32\DriverStore\FileRepository\...\...inf``
+`Print Spooler C:\Windows\System32\spool\PRINTERS`<br>
+`Printer Drivers C:\Windows\system32\spool\DRIVERS\x64\3\`<br>
+`Inf Path C:\Windows\System32\DriverStore\FileRepository\...\...inf`
 
 **UNC path for shared printer drivers**
 
-``print$`` ``C:\Windows\System32\spool\drivers``
+`print$` `C:\Windows\System32\spool\drivers`
 
 **Terminal Server key fix for no/cannot set default printer**
 
-``HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows\Device``
+`HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows\Device`
 
 Forms
 
@@ -1568,7 +1547,7 @@ Manage your file encryption certificates
 
 folder path: DSN files
 
-`registry: HKLM\SOFTWARE\ODBC\ODBC.INI`
+registry: `HKLM\SOFTWARE\ODBC\ODBC.INI`
 
 also a user key
 
@@ -1672,7 +1651,7 @@ explorer `shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\0\\::{BB64F8A7-BEE7-4E1
 
 To Make Documents as Default Folder to Open by Windows Explorer upon Launching
 
-``%SystemRoot%\explorer.exe /n,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}``
+`%SystemRoot%\explorer.exe /n,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}`
 
 To Make Computer as Default Folder to Open by Windows Explorer upon Launching
 
@@ -1690,7 +1669,7 @@ To Make Computer as Default Folder to Open by Windows Explorer upon Launching
 
 `hh.exe` Microsoft HTML Help Executable
 
-notepad.exe
+`notepad.exe`
 
 `regedit.exe` Registry Editor
 
@@ -1706,7 +1685,7 @@ notepad.exe
 
 `winhlp32.exe`
 
-write.exe Windows Write
+`write.exe` Windows Write
 
 **Explorer.exe Command Line Syntax**
 
@@ -1724,7 +1703,7 @@ mmc.exe
 
 mmc /a
 
-``\[there is an MMC section under Remote access admin tools section]``
+[there is an MMC section under Remote access admin tools section]
 
 snap-ins (MSC)
 
@@ -1795,7 +1774,7 @@ snap-ins (MSC)
 
 Active Directory Sites and Services has available extension Group Policy Object Editor
 
-``Active Directory Users and Computers has available extensions Group Policy Object Editor, Remote Desktop Services - Extension, 3rd-party add-on Extension to AD User and Computer for EmployeeID and photo\<?>``
+Active Directory Users and Computers has available extensions Group Policy Object Editor, Remote Desktop Services - Extension, 3rd-party add-on Extension to AD User and Computer for EmployeeID and photo<?>
 
 Certification Authority has available extension CA Certificate Template Settings
 
@@ -1807,13 +1786,13 @@ DNS (cannot edit) has Classic Event Viewer Extension, Services Extension
 
 Event Viewer has Classic Event Viewer Extension
 
-``Exchange Server 2010 has four Exchange Server 2010 Extensions \[Try disabling and see what changes]``
+Exchange Server 2010 has four Exchange Server 2010 Extensions [Try disabling and see what changes]
 
 Failover Cluster Manager has Failover Cluster Extensions, Failover Cluster Resource Extensions
 
 Failover Cluster Manager Host has DHCP Extension, Print Management
 
-``Group Policy Management Editor has Administrative Templates (Computers)\*, Administrative Templates (Users)\*, Extended View, Folder Redirection Editor (Users), Group Policy Application Settings\*, Group Policy Computer Control Panel\*, Group Policy Drive Settings\*, Group Policy Environment Settings\*, Group Policy File Settings\*, Group Policy Folder Settings\*, Group Policy Ini File Settings\*, Group Policy Printers Settings\*, Group Policy Registry Settings\*, Group Policy Shortcut Settings\*, Group Policy User Control Panel\*, Internet Explorer Maintenance, Name Resolution Policy, Name Resolution Policy \[?], Policy-based QoS (Computers), Policy-based QoS (Users), Pushed Printer Connection Extension (Computers)\*, Pushed Printer Connection Extension (Users)\*, Scripts (Logon/Logoff)\*, Scripts (Startup/Shutdown)\*, Security Settings\*, Software Installation (Computers), Software Installation (Users)``
+Group Policy Management Editor has Administrative Templates (Computers)\*, Administrative Templates (Users)\*, Extended View, Folder Redirection Editor (Users), Group Policy Application Settings\*, Group Policy Computer Control Panel\*, Group Policy Drive Settings\*, Group Policy Environment Settings\*, Group Policy File Settings\*, Group Policy Folder Settings\*, Group Policy Ini File Settings\*, Group Policy Printers Settings\*, Group Policy Registry Settings\*, Group Policy Shortcut Settings\*, Group Policy User Control Panel\*, Internet Explorer Maintenance, Name Resolution Policy, Name Resolution Policy \[?], Policy-based QoS (Computers), Policy-based QoS (Users), Pushed Printer Connection Extension (Computers)\*, Pushed Printer Connection Extension (Users)\*, Scripts (Logon/Logoff)\*, Scripts (Startup/Shutdown)\*, Security Settings\*, Software Installation (Computers), Software Installation (Users)
 
 Group Policy Object Editor has ...
 ```
@@ -1877,17 +1856,17 @@ For more information about each of these settings, see the Windows XP Security G
 
 For more information about each of these settings, see the Windows Vista Security Guide (http://go.microsoft.com/fwlink/?LinkID=121852).
 
-``Also in C:\Windows\inf\StarterGPOs``
+Also in `C:\Windows\inf\StarterGPOs`
 
 Security Templates default file list, description, location
 
-``...\Documents\Security\Templates``
+`...\Documents\Security\Templates`
 
 INF files
 
-``\Windows\security\templates\policies``
+`\Windows\security\templates\policies`
 
-``\Windows\ServiceProfiles\``
+`\Windows\ServiceProfiles\`
 
 LocalService
 
@@ -1907,7 +1886,7 @@ telnet (not installed by default after Windows XP/2003) (Mentioned in Network se
 
 ``\ntbackup.exe\[8] -``
 
-``C:\Windows\system32\mstsc.exe (switches?)``
+`C:\Windows\system32\mstsc.exe` (switches?)
 
 clipboard viewer
 
@@ -1971,7 +1950,7 @@ The Windows CD has a Support folder (see below 5 or 6 pages)
 
 Microsoft Windows 2000, Windows XP, Windows Server 2003 and Windows Server 2003 R2
 
-``Windows XP Setup CD, and then locate the Support\Tools folder``
+`Windows XP Setup CD, and then locate the Support\Tools folder`
 
 ### Remote {#h.j40pvknrtwar" id="h.j40pvknrtwar
 
@@ -1995,7 +1974,7 @@ rcmd (NT4 ResKit), remote
 
 **winrs**
 
-winrs –r:_ServerName_ cmd.exe
+`winrs –r:ServerName cmd.exe`
 
 **psexec**
 
@@ -2033,13 +2012,13 @@ WSUS (2.0, not 3.0)
 
 sconfig.cmd
 
-``[menu or screenshot]``
+[menu or screenshot]
 
 sc services
 
-``C:\Windows\System32\SCRegEdit.wsh enable or disable Remote Desktop and configure Windows Update``
+`C:\Windows\System32\SCRegEdit.wsh` enable or disable Remote Desktop and configure Windows Update
 
-``C:\Windows\System32\GatherNetworkInfo.vbs``
+`C:\Windows\System32\GatherNetworkInfo.vbs`
 
 netdom.exe change hostname or join domain
 
@@ -2222,13 +2201,13 @@ and several server products such as SharePoint and Microsoft Exchange Server
 [Common Applications](Common-Apps.md)
 ### Microsoft Servers and Windows Services {#h.9myl42igo6cu" id="h.9myl42igo6cu
 
-``See appendix _ for list of all Windows components, features, roles``
+See appendix _ for list of all Windows components, features, roles
 
 #### DNS Server {#h.eit8y2gyf1cb" id="h.eit8y2gyf1cb
 
-``C:\Windows\System32\dns``
+`C:\Windows\System32\dns`
 
-``C:\Windows\System32\dns\backup``
+`C:\Windows\System32\dns\backup`
 
 **DNS Server Tools**
 
@@ -2236,11 +2215,11 @@ Ddnscmd.exe
 
 **Backup/Export AD integrated zone to text file**
 
-``DnsCmd <ServerName> /ZoneExport <ZoneName> <ZoneExportFile>``
+`DnsCmd <ServerName> /ZoneExport <ZoneName> <ZoneExportFile>`
 
 **Enable GlobalNames zone support**
 
-dnscmd . /config /enableglobalnamessupport 1
+`dnscmd . /config /enableglobalnamessupport 1`
 
 `HKLM\SYSTEM\CurrentControlSet\services\DNS\Parameters\EnableGlobalNamesSupport` = `1`
 
