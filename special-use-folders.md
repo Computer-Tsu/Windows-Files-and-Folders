@@ -34,9 +34,9 @@ Including changes from Windows XP to Vista, Windows 7
 `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar`<br>
 `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\StartMenu`
 
-C:\Users\<USERNAME>\AppData\Local\Microsoft\WinGet\Links\<br>
-Sample:<br>
-C:\Program Files\WinGet\Packages\yt-dlp.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-N-121938-g2456a39581-win64-gpl\bin>ffmpeg.exe
+`C:\Users\<USERNAME>\AppData\Local\Microsoft\WinGet\Links\`<br>
+Sample: <br>
+`C:\Program Files\WinGet\Packages\yt-dlp.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-N-121938-g2456a39581-win64-gpl\bin\ffmpeg.exe`
 
 #### Windows Vista/7 Backward Compatible {#Backward-Compatible}
 
@@ -52,7 +52,7 @@ Warning: RoboCopy (version?) causes a copy-loop with certain `/MIR` situations.
 <JUNCTION> Local Settings [C:\Users\<USERNAME>\AppData\Local]
 <JUNCTION> My Documents [C:\Users\<USERNAME>\Documents]
 <JUNCTION> NetHood [C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Network Shortcuts]
-<JUNCTION> PrintHood \[C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts]
+<JUNCTION> PrintHood [C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts]
 <JUNCTION> Recent [C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Recent]
 <JUNCTION> SendTo [C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\SendTo]
 <JUNCTION> Start Menu [C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu]
