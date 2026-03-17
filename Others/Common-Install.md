@@ -309,7 +309,7 @@ United States (US), Canada (CA), United Kingdom (UK)
   - Bookkeeper 2012
 * QuickBooks Desktop Enterprise [10-24]
   - 24
-    - https://dlm2.download.intuit.com/akdlm/SBD/QuickBooks/2024/Latest/QuickBooksEnterprise24.exe
+    - same file as Accountant(https://dlm2.download.intuit.com/akdlm/SBD/QuickBooks/2024/Latest/QuickBooksEnterprise24.exe)
     - [Enterprise Accountant 24](https://dlm2.download.intuit.com/akdlm/SBD/QuickBooks/2024/LatestAcc/QuickBooksEnterprise24.exe)
   - 23
   - 22
@@ -654,7 +654,8 @@ OneTrace (Intune Config Manager Support Center)
 
 KLog<br>
 *others*<br>
-See Also: Syslog section
+See Also: Syslog section<br>
+[GrayLog](https://graylog.org/free/) SIEM server
 
 # Remote Monitoring and Management
 
