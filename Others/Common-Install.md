@@ -259,19 +259,100 @@ MSP RMM spreadsheet (reddit or mspuser)
 https://downloads.quickbooks.com/app/qbdt/products <br>
 United States (US), Canada (CA), United Kingdom (UK)
 * QuickBooks Desktop Pro [2010-2024]
-  - 2025
+  - 2025 (Unreleased as of 2026-Q1)
+  - 2024 (https://dlm2.download.intuit.com/akdlm/SBD/QuickBooks/2024/Latest/QuickBooksProSub2024.exe)
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  - 2012
+  - 2011
+  - 2010
+* QuickBooks Desktop Premier [2011-2024]
+  - 2024 (https://dlm2.download.intuit.com/akdlm/SBD/QuickBooks/2024/Latest/QuickBooksPremierSub2024.exe)
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  - 2012
+  - 2011
+* QuickBooks Desktop Accountant [Bookkeeper Edition 2012-2013, Accountant 2011-2024]
+  - Accountant 2024 (https://dlm2.download.intuit.com/akdlm/SBD/QuickBooks/2024/LatestAcc/QuickBooksPremier2024.exe)
+  - Accountant 2023
+  - Accountant 2022
+  - Accountant 2021
+  - Accountant 2020
+  - Accountant 2019
+  - Accountant 2018
+  - Accountant 2017
+  - Accountant 2016
+  - Accountant 2015
+  - Accountant 2014
+  - Accountant 2013
+  - Accountant 2012
+  - Accountant 2011
+  - Bookkeeper 2013
+  - Bookkeeper 2012
+* QuickBooks Desktop Enterprise [10-24]
+  - 24
+    - https://dlm2.download.intuit.com/akdlm/SBD/QuickBooks/2024/Latest/QuickBooksEnterprise24.exe
+    - [Enterprise Accountant 24](https://dlm2.download.intuit.com/akdlm/SBD/QuickBooks/2024/LatestAcc/QuickBooksEnterprise24.exe)
+  - 23
+  - 22
+  - 21
+  - 20
+  - 19
+  - 18
+  - 17
+  - 16
+  - 15
+  - 14
+  - 13
+  - 12
+  - 11
+  - 10
+* QuickBooks Mac Desktop [2012-2024]
   - 2024
   - 2023
   - 2022
   - 2021
   - 2020
-- QuickBooks Desktop Premier [2011-2024]
-- QuickBooks Desktop Accountant [Bookkeeper Edition 2012-2013, Accountant 2011-2024]
-- QuickBooks Desktop Enterprise [10-24]
-- QuickBooks Mac Desktop [2012-2024]
-- QuickBooks Point of Sale [Basic 19, Pro 19, Pro Multi-Store 19]
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  - 2012
+* QuickBooks Point of Sale [Basic 19, Pro 19, Pro Multi-Store 19]
+  - Basic, 19.0 (https://dlm2.download.intuit.com/akdlm/SBD/QuickBooks/2019/Latest/QuickBooksPOSV19.exe)
+  - Pro 19
+  - Pro Multi-Store, 19
 
 [CAMPs](https://camps.quickbooks.com)
+
+Troubleshooter and repair of multiple issues including
+ - Installation
+ - Damaged company file
+ - Password reset
+ - Server and Network
+
+[QuickBooks Tool Hub](https://dlm2.download.intuit.com/akdlm/SBD/QuickBooks/QBFDT/QuickBooksToolHub.exe) 
 
 ## Package Managers and Installers
 
