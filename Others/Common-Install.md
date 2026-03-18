@@ -15,13 +15,15 @@ See Also: GPO - Adobe
 
 
 ## Google Chrome Download for Enterprise Deployment
-    "primaryURL": "https://chromeenterprise.google/download/",<br>
-[Chrome Enterprise](https://www.google.com/intl/en/chrome/business/browser/admin/)
+
+primaryURL: (https://chromeenterprise.google/download/),<br>
+[Chrome Enterprise](https://www.google.com/intl/en/chrome/business/browser/admin/)<br>
 See Also: GPO - Chrome
 
 
 ## Microsoft Edge/IE11 Download for Enterprise Deployment",
-    "note": "Now only on Win 7 and Sever 2008"
+
+*note*: Now only on Win 7 and Sever 2008
 
 ## Microsoft Updates for manual install
 
@@ -41,6 +43,7 @@ DL:[XML Notepad 2007 (Legacy)](http://www.microsoft.com/en-us/download/details.a
 Alt: (http://microsoft.github.io/XmlNotepad) or `winget add -e --id Microsoft.XMLNotepad`
 
 ### Microsoft .NET Runtime download
+
 https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48
 
 https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net481-web-installer<br>
@@ -97,11 +100,15 @@ https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8
  - [Microsoft Access 2013](https://www.microsoft.com/en-us/download/details.aspx?id=39358)
 
 ## Windows Installer (WinGet for new Windows installs)
+
 ### Issues with first time run on new systems. Running as Admin on Standard USer account.
-`winget config .yaml`
-`winget add .json`
-`winget update --all`
-`winget pin add --id Microsoft.Teams`
+
+#### winget special features
+
+`winget config .yaml`<br>
+`winget add .json`<br>
+`winget update --all`<br>
+`winget pin add --id Microsoft.Teams`<br>
 
 ## Windows Terminal
 
@@ -189,7 +196,7 @@ Remote Server Administration Tools for Windows 10 (RSAT)<br>
 
 IMPORTANT: Starting with Windows 10 October 2018 Update, RSAT is included as a set of "Features on Demand" in Windows 10 itself. The downloadable packages above can still be used to install RSAT on Windows 10 version 1607<br>
 https://download.microsoft.com/download/1/D/8/1D8B5022-5477-4B9A-8104-6A71FF9D98AB/WindowsTH-KB2693643-x64.msu<br>
-https://download.microsoft.com/download/1/D/8/1D8B5022-5477-4B9A-8104-6A71FF9D98AB/WindowsTH-KB2693643-x86.msu
+32-bit https://download.microsoft.com/download/1/D/8/1D8B5022-5477-4B9A-8104-6A71FF9D98AB/WindowsTH-KB2693643-x86.msu
 
 
 
@@ -210,6 +217,8 @@ https://support.microsoft.com/en-us/topic/how-to-obtain-the-latest-service-pack-
 
 
 ## Exchange service packs
+
+(https://learn.microsoft.com/en-us/exchange/new-features/updates)
 
 Java Downloads for All Operating Systems<br>
 https://www.java.com/en/download/manual.jsp<br>
@@ -423,6 +432,7 @@ Enable-ScriptAnalyzer
 ## [**Sysinternals**](https://docs.microsoft.com/en-us/sysinternals/downloads/) Suite
 
 https://learn.microsoft.com/en-us/sysinternals/#sysinternals-live
+
 ## Sysinternals Live
 
 Sysinternals Live is a service that enables you to run Sysinternals tools directly from the Web without manually downloading them.
