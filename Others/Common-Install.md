@@ -1,9 +1,11 @@
 Mixed formatting (MD) a few sections not completed, but lots of raw info despite the poor first draft.
 
 ## Adobe Download for Enterprise Deployment
-    "primaryURL": "https://get.adobe.com/reader/enterprise/",<br>
-    "secondaryURLs": "https://community.adobe.com/t5/acrobat-reader-discussions/distribute-and-install-the-free-acrobat-reader-dc-software-app-in-volume-offline-installer/td-p/10883059"
-    "note": "You need to agree to Adobe licensing before you can distribute from these links"<br>
+
+primaryURL: (https://get.adobe.com/reader/enterprise/),<br>
+secondaryURLs: (https://community.adobe.com/t5/acrobat-reader-discussions/distribute-and-install-the-free-acrobat-reader-dc-software-app-in-volume-offline-installer/td-p/10883059)<br>
+*note:* You need to agree to Adobe licensing before you can distribute from these links<br>
+
 [Adobe® Reader® Software](http://get.adobe.com/reader/enterprise/)<br>
 Last tested 2012<br>
 [Adobe® AIR® Runtime](http://www.adobe.com/products/air/runtime_distribution3.html)<br>
