@@ -1,4 +1,6 @@
-Mixed formatting (MD) a few sections not completed, but lots of raw info despite the poor first draft.
+# Frequent Additional Applications
+
+This page is for resources on programs commonly added to [Windows] computers.
 
 ## Adobe Download for Enterprise Deployment
 
@@ -21,7 +23,7 @@ primaryURL: (https://chromeenterprise.google/download/),<br>
 See Also: GPO - Chrome
 
 
-## Microsoft Edge/IE11 Download for Enterprise Deployment",
+## Microsoft Edge/IE11 Download for Enterprise Deployment
 
 *note*: Now only on Win 7 and Sever 2008
 
