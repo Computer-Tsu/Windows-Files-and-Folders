@@ -586,13 +586,19 @@ https://www.adlice.com/diffview/
 https://www.adlice.com/diffview/#alt_download
 
 
+## PDF (Adobe Portable Document Format)
 
-Foxit
+View, Edit, Create
 
-PDFCreator
+ * [PDFgear](https://www.pdfgear.com/)
+ * Foxit
+ * PDFCreator
+ * [Okular](https://okular.kde.org/) document viewer
+ * Microsoft Windows has included Print to PDF since version 10 ?
+ * LibreOffice Draw can edit PDFs
 
-Microsoft Windows has included Print to PDF since version 10 ?
-
+PDF file header, signature, magic number<br>
+Start with `%PDF`, but many files do not.
 
 ## Libre or Open Office
 
