@@ -119,6 +119,10 @@ https://www.microsoft.com/en-us/download/details.aspx?id=55319
 
 ## Drivers for imaging HP, Dell, Lenovo
 
+SCCM uses .CAB files
+
+### HP Driver Packs
+
 ## Microsoft Office
 
 ### 2016 Suite
@@ -220,11 +224,16 @@ https://support.microsoft.com/en-us/topic/how-to-obtain-the-latest-service-pack-
 
 (https://learn.microsoft.com/en-us/exchange/new-features/updates)
 
-Java Downloads for All Operating Systems<br>
-https://www.java.com/en/download/manual.jsp<br>
-Please review the terms carefully before downloading and using this product. An FAQ is available [here](https://www.oracle.com/java/technologies/javase/jdk-faqs.html).
+ * Exchange SE (Subscription Edition)
+ * Exhange 2019
+ * Exchange 2016
 
-System Center/Config Manager
+Build (version) numbers (https://learn.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates)
+
+## System Center/Config Manager
+
+(https://learn.microsoft.com/en-us/intune/configmgr/core/servers/manage/updates)<br>
+[Configuration Manager Tools](https://learn.microsoft.com/en-us/intune/configmgr/core/support/tools)
 
 ## Windows ISOs
 
@@ -264,6 +273,11 @@ MSP RMM spreadsheet (reddit or mspuser)
 ### VS Code
 
 
+
+## Java Downloads for All Operating Systems
+
+(https://www.java.com/en/download/manual.jsp)<br>
+Please review the terms carefully before downloading and using this product. An FAQ is available [here](https://www.oracle.com/java/technologies/javase/jdk-faqs.html).
 
 ### Intuit QuickBooks
 
@@ -427,7 +441,7 @@ Enable-ScriptBrowser
 Enable-ScriptAnalyzer
 ```
 
-
+[PowerShell Posters, Infographics, Comics](https://learn.microsoft.com/en-us/powershell/scripting/community/digital-art)
 
 ## [**Sysinternals**](https://docs.microsoft.com/en-us/sysinternals/downloads/) Suite
 
