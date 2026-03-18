@@ -265,7 +265,7 @@ https://learn.microsoft.com/en-us/windows-server/administration/windows-server-u
 
 Patch megathread (Reddit?)
 
-Backblaze drivestats
+[Backblaze drive stats](https://www.backblaze.com/cloud-storage/resources/hard-drive-test-data) comprehensive collection of HDD and SSD reliability reports
 
 MSP RMM spreadsheet (reddit or mspuser)
 
