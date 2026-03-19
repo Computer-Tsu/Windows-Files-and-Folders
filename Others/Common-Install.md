@@ -125,6 +125,19 @@ SCCM uses .CAB files
 
 ### HP Driver Packs
 
+HP's Image Assistant [HPIA](https://ftp.ext.hp.com/pub/caps-softpaq/cmit/HPIA.html) downloads and applies model-specific softpaqs (drivers/firmware); pre-built packs<br>
+[64-bit driver packs](https://ftp.ext.hp.com/pub/caps-softpaq/cmit/)
+
+### Lenovo
+
+Details in Lenovo Deployment Pack guide [PDF](https://pubs.lenovo.com/lxci-deploypack-sccm/):<br>
+Driver packs model list [catalog XML](https://download.lenovo.com/cdrt/td/catalogv2.xml)
+
+### Dell
+
+Main [support page](https://www.dell.com/support/kbdoc/en-us/000124139/dell-command-deploy-driver-packs-for-enterprise-client-os-deployment)<br>
+[catalog](https://downloads.dell.com/catalog/DriverPackCatalog.cab)
+
 ## Microsoft Office
 
 ### 2016 Suite
@@ -153,7 +166,8 @@ SCCM uses .CAB files
 
 
 
-Office Deployment Tool<br>
+### Office Deployment Tool
+
 Office Deployment Tool from the Microsoft Download Center<br>
 https://www.microsoft.com/download/details.aspx?id=49117
 
