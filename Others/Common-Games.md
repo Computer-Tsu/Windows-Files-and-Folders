@@ -13,3 +13,18 @@ Java edition<br>
 ## Where Saved files are stores
 
 ## Where settings are stored
+
+-----
+
+Epic
+
+Steam
+
+Xbox Live PC
+
+Windows Store
+
+Blizzard / Battle.Net
+
+GOG Games
+
