@@ -253,6 +253,11 @@ Build (version) numbers (https://learn.microsoft.com/en-us/exchange/new-features
 
 ## Windows ISOs
 
+https://www.microsoft.com/en-us/software-download/
+
+https://www.microsoft.com/en-us/software-download/windows11
+
+https://www.microsoft.com/en-us/software-download/windows10 <KBD>F12</KBD> **DevTools**, change browser agent to iOS and ISO download option will be available.
 
 ### MSI Orca
 https://learn.microsoft.com/en-us/windows/win32/msi/orca-exe
