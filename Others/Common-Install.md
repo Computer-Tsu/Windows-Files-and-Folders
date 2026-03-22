@@ -677,9 +677,14 @@ Brave
 
 downloads for [Microsoft Action Pack](https://www.microsoft.com/msppdd/)<br>
 downloads for MSDN<br>
-downloads for Volume License<br>
-Downloads & Keys - [Visual Studio Subscriptions](https://my.visualstudio.com/Downloads/Featured?mkt=en-us)
+downloads for Volume License (VLSC) retired and moved to [Microsoft M365 admin center](https://admin.microsoft.com/adminportal/home#/subscriptions/vlnew)
+Downloads & Keys - [Visual Studio Subscriptions](https://my.visualstudio.com/Downloads/Featured?mkt=en-us) https://my.visualstudio.com/ProductKeys
 
+https://learn.microsoft.com/en-us/visualstudio/subscriptions/download-software
+https://businessaccount.microsoft.com/
+https://vlcentral.microsoft.com/
+https://learn.microsoft.com/en-us/microsoft-365/commerce/licenses/download-vl-products?view=o365-worldwide
+https://www.microsoft.com/Licensing/ServiceCenter/default.aspx
 
 #### Zimmerman Tools
 https://github.com/EricZimmerman/Get-ZimmermanTools/blob/master/Get-ZimmermanTools.ps1<br>
