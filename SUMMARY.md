@@ -93,8 +93,8 @@
     * [Apdx CLI Usage - ](Appendices/CLI-Help-.md)
     * [Apdx CLI Usage - ](Appendices/CLI-Help-.md)
     * [Apdx CLI Usage - w32Time](Appendices/CLI-Help-w32tm.md)
-    * [Apdx Regitry Keys](Appendices/Apdx-Registry-Keys.md)
-   * [Apdx Network SNMP OIDs](Appendices/Network/Net-SNMP-OID.md)
+  * [Apdx Registry Keys](Appendices/Apdx-Registry-Keys.md)
+  * [Apdx Network SNMP OIDs](Appendices/Network/Net-SNMP-OID.md)
 
 * [Page 1](page-1/README.md) (removed)
   * [page1b](page-1/page1b.md)
