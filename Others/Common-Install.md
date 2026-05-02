@@ -140,6 +140,26 @@ Main [support page](https://www.dell.com/support/kbdoc/en-us/000124139/dell-comm
 
 ## Microsoft Office
 
+*insert matrix of what office products have publisher*<br>
+2016, 2019 included in Standard, Pro, Pro Plus<br>
+2021 included in Pro, Pro Plus
+
+### 2021
+ - [Office Pro Plus 2021]()
+ - [Office 2021 Professional]()
+ - [Office 2021 Home & Business]() (PC or Mac)
+ - [Office 2021 Home & Student]() (PC or Mac)
+ - Office Standard for Mac LTSC 2021 *(VLC)*
+ - Office Standard LTSC 2021 *(VLC)*
+ - Office Professional Plus LTSC 2021 *(VLC)*
+
+### 2019
+ - [Office Pro Plus 2019](https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/ProPlus2019Retail.img)  *unverified*
+ - [Office Professional 2019]()
+ - [Office Standard 2019 *(VLC)*]()
+ - [Office Home & Business 2019]()
+ - [Office Home & Student 2019]()
+
 ### 2016 Suite
  - [Office Professional 2016](http://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/ProfessionalRetail.img)  *verified 10/21/2024*
  - [​Office Home and Business 2016](http://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/HomeBusinessRetail.img)  
@@ -149,6 +169,8 @@ Main [support page](https://www.dell.com/support/kbdoc/en-us/000124139/dell-comm
  - [Office Professional 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/ProfessionalRetail.img)  
  - [Office Home and Business 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/HomeBusinessRetail.img)  
  - [Office Home and Student 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/HomeStudentRetail.img)  *verified 10/21/2024*
+ - Office Pro Plus *VLC*
+ - Office Standard *VLC*
 
 #### 2013 Programs
  - [Word 2013](http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/WordRetail.img)  
