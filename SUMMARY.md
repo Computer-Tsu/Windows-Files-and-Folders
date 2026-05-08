@@ -15,6 +15,7 @@
   * [Environmental Variables](Objects/Env.md)
   * [Shares](Objects/Shares.md)
   * [Registry](Objects/Registry.md)
+* [Preinstallation Environment (PE) & Recovery](WinPE.md)
 * [Appendices](appendices.md)
   * [Windows Versions](Appendices/Apdx-Windows-Versions.md)
   * [Run Commands](Appendices/Apdx-Run-Commands.md)
