@@ -87,7 +87,7 @@
     * [Apdx CLI Usage - regedit](Appendices/CLI-Help-.md)
     * [Apdx CLI Usage - wsh](Appendices/CLI-Help-.md)
     * [Apdx CLI Usage - cscript](Appendices/CLI-Help-.md)
-    * [Apdx CLI Usage - ](Appendices/CLI-Help-.md)
+    * [Apdx CLI Usage - REAgentC](Appendices/CLI-Help-ReAgentc.md)
     * [Apdx CLI Usage - ](Appendices/CLI-Help-.md)
     * [Apdx CLI Usage - ](Appendices/CLI-Help-.md)
     * [Apdx CLI Usage - ](Appendices/CLI-Help-.md)
