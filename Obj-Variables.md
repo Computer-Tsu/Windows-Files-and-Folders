@@ -1,5 +1,7 @@
 ### Environmental Variables {#h.27tpyo2kf7eg" id="h.27tpyo2kf7eg
 
+delayed expansion, 
+
 
 `SET`
 
@@ -95,12 +97,12 @@ Note: Dynamic variables can be used but are not updated.
 | $S  | (space)                                                                                                                                  |
 | $T  | Current time                                                                                                                             |
 | $V  | Windows version number                                                                                                                   |
-| $\_ | Carriage return and linefeed                                                                                                             |
-| \$$ | $ (dollar sign)                                                                                                                          |
-| $+  | **\*** zero or more plus sign (+) characters depending upon the depth of the PUSHD directory stack, one character for each level pushed. |
-| $M  | **\*** Displays the remote name associated with the current drive letter or the empty string if current drive is not a network drive.    |
+| $_ | Carriage return and linefeed                                                                                                             |
+| $$ | $ (dollar sign)                                                                                                                          |
+| $+  | ** zero or more plus sign (+) characters depending upon the depth of the PUSHD directory stack, one character for each level pushed. |
+| $M  | ** Displays the remote name associated with the current drive letter or the empty string if current drive is not a network drive.    |
 
-``**\*** Requires Command Extensions are enabled``
+** Requires Command Extensions are enabled
 
 See also: The TITLE Command which uses System and User Environmental Variables but not compatible with PROMPT variables.
 
@@ -110,8 +112,9 @@ PROMPT can be set as an environmental variable in Windows 7.
 
 If Command Extensions are enabled, then there are several dynamic environment variables that can be expanded but which don't show up in the list of variables displayed by SET. These variable values are computed dynamically each time the value of the variable is expanded. If the user explicitly defines a variable with one of these names, then that definition will override the dynamic one described below:
 
-| %CD%                    | expands to the current directory string.                                 |
+| Varible string          | Explanation                                                              |
 | ----------------------- | ------------------------------------------------------------------------ |
+| %CD%                    | expands to the current directory string.                                 |
 | %DATE%                  | expands to current date using same format as DATE command.               |
 | %TIME%                  | expands to current time using same format as TIME command.               |
 | %RANDOM%                | expands to a random decimal number between 0 and 32767.                  |
@@ -124,38 +127,38 @@ If Command Extensions are enabled, then there are several dynamic environment va
 
 #### PowerShell Variables {#h.dly4nf7wad2" id="h.dly4nf7wad2
 
-``about\_Environment\_Variables``
+``about_Environment_Variables``
 
 [http://technet.microsoft.com/en-us/library/hh847808.aspx](http://technet.microsoft.com/en-us/library/hh847808.aspx)
 
-``PSModulePath=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\\``
+``PSModulePath=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\``
 
 ``http://msdn.microsoft.com/en-us/library/windows/desktop/dd878326%28v=vs.85%29.aspx``
 
-``\[PS] C:\\>get-variable``
+``[PS] C:\>get-variable``
 
 | **Name**                        | **Value**                                                                                          |
 | ------------------------------- | -------------------------------------------------------------------------------------------------- |
-| $                               | \~\history.csv                                                                                     |
+| $                               | ~\history.csv                                                                                      |
 | ?                               | True                                                                                               |
 | ^                               | Get-History                                                                                        |
-| \_                              |                                                                                                    |
+| _                               |                                                                                                    |
 | args                            | {}                                                                                                 |
-| CommonConnectFunctions\_Loca... | {res\_0005, res\_0004, res\_0001, res\_0000, res\_0003, res\_0002}                                 |
+| CommonConnectFunctions_Loca... | {res_0005, res_0004, res_0001, res_0000, res_0003, res_0002}                                 |
 | ConfigurationPath               | C:\Program Files\Microsoft\Exchange Server\V14\bin\Microsoft.Exchange.Configuration.O...           |
 | ConfirmPreference               | High                                                                                               |
 | connectedFqdn                   | MYSERVER.mydomain.com                                                                              |
-| ConnectFunctions\_LocalizedS... | {res\_0001, res\_0000, res\_0003, res\_0002, res\_0005, res\_0004, res\_0007, res\_0006, res\_...  |
+| ConnectFunctions_LocalizedS... | {res_0001, res_0000, res_0003, res_0002, res_0005, res_0004, res_0007, res_0006, res_...  |
 | ConsoleFileName                 |                                                                                                    |
 | DebugPreference                 | SilentlyContinue                                                                                   |
 | Error                           | {The term 'testpath' is not recognized as the name of a cmdlet, function, script file...           |
 | ErrorActionPreference           | Continue                                                                                           |
 | ErrorView                       | NormalView                                                                                         |
-| exbin                           | C:\Program Files\Microsoft\Exchange Server\V14\bin\\                                               |
+| exbin                           | C:\Program Files\Microsoft\Exchange Server\V14\bin\                                               |
 | ExecutionContext                | System.Management.Automation.EngineIntrinsics                                                      |
-| exinstall                       | C:\Program Files\Microsoft\Exchange Server\V14\\                                                   |
+| exinstall                       | C:\Program Files\Microsoft\Exchange Server\V14\                                                   |
 | exrandom                        | System.Random                                                                                      |
-| exscripts                       | C:\Program Files\Microsoft\Exchange Server\V14\scripts\\                                           |
+| exscripts                       | C:\Program Files\Microsoft\Exchange Server\V14\scripts\                                           |
 | false                           | False                                                                                              |
 | FormatEnumerationLimit          | 16                                                                                                 |
 | getLiveIDCredCode               | using System;...                                                                                   |
@@ -177,7 +180,7 @@ If Command Extensions are enabled, then there are several dynamic environment va
 | OutputEncoding                  | System.Text.ASCIIEncoding                                                                          |
 | partialTypeFile                 | C:\Program Files\Microsoft\Exchange Server\V14\bin\Exchange.partial.Types.ps1xml                   |
 | PID                             | 8600                                                                                               |
-| PROFILE                         | \\\AppServer\Users\Mark McDow\Data\Documents\WindowsPowerShell\Microsoft.PowerShell\_pr...         |
+| PROFILE                         | \\AppServer\Users\John Smith\Data\Documents\WindowsPowerShell\Microsoft.PowerShell_pr...         |
 | ProgressPreference              | Continue                                                                                           |
 | PSBoundParameters               | {}                                                                                                 |
 | PSCulture                       | en-US                                                                                              |
@@ -188,8 +191,8 @@ If Command Extensions are enabled, then there are several dynamic environment va
 | PSSessionOption                 | System.Management.Automation.Remoting.PSSessionOption                                              |
 | PSUICulture                     | en-US                                                                                              |
 | PSVersionTable                  | {CLRVersion, BuildVersion, PSVersion, WSManStackVersion, PSCompatibleVersions, Serial...           |
-| PWD                             | C:\\                                                                                               |
-| RemoteExchange\_LocalizedStr... | {res\_0003, res\_help\_for\_cmdlet, res\_0005, res\_0007, res\_0009, res\_general\_help, res\_t... |
+| PWD                             | C:\                                                                                               |
+| RemoteExchange_LocalizedStr... | {res_0003, res_help_for_cmdlet, res_0005, res_0007, res_0009, res_general_help, res_t... |
 | remoteSession                   | System.Management.Automation.Runspaces.PSSession                                                   |
 | ReportErrorShowExceptionClass   | 0                                                                                                  |
 | ReportErrorShowInnerException   | 0                                                                                                  |
@@ -212,7 +215,7 @@ Preference extensions support Windows environment variables and generate a numbe
 
 1. Open the Group Policy Management Console. Right-click the Group Policy object (GPO) that contains the preference item that you want to configure, and then click **Edit**.
 2. Item-level targeting, Targeting..., New Item, Environment Variable, Name:
-3. Press F3 to display a list of variables from which you can select\[6].
+3. Press F3 to display a list of variables from which you can select[6].
 
 **Note** By using Registry Match Targeting targeting items, you can define variables at client run-time, and have these control behavior by using the Environment Variable Targeting targeting items or as values in a preference item setting.
 
@@ -220,8 +223,8 @@ Select a Variable
 
 Select a System Defined Variable
 
-| **Variable Name**   | **Description**                                                                                                                       |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Variable Name**   | **Description**                                                                                                                    |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | AppDataDir          | The current user's application data directory.                                                                                        |
 | BinaryComputerSid   | The SID of the computer in hexadecimal format.                                                                                        |
 | BinaryUserSid       | The SID of the current user in hexadecimal format.                                                                                    |
@@ -277,8 +280,8 @@ Select a System Defined Variable
 
 **Note**
 
-``You can prevent the resolution of a variable before it is applied to client computers (so that the variable instead of the resolved value appears in the preference setting on client computers). To do this for a preference process variable, clear the **Resolve Variable** check box. This inserts **<>** between the **%** **%** delimiters and the variable name (for example, %\<ProgramFiles>%). Preference extensions remove **< >** characters from the text and leave the unresolved variable. You can also use this syntax with a Windows environment variable.``
+You can prevent the resolution of a variable before it is applied to client computers (so that the variable instead of the resolved value appears in the preference setting on client computers). To do this for a preference process variable, clear the **Resolve Variable** check box. This inserts **<>** between the **%** **%** delimiters and the variable name (for example, %\<ProgramFiles>%). Preference extensions remove **< >** characters from the text and leave the unresolved variable. You can also use this syntax with a Windows environment variable.
 
 
-5. ``See ANSI.SYS [http://academic.evergreen.edu/projects/biophysics/technotes/program/ansi\_esc.htm](http://academic.evergreen.edu/projects/biophysics/technotes/program/ansi\_esc.htm) ↑``
+5. See ANSI.SYS [http://academic.evergreen.edu/projects/biophysics/technotes/program/ansi\_esc.htm](http://academic.evergreen.edu/projects/biophysics/technotes/program/ansi\_esc.htm) ↑
 6. Variables in Preference Items ↑
