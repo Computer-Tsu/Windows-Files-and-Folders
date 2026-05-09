@@ -82,6 +82,7 @@ bootrec /RebuildBcd
 `REAgentC.exe` gives error if not run as admin
 
 (https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/download-winpe--windows-pe)
+(https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/reagentc-command-line-options?view=windows-11)
 
 ### Tools to generate custom PE/RE
 
