@@ -16,7 +16,7 @@ delayed expansion,
 |  Variable name   |   Value    |
 | ----------------------- | ----------------------------------------------------- |
 | ALLUSERSPROFILE         | C:\ProgramData                                        |
-| APPDATA                 | C:\Users\\\<UserName>\AppData\Roaming                 |
+| APPDATA                 | C:\Users\<UserName>\AppData\Roaming                 |
 | CommonProgramFiles      | C:\Program Files\Common Files                         |
 | CommonProgramFiles(x86) | C:\Program Files (x86)\Common Files                   |
 | CommonProgramW6432      | C:\Program Files\Common Files                         |
@@ -28,13 +28,13 @@ delayed expansion,
 | HOMESHARE               |                                                       |
 | LOCALAPPDATA            | C:\Users\<UserName>\AppData\Local                   |
 | LOGONSERVER             | \\SERVER                                             |
-| NUMBER\_OF\_PROCESSORS  | 4                                                     |
+| NUMBER_OF_PROCESSORS  | 4                                                     |
 | OS                      | Windows_NT                                           |
 | PATHEXT                 | .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC |
-| PROCESSOR\_ARCHITECTURE | AMD64                                                 |
-| PROCESSOR\_IDENTIFIER   | Intel64 Family 6 Model 42 Stepping 7, GenuineIntel    |
-| PROCESSOR\_LEVEL        | 6                                                     |
-| PROCESSOR\_REVISION     | 2a07                                                  |
+| PROCESSOR_ARCHITECTURE | AMD64                                                 |
+| PROCESSOR_IDENTIFIER   | Intel64 Family 6 Model 42 Stepping 7, GenuineIntel    |
+| PROCESSOR_LEVEL        | 6                                                     |
+| PROCESSOR_REVISION     | 2a07                                                  |
 | ProgramData             | C:\ProgramData                                        |
 | ProgramFiles            | C:\Program Files                                      |
 | ProgramFiles(x86)       | C:\Program Files (x86)                                |
@@ -54,6 +54,9 @@ delayed expansion,
 | windir                  | C:\Windows                                            |
 | windows_tracing_flags | 3                                                     |
 |                         |                                                       |
+
+
+** FP_NO_HOST_CHECK = FrontPage no Host Check, 
 
 #### Additional Common Values {#h.32ephbb6tky6" id="h.32ephbb6tky6
 
