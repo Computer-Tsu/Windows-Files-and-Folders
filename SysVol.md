@@ -1,5 +1,4 @@
-Windows `\System Volume Information\'
-
+Windows `\System Volume Information\`
 Found on NTFS, ReFS, and some ExFAT volumes.
 
 # System Volume Information (SVI) - Technical Reference
