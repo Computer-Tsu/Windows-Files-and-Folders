@@ -1,6 +1,6 @@
 #### Network {#network}
 
-``C:\Windows\System32\drivers\etc\hosts``
+`C:\Windows\System32\drivers\etc\hosts`
 
 (Take ownership to edit file)
 
@@ -8,9 +8,9 @@
 
 Registry
 
-``HKLM\System\CurrentControlSet\Services\Winsock``
+`HKLM\System\CurrentControlSet\Services\Winsock`
 
-``HKLM\System\CurrentControlSet\Services\Winsock2``
+`HKLM\System\CurrentControlSet\Services\Winsock2`
 
 **Remote Access Server (RAS)**
 
@@ -22,7 +22,7 @@ Phonebook Administrator can be added to servers
 
 **PXE Boot**
 
-WMIC csproduct list /format
+`WMIC csproduct list /format`
 
 **MTU**
 
@@ -32,7 +32,7 @@ symptoms
 
 ping command test
 
-``ping -f -l 1024 \<IP Address>``
+`ping -f -l 1024 <IP Address>`
 
 increase the packet size until the packets fail. Add 28 to get the correct MTU size.
 
@@ -44,11 +44,11 @@ registry key
 
 **net.exe**
 
-``net send depreciated with Windows ver (Vista?) or SP \_\_\_ when messenger service was removed/disabled``
+`net send` depreciated with Windows ver (Vista?) or SP ___ when messenger service was removed/disabled
 
 MSG.EXE
 
-``requires: HKLM\SYSTEM\CurrentControlSet\Control\TerminalServer\AllowRemoteRPC=1``
+requires: `HKLM\SYSTEM\CurrentControlSet\Control\TerminalServer\AllowRemoteRPC=1`
 
 net view
 
@@ -60,7 +60,7 @@ net services
 
 NET START and NET STOP can be used with any service if you provide the registry key name of display name.
 
-Run 'ipconfig /flushdns' to flush the DNS cache, and 'nbtstat -RR' to flush the NetBIOS name cache.
+Run `ipconfig /flushdns` to flush the DNS cache, and `nbtstat -RR` to flush the NetBIOS name cache.
 
 **netsh.exe**
 
@@ -131,7 +131,7 @@ tftp client not installed by default
 
 older versions of windows (NT?) had settings stored ? for services like ftp server (users, default directory), telnet server?, finger?
 
-``\~ftpsvc\~.ckm Annotate FTP directory``
+`\~ftpsvc\~.ckm` Annotate FTP directory
 
 [http://support.microsoft.com/kb/141705](http://go.microsoft.com/fwlink/)
 
@@ -141,7 +141,7 @@ older versions of windows (NT?) had settings stored ? for services like ftp serv
 
 [http://windowsitpro.com/windows/jsi-tip-2385-how-do-i-change-windows-2000-telnet-service-greeting-prompt-etc](http://technet.microsoft.com/en-us/library/cc742154.aspx)
 
-``tlntadmn.exe, %SystemRoot%\system32\Login.cmd``
+`tlntadmn.exe`, `%SystemRoot%\system32\Login.cmd`
 
 **Network Monitor**
 
@@ -163,7 +163,7 @@ How to
 
 motd file
 
-``_systemroot_\System32\Drivers\Etc\Quotes. A sample quote file is installed with the Simple TCP/IP Services. If this file is missing, the quote service fails.``
+`_systemroot_\System32\Drivers\Etc\Quotes`. A sample quote file is installed with the Simple TCP/IP Services. If this file is missing, the quote service fails.
 
 **Novell NetWare Client**
 
@@ -175,7 +175,7 @@ Reg Key
 
 add DWORD
 
-``C:\Windows\Debug?\netlogon.log``
+`C:\Windows\Debug?\netlogon.log`
 
 NetSetup.log
 
@@ -267,7 +267,7 @@ Network Transport (Microsoft Windows Network)
 8.8.4.4
 ```
 
-``verified as of [Publication Date]``
+verified as of [Publication Date]
 
 _space provided for writing notes_
 
