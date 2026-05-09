@@ -13,22 +13,23 @@ delayed expansion,
 
 ``TEMP, TMP %USERPROFILE%\AppData\Local\Temp``
 
-| ALLUSERSPROFILE         | C:\ProgramData                                        |
+|  Variable name   |   Value    |
 | ----------------------- | ----------------------------------------------------- |
+| ALLUSERSPROFILE         | C:\ProgramData                                        |
 | APPDATA                 | C:\Users\\\<UserName>\AppData\Roaming                 |
 | CommonProgramFiles      | C:\Program Files\Common Files                         |
 | CommonProgramFiles(x86) | C:\Program Files (x86)\Common Files                   |
 | CommonProgramW6432      | C:\Program Files\Common Files                         |
 | COMPUTERNAME            |                                                       |
 | ComSpec                 | C:\Windows\system32\cmd.exe                           |
-| FP\_NO\_HOST\_CHECK     | NO                                                    |
+| FP_NO_HOST_CHECK     | NO                                                    |
 | HOMEDRIVE               |                                                       |
 | HOMEPATH                |                                                       |
 | HOMESHARE               |                                                       |
-| LOCALAPPDATA            | C:\Users\\\<UserName>\AppData\Local                   |
-| LOGONSERVER             | \\\SERVER                                             |
+| LOCALAPPDATA            | C:\Users\<UserName>\AppData\Local                   |
+| LOGONSERVER             | \\SERVER                                             |
 | NUMBER\_OF\_PROCESSORS  | 4                                                     |
-| OS                      | Windows\_NT                                           |
+| OS                      | Windows_NT                                           |
 | PATHEXT                 | .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC |
 | PROCESSOR\_ARCHITECTURE | AMD64                                                 |
 | PROCESSOR\_IDENTIFIER   | Intel64 Family 6 Model 42 Stepping 7, GenuineIntel    |
@@ -39,19 +40,19 @@ delayed expansion,
 | ProgramFiles(x86)       | C:\Program Files (x86)                                |
 | ProgramW6432            | C:\Program Files                                      |
 | PROMPT                  | $P$G                                                  |
-| PSModulePath            | C:\Windows\system32\WindowsPowerShell\v1.0\Modules\\  |
+| PSModulePath            | C:\Windows\system32\WindowsPowerShell\v1.0\Modules\  |
 | PUBLIC                  | C:\Users\Public                                       |
 | SESSIONNAME             | Console                                               |
 | SystemDrive             | C:                                                    |
 | SystemRoot              | C:\Windows                                            |
-| TEMP                    | C:\Users\\_JSMITH\~1_\AppData\Local\Temp              |
-| TMP                     | C:\Users\\_JSMITH\~1_\AppData\Local\Temp              |
+| TEMP                    | C:\Users\_JSMITH~1_\AppData\Local\Temp              |
+| TMP                     | C:\Users\_JSMITH~1_\AppData\Local\Temp              |
 | USERDNSDOMAIN           | _MYDOMAIN.COM_                                        |
 | USERDOMAIN              | _MYDOMAIN.COM_                                        |
-| USERNAME                | \<UserName>                                           |
-| USERPROFILE             | C:\Users\\\<UserName>                                 |
+| USERNAME                | <UserName>                                           |
+| USERPROFILE             | C:\Users\<UserName>                                 |
 | windir                  | C:\Windows                                            |
-| windows\_tracing\_flags | 3                                                     |
+| windows_tracing_flags | 3                                                     |
 |                         |                                                       |
 
 #### Additional Common Values {#h.32ephbb6tky6" id="h.32ephbb6tky6
@@ -63,9 +64,9 @@ delayed expansion,
 | Windows XP      |             |
 | Windows 2003    |             |
 | Windows Vista   |             |
-| Windows 7       | Windows\_NT |
-| Windows 2008 R2 | Windows\_NT |
-| Windows 8       | Windows\_NT |
+| Windows 7       | Windows_NT  |
+| Windows 2008 R2 | Windows_NT  |
+| Windows 8       | Windows_NT  |
 | Windows 2012    |             |
 |                 |             |
 
