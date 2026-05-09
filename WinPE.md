@@ -31,6 +31,52 @@ Wpeutil can only accept one command per line.
 
 ### Tools only in RE
 
+#### BootRec
+
+Repair or replace a partition boot sector.
+
+Syntax  
+```
+BOOTREC /FIXMBR      Write a Master Boot Record (MBR) to the system partition.
+
+BOOTREC /FIXBOOT     Write a new Boot Sector onto the system partition.
+
+BOOTREC /SCANOS      Scan all disks for Windows installations and display entries
+                     not currently in the BCD store.
+
+BOOTREC /REBUILDBCD  Scan all disks for Windows installations and provide a choice of
+                     which entries to add to the BCD store.
+
+```
+`/FixMbr` does not overwrite the existing partition table. Use this option when you must resolve MBR corruption issues, or when you have to remove nonstandard code from the MBR.
+
+Use `/FixBoot` if The boot sector was damaged or replaced.
+
+Examples
+Fix the MBR and boot sector:
+```
+C:\> bootrec.exe /fixmbr
+C:\> bootrec.exe /fixboot
+C:\> bootrec.exe /rebuildbcd
+```
+Then Reboot.
+
+Rebuild the BCD store
+
+C:\> BOOTREC /REBUILDBCD
+
+Troubleshoot a "Bootmgr Is Missing" error.
+If rebuilding the BCD store doesn’t resolve the startup issue, you can export and delete the BCD store and then run this option again. By doing this, you make sure that the BCD store is completely rebuilt. To do this, type the following commands at the Windows RE command prompt:
+
+```
+bcdedit /export C:\BCD_Backup
+c:
+cd boot
+attrib bcd -s -h -r
+ren c:\boot\bcd bcd.old
+bootrec /RebuildBcd
+```
+
 ### Tools to manage RE
 
 `REAgentC.exe` gives error if not run as admin
