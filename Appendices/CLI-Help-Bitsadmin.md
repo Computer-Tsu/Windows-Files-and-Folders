@@ -1,5 +1,23 @@
-- line 1
-  - line 1-a
+
+
+- AddFile
+- AddFileSet
+- Cache
+  - cache and delete
+  - Cache and DeleteUrl
+  - cache and getexpirationtime
+  - cache and getlimit
+  - cache and help
+  - cache and info
+  - cache and list
+  - cache and setexpirationtime
+  - cache and setlimit
+  - cache and clear
+- cancel
+- complete
+- create
+- examples
+- 
     - line 1-a-i
     - line 1-a-ii
 - line 2
