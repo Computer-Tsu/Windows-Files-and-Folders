@@ -1,4 +1,11 @@
+> *Error run without admin elevation*
+```
+This command can only be executed from an elevated command prompt.
 
+REAGENTC.EXE: Operation failed: 5
+
+REAGENTC.EXE: An error has occurred.
+```
 
 ```
 C:\Windows\System32>dir ReAgentc.exe
