@@ -30,8 +30,24 @@ Performs tasks related to FAT and NTFS file systems, such as managing reparse po
 
 -----
 
+*Win10 differences with online documentation*
+
+> clfs
+> behavior
+> bypassio
+> dax
+> storagereserve
+> trace
+
 ```
-fsutil
+C:\Windows\System32>dir fsutil.exe
+
+ Directory of C:\Windows\System32
+
+03/11/2024  11:19 PM           267,744 fsutil.exe
+               1 File(s)        267,744 bytes
+
+C:\Windows\System32>fsutil.exe
 ---- Commands Supported ----
 
 8dot3name         8dot3name management
@@ -56,4 +72,244 @@ transaction       Transaction management
 usn               USN management
 volume            Volume management
 wim               Transparent wim hosting management
+
+C:\Windows\System32>fsutil.exe 8dot3name
+---- 8DOT3NAME Commands Supported ----
+
+query   Query the current setting for the shortname behavior on the system
+scan    Scan for impacted registry entries
+set     Change the setting that controls the shortname behavior on the system
+strip   Remove the shortnames for all files within a directory
+
+C:\Windows\System32>fsutil.exe behavior
+---- BEHAVIOR Commands Supported ----
+
+query           Query the file system behavior parameters
+set             Change the file system behavior parameters
+
+C:\Windows\System32>fsutil.exe bypassIo
+---- BYPASSIO Commands Supported ----
+
+State           Returns the BypassIo state for the given file/directory
+
+C:\Windows\System32>fsutil.exe bypassIo State
+Usage: fsutil bypassIo state </v> <file path>
+
+   /v   Verbose mode - display the name of the storage driver
+
+   Eg: fsutil bypassIo state c:\test\testfile.txt
+       fsutil bypassIo state /v d:
+
+C:\Windows\System32>fsutil.exe dax
+---- DAX Commands Supported ----
+
+queryFileAlignment        Query file alignment on dax volume
+
+C:\Windows\System32>fsutil.exe dax queryFileAlignment
+Usage   : fsutil dax queryFileAlignment <filename> [options]
+Options : q=<query flag>        - Query flag, see value options below: (Default is both)
+            value: large        - Query for large page alignment.
+                   huge         - Query for huge page alignment.
+                   both         - Query for both large and huge page alignment.
+            ** Note: huge page alignment query is limited to 64-bit architectures.
+          n=<number of ranges>  - Number of output ranges. Default=all ranges.
+          s=<file offset>       - Starting file offset of the range. Default=0.
+          l=<length in bytes>   - Range length in bytes. Default=MAXLONGLONG-StartOffset.
+
+   Eg : fsutil dax queryFileAlignment C:\Temp\sample.txt
+      : fsutil dax queryFileAlignment C:\Temp\sample.txt q=large
+      : fsutil dax queryFileAlignment C:\Temp\sample.txt q=huge n=10
+      : fsutil dax queryFileAlignment C:\Temp\sample.txt q=both s=0x100 l=0x10000
+      : fsutil dax queryFileAlignment C:\Temp\sample.txt q=both n=10 s=0x100 l=0x10000
+
+C:\Windows\System32>fsutil.exe devdrv
+
+Dev drive or a developer volume is a volume that is tuned for performance of
+developer scenarios.  This also lets an administrator of the device control
+the file system filters that are attached to the volume.
+
+---- DEVDRV Commands Supported ----
+
+query                Query developer volume information
+enable               Enable developer volume support on this machine
+disable              Disable developer volume support on this machine
+trust                Trust the given developer volume
+untrust              Untrust the given developer volume
+setFiltersAllowed    Set the list of allowed filters for developer volume
+clearFiltersAllowed  Clear the list of allowed filters for developer volume
+
+Please use "fsutil devdrv <command> /?" for more information.
+
+C:\Windows\System32>fsutil.exe dirty
+---- DIRTY Commands Supported ----
+
+query           Query the dirty bit
+set             Set the dirty bit
+
+C:\Windows\System32>fsutil.exe file
+---- FILE Commands Supported ----
+
+createNew                Creates a new file of a specified size
+findBySID                Find a file by security identifier
+layout                   Query all the information available about the file
+optimizeMetadata         Optimize metadata for a file
+queryAllocRanges         Query the allocated ranges for a file
+queryCaseSensitiveInfo   Query the case sensitive information for a directory
+queryEA                  Query the extended attributes (EA) information for a file
+queryExtents             Query the extents for a file
+queryExtentsAndRefCounts Query the extents and their corresponding refcounts for a file
+queryFileID              Queries the file ID of the specified file
+queryFileNameById        Displays a random link name for the file ID
+queryOptimizeMetadata    Query the optimize metadata state for a file
+queryValidData           Queries the valid data length for a file
+setCaseSensitiveInfo     Set the case sensitive information for a directory
+setShortName             Set the short name for a file
+setValidData             Set the valid data length for a file
+setZeroData              Set the zero data for a file
+setEOF                   Sets the end of file for an existing file
+setStrictlySequential    Sets ReFS SMR file as strictly sequential
+
+C:\Windows\System32>fsutil.exe fsinfo
+---- FSINFO Commands Supported ----
+
+drives          List all drives
+driveType       Query drive type for a drive
+ntfsInfo        Query NTFS specific volume information
+refsInfo        Query REFS specific volume information
+sectorInfo      Query sector information
+statistics      Query file system statistics
+volumeInfo      Query volume information
+
+C:\Windows\System32>fsutil.exe hardlink
+---- HARDLINK Commands Supported ----
+
+create          Create a hardlink
+list            Enumerate hardlinks on a file
+
+C:\Windows\System32>fsutil.exe objectID
+---- OBJECTID Commands Supported ----
+
+create          Create the object identifier
+delete          Delete the object identifier
+query           Query the object identifier
+set             Change the object identifier
+
+C:\Windows\System32>fsutil.exe quota
+---- QUOTA Commands Supported ----
+
+disable         Disable quota tracking and enforcement
+enforce         Enable quota enforcement
+modify          Set disk quota for a user
+query           Query disk quotas
+track           Enable quota tracking
+violations      Display quota violations
+
+C:\Windows\System32>fsutil.exe repair
+---- REPAIR Commands Supported ----
+
+enumerate      Enumerate the entries of a volume's corruption log
+initiate       Initiate the repair of a file
+query          Query the self healing state of the volume
+set            Set the self healing state of the volume
+state          Query the corruption state of the volume(s)
+wait           Wait for repair(s) to complete
+
+C:\Windows\System32>fsutil.exe reparsePoint
+---- REPARSEPOINT Commands Supported ----
+
+delete          Delete a reparse point
+query           Query a reparse point
+
+C:\Windows\System32>fsutil.exe resource
+---- RESOURCE Commands Supported ----
+
+create          Create a Secondary Transactional Resource Manager
+info            Display information relating to a Transactional Resource Manager
+setAutoReset    Set whether a default Transactional Resource Manager will clean its transactional metadata on next mount
+setAvailable    Set a Transactional Resource Manager to prefer availability over consistency
+setConsistent   Set a Transactional Resource Manager to prefer consistency over availability
+setLog          Change characteristics of a running Transactional Resource Manager
+start           Start a Transactional Resource Manager
+stop            Stop a Transactional Resource Manager
+
+C:\Windows\System32>fsutil.exe sparse
+---- SPARSE Commands Supported ----
+
+queryFlag       Query sparse
+queryRange      Query range
+setFlag         Set sparse
+setRange        Set sparse range
+
+C:\Windows\System32>fsutil.exe storageReserve
+---- STORAGERESERVE Commands Supported ----
+
+query          Query storage reserve area(s) of a volume
+repair         Repair storage reserve area(s) of a volume
+findByID       Find files by storage reserve ID
+
+C:\Windows\System32>fsutil.exe tiering
+---- TIERING Commands Supported ----
+
+clearFlags      Disable tiering behavior flags of a volume
+queryFlags      Display the tiering behavior flags of a volume
+regionList      List the regions of a volume and their respective storage tiers
+setFlags        Enable tiering behavior flags of a volume
+tierList        List the storage tiers associated with a volume
+
+C:\Windows\System32>fsutil.exe trace
+---- TRACE Commands Supported ----
+
+decode           Decode NTFS trace information
+query            Query the state of NTFS trace session
+start            Start a NTFS trace session
+stop             Stop a NTFS trace session
+
+C:\Windows\System32>fsutil.exe transaction
+---- TRANSACTION Commands Supported ----
+
+commit          Commit a specified transaction
+fileinfo        Display transaction information for a specific file
+list            Display currently running transactions
+query           Display information on a specified transaction
+rollback        Rollback a specified transaction
+
+C:\Windows\System32>fsutil.exe usn
+---- USN Commands Supported ----
+
+createJournal           Create a USN journal
+deleteJournal           Delete a USN journal
+enableRangeTracking     Enable write range tracking for a volume
+enumData                Enumerate USN data
+queryJournal            Query the USN data for a volume
+readJournal             Reads the USN records in the USN journal
+readData                Read the USN data for a file
+
+C:\Windows\System32>fsutil.exe volume
+---- VOLUME Commands Supported ----
+
+allocationReport      Allocated clusters report
+diskFree              Query the free space of a volume
+dismount              Dismount a volume
+findShrinkBlocker     Find files that are blocking volume shrink
+fileLayout            Query all the information available about the file(s)
+flush                 Flush a volume
+list                  List volumes
+queryCluster          Query which file is using a particular cluster
+queryLabel            Query the label for a volume
+queryNumaInfo         Queries the NUMA node for the given volume
+setLabel              Set the label for a volume
+smrGC                 Control SMR Garbage Collection
+smrInfo               Query SMR information
+tpInfo                Query thin provisioning info for the given volume
+
+C:\Windows\System32>fsutil.exe wim
+---- WIM Commands Supported ----
+
+enumFiles           Enumerate WIM backed files
+enumWims            Enumerate backing WIM files
+removeWim           Remove a WIM from backing files
+queryFile           Query the origin of a specific file
+
+
+C:\Windows\System32>
 ```
