@@ -1,0 +1,9 @@
+create partition efi
+create partition extended
+create partition logical
+create partition msr
+create partition primary
+create volume mirror
+create volume raid
+create volume simple
+create volume stripe
