@@ -94,7 +94,7 @@
     * [Apdx CLI Usage - FsUtil](Appendices/CLI-Help-FsUtil.md)
     * [Apdx CLI Usage - WBAdmin](Appendices/CLI-Help-WBAdmin.md)
     * [Apdx CLI Usage - WdsUtil](Appendices/CLI-Help-WdsUtil.md)
-    * [Apdx CLI Usage - ](Appendices/CLI-Help-.md)
+    * [Apdx CLI Usage - powercfg](Appendices/CLI-Help-PowerCfg.md)
     * [Apdx CLI Usage - ](Appendices/CLI-Help-.md)
     * [Apdx CLI Usage - ](Appendices/CLI-Help-.md)
     * [Apdx CLI Usage - w32Time](Appendices/CLI-Help-w32tm.md)
