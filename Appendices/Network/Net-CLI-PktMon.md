@@ -284,51 +284,78 @@ pktmon hex2pkt [--type { Ethernet | IP | HTTP }]
     Packet type to decode. Default is Ethernet.
 ```
 
+
+```
+C:\>pktmon filter add help
+pktmon filter add <name> [-m <mac> [mac2]] [-v <vlan>] [-d { IPv4 | IPv6 | number }]
+                         [-t { TCP [flags...] | UDP | ICMP | ICMPv6 | number }]
+                         [-i <ip> [ip2]] [-p <port> [port2]] [-b] [-e [port]]
+    Add a filter to control which packets are reported. For a packet to be
+    reported, it must match all conditions specified in at least one filter.
+    Up to 32 filters can be active at once.
+
+    NOTE1: When two MACs (-m), IPs (-i), or ports (-p) are specified, the filter
+           matches packets that contain both. It will not distinguish between source
+           or destination for this purpose.
+
+name
+    Optional name or description of the filter.
+
+Ethernet frame
+    -m, --mac[-address]
+        Match source or destination MAC address. See NOTE1 above.
+
+    -v, --vlan
+        Match by VLAN Id (VID) in the 802.1Q header.
+
+    -d, --data-link[-protocol], --ethertype
+        Match by data link (layer 2) protocol. Can be IPv4, IPv6, ARP, or
+        a protocol number.
+
+IP header
+    --dscp
+        Match by the 6-bit Differentiated Services Code Point (DSCP) field.
+
+    -t, --transport[-protocol], --ip-protocol
+        Match by transport (layer 4) protocol. Can be TCP, UDP, ICMP, ICMPv6, or
+        a protocol number.
+        To further filter TCP packets, an optional list of TCP flags to match can
+        be provided. Supported flags are FIN, SYN, RST, PSH, ACK, URG, ECE, and CWR.
+
+    -i, --ip[-address]
+        Match source or destination IP address. See NOTE1 above.
+        To match by subnet, use CIDR notation with the prefix length.
+
+TCP/UDP header
+    -p, --port
+        Match source or destination port number. See NOTE1 above.
+
+Cluster Heartbeat
+    -b, --heartbeat
+        Match RCP heartbeat messages over UDP port 3343.
+
+Encapsulation
+    -e, --encap
+        Apply above filtering parameters to both inner and outer encapsulation headers.
+        Supported encapsulation methods are VXLAN, GRE, NVGRE, and IP-in-IP.
+        Custom VXLAN port is optional, and defaults to 4789.
+
+Example 1: Ping filter
+    pktmon filter add MyPing -i 10.10.10.10 -t ICMP
+
+Example 2: TCP SYN filter for SMB traffic
+    pktmon filter add MySmbSyn -i 10.10.10.10 -t TCP SYN -p 445
+
+Example 3: Subnet filter
+    pktmon filter add MySubnet -i 10.10.10.0/24
+
+
+C:\>
+```
+
 -----
 
----
-layout: Conceptual
-title: Pktmon command formatting | Microsoft Learn
-canonicalUrl: https://learn.microsoft.com/en-us/windows-server/networking/technologies/pktmon/pktmon-syntax
-breadcrumb_path: /windows-server/breadcrumbs/toc.json
-uhfHeaderId: MSDocsHeader-WindowsServer
-feedback_system: Standard
-recommendations: true
-ms.service: windows-server
-ms.subservice: networking
-ms.update-cycle: 1095-days
-description: Provides an overview of Pktmon command formatting with a quick start guide and provides guidance on usage.
-ms.topic: how-to
-author: robinharwood
-ms.author: roharwoo
-ms.date: 2021-10-27T00:00:00.0000000Z
-locale: en-us
-document_id: 0fb8988c-aa09-bf6b-3eab-5e872faf2fc6
-document_version_independent_id: eeb7f936-c102-3cdd-8dd8-01da871d6a6c
-updated_at: 2025-05-01T18:26:00.0000000Z
-original_content_git_url: https://github.com/MicrosoftDocs/windowsserverdocs-pr/blob/live/WindowsServerDocs/networking/technologies/pktmon/pktmon-syntax.md
-gitcommit: https://github.com/MicrosoftDocs/windowsserverdocs-pr/blob/8fdee610c66db3c1f2322c374a449b078dc3e0ff/WindowsServerDocs/networking/technologies/pktmon/pktmon-syntax.md
-git_commit_id: 8fdee610c66db3c1f2322c374a449b078dc3e0ff
-site_name: Docs
-depot_name: MSDN.WindowsServerDocs-pr
-page_type: conceptual
-toc_rel: ../../toc.json
-pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/MSDN.WindowsServerDocs-pr/{branchName}{pdfName}
-feedback_product_url: ''
-feedback_help_link_type: ''
-feedback_help_link_url: ''
-word_count: 1916
-asset_id: networking/technologies/pktmon/pktmon-syntax
-moniker_range_name: 
-monikers: []
-item_type: Content
-source_path: WindowsServerDocs/networking/technologies/pktmon/pktmon-syntax.md
-cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
-spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
-platformId: 8f839e04-617c-a175-eb88-aff0b2946d80
----
+
 
 # Pktmon command formatting | Microsoft Learn
 
@@ -509,3 +536,22 @@ For more information, see [pktmon list syntax](../../../administration/windows-c
 
 -----
 
+
+
+# Pktmon support for Microsoft Network Monitor (Netmon)
+
+Packet Monitor (Pktmon) generates logs in ETL format. These logs can be analyzed using Microsoft Network Monitor (Netmon) by using special parsers. This topic explains how to analyze Packet Monitor-generated ETL files within Netmon.
+
+## Network Monitor setup and configuration
+
+Follow these steps to install and configure Netmon to parse Packet Monitor-generated ETL files:
+
+1. [Install Network Monitor 3.4](https://www.microsoft.com/download/details.aspx?id=4865).
+2. Start Network Monitor elevated and set Windows as Active parser profile at (Tools / Options / Parser Profiles).
+3. Copy etl\_Microsoft-Windows-PktMon-Events.npl from [here](https://github.com/microsoft/NetMon_Parsers_for_PacketMon/blob/main/etl_Microsoft-Windows-PktMon-Events.npl) to "%PROGRAMDATA%\Microsoft\Network Monitor 3\NPL\NetworkMonitor Parsers\Windows"
+4. Copy stub\_etl\_Microsoft-Windows-PktMon-Events.npl from [here](https://github.com/microsoft/NetMon_Parsers_for_PacketMon/blob/main/stub_etl_Microsoft-Windows-PktMon-Events.npl) to "%PROGRAMDATA%\Microsoft\Network Monitor 3\NPL\NetworkMonitor Parsers\Windows\Stubs"
+5. Rename stub\_etl\_Microsoft-Windows-PktMon-Events.npl to etl\_Microsoft-Windows-PktMon-Events.npl
+6. Include etl\_Microsoft-Windows-PktMon-Events.npl into NetworkMonitor\_Parsers\_sparser.npl at "%PROGRAMDATA%\Microsoft\Network Monitor 3\NPL\NetworkMonitor Parsers"
+7. Restart Network Monitor elevated for rebuilding the parsers.
+
+8. 
