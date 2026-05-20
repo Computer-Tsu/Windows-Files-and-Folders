@@ -4,142 +4,96 @@
 
 Lists of
 
-Forensic Areas
+- Forensic Areas
+- Run commands
+- Registry key list?
+- (Environmental) Variables lists?
+- List of all files in plain install?
+- List of all files on install CD?
+- List of all files in SFC list?
+- Index of files in this document?
+- Index of Tables in this document?
+- List of sources?
+- List of copyrights?
+- Copyright, Citation example(s)
 
-Run commands
-
-Registry key list?
-
-(Environmental) Variables lists?
-
-List of all files in plain install?
-
-List of all files on install CD?
-
-List of all files in SFC list?
-
-Index of files in document?
-
-Index of Tables in document?
-
-List of sources?
-
-List of copyrights?
-
-Copyright, Citation example(s)
-
-Ordering/Purchasing Information (ebook limit 5-page copy, 10-page print?) ebook included with each paper-back copy
-
-Codex? Revisions? Version/printing/history? Submit corrections/content requests contact info
-
-About the cover art
-
-Biography about the author, information how to contact or follow the author
+- Ordering/Purchasing Information (ebook limit 5-page copy, 10-page print?) ebook included with each paper-back copy
+- Codex? Revisions? Version/printing/history? Submit corrections/content requests contact info
+- About the cover art
+- Biography about the author, information how to contact or follow the author
 
 Other books available: NT File System, AD/LDAP Database, Group Policies, Windows Administration methods, tools, scripts and examples (how-to use tools/commands discussed here and more 3rd-party tools with real-world examples and guides)
 
 * Windows Versions
-
 * Run... Commands
-
 * Windows Start Menu structure and contents
-
 * Windows Components (Add/Remove Features and Roles)
-
 * Microsoft Office Components
-
 * Windows Event Logs
-
 * Windows Explorer and File dialog box
-
 * File and Directory Contents lists
-
 * Command Syntax Help
 
 
 
 #### Forensically interesting spots in the Windows 7, Vista and XP file system and registry {#Forensically-interesting}
 
-``[http://www.irongeek.com/i.php?page=security/windows-forensics-registry-and-file-system-spots\&mode=print](http://technet.microsoft.com/en-us/library/cc754051.aspx?page=security/windows-forensics-registry-and-file-system-spots\&mode=print)``
+`[http://www.irongeek.com/i.php?page=security/windows-forensics-registry-and-file-system-spots\&mode=print](http://technet.microsoft.com/en-us/library/cc754051.aspx?page=security/windows-forensics-registry-and-file-system-spots\&mode=print)`
 
 Windows Explorer:
 
-Recently opened files from Windows Explorer
+Recently opened files from Windows Explorer<br>
+`C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Recent`
 
-``C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Recent``
+Network Shortcuts<br>
+`C:\Users\<user name>\AppData\Roaming\Microsoft\Windows\Network Shortcuts`
 
-Network Shortcuts
+Items recently ran from the "Run" bar<br>
+`HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU`
 
-``C:\Users\\\<user name>\AppData\Roaming\Microsoft\Windows\Network Shortcuts``
+common file save/open dialog, recently opened/saved files<br>
+`HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidlMRU`
 
-Items recently ran from the "Run" bar
+Recent Docs<br>
+`HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs`
 
-``HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU``
+EXE to main window title cache<br>
+`HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache`
 
-common file save/open dialog, recently opened/saved files
+User Assist<br>
+`HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist`
 
-``HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidlMRU``
-
-Recent Docs
-
-``HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs``
-
-EXE to main window title cache
-
-``HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache``
-
-User Assist
-
-``HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist``
-
-Didier Stevens has a tool for parsing the data here:
-
+Didier Stevens has a tool for parsing the data here:<br>
 [http://blog.didierstevens.com/programs/userassist/](http://blog.didierstevens.com/programs/userassist/)
 
 Windows:
 
-Temp folder
+- Temp folder<br>
+`C:\Users\\\<user name>\AppData\Local\Temp`
+- Recycle Bin<br>
+`C:\$Recycle.Bin`
+- Last logged on user<br>
+`HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon`
+- Event logs
+  - `C:\Windows\System32\config`<br>
+  - `C:\Windows\System32\winevt\Logs`<br>
+  - `*.evt` and `*.evtx`
 
-``C:\Users\\\<user name>\AppData\Local\Temp``
+Last key edited by RegEdit<br>
+`HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit`
 
-Recycle Bin
+List of Installed USB devices, both connected and unconnected<br>
+`HKLM\SYSTEM\CurrentControlSet\Enum\USB`
 
-``C:\\$Recycle.Bin``
+List of installed USB storage devices<br>
+`HKLM\SYSTEM\CurrentControlSet\Enum\USBSTOR`
 
-Last logged on user
-
-``HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon``
-
-Event logs
-
-`C:\Windows\System32\config`
-
-`C:\Windows\System32\winevt\Logs`
-
-`*.evt and *.evtx`
-
-Last key edited by RegEdit
-
-``HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit``
-
-List of Installed USB devices, both connected and unconnected
-
-``HKLM\SYSTEM\CurrentControlSet\Enum\USB``
-
-List of installed USB storage devices
-
-``HKLM\SYSTEM\CurrentControlSet\Enum\USBSTOR``
-
-SetupAPI Device Log
-
-``C:\windows\inf\setupapi.dev.log``
-
+SetupAPI Device Log<br>
+`C:\windows\inf\setupapi.dev.log`<br>
 includes what USB devices have been installed
 
-Windows Prefetch
-
-``C:\Windows\Prefetch``
-
+Windows Prefetch<br>
+`C:\Windows\Prefetch`<br>
 meant to speed up commonly executed application and boot load times by recording what on the system is accessed.
 
 Mark McKinnon has a tool you might be interested in for parsing this data. Also, you may want to read the Wikipedia entry: http://en.wikipedia.org/wiki/Prefetcher
@@ -281,165 +235,108 @@ Microsoft Office
 
 **System**
 
-Security State Change
-
-Security System Extension
-
-System Integrity
-
-IPsec Driver
-
-Other System Events
+- Security State Change
+- Security System Extension
+- System Integrity
+- IPsec Driver
+- Other System Events
 
 **Logon/Logoff**
 
-Logon
-
-Logoff
-
-Account Lockout
-
-IPsec Main Mode
-
-IPsec Quick Mode
-
-IPsec Extended Mode
-
-Special Logon
-
-Other Logon/Logoff Events
-
-Network Policy Server
+- Logon
+- Logoff
+- Account Lockout
+- IPsec Main Mode
+- IPsec Quick Mode
+- IPsec Extended Mode
+- Special Logon
+- Other Logon/Logoff Events
+- Network Policy Server
 
 **Object Access**
 
-File System
-
-Registry
-
-Kernel Object
-
-SAM
-
-Certification Services
-
-Application Generated
-
-Handle Manipulation
-
-File Share
-
-Filtering Platform Packet Drop
-
-Filtering Platform Connection
-
-Other Object Access Events
-
-Detailed File Share
+- File System
+- Registry
+- Kernel Object
+- SAM
+- Certification Services
+- Application Generated
+- Handle Manipulation
+- File Share
+- Filtering Platform Packet Drop
+- Filtering Platform Connection
+- Other Object Access Events
+- Detailed File Share
 
 **Privilege Use**
 
-Sensitive Privilege Use
-
-Non Sensitive Privilege Use
-
-Other Privilege Use Events
+- Sensitive Privilege Use
+- Non Sensitive Privilege Use
+- Other Privilege Use Events
 
 **Detailed Tracking**
 
-Process Creation
-
-Process Termination
-
-DPAPI Activity
-
-RPC Events
+- Process Creation
+- Process Termination
+- DPAPI Activity
+- RPC Events
 
 **Policy Change**
 
-Audit Policy Change
-
-Authentication Policy Change
-
-Authorization Policy Change
-
-MPSSVC Rule-Level Policy Change
-
-Filtering Platform Policy Change
-
-Other Policy Change Events
+- Audit Policy Change
+- Authentication Policy Change
+- Authorization Policy Change
+- MPSSVC Rule-Level Policy Change
+- Filtering Platform Policy Change
+- Other Policy Change Events
 
 **Account Management**
 
-User Account Management
-
-Computer Account Management
-
-Security Group Management
-
-Distribution Group Management
-
-Application Group Management
-
-Other Account Management Events
+- User Account Management
+- Computer Account Management
+- Security Group Management
+- Distribution Group Management
+- Application Group Management
+- Other Account Management Events
 
 **DS Access**
 
-Directory Service Access
-
-Directory Service Changes
-
-Directory Service Replication
-
-Detailed Directory Service Replication
+- Directory Service Access
+- Directory Service Changes
+- Directory Service Replication
+- Detailed Directory Service Replication
 
 **Account Logon**
 
-Credential Validation
-
-Kerberos Service Ticket Operations
-
-Other Account Logon Events
-
-Kerberos Authentication Service
+- Credential Validation
+- Kerberos Service Ticket Operations
+- Other Account Logon Events
+- Kerberos Authentication Service
 
 ### Windows File control and explorer (7) {#h.q6bwbcldm6im" id="h.q6bwbcldm6im
 
 #### Favorites {#h.rtude3w470ph" id="h.rtude3w470ph
 
-Desktop
-
-Downloads
-
-Recent Places
+- Desktop
+- Downloads
+- Recent Places
 
 Recent Places, Desktop, Libraries, Computer, Network
 
 #### Explorer Tree pane {#h.mya07fun9ecj" id="h.mya07fun9ecj
 
-Favorites
-
-Desktop
-
-Downloads
-
-Recent Places
-
-Libraries
-
-Documents
-
-Music
-
-Pictures
-
-Videos
-
-Computer
-
-(C:)
-
-Network
+- Favorites
+- Desktop
+- Downloads
+- Recent Places
+- Libraries
+- Documents
+- Music
+- Pictures
+- Videos
+- Computer
+- (C:)
+- Network
 
 ### Windows directory contents {#h.ftspvbyphj9k" id="h.ftspvbyphj9k
 
@@ -447,18 +344,12 @@ Network
 
 
 NTFS and AD permissions document
+- any user can join PC to domain (10 times)
+- what attributes are visible to all
+- what attributes are replicated
+- what attributes are copied with copy user
+- who can see Notes on ADUC Telephone tab
+- default container for PC joining domain
 
-any user can join PC to domain (10 times)
-
-what attributes are visible to all
-
-what attributes are replicated
-
-what attributes are copied with copy user
-
-who can see Notes on ADUC Telephone tab
-
-default container for PC joining domain
-
-``1. [http://en.wikipedia.org/wiki/Run\_command](http://en.wikipedia.org/wiki/Run\_command) ↑``
+`1. [http://en.wikipedia.org/wiki/Run\_command](http://en.wikipedia.org/wiki/Run\_command) ↑`
 2. [http://blogs.technet.com/b/cmpfekevin/archive/2014/01/29/troubleshooting-bits-with-powershell.aspx](http://blogs.technet.com/b/cmpfekevin/archive/2014/01/29/troubleshooting-bits-with-powershell.aspx) ↑
