@@ -369,6 +369,11 @@ links to repair corrupt [http://www.forensickb.com/2009/01/windows-event-logs.ht
 
 forensics detect cleared log books.google.com/books?isbn=1118236084
 
+#### Enable Boot Logging option in Start Up
+
+Windows Boot Log<br>
+`C:\Windows\ntbtlog.txt`
+
 **Security Auditing**
 
 #### Emergency Management Services {#Emergency-Management}
