@@ -24,12 +24,12 @@ Lists of
 
 Other books available: NT File System, AD/LDAP Database, Group Policies, Windows Administration methods, tools, scripts and examples (how-to use tools/commands discussed here and more 3rd-party tools with real-world examples and guides)
 
-* Windows Versions
+* [Windows Versions](.\Appendices\Apdx-Windows-Versions.md)
 * Run... Commands
 * Windows Start Menu structure and contents
 * Windows Components (Add/Remove Features and Roles)
 * Microsoft Office Components
-* Windows Event Logs
+* Windows Event Logs(.\EventLogs\ .md)
 * Windows Explorer and File dialog box
 * File and Directory Contents lists
 * Command Syntax Help
@@ -229,9 +229,10 @@ Microsoft Office
 \-- Page Border Art
 \-- Quick Formatting Files
 ```
+
 #### Audit Policy Categories and Subcategories {#h.vwasogroz128" id="h.vwasogroz128
 
-``C:\Windows\System32>Auditpol /list /subcategory:\*``
+`C:\Windows\System32>Auditpol /list /subcategory:\*`
 
 **System**
 
