@@ -34,6 +34,7 @@ Including changes from Windows XP to Vista, Windows 7
 `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar`<br>
 `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\StartMenu`
 
+`%localappdata%\Microsoft\WindowsApps\winget.exe`<br>
 `C:\Users\<USERNAME>\AppData\Local\Microsoft\WinGet\Links\`<br>
 Sample: <br>
 `C:\Program Files\WinGet\Packages\yt-dlp.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-N-121938-g2456a39581-win64-gpl\bin\ffmpeg.exe`
