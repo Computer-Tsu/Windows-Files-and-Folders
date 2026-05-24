@@ -103,7 +103,13 @@ https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8
 
 ## Windows Installer (WinGet for new Windows installs)
 
-### Issues with first time run on new systems. Running as Admin on Standard USer account.
+### WinGet commands
+
+see also: Appendix Command Line [WinGet CLI](..\Appendices\CLI-Help-WinGet.md)
+
+### Winget first run issues
+
+Issues with first time run on new systems. Running as Admin on Standard User account.
 
 #### winget special features
 
