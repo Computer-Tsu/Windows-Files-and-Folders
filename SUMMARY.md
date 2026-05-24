@@ -99,6 +99,7 @@
     * [Apdx CLI Usage - ](Appendices/CLI-Help-.md)
     * [Apdx CLI Usage - ](Appendices/CLI-Help-.md)
     * [Apdx CLI Usage - w32Time](Appendices/CLI-Help-w32tm.md)
+    * [Apdx CLI Usage - WinGet](Appendices/CLI-Help-WinGet.md)
   * [Apdx Registry Keys](Appendices/Apdx-Registry-Keys.md)
   * [Apdx Network SNMP OIDs](Appendices/Network/Net-SNMP-OID.md)
 
