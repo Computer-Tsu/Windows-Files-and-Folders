@@ -1,14 +1,72 @@
 MS Terminal Services Client (RDP - Remote Desktop Client)
 
+https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/connect-remote-desktop-services
+
 commandline switches
 
 `.rdp` cfg file structure
 
-Deprecated, use msstore Windows App
+Deprecated, use msstore [Windows App](https://learn.microsoft.com/en-us/windows-app/)
 
 Digital Sign RDP to bypass security warnings https://lazyadmin.nl/it/how-to-sign-rdp-files/
 
 -----
+
+`C:\Windows\System32\mstsc.exe /?`
+
+### Remote Desktop Connection Usage
+
+MSTSC [<connection file>] [/v:<server[:port]>] [/g:<gateway>] [/admin] [/f[ullscreen]]
+[/w:<width> /h :<height>] [/public] | [/multimon] [/I] [/edit "connection file"]
+[/restrictedAdmin] [/remoteGuard] [/prompt] [/shadow:<sessionID> [/control]
+[/noConsentPrompt]]
+
+"connection file" -- Specifies the name of an .RDP file for the connection.
+
+/v:<server[:port]> -- Specifies the remote PC to which you want to connect.
+
+/g:<gateway> -- Specifies the RD Gateway server to use for the connection. This
+parameter is only read if the endpoint remote PC is specified with /v.
+
+/admin -- Connects you to the session for administering a remote PC.
+
+/f -- Starts Remote Desktop in full-screen mode.
+
+/w:<width> -- Specifies the width of the Remote Desktop window.
+
+/h:<height> -- Specifies the height of the Remote Desktop window.
+
+/public -- Runs Remote Desktop in public mode.
+
+/multimon -- Configures the Remote Desktop Services session monitor layout to be
+identical to the current client-side configuration.
+
+/l -- Enumerates the monitors attached to the local PC and the ID associated with each
+monitor. The monitor ID can be used to populate the selectedmonitors RDP file setting.
+
+/edit -- Opens the specified .RDP connection file for editing.
+
+/restrictedAdmin -- Connects you to the remote PC in Restricted Administration mode. In
+this mode, credentials won't be sent to the remote PC, which can protect you if you
+connect to a PC that has been compromised. However, connections made from the
+remote PC might not be authenticated by other PCs, which might impact application
+functionality and compatibility. This parameter implies /admin.
+
+/remoteGuard -- Connects your device to a remote device using Remote Guard. Remote
+Guard prevents credentials from being sent to the remote PC, which can help protect your
+credentials if you connect to a remote PC that has been compromised. Unlike Restricted
+Administration mode, Remote Guard also supports connections made from the remote PC
+by redirecting all requests back to your device.
+
+/prompt -- Prompts you for your credentials when you connect to the remote PC.
+
+/shadow:<sessionID> -- Specifies the ID of the session to shadow.
+
+/control -- Allows control of the session when shadowing.
+
+/noConsentPrompt -- Allows shadowing without user consent.
+
+
 
 ---
 layout: Conceptual
