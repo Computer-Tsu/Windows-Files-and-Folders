@@ -483,6 +483,20 @@ iex <br>
 `Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('http://internal/odata/repo/ChocolateyInstall.ps1'))` OR<br>
 `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`
 
+## [Software Remastering](https://en.wikipedia.org/wiki/Software_remastering)
+
+seel also: https://en.wikipedia.org/wiki/List_of_remastering_software
+
+ntLite
+
+See also: https://github.com/stars/Computer-Tsu/lists/windows-customizing
+
+### Slipstreaming
+
+DriverPacks
+
+
+
 ## Remote Client Conection Terminal Managers
 
 [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)<br>
@@ -522,6 +536,16 @@ see also Pcap, WinPcap, libpcap
 [Microsoft Network Monitor 3.4](https://www.microsoft.com/en-us/download/details.aspx?id=4865) 2020-10-30<br>
 Windows XP-8, Server 2003-2012
 
+#### Tftpd64 (TFTP, DNS, DHCP, SNTP, Syslog)
+https://bitbucket.org/phjounin/tftpd64/wiki/Download%20Tftpd64.md<br>
+https://pjo2.github.io/tftpd64/
+
+
+https://www.solarwinds.com/free-tools
+* [TFTP Server](https://www.solarwinds.com/free-tools/free-tftp-server)
+* [ipMonitor Free Edition](https://www.solarwinds.com/free-tools/ipmonitor-free)
+winget install SolarWinds.KiwiSyslogServer
+
 
 [Clonezilla](https://clonezilla.org/downloads.php)
 
@@ -555,13 +579,20 @@ You can view the entire Sysinternals Live tools directory in a browser or Window
 nirsoft BlueScreenView, Cd-Key, Password Tools
 
 
-**Magical Jelly Bean**
+**Magical Jelly Bean**<br>
 Key Finder (free)<br>
 Recover Keys
 
 
 [**Process Hacker**](https://processhacker.sourceforge.io/)
 
+## NTP Time / Clock Sync
+
+- Meinberg
+  - https://www.meinbergglobal.com/english/sw/ntp.htm
+  - https://www.meinberg-usa.com/support/downloads/ntp-software-download.htm
+- nistime-32bit.exe
+- [Dimension4](http://www.thinkman.com/dimension4/default.htm)
 
 ## Text and File Editors
 
@@ -571,7 +602,7 @@ Recover Keys
 
 sublime
 
-hex editor
+### hex editor
 
 VS Code
 
@@ -680,16 +711,6 @@ https://www.netwrix.com/freeware_tools.html
 
  [**Netwrix Account Lockout Examiner**](https://www.netwrix.com/account_lockout_examiner.html)
 
-
-#### Tftpd64 (TFTP, DNS, DHCP, SNTP, Syslog)
-https://bitbucket.org/phjounin/tftpd64/wiki/Download%20Tftpd64.md<br>
-https://pjo2.github.io/tftpd64/
-
-
-https://www.solarwinds.com/free-tools
-* [TFTP Server](https://www.solarwinds.com/free-tools/free-tftp-server)
-* [ipMonitor Free Edition](https://www.solarwinds.com/free-tools/ipmonitor-free)
-winget install SolarWinds.KiwiSyslogServer
 
 [FileZilla](https://filezilla-project.org/download.php?show_all=1)
 
