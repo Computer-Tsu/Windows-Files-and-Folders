@@ -67,7 +67,7 @@
     * [Apdx CLI Usage - diskperf](Appendices/CLI-Help-diskperf.md)
     * [Apdx CLI Usage - schtasks](Appendices/CLI-Help-schtasks.md)
     * [Apdx CLI Usage - SetX](Appendices/CLI-Help-SetX.md)
-    * [Apdx CLI Usage - auditpol](Appendices/CLI-Help-auditpol.md)
+    * [Apdx CLI Usage - auditpol](Appendices/CLI-Help-AuditPol.md)
     * [Apdx CLI Usage - Get-BitsTransfer (PS)](Appendices/CLI-Help-PS-BitsTransfer.md)
     * [Apdx CLI Usage - printbrm](Appendices/CLI-Help-printbrm.md)
     * [Apdx CLI Usage - regsvr32](Appendices/CLI-Help-regsvr32.md)
