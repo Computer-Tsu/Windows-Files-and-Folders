@@ -16,6 +16,7 @@
   * [Environmental Variables](Objects/Env.md)
   * [Shares](Objects/Shares.md)
   * [Registry](Objects/Registry.md)
+  * [Stored Credentials](Objects/Credentials.md)
 * [Architecture](Bitness.md)
 * [Preinstallation Environment (PE) & Recovery](WinPE.md)
 * [Appendices](appendices.md)
