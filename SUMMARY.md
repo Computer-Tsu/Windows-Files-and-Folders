@@ -9,6 +9,7 @@
   * [Linux Package Installs](Others/Linux-Installs.md)
   * [Network](Network.md)
     * [SNMP](Network/Net-SNMP.md)
+  * [User Profiles](Profiles.md)
   * [SVI](SysVol.md)
 * [Referenced Objects that are not files or folders](referenced-objects-that-are-not-files-or-folders.md)
   * [Shell Namespaces](Objects/Namespaces.md)
