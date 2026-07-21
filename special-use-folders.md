@@ -101,6 +101,8 @@ Directory of `C:\Users\\_UserName_\Documents`
 
 What changes in Windows 8
 
+What changes in Windows 1x
+
 Shortcuts that no longer work
 
 Shortcuts that still work
@@ -172,6 +174,8 @@ SYSTEM.INI
 pagefile.sys
 
 hiberfil.sys
+
+Windows Boot Logs
 
 `C:\ProgramData` `<DRIVE>:\Documents and Settings\All Users\Application Data`
 
