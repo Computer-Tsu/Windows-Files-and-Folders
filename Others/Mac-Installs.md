@@ -258,3 +258,9 @@ Macs with Apple Silicon (M1, M2, M3, etc) do not support Boot Camp (only Windows
 [Bootcamp 5.1.5769](https://support.apple.com/en-us/106378)
 
 
+## EOL Macs
+
+### OpenCore Legacy Patcher ([OCLP](https://github.com/dortania/OpenCore-Legacy-Patcher))
+
+*see also*: https://github.com/Computer-Consultant/Reusable
+
