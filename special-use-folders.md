@@ -923,10 +923,12 @@ plant a task to open CMD interactive running in System context
 Test anti-virus by using the EICAR.com file.
 
 ```
-X 5 O ! P % @ A P \[ 4 \ P Z X 5 4 ( P ^ ) 7 C C ) 7 } $
+X 5 O ! P % @ A P [ 4 \ P Z X 5 4 ( P ^ ) 7 C C ) 7 } $
 E I C A R - S T A N D A R D - A N T I V I R U S - T E S T - F I L E !
-$ H + H \*
+$ H + H *
 ```
+third character is the capital 'O'. string is all one line, no spaces. [Spaces and line breaks added as extra precaution thi file not be blocked by AV]<br>
+According to EICAR's specification the antivirus detects the test file only if it starts with the 68-byte test string and is not more than 128 bytes long. As a result, antiviruses are not expected to raise an alarm on some other document containing the test string.
 
 #### PowerShell {#h.ji072fdo4adz" id="h.ji072fdo4adz
 
@@ -977,16 +979,13 @@ Microsoft.GroupPolicy.Commands.dll-Help.xml
 
 ...
 
-bin location for v1 - v3
-
+bin location for v1 - v3<br>
 `C:\Windows\System32\WindowsPowerShell\v1.0\`
 
-PowerShell 3.0 Task Scheduler storage folder for job definitions
-
+PowerShell 3.0 Task Scheduler storage folder for job definitions<br>
 `C:\Users\<UserName>\Appdata\Local\Microsoft\Windows\PowerShell\ScheduledJobs`
 
-Import and Export http://www.petri.co.il/export-import-powershell-scheduled-jobs.htm
-
+Import and Export http://www.petri.co.il/export-import-powershell-scheduled-jobs.htm<br>
 `HKLM\software\microsoft\powershell\1\shellids\Microsoft.powershell`
 
 [http://www.trainsignal.com/blog/jeff-hicks-powershell-challenge-day-4-final-day](http://www.trainsignal.com/blog/jeff-hicks-powershell-challenge-day-4-final-day)
@@ -995,12 +994,10 @@ Import and Export http://www.petri.co.il/export-import-powershell-scheduled-jobs
 
 see also the Remote section above?
 
-Windows PowerShell Modules
-
+Windows PowerShell Modules<br>
 `%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ImportSystemModules`
 
-Active Directory Module for Windows PowerShell
-
+Active Directory Module for Windows PowerShell<br>
 `%windir%\system32\WindowsPowerShell\v1.0\powershell.exe -noexit -command import-module ActiveDirectory`
 
 Exchange Management Shell
@@ -1010,7 +1007,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command ". 'C
 ```
 Can also be run in ISE
 
-`[http://technet.microsoft.com/en-us/library/dd297932%28v=exchg.141%29.aspx](http://technet.microsoft.com/en-us/library/cc742041.aspx)`
+[http://technet.microsoft.com/en-us/library/dd297932%28v=exchg.141%29.aspx](http://technet.microsoft.com/en-us/library/cc742041.aspx)
 
 iSCSI management cmdlets for Windows PowerShell
 
@@ -1029,8 +1026,7 @@ PowerShell Pack is available as part of the Windows 7 Resource Kit.
 - **TaskScheduler** List scheduled tasks, create or delete tasks
 - **WPK** Create rich user interfaces quickly and easily from Windows PowerShell. Think HTA, but easy. Over 600 scripts to help you build quick user interfaces
 
-**Desired State Configuration (DSC)**
-
+**Desired State Configuration (DSC)**<br>
 Uses PowerShell applied by GPO to set and maintain system settings and configuration. (Requires Windows 8 and Server 2012)
 
 #### Desktop Themes {#Themes}
@@ -1124,10 +1120,8 @@ RIS, WIM
 
 #### Windows Upgrade {#h.fp1pnt29yzyp" id="h.fp1pnt29yzyp
 
-`C:\Users\Username\AppData\Local\Apps\Windows 7 USB DVD Download Tool\`
-
-`C:\Windows\System32\migwiz.lnk %windir%\system32\migwiz\migwiz.exe`
-
+`C:\Users\Username\AppData\Local\Apps\Windows 7 USB DVD Download Tool\`<br>
+`C:\Windows\System32\migwiz.lnk %windir%\system32\migwiz\migwiz.exe`<br>
 `C:\Windows\System32\migwiz\migwiz.exe`
 
 User State Migration Tool (USMT)
@@ -1140,14 +1134,10 @@ User State Migration Tool (USMT)
 
 **Folders created from upgrade process**
 
-`C:\Windows.old\`[2]
-
-`C:\Windows.old\Documents and Settings`
-
-`C:\Windows.old\Program Files`
-
-`C:\Windows.old\Windows`
-
+`C:\Windows.old\`[2]<br>
+`C:\Windows.old\Documents and Settings`<br>
+`C:\Windows.old\Program Files`<br>
+`C:\Windows.old\Windows`<br>
 `C:\Windows.old\`?
 
 **Windows 8.1 Update**
@@ -1162,12 +1152,9 @@ see also volume activation in another section (under domain, volume activation t
 
 **Windows Activation Utilities**
 
-`slmgr.vbs`
-
-`slui.exe`
-
-`slmgr.vbs /ipk XXXXX-XXXXX-XXXXX-XXXXX-XXXXX`
-
+`slmgr.vbs`<br>
+`slui.exe`<br>
+`slmgr.vbs /ipk XXXXX-XXXXX-XXXXX-XXXXX-XXXXX`<br>
 `slmgr.vbs /ato`
 
 **Windows Activation Client**
@@ -1177,8 +1164,7 @@ see also volume activation in another section (under domain, volume activation t
 
 **Registry Keys**
 
-`HKLM\SYSTEM\WPA`
-
+`HKLM\SYSTEM\WPA`<br>
 `HKLM\Software\Microsoft\Windows\CurrentVersion\Setup\OOBE\MediaBootInstall`
 
 **Software Licensing Management Tool**
@@ -1217,8 +1203,7 @@ How to slipstream hotfixes that replace pre-existing driver files
 
 [http://support.microsoft.com/kb/814847](http://support.microsoft.com/kb/814847)
 
-3rd party tools
-
+3rd party tools<br>
 (http://en.wikipedia.org/wiki/List_of_remastering_software)
 
 nLite
@@ -1231,11 +1216,9 @@ RyanVM
 
 #### Install/Uninstall cache {#h.xasz4mskijht" id="h.xasz4mskijht
 
-? `C:\WINDOWS\Installer`[3] is this for programs or patches?
-
-`C:\MSOCache\All Users\`
-
-`C:\Windows\Downloaded Installations\{`
+? `C:\WINDOWS\Installer`[3] is this for programs or patches?<br>
+`C:\MSOCache\All Users\`<br>
+`C:\Windows\Downloaded Installations\{...`
 
 Web Platform Installer? `<UserName>\AppData\Local\Microsoft\WebSetup`
 
@@ -1253,17 +1236,14 @@ see below
 
 msizap for uninstall
 
-**Install apps in safe mode**
-
+**Install apps in safe mode**<br>
 `HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\`
 
-and/or
-
-`HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\MSIServer`
-
+and/or<br>
+`HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\MSIServer`<br>
 REG_SZ `MSIServer=Service`
 
-`REG ADD “HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\MSIServer” /VE /T REG_SZ /F /D "Service" && net start msiserver`
+`(REG ADD “HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\MSIServer” /VE /T REG_SZ /F /D "Service"( && (net start msiserver)`
 
 See also 3rd-arty app SafeMSI
 
@@ -1279,10 +1259,8 @@ AT registry key:
 
 **at.exe**
 
-Uses Schedule service
-
-The syntax for specifying days is:
-
+Uses Schedule service<br>
+The syntax for specifying days is:<br>
 `M Tu W Th F Sa Su`
 
 **schtasks.exe**
@@ -1300,7 +1278,7 @@ For use as a scheduled task
 
 Command line switches
 
-``Selection Scripts (*.bks)``
+Selection Scripts (*.bks)
 
 `C:\Documents and Settings\%Username%\Local Settings\Application Data\Microsoft\Windows NT\NTBackup\data`
 
@@ -1372,10 +1350,8 @@ Wbadmin replaces ntbackup[5]
 
 #### Fax {#h.pbyfyfrqt3za" id="h.pbyfyfrqt3za
 
-MSFax `"C:\ProgramData\Microsoft\Windows NT\MSFax"`
-
-Fax Printer
-
+MSFax `"C:\ProgramData\Microsoft\Windows NT\MSFax"`<br>
+Fax Printer<br>
 Fax Printer Port
 
 How many modems does each OS support? (Win2k, Win2k3, Win 2k8, SBS)
@@ -1529,8 +1505,8 @@ Wireless setup disk config file
 ```
 AUTORUN.INF
 setupSNK.exe
-\SMRTNTKY\
-\DEVICE\
+ \SMRTNTKY\
+ \DEVICE\
 fcw.ico
 MessageB.txt
 WSETTING.TXT
@@ -1543,14 +1519,12 @@ WSETTING.WFC
 
 **Credential Manager**
 
-Back up vault
-
-`Credential Backup Files (*.crd)`
+Back up vault<br>
+Credential Backup Files (*.crd)
 
 #### Encrypting File System {#h.l1u6dqphtt0n" id="h.l1u6dqphtt0n
 
-Manage your file encryption certificates
-
+Manage your file encryption certificates<br>
 `rekeywiz.exe` EFS REKEY wizard
 
 #### ODBC {#h.mgj5021muc2a" id="h.mgj5021muc2a
@@ -1559,23 +1533,22 @@ folder path: DSN files
 
 registry: `HKLM\SOFTWARE\ODBC\ODBC.INI`
 
-also a user key
+also a user key at _
 
 #### Windows update {#h.uv4v6warfqpm" id="h.uv4v6warfqpm
 
-**command to trigger search for updates**
-
+**command to trigger search for updates**<br>
 `wuauclt.exe /detectnow` (two other places in this document?)
 
 **Sites to add to Internet Explorer Trusted Zone**
 
 URLs:[6]
 ```
-* https://\*.microsoft.com
+* https://*.microsoft.com
 * https://download.windowsupdate.com
 * https://update.microsoft.com/windowsupdate
-* http://\*.update.microsoft.com
-* https://\*.update.microsoft.com
+* http://*.update.microsoft.com
+* https://*.update.microsoft.com
 * http://download.windowsupdate.com
 ```
 Homegroup setup disk?
@@ -1619,18 +1592,15 @@ Prevent windows from being automatically arranged when moved to the edge of the 
 
 Underline keyboard shortcuts and access keys has been moved to Make it easier to use keyboard shortcuts.
 
-`sethc.exe` - Sticky Keys
-
-`Magnify.exe`
-
+`sethc.exe` - Sticky Keys<br>
+`Magnify.exe`<br>
 `Narrator.exe`
 
 **Registry keys to disable and prevent accidental activation.**
 
 **How to turn off an accessibility feature that was accidently turned on**
 
-Enable Java Access Bridge
-
+Enable Java Access Bridge<br>
 Java Access Bridge, from Oracle, Inc. providing Assistive Technology access to Java applications
 
 ### Programs without icons or shortcuts {#h.7d98ixsg8utn" id="h.7d98ixsg8utn
@@ -1655,16 +1625,13 @@ Reliability Monitor `C:\Windows\explorer.exe /factory,{ceff45ee-c862-41de-aee2-a
 
 Reliability Monitor - Shortcut `search-ms:displayname=%20Search%20programs%20and%20files\&crumb=System.Generic.String%3Areli\&crumb=location:%3A%3A{DAF95313-E44D-46AF-BE1B-CBACEA2C3065}\View reliability history`
 
-Problem Reports
-
+Problem Reports<br>
 explorer `shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\0\\::{BB64F8A7-BEE7-4E1A-AB8D-7D8273F7FDB6}\pageProblems`
 
-To Make Documents as Default Folder to Open by Windows Explorer upon Launching
-
+To Make Documents as Default Folder to Open by Windows Explorer upon Launching<br>
 `%SystemRoot%\explorer.exe /n,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}`
 
-To Make Computer as Default Folder to Open by Windows Explorer upon Launching
-
+To Make Computer as Default Folder to Open by Windows Explorer upon Launching<br>
 `%SystemRoot%\explorer.exe /n,::{450D8FBA-AD25-11D0-98A8-0800361B1103}`
 
 `C:\Windows`
@@ -1709,9 +1676,8 @@ Command aboves will explore the \Windows\System32 folder and put the focus on th
 
 #### MMC {#h.kzqvf7icqgpe" id="h.kzqvf7icqgpe
 
-mmc.exe
-
-mmc /a
+`mmc.exe`<br>
+`mmc /a`
 
 [there is an MMC section under Remote access admin tools section]
 
@@ -1886,15 +1852,15 @@ Task Manager
 
 Firewall netsh
 
-``RegEdt32``[7]
+`RegEdt32`[7]
 
 charmap
 
 telnet (not installed by default after Windows XP/2003) (Mentioned in Network section?)
 
-``%windir%\system32\defrag.exe -c``
+`%windir%\system32\defrag.exe -c`
 
-``\ntbackup.exe\[8] -``
+`\ntbackup.exe`[8] -
 
 `C:\Windows\system32\mstsc.exe` (switches?)
 
@@ -1908,44 +1874,26 @@ sysinfo (office)
 
 #### Network commands {#h.ojix9vvv3poa" id="h.ojix9vvv3poa
 
-arp
+arp<br>
+ipconfig<br>
+nbtstat<br>
+netstat<br>
+nslookup<br>
+ping<br>
+pathping<br>
+route<br>
+tracert<br>
+hostname<br>
+whoami<br>
+ipconfig release, renew, flush<br>
+winipcfg.exe, wntipcfg.exe (Windows 9x?) (win 2000 reskit)<br>
+arp clear, set temp for connecting with device using unknown IP<br>
+`route print`, `route add -p`
 
-ipconfig
-
-nbtstat
-
-netstat
-
-nslookup
-
-ping
-
-pathping
-
-route
-
-tracert
-
-hostname
-
-whoami
-
-ipconfig release, renew, flush
-
-winipcfg.exe, wntipcfg.exe (Windows 9x?) (win 2000 reskit)
-
-arp clear, set temp for connecting with device using unknown IP
-
-route print, route add -p
-
-These are covered in the NTFS document
-
-cacls, icacls, attrib, cipher, compact, expand, takeown, robocopy
-
-(expand or compress see http://gnuwin32.sourceforge.net/packages/mscompress.htm)
-
-diskpart, format, fsutil, label, defrag
-
+These are covered in the NTFS document<br>
+cacls, icacls, attrib, cipher, compact, expand, takeown, robocopy<br>
+(expand or compress see http://gnuwin32.sourceforge.net/packages/mscompress.htm)<br>
+diskpart, format, fsutil, label, defrag<br>
 SubInACL.exe (Windows Server 2003 Resource Kit)
 
 SystemInfo.exe
@@ -2028,12 +1976,9 @@ sc services
 
 `C:\Windows\System32\SCRegEdit.wsh` enable or disable Remote Desktop and configure Windows Update
 
-`C:\Windows\System32\GatherNetworkInfo.vbs`
-
-netdom.exe change hostname or join domain
-
-netsh.exe change IP address, firewall
-
+`C:\Windows\System32\GatherNetworkInfo.vbs`<br>
+netdom.exe change hostname or join domain<br>
+netsh.exe change IP address, firewall<br>
 net.exe add/remove users, connect to network drives
 
 pnputil drivers
@@ -2050,10 +1995,8 @@ Regedit.exe and Regedt32.exe
 
 secedit.exe
 
-TimeDate.cpl
-
-timezone.cpl change the time and time zone
-
+TimeDate.cpl<br>
+timezone.cpl change the time and time zone<br>
 Intl.cpl
 
 iscsicpl.exe connect to shared storage over iSCSI (starting with Windows Server 2008 R2)
@@ -2215,29 +2158,23 @@ See appendix _ for list of all Windows components, features, roles
 
 #### DNS Server {#h.eit8y2gyf1cb" id="h.eit8y2gyf1cb
 
-`C:\Windows\System32\dns`
-
+`C:\Windows\System32\dns`<br>
 `C:\Windows\System32\dns\backup`
 
-**DNS Server Tools**
-
+**DNS Server Tools**<br>
 Ddnscmd.exe
 
-**Backup/Export AD integrated zone to text file**
-
+**Backup/Export AD integrated zone to text file**<br>
 `DnsCmd <ServerName> /ZoneExport <ZoneName> <ZoneExportFile>`
 
-**Enable GlobalNames zone support**
-
-`dnscmd . /config /enableglobalnamessupport 1`
-
+**Enable GlobalNames zone support**<br>
+`dnscmd . /config /enableglobalnamessupport 1`<br>
 `HKLM\SYSTEM\CurrentControlSet\services\DNS\Parameters\EnableGlobalNamesSupport` = `1`
 
 #### DHCP Server {#h.sd91ba4gx9g2" id="h.sd91ba4gx9g2
 
-``%systemroot%\System32\dhcp\backup``
-
-``HKLM\SYSTEM\CurrentControlSet\Services\DHCPServer\Parameters``
+`%systemroot%\System32\dhcp\backup`<br>
+`HKLM\SYSTEM\CurrentControlSet\Services\DHCPServer\Parameters`
 
 **DHCP Server Tools**
 
@@ -2245,17 +2182,12 @@ DHCP Server Tools includes the DHCP Management Console, the DHCP Server cmdlet m
 
 #### Exchange, SMTP, POP3 Servers {#h.p2aanbf91fkj" id="h.p2aanbf91fkj
 
-``C:\inetpub\mailroot``
-
-``C:\inetpub\mailroot\Badmail must be manually cleaned or spam will fill disk``
-
-`C:\inetpub\mailroot\Drop local delivery\`[26]
-
-`C:\inetpub\mailroot\Pickup starting point for outgoing mail\`[27]
-
-``C:\inetpub\mailroot\Queue``
-
-``C:\Windows\System32\LogFiles\SMTPSVC1 SMTP logs``
+`C:\inetpub\mailroot`<br>
+`C:\inetpub\mailroot\Badmail` must be manually cleaned or spam will fill disk<br>
+`C:\inetpub\mailroot\Drop` local delivery[26]<br>
+`C:\inetpub\mailroot\Pickup` starting point for outgoing mail[27]<br>
+`C:\inetpub\mailroot\Queue`<br>
+`C:\Windows\System32\LogFiles\SMTPSVC1` SMTP logs
 
 ex??????.log files
 
@@ -2291,11 +2223,9 @@ Paths
 
 Shares
 
-Default websites and ports
-
-[http 8530](http 8530)
-
-[https 8531](https 8531)
+Default websites and ports<br>
+http 8530<br>
+https 8531
 
 **Windows Server Update Services Tools**
 
@@ -2303,24 +2233,19 @@ Windows Server Update Services Tools include the Windows Server Update Services 
 
 **WUS SQL Database Tools**
 
-WsusDBHideHidden.sql
-
-``WsusDBMaintenance.sql _Source``[28]
-
-``"c:\Program Files\Microsoft SQL Server\90\Tools\binn\SQLCMD.EXE" -S np:_\.\pipe\MSSQL$MICROSOFT##SSEE\sql\query -I -i C:\WSUS\WsusDBHideHidden.sql``
-
-``sqlcmd -S np:_\.\pipe\MSSQL$MICROSOFT##SSEE\sql\query -I -i C:\WSUS\WsusDBMaintenance.sql``
+`WsusDBHideHidden.sql`<br>
+`WsusDBMaintenance.sql` _Source[28]<br>
+`"c:\Program Files\Microsoft SQL Server\90\Tools\binn\SQLCMD.EXE" -S np:_\.\pipe\MSSQL$MICROSOFT##SSEE\sql\query -I -i C:\WSUS\WsusDBHideHidden.sql`<br>
+`sqlcmd -S np:_\.\pipe\MSSQL$MICROSOFT##SSEE\sql\query -I -i C:\WSUS\WsusDBMaintenance.sql`
 
 Windows Client see the other section above?
 
-wuauclt /detectnow
+`wuauclt /detectnow`
 
 #### Windows Deployment {#h.lxlw5an1cug7" id="h.lxlw5an1cug7
 
-Windows Deployment Role/Feature (WDS)
-
-Windows Automated Installation Kit (WAIK)
-
+Windows Deployment Role/Feature (WDS)<br>
+Windows Automated Installation Kit (WAIK)<br>
 MDT
 
 #### PXE {#h.dp9pnycutc7w" id="h.dp9pnycutc7w
@@ -2335,12 +2260,11 @@ The last set may often be the MAC address
 
 **Convert**
 
-``[8 hex]-[4 hex]-[4 hex]-[4 hex]-[12 hex] (16 bytes?)``
+[8 hex]-[4 hex]-[4 hex]-[4 hex]-[12 hex] (16 bytes?)
 
 Reverse the octet order in the first three words
 
-1F2E3D4C-1234-5678-90AB-00CDEF001234
-
+1F2E3D4C-1234-5678-90AB-00CDEF001234<br>
 4C3D2E1F-3412-7856-90AB-00CDEF001234
 
 AD Users and Computers
@@ -2369,7 +2293,7 @@ File Services Tools include the following: Share and Storage Management Tools; D
 
 #### Distributed File System (DFS) {#h.amxths7cmdmm" id="h.amxths7cmdmm
 
-.DFSFolderLink
+`.DFSFolderLink`
 
 **Distributed File System Replication**
 
@@ -2377,17 +2301,15 @@ DFS Admin Tools listed above/below?
 
 DFS Replication of shared folders will create a temp workspace folder
 
-``<JUNCTION> D:\UserData\DfsrPrivate [D:\System Volume Information\DFSR\Private\{2AB0DFB4-7B9C-4EAE-A77C-``
-
-1AFF95B5EE9A}-{957BE5CA-9DF9-45C1-8916-7B610DA0C897}]
+`<JUNCTION> D:\UserData\DfsrPrivate [D:\System Volume Information\DFSR\Private\{2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{957BE5CA-9DF9-45C1-8916-7B610DA0C897}]`
 
 Directory contents:
 
-ConflictAndDeletedManifest.xml
-``<DIR> ConflictAndDeleted``
-``<DIR> Deleted``
-``<DIR> Installing``
-``<DIR> Staging``
+`ConflictAndDeletedManifest.xml`<br>
+<DIR> `ConflictAndDeleted`<br>
+<DIR> `Deleted`<br>
+<DIR> `Installing`<br>
+<DIR> `Staging`<br>
 
 #### Storage Manager {#h.jqv43byvq6fi" id="h.jqv43byvq6fi
 
@@ -2413,52 +2335,40 @@ Storage Manager for SANs Tools include the Storage Manager for SANs snap-in and 
 | Text Files[33]            | asc, text, txt                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Web Page Files[34]        | asp, aspx, cgi, css, dhtml, hta, htm, html, mht, php, php3, shtml, url                                                                                                                                                                                                                                                                                                                                                                                                           |
 
-Audio and Video Files:
+Audio and Video Files:<br>
+`*.aac, *.aif, *.aiff, *.asf, *.asx, *.au, *.avi, *.flac, *.m3u, *.mid, *.midi, *.mov, *.mp1, *.mp2, *.mp3, *.mp4, *.mpa, *.mpe, *.mpeg, *.mpeg2, *.mpeg3, *.mpg, *.ogg, *.qt, *.qtw, *.ram, *.rm, *.rmi, *.rmvb, *.snd, *.swf, *.vob, *.wav, *.wax, *.wma, *.wmv, *.wvx`
 
-``*.aac, *.aif, *.aiff, *.asf, *.asx, *.au, *.avi, *.flac, *.m3u, *.mid, *.midi, *.mov, *.mp1, *.mp2, *.mp3, *.mp4, *.mpa, *.mpe, *.mpeg, *.mpeg2, *.mpeg3, *.mpg, *.ogg, *.qt, *.qtw, *.ram, *.rm, *.rmi, *.rmvb, *.snd, *.swf, *.vob, *.wav, *.wax, *.wma, *.wmv, *.wvx``
+Backup Files<br>
+`*.bak, *.bck, *.bkf, *.old`
 
-Backup Files
+Compressed Files<br>
+`*.ace, *.arc, *.arj, *.bhx, *.bz2, *.cab, *.gz, *.gzip, *.hpk, *.hqx, *.jar, *.lha, *.lzh, *.lzx, *.pak, *.pit, *.rar, *.sea, *.sit, *.sqz, *.tgz, *.uu, *.uue, *.z, *.zip, *.zoo`
 
-``*.bak, *.bck, *.bkf, *.old``
+E-mail Files<br>
+`*.eml, *.idx, *.mbox, *.mbx, *.msg, *.ost, *.otf, *.pab, *.pst`
 
-Compressed Files
+Executable Files<br>
+`*.bat, *.cmd, *.com, *.cpl, *.exe, *.inf, *.js, *.jse, *.msh, *.msi, *.msp, *.ocx, *.pif, *.pl, *.ps1, *.scr, *.vb, *.vbs, *.wsf, *.wsh`
 
-``*.ace, *.arc, *.arj, *.bhx, *.bz2, *.cab, *.gz, *.gzip, *.hpk, *.hqx, *.jar, *.lha, *.lzh, *.lzx, *.pak, *.pit, *.rar, *.sea, *.sit, *.sqz, *.tgz, *.uu, *.uue, *.z, *.zip, *.zoo``
+Image Files<br>
+`*.bmp, *.dib, *.eps, *.gif, *.img, *.jfif, *.jpe, *.jpeg, *.jpg, *.pcx, *.png, *.ps, *.psd, *.raw, *.rif, *.spiff, *.tif, *.tiff`
 
-E-mail Files
+Office Files<br>
+`*.accdb`, `*.accde`, `*.accdr`, `*.accdt`, `*.adn`, `*.adp`, `*.doc`, `*.docm`, `*.docx`, `*.dot`, `*.dotm`, `*.dotx`, `*.grv`, `*.gsa`, `*.gta`, `*.mad`, `*.maf`, `*.mda`, `*.mda`, `*.mda`, `*.mdb`, `*.mde`, `*.mdf`, `*.mdf`, `*.mdm`, `*.mdt`, `*.mdw`, `*.mdw`, `*.mdw`, `*.mdz`, `*.mpd`, `*.mpp`, `*.mpt`, `*.obt`, `*.odb`, `*.one`, `*.onepkg`, `*.pot`, `*.potm`, `*.potx`, `*.ppa`, `*.ppam`, `*.pps`, `*.ppsm`, `*.ppsx`, `*.ppt`, `*.pptm`, `*.pptx`, `*.pub`, `*.pwz`, `*.rqy`, `*.rtf`, `*.rwz`, `*.sldm`, `*.sldx`, `*.slk`, `*.thmx`, `*.vdx`, `*.vsd`, `*.vsl`, `*.vss`, `*.vst`, `*.vsu`, `*.vsw`, `*.vsx`, `*.vtx`, `*.wbk`, `*.wri`, `*.xla`, `*.xlam`, `*.xlb`, `*.xlc`, `*.xld`, `*.xlk`, `*.xll`, `*.xlm`, `*.xls`, `*.xlsb`, `*.xlsm`, `*.xlsx`, `*.xlt`, `*.xltm`, `*.xltx`, `*.xlv`, `*.xlw`, `*.xsf`, `*.xsn`
 
-``*.eml, *.idx, *.mbox, *.mbx, *.msg, *.ost, *.otf, *.pab, *.pst``
-
-Executable Files
-
-``*.bat, *.cmd, *.com, *.cpl, *.exe, *.inf, *.js, *.jse, *.msh, *.msi, *.msp, *.ocx, *.pif, *.pl, *.ps1, *.scr, *.vb, *.vbs, *.wsf, *.wsh``
-
-Image Files
-
-``*.bmp, *.dib, *.eps, *.gif, *.img, *.jfif, *.jpe, *.jpeg, *.jpg, *.pcx, *.png, *.ps, *.psd, *.raw, *.rif, *.spiff, *.tif, *.tiff``
-
-Office Files
-
-``*.accdb, *.accde, *.accdr, *.accdt, *.adn, *.adp, *.doc, *.docm, *.docx, *.dot, *.dotm, *.dotx, *.grv, *.gsa, *.gta, *.mad, *.maf, *.mda, *.mda, *.mda, *.mdb, *.mde, *.mdf, *.mdf, *.mdm, *.mdt, *.mdw, *.mdw, *.mdw, *.mdz, *.mpd, *.mpp, *.mpt, *.obt, *.odb, *.one, *.onepkg, *.pot, *.potm, *.potx, *.ppa, *.ppam, *.pps, *.ppsm, *.ppsx, *.ppt, *.pptm, *.pptx, *.pub, *.pwz, *.rqy, *.rtf, *.rwz, *.sldm, *.sldx, *.slk, *.thmx, *.vdx, *.vsd, *.vsl, *.vss, *.vst, *.vsu, *.vsw, *.vsx, *.vtx, *.wbk, *.wri, *.xla, *.xlam, *.xlb, *.xlc, *.xld, *.xlk, *.xll, *.xlm, *.xls, *.xlsb, *.xlsm, *.xlsx, *.xlt, *.xltm, *.xltx, *.xlv, *.xlw, *.xsf, *.xsn``
-
-System Files
-
+System Files<br>
 ``*.acm, *.dll, *.ocx, *.sys, *.vxd``
 
-Temporary Files
-
+Temporary Files<br>
 ``*.temp, *.tmp, ~*``
 
-Text Files
-
+Text Files<br>
 ``*.asc, *.text, *.txt``
 
-Web Page Files
-
+Web Page Files<br>
 ``*.asp, *.aspx, *.cgi, *.css, *.dhtml, *.hta, *.htm, *.html, *.mht, *.php, *.php3, *.shtml, *.url``
 
-Disk Images
-
+Disk Images<br>
 iso, gi, c2d, 2 hyperv, vmware, ima, img
 
 NFS
@@ -2497,7 +2407,7 @@ Windows Internal Database
 
 **SQL Management Tools**
 
-``"c:\Program Files\Microsoft SQL Server\90\Tools\binn\SQLCMD.EXE"``
+`"c:\Program Files\Microsoft SQL Server\90\Tools\binn\SQLCMD.EXE"`
 
 #### SharePoint {#h.v31lk48cf6c9" id="h.v31lk48cf6c9
 
@@ -2505,8 +2415,7 @@ Windows Internal Database
 
 #### Failover Clustering {#h.hyg6m1b0ihj0" id="h.hyg6m1b0ihj0
 
-**Failover Clustering Tools**
-
+**Failover Clustering Tools**<br>
 Failover Cluster Manager, Failover Clusters (Windows PowerShell Cmdlets), MSClus, Cluster.exe
 
 #### Hyper-V {#h.v0kdxulmxd6x" id="h.v0kdxulmxd6x
@@ -2537,8 +2446,7 @@ Remote Desktops (`%windir%\system32\tsmmc.msc /s`) is a great admin tool. It giv
 
 **Connect to console with this switch**
 
-A few programs won’t install in a term session, connect on the console.
-
+A few programs won’t install in a term session, connect on the console.<br>
 `mstsc.exe /v:myserver /admin`
 
 **Remote Desktop Services Tools**
@@ -2612,15 +2520,13 @@ Server Manager should be used for administration of all other RDS role services 
 |   |   |
 |   |   |
 
-Remote App default directory
-
+Remote App default directory<br>
 Remote Desktop Services Licensing Directory
 
 **.RDP File Format**
 
-Starting with RDP version ? (client/server), the .RDP file is now text-based.
-
-``[Link to source describing all the options available]``
+Starting with RDP version ? (client/server), the .RDP file is now text-based.<br>
+[Link to source describing all the options available]
 
 #### Volume Activation {#h.yl23qe3sqda0" id="h.yl23qe3sqda0
 
@@ -2650,8 +2556,7 @@ Microsoft App-V allows you to make applications available to end user computers 
 
 **Diagnostics and Recovery Toolset (DaRT)**
 
-Microsoft DaRT lets you diagnose and repair a system that has problems starting or has other issues.
-
+Microsoft DaRT lets you diagnose and repair a system that has problems starting or has other issues.<br>
 Can only get through Software Assurance of Windows Volume License
 
 **Microsoft BitLocker Administration and Monitoring (MBAM)**
@@ -2668,18 +2573,12 @@ Microsoft UE-V enable users to keep their Windows and application experience reg
 
 #### Microsoft Toolkits {#h.3o2gmdy1l31e" id="h.3o2gmdy1l31e
 
-WAIK
-
-MAP
-
-MDT
-
-MBSA
-
-USMT
-
-MACP
-
+WAIK<br>
+MAP<br>
+MDT<br>
+MBSA<br>
+USMT<br>
+MACP<br>
 MSCM
 
 #### Admin Tools {#h.h2168v27zqo8" id="h.h2168v27zqo8
@@ -2688,10 +2587,8 @@ Chart: Version, runs on client ver, manages server ver
 
 **Hyper-V**
 
-Manage 2012 Hyper-V from Windows 8
-
-Hyper-V Manager 2008 cannot manage Hyper-V 2012.
-
+Manage 2012 Hyper-V from Windows 8<br>
+Hyper-V Manager 2008 cannot manage Hyper-V 2012.<br>
 Management tool is not in RSAT and already part of the available features.
 
 **Windows 2012/8 Server Manager Managing Downlevel (2008) Servers**
@@ -2704,23 +2601,15 @@ Installing PowerShell https://technet.microsoft.com/en-us/library/hh847837.aspx
 
 #### Administrative {#h.zfvb2ac5uxa1" id="h.zfvb2ac5uxa1
 
-Microsoft Assessment and Planning (MAP) Toolkit performs audits and discovery of operating systems, Exchange \\& SQL servers
-
+- Microsoft Assessment and Planning (MAP) Toolkit performs audits and discovery of operating systems, Exchange & SQL servers
 Microsoft Baseline Security Analyzer
-
-Microsoft IT Environment Health Scanner
-
-AD Replication Status Tool
-
-Microsoft Network Monitor
-
-Microsoft Active Directory Topology Diagrammer
-
-Office Viewers and Converters, Microsoft Mathematics
-
-Microsoft Enhanced Mitigation Experience Toolkit (EMET)
-
-lock down lab tool, no longer supported
+- Microsoft IT Environment Health Scanner
+- AD Replication Status Tool
+- Microsoft Network Monitor
+- Microsoft Active Directory Topology Diagrammer
+- Office Viewers and Converters, Microsoft Mathematics
+- Microsoft Enhanced Mitigation Experience Toolkit (EMET)
+- lock down lab tool, no longer supported
 
 #### Programming and Development {#h.smcfngqbli6" id="h.smcfngqbli6
 
@@ -2778,63 +2667,39 @@ Flash, Air, Reader, Shockwave
 
 **Toolbars**
 
-Google
+- Google
+- AOL
+- Yahoo
+- Ask Jeeves (installed by Java updates)
+- Microsoft Bing
 
-AOL
-
-Yahoo
-
-Ask Jeeves (installed by Java updates)
-
-Microsoft Bing
-
-``Free Games installed by OEM (Conexant<?>)``
+Free Games installed by OEM (Conexant<?>)
 
 **Anti-Virus**
+- Symantec
+- McAfee
+- Grisoft AVG
+- Microsoft Defender, Security Essentials
 
-Symantec
-
-McAfee
-
-Grisoft AVG
-
-Microsoft Defender, Security Essentials
-
-**Remote Control**
-
+**Remote Control**<br>
 WebEx, GoToMyPc, LogMeIn
 
-**Additional Enterprise Configuration or Deployment Tools**
-
+**Additional Enterprise Configuration or Deployment Tools**<br>
 Create MST, GPO, MSI
 
-Adobe
-
-Apple
-
-Google Chrome
-
+Adobe<br>
+Apple<br>
+Google Chrome<br>
 Mozilla Firefox
 
 ### Windows Domain and Active Directory paths {#h.i85qe6xf7cfv" id="h.i85qe6xf7cfv
 
-![A screenshot of a computer
+![A screenshot of a computer](.gitbook/assets/0.png)
 
-Description automatically generated](.gitbook/assets/0.png)
-
-Database folder
-
-``C:\Windows\NTDS``
-
-Log files folder
-
-``C:\Windows\NTDS``
-
-SYSVOL folder
-
-``C:\Windows SYSVOL``
-
-``NTDS and _?_ folder location can be customized during installation of Active Directory role.``
+Database folder `C:\Windows\NTDS`<br>
+Log files folder `C:\Windows\NTDS`<br>
+SYSVOL folder `C:\Windows SYSVOL`<br>
+NTDS and _?_ folder location can be customized during installation of Active Directory role.
 
 | **DB/Log/Sys** | **File**           |                                                                                                                                                                                |
 | -------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -2856,31 +2721,24 @@ SYSVOL folder
 
 #### Logon Scripts {#h.afrre0bnquyx" id="h.afrre0bnquyx
 
-``%Systemroot%\System32\Repl\Import\Scripts``
+`%Systemroot%\System32\Repl\Import\Scripts`<br>
+`%SystemRoot%\sysvol\sysvol\<domain DNS name>\scripts`<br>
+`\\<Server>\NETLOGON`<br>
+`\\<Server>\SYSVOL\<domain DNS name>\scripts`
 
-``%SystemRoot%\sysvol\sysvol\\_\<domain DNS name>_\scripts``
-
-``\\<Server>\NETLOGON``
-
-``\\<Server>\SYSVOL\_<domain DNS name>_\scripts``
-
-**How to reference paths in logon scripts**
-
-``An example of a batch file Logon script that launches a VBScript program is as follows\[35]:``
-
+**How to reference paths in logon scripts**<br>
+An example of a batch file Logon script that launches a VBScript program is as follows[35]:
+```
 @echo off
+wscript %0\..\NetLogon.vbs
+```
+The "%0" in the batch file is interpreted by the command processor to be the name and path of the current file, which is the batch file itself. The string "%0\..\" then becomes the folder where the batch file is stored. The batch file above will launch the VBScript program NetLogon.vbs as long as it is saved in the NetLogon share with the batch file. This syntax is preferable to a UNC path, because it does not hard code the name of a Domain Controller. The syntax will work no matter which Domain Controller authenticates the user. The logon script will work no matter which Domain Controllers are available or where in the network the user logs on.
 
-``wscript %0\\..\NetLogon.vbs``
-
-``The "%0" in the batch file is interpreted by the command processor to be the name and path of the current file, which is the batch file itself. The string "%0\\..\\" then becomes the folder where the batch file is stored. The batch file above will launch the VBScript program NetLogon.vbs as long as it is saved in the NetLogon share with the batch file. This syntax is preferable to a UNC path, because it does not hard code the name of a Domain Controller. The syntax will work no matter which Domain Controller authenticates the user. The logon script will work no matter which Domain Controllers are available or where in the network the user logs on.``
-
-Also to force a path to the current directory
-
-``PUSHD %\~dp0``
+Also to force a path to the current directory `PUSHD %\~dp0`
 
 #### Replication {#h.bbdnu95mten3" id="h.bbdnu95mten3
 
-``Regular replication of logon scripts, group policy files, performed by __``
+Regular replication of logon scripts, group policy files, performed by __
 
 DFS Replication, see above
 
@@ -2892,30 +2750,23 @@ Physical Path
 
 Network Path
 
-``_\_\<AD Server>_\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\user\scripts\logon``
-
-``_\_\<AD Server>_\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\user\scripts\logoff``
-
-``_\_\<AD Server>_\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\machine\scripts\startup``
-
-``_\_\<AD Server>_\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\machine\scripts\shutdown``
-
-``%SystemRoot%\system32\repl\import\scripts``
+`_\_\<AD Server>_\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\user\scripts\logon`<br>
+`_\_\<AD Server>_\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\user\scripts\logoff`<br>
+`_\_\<AD Server>_\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\machine\scripts\startup`<br>
+`_\_\<AD Server>_\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\machine\scripts\shutdown`<br>
+`%SystemRoot%\system32\repl\import\scripts`
 
 #### GPO Template (.ADMX) files {#h.x7zefdpddhjv" id="h.x7zefdpddhjv
 
 Only need to be present on the machine where the policies are edited from
 
-``.ADMX %systemroot%\PolicyDefinitions``
+`.ADMX %systemroot%\PolicyDefinitions`<br>
+`.ADML %systemroot%\PolicyDefinitions\en-US`
 
-``.ADML %systemroot%\PolicyDefinitions\en-US``
+ADM (Group Policy Editor, Add/Remove Template Wizard)<br>
+`C:\Windows\PolicyDefinitions`
 
-ADM (Group Policy Editor, Add/Remove Template Wizard)
-
-``C:\Windows\PolicyDefinitions``
-
-**Group Policy Management Tools**
-
+**Group Policy Management Tools**<br>
 Group Policy Management Tools include Group Policy Management Console, Group Policy Management Editor, and Group Policy Starter GPO Editor.
 
 #### Paths for User Accounts {#h.ti90pi3cr8i1" id="h.ti90pi3cr8i1
@@ -2930,7 +2781,7 @@ see also Personal Virtual Desktop and UNIX Attributes
 
 Managing Roaming User Data Deployment Guide
 
-``[http://download.microsoft.com/download/3/b/a/3ba6d659-6e39-4cd7-b3a2-9c96482f5353/Managing%20Roaming%20User%20Data%20Deployment%20Guide.doc](http://technet.microsoft.com/en-us/library/cc731728.aspx)``
+[http://download.microsoft.com/download/3/b/a/3ba6d659-6e39-4cd7-b3a2-9c96482f5353/Managing%20Roaming%20User%20Data%20Deployment%20Guide.doc](http://technet.microsoft.com/en-us/library/cc731728.aspx)
 
 **Different types of profiles**
 
@@ -2940,26 +2791,24 @@ Local, Roaming, Terminal Server, etc.
 
 Not a file/folder path, but part of UNC and name resolution for network access
 
-|                                 |              |                          |
-| ------------------------------- | ------------ | ------------------------ |
+|                                 |              |                        |
+| ------------------------------- | ------------ | ---------------------- |
 | mydomainname.com                | SRV          | _gc._tcp               |
 |                                 |              | _kerberos._tcp         |
 |                                 |              | _kpasswd._tcp          |
 |                                 |              | _ldap._tcp             |
 | KMS server                      | SRV          | _vlmcs._tcp            |
-| DomainDnsZones.mydomainname.com | _sites      | _ldap._tcp.<sitename> |
-| DomainDnsZones.mydomainname.com | _ldap._tcp |                          |
-| ForestDnsZones                  |              |                          |
+| DomainDnsZones.mydomainname.com | _sites       | _ldap._tcp.<sitename>  |
+| DomainDnsZones.mydomainname.com | _ldap._tcp   |                        |
+| ForestDnsZones                  |              |                        |
 
 Exchange uses sites to match users to servers
 
 **Additional special DNS records**
 
-Exchange autodiscover srv record, autodiscover host name
-
-Cisco Wireless cisco-capwap-controller or cisco-lwapp-controller
-
-``Internet Explorer proxy autoconfig\[36] wpad``
+Exchange autodiscover srv record, `autodiscover` host name<br>
+Cisco Wireless `cisco-capwap-controller` or `cisco-lwapp-controller`<br>
+Internet Explorer proxy autoconfig[36] `wpad`
 
 KMS
 
@@ -3008,11 +2857,11 @@ AD versions and supported OS will be in a separate document.
 
 See Link to: ?
 
-``[http://technet.microsoft.com/en-us/library/cc772829%28WS.10%29.aspx](http://technet.microsoft.com/en-us/library/cc732887.aspx)``
+[http://technet.microsoft.com/en-us/library/cc772829%28WS.10%29.aspx](http://technet.microsoft.com/en-us/library/cc732887.aspx)
 
 Active Directory Technical References
 
-``http://technet.microsoft.com/en-us/library/cc759186%28v=ws.10%29.aspx``
+http://technet.microsoft.com/en-us/library/cc759186%28v=ws.10%29.aspx
 
 **Connecting Networkable Hardware**
 
@@ -3026,23 +2875,17 @@ A few tools will be included here, see other AD document for better information.
 
 [http://www.ucertify.com/blog/windows-server-2008-tools-used-for-configuring-and-maintaining-active-directory.html](http://www.ucertify.com/blog/windows-server-2008-tools-used-for-configuring-and-maintaining-active-directory.html)
 
-``%windir%\system32\dsac.exe Active Directory Administrative Center``
-
-``%SystemRoot%\system32\dsa.msc Active Directory Users and Computers``
-
+``%windir%\system32\dsac.exe Active Directory Administrative Center``<br>
+``%SystemRoot%\system32\dsa.msc Active Directory Users and Computers``<br>
 ``After Windows version _?_ the RAS tab was removed. Exchange 2003? installs extended version in ?``
 
 What attributes are carried across (and which will not) when copying a user.
 
-``ADSI.exe (or mmc or msc?) ADSI Edit MMC (adsiedit.msc)? %SystemRoot%\system32\adsiedit.msc``
-
-``C:\Windows\System32\LDP.exe``
-
-``C:\Windows\System32\ldifde.exe``
-
-``C:\Windows\System32\Ntdsutil.exe (Windows Server 2003, Windows Server 2003 R2, Windows Server 2003 with SP1, Windows Server 2008, Windows Server 2008 R2) (Ntdsutil.exe is built into Windows Server 2008 and Windows Server 2008 R2. It is available if you have the AD DS or the AD LDS server role installed. It is also available if you install the Active Directory Domain Services Tools that are part of the Remote Server Administration Tools (RSAT). If you have the AD LDS server role installed but not the AD DS server role, you can use the dsdbutil.exe and dsmgmt.exe command-line tools to perform the same tasks http://technet.microsoft.com/en-us/library/cc753343%28v=ws.10%29.aspx)``
-
-``C:\Windows\System32\Dsdbutil.exe``
+``ADSI.exe (or mmc or msc?) ADSI Edit MMC (adsiedit.msc)? %SystemRoot%\system32\adsiedit.msc``<br>
+``C:\Windows\System32\LDP.exe``<br>
+``C:\Windows\System32\ldifde.exe``<br>
+`C:\Windows\System32\Ntdsutil.exe` (Windows Server 2003, Windows Server 2003 R2, Windows Server 2003 with SP1, Windows Server 2008, Windows Server 2008 R2) (Ntdsutil.exe is built into Windows Server 2008 and Windows Server 2008 R2. It is available if you have the AD DS or the AD LDS server role installed. It is also available if you install the Active Directory Domain Services Tools that are part of the Remote Server Administration Tools (RSAT). If you have the AD LDS server role installed but not the AD DS server role, you can use the dsdbutil.exe and dsmgmt.exe command-line tools to perform the same tasks http://technet.microsoft.com/en-us/library/cc753343%28v=ws.10%29.aspx)<br>
+`C:\Windows\System32\Dsdbutil.exe`<br>
 
 repadmin
 
@@ -3056,7 +2899,7 @@ Schmmgmt.dll Active Directory Schema snap-in
 
 Which AD GUI tools have Advanced views to enable?
 
-``DNS, AD UC (Object tab), AD S&S (Services)``
+DNS, AD UC (Object tab), AD S&S (Services)
 
 **Delegwiz.inf**
 
@@ -3069,37 +2912,29 @@ LDIF Directory Exchange
 You can export and import information. Export user accounts and then open in Excel for sorting or analysis.
 
 **Directory Service Utility (NTDSUtil)**
-
+```
 ntdsutil.exe /?
-
 Microsoft(R) Windows(TM) Directory Service Utilities Version 2.0
-
 Copyright (C) Microsoft Corporation 1991-2002. All Rights Reserved.
-
 dsdbutil performs database maintenance of the Active Directory Domain Services store
-
 and facilitates configuration of AD LDS communication ports and view AD LDS
-
 instances installed on a machine.
-
 ``------------------------*************************--------------------``
+```
 
 #### Directory Service Database Util (DSDBUtil) {#h.fo0d5r65ymmq" id="h.fo0d5r65ymmq
-
-``C:\>dsdbutil.exe /?``
-
-Microsoft(R) Windows(TM) Directory Service Utilities Version 2.0
-
-Copyright (C) Microsoft Corporation 1991-2002. All Rights Reserved.
-
-dsdbutil performs database maintenance of the Active Directory Domain Services store
-
-and facilitates configuration of AD LDS communication ports and view AD LDS
-
-instances installed on a machine.
-
-``C:\Windows\System32>dsmgmt.exe /?``
 ```
+C:\>dsdbutil.exe /?
+Microsoft(R) Windows(TM) Directory Service Utilities Version 2.0
+Copyright (C) Microsoft Corporation 1991-2002. All Rights Reserved.
+dsdbutil performs database maintenance of the Active Directory Domain Services store
+and facilitates configuration of AD LDS communication ports and view AD LDS
+instances installed on a machine.
+```
+
+```
+C:\Windows\System32>dsmgmt.exe /?
+
 Microsoft(R) Windows(TM) Directory Service Utilities Version 2.0
 Copyright (C) Microsoft Corporation 1991-2002. All Rights Reserved.
 dsmgmt facilitates managing AD DS/LDS application partitions, management
@@ -3112,37 +2947,28 @@ those which are removed from the network without being uninstalled.
 
 #### DSMove {#h.2fh0o7z9ccwe" id="h.2fh0o7z9ccwe
 
-``C:\Windows\System32>dsmove.exe /?``
-
+```
+C:\Windows\System32>dsmove.exe /?
 Description: This command moves or renames an object within the directory.
-
+```
 **DS Modify Object (DSMOD)**
 
-``C:\Windows\System32\dsmod.exe /?``
-
+```
+C:\Windows\System32\dsmod.exe /?
 Description: This dsmod command modifies existing objects in the directory.
-
+```
 **AD Command line tools**
 
-dsac.exe
-
-dsacls.exe
-
-dsadd.exe
-
-dsdbutil.exe
-
-dsget.exe
-
-dsmgmt.exe
-
-dsmod.exe
-
-dsmove.exe
-
-dsquery.exe
-
-dsrm.exe
+* dsac.exe
+* dsacls.exe
+* dsadd.exe
+* dsdbutil.exe
+* dsget.exe
+* dsmgmt.exe
+* dsmod.exe
+* dsmove.exe
+* dsquery.exe
+* dsrm.exe
 
 #### Active Directory Domain Services Command Reference {#h.b38vxxqc2f1i" id="h.b38vxxqc2f1i
 
@@ -3179,13 +3005,13 @@ dsrm.exe
 
 **Remote Server Administration Tools technology**
 
-``Active Directory Domain Services (AD DS) Tools and Active Directory Lightweight Directory Services (AD LDS) Tools\[37]``
+Active Directory Domain Services (AD DS) Tools and Active Directory Lightweight Directory Services (AD LDS) Tools[37]
 
 Active Directory Domain Services (AD DS) and Active Directory Lightweight Directory Services (AD LDS) Tools includes Active Directory Administrative Center; Active Directory Domains and Trusts; Active Directory Sites and Services; Active Directory Users and Computers; ADSI Edit; DCPromo.exe; LDP.exe; NetDom.exe; NTDSUtil.exe; RepAdmin.exe; Active Directory module for Windows PowerShell; DCDiag.exe; DSACLs.exe; DSAdd.exe; DSDBUtil.exe; DSMgmt.exe; DSMod.exe; DSMove.exe; DSQuery.exe; DSRm.exe;
 
 GPFixup.exe; KSetup.exe; KtPass.exe; NlTest.exe; NSLookup.exe; W32tm.exe.
 
-``\- Server for NIS Tools includes an extension to the Active Directory Users and Computers snap-in, and the **Ypclear.exe** command-line tool.``
+- Server for NIS Tools includes an extension to the Active Directory Users and Computers snap-in, and the **Ypclear.exe** command-line tool.
 
 Move the above into table below
 
@@ -3225,13 +3051,10 @@ Move the above into table below
 
 Available in the following operating systems:
 
-Windows Server 2012
-
-Windows 8
-
-Windows Server 2008 and Windows Server 2008 R2
-
-``Windows 7 (separate download\[38])``
+* Windows Server 2012
+* Windows 8
+* Windows Server 2008 and Windows Server 2008 R2
+* Windows 7 (separate download[38])
 
 AD LDS is not supported on Windows Vista and earlier clients.
 
@@ -3239,9 +3062,9 @@ AD LDS is not supported on Windows Vista and earlier clients.
 
 AD LDS features can be installed in the following operating systems:
 
-``Dynamic list of LDAP Data Interchange Format (LDIF) files during instance setup With this feature, you can make custom LDIF files available during AD LDS instance setup—in addition to the default LDIF files that are provided with AD LDS—by adding the files to the %systemroot%\ADAM directory.``
+Dynamic list of LDAP Data Interchange Format (LDIF) files during instance setup With this feature, you can make custom LDIF files available during AD LDS instance setup—in addition to the default LDIF files that are provided with AD LDS—by adding the files to the `%systemroot%\ADAM` directory.
 
-``[http://technet.microsoft.com/en-us/library/cc754361%28v=ws.10%29.aspx](http://go.microsoft.com/fwlink/)``
+[http://technet.microsoft.com/en-us/library/cc754361%28v=ws.10%29.aspx]
 
 Manage AD LDS instances by using the ADSI Edit MMC snap-in.
 
@@ -3259,43 +3082,43 @@ KB902838
 
 #### Active Directory Recycle Bin {#h.hfhyke16bavk" id="h.hfhyke16bavk
 
-``1. Not used, group policy or partial solution use \Default\Favorites instead. ↑``
+1. Not used, group policy or partial solution use `\Default\Favorites` instead. ↑
 2. [http://support.microsoft.com/kb/971760](http://support.microsoft.com/kb/971760) ↑
 3. [http://support.microsoft.com/kb/2667628](http://support.microsoft.com/kb/2667628) ↑
 4. Source Windows 2003 ↑
 5. [http://support.microsoft.com/?kbid=974674](http://support.microsoft.com/?kbid=974674) ↑
 6. [http://support.microsoft.com/kb/836961](http://support.microsoft.com/kb/836961) ↑
 7. RegEdit.exe can load registry hives and edit registry value security since Windows version ? ↑
-``8.  [http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/ntbackup\_command.mspx?mfr=true](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/ntbackup\_command.mspx?mfr=true)``
+8.  [http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/ntbackup\_command.mspx?mfr=true](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/ntbackup\_command.mspx?mfr=true)
 
     [http://en.wikipedia.org/wiki/NTBackup](http://en.wikipedia.org/wiki/NTBackup) ↑
 9. [http://office.microsoft.com/en-us/outlook-help/copy-outlook-express-address-book-contacts-to-outlook-HA001091960.aspx](http://office.microsoft.com/en-us/outlook-help/copy-outlook-express-address-book-contacts-to-outlook-HA001091960.aspx) ↑
-``10. [http://technet.microsoft.com/en-us/library/cc179199%28v=office.14%29.aspx](http://technet.microsoft.com/en-us/library/cc179199\(v=office.14\).aspx) ↑``
-``11. [http://technet.microsoft.com/en-us/library/cc179110%28v=office.14%29.aspx](http://technet.microsoft.com/en-us/library/cc179110\(v=office.14\).aspx) ↑``
-``12. [http://www.networksteve.com/exchange/topic.php/Different\_work\_day\_times/?TopicId=8284\&Posts=6](http://www.networksteve.com/exchange/topic.php/Different\_work\_day\_times/?TopicId=8284\&Posts=6) ↑``
+10. [http://technet.microsoft.com/en-us/library/cc179199%28v=office.14%29.aspx](http://technet.microsoft.com/en-us/library/cc179199\(v=office.14\).aspx) ↑
+11. [http://technet.microsoft.com/en-us/library/cc179110%28v=office.14%29.aspx](http://technet.microsoft.com/en-us/library/cc179110\(v=office.14\).aspx) ↑
+12. [http://www.networksteve.com/exchange/topic.php/Different\_work\_day\_times/?TopicId=8284\&Posts=6](http://www.networksteve.com/exchange/topic.php/Different\_work\_day\_times/?TopicId=8284\&Posts=6) ↑
 13. [http://office.microsoft.com/en-us/outlook-help/blocked-attachments-in-outlook-HA001229952.aspx](http://office.microsoft.com/en-us/outlook-help/blocked-attachments-in-outlook-HA001229952.aspx) ↑
-``14. [http://www.nirsoft.net/utils/outlook\_nk2\_edit.html](http://www.nirsoft.net/utils/outlook\_nk2\_edit.html) ↑``
-``15. [Outlook 2010 Home > Outlook 2010 Help and How-To > Getting help - What is the Enable logging (troubleshooting) option?](http://www.google.com/url?q=http%3A%2F%2Foffice.microsoft.com%2Fclient%2Fhelppreview14.aspx%3FAssetId%3DHA010356489%26lcid%3D1033%26NS%3DOUTLOOK%26Version%3D14%26tl%3D2%26respos%3D0%26CTT%3D1%26queryid%3D8a421809%252D143f%252D477d%252D873e%252D1c1c82f79a17%23\_Toc261091100\&sa=D\&sntz=1\&usg=AFQjCNFrnL0SZMZcpmW3f1CaskdXGOpjGQ) ↑``
+14. [http://www.nirsoft.net/utils/outlook\_nk2\_edit.html](http://www.nirsoft.net/utils/outlook\_nk2\_edit.html) ↑
+15. [Outlook 2010 Home > Outlook 2010 Help and How-To > Getting help - What is the Enable logging (troubleshooting) option?](http://www.google.com/url?q=http%3A%2F%2Foffice.microsoft.com%2Fclient%2Fhelppreview14.aspx%3FAssetId%3DHA010356489%26lcid%3D1033%26NS%3DOUTLOOK%26Version%3D14%26tl%3D2%26respos%3D0%26CTT%3D1%26queryid%3D8a421809%252D143f%252D477d%252D873e%252D1c1c82f79a17%23\_Toc261091100\&sa=D\&sntz=1\&usg=AFQjCNFrnL0SZMZcpmW3f1CaskdXGOpjGQ) ↑
 16. [http://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data](http://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data) ↑
-``17. [http://www.adobe.com/devnet/flashplayer/articles/flash_player_admin_guide.html](http://www.adobe.com/devnet/flashplayer/articles/flash_player_admin_guide.html) ↑``
+17. [http://www.adobe.com/devnet/flashplayer/articles/flash_player_admin_guide.html](http://www.adobe.com/devnet/flashplayer/articles/flash_player_admin_guide.html) ↑
 18. Choose iTunes Library by holding Shift while starting iTunes ↑
 19. [http://www.makeuseof.com/tag/10-top-itunes-troubleshooting-tips-tricks/](http://www.makeuseof.com/tag/10-top-itunes-troubleshooting-tips-tricks/) ↑
 20. [http://support.apple.com/kb/TS1717](http://support.apple.com/kb/TS1717) ↑
 21. [http://support.apple.com/kb/TS1421](http://support.apple.com/kb/TS1421) ↑
 22. [http://support.apple.com/kb/TS1776](http://support.apple.com/kb/TS1776) ↑
-``23. [http://java.com/en/download/help/msi\_install.xml](http://java.com/en/download/help/msi\_install.xml) ↑``
-``24. [http://www.java.com/en/download/help/plugin\_cache.xml](http://www.java.com/en/download/help/plugin\_cache.xml) ↑``
+23. [http://java.com/en/download/help/msi\_install.xml](http://java.com/en/download/help/msi\_install.xml) ↑
+24. [http://www.java.com/en/download/help/plugin\_cache.xml](http://www.java.com/en/download/help/plugin\_cache.xml) ↑
 25. [http://docs.oracle.com/javase/7/docs/technotes/guides/jweb/client-security.html#install](http://docs.oracle.com/javase/7/docs/technotes/guides/jweb/client-security.html#install) ↑
 26. [http://www.mombu.com/microsoft/iis-smtp-and-nntp/t-some-emails-stuck-in-drop-folder-1028192.html](http://www.mombu.com/microsoft/iis-smtp-and-nntp/t-some-emails-stuck-in-drop-folder-1028192.html) ↑
 27. [http://support.microsoft.com/?id=297700](http://support.microsoft.com/?id=297700) ↑
 28. ↑
-``29. I suggest adding *.divx, *.mkv, *.vob, *.flv ↑``
-``30. I suggest adding *.tar, *.7z, *.ex_, *.dl_ ↑``
-``31. I suggest adding php, perl, ext (.ps1) for powershell2? List of OS recognized ext can be found in reg key ___? or win.ini? What does Outlook consider level 1? ↑``
-``32. May want to include *.wp?, *.pdf, *.cbx, *.wk? ↑``
-``33. I suggest adding *.me, *.1st, *.diz ↑``
-``34. I suggest adding *.webpage for Mozilla shortcuts ? ↑``
+29. I suggest adding `*.divx`, `*.mkv`, `*.vob`, `*.flv` ↑
+30. I suggest adding `*.tar`, `*.7z`, `*.ex_`, `*.dl_` ↑
+31. I suggest adding `php`, `perl`, ext (.ps1) for powershell2? List of OS recognized ext can be found in reg key ___? or win.ini? What does Outlook consider level 1? ↑
+32. May want to include `*.wp?`, `*.pdf`, `*.cbx`, `*.wk?` ↑
+33. I suggest adding `*.me`, `*.1st`, `*.diz` ↑
+34. I suggest adding `*.webpage` for Mozilla shortcuts ? ↑
 35. [http://www.winvistatips.com/windows-98-logon-scripts-2003server-t675450.html](http://www.winvistatips.com/windows-98-logon-scripts-2003server-t675450.html) ↑
-``36. [http://en.wikipedia.org/wiki/Web\_Proxy\_Autodiscovery\_Protocol](http://en.wikipedia.org/wiki/Web\_Proxy\_Autodiscovery\_Protocol) ↑``
+36. [http://en.wikipedia.org/wiki/Web_Proxy_Autodiscovery_Protocol](http://en.wikipedia.org/wiki/Web\_Proxy\_Autodiscovery\_Protocol) ↑
 37. [http://social.technet.microsoft.com/wiki/contents/articles/2202.remote-server-administration-tools-rsat-for-windows-vista-windows-7-windows-8-windows-server-2008-windows-server-2008-r2-and-windows-server-2012-dsforum2wiki.aspx](http://social.technet.microsoft.com/wiki/contents/articles/2202.remote-server-administration-tools-rsat-for-windows-vista-windows-7-windows-8-windows-server-2008-windows-server-2008-r2-and-windows-server-2012-dsforum2wiki.aspx) ↑
 38. [http://www.microsoft.com/en-us/download/details.aspx?id=14683](http://www.microsoft.com/en-us/download/details.aspx?id=14683) ↑
