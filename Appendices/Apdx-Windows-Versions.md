@@ -39,7 +39,7 @@
 
 [http://www.askvg.com/revealing-interesting-secret-behind-windows-build-numbers/](https://www.askvg.com/revealing-interesting-secret-behind-windows-build-numbers/)
 
-[http://technet.microsoft.com/en-us/magazine/jj663498.aspx](https://docs.google.com/a/blackchambers.net/document/d/1A9JS-1G0uQMZu8TCnpwCcTVZDw-3lpqf-E-b7eX6xj4/edit)
+[http://technet.microsoft.com/en-us/magazine/jj663498.aspx](https://web.archive.org/web/2015/http://technet.microsoft.com/en-us/magazine/jj663498.aspx)
 
 Service Pack and Build
 
