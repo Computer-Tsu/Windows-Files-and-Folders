@@ -12,7 +12,7 @@ This repository is licensed under the [Creative Commons Attribution-NonCommercia
 
 Microsoft Windows Folders and Files of Significance
 
-is a detailed dive into the corners of Windows and some of the popular Microsoft and other applications. Mostly covering Vista thru 8. Much will remain compatible.
+is a detailed dive into the corners of Windows and some of the popular Microsoft and other applications. Mostly covering Vista thru 11. Much will remain compatible.
 
 Any product and company names belong to those companies.
 
