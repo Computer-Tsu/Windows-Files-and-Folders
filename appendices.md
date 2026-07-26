@@ -38,7 +38,9 @@ Other books available: NT File System, AD/LDAP Database, Group Policies, Windows
 
 #### Forensically interesting spots in the Windows 7, Vista and XP file system and registry {#Forensically-interesting}
 
-`[http://www.irongeek.com/i.php?page=security/windows-forensics-registry-and-file-system-spots\&mode=print](http://technet.microsoft.com/en-us/library/cc754051.aspx?page=security/windows-forensics-registry-and-file-system-spots\&mode=print)`
+[http://www.irongeek.com/i.php?page=security/windows-forensics-registry-and-file-system-spots&mode=print](https://www.irongeek.com/i.php?page=security/windows-forensics-registry-and-file-system-spots&mode=print)
+
+(http://technet.microsoft.com/en-us/library/cc754051.aspx?page=security/windows-forensics-registry-and-file-system-spots\&mode=print)
 
 Windows Explorer:
 
