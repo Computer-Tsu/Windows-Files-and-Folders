@@ -121,7 +121,7 @@ Reset Winsock using netsh. If you have a LSP that is corrupted and causing netwo
 
 `netsh winsock reset catalog`
 
-[http://support.microsoft.com/?kbid=811259](http://technet.microsoft.com/en-us/library/cc742124.aspx?kbid=811259)
+[http://support.microsoft.com/?kbid=811259](https://support.microsoft.com/?kbid=811259)
 
 Command-line management of Windows Firewall (netsh or netsh advance.. ?)
 
@@ -133,13 +133,13 @@ older versions of windows (NT?) had settings stored ? for services like ftp serv
 
 `\~ftpsvc\~.ckm` Annotate FTP directory
 
-[http://support.microsoft.com/kb/141705](http://go.microsoft.com/fwlink/)
+[http://support.microsoft.com/kb/141705](https://support.microsoft.com/kb/141705)
 
-[http://windowsitpro.com/windows-server/jsi-tip-7142-registry-entries-telnet-server-service](http://windowsitpro.com/security/tools-troubleshoot-nap)
+[http://windowsitpro.com/windows-server/jsi-tip-7142-registry-entries-telnet-server-service](https://web.archive.org/web/2015/http://windowsitpro.com/windows-server/jsi-tip-7142-registry-entries-telnet-server-service)
 
-[http://windowsitpro.com/windows-server/jsi-tip-0390-registry-entries-ftp-service](http://technet.microsoft.com/en-us/library/cc742142.aspx)
+[http://windowsitpro.com/windows-server/jsi-tip-0390-registry-entries-ftp-service](https://web.archive.org/web/2015/http://windowsitpro.com/windows-server/jsi-tip-0390-registry-entries-ftp-service)
 
-[http://windowsitpro.com/windows/jsi-tip-2385-how-do-i-change-windows-2000-telnet-service-greeting-prompt-etc](http://technet.microsoft.com/en-us/library/cc742154.aspx)
+[http://windowsitpro.com/windows/jsi-tip-2385-how-do-i-change-windows-2000-telnet-service-greeting-prompt-etc](https://web.archive.org/web/2015/http://windowsitpro.com/windows/jsi-tip-2385-how-do-i-change-windows-2000-telnet-service-greeting-prompt-etc)
 
 `tlntadmn.exe`, `%SystemRoot%\system32\Login.cmd`
 
@@ -209,7 +209,7 @@ What components needed on client?
 
 **Troubleshooting NAP**
 
-[http://windowsitpro.com/security/tools-troubleshoot-nap](http://technet.microsoft.com/en-us/library/cc732010.aspx)
+[http://windowsitpro.com/security/tools-troubleshoot-nap](https://web.archive.org/web/2015/http://windowsitpro.com/security/tools-troubleshoot-nap)
 
 netsh
 
