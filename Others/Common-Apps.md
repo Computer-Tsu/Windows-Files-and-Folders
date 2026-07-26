@@ -189,7 +189,7 @@ Windows Live has Skydrive? which will replicate certain office settings to other
 These settings include dictionary, word.dot?, ...
 
 Recently Opened Office Docs<br>
-``C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Office\Recent``
+`C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Office\Recent`
 
 **Recovered Office files**<br>
 `C:\Users\<UserName>\AppData\Local\Microsoft\Office\UnsavedFiles`
@@ -214,20 +214,20 @@ Microsoft Query `"C:\Program Files\Microsoft Office\Office14\MSQRY32.EXE"`
 
 **Add-Ons**
 
-**Data Connections**
+**Data Connections**<br>
+`C:\Program Files\Microsoft Office\Office14\QUERIES`
 
-``C:\Program Files\Microsoft Office\Office14\QUERIES``
 ```
 MSN MoneyCentral Investor Currency Rates.iqy
 MSN MoneyCentral Investor Major Indicies.iqy
 MSN MoneyCentral Investor Stock Quotes.iqy
 ```
 
-``%USERPROFILE%\Documents\My Data Sources\<ServerName>\__SQLInstance_ _DatabaseName_.odc``
+`%USERPROFILE%\Documents\My Data Sources\<ServerName>\__SQLInstance_ _DatabaseName_.odc`
 
 **Visual Basic for Applications**
 
-VBA settings migration ``[10]``
+VBA settings migration ^[10]
 
 In Office 2010, Visual Basic for Applications (VBA) 6.0 was updated to VBA 7.0. VBA 7.0 settings were reset to their defaults after migration instead of automatically repopulating. This occurred because the registry settings for VBA are in a different hive in Office 2010, as shown in the following table.
 
@@ -267,14 +267,10 @@ _Y_our certificate's name:<br>
 
 **other cert tools**
 
-certutil
-
-signtool
-
-certreq
-
-mmc.exe cert*.msc (certmgr and certlm)
-
+certutil<br>
+signtool<br>
+certreq<br>
+mmc.exe cert*.msc (certmgr and certlm)<br>
 additional MMC .MSC for AD CS
 
 **Document Inspector**
@@ -288,7 +284,7 @@ customize the Document Inspector by adding Inspector modules
 
 **Microsoft Office 2013 Activation**
 
-[http://www.askvg.com/fix-the-products-we-found-in-your-account-cant-be-used-to-activate-error-message-in-microsoft-office-2013-applications/](http://technet.microsoft.com/en-us/library/cc771151.aspx)
+[http://www.askvg.com/fix-the-products-we-found-in-your-account-cant-be-used-to-activate-error-message-in-microsoft-office-2013-applications/](https://www.askvg.com/fix-the-products-we-found-in-your-account-cant-be-used-to-activate-error-message-in-microsoft-office-2013-applications/
 
 trying to activate the product using your Windows Live ID (Microsoft account) or Office 365 account credentials, the product doesn't get activated
 
@@ -313,7 +309,7 @@ cscript ospp.vbs /dstatus
 
 Note down the **last 5 characters of product keys** given in each section.<br>
 Now run following command for each product key:
-``cscript ospp.vbs /unpkey:_last_5_characters_of_product_key_``
+`cscript ospp.vbs /unpkey:_last_5_characters_of_product_key_`
 For example if the last 5 characters of one product key are ABCDE, then run following command:
 `cscript ospp.vbs /unpkey:ABCDE`
 Uninstall all existing versions of Office from your system and then reinstall Office 2013. Now it should activate itself without any problem.
@@ -322,12 +318,10 @@ Uninstall all existing versions of Office from your system and then reinstall Of
 
 XML, 'Open Document'
 
-File extensions: DOCX, XLSX, ...
-
+File extensions: DOCX, XLSX, ...<br>
 are actually zip files, if extension changed to ZIP, then XML files and folders can be extracted
 
 Sample:
-
 ```
 C:.
 | [Content_Types].xml
@@ -365,11 +359,10 @@ C:.
 
 Outlook-specific
 
-Exchange (SMTP):
+Exchange (SMTP):<br>
+`HKLM\SOFTWARE\Microsoft\Exchange\ContentFilter\` `"ArchiveSCL"=dword:00000001`
 
-``HKLM\SOFTWARE\Microsoft\Exchange\ContentFilter\`` `"ArchiveSCL"=dword:00000001`
-
-see also: [http://office.microsoft.com/en-us/outlook-help/where-does-microsoft-outlook-2010-save-my-information-and-configurations-HP010354943.aspx](http://technet.microsoft.com/en-us/library/cc732406.aspx)
+see also: [http://office.microsoft.com/en-us/outlook-help/where-does-microsoft-outlook-2010-save-my-information-and-configurations-HP010354943.aspx](https://web.archive.org/web/2015/http://office.microsoft.com/en-us/outlook-help/where-does-microsoft-outlook-2010-save-my-information-and-configurations-HP010354943.aspx)
 
 **64-bit edition**<br>
 Tell if the Outlook 2010 is a 32-bit or 64-bit installation ``[11]``
