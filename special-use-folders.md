@@ -906,7 +906,7 @@ $ H + H *
 third character is the capital 'O'. string is all one line, no spaces. [Spaces and line breaks added as extra precaution thi file not be blocked by AV]<br>
 According to EICAR's specification the antivirus detects the test file only if it starts with the 68-byte test string and is not more than 128 bytes long. As a result, antiviruses are not expected to raise an alarm on some other document containing the test string.
 
-#### PowerShell {#h.ji072fdo4adz" id="h.ji072fdo4adz
+#### PowerShell
 
 **PowerShell ISE**
 
@@ -1070,7 +1070,8 @@ IE<br>
 **Lockscreen**<br>
 Windows 10, 11 download random images into the Assets folder in the user's AppData folder.
 
-#### Out-of-Box Experience {#h.dn9tu1me6fvq" id="h.dn9tu1me6fvq
+<a id="oobe"></a>
+#### Out-of-Box Experience
 
 **First boot background music** <br>
 `C:\WINDOWS\system32\oobe\images\title.wma`
@@ -1084,7 +1085,7 @@ USAGE: sysprep.exe [/quiet] [/generalize] [/audit | /oobe] [/reboot | /shutdown 
 
 If no command-line arguments are provided, a graphical user interface is used to select the desired mode of sysprep operation.
 ```
-#### Deploying Windows {#h.bvne4mhxkpgs" id="h.bvne4mhxkpgs
+#### Deploying Windows
 
 Deploying is also in the Server Features area
 
@@ -1094,7 +1095,7 @@ RIS, WIM
 
 **answer file**
 
-#### Windows Upgrade {#h.fp1pnt29yzyp" id="h.fp1pnt29yzyp
+#### Windows Upgrade
 
 `C:\Users\Username\AppData\Local\Apps\Windows 7 USB DVD Download Tool\`<br>
 `C:\Windows\System32\migwiz.lnk %windir%\system32\migwiz\migwiz.exe`<br>
@@ -1122,7 +1123,7 @@ User State Migration Tool (USMT)
 
 `[April 2014]`
 
-#### Windows Activation {#h.phwfv5lu9ajc" id="h.phwfv5lu9ajc
+#### Windows Activation
 
 see also volume activation in another section (under domain, volume activation tools?)
 
@@ -1157,7 +1158,7 @@ KMS troubleshooting
 
 [http://blogs.technet.com/b/odsupport/archive/2011/11/14/how-to-discover-kms-hosts-via-a-dns-query-and-remove-them-if-need-be.aspx](https://web.archive.org/web/2015/http://blogs.technet.com/b/odsupport/archive/2011/11/14/how-to-discover-kms-hosts-via-a-dns-query-and-remove-them-if-need-be.aspx)
 
-#### Windows Updates {#h.i1j7n0ux0g6y" id="h.i1j7n0ux0g6y
+#### Windows Updates
 
 `C:\Windows\$NTUninstallKB_nnnnnnn_$`
 
@@ -1190,7 +1191,7 @@ Autopatcher
 
 RyanVM
 
-#### Install/Uninstall cache {#h.xasz4mskijht" id="h.xasz4mskijht
+#### Install/Uninstall cache
 
 ? `C:\WINDOWS\Installer`[3] is this for programs or patches?<br>
 `C:\MSOCache\All Users\`<br>
@@ -1227,7 +1228,7 @@ HotFixes in Safe mode
 
 Windows Update Service (Wuauserv)
 
-#### Scheduled Tasks {#h.wx4y24ic2ga3" id="h.wx4y24ic2ga3
+#### Scheduled Tasks
 
 `C:\Windows\System32\Tasks`
 
@@ -1243,7 +1244,7 @@ The syntax for specifying days is:<br>
 
 use `/V1` to create task on remote XP computer from Vista or above.
 
-#### Windows Backup {#h.7vaxonnn2u22" id="h.7vaxonnn2u22
+#### Windows Backup
 
 MediaID.bin<br>
 GlobalCatalog.wbcat
@@ -1324,7 +1325,7 @@ Wbadmin replaces ntbackup[5]
 | [Wbadmin restore catalog](http://technet.microsoft.com/en-us/library/cc742060.aspx)                                           | <p>Recovers a backup catalog from a specified storage location in the case where the backup catalog on the local computer has been corrupted.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>                                                                              |
 | [Wbadmin delete catalog](http://technet.microsoft.com/en-us/library/cc731038.aspx)                                            | <p>Deletes the backup catalog on the local computer. Use this command only if the backup catalog on this computer is corrupted and you have no backups stored at another location that you can use to restore the catalog.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p> |
 
-#### Fax {#h.pbyfyfrqt3za" id="h.pbyfyfrqt3za
+#### Fax
 
 MSFax `"C:\ProgramData\Microsoft\Windows NT\MSFax"`<br>
 Fax Printer<br>
@@ -1332,14 +1333,16 @@ Fax Printer Port
 
 How many modems does each OS support? (Win2k, Win2k3, Win 2k8, SBS)
 
-#### OEM Branding {#h.wwy0nqh6y4fd" id="h.wwy0nqh6y4fd
+#### OEM Branding
+
+For Win 3.x, you copy+concatenated the launcher to a RLE (run length encoded) picture
 
 `C:\Windows\Setup\scripts\`<br>
 `C:\Windows\System32\oem`
 
 See also Deployment, OEM
 
-#### Printing {#h.k1vmmpaque47" id="h.k1vmmpaque47
+#### Printing
 
 `C:\Windows\System32\spool\PRINTERS`
 
@@ -1469,7 +1472,7 @@ PrintBrm -B|R|Q [-S <server>] -F <file> [-D <directory>] [-O FORCE] [-P ALL|ORIG
 
 Add Local printer, local port, enter UNC path
 
-#### Windows Wireless Config {#h.rf1lkh2esmia" id="h.rf1lkh2esmia
+#### Windows Wireless Config
 
 (Move to Networking?)
 
@@ -1489,7 +1492,7 @@ WSETTING.TXT
 WSETTING.WFC
 ```
 
-#### Windows logon password {#h.34sklueb7143" id="h.34sklueb7143
+#### Windows logon password
 
 **Windows password recovery disk**
 
@@ -1498,12 +1501,12 @@ WSETTING.WFC
 Back up vault<br>
 Credential Backup Files (*.crd)
 
-#### Encrypting File System {#h.l1u6dqphtt0n" id="h.l1u6dqphtt0n
+#### Encrypting File System
 
 Manage your file encryption certificates<br>
 `rekeywiz.exe` EFS REKEY wizard
 
-#### ODBC {#h.mgj5021muc2a" id="h.mgj5021muc2a
+#### ODBC
 
 folder path: DSN files
 
@@ -1511,7 +1514,7 @@ registry: `HKLM\SOFTWARE\ODBC\ODBC.INI`
 
 also a user key at _
 
-#### Windows update {#h.uv4v6warfqpm" id="h.uv4v6warfqpm
+#### Windows update
 
 **command to trigger search for updates**<br>
 `wuauclt.exe /detectnow` (two other places in this document?)
@@ -1535,13 +1538,13 @@ Migration Wizard (i.e. XP to XP) (Migration mentioned elsewhere in this document
 
 RegBack from Windows 2000 Server?
 
-#### TWAIN {#h.bnu5zbmyy5s2" id="h.bnu5zbmyy5s2
+#### TWAIN
 
 `C:\Windows\twain_32`
 
 Registry:
 
-#### Accessibility/Ease of Access {#h.cwdx4l9w5eyj" id="h.cwdx4l9w5eyj
+#### Accessibility/Ease of Access
 
 Windows XP
 
@@ -1579,7 +1582,7 @@ Underline keyboard shortcuts and access keys has been moved to Make it easier to
 Enable Java Access Bridge<br>
 Java Access Bridge, from Oracle, Inc. providing Assistive Technology access to Java applications
 
-### Programs without icons or shortcuts {#h.7d98ixsg8utn" id="h.7d98ixsg8utn
+### Programs without icons or shortcuts
 
 32-bit vs 64-bit
 
@@ -1650,7 +1653,7 @@ For example:<br>
 `%SystemRoot%\explorer.exe /N,%WinDir%\System32,/Select,%WinDir%\System32\Ping.exe`<br>
 Command aboves will explore the \Windows\System32 folder and put the focus on the ping.exe program.
 
-#### MMC {#h.kzqvf7icqgpe" id="h.kzqvf7icqgpe
+#### MMC
 
 `mmc.exe`<br>
 `mmc /a`
@@ -1787,7 +1790,7 @@ Shared Folders has no extensions but View: (All, Sessions, Shares, Open Files)
 
 Windows System Resource Manager has ...?
 
-#### Group Policy Starter GPO {#h.nv2rc87kyld1" id="h.nv2rc87kyld1
+#### Group Policy Starter GPO
 
 Starter GPOs can be stored in the Active Directory.
 
@@ -1846,9 +1849,9 @@ sysinfo (windows ver ?)
 
 sysinfo (office)
 
-#### Power Configuration commands {#h.94pstocdhes6" id="h.94pstocdhes6
+#### Power Configuration commands
 
-#### Network commands {#h.ojix9vvv3poa" id="h.ojix9vvv3poa
+#### Network commands
 
 arp<br>
 ipconfig<br>
@@ -1876,7 +1879,7 @@ SystemInfo.exe
 
 SC for service control manager
 
-#### From Windows Installation Media {#h.adq3uwum6lrg" id="h.adq3uwum6lrg
+#### From Windows Installation Media
 
 Microsoft Windows Support Tools
 
@@ -1886,7 +1889,7 @@ Microsoft Windows 2000, Windows XP, Windows Server 2003 and Windows Server 2003 
 
 `Windows XP Setup CD, and then locate the Support\Tools folder`
 
-### Remote {#h.j40pvknrtwar" id="h.j40pvknrtwar
+### Remote
 
 **telnet**
 
@@ -1942,48 +1945,36 @@ Windows Server 2003 `https://ComputerName:8098` (http://technet.microsoft.com/en
 
 WSUS (2.0, not 3.0)
 
-### Windows Server 2012 Core {#h.yk3ya590575f" id="h.yk3ya590575f
+### Windows Server 2012 Core
 
 sconfig.cmd
 
 [menu or screenshot]
 
-sc services
-
-`C:\Windows\System32\SCRegEdit.wsh` enable or disable Remote Desktop and configure Windows Update
-
+`sc` services<br>
+`C:\Windows\System32\SCRegEdit.wsh` enable or disable Remote Desktop and configure Windows Update<br>
 `C:\Windows\System32\GatherNetworkInfo.vbs`<br>
-netdom.exe change hostname or join domain<br>
-netsh.exe change IP address, firewall<br>
-net.exe add/remove users, connect to network drives
-
-pnputil drivers
-
-drvinst drivers
-
-diskraid RAID volumes
-
-ServerManagerCmd.exe
-
-MSInfo32.exe
-
-Regedit.exe and Regedt32.exe
-
-secedit.exe
-
-TimeDate.cpl<br>
-timezone.cpl change the time and time zone<br>
-Intl.cpl
-
-iscsicpl.exe connect to shared storage over iSCSI (starting with Windows Server 2008 R2)
-
-iscsicli.exe connect to shared storage over iSCSI (starting with Windows Server 2008)
+`netdom.exe` change hostname or join domain<br>
+`netsh.exe` change IP address, firewall<br>
+`net.exe` add/remove users, connect to network drives<br>
+`pnputil` drivers<br>
+`drvinst` drivers<br>
+`diskraid` RAID volumes<br>
+`ServerManagerCmd.exe`<br>
+`MSInfo32.exe`<br>
+`Regedit.exe` and `Regedt32.exe`<br>
+`secedit.exe`<br>
+`TimeDate.cpl`<br>
+`timezone.cpl` change the time and time zone<br>
+`Intl.cpl`<br>
+`iscsicpl.exe` connect to shared storage over iSCSI (starting with Windows Server 2008 R2)<br>
+`iscsicli.exe` connect to shared storage over iSCSI (starting with Windows Server 2008)
 
 Some features/roles not available. 2008 Core can't be converted, 2012 can change core, full, minimal interfaces.
 
-### Other System Apps {#h.ir4cbyik87yo" id="h.ir4cbyik87yo
+### Other System Apps
 
-#### from System Configuration (msconfig), Tools, Launch {#h.42y7kg8yl6nl" id="h.42y7kg8yl6nl
+#### from System Configuration (msconfig), Tools, Launch
 
 | **Tool Name**                   | **Description**                                                 |
 | ------------------------------- | --------------------------------------------------------------- |
@@ -2006,7 +1997,7 @@ Some features/roles not available. 2008 Core can't be converted, 2012 can change
 | Remote Assistance               | C:\Windows\System32\msra.exe                                    |
 | System Restore                  | C:\Windows\System32\rstrui.exe                                  |
 
-#### Windows Sysinternals {#h.fnxkrjgzgwxc" id="h.fnxkrjgzgwxc
+#### Windows Sysinternals
 
 [http://technet.microsoft.com/en-us/sysinternals/bb545021.aspx](http://technet.microsoft.com/en-us/sysinternals/bb545021.aspx)
 
@@ -2039,7 +2030,7 @@ Some features/roles not available. 2008 Core can't be converted, 2012 can change
 | WinObj                       | Sysinternals Winobj                  | Winobj.exe          |
 | ZoomIt                       | Sysinternals Screen Magnifier        | ZoomIt.exe          |
 
-#### Windows Support Tools {#h.iuxzcmw86mkw" id="h.iuxzcmw86mkw
+#### Windows Support Tools
 
 From Windows Installation Media
 
@@ -2063,7 +2054,7 @@ MsiZap Windows Installer Zapper
 
 Msicuu.exe Windows Installer CleanUp Utility
 
-### Resource Kits from MS Press {#h.j6lm75oroq3a" id="h.j6lm75oroq3a
+### Resource Kits from MS Press
 
 ResKit
 
@@ -2126,13 +2117,13 @@ Back Office
 
 and several server products such as SharePoint and Microsoft Exchange Server
 
-### Popular Applications {#h.8dwdprfc5vfh" id="h.8dwdprfc5vfh
+### Popular Applications
 [Common Applications](Common-Apps.md)
-### Microsoft Servers and Windows Services {#h.9myl42igo6cu" id="h.9myl42igo6cu
+### Microsoft Servers and Windows Services
 
 See appendix _ for list of all Windows components, features, roles
 
-#### DNS Server {#h.eit8y2gyf1cb" id="h.eit8y2gyf1cb
+#### DNS Server
 
 `C:\Windows\System32\dns`<br>
 `C:\Windows\System32\dns\backup`
@@ -2147,7 +2138,7 @@ Ddnscmd.exe
 `dnscmd . /config /enableglobalnamessupport 1`<br>
 `HKLM\SYSTEM\CurrentControlSet\services\DNS\Parameters\EnableGlobalNamesSupport` = `1`
 
-#### DHCP Server {#h.sd91ba4gx9g2" id="h.sd91ba4gx9g2
+#### DHCP Server
 
 `%systemroot%\System32\dhcp\backup`<br>
 `HKLM\SYSTEM\CurrentControlSet\Services\DHCPServer\Parameters`
@@ -2156,7 +2147,7 @@ Ddnscmd.exe
 
 DHCP Server Tools includes the DHCP Management Console, the DHCP Server cmdlet module for Windows Powershell, and the **Netsh** command-line tool.
 
-#### Exchange, SMTP, POP3 Servers {#h.p2aanbf91fkj" id="h.p2aanbf91fkj
+#### Exchange, SMTP, POP3 Servers
 
 `C:\inetpub\mailroot`<br>
 `C:\inetpub\mailroot\Badmail` must be manually cleaned or spam will fill disk<br>
@@ -2193,7 +2184,7 @@ P=rePair, M=file duMp, Y=copY file, C=restore
 =>
 ```
 
-#### Windows Update Server {#h.vhis7vg15mnt" id="h.vhis7vg15mnt
+#### Windows Update Server
 
 Paths
 
@@ -2218,13 +2209,13 @@ Windows Client see the other section above?
 
 `wuauclt /detectnow`
 
-#### Windows Deployment {#h.lxlw5an1cug7" id="h.lxlw5an1cug7
+#### Windows Deployment
 
 Windows Deployment Role/Feature (WDS)<br>
 Windows Automated Installation Kit (WAIK)<br>
 MDT
 
-#### PXE {#h.dp9pnycutc7w" id="h.dp9pnycutc7w
+#### PXE
 
 DHCP options
 
@@ -2257,7 +2248,7 @@ WMI filters
 
 WMIC
 
-### File Sharing, Storage Stuff {#h.d3i2arq2h23v" id="h.d3i2arq2h23v
+### File Sharing, Storage Stuff
 
 **File and Storage Services Tools**
 
@@ -2267,7 +2258,7 @@ File Services Tools include the following: Share and Storage Management Tools; D
  - File Server Resource Manager tools include the File Server Resource Manager snap-in, and the **Dirquota.exe**, **Filescrn.exe**, and **Storrept.exe** command line tools.
  - Share and Storage Management Tools include the Share and Storage Management snap-in.
 
-#### Distributed File System (DFS) {#h.amxths7cmdmm" id="h.amxths7cmdmm
+#### Distributed File System (DFS)
 
 `.DFSFolderLink`
 
@@ -2287,13 +2278,13 @@ Directory contents:
 <DIR> `Installing`<br>
 <DIR> `Staging`<br>
 
-#### Storage Manager {#h.jqv43byvq6fi" id="h.jqv43byvq6fi
+#### Storage Manager
 
 **Storage Manager for SANs Tools**
 
 Storage Manager for SANs Tools include the Storage Manager for SANs snap-in and the **Provisionstorage.exe** command-line tool.
 
-#### File Server Resource Manager {#h.kt2oarqrjvle" id="h.kt2oarqrjvle
+#### File Server Resource Manager
 
 **Default File Groups**
 
@@ -2362,7 +2353,7 @@ NFS
 | Showmount   | Display mounted directories.                                             |
 | Unmount     | Remove Network File System (NFS)-mounted drives.                         |
 
-#### SQL Server {#h.1en0w8gl2q7f" id="h.1en0w8gl2q7f
+#### SQL Server
 
 Microsoft SQL Server
 
@@ -2385,16 +2376,16 @@ Windows Internal Database
 
 `"c:\Program Files\Microsoft SQL Server\90\Tools\binn\SQLCMD.EXE"`
 
-#### SharePoint {#h.v31lk48cf6c9" id="h.v31lk48cf6c9
+#### SharePoint
 
-#### IIS ? {#h.adamcyip80i2" id="h.adamcyip80i2
+#### IIS ?
 
-#### Failover Clustering {#h.hyg6m1b0ihj0" id="h.hyg6m1b0ihj0
+#### Failover Clustering
 
 **Failover Clustering Tools**<br>
 Failover Cluster Manager, Failover Clusters (Windows PowerShell Cmdlets), MSClus, Cluster.exe
 
-#### Hyper-V {#h.v0kdxulmxd6x" id="h.v0kdxulmxd6x
+#### Hyper-V
 
 Default directory for .VHD files
 
@@ -2410,13 +2401,13 @@ default install directory under current user
 
 **App-V**
 
-#### Network Load Balancing {#h.uivr0wjw8tqn" id="h.uivr0wjw8tqn
+#### Network Load Balancing
 
 **Network Load Balancing Tools**
 
 Network Load Balancing Tools include the Network Load Balancing Manager; Network Load Balancing Windows PowerShell Cmdlets; and the NLB.exe and WLBS.exe Command Line Tools.
 
-#### Remote Desktop Services (Terminal Services/RDP) {#h.2qdbmtub0dzw" id="h.2qdbmtub0dzw
+#### Remote Desktop Services (Terminal Services/RDP)
 
 Remote Desktops (`%windir%\system32\tsmmc.msc /s`) is a great admin tool. It gives one-click access to every server or PC you add to its console.
 
@@ -2464,7 +2455,7 @@ Server Manager should be used for administration of all other RDS role services 
 | [Tskill](http://technet.microsoft.com/en-us/library/cc754256.aspx)                                                                                    | Ends a process running in a session on an RD Session Host server.                                                      |
 | [Tsprof](http://www.mydigitallife.info/control-windows-media-player-behaviour-with-command-line-parameters/)                                          | Copies the Remote Desktop Services user configuration information from one user to another.                            |
 
-``\[redo to avoid links from copy/paste?]``
+[redo to avoid links from copy/paste?]
 
 |   |   |
 | - | - |
@@ -2504,7 +2495,7 @@ Remote Desktop Services Licensing Directory
 Starting with RDP version ? (client/server), the .RDP file is now text-based.<br>
 [Link to source describing all the options available]
 
-#### Volume Activation {#h.yl23qe3sqda0" id="h.yl23qe3sqda0
+#### Volume Activation
 
 Manage Volume Activation, vmw.exe
 
@@ -2512,15 +2503,15 @@ KMS ?
 
 [http://blogs.technet.com/b/odsupport/archive/2011/11/14/how-to-discover-kms-hosts-via-a-dns-query-and-remove-them-if-need-be.aspx](http://blogs.technet.com/b/odsupport/archive/2011/11/14/how-to-discover-kms-hosts-via-a-dns-query-and-remove-them-if-need-be.aspx)
 
-#### Windows System Resource Manager {#h.dnmcr4ij37je" id="h.dnmcr4ij37je
+#### Windows System Resource Manager
 
 **Windows System Resource Manager Tools**
 
 Windows System Resource Manager Tools include the Windows System Resource Manager snap-in and the **Wsrmc.exe** command-line tool.
 
-### Additional Microsoft Software for Administrators {#h.p8wcbfrqxajt" id="h.p8wcbfrqxajt
+### Additional Microsoft Software for Administrators
 
-#### Microsoft Desktop Optimization Pack (MDOP) {#h.48cbquejjjps" id="h.48cbquejjjps
+#### Microsoft Desktop Optimization Pack (MDOP)
 
 **Advanced Group Policy Management (AGPM)**
 
@@ -2547,7 +2538,7 @@ MED-V allows you to easily create, deliver and manage corporate Virtual PC image
 
 Microsoft UE-V enable users to keep their Windows and application experience regardless of what device they use to access Windows and those applications.
 
-#### Microsoft Toolkits {#h.3o2gmdy1l31e" id="h.3o2gmdy1l31e
+#### Microsoft Toolkits
 
 WAIK<br>
 MAP<br>
@@ -2557,7 +2548,7 @@ USMT<br>
 MACP<br>
 MSCM
 
-#### Admin Tools {#h.h2168v27zqo8" id="h.h2168v27zqo8
+#### Admin Tools
 
 Chart: Version, runs on client ver, manages server ver
 
@@ -2571,11 +2562,11 @@ Management tool is not in RSAT and already part of the available features.
 
 Installing PowerShell https://technet.microsoft.com/en-us/library/hh847837.aspx
 
-#### Services for Unix (SFU) {#h.b35elgivool4" id="h.b35elgivool4
+#### Services for Unix (SFU)
 
-#### SQL Management {#h.zca1z5j5agb0" id="h.zca1z5j5agb0
+#### SQL Management
 
-#### Administrative {#h.zfvb2ac5uxa1" id="h.zfvb2ac5uxa1
+#### Administrative
 
 - Microsoft Assessment and Planning (MAP) Toolkit performs audits and discovery of operating systems, Exchange & SQL servers
 Microsoft Baseline Security Analyzer
@@ -2587,7 +2578,7 @@ Microsoft Baseline Security Analyzer
 - Microsoft Enhanced Mitigation Experience Toolkit (EMET)
 - lock down lab tool, no longer supported
 
-#### Programming and Development {#h.smcfngqbli6" id="h.smcfngqbli6
+#### Programming and Development
 
 Visual Studio
 
@@ -2599,9 +2590,9 @@ Windows Deployment Kit & Assessment and Deployment Kit (Deploy/WAIK above)
 
 Windows Software Dev Kit
 
-Orca
+Orca - create .MST transform files to apply choices to unattended .msi installs
 
-#### Misc {#h.mg6xzr53wgn2" id="h.mg6xzr53wgn2
+#### Misc
 
 Microsoft Live Essentials
 
@@ -2627,7 +2618,7 @@ Vista Ultimate add-ons
 
 Other Windows add-ons
 
-#### Other Programs {#h.wioxqkuchmx3" id="h.wioxqkuchmx3
+#### Other Programs
 
 **Apple**
 
@@ -2668,7 +2659,7 @@ Apple<br>
 Google Chrome<br>
 Mozilla Firefox
 
-### Windows Domain and Active Directory paths {#h.i85qe6xf7cfv" id="h.i85qe6xf7cfv
+### Windows Domain and Active Directory paths
 
 ![A screenshot of a computer](.gitbook/assets/0.png)
 
@@ -2695,7 +2686,7 @@ NTDS and _?_ folder location can be customized during installation of Active Dir
 |                | domain\scripts     |                                                                                                                                                                                |
 |                | domain\StarterGPOs |                                                                                                                                                                                |
 
-#### Logon Scripts {#h.afrre0bnquyx" id="h.afrre0bnquyx
+#### Logon Scripts
 
 `%Systemroot%\System32\Repl\Import\Scripts`<br>
 `%SystemRoot%\sysvol\sysvol\<domain DNS name>\scripts`<br>
@@ -2712,27 +2703,27 @@ The "%0" in the batch file is interpreted by the command processor to be the nam
 
 Also to force a path to the current directory `PUSHD %\~dp0`
 
-#### Replication {#h.bbdnu95mten3" id="h.bbdnu95mten3
+#### Replication
 
 Regular replication of logon scripts, group policy files, performed by __
 
 DFS Replication, see above
 
-#### Group Policy Objects {#h.l55boztd7p4b" id="h.l55boztd7p4b
+#### Group Policy Objects
 
 Physical Path
 
-``%SystemRoot%\sysvol\sysvol\_<domain DNS name>_\Policies\_<GUID>_\user\scripts\logon``
+`%SystemRoot%\sysvol\sysvol\_<domain DNS name>_\Policies\_<GUID>_\user\scripts\logon`
 
 Network Path
 
-`_\_\<AD Server>_\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\user\scripts\logon`<br>
-`_\_\<AD Server>_\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\user\scripts\logoff`<br>
-`_\_\<AD Server>_\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\machine\scripts\startup`<br>
-`_\_\<AD Server>_\sysvol\\_\<domain DNS name>_\Policies\\_\<GUID>_\machine\scripts\shutdown`<br>
+`\\<AD Server>_\sysvol\\_<domain DNS name>_\Policies\\_\<GUID>_\user\scripts\logon`<br>
+`\\<AD Server>_\sysvol\\_<domain DNS name>_\Policies\\_\<GUID>_\user\scripts\logoff`<br>
+`\\<AD Server>_\sysvol\\_<domain DNS name>_\Policies\\_\<GUID>_\machine\scripts\startup`<br>
+`\\<AD Server>_\sysvol\\_<domain DNS name>_\Policies\\_\<GUID>_\machine\scripts\shutdown`<br>
 `%SystemRoot%\system32\repl\import\scripts`
 
-#### GPO Template (.ADMX) files {#h.x7zefdpddhjv" id="h.x7zefdpddhjv
+#### GPO Template (.ADMX) files
 
 Only need to be present on the machine where the policies are edited from
 
@@ -2745,7 +2736,7 @@ ADM (Group Policy Editor, Add/Remove Template Wizard)<br>
 **Group Policy Management Tools**<br>
 Group Policy Management Tools include Group Policy Management Console, Group Policy Management Editor, and Group Policy Starter GPO Editor.
 
-#### Paths for User Accounts {#h.ti90pi3cr8i1" id="h.ti90pi3cr8i1
+#### Paths for User Accounts
 
 **User Home folder and Profile path differences**
 
@@ -2763,7 +2754,7 @@ Managing Roaming User Data Deployment Guide
 
 Local, Roaming, Terminal Server, etc.
 
-#### DNS entries for Active Directory Domains {#h.pz095n1sq406" id="h.pz095n1sq406
+#### DNS entries for Active Directory Domains
 
 Not a file/folder path, but part of UNC and name resolution for network access
 
@@ -2810,7 +2801,7 @@ They will then be written to the following folder path:
 
 ``DnsCmd <ServerName> /ZoneExport <ZoneName> <ZoneExportFile>``
 
-#### Certificate Services {#h.k7tbyipc0zj3" id="h.k7tbyipc0zj3
+#### Certificate Services
 
 Some Certificate tools will be included in the Office-VBA section above
 
@@ -2825,7 +2816,7 @@ Active Directory Certificate Services Tools includes the Certification Authority
 | [Certreq](http://www.swiftforensics.com/2012/08/tracking-usb-first-insertion-in-event.html) | <p>Certreq can be used to:</p><ol><li>Request certificates from a certification authority (CA).</li><li>Retrieve a response to a previous request from a CA.</li><li>Create a new request from an .inf file.</li><li>Accept and install a response to a request.</li><li>Construct a cross-certification or qualified subordination request from an existing CA certificate or request.</li><li>Sign a cross-certification or qualified subordination request.</li></ol> |
 | [Certutil](http://technet.microsoft.com/en-us/library/cc731968.aspx)                        | Displays certification configuration information, and configures Certificate Services.                                                                                                                                                                                                                                                                                                                                                                                   |
 
-### Active Directory (LDAP) Database {#h.gd194euzmf7w" id="h.gd194euzmf7w
+### Active Directory (LDAP) Database
 
 AD LDAP database entries and paths will be in a separate document.
 
@@ -2845,7 +2836,7 @@ Some networked copiers can connect to a LDAP database for an address book for em
 
 One example of connecting and using an address book for names/dept/phone/email is above in Outlook, Add Address Book
 
-#### AD Utilities {#h.u1ptx3w39kqq" id="h.u1ptx3w39kqq
+#### AD Utilities
 
 A few tools will be included here, see other AD document for better information.
 
@@ -2898,7 +2889,7 @@ instances installed on a machine.
 ``------------------------*************************--------------------``
 ```
 
-#### Directory Service Database Util (DSDBUtil) {#h.fo0d5r65ymmq" id="h.fo0d5r65ymmq
+#### Directory Service Database Util (DSDBUtil)
 ```
 C:\>dsdbutil.exe /?
 Microsoft(R) Windows(TM) Directory Service Utilities Version 2.0
@@ -2919,9 +2910,9 @@ and cleaning up of metadata left behind by abandoned AD DCs/LDS instances,
 those which are removed from the network without being uninstalled.
 ```
 
-#### Edit Objects in Active Directory {#h.5ueexcyelrvy" id="h.5ueexcyelrvy
+#### Edit Objects in Active Directory
 
-#### DSMove {#h.2fh0o7z9ccwe" id="h.2fh0o7z9ccwe
+#### DSMove
 
 ```
 C:\Windows\System32>dsmove.exe /?
@@ -3023,7 +3014,7 @@ Move the above into table below
 |                            |                                                |
 | W32Tm.exe                  |                                                |
 
-#### Active Directory Lightweight Directory Services {#h.74vxzvgmrjym" id="h.74vxzvgmrjym
+#### Active Directory Lightweight Directory Services
 
 Available in the following operating systems:
 
@@ -3044,7 +3035,7 @@ Dynamic list of LDAP Data Interchange Format (LDIF) files during instance setup 
 
 Manage AD LDS instances by using the ADSI Edit MMC snap-in.
 
-#### Active Directory Application Mode (ADAM) {#h.j7fsosvjlxyg" id="h.j7fsosvjlxyg
+#### Active Directory Application Mode (ADAM)
 
 For organizations that require flexible support for directory-enabled applications, Microsoft has developed ADAM, which is an LDAP directory service that runs as a user service, rather than as a system service.
 
@@ -3052,11 +3043,11 @@ KB902838
 
 [http://www.microsoft.com/en-us/download/details.aspx?id=4201](http://www.microsoft.com/en-us/download/details.aspx?id=4201)
 
-#### Active Directory Web Services (ADWS) {#h.ell1a23jtwxe" id="h.ell1a23jtwxe
+#### Active Directory Web Services (ADWS)
 
-#### Active Directory Database Mounting Tool {#h.1w4f0q5upgkt" id="h.1w4f0q5upgkt
+#### Active Directory Database Mounting Tool
 
-#### Active Directory Recycle Bin {#h.hfhyke16bavk" id="h.hfhyke16bavk
+#### Active Directory Recycle Bin
 
 1. Not used, group policy or partial solution use `\Default\Favorites` instead. ↑
 2. [http://support.microsoft.com/kb/971760](http://support.microsoft.com/kb/971760) ↑
