@@ -11,7 +11,8 @@ Libraries touched upon here? (More at: [http://www.grimadmin.com/article.php/cre
 note see apendice for shell extension clsid?
 
 
-### Shares {#h.6mgfjeh2d4bo" id="h.6mgfjeh2d4bo
+<a id="shares"></a>
+### Shares
 
 ADMIN$
 
@@ -30,7 +31,7 @@ PRINT$
 More shares found in Active Directory section above
 
 
-### Environmental Variables {#h.27tpyo2kf7eg" id="h.27tpyo2kf7eg
+### Environmental Variables
 
 
 ### Credential (Password) Storage
