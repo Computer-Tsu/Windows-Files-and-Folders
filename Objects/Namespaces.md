@@ -1,6 +1,6 @@
 ### Shell Namespace Extensions {#ShellExtension}
 
-[http://www.autoitscript.com/autoit3/docs/appendix/clsid.htm](http://technet.microsoft.com/en-us/library/cc770963.aspx)
+[autoitscript.com/autoit3/docs/appendix/clsid](https://www.autoitscript.com/autoit3/docs/appendix/clsid.htm)
 
 #### How to call or activate {#h.5ehiahqn5b5a" id="h.5ehiahqn5b5a
 
@@ -33,7 +33,7 @@ Printers without grouping by port `{2227a280-3aea-1069-a2de-08002b30309d}`
 
 Network Neighborhood with comments `Network.{208d2c60-3aea-1069-a2d7-08002b30309d}`
 
-[http://www.mydigitallife.info/command-line-switches-to-display-special-objects-or-folders-when-opening-windows-explorer/](http://www.askvg.com/fix-the-products-we-found-in-your-account-cant-be-used-to-activate-error-message-in-microsoft-office-2013-applications/)
+[http://www.mydigitallife.info/command-line-switches-to-display-special-objects-or-folders-when-opening-windows-explorer/](https://www.mydigitallife.info/command-line-switches-to-display-special-objects-or-folders-when-opening-windows-explorer/)
 
 **My Computer**<br>
 `%SystemRoot%\explorer.exe /E,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}`
