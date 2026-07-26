@@ -2412,21 +2412,21 @@ Windows Media Center is a digital home entertainment hub application included in
 
 ehshell.exe supports the following command line switches:
 
-``**ehshell.exe /entrypoint:{APP\_GUID}\\{ENTRYPOINT\_GUID}**``
+`ehshell.exe /entrypoint:{APP_GUID}\{ENTRYPOINT_GUID}`
 
-``This parameter starts Windows Media Center and navigates directly to a registered entry point. APP\_GUID and ENTRYPOINT\_GUID are strings that match the GUIDs of the desired application and entry point identifiers for the entry point to be launched. You must have previously registered the application using the RegisterApplication API or RegisterMceApp.exe for this command line switch to work correctly.``
+This parameter starts Windows Media Center and navigates directly to a registered entry point. APP_GUID and ENTRYPOINT_GUID are strings that match the GUIDs of the desired application and entry point identifiers for the entry point to be launched. You must have previously registered the application using the RegisterApplication API or RegisterMceApp.exe for this command line switch to work correctly.
 
-``**ehshell.exe /url:\<url>**``
+`ehshell.exe /url:<url>`
 
-``This parameter starts Windows Media Center and navigates directly to a Hosted HTML application or XBAP application specified by \<url>.``
+`This parameter starts Windows Media Center and navigates directly to a Hosted HTML application or XBAP application specified by <url>.`
 
-``**ehshell.exe /homepage:\<url>**``
+**ehshell.exe /homepage:\<url>**
 
-``This parameter starts Windows Media Center and navigates directly to a Windows Media Center Presentation Layer Web Application specified by \<url>.``
+This parameter starts Windows Media Center and navigates directly to a Windows Media Center Presentation Layer Web Application specified by <url>.
 
-``**ehshell.exe /addinfallbackpath:\<path>**``
+**ehshell.exe /addinfallbackpath:\<path>**
 
-``This parameter starts Windows Media Center and causes it to use to locate and load add-in assemblies. This location is only used after Windows Media Center attempts to load add-in assemblies from the global assembly cache (GAC) and %windir%\ehome. This switch can be combined with the /entrypoint switch described above to allow prototyping of Windows Media Center applications without needing to install an updated assembly to the GAC each time you rebuild your project in Visual Studio.``
+This parameter starts Windows Media Center and causes it to use to locate and load add-in assemblies. This location is only used after Windows Media Center attempts to load add-in assemblies from the global assembly cache (GAC) and %windir%\ehome. This switch can be combined with the /entrypoint switch described above to allow prototyping of Windows Media Center applications without needing to install an updated assembly to the GAC each time you rebuild your project in Visual Studio.
 
 **ehshell.exe /gdi**
 
@@ -2464,13 +2464,13 @@ Launches Windows Media Center in full screen mode and navigates to the picture l
 
 Launches Windows Media Center in full screen mode and begins playback of the disc in the drive by reusing AutoRun code, a new switch as part of Windows HotStart feature that can be used to launch Windows Media Center and cause it to navigate directly to one of the built-in experiences.
 
-#### wmplayer.exe {#h.any6oacfguwq" id="h.any6oacfguwq
+#### wmplayer.exe
 
-[http://www.mydigitallife.info/control-windows-media-player-behaviour-with-command-line-parameters/](http://technet.microsoft.com/en-us/library/cc754352.aspx)
+[https://www.mydigitallife.info/control-windows-media-player-behaviour-with-command-line-parameters/](https://www.mydigitallife.info/control-windows-media-player-behaviour-with-command-line-parameters/)
 
-[http://msdn2.microsoft.com/en-us/library/ms984439.aspx](http://technet.microsoft.com/en-us/library/cc725833.aspx)
+[http://msdn2.microsoft.com/en-us/library/ms984439.aspx](https://web.archive.org/web/2015/http://msdn2.microsoft.com/en-us/library/ms984439.aspx)
 
-#### Control Windows Media Player Behaviour with Command Line Parameters {#h.4pjm6sqvyf4b" id="h.4pjm6sqvyf4b
+#### Control Windows Media Player Behaviour with Command Line Parameters
 
 Windows Media Player (wmplayer) including WMPlayer 9, WMP 10 and Windows Media Player 11 supports set of command line parameters and operators that specify how the Windows Media Player behaves when it starts or launches. The parameters are good for WMPlayer users who wants to use command prompt to control and modify the behavior or condition of Windows Media Player. These command line operators or parameters can also be added to Windows shortcut to Windows Media Player as option for the target of shortcut, i.e. wmplayer.exe.
 
@@ -2923,27 +2923,20 @@ Possible options are http and https. Defaults to http.
 ``\--------``
 
 If present, quickconfig will not prompt for confirmation, and will enable
-
 the firewall exception regardless of current network profile settings.
 
 See also:
 
 winrm help config
 
-``C:\\>winrm help config``
+`C:\>winrm help config`
 
-Windows Remote Management Command Line Tool
-
+Windows Remote Management Command Line Tool<br>
 Configuration for WinRM is managed using the winrm command line or through GPO.
-
 Configuration includes global configuration for both the client and service.
-
 The WinRM service requires at least one listener to indicate the IP address(es)
-
 on which to accept WS-Management requests. For example, if the machine has
-
 multiple network cards, WinRM can be configured to only accept requests from
-
 one of the network cards.
 
 Global configuration
