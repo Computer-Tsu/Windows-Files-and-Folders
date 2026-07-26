@@ -6,7 +6,7 @@ from registry
 
 network shares and paths
 
-Libraries touched upon here? (More at: [http://www.grimadmin.com/article.php/creating-modifying-windows-7-libraries](http://technet.microsoft.com/en-us/magazine/jj663498.aspx))
+Libraries touched upon here? (More at: [http://www.grimadmin.com/article.php/creating-modifying-windows-7-libraries](https://www.grimadmin.com/article.php/creating-modifying-windows-7-libraries))
 
 note see apendice for shell extension clsid?
 
@@ -66,7 +66,7 @@ Get-StoredCredential -Target "TargetName"
 
 
 
-``1. [http://technet.microsoft.com/en-us/library/cc783264%28v=ws.10%29.aspx](http://technet.microsoft.com/en-us/library/cc783264\(v=ws.10\).aspx) ↑``
+``1. [http://technet.microsoft.com/en-us/library/cc783264%28v=ws.10%29.aspx](http://technet.microsoft.com/en-us/library/cc783264%28v=ws.10%29.aspx) ↑``
 2. [http://support.microsoft.com/kb/154599](http://support.microsoft.com/kb/154599) ↑
 3. [http://superuser.com/questions/38476/this-file-came-from-another-computer-how-can-i-unblock-all-the-files-in-a](http://superuser.com/questions/38476/this-file-came-from-another-computer-how-can-i-unblock-all-the-files-in-a) ↑
 4. [http://www.slipstick.com/outlook/2010/multiple-accounts-and-the-default-account/](http://www.slipstick.com/outlook/2010/multiple-accounts-and-the-default-account/) ↑
