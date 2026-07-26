@@ -147,7 +147,7 @@ AVG .dat files have GUIDs? ex. 36bc5203-fa71-4f47-b52a-d972668bff5d
 
 Compressed (zipped) Folders Error
 
-`[Filename] cannot be compressed because it includes characters that cannot be used in a compressed folder such as -. You should rename this file or directory.`
+  > [Filename] cannot be compressed because it includes characters that cannot be used in a compressed folder such as -. You should rename this file or directory.
 
 - dash<br>
 ' apostrophe<br>
@@ -155,25 +155,16 @@ Unicode characters
 
 ### Windows system and configuration files {#system-config-files}
 
-boot.ini
-
-autoexec.nt
-
-`systemroot\system32\autoexec.nt`
-
-`MSDOS.SYS` [Windows 9x]
-
-IO.SYS
-
-OEM.inf
-
-WIN.INI
-
-SYSTEM.INI
-
-pagefile.sys
-
-hiberfil.sys
+`boot.ini`<br>
+`autoexec.nt`<br>
+`systemroot\system32\autoexec.nt`<br>
+`MSDOS.SYS` [Windows 9x]<br>
+`IO.SYS`<br>
+`OEM.inf`<br>
+`WIN.INI`<br>
+`SYSTEM.INI`<br>
+`pagefile.sys`<br>
+`hiberfil.sys`
 
 Windows Boot Logs
 
@@ -229,21 +220,16 @@ C:\ProgramData\
 #### Volume File System Records {#Volume-System-Records}
 [SVI](SysVol.md)
 
-`C:\System Volume Information`
-
-`C:\System Volume Information\SPP\OnlineMetadataCache`
-
-`{}_OnDiskSnapshotProp`
-
-`C:\System Volume Information\SPP\SppCbsHiveStore`
-
-`C:\System Volume Information\SPP\SppGroupCache`
-
-`{}_DriverPackageInfo`
-
-`{}_WindowsUpdateInfo`
-
-`C:\System Volume Information\Windows Backup\Catalogs\GlobalCatalogLock.dat`
+```
+C:\System Volume Information
+C:\System Volume Information\SPP\OnlineMetadataCache
+{}_OnDiskSnapshotProp
+C:\System Volume Information\SPP\SppCbsHiveStore
+C:\System Volume Information\SPP\SppGroupCache
+{}_DriverPackageInfo
+{}_WindowsUpdateInfo
+C:\System Volume Information\Windows Backup\Catalogs\GlobalCatalogLock.dat
+```
 
 ```
 {}
@@ -278,10 +264,8 @@ All Users
 
 **Windows 7 Start Orb**
 
-Default user
-
-`Current User C:\Users\Username\AppData\Roaming\Microsoft\Windows\Start Menu`
-
+Default user<br>
+`Current User C:\Users\Username\AppData\Roaming\Microsoft\Windows\Start Menu`<br>
 `All Users C:\ProgramData\Microsoft\Windows\Start Menu`
 
 **Windows 8**
@@ -294,11 +278,11 @@ wevtvwr.msc
 
 `HKLM\SYSTEM\CurrentControlSet\services\eventlog\Application`
 
-`Default folder C:\Windows\System32\winevt\Logs`
+Default folder `C:\Windows\System32\winevt\Logs`
 
 syntax examples using GUI to filter
 
-[http://www.petri.co.il/filtering-and-custom-views-in-vista-event-viewer.htm](http://www.windowsitpro.com/article/remote-computing/remote-command-7227)
+[petri.co.il/filtering-and-custom-views-in-vista-event-viewer](https://web.archive.org/web/2015/http://www.petri.co.il/filtering-and-custom-views-in-vista-event-viewer.htm)
 
 NT/2000 Logs
 
@@ -360,19 +344,17 @@ Event : 4648 User logon attempted
 
 4624 logon successfull (Type 2 interactive, 3 network)
 
-System, WindowsUpdateClient, 19 update installed successfully
-
-System, EventLog, 6005 System Start
-
+System, WindowsUpdateClient, 19 update installed successfully<br>
+System, EventLog, 6005 System Start<br>
 System, EventLog, 6013 Uptime
 
 Time Changed event
 
-track usb device insert [http://www.swiftforensics.com/2012/08/tracking-usb-first-insertion-in-event.html](http://www.autoitscript.com/autoit3/docs/appendix/cls.htm)
+track usb device insert [http://www.swiftforensics.com/2012/08/tracking-usb-first-insertion-in-event.html](https://www.swiftforensics.com/2012/08/tracking-usb-first-insertion-in-event.html)
 
-links to repair corrupt [http://www.forensickb.com/2009/01/windows-event-logs.html](http://www.mydigitallife.info/command-line-switches-to-display-special-objects-or-folders-when-opening-windows-explorer/)
+links to repair corrupt [http://www.forensickb.com/2009/01/windows-event-logs.html](https://www.forensickb.com/2009/01/windows-event-logs.html)
 
-forensics detect cleared log books.google.com/books?isbn=1118236084
+forensics detect cleared log (https://books.google.com/books?isbn=1118236084)
 
 #### Enable Boot Logging option in Start Up
 
@@ -395,7 +377,7 @@ You can enable Emergency Management Services console redirection in the Recovery
 
 For specific information about setting Recovery Console Bootcfg parameters for Emergency Management Services, see "Emergency Management Services" at the Microsoft Windows Resource Kits Web site.
 
-`[http://technet.microsoft.com/en-us/library/cc786105%28v=ws.10%29.aspx](http://technet.microsoft.com/en-us/library/cc754361\(v=ws.10\).aspx)`
+[http://technet.microsoft.com/en-us/library/cc786105%28v=ws.10%29.aspx](http://technet.microsoft.com/en-us/library/cc786105%28v=ws.10%29.aspx)
 
 #### Setup log access {#setup-log-access}
 
@@ -405,11 +387,9 @@ SAC provides access to the setup logs during GUI-mode Setup. You can press ESC+T
 
 The three setup log channels are as follows:
 
-setuplog.txt Monitors setup progress.
-
-setupact.log Displays any warnings during setup.
-
-setuperr.log Displays any errors that might occur during setup.
+`setuplog.txt` Monitors setup progress.<br>
+`setupact.log` Displays any warnings during setup.<br>
+`setuperr.log` Displays any errors that might occur during setup.
 
 #### Registry {#registry}
 
@@ -431,8 +411,8 @@ setuperr.log Displays any errors that might occur during setup.
 
 **Service/System User Account Profile**
 
-`SYSTEM (S-1-5-18) %systemroot%\System32\config\systemprofile\ntuser.dat`
-`LOCAL SERVICE (S-1-5-19) C:\Windows\ServiceProfiles\LocalService\NTUSER.DAT`
+`SYSTEM (S-1-5-18) %systemroot%\System32\config\systemprofile\ntuser.dat`<br>
+`LOCAL SERVICE (S-1-5-19) C:\Windows\ServiceProfiles\LocalService\NTUSER.DAT`<br>
 `NETWORK SERVICE (S-1-5-20) C:\Windows\ServiceProfiles\NetworkService\NTUSER.DAT`
 
 Local Service and Network Service have full profiles including directory tree like a regular user account.
@@ -453,7 +433,7 @@ More information about Profiles above/below
 
 `System File Checker C:\Windows\System32\sfc.exe`
 
-sfc /verifynow
+`sfc /verifynow`
 
 Backup copies location `%WinDir%\System32\Dllcache\`
 
@@ -467,11 +447,11 @@ Registry key that stores install source
 
 Logs `C:\Windows\Logs\CBS\CBS.log`
 
-`findstr /c:"\[SR]" %windir%\Logs\CBS\CBS.log >"%userprofile%\Desktop\sfcdetails.txt"`
+`findstr /c:"[SR]" %windir%\Logs\CBS\CBS.log >"%userprofile%\Desktop\sfcdetails.txt"`
 
 SFCShowProgress registry entry is missing or is set to 1, and the server is set to scan every time that the computer starts. In this situation, WFP waits for a console logon. Therefore, the RPC server does not start until the scan is performed. The computer has no protection during this time.
 
-`HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SfcScan and others`
+`HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SfcScan` and others
 
 [http://support.microsoft.com/kb/222193](http://support.microsoft.com/kb/222193)
 
@@ -479,10 +459,8 @@ SFCShowProgress registry entry is missing or is set to 1, and the server is set 
 
 CON, PRN, AUX, NUL, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9
 
-**Usernames Prevented**
-
-Some versions cannot create user named “Admin” ?
-
+**Usernames Prevented**<br>
+Some versions cannot create user named “Admin” ?<br>
 Administrator, Default, Public, Guest, System
 
 The name cannot be identical to any other user, computer, or group name in the domain. It can contain up to 20 uppercase or lowercase characters except for the following: `" / \ [ ] : ; | = , + * ? <> `
@@ -506,10 +484,8 @@ Windows XP `C:\System Volume Information\_restore{D86480E3-73EF.....D8}\RP1\Snap
 
 **PerfMon**
 
-traces
-
-captures
-
+traces<br>
+captures<br>
 event triggers
 
 `perfmon.exe /report` (takes 60 seconds)
@@ -582,7 +558,7 @@ Overwrite any existing file or not?
 
 Tool to analyze memory dumps
 
-`nirsoft [http://nirsoft.net/utils/blue\_screen\_view.html](http://technet.microsoft.com/en-us/library/cc772829\(WS.10\).aspx)`
+nirsoft [http://nirsoft.net/utils/blue_screen_view.html](https://nirsoft.net/utils/blue_screen_view.html)
 
 sysinternals and others?
 
@@ -870,7 +846,7 @@ DWORD Start, Type
 | Manual                    |   |                     |                       | 3                    | Services          |
 | Disabled                  |   |                     |                       | 4                    | Drivers,Services  |
 
-Error Control and other entries [http://support.microsoft.com/kb/103000](http://en.wikipedia.org/wiki/Cmd.exe)
+Error Control and other entries [http://support.microsoft.com/kb/103000](https://support.microsoft.com/kb/103000)
 
 Error Type value, If error, can OS startup proceed?
 
@@ -878,7 +854,7 @@ See Install Apps in Safe Mode for allowing installs in safe mode
 
 `HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\MSIServer`
 
-**Order of preference of file extensions for execution**
+**Order of preference of file extensions for execution**<br>
 
 ,.EXE, .COM, .BAT, .CMD, .PIF ...
 
@@ -1007,7 +983,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command ". 'C
 ```
 Can also be run in ISE
 
-[http://technet.microsoft.com/en-us/library/dd297932%28v=exchg.141%29.aspx](http://technet.microsoft.com/en-us/library/cc742041.aspx)
+[http://technet.microsoft.com/en-us/library/dd297932%28v=exchg.141%29.aspx](http://technet.microsoft.com/en-us/library/dd297932%28v=exchg.141%29.aspx)
 
 iSCSI management cmdlets for Windows PowerShell
 
@@ -1142,7 +1118,7 @@ User State Migration Tool (USMT)
 
 **Windows 8.1 Update**
 
-[http://support.microsoft.com/kb/2919355](http://technet.microsoft.com/en-us/library/cc742070.aspx)
+[http://support.microsoft.com/kb/2919355](https://support.microsoft.com/kb/2919355)
 
 `[April 2014]`
 
@@ -1171,15 +1147,15 @@ see also volume activation in another section (under domain, volume activation t
 
 **slmgr.vbs**
 
-[https://social.technet.microsoft.com/forums/windows/en-US/ae88055e-8484-4580-99e8-80af956da67d/change-mak-to-kms-via-slmgr-upk](http://msdn2.microsoft.com/en-us/library/ms984439.aspx)
+[https://social.technet.microsoft.com/forums/windows/en-US/ae88055e-8484-4580-99e8-80af956da67d/change-mak-to-kms-via-slmgr-upk](https://web.archive.org/web/2015/https://social.technet.microsoft.com/forums/windows/en-US/ae88055e-8484-4580-99e8-80af956da67d/change-mak-to-kms-via-slmgr-upk)
 
 MGATool
 
-[http://go.microsoft.com/fwlink/?linkid=52012](http://msdn2.microsoft.com/en-us/library/ms984439.aspx?linkid=52012)
+[http://go.microsoft.com/fwlink/?linkid=52012](https://go.microsoft.com/fwlink/?linkid=52012)
 
 KMS troubleshooting
 
-[http://blogs.technet.com/b/odsupport/archive/2011/11/14/how-to-discover-kms-hosts-via-a-dns-query-and-remove-them-if-need-be.aspx](http://technet.microsoft.com/en-us/library/cc786105\(v=ws.10\).aspx)
+[http://blogs.technet.com/b/odsupport/archive/2011/11/14/how-to-discover-kms-hosts-via-a-dns-query-and-remove-them-if-need-be.aspx](https://web.archive.org/web/2015/http://blogs.technet.com/b/odsupport/archive/2011/11/14/how-to-discover-kms-hosts-via-a-dns-query-and-remove-them-if-need-be.aspx)
 
 #### Windows Updates {#h.i1j7n0ux0g6y" id="h.i1j7n0ux0g6y
 
@@ -1373,11 +1349,11 @@ If you have two printers with different settings (color/black-white, or default 
 
 {2227a280-3aea-1069-a2de-08002b30309d}
 
-[http://blogs.technet.com/b/askperf/archive/2010/03/02/windows-7-where-are-my-printers.aspx](http://technet.microsoft.com/en-us/library/cc731094.aspx)
+[http://blogs.technet.com/b/askperf/archive/2010/03/02/windows-7-where-are-my-printers.aspx](https://web.archive.org/web/2015/http://blogs.technet.com/b/askperf/archive/2010/03/02/windows-7-where-are-my-printers.aspx)
 
 You will need the right PCL/PostScript viewer to read .spl files
 
-[http://www.undocprint.org/formats/winspool/spl](http://technet.microsoft.com/en-us/library/cc772355.aspx)
+[http://www.undocprint.org/formats/winspool/spl](https://web.archive.org/web/2015/http://www.undocprint.org/formats/winspool/spl)
 
 `prnproc$` `C:\Windows\system32\spool\PRTPROCS Printer Drivers`<br>
 `print$` `C:\Windows\system32\spool\drivers Printer Drivers`
@@ -1478,7 +1454,7 @@ PrintBrm -B|R|Q [-S <server>] -F <file> [-D <directory>] [-O FORCE] [-P ALL|ORIG
 `sysprint.sep`<br>
 `sysprtj.sep`<br>
 
-[http://www.windowsnetworking.com/kbase/WindowsTips/WindowsXP/AdminTips/Network/SharedprinterseparatorpageforWindows2000andWindowsXP.html](http://technet.microsoft.com/en-us/library/cc753907.aspx)
+[http://www.windowsnetworking.com/kbase/WindowsTips/WindowsXP/AdminTips/Network/SharedprinterseparatorpageforWindows2000andWindowsXP.html](https://web.archive.org/web/2015/http://www.windowsnetworking.com/kbase/WindowsTips/WindowsXP/AdminTips/Network/SharedprinterseparatorpageforWindows2000andWindowsXP.html)
 
 | **File Name** | **Description** |
 | ------------- | --------------- |
@@ -1828,7 +1804,7 @@ Starter GPOs in domain
 | Windows XP SP2 EC Computer   |   | This Starter GPO contains the computer Group Policy settings recommended for the Enterprise Client (EC) environment described in the Windows XP security guide.                                      |
 | Windows XP SP2 SSLF User     |   | This Starter GPO contains the user Group Policy settings recommended for the Specialized Security Limited Functionality (SSLF) client environment described in the Windows XP security guide.        |
 
-For more information about each of these settings, see the Windows XP Security Guide ([http://go.microsoft.com/fwlink/?LinkID=121854](http://technet.microsoft.com/en-us/library/cc753708.aspx?LinkID=121854)).
+For more information about each of these settings, see the Windows XP Security Guide ([http://go.microsoft.com/fwlink/?LinkID=121854](https://go.microsoft.com/fwlink/?LinkID=121854).
 
 For more information about each of these settings, see the Windows Vista Security Guide (http://go.microsoft.com/fwlink/?LinkID=121852).
 
@@ -1922,11 +1898,11 @@ ssh. do different versions of telnet have different security?
 
 **rsexec?**
 
-[http://stackoverflow.com/questions/3412911/r-exe-rcmd-exe-rscript-exe-and-rterm-exe-whats-the-difference](https://docs.google.com/a/blackchambers.net/document/d/1A9JS-1G0uQMZu8TCnpwCcTVZDw-3lpqf-E-b7eX6xj4/edit)
+[http://stackoverflow.com/questions/3412911/r-exe-rcmd-exe-rscript-exe-and-rterm-exe-whats-the-difference](https://stackoverflow.com/questions/3412911/r-exe-rcmd-exe-rscript-exe-and-rterm-exe-whats-the-difference)
 
 rcmd (NT4 ResKit), remote
 
-[http://www.windowsitpro.com/article/remote-computing/remote-command-7227](http://technet.microsoft.com/en-us/library/cc754415.aspx)
+[http://www.windowsitpro.com/article/remote-computing/remote-command-7227](https://web.archive.org/web/2015/http://www.windowsitpro.com/article/remote-computing/remote-command-7227)
 
 [http://blogs.msdn.com/b/shamit/archive/2005/03/12/394650.aspx](http://blogs.msdn.com/b/shamit/archive/2005/03/12/394650.aspx)
 
@@ -1962,7 +1938,7 @@ Team Foundation Server (2012, ...)
 
 Virtual Server 2005
 
-Windows Server 2003 [https://ComputerName:8098](http://technet.microsoft.com/en-us/library/cc755162.aspx)
+Windows Server 2003 `https://ComputerName:8098` (http://technet.microsoft.com/en-us/library/cc755162.aspx)
 
 WSUS (2.0, not 3.0)
 
@@ -2373,7 +2349,7 @@ iso, gi, c2d, 2 hyperv, vmware, ima, img
 
 NFS
 
-[http://technet.microsoft.com/en-us/library/cc770454.aspx](http://technet.microsoft.com/en-us/library/cc770988.aspx)
+[http://technet.microsoft.com/en-us/library/cc770454.aspx](http://technet.microsoft.com/en-us/library/cc770454.aspx)
 
 | **Command** | **Description**                                                          |
 | ----------- | ------------------------------------------------------------------------ |
@@ -2781,7 +2757,7 @@ see also Personal Virtual Desktop and UNIX Attributes
 
 Managing Roaming User Data Deployment Guide
 
-[http://download.microsoft.com/download/3/b/a/3ba6d659-6e39-4cd7-b3a2-9c96482f5353/Managing%20Roaming%20User%20Data%20Deployment%20Guide.doc](http://technet.microsoft.com/en-us/library/cc731728.aspx)
+[http://download.microsoft.com/download/3/b/a/3ba6d659-6e39-4cd7-b3a2-9c96482f5353/Managing%20Roaming%20User%20Data%20Deployment%20Guide.doc](https://web.archive.org/web/2015/http://download.microsoft.com/download/3/b/a/3ba6d659-6e39-4cd7-b3a2-9c96482f5353/Managing%20Roaming%20User%20Data%20Deployment%20Guide.doc)
 
 **Different types of profiles**
 
@@ -2857,7 +2833,7 @@ AD versions and supported OS will be in a separate document.
 
 See Link to: ?
 
-[http://technet.microsoft.com/en-us/library/cc772829%28WS.10%29.aspx](http://technet.microsoft.com/en-us/library/cc732887.aspx)
+[http://technet.microsoft.com/en-us/library/cc772829%28WS.10%29.aspx](http://technet.microsoft.com/en-us/library/cc772829%28WS.10%29.aspx)
 
 Active Directory Technical References
 
@@ -2970,9 +2946,9 @@ Description: This dsmod command modifies existing objects in the directory.
 * dsquery.exe
 * dsrm.exe
 
-#### Active Directory Domain Services Command Reference {#h.b38vxxqc2f1i" id="h.b38vxxqc2f1i
+#### Active Directory Domain Services Command Reference
 
-[http://technet.microsoft.com/en-us/library/cc771131.aspx](http://www.microsoft.com/en-us/download/details.aspx)
+[http://technet.microsoft.com/en-us/library/cc771131.aspx](http://technet.microsoft.com/en-us/library/cc771131.aspx)
 
 | **Command**                                                                                                                                        | **Description**                                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2998,7 +2974,7 @@ Description: This dsmod command modifies existing objects in the directory.
 | [Net user](http://technet.microsoft.com/en-us/library/cc770592.aspx)                                                                               | Adds or modifies user accounts, or displays user account information.                                                                                                                                               |
 | [Nltest](http://go.microsoft.com/fwlink/)                                                                                                          | Performs network administrative tasks.                                                                                                                                                                              |
 | [Ntdsutil](http://technet.microsoft.com/en-us/library/cc753343.aspx)                                                                               | Provides management facilities for AD DS.                                                                                                                                                                           |
-| [Redircmp](http://technet.microsoft.com/en-us/library/dd297932\(v=exchg.141\).aspx)                                                                | Redirects the default container for newly created computers to a specified target organizational unit (OU) so that newly created computer objects are created in the specific target OU instead of in CN=Computers. |
+| [Redircmp](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/cc770619(v=ws.11))                                                                | Redirects the default container for newly created computers to a specified target organizational unit (OU) so that newly created computer objects are created in the specific target OU instead of in CN=Computers. |
 | [Redirusr](http://support.microsoft.com/kb/2919355)                                                                                                | Redirects the default container for newly created users to a specified target OU so that newly created user objects are created in the specific target OU instead of in CN=Users.                                   |
 | [Repadmin](http://technet.microsoft.com/en-us/library/ee624057.aspx)                                                                               | Makes it possible for administrators to diagnose Active Directory replication problems between domain controllers running Windows operating systems.                                                                |
 | [Setspn](http://www.windowsnetworking.com/kbase/WindowsTips/WindowsXP/AdminTips/Network/SharedprinterseparatorpageforWindows2000andWindowsXP.html) | Makes it possible for administrators to read, modify, and delete the Service Principal Names (SPN) directory property for an Active Directory service account.                                                      |
@@ -3074,7 +3050,7 @@ For organizations that require flexible support for directory-enabled applicatio
 
 KB902838
 
-[http://www.microsoft.com/en-us/download/details.aspx?id=4201](http://www.askvg.com/revealing-interesting-secret-behind-windows-build-numbers/?id=4201)
+[http://www.microsoft.com/en-us/download/details.aspx?id=4201](http://www.microsoft.com/en-us/download/details.aspx?id=4201)
 
 #### Active Directory Web Services (ADWS) {#h.ell1a23jtwxe" id="h.ell1a23jtwxe
 
@@ -3093,8 +3069,8 @@ KB902838
 
     [http://en.wikipedia.org/wiki/NTBackup](http://en.wikipedia.org/wiki/NTBackup) ↑
 9. [http://office.microsoft.com/en-us/outlook-help/copy-outlook-express-address-book-contacts-to-outlook-HA001091960.aspx](http://office.microsoft.com/en-us/outlook-help/copy-outlook-express-address-book-contacts-to-outlook-HA001091960.aspx) ↑
-10. [http://technet.microsoft.com/en-us/library/cc179199%28v=office.14%29.aspx](http://technet.microsoft.com/en-us/library/cc179199\(v=office.14\).aspx) ↑
-11. [http://technet.microsoft.com/en-us/library/cc179110%28v=office.14%29.aspx](http://technet.microsoft.com/en-us/library/cc179110\(v=office.14\).aspx) ↑
+10. [http://technet.microsoft.com/en-us/library/cc179199%28v=office.14%29.aspx](http://technet.microsoft.com/en-us/library/cc179199%28v=office.14%29.aspx) ↑
+11. [http://technet.microsoft.com/en-us/library/cc179110%28v=office.14%29.aspx](http://technet.microsoft.com/en-us/library/cc179110%28v=office.14%29.aspx) ↑
 12. [http://www.networksteve.com/exchange/topic.php/Different\_work\_day\_times/?TopicId=8284\&Posts=6](http://www.networksteve.com/exchange/topic.php/Different\_work\_day\_times/?TopicId=8284\&Posts=6) ↑
 13. [http://office.microsoft.com/en-us/outlook-help/blocked-attachments-in-outlook-HA001229952.aspx](http://office.microsoft.com/en-us/outlook-help/blocked-attachments-in-outlook-HA001229952.aspx) ↑
 14. [http://www.nirsoft.net/utils/outlook\_nk2\_edit.html](http://www.nirsoft.net/utils/outlook\_nk2\_edit.html) ↑
