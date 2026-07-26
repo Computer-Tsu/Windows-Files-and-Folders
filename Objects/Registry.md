@@ -46,4 +46,4 @@
 
 **Note**
 
-[http://en.wikipedia.org/wiki/Regedit#Editing](http://office.microsoft.com/en-us/outlook-help/where-does-microsoft-outlook-2010-save-my-information-and-configurations-HP010354943.aspx#Editing) for additional .REG file format, command-line, and system registry file locations.
+[http://en.wikipedia.org/wiki/Regedit#Editing](https://en.wikipedia.org/wiki/Regedit#Editing) for additional .REG file format, command-line, and system registry file locations.
