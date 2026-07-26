@@ -31,11 +31,13 @@
 | Windows 11 22H2           | 10.0.22621       |
 | Windows 11 23H2           | 10.0.22631       |
 | Windows 11 24H2           | 10.0.26100       |
+| Windows 11 25H1           | 10.0.       |
+| Windows 11 25H2           | 10.0.       |
 |                           |                  |
 |                           |                  |
 
 
-`[http://www.askvg.com/revealing-interesting-secret-behind-windows-build-numbers/?utm\_source=feedburner\&utm\_medium=feed\&utm\_campaign=Feed%3A+AskVG+%28AskVG%29](http://stackoverflow.com/questions/3412911/r-exe-rcmd-exe-rscript-exe-and-rterm-exe-whats-the-difference?utm\_source=feedburner\&utm\_medium=feed\&utm\_campaign=Feed:+AskVG+\(AskVG\))`
+[http://www.askvg.com/revealing-interesting-secret-behind-windows-build-numbers/](https://www.askvg.com/revealing-interesting-secret-behind-windows-build-numbers/)
 
 [http://technet.microsoft.com/en-us/magazine/jj663498.aspx](https://docs.google.com/a/blackchambers.net/document/d/1A9JS-1G0uQMZu8TCnpwCcTVZDw-3lpqf-E-b7eX6xj4/edit)
 
