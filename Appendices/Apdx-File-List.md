@@ -747,7 +747,7 @@ mctadmin.exe
 
 MdRes.exe
 
-MdSched.exe
+`MdSched.exe` Memory diagnostic scheduler - starts the Windows RAM test boot
 
 mfpmp.exe
 
