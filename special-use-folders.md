@@ -149,8 +149,8 @@ Compressed (zipped) Folders Error
 
 > [Filename] cannot be compressed because it includes characters that cannot be used in a compressed folder such as -. You should rename this file or directory.
 
-- dash<br>
-' apostrophe<br>
+`-` dash<br>
+`'` apostrophe<br>
 Unicode characters
 
 ### Windows system and configuration files {#system-config-files}
@@ -278,7 +278,7 @@ need detail
 **CapabilityAccessManager.db-wal**  
 `C:\ProgramData\Microsoft\Windows\CapabilityAccessManager\CapabilityAccessManager.db-wal`
 
-- **Owner:** `camsvc` (Capability Access Manager service) — tracks app permission requests for camera, microphone, location, and screen capture, storing every access request in a SQLite database [IT-Connect — Windows 11: This hidden file can devour your entire disk](https://www.it-connect.tech/windows-11-this-hidden-file-can-devour-your-entire-disk/)
+- **Owner:** `camsvc` (Capability Access Manager service) - tracks app permission requests for camera, microphone, location, and screen capture, storing every access request in a SQLite database [IT-Connect — Windows 11: This hidden file can devour your entire disk](https://www.it-connect.tech/windows-11-this-hidden-file-can-devour-your-entire-disk/)
 - **Normal size:** under 4 MB for the whole folder on an unaffected PC, with the .db-wal file around 1.6 MB [IT-Connect — Windows 11: This hidden file can devour your entire disk](https://www.it-connect.tech/windows-11-this-hidden-file-can-devour-your-entire-disk/)
 - **Bug:** Windows 11 24H2 and 25H2 have a known bug where camsvc enters a continuous loop and repeatedly writes entries to the log file, with the WAL never merging back into the main database and ballooning past 500 GB in some cases. Community root-cause tracing (Process Monitor) pointed to repeated Location-permission requests triggering the loop. [WinTips — How to fix CapabilityAccessManager.db-wal taking up huge disk space on Windows 11](https://www.wintips.org/how-to-fix-capabilityaccessmanager-db-wal-taking-up-huge-disk-space-on-windows-11/), [IT-Connect — Windows 11: This hidden file can devour your entire disk](https://www.it-connect.tech/windows-11-this-hidden-file-can-devour-your-entire-disk/)
 - **Fix/KB:** Microsoft acknowledged it and shipped a fix mid-2026; reporting is inconsistent on the exact KB (one source cites KB5101650 for a July 14, 2026 CU; Windows Latest reported a quiet fix note added June 29, 2026). Confirm current KB against your Windows Update history before relying on a number. Workaround: stop `camsvc`, delete the file from Safe Mode/WinRE, restart the service.
@@ -286,40 +286,40 @@ need detail
 **ActivitiesCache.db**  
 `%LocalAppData%\ConnectedDevicesPlatform\<L.username or MSA-ID>\ActivitiesCache.db`
 
-- **Owner:** `CDPUserSvc` (Connected Devices Platform User Service) — backs Windows Timeline / Activity History (Project Rome cross-device experience)
-- **Cause:** Not a formally documented Microsoft bug — persistent community-reported issue where the DB grows to hundreds of MB and the service re-uploads/reloads it on every logon, also spiking RAM. One user found the file at 800 MB and suspected the service was loading it entirely into memory to upload contents to Microsoft servers. [Microsoft Learn — Connected Devices Platform User Service uploads data (Q&A)](https://learn.microsoft.com/en-us/answers/questions/4336026/connected-devices-platform-user-service-uploads-da)
+- **Owner:** `CDPUserSvc` (Connected Devices Platform User Service) - backs Windows Timeline / Activity History (Project Rome cross-device experience)
+- **Cause:** Not a formally documented Microsoft bug - persistent community-reported issue where the DB grows to hundreds of MB and the service re-uploads/reloads it on every logon, also spiking RAM. One user found the file at 800 MB and suspected the service was loading it entirely into memory to upload contents to Microsoft servers. [Microsoft Learn — Connected Devices Platform User Service uploads data (Q&A)](https://learn.microsoft.com/en-us/answers/questions/4336026/connected-devices-platform-user-service-uploads-da)
 - **Fix:** No KB. Stop `CDPUserSvc`/`CDPSvc`, delete the `.db`/`.db-shm`/`.db-wal` set, restart. Disabling Activity History in Settings &gt; Privacy &gt; Activity history prevents recurrence.
 
 **Windows.edb**  
 `C:\ProgramData\Microsoft\Search\Data\Applications\Windows\Windows.edb` (Win 11 uses `Windows.db` instead)
 
-- **Owner:** `WSearch` (Windows Search Indexer, `SearchIndexer.exe`) — ESE database holding indexed file/email metadata and content
-- **Cause:** Windows.edb becomes larger than expected when a PST file is indexed — the size grows in proportion to the size of the PST file, and this issue doesn't occur in Windows 7. Windows 8/8.1/10 store both properties and persistent indexes in Windows.edb and index entire file contents regardless of size, neither of which is configurable. [Microsoft — Troubleshoot: Larger Windows.edb file](https://learn.microsoft.com/en-us/troubleshoot/windows-client/shell-experience/larger-windowsdotedb-file)
-- **KB:** **KB2952967** — Win 10/8.1/8, the PST-indexing bloat issue. **KB2836988** — older May 2013 rollup for the constant growth of Windows.edb on Windows 8 and Windows Server 2012. [HelpSpot — TechPros KB article (How to Reduce Windows.edb Huge File Size)](https://techpros.helpspot.com/index.php?pg=kb.page&id=35)
+- **Owner:** `WSearch` (Windows Search Indexer, `SearchIndexer.exe`) - ESE database holding indexed file/email metadata and content
+- **Cause:** Windows.edb becomes larger than expected when a PST file is indexed - the size grows in proportion to the size of the PST file, and this issue doesn't occur in Windows 7. Windows 8/8.1/10 store both properties and persistent indexes in Windows.edb and index entire file contents regardless of size, neither of which is configurable. [Microsoft — Troubleshoot: Larger Windows.edb file](https://learn.microsoft.com/en-us/troubleshoot/windows-client/shell-experience/larger-windowsdotedb-file)
+- **KB:** **KB2952967** - Win 10/8.1/8, the PST-indexing bloat issue. **KB2836988** - older May 2013 rollup for the constant growth of Windows.edb on Windows 8 and Windows Server 2012. [HelpSpot — TechPros KB article (How to Reduce Windows.edb Huge File Size)](https://techpros.helpspot.com/index.php?pg=kb.page&id=35)
 - **Fix:** Rebuild index (Indexing Options &gt; Advanced &gt; Rebuild) or offline defrag with `esentutl`; exclude Outlook/PST from indexed locations.
 
 **CBS.log**  
 `C:\Windows\Logs\CBS\CBS.log`
 
-- **Owner:** Windows Modules Installer / TrustedInstaller (Component-Based Servicing) — records detailed information about servicing operations, changes to system files, and Windows Update/SFC operations [MiniTool — CBS.log file growing so large](https://www.minitool.com/partition-disk/cbslog-file-growing-so-large.html)
-- **Cause:** Log files are split at 50 MB and compressed via makecab, but if a file grows to 2 GB before compression, makecab can't compress it and the file balloons rapidly — typically triggered by a stuck/repeatedly-failing update. [Appuals — Component-Based Servicing (CBS) log using excessive disk space](https://appuals.com/component-based-servicing-cbs-log-using-excessive-disk-space/)
+- **Owner:** Windows Modules Installer / TrustedInstaller (Component-Based Servicing) - records detailed information about servicing operations, changes to system files, and Windows Update/SFC operations [MiniTool — CBS.log file growing so large](https://www.minitool.com/partition-disk/cbslog-file-growing-so-large.html)
+- **Cause:** Log files are split at 50 MB and compressed via makecab, but if a file grows to 2 GB before compression, makecab can't compress it and the file balloons rapidly - typically triggered by a stuck/repeatedly-failing update. [Appuals — Component-Based Servicing (CBS) log using excessive disk space](https://appuals.com/component-based-servicing-cbs-log-using-excessive-disk-space/)
 - **KB:** **KB4056892** (Jan 2018, Meltdown/Spectre-era Win10 patch) is the documented case where a stuck install caused runaway CBS.log growth until disk was full; stopping Windows Update, deleting CBS.log, and manually installing the KB resolved it.
-- **Fix (general):** Stop TrustedInstaller/Windows Update service, delete the file (safe — regenerates automatically).
+- **Fix (general):** Stop TrustedInstaller/Windows Update service, delete the file (safe - regenerates automatically).
 
 **UsrClass.dat / NTUSER.DAT (registry hives)**  
 `C:\Users\<user>\AppData\Local\Microsoft\Windows\UsrClass.dat` and `C:\Users\<user>\NTUSER.DAT` (+ `.LOG1`/`.LOG2` transaction logs alongside)
 
-- **Owner:** Per-user registry hives — UsrClass.dat holds `HKCU\Software\Classes`
-- **Documented bug:** on x64 Windows 8.1, Server 2012 R2, Windows 8, or Server 2012, if a registry hive exceeds the 2 GB size limit, the computer can't be restarted — symptoms include boot to stop error, or booting into a temp profile blocked by Registry Quota Limit. [Microsoft — Unable to restart server due to registry bloat over 2 GB (Support blog archive)](https://learn.microsoft.com/en-us/archive/blogs/supportingwindows/unable-to-restart-server-due-to-registry-bloat-over-2gb)
+- **Owner:** Per-user registry hives - UsrClass.dat holds `HKCU\Software\Classes`
+- **Documented bug:** on x64 Windows 8.1, Server 2012 R2, Windows 8, or Server 2012, if a registry hive exceeds the 2 GB size limit, the computer can't be restarted - symptoms include boot to stop error, or booting into a temp profile blocked by Registry Quota Limit. [Microsoft — Unable to restart server due to registry bloat over 2 GB (Support blog archive)](https://learn.microsoft.com/en-us/archive/blogs/supportingwindows/unable-to-restart-server-due-to-registry-bloat-over-2gb)
 - **KB:** **KB2978366**
-- Note: unrelated to this is the July 2026 "LegacyHive" PoC (ProfSvc hive-loading abuse targeting UsrClass.dat) — that's a privilege-escalation issue, not a growth/disk-space one, worth keeping separate in your doc set.
+- Note: unrelated to this is the July 2026 "LegacyHive" PoC (ProfSvc hive-loading abuse targeting UsrClass.dat) - that's a privilege-escalation issue, not a growth/disk-space one, worth keeping separate in your doc set.
 
 **WMI Repository (OBJECTS.DATA)**  
 `C:\Windows\System32\wbem\Repository\OBJECTS.DATA`
 
-- **Owner:** `Winmgmt` (WMI service) — stores meta-information and class definitions for WMI, and in some cases static class data as well [Microsoft — WMI Repository Corruption or Not (Support blog archive)](https://learn.microsoft.com/en-us/archive/blogs/supportingwindows/wmi-repository-corruption-or-not)
+- **Owner:** `Winmgmt` (WMI service) - stores meta-information and class definitions for WMI, and in some cases static class data as well [Microsoft — WMI Repository Corruption or Not (Support blog archive)](https://learn.microsoft.com/en-us/archive/blogs/supportingwindows/wmi-repository-corruption-or-not)
 - **Cause:** No single KB; grows from repeated provider registration churn, AV scanning interference, or heavy SCCM/endpoint-agent WMI activity. Microsoft's own guidance: if objects.data is 1 GB or larger, rebuild the repository; between 600–900 MB with no performance issues, don't bother. [Microsoft — WMI Repository Corruption or Not (Support blog archive)](https://learn.microsoft.com/en-us/archive/blogs/supportingwindows/wmi-repository-corruption-or-not)
-- **Fix:** `winmgmt /verifyrepository`, then `winmgmt /resetrepository` if inconsistent (last resort — can break apps that registered WMI classes). Exclude `%windir%\System32\wbem` from AV real-time scanning.
+- **Fix:** `winmgmt /verifyrepository`, then `winmgmt /resetrepository` if inconsistent (last resort - can break apps that registered WMI classes). Exclude `%windir%\System32\wbem` from AV real-time scanning.
 
 ### Office / Outlook
 
@@ -331,7 +331,7 @@ need detail
 [WinTips — Fix Outlook OST data file exceeds 50 GB limit with shared mailboxes](https://www.wintips.org/fix-outlook-ost-data-file-exceeds-50-gb-limit-with-shared-mailboxes/), 
 [Microsoft — MSDN/TechNet forum thread (archive)](https://learn.microsoft.com/en-us/archive/msdn-technet-forums/7cf673b7-5d86-47a6-a439-ca0d2adc73d7)
 - **Limit:** Outlook 2010+ supports OST files up to 20 GB in Unicode format; the older ANSI format was capped at 2 GB (registry `MaxLargeFileSize`/`WarnLargeFileSize` DWORDs under `HKCU\...\Outlook\PST` raise this). [Practical365 — Outlook Cached Mode OST file sizes](https://practical365.com/outlook-cached-mode-ost-file-sizes/)
-- **Related KB:** **KB3046189** — a specific mechanism where the hidden `PR_OST_OSTID` mailbox property grows ~20 bytes per cached-mode profile creation and eventually blocks Outlook from starting in cached mode once it exceeds ~32 KB.
+- **Related KB:** **KB3046189** - a specific mechanism where the hidden `PR_OST_OSTID` mailbox property grows ~20 bytes per cached-mode profile creation and eventually blocks Outlook from starting in cached mode once it exceeds ~32 KB.
 - **Fix:** Disable automapping for shared mailboxes, use the sync slider / sync filters, move old items to a local .pst archive.
 
 ### Cleanup targets worth documenting alongside these (folders more than single files, but same "silent disk consumption" category)
@@ -347,7 +347,7 @@ need detail
 | `C:\Windows\debug\usermode\gpsvc.log` | gpsvc | Only appears if verbose GP logging enabled via `GPSvcDebugLevel=0x30002` reg value; unbounded once on |
 | `C:\Windows\debug\netlogon.log` (DCs) | Netlogon | Grows if `DBFlag` debug reg value set; default rotation caps at 20MB→.bak unless disabled |
 | `C:\inetpub\logs\LogFiles` | W3SVC | No default retention/rotation limit on IIS logs |
-| `%AppData%\Microsoft\Teams` (classic Win32 Teams) | Teams | `blob_storage`/IndexedDB/tmp folders bloat with no auto-cleanup; app is EOL — migrate to new Teams |
+| `%AppData%\Microsoft\Teams` (classic Win32 Teams) | Teams | `blob_storage`/IndexedDB/tmp folders bloat with no auto-cleanup; app is EOL - migrate to new Teams |
 
 A couple of flags on sourcing: the CapabilityAccessManager KB numbers are inconsistent across the outlets reporting them, so verify against Windows Update history / the Windows release health dashboard. Everything else above (KB2952967, KB2836988, KB4056892, KB2978366, KB3046189) checks out against Microsoft Learn/archived TechNet sourcing directly.
 
@@ -379,7 +379,7 @@ WEvtUtil
 
 Tip: Create a custom view to search all the event logs.
 
-_Server Roles_
+*Server Roles*
 
 Administrative Events
 
@@ -407,9 +407,9 @@ Custom Views can import as Xml files
 | Key Management Service  |  `%SystemRoot%\System32\Winevt\Logs\Key Management Service.evtx` |
 | Media Center  |  `%SystemRoot%\System32\Winevt\Logs\Media Center.evtx` |
 
-_Microsoft_
+*Microsoft*
 
-_Windows_
+*Windows*
 
 |  Name  |  Path  |
 | ----- | ----- |
@@ -528,7 +528,10 @@ Logs `C:\Windows\Logs\CBS\CBS.log`
 
 `findstr /c:"[SR]" %windir%\Logs\CBS\CBS.log >"%userprofile%\Desktop\sfcdetails.txt"`
 
-SFCShowProgress registry entry is missing or is set to 1, and the server is set to scan every time that the computer starts. In this situation, WFP waits for a console logon. Therefore, the RPC server does not start until the scan is performed. The computer has no protection during this time.
+SFCShowProgress registry entry is missing or is set to 1, and the server is set to scan every time that the computer starts.
+In this situation, WFP waits for a console logon.
+Therefore, the RPC server does not start until the scan is performed.
+The computer has no protection during this time.
 
 `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SfcScan` and others
 
@@ -542,7 +545,9 @@ CON, PRN, AUX, NUL, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, LPT1, 
 Some versions cannot create user named “Admin” ?<br>
 Administrator, Default, Public, Guest, System
 
-The name cannot be identical to any other user, computer, or group name in the domain. It can contain up to 20 uppercase or lowercase characters except for the following: `" / \ [ ] : ; | = , + * ? <> `
+The name cannot be identical to any other user, computer, or group name in the domain.
+It can contain up to 20 uppercase or lowercase characters except for the following:
+`" / \ [ ] : ; | = , + * ? <> `
 
 
 #### Recycle Bin {#recycle-bin}
@@ -661,7 +666,8 @@ Uses the scheduled tasks to actually store, but can be created in Event Viewer w
 
 `ReadyBoost.sfcache _\<Flash drive>_\ReadyBoost.sfcache`
 
-Cannot be enabled on Windows Server. Cannot be enabled when Windows is installed on an SSD drive.
+Cannot be enabled on Windows Server.
+Cannot be enabled when Windows is installed on an SSD drive.
 
 #### Offline Files {#offline-files}
 
@@ -726,30 +732,18 @@ _Start Value (Image path)_
 
 _Group name (Service)_
 
-Boot (system32\drivers)
-
-WdfLoadGroup (Wdf01000)
-
-Boot Bus Extender (ACPI, msisadrv, pci, vdrvroot, partmgr)
-
-System Bus Extender (volmgr, volmgrx, mountmgr)
-
-SCSI Miniport (iaStor, amdxata)
-
-FSFilter Infrastructure (FltMgr)
-
-FSFilter Bottom (FileInfo)
-
-Filter (CLFS, PxHlpa64)
-
-Base (KSecDD, CNG, pcw)
-
-File System (Fs_Rec)
-
-NDIS Wrapper (NDIS)
-
-Cryptography (KSecPkg)
-
+Boot (system32\drivers)<br>
+WdfLoadGroup (Wdf01000)<br>
+Boot Bus Extender (ACPI, msisadrv, pci, vdrvroot, partmgr)<br>
+System Bus Extender (volmgr, volmgrx, mountmgr)<br>
+SCSI Miniport (iaStor, amdxata)<br>
+FSFilter Infrastructure (FltMgr)<br>
+FSFilter Bottom (FileInfo)<br>
+Filter (CLFS, PxHlpa64)<br>
+Base (KSecDD, CNG, pcw)<br>
+File System (Fs_Rec)<br>
+NDIS Wrapper (NDIS)<br>
+Cryptography (KSecPkg)<br>
 PNP\TDI (Tcpip)
 
 [Anti-Virus]
@@ -983,7 +977,8 @@ E I C A R - S T A N D A R D - A N T I V I R U S - T E S T - F I L E !
 $ H + H *
 ```
 third character is the capital 'O'. string is all one line, no spaces. [Spaces and line breaks added as extra precaution thi file not be blocked by AV]<br>
-According to EICAR's specification the antivirus detects the test file only if it starts with the 68-byte test string and is not more than 128 bytes long. As a result, antiviruses are not expected to raise an alarm on some other document containing the test string.
+According to EICAR's specification the antivirus detects the test file only if it starts with the 68-byte test string and is not more than 128 bytes long.
+As a result, antiviruses are not expected to raise an alarm on some other document containing the test string.
 
 #### PowerShell
 
@@ -1826,7 +1821,34 @@ Failover Cluster Manager has Failover Cluster Extensions, Failover Cluster Resou
 
 Failover Cluster Manager Host has DHCP Extension, Print Management
 
-Group Policy Management Editor has Administrative Templates (Computers)\*, Administrative Templates (Users)\*, Extended View, Folder Redirection Editor (Users), Group Policy Application Settings\*, Group Policy Computer Control Panel\*, Group Policy Drive Settings\*, Group Policy Environment Settings\*, Group Policy File Settings\*, Group Policy Folder Settings\*, Group Policy Ini File Settings\*, Group Policy Printers Settings\*, Group Policy Registry Settings\*, Group Policy Shortcut Settings\*, Group Policy User Control Panel\*, Internet Explorer Maintenance, Name Resolution Policy, Name Resolution Policy \[?], Policy-based QoS (Computers), Policy-based QoS (Users), Pushed Printer Connection Extension (Computers)\*, Pushed Printer Connection Extension (Users)\*, Scripts (Logon/Logoff)\*, Scripts (Startup/Shutdown)\*, Security Settings\*, Software Installation (Computers), Software Installation (Users)
+Group Policy Management Editor has
+Administrative Templates (Computers)\*,
+Administrative Templates (Users)\*,
+Extended View,
+Folder Redirection Editor (Users),
+Group Policy Application Settings\*,
+Group Policy Computer Control Panel\*,
+Group Policy Drive Settings\*,
+Group Policy Environment Settings\*,
+Group Policy File Settings\*,
+Group Policy Folder Settings\*,
+Group Policy Ini File Settings\*,
+Group Policy Printers Settings\*,
+Group Policy Registry Settings\*,
+Group Policy Shortcut Settings\*,
+Group Policy User Control Panel\*,
+Internet Explorer Maintenance,
+Name Resolution Policy,
+Name Resolution Policy \[?],
+Policy-based QoS (Computers),
+Policy-based QoS (Users),
+Pushed Printer Connection Extension (Computers)\*,
+Pushed Printer Connection Extension (Users)\*,
+Scripts (Logon/Logoff)\*,
+Scripts (Startup/Shutdown)\*,
+Security Settings\*,
+Software Installation (Computers),
+Software Installation (Users)
 
 Group Policy Object Editor has ...
 ```
@@ -1851,7 +1873,10 @@ Security Settings\*
 Software Installation (Computers), Software Installation (Users)
 ```
 
-Internet Information.6.. has ASP.NET Management Extension, Extended View, SMTP Protocol
+Internet Information.6.. has
+ASP.NET Management Extension,
+Extended View,
+SMTP Protocol
 
 Local Users and Groups has Remote Desktop Services - Extension
 
@@ -1863,7 +1888,10 @@ Resultant Set of Policy has ...
 
 Server Manager has ...?
 
-Services has Extended View, Services Dependencies, Snmp Snapin Extension
+Services has
+Extended View,
+Services Dependencies,
+Snmp Snapin Extension
 
 Shared Folders has no extensions but View: (All, Sessions, Shares, Open Files)
 
@@ -1888,7 +1916,7 @@ Starter GPOs in domain
 
 For more information about each of these settings, see the Windows XP Security Guide ([http://go.microsoft.com/fwlink/?LinkID=121854](https://go.microsoft.com/fwlink/?LinkID=121854).
 
-For more information about each of these settings, see the Windows Vista Security Guide (http://go.microsoft.com/fwlink/?LinkID=121852).
+For more information about each of these settings, see the [Windows Vista Security Guide](http://go.microsoft.com/fwlink/?LinkID=121852).
 
 Also in `C:\Windows\inf\StarterGPOs`
 
@@ -1974,12 +2002,10 @@ Microsoft Windows 2000, Windows XP, Windows Server 2003 and Windows Server 2003 
 
 ssh. do different versions of telnet have different security?
 
-**powershell**
-
+**powershell**<br>
 [http://technet.microsoft.com/en-us/library/dd819505.aspx](http://technet.microsoft.com/en-us/library/dd819505.aspx)
 
-**rsexec?**
-
+**rsexec?**<br>
 [http://stackoverflow.com/questions/3412911/r-exe-rcmd-exe-rscript-exe-and-rterm-exe-whats-the-difference](https://stackoverflow.com/questions/3412911/r-exe-rcmd-exe-rscript-exe-and-rterm-exe-whats-the-difference)
 
 rcmd (NT4 ResKit), remote
@@ -1988,12 +2014,10 @@ rcmd (NT4 ResKit), remote
 
 [http://blogs.msdn.com/b/shamit/archive/2005/03/12/394650.aspx](http://blogs.msdn.com/b/shamit/archive/2005/03/12/394650.aspx)
 
-**winrs**
-
+**winrs**<br>
 `winrs –r:ServerName cmd.exe`
 
-**psexec**
-
+**psexec**<br>
 psexec and more http://serverfault.com/questions/32489/remote-command-execution-on-windows-2003-server
 
 **at/schtasks**
@@ -2331,7 +2355,12 @@ WMIC
 
 **File and Storage Services Tools**
 
-File Services Tools include the following: Share and Storage Management Tools; Distributed File System Tools; File Server Resource Manager Tools; Services for NFS Administration Tools; iSCSI management cmdlets for Windows PowerShell
+File Services Tools include the following:
+Share and Storage Management Tools;
+Distributed File System Tools;
+File Server Resource Manager Tools;
+Services for NFS Administration Tools;
+iSCSI management cmdlets for Windows PowerShell
 
  - Distributed File System Tools include the DFS Management snap-in, and the **Dfsradmin.exe**, **Dfsrdiag.exe**, **Dfscmd.exe**, **Dfsdiag.exe**, and **Dfsutil.exe** command-line tools.
  - File Server Resource Manager tools include the File Server Resource Manager snap-in, and the **Dirquota.exe**, **Filescrn.exe**, and **Storrept.exe** command line tools.
@@ -2484,7 +2513,10 @@ default install directory under current user
 
 **Network Load Balancing Tools**
 
-Network Load Balancing Tools include the Network Load Balancing Manager; Network Load Balancing Windows PowerShell Cmdlets; and the NLB.exe and WLBS.exe Command Line Tools.
+Network Load Balancing Tools include the
+Network Load Balancing Manager;
+Network Load Balancing Windows PowerShell Cmdlets;
+and the NLB.exe and WLBS.exe Command Line Tools.
 
 #### Remote Desktop Services (Terminal Services/RDP)
 
@@ -2497,7 +2529,11 @@ A few programs won’t install in a term session, connect on the console.<br>
 
 **Remote Desktop Services Tools**
 
-Remote Desktop Services Tools include the Remote Desktop snap-ins; RD Gateway Manager, tsgateway.msc; RD Licensing Manager, licmgr.exe; RD Licensing Diagnoser, lsdiag.msc.
+Remote Desktop Services Tools include the
+Remote Desktop snap-ins;
+RD Gateway Manager, `tsgateway.msc`;
+RD Licensing Manager, `licmgr.exe`;
+RD Licensing Diagnoser, `lsdiag.msc`.
 
 Server Manager should be used for administration of all other RDS role services except RD Gateway and RD Licensing.
 
@@ -2592,29 +2628,23 @@ Windows System Resource Manager Tools include the Windows System Resource Manage
 
 #### Microsoft Desktop Optimization Pack (MDOP)
 
-**Advanced Group Policy Management (AGPM)**
-
+**Advanced Group Policy Management (AGPM)**<br>
 Microsoft AGPM provides comprehensive change control and improved management for Group Policy objects.
 
-**Application Virtualization (App-V)**
-
+**Application Virtualization (App-V)**<br>
 Microsoft App-V allows you to make applications available to end user computers without having to install the applications directly on those computers.
 
-**Diagnostics and Recovery Toolset (DaRT)**
-
+**Diagnostics and Recovery Toolset (DaRT)**<br>
 Microsoft DaRT lets you diagnose and repair a system that has problems starting or has other issues.<br>
 Can only get through Software Assurance of Windows Volume License
 
-**Microsoft BitLocker Administration and Monitoring (MBAM)**
-
+**Microsoft BitLocker Administration and Monitoring (MBAM)**<br>
 MBAM provides a simplified administrative interface to BitLocker drive encryption.
 
-**Microsoft Enterprise Desktop Virtualization (MED-V)**
-
+**Microsoft Enterprise Desktop Virtualization (MED-V)**<br>
 MED-V allows you to easily create, deliver and manage corporate Virtual PC images on any Windows-based desktop.
 
-**User Experience Virtualization (UE-V)**
-
+**User Experience Virtualization (UE-V)**<br>
 Microsoft UE-V enable users to keep their Windows and application experience regardless of what device they use to access Windows and those applications.
 
 #### Microsoft Toolkits
@@ -2699,12 +2729,10 @@ Other Windows add-ons
 
 #### Other Programs
 
-**Apple**
-
+**Apple**<br>
 iTunes, QuickTime, Safari
 
-**Adobe**
-
+**Adobe**<br>
 Flash, Air, Reader, Shockwave
 
 **Sun/Oracle Java**
@@ -2712,7 +2740,6 @@ Flash, Air, Reader, Shockwave
 **WinZip**
 
 **Toolbars**
-
 - Google
 - AOL
 - Yahoo
@@ -2778,7 +2805,12 @@ An example of a batch file Logon script that launches a VBScript program is as f
 @echo off
 wscript %0\..\NetLogon.vbs
 ```
-The "%0" in the batch file is interpreted by the command processor to be the name and path of the current file, which is the batch file itself. The string "%0\..\" then becomes the folder where the batch file is stored. The batch file above will launch the VBScript program NetLogon.vbs as long as it is saved in the NetLogon share with the batch file. This syntax is preferable to a UNC path, because it does not hard code the name of a Domain Controller. The syntax will work no matter which Domain Controller authenticates the user. The logon script will work no matter which Domain Controllers are available or where in the network the user logs on.
+The "%0" in the batch file is interpreted by the command processor to be the name and path of the current file, which is the batch file itself.
+The string "%0\..\" then becomes the folder where the batch file is stored.
+The batch file above will launch the VBScript program NetLogon.vbs as long as it is saved in the NetLogon share with the batch file.
+This syntax is preferable to a UNC path, because it does not hard code the name of a Domain Controller.
+The syntax will work no matter which Domain Controller authenticates the user.
+The logon script will work no matter which Domain Controllers are available or where in the network the user logs on.
 
 Also to force a path to the current directory `PUSHD %\~dp0`
 
@@ -2790,12 +2822,10 @@ DFS Replication, see above
 
 #### Group Policy Objects
 
-Physical Path
-
+Physical Path<br>
 `%SystemRoot%\sysvol\sysvol\_<domain DNS name>_\Policies\_<GUID>_\user\scripts\logon`
 
-Network Path
-
+Network Path<br>
 `\\<AD Server>_\sysvol\\_<domain DNS name>_\Policies\\_\<GUID>_\user\scripts\logon`<br>
 `\\<AD Server>_\sysvol\\_<domain DNS name>_\Policies\\_\<GUID>_\user\scripts\logoff`<br>
 `\\<AD Server>_\sysvol\\_<domain DNS name>_\Policies\\_\<GUID>_\machine\scripts\startup`<br>
@@ -2804,8 +2834,7 @@ Network Path
 
 #### GPO Template (.ADMX) files
 
-Only need to be present on the machine where the policies are edited from
-
+Only need to be present on the machine where the policies are edited from<br>
 `.ADMX %systemroot%\PolicyDefinitions`<br>
 `.ADML %systemroot%\PolicyDefinitions\en-US`
 
@@ -2897,22 +2926,19 @@ Active Directory Certificate Services Tools includes the Certification Authority
 
 ### Active Directory (LDAP) Database
 
-AD LDAP database entries and paths will be in a separate document.
-
+AD LDAP database entries and paths will be in a separate document.<br>
 AD versions and supported OS will be in a separate document.
 
 See Link to: ?
 
 [http://technet.microsoft.com/en-us/library/cc772829%28WS.10%29.aspx](http://technet.microsoft.com/en-us/library/cc772829%28WS.10%29.aspx)
 
-Active Directory Technical References
-
+Active Directory Technical References<br>
 http://technet.microsoft.com/en-us/library/cc759186%28v=ws.10%29.aspx
 
 **Connecting Networkable Hardware**
 
-Some networked copiers can connect to a LDAP database for an address book for email destinations or usernames for security.
-
+Some networked copiers can connect to a LDAP database for an address book for email destinations or usernames for security.<br>
 One example of connecting and using an address book for names/dept/phone/email is above in Outlook, Add Address Book
 
 #### AD Utilities
@@ -2930,7 +2956,11 @@ What attributes are carried across (and which will not) when copying a user.
 ``ADSI.exe (or mmc or msc?) ADSI Edit MMC (adsiedit.msc)? %SystemRoot%\system32\adsiedit.msc``<br>
 ``C:\Windows\System32\LDP.exe``<br>
 ``C:\Windows\System32\ldifde.exe``<br>
-`C:\Windows\System32\Ntdsutil.exe` (Windows Server 2003, Windows Server 2003 R2, Windows Server 2003 with SP1, Windows Server 2008, Windows Server 2008 R2) (Ntdsutil.exe is built into Windows Server 2008 and Windows Server 2008 R2. It is available if you have the AD DS or the AD LDS server role installed. It is also available if you install the Active Directory Domain Services Tools that are part of the Remote Server Administration Tools (RSAT). If you have the AD LDS server role installed but not the AD DS server role, you can use the dsdbutil.exe and dsmgmt.exe command-line tools to perform the same tasks http://technet.microsoft.com/en-us/library/cc753343%28v=ws.10%29.aspx)<br>
+`C:\Windows\System32\Ntdsutil.exe`
+(Windows Server 2003, Windows Server 2003 R2, Windows Server 2003 with SP1, Windows Server 2008, Windows Server 2008 R2) (Ntdsutil.exe is built into Windows Server 2008 and Windows Server 2008 R2.
+It is available if you have the AD DS or the AD LDS server role installed.
+It is also available if you install the Active Directory Domain Services Tools that are part of the Remote Server Administration Tools (RSAT).
+If you have the AD LDS server role installed but not the AD DS server role, you can use the dsdbutil.exe and dsmgmt.exe command-line tools to perform the same tasks http://technet.microsoft.com/en-us/library/cc753343%28v=ws.10%29.aspx)<br>
 `C:\Windows\System32\Dsdbutil.exe`<br>
 
 repadmin
@@ -3053,7 +3083,27 @@ Description: This dsmod command modifies existing objects in the directory.
 
 Active Directory Domain Services (AD DS) Tools and Active Directory Lightweight Directory Services (AD LDS) Tools[37]
 
-Active Directory Domain Services (AD DS) and Active Directory Lightweight Directory Services (AD LDS) Tools includes Active Directory Administrative Center; Active Directory Domains and Trusts; Active Directory Sites and Services; Active Directory Users and Computers; ADSI Edit; DCPromo.exe; LDP.exe; NetDom.exe; NTDSUtil.exe; RepAdmin.exe; Active Directory module for Windows PowerShell; DCDiag.exe; DSACLs.exe; DSAdd.exe; DSDBUtil.exe; DSMgmt.exe; DSMod.exe; DSMove.exe; DSQuery.exe; DSRm.exe;
+Active Directory Domain Services (AD DS) and Active Directory Lightweight Directory Services (AD LDS) Tools includes
+Active Directory Administrative Center;
+Active Directory Domains and Trusts;
+Active Directory Sites and Services;
+Active Directory Users and Computers
+ADSI Edit;
+DCPromo.exe;
+LDP.exe;
+NetDom.exe;
+NTDSUtil.exe;
+RepAdmin.exe;
+Active Directory module for Windows PowerShell;
+DCDiag.exe;
+DSACLs.exe;
+DSAdd.exe;
+DSDBUtil.exe;
+DSMgmt.exe;
+DSMod.exe;
+DSMove.exe;
+DSQuery.exe;
+DSRm.exe;
 
 GPFixup.exe; KSetup.exe; KtPass.exe; NlTest.exe; NSLookup.exe; W32tm.exe.
 
@@ -3096,7 +3146,6 @@ Move the above into table below
 #### Active Directory Lightweight Directory Services
 
 Available in the following operating systems:
-
 * Windows Server 2012
 * Windows 8
 * Windows Server 2008 and Windows Server 2008 R2
@@ -3108,7 +3157,7 @@ AD LDS is not supported on Windows Vista and earlier clients.
 
 AD LDS features can be installed in the following operating systems:
 
-Dynamic list of LDAP Data Interchange Format (LDIF) files during instance setup With this feature, you can make custom LDIF files available during AD LDS instance setup—in addition to the default LDIF files that are provided with AD LDS—by adding the files to the `%systemroot%\ADAM` directory.
+Dynamic list of LDAP Data Interchange Format (LDIF) files during instance setup With this feature, you can make custom LDIF files available during AD LDS instance setup-in addition to the default LDIF files that are provided with AD LDS-by adding the files to the `%systemroot%\ADAM` directory.
 
 [http://technet.microsoft.com/en-us/library/cc754361%28v=ws.10%29.aspx]
 
