@@ -11,7 +11,7 @@ macOS Sonoma <br> https://swcdn.apple.com/content/downloads/13/30/140-88558-A_TN
 macOS Ventura <br> https://swcdn.apple.com/content/downloads/09/46/093-22004-A_QNZEDC334I/phigx2zvoggml6sh79my4y51fnvgy8hix4/InstallAssistant.pkg | 13.7.8  |  22H730  |  12.2 GB  |  08/20/25
 macOS Monterey <br> https://swcdn.apple.com/content/downloads/24/16/062-40406-A_LQ4WW26M04/j7bl9ygay5prezturwh72ai10fvseh2uhw/InstallAssistant.pkg |  12.7.6  |  21H1320  |  12.4 GB  |  07/29/24
 
-> *Above links sourced via [OPLC](https://github.com/)*
+> *Above links sourced via [OPLC](https://github.com/dortania/OpenCore-Legacy-Patcher)*
 
 ## Table of Mac OS Versions, names, dates
 
