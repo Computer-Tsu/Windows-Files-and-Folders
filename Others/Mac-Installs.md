@@ -361,6 +361,101 @@ iMac (21.5-inch) Early 2013 924.9 MB |
 | [Boot Camp - Windows XP Drivers Update 2.1]() |   |
 | [Boot Camp - Windows Vista 64 Update 2.1]() |   |
 
+- [Download macOS Mojave 10.14.5 Boot Camp Update](https://updates.cdn-apple.com/2019/cert/061-41805-20191024-caf1da5b-74a6-4f01-b6d8-54979c1666f1/BootCampAssistantSupplemental.dmg)  |  File Size: 1.9MB  |  This update addresses an issue which prevents creation of a new Boot Camp partition on iMac and Mac mini with Fusion Drive. System Requirements: macOS Mojave 10.4.5  |  Published Date: <time datetime="March" 08,="" 2024itemprop="datePublished">March 08, 2024</time>
+- [Boot Camp Support Software 5.1.5769](https://download.info.apple.com/Mac_OS_X/031-30890-20150812-ea191174-4130-11e5-a125-930911ba098f/bootcamp5.1.5769.zip)
+  - File Size: 542.3 MB  |  iMac (Retina 5K, 27-inch, Late 2014) or Mac Mini (Late 2014)
+  - 
+- [Boot Camp Support Software 5.1.5722](https://download.info.apple.com/Mac_OS_X/031-30883-20150812-ea1d13dc-4130-11e5-ba25-920911ba098f/bootcamp5.1.5722.zip)
+  - File Size: 273.7 MB  |  iMac (21.5-inch, Mid 2014)
+  - 
+- [FaceTime Camera Driver Update](https://download.info.apple.com/Mac_OS_X/031-29274-201500728-1C1B8542-358F-11E5-A861-8B973953DB92/AppleBcUpdate.exe)
+  - File Size: 1.4 MB  |  MacBook (Retina, 12-inch, Early 2015) or MacBook Pro (Retina, 13-inch, Early 2015) or MacBook Air (11-inch or 13-inch, Early 2015) or MacBook Pro (Retina, 15-inch, Mid 2015)
+  - This update improves FaceTime camera compatibility with Windows, and is recommended for all Boot Camp users.
+
+- [Boot Camp Support Software 5.1.5621](https://download.info.apple.com/Mac_OS_X/031-3384.20140211.Xcc3e/BootCamp5.1.5621.zip)
+  - File Size: 924.9 MB
+    - 
+    - 
+
+- [Boot Camp Support Software 5.1.5640](https://download.info.apple.com/Mac_OS_X/031-3442.20140211.Nnju7/BootCamp5.1.5640.zip)
+  - File Size: 925.6 MB
+    - MacBook Air (11-inch & 13-inch, Early 2014)
+    - MacBook Pro (Retina, 13-inch & 15-inch, Mid 2014)
+    - MacBook Air (11-inch & 13-inch, Mid 2013)
+    - MacBook Pro (Retina, 13-inch & 15-inch, Late 2013)
+    - Mac Pro (Late 2013)
+    - iMac (21.5-inch & 27-inch, Late 2013)
+    - Windows 7, Windows 8, and Windows 8.1, 64 bit
+  - 
+
+- [Boot Camp Support Software 5.0.5033](https://download.info.apple.com/Mac_OS_X/041-9675.20130314.f8Ji7/BootCamp5.0.5033.zip)
+  - File Size: 553.62 MB
+    - MacBook Air (Mid 2011) and (Mid 2012)
+    - MacBook Pro (Mid 2010), **_* MacBook Pro 13 inch-Mid 2010 is not supported_**
+    - MacBook Pro (Early 2011) or (Late 2011) or (Mid 2012)
+    - MacBook Pro (Retina, Mid 2012) or (Retina, Late 2012)
+    - Mac Pro (Early 2009) or (Mid 2010)
+    - Mac mini (Mid 2011) or (Late 2012)
+    - iMac (Mid 2011) or (Late 2011) or (Late 2012)
+    - Windows 7 and 8, 64 bit only
+  - This download contains the Windows Support Software (Windows Drivers)you need to support 64 bit versions of Windows 7 and Windows 8 on your Mac.
+  - Extract contents of the .zip file to the root level of a USB flash drive or hard drive that is formatted with the FAT file system.
+  - For detailed information about this update, please visit: http://support.apple.com/kb/HT5628
+- [Boot Camp Support Software 4.0.4326](https://download.info.apple.com/Mac_OS_X/041-9673.20130314.CFV09/BootCamp4.0.4326.zip)
+  - File Size: 894.44 MB  |  MacBook Pro (Retina, 15-in, Mid 2012) or MacBook Air (11-in or 13-in, Mid 2012), Windows 7 32 bit
+  - Extract contents of the .zip file to the root level of a USB flash drive or hard drive that is formatted with the FAT file system.
+- [Boot Camp Support Software 4.1.4586](https://download.info.apple.com/Mac_OS_X/041-9674.20130314.Mu7y6/BootCamp4.1.4586.zip)
+  - File Size: 414.74 MB  |  Mac mini (Late 2012) or Mac mini Server (Late 2012) or MacBook Pro (Retina, 13-in, Mid 2012) or iMac (21.5-in or 27-in, Late 2012), Windows 7
+  - Extract contents of the .zip file to the root level of a USB flash drive or hard drive that is formatted with the FAT file system.
+- [Boot Camp Support Software 4.0.4131](hhttps://download.info.apple.com/Mac_OS_X/041-9671.20130314.ZZew3/BootCamp4.0.4131.zip)
+  - File Size: 664.08  |  MacBook Air (11-in or 13-in, Mid 2011) or Mac mini (Mid 2011, Intel or AMD graphics) or Mac mini Server (Mid 2011), Windows 7 32 bit
+  - Extract contents of the .zip file to the root level of a USB flash drive or hard drive that is formatted with the FAT file system.
+- [Boot Camp Support Software 4.0.4033]()
+  - 
+  - 
+- [Boot Camp Support Software 4.0.4255](https://download.info.apple.com/Mac_OS_X/041-9672.20130314.Loly6/BootCamp4.0.4255.zip)
+  - File Size: 1 GB  |  MacBook Pro (15-in, Mid 2012) or MacBook Pro (13-in, Mid 2012), Windows 7 32 bit
+  - Extract contents of the .zip file to the root level of a USB flash drive or hard drive that is formatted with the FAT file system.
+- [Boot Camp Software Update 3.3 for Windows](https://download.info.apple.com/Mac_OS_X/041-1674.20110823.P7Yt5/BootCamp_3.3.exe)
+  - File Size: 199.75 MB  |  Win7-32 bit or Win7-64bit, Boot Camp 3.2
+  - The Boot Camp 3.3 update includes critical bug fixes and hardware support. It is recommended for all Boot Camp 3.2 users.
+- [Boot Camp Software Update 3.2 for Windows 64 bit](https://download.info.apple.com/Mac_OS_X/061-9540.20101122.juhyt/BootCamp_3.2_64-bit.exe)
+  - File Size: 121.25 MB  |  XP or Vista64bit - SP2 or Win7-64bit, Boot Camp 3.1
+  - This update adds support for the ATI-Radeon HD 5870 graphics card, Apple USB Ethernet Adapter, MacBook Air SuperDrive, and addresses critical bug fixes. This update is highly recommended for all Boot Camp 3.1 users.
+- [Boot Camp 3.2 Update for MacBook Pro (early 2011)](https://download.info.apple.com/Mac_OS_X/041-0554.20110407.G9RNG/BootCamp_3.2.2792.exe)
+  - File Size: 21.55 MB  |  Windows 7
+  - This Boot Camp update addresses issues with shutdown, Japanese and Korean keyboards on early 2011 MacBook Pro.
+- [Boot Camp Software Update 3.2 for Windows 64 bit](https://download.info.apple.com/Mac_OS_X/061-9540.20101122.juhyt/BootCamp_3.2_64-bit.exe)
+  - File Size: 121.25 MB  |  XP or Vista64bit - SP2 or Win7-64bit, Boot Camp 3.1
+  - This update adds support for the ATI-Radeon HD 5870 graphics card, Apple USB Ethernet Adapter, MacBook Air SuperDrive, and addresses critical bug fixes. This update is highly recommended for all Boot Camp 3.1 users.
+- [Boot Camp Software Update 3.2 for Windows 32 bit](https://download.info.apple.com/Mac_OS_X/061-9538.20101122.ght54/BootCamp_3.2_32-bit.exe)
+  - File Size: 280.28 MB  |  Windows XP or Vista 32bit-SP2 or Win7-32bit, Boot Camp 3.1
+  - This update adds support for the ATI-Radeon HD 5870 graphics card, Apple USB Ethernet Adapter, MacBook Air SuperDrive, and addresses critical bug fixes. This update is highly recommended for all Boot Camp 3.1 users.
+- [Boot Camp Update for MacBook Pro (13-inch, Mid 2010) (Windows 64 bit)](http://download.info.apple.com/Mac_OS_X/061-8321.20100525.bplY7u/BootCamp_3.1.3_64-bit.exe)
+  - File Size: 1.03 MB  |  Windows Vista 64 bit or Windows 7 - 64 bit, Boot Camp 3.1
+  - This update applies to the MacBook Pro (13-inch, Mid 2010) running Windows operating systems.
+- [Boot Camp Software Update 3.1 for Windows 32 bit](https://download.info.apple.com/Mac_OS_X/061-7856.20100210.BcSLt/BootCamp_3.1_32-bit.exe)
+  - File Size: 380.73 MB
+  - 
+- [Boot Camp Software Update 3.1 for Windows 64 bit](https://download.info.apple.com/Mac_OS_X/061-7857.20100210.ScrBC/BootCamp_3.1_64-bit.exe)
+  - File Size: 380.73 MB  |  Windows XP or Vista SP2, Boot Camp 3.0
+  - This update adds support for Microsoft Windows 7 (Home Premium, Professional, and Ultimate)
+- [Boot Camp Utility for Windows 7 Upgrade v1.0](http://download.info.apple.com/Mac_OS_X/061-7591.20100119.rfer/Apple_Win7_Upgrade_Utility.zip)
+  - By downloading or using this update, you accept the terms of the software license agreement.
+  - Use the Boot Camp Utility for Windows 7 Upgrade Installation Utility before upgrading from Vista to Windows 7. This utility safely unmounts the read-only Macintosh volume on Microsoft Vista.
+- [Boot Camp Drivers Update 2.2 for Windows](https://download.info.apple.com/Mac_OS_X/061-7305.20091119.Bcpfr/BootCamp_Update_2.2.exe)
+  - File Size: 23.87 MB
+  - Windows XP, For Windows Vista, Windows Vista Service Pack 2 must be installed before running this update. Boot Camp 2.1 must be installed prior to running this update
+- [Multi-Touch Trackpad Update 1.1 for Windows](https://download.info.apple.com/Mac_OS_X/061-6962.20090810.RvKP0/AppleBcUpdate.exe)
+  - File Size: 3.93MB
+  - Windows XP, Vista
+- [Boot Camp - Windows XP Drivers Update 2.1](https://download.info.apple.com/Mac_OS_X/061-4554.20080424.trVj7/BCUpdateXP.exe)
+  - File Size: 215MB  |  Published Date: March 08, 2024
+  - Important: Installation of Boot Camp 2.1 is required before installing Windows XP Service Pack 3 (SP3)
+- [Boot Camp - Windows Vista 64 Update 2.1](https://download.info.apple.com/Mac_OS_X/061-4556.20080424.Xswb0/BCUpdateVista64.exe)
+  - File Size: 236MB  |  Published Date: March 08, 2024
+  - Note: This download contains complete copies of Boot Camp Windows Vista 64 Drivers (version 2.1). If you have Boot Camp drivers already installed, it will update them. If you do not have any Boot Camp drivers installed, it will install version 2.1 drivers onto your already installed Windows OS.
+
 For more information on which operating systems are supported on different Mac systems, click here: http://support.apple.com/kb/HT5634
 
 ### Homebrew
