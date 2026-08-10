@@ -4,7 +4,7 @@
 
 ## MacOS Downloads
 
-Name |  Ver  |  ?  |  Size  |  Date
+Name |  Ver  |  Build  |  Size  |  Date
 ----- | ----- | ----- | ----- | ----- 
 macOS Sequoia <br> https://swcdn.apple.com/content/downloads/16/08/140-85388-A_3LX3Q36I6P/zxod6nr7zkovvsml6s628z44gdbc4exa5p/InstallAssistant.pkg |  15.7.9  |  24G830  |  15.7 GB  |  08/06/26
 macOS Sonoma <br> https://swcdn.apple.com/content/downloads/13/30/140-88558-A_TN3FIE7J63/p61cqj3ktmcqilz3q64ls4ekp1os9c8qbp/InstallAssistant.pkg | 14.8.9  |  23J631  | 13.7 GB  |  08/06/26
