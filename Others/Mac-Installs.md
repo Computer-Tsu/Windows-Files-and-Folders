@@ -272,6 +272,33 @@ Unless your drive had a Apple specific firmware for reporting them, or you purch
 * https://crystalidea.com/macs-fan-control
 There are Mac and Windows (for Boot Camp), a free and Pro version.
 
+SSD install in Mac enable trim from Terminal
+
+`sudo trimforce enable` **will reboot PC**
+
+```
+Last login: Sun Aug  9 16:49:38 on console
+alice@iMac ~ % sudo trimforce enable
+Password:
+IMPORTANT NOTICE:  This tool force-enables TRIM for all relevant attached
+devices, even though such devices may not have been validated for data
+integrity while using TRIM.  Use of this tool to enable TRIM may result in
+unintended data loss or data corruption.  It should not be used in a commercial
+operating environment or with important data. Before using this tool, you
+should back up all of your data and regularly back up data while TRIM is
+enabled.  This tool is provided on an “as is” basis. APPLE MAKES NO WARRANTIES,
+EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES OF
+NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE,
+REGARDING THIS TOOL OR ITS USE ALONE OR IN COMBINATION WITH YOUR DEVICES,
+SYSTEMS, OR SERVICES. BY USING THIS TOOL TO ENABLE TRIM, YOU AGREE THAT, TO THE
+EXTENT PERMITTED BY APPLICABLE LAW, USE OF THE TOOL IS AT YOUR SOLE RISK AND
+THAT THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY AND
+EFFORT IS WITH YOU.
+Are you sure you wish to proceed (y/N)? y
+Your system will immediately reboot when this is complete.
+Is this OK (y/N)? 
+```
+
 ### Bootcamp
 
 Macs with Apple Silicon (M1, M2, M3, etc) do not support Boot Camp (only Windows virtualization).
@@ -279,6 +306,8 @@ Macs with Apple Silicon (M1, M2, M3, etc) do not support Boot Camp (only Windows
 [Bootcamp manuals and downloads](https://support.apple.com/en-us/docs/mac/pp38)
 
 [Bootcamp 5.1.5769](https://support.apple.com/en-us/106378)
+
+Boot Camp Windows 10 (https://support.apple.com/en-us/102622)
 
 | **Name** | note |
 | ----- | ----- |
@@ -333,6 +362,70 @@ iMac (21.5-inch) Early 2013 924.9 MB |
 | [Boot Camp - Windows Vista 64 Update 2.1]() |   |
 
 For more information on which operating systems are supported on different Mac systems, click here: http://support.apple.com/kb/HT5634
+
+### Homebrew
+
+### Raycast
+
+### Terminals
+
+* iTerm2
+* Terminus
+* Royal TSX
+
+### Rectangle
+
+### VS Code
+
+### Sublime
+
+### Docker Desktop
+
+* UTM
+* Multipass
+
+### TablePlus
+
+### Wireshark
+
+### Stats
+
+### AppCleaner
+
+### Proxyman, Charles Proxy, Little Snitch
+
+* iNet Network Scanner
+* LanScan
+
+### GrandPerspective or DaisyDisk
+
+### Maccy
+
+### CleanShot X
+
+### Ice
+
+### Hammerspoon
+
+### Carbon Copy Cloner
+
+### SuperDuper!
+
+## Microsoft
+
+* Microsoft Office/365
+* OneDrive
+
+## Text
+
+* BBEdit
+* Keka
+
+* Fantasical
+
+* The Unarchiver
+
+* AlDente
 
 ## EOL Macs
 
