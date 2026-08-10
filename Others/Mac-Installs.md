@@ -4,12 +4,12 @@
 
 ## MacOS Downloads
 
-Name |  Ver  |  Build  |  Size  |  Date
------ | ----- | ----- | ----- | ----- 
-macOS Sequoia <br> https://swcdn.apple.com/content/downloads/16/08/140-85388-A_3LX3Q36I6P/zxod6nr7zkovvsml6s628z44gdbc4exa5p/InstallAssistant.pkg |  15.7.9  |  24G830  |  15.7 GB  |  08/06/26
-macOS Sonoma <br> https://swcdn.apple.com/content/downloads/13/30/140-88558-A_TN3FIE7J63/p61cqj3ktmcqilz3q64ls4ekp1os9c8qbp/InstallAssistant.pkg | 14.8.9  |  23J631  | 13.7 GB  |  08/06/26
-macOS Ventura <br> https://swcdn.apple.com/content/downloads/09/46/093-22004-A_QNZEDC334I/phigx2zvoggml6sh79my4y51fnvgy8hix4/InstallAssistant.pkg | 13.7.8  |  22H730  |  12.2 GB  |  08/20/25
-macOS Monterey <br> https://swcdn.apple.com/content/downloads/24/16/062-40406-A_LQ4WW26M04/j7bl9ygay5prezturwh72ai10fvseh2uhw/InstallAssistant.pkg |  12.7.6  |  21H1320  |  12.4 GB  |  07/29/24
+|  Name |  Ver  |  Build  |  Size  |  Date  |
+| :----- | ----- | ----- | ----- | ----- |
+| macOS Sequoia <br> https://swcdn.apple.com/content/downloads/16/08/140-85388-A_3LX3Q36I6P/zxod6nr7zkovvsml6s628z44gdbc4exa5p/InstallAssistant.pkg |  15.7.9  |  24G830  |  15.7GB  |  08/06/26 |
+| macOS Sonoma <br> https://swcdn.apple.com/content/downloads/13/30/140-88558-A_TN3FIE7J63/p61cqj3ktmcqilz3q64ls4ekp1os9c8qbp/InstallAssistant.pkg | 14.8.9  |  23J631  | 13.7 GB  |  08/06/26 |
+| macOS Ventura <br> https://swcdn.apple.com/content/downloads/09/46/093-22004-A_QNZEDC334I/phigx2zvoggml6sh79my4y51fnvgy8hix4/InstallAssistant.pkg | 13.7.8  |  22H730  |  12.2 GB  |  08/20/25 |
+| macOS Monterey <br> https://swcdn.apple.com/content/downloads/24/16/062-40406-A_LQ4WW26M04/j7bl9ygay5prezturwh72ai10fvseh2uhw/InstallAssistant.pkg |  12.7.6  |  21H1320  |  12.4 GB  |  07/29/24 |
 
 > *Above links sourced via [OPLC](https://github.com/dortania/OpenCore-Legacy-Patcher)*
 
@@ -78,13 +78,17 @@ EveryMac.com
 - 10.14 [macOS Mojave](https://apps.apple.com/gb/app/macos-mojave/id1398502828?mt=12)
 - 10.13 [macOS High Sierra](https://apps.apple.com/us/app/macos-high-sierra/id1246284741?ls=1&mt=12)
 
-To get versions before these, you need to download them without the App Store. Currently, Apple offers direct links going as far back as OS X Yosemite (10.10). 
+To get versions before these, you need to download them without the App Store.
+Currently, Apple offers direct links going as far back as OS X Yosemite (10.10). 
 
 
 - 10.12 [macOS Sierra](http://updates-http.cdn-apple.com/2019/cert/061-39476-20191023-48f365f4-0015-4c41-9f44-39d3d2aca067/InstallOS.dmg)
 - 10.11 [OS X El Capitan](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg)
 - 10.10 [OS X Yosemite](http://updates-http.cdn-apple.com/2019/cert/061-41343-20191023-02465f92-3ab5-4c92-bfe2-b725447a070d/InstallMacOSX.dmg)
-Also, be aware that some of these older downloads will come as a .dmg file. To use those, you need to double-click them so they’re mounted. Then run the .pkg file inside them. This will add the relevant macOS installer to your Applications folder.
+Also, be aware that some of these older downloads will come as a .dmg file.
+To use those, you need to double-click them so they’re mounted.
+Then run the .pkg file inside them.
+This will add the relevant macOS installer to your Applications folder.
 
 
 
@@ -227,7 +231,8 @@ If you had at one point in time purchased or downloaded a version of MacOS or Ma
 
 This works particularly well if the Mac you’re downloading the software onto is running an older version of Mac OS X.
 
-This approach for [re-downloading older OS X installers from App Store Purchases section](https://osxdaily.com/2014/02/24/re-download-older-os-x-version-from-mac-app-store/) works for obtaining many older versions of Mac OS X, particularly if the machine doing the downloading is running an older Mac release too. For example, [re-downloading Mavericks from Yosemite](https://osxdaily.com/2014/12/30/re-download-os-x-mavericks-installer-from-os-x-yosemite-app-store/), whereas if you’re running the App Store from newer versions of MacOS you’d need to follow the links further above to download the installers directly, or via the App Store links.
+This approach for [re-downloading older OS X installers from App Store Purchases section](https://osxdaily.com/2014/02/24/re-download-older-os-x-version-from-mac-app-store/) works for obtaining many older versions of Mac OS X, particularly if the machine doing the downloading is running an older Mac release too.
+For example, [re-downloading Mavericks from Yosemite](https://osxdaily.com/2014/12/30/re-download-os-x-mavericks-installer-from-os-x-yosemite-app-store/), whereas if you’re running the App Store from newer versions of MacOS you’d need to follow the links further above to download the installers directly, or via the App Store links.
 
 ### Downloading 10.6 Mac OS X Snow Leopard
 
@@ -246,7 +251,8 @@ Apple also sells some older Mac OS X versions (**10.8**, **10.7**, **10.6**) for
 
 -----
 
-If you have a Mac computer and have connected an Apple ID to the Apple Store, then you may be able to download that OS version for free in the future even if it was one of the Paid versions. Unsure if you first have to "purchase" it in the store to add it to your library (purchased app history for free) and have future rights to download it again using the App store.
+If you have a Mac computer and have connected an Apple ID to the Apple Store, then you may be able to download that OS version for free in the future even if it was one of the Paid versions.
+Unsure if you first have to "purchase" it in the store to add it to your library (purchased app history for free) and have future rights to download it again using the App store.
 
 ## Create a macOS Recovery Disk
 
@@ -255,9 +261,16 @@ Rescue disc, bootable recovery drive for Macs
  - Format a 16GB (or larger) thubdrive as Mac OS Extended
  - Download a MacOS installer (usually from the Apple App Store)
  - `sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/Drive`<p>
-replace `Install macOS Big Sur.app` with your downloaded installer package. replace `/Volumes/Drive` with your USB thumbdrive mount path.</p>
+replace `Install macOS Big Sur.app` with your downloaded installer package.
+replace `/Volumes/Drive` with your USB thumbdrive mount path.</p>
 
 ## Other Downloads
+
+Replaced hard drive? Upgraded to SSD?
+Unless your drive had a Apple specific firmware for reporting them, or you purchased a temp sensor, you may need **Mac Fan Control**
+* https://github.com/crystalidea/macs-fan-control/releases
+* https://crystalidea.com/macs-fan-control
+There are Mac and Windows (for Boot Camp), a free and Pro version.
 
 ### Bootcamp
 
@@ -267,6 +280,59 @@ Macs with Apple Silicon (M1, M2, M3, etc) do not support Boot Camp (only Windows
 
 [Bootcamp 5.1.5769](https://support.apple.com/en-us/106378)
 
+| **Name** | note |
+| ----- | ----- |
+| [Download macOS Mojave 10.14.5 Boot Camp Update](https://updates.cdn-apple.com/2019/cert/061-41805-20191024-caf1da5b-74a6-4f01-b6d8-54979c1666f1/BootCampAssistantSupplemental.dmg) |   |
+| [Download Boot Camp Support Software 5.1.5769](https://download.info.apple.com/Mac_OS_X/031-30890-20150812-ea191174-4130-11e5-a125-930911ba098f/bootcamp5.1.5769.zip) | Mac (Retina 5K, 27-inch, Late 2014)
+Mac Mini (Late 2014) 542.3 MB Windows 7 and Windows 8, and Windows 8.1 |
+| [Boot Camp Support Software 5.1.5722](https://download.info.apple.com/Mac_OS_X/031-30883-20150812-ea1d13dc-4130-11e5-ba25-920911ba098f/bootcamp5.1.5722.zip) | iMac (21.5-inch, Mid 2014) 273.7 MB Windows 7 and Windows 8, and Windows 8.1 |
+| [FaceTime Camera Driver Update](https://download.info.apple.com/Mac_OS_X/031-29274-201500728-1C1B8542-358F-11E5-A861-8B973953DB92/AppleBcUpdate.exe) | MacBook (Retina, 12-inch, Early 2015)
+MacBook Pro (Retina, 13-inch, Early 2015)
+MacBook Air (11-inch, Early 2015)
+MacBook Air (13-inch, Early 2015)
+MacBook Pro (Retina, 15-inch, Mid 2015)
+File Size: 1.4 MB For all Windows |
+| [Boot Camp Support Software 5.1.5621](https://download.info.apple.com/Mac_OS_X/031-3384.20140211.Xcc3e/BootCamp5.1.5621.zip) |  MacBook Air (11-inch & 13-inch, Mid 2011)
+MacBook Air (11-inch & 13-inch, Mid 2012)
+MacBook Pro (15-inch & 17-inch, Mid 2010)
+MacBook Pro (13-inch, & 15-inch, Early 2011)
+MacBook Pro (17-inch, Early 2011)
+MacBook Pro (13-inch,15-inch & 17-inch Late 2011)
+MacBook Pro (13-inch & 15-inch, Mid 2012)
+MacBook Pro (Retina, Mid 2012)
+MacBook Pro (Retina, 13-inch, Late 2012)
+MacBook Pro (Retina, 13-inch and 15-inch, Early 2013)
+Mac Pro (Early 2009)
+Mac Pro (Mid 2010)
+Mac Pro (Mid 2012)
+Mac mini (Mid 2011)
+Mac mini (Late 2012)
+iMac (27-inch, Mid 2010)
+iMac (21.5-inch & 27-inch, Mid 2011)
+iMac (21.5-inch & 27-inch, Late 2012)
+iMac (21.5-inch) Early 2013 924.9 MB |
+| [Boot Camp Support Software 5.1.5640]() |   |
+| [Boot Camp Support Software 5.0.5033]() |   |
+| [Boot Camp Support Software 4.0.4326]() |   |
+| [Boot Camp Support Software 4.1.4586]() |   |
+| [Boot Camp Support Software 4.0.4131]() |   |
+| [Boot Camp Support Software 4.0.4033]() |   |
+| [Boot Camp Support Software 4.0.4255]() |   |
+| [Boot Camp Software Update 3.3 for Windows]() |   |
+| [Boot Camp Software Update 3.2 for Windows 64 bit]() |   |
+| [Boot Camp 3.2 Update for MacBook Pro (early 2011)]() |   |
+| [Boot Camp Software Update 3.2 for Windows 64 bit]() |   |
+| [Boot Camp Software Update 3.2 for Windows 32 bit]() |   |
+| [Boot Camp Update for MacBook Pro (13-inch, Mid 2010) (Windows 64 bit)]() |   |
+| [Boot Camp Software Update 3.1 for Windows 32 bit]() |   |
+| [Boot Camp Software Update 3.1 for Windows 64 bit]() |   |
+| [Boot Camp Utility for Windows 7 Upgrade v1.0]() |   |
+| [Boot Camp Drivers Update 2.2 for Windows]() |   |
+| [Multi-Touch Trackpad Update 1.1 for Windows]() |   |
+| [Boot Camp - Windows XP Drivers Update 2.1]() |   |
+| [Boot Camp - Windows Vista 64 Update 2.1]() |   |
+
+For more information on which operating systems are supported on different Mac systems, click here: http://support.apple.com/kb/HT5634
 
 ## EOL Macs
 
