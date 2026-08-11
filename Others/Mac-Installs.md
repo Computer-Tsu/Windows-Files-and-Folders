@@ -410,9 +410,27 @@ iMac (21.5-inch) Early 2013 924.9 MB |
 - [Boot Camp Support Software 4.0.4131](hhttps://download.info.apple.com/Mac_OS_X/041-9671.20130314.ZZew3/BootCamp4.0.4131.zip)
   - File Size: 664.08  |  MacBook Air (11-in or 13-in, Mid 2011) or Mac mini (Mid 2011, Intel or AMD graphics) or Mac mini Server (Mid 2011), Windows 7 32 bit
   - Extract contents of the .zip file to the root level of a USB flash drive or hard drive that is formatted with the FAT file system.
-- [Boot Camp Support Software 4.0.4033]()
-  - 
-  - 
+- [Boot Camp Support Software 4.0.4033](https://updates.cdn-apple.com/2018/macos/041-9664.20130314.Cvet4/BootCamp4.0.4033.zip)
+  - File Size: 601.76  |  
+    - MacBook (13-inch, Late 2006), (13-inch, Mid 2007), (13-inch, Late 2007), (13-inch, Early 2008), (13-inch, Late 2008), (13-inch, Early 2009 & Mid 2009)
+    - MacBook (13-inch, Late 2009) *, (13-inch, Mid 2010) *
+    - MacBook Air (13-inch, Early 2008), (13-inch, Late 2008 & Mid 2009)
+    - MacBook Air (11-inch & 13-inch, Late 2010) *
+    - MacBook Pro (15-inch & 17-inch, Core 2 Duo), (15-inch & 17-inch, 2.2 & 2.4GHz)
+    - MacBook Pro (15-inch & 17-inch, Early 2008) *, (15-inch, Late 2008) *, (17-inch, Early 2009 & Mid 2009) *, (15-inch, Early 2009) *, (13-inch and 15-inch, Mid 2009) *
+    - MacBook Pro (13-inch,15-inch, and 17-inch, Mid 2010)
+    - MacBook Pro (13-in, 15-inch, and 17-inch, Early 2011 & Late 2011)
+    - Mac Pro (Mid 2006)
+    - Mac Pro (Early 2008) *
+    - Mac Pro (Early 2009), (Early 2007), (Mid 2010)
+    - Mac Pro (15-inch and 17-inch, 2.2 & 2.4GHz)
+    - Mac mini (Mid 2007), (Early 2009 & Late 2009)
+    - Mac mini (Mid 2010) *
+    - iMac (17-inch, Late 2006), (20-inch, Late 2006), (24-inch, Late 2006), (20-inch & 24-inch, Mid 2007)
+    - iMac (20-inch & 24-inch, Early 2008), (20-inch, Early 2009 & Mid 2009)
+    - iMac (21.5-inch & 27-inch, Late 2009) *, (21.5-inch, Mid 2010) *
+    - iMac (27-inch, Mid 2010), (21.5-inch, Mid 2011 & Late 2011), (27-inch, Mid 2011)
+  - all these drivers support Windows 7, 32 bit<br>* drivers that support Windows 7, 32 and 64 bit
 - [Boot Camp Support Software 4.0.4255](https://download.info.apple.com/Mac_OS_X/041-9672.20130314.Loly6/BootCamp4.0.4255.zip)
   - File Size: 1 GB  |  MacBook Pro (15-in, Mid 2012) or MacBook Pro (13-in, Mid 2012), Windows 7 32 bit
   - Extract contents of the .zip file to the root level of a USB flash drive or hard drive that is formatted with the FAT file system.
