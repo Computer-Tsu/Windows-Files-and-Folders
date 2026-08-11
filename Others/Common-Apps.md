@@ -229,7 +229,9 @@ MSN MoneyCentral Investor Stock Quotes.iqy
 
 VBA settings migration ^[10]
 
-In Office 2010, Visual Basic for Applications (VBA) 6.0 was updated to VBA 7.0. VBA 7.0 settings were reset to their defaults after migration instead of automatically repopulating. This occurred because the registry settings for VBA are in a different hive in Office 2010, as shown in the following table.
+In Office 2010, Visual Basic for Applications (VBA) 6.0 was updated to VBA 7.0.
+VBA 7.0 settings were reset to their defaults after migration instead of automatically repopulating.
+This occurred because the registry settings for VBA are in a different hive in Office 2010, as shown in the following table.
 
 Office 2000 through Office 2007<br>
 ``HKCU\SOFTWARE\Microsoft\VBA\6.0\Common``
@@ -251,13 +253,15 @@ To correct this problem, copy the VBA 6.0 registry keys from the 6.0 hive to the
 `C:\Program Files\Microsoft Office\root\Office16\SelfCert.exe` usage & switches
 
 **Create Digital Certificate**<br>
-This program creates a self-signed digital certificate that beats the name you type below. This type of certificate does not verify your identity.
+This program creates a self-signed digital certificate that beats the name you type below.
+This type of certificate does not verify your identity.
 
 Since a self-signed digital certificate might be a forgery, users will receive a security warning when they open a file that contains a macro project with a self-signed signature.
 
 Office will only allow you to trust a self-signed certificate on the machine on which it was created.
 
-A self-signed certificate is only for personal use. If you need an authenticated code signing certificate for signing commercial or broadly distributed macros, you will need to contact a certification authority.
+A self-signed certificate is only for personal use.
+If you need an authenticated code signing certificate for signing commercial or broadly distributed macros, you will need to contact a certification authority.
 
 [Click here for a list of commercial certificate authorites](https://learn.microsoft.com/en-us/previous-versions/ms995347(v=msdn.10)?redirectedfrom=MSDN)
 
@@ -288,7 +292,8 @@ customize the Document Inspector by adding Inspector modules
 
 trying to activate the product using your Windows Live ID (Microsoft account) or Office 365 account credentials, the product doesn't get activated
 
-Don't activate the product using your account credentials. Just enter your product key manually to activate Office 2013 copy.
+Don't activate the product using your account credentials.
+Just enter your product key manually to activate Office 2013 copy.
 
 You can follow these simple steps to fix the problem and successfully activate Office 2013 in your system:
 
@@ -312,7 +317,8 @@ Now run following command for each product key:
 `cscript ospp.vbs /unpkey:_last_5_characters_of_product_key_`
 For example if the last 5 characters of one product key are ABCDE, then run following command:
 `cscript ospp.vbs /unpkey:ABCDE`
-Uninstall all existing versions of Office from your system and then reinstall Office 2013. Now it should activate itself without any problem.
+Uninstall all existing versions of Office from your system and then reinstall Office 2013.
+Now it should activate itself without any problem.
 
 **Microsoft Office 2007-2013 File Format**
 
@@ -371,28 +377,30 @@ Tell if the Outlook 2010 is a 32-bit or 64-bit installation ``[11]``
 
 Bitness: x86 or x64
 
-``IF EXIST "%ProgramFiles%\Microsoft Office\Office14\outlook.exe"``
-or ``"%ProgramFiles(x86)%\Microsoft Office\Office14\outlook.exe"``
+`IF EXIST "%ProgramFiles%\Microsoft Office\Office14\outlook.exe"`
+or ``%ProgramFiles(x86)%\Microsoft Office\Office14\outlook.exe"`
 
-``Social Connectors and other Add-ons are specific to 32 or 64-bit editions. 32-bit compiled add-ons will not work in 64-bit office. See Microsoft notes on this \[Link here]``
+Social Connectors and other Add-ons are specific to 32 or 64-bit editions.
+32-bit compiled add-ons will not work in 64-bit office.
+See Microsoft notes on this \[Link here]
 
-Calendar settings, Working Hours ``[12]``
+Calendar settings, Working Hours [^12]
 
-``HKCU\Software\Microsoft\Office\12.0\Outlook\Options\Calendar\CalDefStart``<br>
-``HKCU\Software\Microsoft\Office\12.0\Outlook\Options\Calendar\CalDefEnd``
+`HKCU\Software\Microsoft\Office\12.0\Outlook\Options\Calendar\CalDefStart`<br>
+`HKCU\Software\Microsoft\Office\12.0\Outlook\Options\Calendar\CalDefEnd`
 
 **Outlook command line switches**
 
-``cannot use "%ProgramFiles%\Microsoft Office\Office14\outlook.exe" /?``
+cannot use `"%ProgramFiles%\Microsoft Office\Office14\outlook.exe" /?`
 
-``Switches Detailed in Appendix \_?\_``
+Switches Detailed in Appendix _?_
 
 .PRF file for Outlook profile<br>
 `outlook.exe /importprf MigrateEmail.PRF`
 
 **Security and Attachment file types**
 
-``Attachment file types blocked by Outlook\[13] in the Group 1``
+Attachment file types blocked by Outlook[^13] in the Group 1
 
 Another published Link to Microsoft’s most up to date list
 
@@ -496,18 +504,20 @@ The following table identifies the file types that Outlook blocks by default.
 
 Auto-Complete List (File, Options, Mail, Send Messages, Empty Auto-Complete List)
 
-``.NK2 see NirSoft\[14]``
+`.NK2` see NirSoft[^14]
 
 Outlook Contacts Auto-Complete List
 
-The Auto-Complete List is a feature which displays suggestions for names and e-mail addresses as you begin to type them. These suggestions are possible matches from a list of names and e-mail addresses from the e-mail messages that you have sent.<br>
+The Auto-Complete List is a feature which displays suggestions for names and e-mail addresses as you begin to type them.
+These suggestions are possible matches from a list of names and e-mail addresses from the e-mail messages that you have sent.<br>
 <br>
-In Outlook 2010, the Auto-Complete List file (.nk2) is discontinued. The Auto-Complete List entries are now saved in your Microsoft Exchange Server mailbox or for POP3, IMAP, or Hotmail \& Windows Live accounts, in the Outlook Data File (.pst) for your account.<br>
+In Outlook 2010, the Auto-Complete List file (.nk2) is discontinued.
+The Auto-Complete List entries are now saved in your Microsoft Exchange Server mailbox or for POP3, IMAP, or Hotmail & Windows Live accounts, in the Outlook Data File (.pst) for your account.<br>
 
 Temp folder for Outlook attachments
 
-``HKCU\Software\Microsoft\Office\12.0\Outlook\Security``<br>
-``C:\Users\<UserName>\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Outlook\<random value>\``
+`HKCU\Software\Microsoft\Office\12.0\Outlook\Security`<br>
+`C:\Users\<UserName>\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Outlook\<random value>\`
 
 **Personal Storage and Offline Storage**
 
@@ -573,13 +583,17 @@ Test E-mail AutoConfiguration...
 **Windows 7 and Windows Vista** `<DRIVE>:\Users\<USERNAME>\AppData\Local\Microsoft\Outlook`<br>
 **Windows XP** `<DRIVE>:\Documents and Settings\<USERNAME>\Local Settings\Application Data\Microsoft\Outlook`
 
-Personal Address Books (.pab) are not supported in Outlook 2010. When you upgrade to Outlook 2010, you are prompted to import any .pab file into Contacts. If you choose not to import the .pab file when you first run Outlook 2010, you can import it later by using the **Import** command in the Microsoft Office Backstage view.
+Personal Address Books (.pab) are not supported in Outlook 2010.
+When you upgrade to Outlook 2010, you are prompted to import any .pab file into Contacts.
+If you choose not to import the .pab file when you first run Outlook 2010, you can import it later by using the **Import** command in the Microsoft Office Backstage view.
 
 **Offline Address Book**
 
-The Offline Address Book (.oab) is used by Microsoft Exchange Server accounts. It contains information, such as names, e-mail address, titles, and office locations, from the Global Address List (GAL) on the server that runs Exchange.
+The Offline Address Book (.oab) is used by Microsoft Exchange Server accounts.
+It contains information, such as names, e-mail address, titles, and office locations, from the Global Address List (GAL) on the server that runs Exchange.
 
-You do not have to back up or restore this file. This is file is created and updated automatically.
+You do not have to back up or restore this file.
+This is file is created and updated automatically.
 
 **Windows 7 and Windows Vista** `<DRIVE>:\Users\<USERNAME>\AppData\Local\Microsoft\Outlook`<br>
 **Windows XP** `<DRIVE>:\Documents and Settings\<USERNAME>\Local Settings\Application Data\Microsoft\Outlook`
@@ -603,13 +617,15 @@ This file includes information about the contents of the Navigation Pane.
 
 **Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Outlook`
 
-**Note** If you upgraded to Outlook 2010 from a version of Outlook earlier than Microsoft Outlook 2002, you might have an .rwz file on your computer's hard disk drive. The .rwz file is no longer needed, and the information about rules is now kept on the server running Microsoft Exchange, and in the Outlook Data File (.pst) for POP3 and IMAP e-mail accounts. You can delete the file.
+**Note** If you upgraded to Outlook 2010 from a version of Outlook earlier than Microsoft Outlook 2002, you might have an .rwz file on your computer's hard disk drive.
+The .rwz file is no longer needed, and the information about rules is now kept on the server running Microsoft Exchange, and in the Outlook Data File (.pst) for POP3 and IMAP e-mail accounts.
+You can delete the file.
 
 If you use the Rules Import and Export feature, the default location for .rwz files is your **Documents** folder.
 
 **Print styles (Outlprnt with no extension)**
 
-`**Windows Vista** <DRIVE>:\Users\<USERNAME>\AppData\Roaming\Microsoft\Outlook`
+**Windows Vista** `<DRIVE>:\Users\<USERNAME>\AppData\Roaming\Microsoft\Outlook`
 
 **Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Outlook`
 
@@ -651,7 +667,7 @@ If installed, and personal or computer-wide.
 
 Forms
 
-``Program Files\<Office folder>\Office 14\Forms\<language ID>``
+`Program Files\<Office folder>\Office 14\Forms\<language ID>`
 
 .ico, cfg, see SCL.CFG commonly used for Exchange/Outlook spam confidence level
 
@@ -661,7 +677,7 @@ Forms
 
 **Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Application Data\Microsoft\Outlook`
 
-``\<Profile Name>.srs``
+`\<Profile Name>.srs`
 
 **Message (.msg, .htm, .rtf)**
 
@@ -721,44 +737,44 @@ The places.sqlite file contains all your Firefox bookmarks and the list of all t
 
 **Custom Dictionary**
 
-``C:\users\[username]\AppData\Roaming\Mozilla\Firefox\Profiles\[unique-alphanumeric-string].default\persdict.dat``<br>
-``C:\Documents and Settings\[username]\ApplicationData\Mozilla\Firefox\Profiles\[unique-alphanumeric-string].default\persdict.dat``
+`C:\users\[username]\AppData\Roaming\Mozilla\Firefox\Profiles\[unique-alphanumeric-string].default\persdict.dat`<br>
+`C:\Documents and Settings\[username]\ApplicationData\Mozilla\Firefox\Profiles\[unique-alphanumeric-string].default\persdict.dat`
 
 Firefox:
 
-``C:\Users\<USERNAME>\AppData\Local\Mozilla\Firefox\Profiles\<some profile number>.default\``
+`C:\Users\<USERNAME>\AppData\Local\Mozilla\Firefox\Profiles\<some profile number>.default\`
 
-``\*.sqllite files``
+`*.sqllite` files
 
 * [SQLLiteStudio](http://www.sqlite.org/cvstrac/wiki?p=ManagementTools)
 * dBeaver
 
 Firefox Cached Pages
 
-``C:\Users\<USERNAME>\AppData\Local\Mozilla\Firefox\Profiles\<some profile number>.default\Cache``
+`C:\Users\<USERNAME>\AppData\Local\Mozilla\Firefox\Profiles\<some profile number>.default\Cache`
 
 [http://www.securityfocus.com/infocus/1832](http://www.securityfocus.com/infocus/1832)
 
 Firefox Form History File<br>
-``C:\Users\<USERNAME>\AppData\Roaming\Mozilla\Firefox\Profiles\<some profile number>.default\formhistory.sqlite``
+`C:\Users\<USERNAME>\AppData\Roaming\Mozilla\Firefox\Profiles\<some profile number>.default\formhistory.sqlite`
 
 Firefox Passwords File<br>
-``C:\Users\<USERNAME>\AppData\Roaming\Mozilla\Firefox\Profiles\<some profile number>.default\signons.sqlite``
+`C:\Users\<USERNAME>\AppData\Roaming\Mozilla\Firefox\Profiles\<some profile number>.default\signons.sqlite`
 
 Firefox Cookies<br>
-``C:\Users\<USERNAME>\AppData\Roaming\Mozilla\Firefox\Profiles\<some profile number>.default\cookies.sqlite``
+`C:\Users\<USERNAME>\AppData\Roaming\Mozilla\Firefox\Profiles\<some profile number>.default\cookies.sqlite`
 
 #### Adobe Flash Player {#FlashPlayer}
 
 Flash Cookies Location<br>
-``C:\Users\<USERNAME>\AppData\Roaming\Macromedia\Flash Player\\#SharedObjects\<random value>\``
+`C:\Users\<USERNAME>\AppData\Roaming\Macromedia\Flash Player\\#SharedObjects\<random value>\`
 
 Adobe Flash Player Update Configuration
 
 Adobe Flash Player Background Updater
 
-``C:\Windows\System32\Macromed\Flash\mms.cfg``<br>
-``C:\Windows\SysWOW64\Macromed\Flash\mms.cfg``
+`C:\Windows\System32\Macromed\Flash\mms.cfg`<br>
+`C:\Windows\SysWOW64\Macromed\Flash\mms.cfg`
 
 Administrator Guide[17]
 
@@ -787,40 +803,41 @@ Cover images `C:\Users\<UserName>\Music\iTunes\Album Artwork`<br>
 the iTunes configuration files (delete the "SC Info.sidb" file)[19]
 
  * The preference files for Windows Vista and 7 `[20]` are here:
-   - ``C:\Users\username\AppData\Local\Apple Computer\iTunes\``
-   - ``C:\Users\username\AppData\Roaming\Apple Computer\iTunes``
+   - `C:\Users\username\AppData\Local\Apple Computer\iTunes\`
+   - `C:\Users\username\AppData\Roaming\Apple Computer\iTunes`
  * In Windows XP and 2000 the iTunes preference files`[21]` are here:
-   - ``C:\Documents and Settings\username\Application Data\Apple Computer\iTunes\``
-   - ``C:\Documents and Settings\username\Local Settings\Application Data\Apple Computer\iTunes``
- * In Windows XP and 2000 the iTunes configuration files `[22]` are here:
-   - ``C:\Documents and Settings\All Users\Application Data\Apple Computer\iTunes\SC Info``
+   - `C:\Documents and Settings\username\Application Data\Apple Computer\iTunes\`
+   - `C:\Documents and Settings\username\Local Settings\Application Data\Apple Computer\iTunes`
+ * In Windows XP and 2000 the iTunes configuration files [22] are here:
+   - `C:\Documents and Settings\All Users\Application Data\Apple Computer\iTunes\SC Info`
 
 Devices
 
-``C:\Users\UserName\AppData\Local\Apple Computer\iTunes\iPodDevices.xml``
+`C:\Users\UserName\AppData\Local\Apple Computer\iTunes\iPodDevices.xml`
 
 **iCloud**
 
-``Photostream My Pictures\Photostream\My Photostream ?``
+Photostream `My Pictures\Photostream\My Photostream` ?
 
 **Safari**
 
-#### Java (Sun/Oracle) {#h.ol8w38ugj79h" id="h.ol8w38ugj79h
+#### Java (Sun/Oracle)
 
 **Offline MSI Installer files**
 
-Java doesn’t provide downloads of MSI files. They can be located here during/after installation``[23]``<br>
-``C:\Users\<user>\AppData\LocalLow\Sun\Java\jre1.7.0_09\jre1.7.0_09.msi``<br>
-``C:\Documents and Settings\<USERNAME>\Local Settings\ApplicationData\Sun\Java\jre1.6.0_37_x64\jre1.6.0_37.msi``
+Java doesn’t provide downloads of MSI files.
+They can be located here during/after installation[23]<br>
+`C:\Users\<user>\AppData\LocalLow\Sun\Java\jre1.7.0_09\jre1.7.0_09.msi`<br>
+`C:\Documents and Settings\<USERNAME>\Local Settings\ApplicationData\Sun\Java\jre1.6.0_37_x64\jre1.6.0_37.msi`
 
 **Autoupdate Registry key**
 
-``HKLM\SOFTWARE\JavaSoft\Java Update\Policy\EnableJavaUpdate=0``<br>
-``HKLM\SOFTWARE\WOW6432Node\JavaSoft\Java Update\Policy\EnableJavaUpdate=0``
+`HKLM\SOFTWARE\JavaSoft\Java Update\Policy\EnableJavaUpdate=0`<br>
+`HKLM\SOFTWARE\WOW6432Node\JavaSoft\Java Update\Policy\EnableJavaUpdate=0`
 
 **Java Temporary files**
 
-Jar file cache``[24]`` (Good to clean following of virus?)<br>
+Jar file cache[24] (Good to clean following of virus?)<br>
 Java 6 or 7, Windows Vista or above `C:\Users\UserName\AppData\LocalLow\Sun\Java\Deployment\cache`
 
 **High-Security Option**
@@ -828,9 +845,9 @@ Java 6 or 7, Windows Vista or above `C:\Users\UserName\AppData\LocalLow\Sun\Java
 Security files area for getting higher level security certificates.
 
 Also settings to help protect from exploits<br>
-``HKCU\Software\AppDataLow\Software\JavaSoft\DeploymentProperties\\"deployment.security.level"="HIGH"``<br>
-Setting the Security Level of the Java Client``[25]``<br>
-``jre-7u10-windows-i586.exe with flags: /s WEB\_JAVA=1 WEB\_JAVA\_SECURITY\_LEVEL=H``
+`HKCU\Software\AppDataLow\Software\JavaSoft\DeploymentProperties\\"deployment.security.level"="HIGH"`<br>
+Setting the Security Level of the Java Client[25]<br>
+`jre-7u10-windows-i586.exe` with flags: `/s WEB_JAVA=1 WEB_JAVA\_SECURITY_LEVEL=H`
 
 **Install**
 
