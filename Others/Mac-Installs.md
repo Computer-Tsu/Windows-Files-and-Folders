@@ -476,6 +476,10 @@ iMac (21.5-inch) Early 2013 924.9 MB |
 
 For more information on which operating systems are supported on different Mac systems, click here: http://support.apple.com/kb/HT5634
 
+#### Downloader for Boot Camp files
+
+[brigadier](https://github.com/timsutton/brigadier)
+
 ### Homebrew
 
 ### Raycast
