@@ -1,7 +1,9 @@
 # Common Windows Applications
+
 programs bundle included with Microsoft Windows
 
 ### Popular Applications
+
 [Common Applications](Common-Apps.md)
 
 #### Internet Explorer
@@ -14,18 +16,15 @@ Windows 7 (IE version 9)
 
 `C:\Windows\Downloaded Program Files`
 
-Internet Explorer Temp Folder (IE Cache)
+Internet Explorer Temp Folder (IE Cache)<br>
+`C:\Users\UserName\AppData\Local\Microsoft\Windows\Temporary Internet Files`
 
-``C:\Users\UserName\AppData\Local\Microsoft\Windows\Temporary Internet Files``
-
-IE Cookies
-
+IE Cookies<br>
 `C:\Users\username\AppData\Roaming\Microsoft\Windows\Cookies`
 
 Good to export this file using IE, File, Export when moving a user to another computer.
 
-Internet Explorer History
-
+Internet Explorer History<br>
 `C:\Users\<USERNAME>\AppData\Local\Microsoft\Windows\History`
 
 IE Typed URLs<br>
@@ -43,21 +42,21 @@ obfuscated form
 
 **Links and Shortcuts**
 
-``C:\Users\UserName\Links``
+`C:\Users\UserName\Links`
 
 Windows XP
 
-``C:\Documents and Settings\<UserName>\Application Data\Microsoft\Internet Explorer\Quick Launch``
+`C:\Documents and Settings\<UserName>\Application Data\Microsoft\Internet Explorer\Quick Launch`
 
 Must also enable the Toolbar, right click Toolbars, select
 
 Windows 7
 
-``%APPDATA%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar``<br>
-``HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Taskband``
+`%APPDATA%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar`<br>
+`HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Taskband`
 
 **Internet Explorer image in web page, Set as background**<br>
-``C:\Users\UserName\AppData\Roaming\Microsoft\Internet Explorer\Internet Explorer Wallpaper.bmp``
+`C:\Users\UserName\AppData\Roaming\Microsoft\Internet Explorer\Internet Explorer Wallpaper.bmp`
 
 **Internet Security Properties, Sites, Add website to the zone**
 
@@ -71,7 +70,7 @@ Internet/Untrusted
 
 URL Wildcard Sequence:
 
-Examples of valid patterns:
+Examples of valid patterns:<br>
 ```
 *://*.microsoft.com
 http://*.microsoft.co.jp
@@ -80,7 +79,7 @@ file:\localsvr\share
 *://157.54.100-200.*
 ```
 
-Examples of invalid patterns:
+Examples of invalid patterns:<br>
 ```
 http://microsoft.*.com
 ftp://*
@@ -94,24 +93,24 @@ Outlook Emails and Attachments classified under which Security Zone?
 
 URLs to add for viewing system files in MMC
 
-``about:\_?\_``
+about:_?_
 
 **Internet Explorer Administration Kit**<br>
 `.ins` automatic configuration file for customized browser configuration settings created with the Profile Manager
 
 #### Windows Live
 
-``C:\Program Files (x86)\Common Files\Windows Live\.cache\``
+`C:\Program Files (x86)\Common Files\Windows Live\.cache\`
 
 #### Outlook Express
 
 **Outlook Express E-Mail Storage**<br>
-``C:\Documents and Settings\Username\Local\Application Data\Identities``
+`C:\Documents and Settings\Username\Local\Application Data\Identities`
 
 **Outlook Express Address Book Contacts**
 
 Address Book used by Outlook Express ``[9]``<br>
-``C:\Documents and Settings\<UserName>\Application Data\Microsoft\Address Book``
+`C:\Documents and Settings\<UserName>\Application Data\Microsoft\Address Book`
 
 Do other applications use it? Outlook, Windows? (`*.pab`, `*.wab`)
 
@@ -234,10 +233,10 @@ VBA 7.0 settings were reset to their defaults after migration instead of automat
 This occurred because the registry settings for VBA are in a different hive in Office 2010, as shown in the following table.
 
 Office 2000 through Office 2007<br>
-``HKCU\SOFTWARE\Microsoft\VBA\6.0\Common``
+`HKCU\SOFTWARE\Microsoft\VBA\6.0\Common`
 <br>
 Office 2010<br>
-``HKCU\SOFTWARE\Microsoft\VBA\7.0\Common``
+`HKCU\SOFTWARE\Microsoft\VBA\7.0\Common`
 
 
 | Office 9 through Office 12 | Office 14|
@@ -378,11 +377,11 @@ Tell if the Outlook 2010 is a 32-bit or 64-bit installation ``[11]``
 Bitness: x86 or x64
 
 `IF EXIST "%ProgramFiles%\Microsoft Office\Office14\outlook.exe"`
-or ``%ProgramFiles(x86)%\Microsoft Office\Office14\outlook.exe"`
+or `%ProgramFiles(x86)%\Microsoft Office\Office14\outlook.exe"`
 
 Social Connectors and other Add-ons are specific to 32 or 64-bit editions.
 32-bit compiled add-ons will not work in 64-bit office.
-See Microsoft notes on this \[Link here]
+See Microsoft notes on this [Link here]
 
 Calendar settings, Working Hours [^12]
 
@@ -551,13 +550,13 @@ for opening attachments `C:\Users\<UserName>\AppData\Local\Microsoft\Windows\Tem
 
 **Outlook logging (troubleshooting)**
 
-Diagnostics log location`[15]` (File, Options, Advanced, Other, Enable troubleshooting logging)
+Diagnostics log location[15] (File, Options, Advanced, Other, Enable troubleshooting logging)
 
 The calendar log file is a binary file that cannot be read without a conversion process. Contact Microsoft Support.
 
 MAPI (Exchange), POP3, and SMTP log file:
 
-* Windows Vista \& 7 - `c:\Users\<USERNAME>\AppData\Local\Temp\Outlook Logging\OPMLog.log`
+* Windows Vista & 7 - `c:\Users\<USERNAME>\AppData\Local\Temp\Outlook Logging\OPMLog.log`
 * Windows XP - `c:\Documents and Settings\<USERNAME>\Local Settings\Temp\Outlook Logging\OPMLog.log`
 * `%temp%\olkas\yymmdd-time-fb.log` ?
 
@@ -566,15 +565,14 @@ IMAP transport name is similar to:
 * Windows Vista \& 7 - `c:\Users\<USERNAME>\AppData\Local\Temp\Outlook Logging\IMAP-ExampleCom-07_19_2012-14_03_44_865.log`
 * Windows XP - `c:\Documents and Settings\<USERNAME>\Local Settings\Temp\Outlook Logging\IMAP-ExampleCom-07_19_2012-14_03_44_865.log`
 
-Outlook Profile
-
+Outlook Profile<br>
 `HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows Messaging Subsystem\Profiles`
 
 Microsoft Outlook Configuration Analyzer Tool 2.0 (OCAT)
 
 **Outlook Autodiscover**
 
-`Ctrl+Right click` on Outlook icon in System Tray
+*Ctrl+Right click* on Outlook icon in System Tray
 
 Test E-mail AutoConfiguration...
 
@@ -637,7 +635,7 @@ If you use the Rules Import and Export feature, the default location for .rwz fi
 
 A signature named “Company default” will generate the following files and folder structure.<br>
 ```
-C:\Users\UserName\AppData\Roaming\Microsoft\Signatures\`
+C:\Users\UserName\AppData\Roaming\Microsoft\Signatures\
 +--Company default.htm
 +--Company default.rtf
 +--Company default.txt
@@ -665,8 +663,7 @@ If installed, and personal or computer-wide.
 
 **Windows XP**  `<DRIVE>:\Documents and Settings\<USERNAME>\Local Settings\Application Data\Microsoft\Forms`
 
-Forms
-
+Forms<br>
 `Program Files\<Office folder>\Office 14\Forms\<language ID>`
 
 .ico, cfg, see SCL.CFG commonly used for Exchange/Outlook spam confidence level
@@ -690,7 +687,7 @@ Forms
 `"%ProgramFiles%\Microsoft Office\Office14\outlook.exe" /importprf %LogonServer%\NETLOGON\MigrateEmail.PRF`<br>
 `"%ProgramFiles(x86)%\Microsoft Office\Office14\outlook.exe" /importprf %LogonServer%\NETLOGON\MigrateEmail.PRF`
 
-Use[ ](http://technet.microsoft.com/en-us/library/cc772168.aspx#heading=h.96ds1q77m2pr)[Microsoft Office Customization Tool](http://technet.microsoft.com/en-us/library/cc753151.aspx#heading=h.96ds1q77m2pr) for creating Outlook Profiles (.PRF)
+Use[ ](http://technet.microsoft.com/en-us/library/cc772168.aspx#heading=h.96ds1q77m2pr) and [Microsoft Office Customization Tool](http://technet.microsoft.com/en-us/library/cc753151.aspx#heading=h.96ds1q77m2pr) for creating Outlook Profiles (.PRF)
 
 **MAPI Tools**
 
@@ -700,8 +697,7 @@ MRMAPI
 
 #### Microsoft Media Player
 
-Files recently accessed by Windows Media Player
-
+Files recently accessed by Windows Media Player<br>
 `HKCU\Software\Microsoft\MediaPlayer\Player\RecentFileList`
 
 (XP Only?)
@@ -722,16 +718,30 @@ How to Backup and Restore Windows Media Player DRM Licenses or Media Usage Right
 
 [http://www.mydigitallife.info/individualize-windows-media-player-wmp-for-fairuse4wm-and-invalid-license-error/](http://www.mydigitallife.info/individualize-windows-media-player-wmp-for-fairuse4wm-and-invalid-license-error/)
 
+### Microsoft Windows Features
+
+OCSETUP.EXE OCLIST.EXE DISM, PowerShell, PkgMgr
+
+#### OCSETUP - Optional Components
+
+#### PkgMgr
+
+#### DISM
+
+#### PowerShell - Modify Windows Features/Roles
+
+### Non-Microsoft Third-Party
+
 #### Mozilla Firefox
 
 **User Profile**
 
-``C:\Users\<UserName>\AppData\Roaming\Mozilla\Firefox\Profiles``<br>
-``%APPDATA%\Mozilla\Firefox\Profiles\``
+`C:\Users\<UserName>\AppData\Roaming\Mozilla\Firefox\Profiles`<br>
+`%APPDATA%\Mozilla\Firefox\Profiles\`
 
 **Bookmarks**
 
-Firefox bookmarks (favorites)``[16]``
+Firefox bookmarks (favorites)[16]
 
 The places.sqlite file contains all your Firefox bookmarks and the list of all the websites you’ve visited.
 
@@ -785,38 +795,36 @@ Beginning with new installations of version 10.? `C:\Users\UserName\Music\iTunes
 Music `C:\Users\<UserName>\Music\iTunes\iTunes Media\Music`
 
 AudioBooks<br>
-Pickup Folder (Automatically add to itunes) ``C:\Users\UserName\Music\iTunes\iTunes Media\Automatically Add to iTunes``<br>
+Pickup Folder (Automatically add to itunes) `C:\Users\UserName\Music\iTunes\iTunes Media\Automatically Add to iTunes`<br>
 Books<br>
 Podcasts<br>
 iTunes U<br>
 Movies<br>
 TV Shows<br>
-Compilations ``C:\Users\<UserName>\Music\iTunes\iTunes Media\Music\Compilations``<br>
+Compilations `C:\Users\<UserName>\Music\iTunes\iTunes Media\Music\Compilations`<br>
 Apps<br>
 Device backups `C:\Users\<UserName>\AppData\Roaming\Apple Computer\MobileSync\Backup\78193d251bbc7f3bb18de246a16b8fe6ceba2cf7\` and `.\Manifest.mbdb`<br>
-Device firmware updates `C:\Users\<UserName>\AppData\Roaming\Apple Computer\iTunes\iPod Software Updates``<br>
-Apple Software Updates `C:\Users\<UserName>\AppData\Local\Apple\Apple Software Update``<br>
-iTunes Library files (*.itl)\`[18]` \[sql lite] C:\Users\<UserName>\Music\iTunes\iTunes Library.itl`<br>
+Device firmware updates `C:\Users\<UserName>\AppData\Roaming\Apple Computer\iTunes\iPod Software Updates`<br>
+Apple Software Updates `C:\Users\<UserName>\AppData\Local\Apple\Apple Software Update`<br>
+iTunes Library files (*.itl)[18] [sql lite] `C:\Users\<UserName>\Music\iTunes\iTunes Library.itl`<br>
 iTunes Library file XML `C:\Users\<UserName>\Music\iTunes\iTunes Music Library.xml`<br>
 Cover images `C:\Users\<UserName>\Music\iTunes\Album Artwork`<br>
 
 the iTunes configuration files (delete the "SC Info.sidb" file)[19]
 
- * The preference files for Windows Vista and 7 `[20]` are here:
+ * The preference files for Windows Vista and 7 [20] are here:
    - `C:\Users\username\AppData\Local\Apple Computer\iTunes\`
    - `C:\Users\username\AppData\Roaming\Apple Computer\iTunes`
- * In Windows XP and 2000 the iTunes preference files`[21]` are here:
+ * In Windows XP and 2000 the iTunes preference files[21] are here:
    - `C:\Documents and Settings\username\Application Data\Apple Computer\iTunes\`
    - `C:\Documents and Settings\username\Local Settings\Application Data\Apple Computer\iTunes`
  * In Windows XP and 2000 the iTunes configuration files [22] are here:
    - `C:\Documents and Settings\All Users\Application Data\Apple Computer\iTunes\SC Info`
 
-Devices
-
+Devices<br>
 `C:\Users\UserName\AppData\Local\Apple Computer\iTunes\iPodDevices.xml`
 
-**iCloud**
-
+**iCloud**<br>
 Photostream `My Pictures\Photostream\My Photostream` ?
 
 **Safari**
@@ -941,7 +949,7 @@ Get/Convert Service Tag and Express Service Code
 
 Default folder for extracted drivers
 
-Digital Line Detect
+Digital Line Detect - an app which checks if the modem is connected to a PBX line or a POTS line.
 
 Internet Name Lookup helper(sp?)
 
