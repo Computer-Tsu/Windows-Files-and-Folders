@@ -664,8 +664,7 @@ Uses the scheduled tasks to actually store, but can be created in Event Viewer w
 
 #### ReadyBoost {#readyboost}
 
-`ReadyBoost.sfcache _\<Flash drive>_\ReadyBoost.sfcache`
-
+ReadyBoost.sfcache `<Flash drive>\ReadyBoost.sfcache`<br>
 Cannot be enabled on Windows Server.
 Cannot be enabled when Windows is installed on an SSD drive.
 
@@ -673,8 +672,7 @@ Cannot be enabled when Windows is installed on an SSD drive.
 
 `C:\WINDOWS\csc`
 
-"GoOfflineOnSlowLink"=dword:00000000
-
+"GoOfflineOnSlowLink"=dword:00000000<br>
 "SilentForcedAutoReconnect"=dword:00000001
 
 Windows 2000-XP Cachemov.exe
@@ -693,14 +691,14 @@ Certificate Services Client is a core part of Microsoft® Windows® that manages
 
 **DIMS**
 
-This is the former name of credential roaming; it translates to Digital ID Management Service. Credential roaming is now part of the CSC. You may continue to see the acronym "DIMS” because it is used in Windows code such as in file names, registry hives, and the Eventlog.
+This is the former name of credential roaming; it translates to Digital ID Management Service.
+Credential roaming is now part of the CSC.
+You may continue to see the acronym "DIMS” because it is used in Windows code such as in file names, registry hives, and the Eventlog.
 
 
 #### Windows Media Center Shell {#mcentersh}
 
-Tip: remember to put `C:\Windows\ehome`
-
-in your Path under Computer -> System Properties -> Advanced -> Environment Variables
+Tip: remember to put `C:\Windows\ehome` in your Path under Computer -> System Properties -> Advanced -> Environment Variables
 
 #### Startup and Logon Process {#startup-and-logon}
 
@@ -1973,7 +1971,7 @@ hostname<br>
 whoami<br>
 ipconfig release, renew, flush<br>
 winipcfg.exe, wntipcfg.exe (Windows 9x?) (win 2000 reskit)<br>
-arp clear, set temp for connecting with device using unknown IP<br>
+arp clear, set temp for connecting with device using unknown IP<br> See networking doc for this tip/trick<br>
 `route print`, `route add -p`
 
 These are covered in the NTFS document<br>
@@ -2008,8 +2006,7 @@ ssh. do different versions of telnet have different security?
 **rsexec?**<br>
 [http://stackoverflow.com/questions/3412911/r-exe-rcmd-exe-rscript-exe-and-rterm-exe-whats-the-difference](https://stackoverflow.com/questions/3412911/r-exe-rcmd-exe-rscript-exe-and-rterm-exe-whats-the-difference)
 
-rcmd (NT4 ResKit), remote
-
+rcmd (NT4 ResKit), remote<br>
 [http://www.windowsitpro.com/article/remote-computing/remote-command-7227](https://web.archive.org/web/2015/http://www.windowsitpro.com/article/remote-computing/remote-command-7227)
 
 [http://blogs.msdn.com/b/shamit/archive/2005/03/12/394650.aspx](http://blogs.msdn.com/b/shamit/archive/2005/03/12/394650.aspx)
@@ -2304,7 +2301,7 @@ Windows Server Update Services Tools include the Windows Server Update Services 
 **WUS SQL Database Tools**
 
 `WsusDBHideHidden.sql`<br>
-`WsusDBMaintenance.sql` _Source[28]<br>
+`WsusDBMaintenance.sql` Source[28]<br>
 `"c:\Program Files\Microsoft SQL Server\90\Tools\binn\SQLCMD.EXE" -S np:_\.\pipe\MSSQL$MICROSOFT##SSEE\sql\query -I -i C:\WSUS\WsusDBHideHidden.sql`<br>
 `sqlcmd -S np:_\.\pipe\MSSQL$MICROSOFT##SSEE\sql\query -I -i C:\WSUS\WsusDBMaintenance.sql`
 
@@ -2356,10 +2353,15 @@ WMIC
 **File and Storage Services Tools**
 
 File Services Tools include the following:
+
 Share and Storage Management Tools;
+
 Distributed File System Tools;
+
 File Server Resource Manager Tools;
+
 Services for NFS Administration Tools;
+
 iSCSI management cmdlets for Windows PowerShell
 
  - Distributed File System Tools include the DFS Management snap-in, and the **Dfsradmin.exe**, **Dfsrdiag.exe**, **Dfscmd.exe**, **Dfsdiag.exe**, and **Dfsutil.exe** command-line tools.
@@ -2514,8 +2516,11 @@ default install directory under current user
 **Network Load Balancing Tools**
 
 Network Load Balancing Tools include the
+
 Network Load Balancing Manager;
+
 Network Load Balancing Windows PowerShell Cmdlets;
+
 and the NLB.exe and WLBS.exe Command Line Tools.
 
 #### Remote Desktop Services (Terminal Services/RDP)
@@ -2530,9 +2535,13 @@ A few programs won’t install in a term session, connect on the console.<br>
 **Remote Desktop Services Tools**
 
 Remote Desktop Services Tools include the
+
 Remote Desktop snap-ins;
+
 RD Gateway Manager, `tsgateway.msc`;
+
 RD Licensing Manager, `licmgr.exe`;
+
 RD Licensing Diagnoser, `lsdiag.msc`.
 
 Server Manager should be used for administration of all other RDS role services except RD Gateway and RD Licensing.
@@ -2732,6 +2741,20 @@ Other Windows add-ons
 **Apple**<br>
 iTunes, QuickTime, Safari
 
+`.DS_Store`<br>
+`._filename` example `._readme.txt`
+
+Created by Apple on file systems that don't support alternate data streams like FAT
+
+###### Mitigations
+
+| Target | Command | Note |
+| --- | --- | --- |
+| Stop `.DS_Store` on network volumes | `defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true` | Covers SMB/AFP mounts, not OneDrive (it's a local folder, not a mounted volume) |
+| Stop `.DS_Store` on USB/exFAT drives | `defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true` | Doesn't touch `._` AppleDouble behavior |
+| Clean up existing litter | `find /path/to/share -name '._*' -o -name '.DS_Store' -delete` | Run against your local mount point; be careful with wildcards on a live share |
+| Stop `._` files at the source, if it's a NAS you control (not a bare Windows box) | Load `vfs_fruit` + `vfs_streams_xattr` in Samba's `smb.conf` | Lets macOS store metadata as real NTFS-style streams instead of sidecars — not an option against Windows' own built-in SMB server |
+
 **Adobe**<br>
 Flash, Air, Reader, Shockwave
 
@@ -2826,17 +2849,17 @@ Physical Path<br>
 `%SystemRoot%\sysvol\sysvol\_<domain DNS name>_\Policies\_<GUID>_\user\scripts\logon`
 
 Network Path<br>
-`\\<AD Server>_\sysvol\\_<domain DNS name>_\Policies\\_\<GUID>_\user\scripts\logon`<br>
-`\\<AD Server>_\sysvol\\_<domain DNS name>_\Policies\\_\<GUID>_\user\scripts\logoff`<br>
-`\\<AD Server>_\sysvol\\_<domain DNS name>_\Policies\\_\<GUID>_\machine\scripts\startup`<br>
-`\\<AD Server>_\sysvol\\_<domain DNS name>_\Policies\\_\<GUID>_\machine\scripts\shutdown`<br>
+`\\<AD Server>\sysvol\\<domain DNS name>\Policies\<GUID>\user\scripts\logon`<br>
+`\\<AD Server>\sysvol\\<domain DNS name>\Policies\<GUID>\user\scripts\logoff`<br>
+`\\<AD Server>\sysvol\\<domain DNS name>\Policies\<GUID>\machine\scripts\startup`<br>
+`\\<AD Server>\sysvol\\<domain DNS name>\Policies\<GUID>\machine\scripts\shutdown`<br>
 `%SystemRoot%\system32\repl\import\scripts`
 
 #### GPO Template (.ADMX) files
 
 Only need to be present on the machine where the policies are edited from<br>
-`.ADMX %systemroot%\PolicyDefinitions`<br>
-`.ADML %systemroot%\PolicyDefinitions\en-US`
+.ADMX `%systemroot%\PolicyDefinitions`<br>
+.ADML `%systemroot%\PolicyDefinitions\en-US`
 
 ADM (Group Policy Editor, Add/Remove Template Wizard)<br>
 `C:\Windows\PolicyDefinitions`
@@ -2901,13 +2924,13 @@ They will then be written to the following folder path:
 
 ``____?``
 
-``C:\Windows\System32\dns\backup``
+`C:\Windows\System32\dns\backup`
 
-``nslookup -type=srv _vlmcs._tcp``
+`nslookup -type=srv _vlmcs._tcp`
 
 **Backup/Export AD integrated zone to text file**
 
-``DnsCmd <ServerName> /ZoneExport <ZoneName> <ZoneExportFile>``
+`DnsCmd <ServerName> /ZoneExport <ZoneName> <ZoneExportFile>`
 
 #### Certificate Services
 
@@ -2947,15 +2970,15 @@ A few tools will be included here, see other AD document for better information.
 
 [http://www.ucertify.com/blog/windows-server-2008-tools-used-for-configuring-and-maintaining-active-directory.html](http://www.ucertify.com/blog/windows-server-2008-tools-used-for-configuring-and-maintaining-active-directory.html)
 
-``%windir%\system32\dsac.exe Active Directory Administrative Center``<br>
-``%SystemRoot%\system32\dsa.msc Active Directory Users and Computers``<br>
-``After Windows version _?_ the RAS tab was removed. Exchange 2003? installs extended version in ?``
+`%windir%\system32\dsac.exe` Active Directory Administrative Center<br>
+`%SystemRoot%\system32\dsa.msc` Active Directory Users and Computers<br>
+After Windows version _?_ the RAS tab was removed. Exchange 2003? installs extended version in ?
 
 What attributes are carried across (and which will not) when copying a user.
 
-``ADSI.exe (or mmc or msc?) ADSI Edit MMC (adsiedit.msc)? %SystemRoot%\system32\adsiedit.msc``<br>
-``C:\Windows\System32\LDP.exe``<br>
-``C:\Windows\System32\ldifde.exe``<br>
+ADSI.exe (or mmc or msc?) ADSI Edit MMC (adsiedit.msc)? `%SystemRoot%\system32\adsiedit.msc`<br>
+`C:\Windows\System32\LDP.exe`<br>
+`C:\Windows\System32\ldifde.exe`<br>
 `C:\Windows\System32\Ntdsutil.exe`
 (Windows Server 2003, Windows Server 2003 R2, Windows Server 2003 with SP1, Windows Server 2008, Windows Server 2008 R2) (Ntdsutil.exe is built into Windows Server 2008 and Windows Server 2008 R2.
 It is available if you have the AD DS or the AD LDS server role installed.
@@ -2971,7 +2994,8 @@ tool to extend schema (Windows server upgrades or exchange install)
 
 dsmgmt.exe
 
-Schmmgmt.dll Active Directory Schema snap-in
+`Schmmgmt.dll` Active Directory Schema snap-in<br>
+You have to register the DLL one time on the computer before it will work.
 
 Which AD GUI tools have Advanced views to enable?
 
