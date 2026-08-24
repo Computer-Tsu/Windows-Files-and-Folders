@@ -1,21 +1,21 @@
 #### Network {#network}
 
-`C:\Windows\System32\drivers\etc\hosts`
+arp<br>
+if you know the MAC but the device does not have an IP address or you don't know its IP, then use arp to associate the ethernet address of the target with a temporary IP address so that you can start managing it remotely - to bootstrap connecting to the management console. Must be on a local LAN. Only works when supported by the device's layer 3, usually printers. It only affects your computer, run in elevated command prompt/shell. Delete the address from your arp cache when done using it.
 
+`C:\Windows\System32\drivers\etc\hosts`<br>
 (Take ownership to edit file)
 
 `C:\Windows\System32\ras`
 
 Registry
 
-`HKLM\System\CurrentControlSet\Services\Winsock`
-
+`HKLM\System\CurrentControlSet\Services\Winsock`<br>
 `HKLM\System\CurrentControlSet\Services\Winsock2`
 
 **Remote Access Server (RAS)**
 
-rasdial.exe
-
+rasdial.exe<br>
 Rasphone.pbk
 
 Phonebook Administrator can be added to servers
@@ -30,34 +30,24 @@ symptoms
 
 **diagnostic**
 
-ping command test
-
-`ping -f -l 1024 <IP Address>`
-
+ping command test<br>
+`ping -f -l 1024 <IP Address>`<br
 increase the packet size until the packets fail. Add 28 to get the correct MTU size.
 
-DrTCP
-
+DrTCP<br>
 registry key
 
 **Network Tools**
 
-**net.exe**
-
-`net send` depreciated with Windows ver (Vista?) or SP ___ when messenger service was removed/disabled
-
-MSG.EXE
-
+**net.exe**<br>
+`net send` depreciated with Windows ver (Vista?) or SP ___ when messenger service was removed/disabled<br>
+MSG.EXE<br>
 requires: `HKLM\SYSTEM\CurrentControlSet\Control\TerminalServer\AllowRemoteRPC=1`
 
-net view
-
-net use and net use /delete
-
-net statistics
-
-net services
-
+net view<br>
+net use and net use /delete<br>
+net statistics<br>
+net services<br>
 NET START and NET STOP can be used with any service if you provide the registry key name of display name.
 
 Run `ipconfig /flushdns` to flush the DNS cache, and `nbtstat -RR` to flush the NetBIOS name cache.
@@ -111,14 +101,13 @@ Run `ipconfig /flushdns` to flush the DNS cache, and `nbtstat -RR` to flush the 
 | winsock     | Changes to the `netsh winsock` context.              |
 | wlan        | Changes to the `netsh wlan` context.                 |
 
-**3 netsh commands that may fix a broken Windows network**
-
-Reset TCP/IP Network Stack
-
+**3 netsh commands that may fix a broken Windows network**<br>
+Reset TCP/IP Network Stack<br>
 `netsh int ip reset resetlog.txt`
 
-Reset Winsock using netsh. If you have a LSP that is corrupted and causing network connectivity problems, this command should repair that. Note that if you run this command, you may have to re-install several programs that had LSPs installed previously, such as Google Desktop Search, etc.
-
+Reset Winsock using netsh.
+If you have a LSP that is corrupted and causing network connectivity problems, this command should repair that.
+Note that if you run this command, you may have to re-install several programs that had LSPs installed previously, such as Google Desktop Search, etc.<br>
 `netsh winsock reset catalog`
 
 [http://support.microsoft.com/?kbid=811259](https://support.microsoft.com/?kbid=811259)
@@ -145,14 +134,10 @@ older versions of windows (NT?) had settings stored ? for services like ftp serv
 
 **Network Monitor**
 
-Sources:
-
-Now free install
-
-SMS Service Pack
-
-trial version
-
+Sources:<br>
+Now free install<br>
+SMS Service Pack<br>
+trial version<br>
 Microsoft Support provided version
 
 Agent can be installed on client or server for remote collection
@@ -161,18 +146,17 @@ How to
 
 **Simple TCP-IP Services**
 
-motd file
+motd file<br>
+`_systemroot_\System32\Drivers\Etc\Quotes`.
+A sample quote file is installed with the Simple TCP/IP Services.
+If this file is missing, the quote service fails.
 
-`_systemroot_\System32\Drivers\Etc\Quotes`. A sample quote file is installed with the Simple TCP/IP Services. If this file is missing, the quote service fails.
-
-**Novell NetWare Client**
-
+**Novell NetWare Client**<br>
 available in Windows 2000-XP Pro?
 
 **Enable debugging/logging**
 
-Reg Key
-
+Reg Key<br>
 add DWORD
 
 `C:\Windows\Debug?\netlogon.log`
@@ -189,22 +173,16 @@ sammui.log?
 
 **Loopback Adapter**
 
-purpose
-
-how to install
-
-how to install Windows 8
-
+purpose<br>
+how to install<br>
+how to install Windows 8<br>
 add hardware, manual, select Network, Microsoft
 
 **Network Access Protection (NAP)**
 
-What is it? is it 802.x? RADIUS? 3rd-party hardware?
-
-What components are needed on server?
-
-Is it a role or feature?
-
+What is it? is it 802.x? RADIUS? 3rd-party hardware?<br>
+What components are needed on server?<br>
+Is it a role or feature?<br>
 What components needed on client?
 
 **Troubleshooting NAP**
@@ -213,12 +191,10 @@ What components needed on client?
 
 netsh
 
-event log
-
+event log<br>
 log directory
 
-Scripts
-
+Scripts<br>
 script location
 
 network paths
@@ -227,16 +203,12 @@ Portal, sandbox, updates/rectify
 
 scripts to detect Patches, Anti-Virus?
 
-**Browsing Network**
-
-`net view`
-
+**Browsing Network**<br>
+`net view`<br>
 Explorer and shell extensions
 
-Network Neighborhood (shortcuts appear under My Computer)
-
-My Network Places
-
+Network Neighborhood (shortcuts appear under My Computer)<br>
+My Network Places<br>
 extra columns (description, MAC, IP)
 
 PnP, Media Player sharing
@@ -260,10 +232,8 @@ Network Transport (Microsoft Windows Network)
 **Sites that can be pinged**
 
 [www.google.com](http://technet.microsoft.com/en-us/library/cc731038.aspx)
-
 ```
 8.8.8.8
-
 8.8.4.4
 ```
 
