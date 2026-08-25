@@ -15,8 +15,15 @@ NTSUtil
 A user can only add 10 domain members, any user has rights to join domain.
 admins can add computer name in advance, admins can associate GUID, ethernet MAC to computer name record for WDS.
 Default domain join OU
+Set Read-Only to stop accidental deletions.
 
-Ties to DNS
+How To Undelete<br>
+change attributes - remove the deleted flag, and increase version so it won't be synced again as deleted.
+
+Ties to DNS<br>
+srv records<br>
+split-brain internal vs external hosts and domain name lookup.<br>
+.local, .internal, .corp, .lan *vs* ad.mydomain.com, corp.mydomain.com
 
 Ties to Exchange
 
