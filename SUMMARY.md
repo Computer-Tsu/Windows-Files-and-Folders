@@ -18,6 +18,7 @@
   * [Registry](Objects/Registry.md)
   * [Task Scheduler](Objects/TaskScheduler.md)
   * [Stored Credentials](Objects/Credentials.md)
+  * [Active Directory](Objects/ADirectory.md)
 * [Architecture](Bitness.md)
 * [Preinstallation Environment (PE) & Recovery](WinPE.md)
 * [Appendices](appendices.md)
