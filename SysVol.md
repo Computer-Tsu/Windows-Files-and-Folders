@@ -45,3 +45,7 @@ Administrators and users are normally denied access to prevent accidental change
 - [System Volume Information Large Folder Troubleshooting](https://learn.microsoft.com/en-us/troubleshoot/windows-client/deployment/system-volume-information-large)
 
 ---
+
+**WARNING** Restoring backups to volumes that had deduplication must also correctly restore the `System Volume Information` folder contents or the files will appear to be there but open empty of data.
+
+The SVI folder on the System Reserved partition (usually disk 0, partition 1), the SVI on the boot drive/windows drive, and SVI on data drives (fixed or removable) formatted with NTFS can have different uses and contents.
