@@ -662,6 +662,67 @@ Where to get them
 
 Uses the scheduled tasks to actually store, but can be created in Event Viewer with wizard?
 
+System Reserved on Windows 10-11 with legacy MBR
+```
+diskpart
+list disk
+select disk 0
+list partition
+select partition 1
+assign letter=s
+```
+```
+S:\
+├── $RECYCLE.BIN [HIDDEN, SYSTEM]
+│   ├── S-1-5-21-3141592653-2718281828-161803398-1002 [HIDDEN, SYSTEM]
+│   └── S-1-5-21-1414213562-1618033988-123456789-1000 [HIDDEN, SYSTEM]
+├── Boot [HIDDEN, SYSTEM]
+│   ├── bg-BG
+│   ├── cs-CZ
+│   ├── da-DK
+│   ├── de-DE
+│   ├── el-GR
+│   ├── en-GB
+│   ├── en-US
+│   ├── es-ES
+│   ├── es-MX
+│   ├── et-EE
+│   ├── fi-FI
+│   ├── Fonts
+│   ├── fr-CA
+│   ├── fr-FR
+│   ├── hr-HR
+│   ├── hu-HU
+│   ├── it-IT
+│   ├── ja-JP
+│   ├── ko-KR
+│   ├── lt-LT
+│   ├── lv-LV
+│   ├── nb-NO
+│   ├── nl-NL
+│   ├── pl-PL
+│   ├── pt-BR
+│   ├── pt-PT
+│   ├── qps-ploc
+│   ├── qps-plocm
+│   ├── Resources
+│   │   └── en-US
+│   ├── ro-RO
+│   ├── ru-RU
+│   ├── sk-SK
+│   ├── sl-SI
+│   ├── sr-Latn-RS
+│   ├── sv-SE
+│   ├── tr-TR
+│   ├── uk-UA
+│   ├── zh-CN
+│   ├── zh-HK
+│   └── zh-TW
+├── Recovery [HIDDEN, SYSTEM]
+│   └── Logs [HIDDEN, SYSTEM]
+└── System Volume Information [HIDDEN, SYSTEM, ACL DENIED]
+```
+
 #### ReadyBoost {#readyboost}
 
 ReadyBoost.sfcache `<Flash drive>\ReadyBoost.sfcache`<br>
