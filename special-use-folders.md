@@ -1555,8 +1555,7 @@ Ports
 
 Resource Kit? Tool to backup all drivers and shared printers to file and can restore or import them to another server/PC.
 
-The Microsoft Printer Migrator (Printmig.exe) utility, included in Windows NT 4.0 Resource Kit Supplement 3
-
+The Microsoft Printer Migrator (Printmig.exe) utility, included in Windows NT 4.0 Resource Kit Supplement 3<br>
 `%Systemroot%\System32\Spool\Pm\Pm.CAB`
 
 Vista and later, Administrative Tools, Print Management. Right-click the Print server, choose Export printers to a file...
@@ -1643,8 +1642,7 @@ Manage your file encryption certificates<br>
 
 folder path: DSN files
 
-registry: `HKLM\SOFTWARE\ODBC\ODBC.INI`
-
+registry: `HKLM\SOFTWARE\ODBC\ODBC.INI`<br>
 also a user key at _
 
 #### Windows update
@@ -1655,14 +1653,13 @@ also a user key at _
 **Sites to add to Internet Explorer Trusted Zone**
 
 URLs:[6]
-```
-* https://*.microsoft.com
-* https://download.windowsupdate.com
-* https://update.microsoft.com/windowsupdate
-* http://*.update.microsoft.com
-* https://*.update.microsoft.com
-* http://download.windowsupdate.com
-```
+* `https://*.microsoft.com`
+* `https://download.windowsupdate.com`
+* `https://update.microsoft.com/windowsupdate`
+* `http://*.update.microsoft.com`
+* `https://*.update.microsoft.com`
+* `http://download.windowsupdate.com`
+
 Homegroup setup disk?
 
 ICS (Internet Connection Sharing) setup disk?
@@ -1780,7 +1777,11 @@ To Make Computer as Default Folder to Open by Windows Explorer upon Launching<br
 
 `%SystemRoot%\explorer.exe [/n][/e][,/root],X,[[/Select],Y]`
 
-X specifies the object, and optionally with sub-object Y. /e switch shows the left Windows Explorer tree view navigation pane together with the right pane in list view, while /n hides the left navigation pane. When the /root parameter is present, Explorer.exe will explore the root object (X) and objects belonging to X. On the other hand, when the /root switch is not present, Explorer.exe explores the object X, its children, and other Explorer objects as well. /Select switch puts the focus on a file or folder.
+X specifies the object, and optionally with sub-object Y.
+/e switch shows the left Windows Explorer tree view navigation pane together with the right pane in list view, while /n hides the left navigation pane.
+When the /root parameter is present, Explorer.exe will explore the root object (X) and objects belonging to X.
+On the other hand, when the /root switch is not present, Explorer.exe explores the object X, its children, and other Explorer objects as well.
+/Select switch puts the focus on a file or folder.
 
 For example:<br>
 `%SystemRoot%\explorer.exe /N,%WinDir%\System32,/Select,%WinDir%\System32\Ping.exe`<br>
@@ -1862,13 +1863,15 @@ snap-ins (MSC)
 
 Active Directory Sites and Services has available extension Group Policy Object Editor
 
-Active Directory Users and Computers has available extensions Group Policy Object Editor, Remote Desktop Services - Extension, 3rd-party add-on Extension to AD User and Computer for EmployeeID and photo<?>
+Active Directory Users and Computers has available extensions<br>
+Group Policy Object Editor, Remote Desktop Services - Extension, 3rd-party add-on Extension to AD User and Computer for EmployeeID and photo<?>
 
 Certification Authority has available extension CA Certificate Template Settings
 
 Component Services has DTC MMC Property-sheet extension, DTC MMC Snap-in
 
-Computer Management has Device Manager extension, DHCP Extension, Disk Management Extension, Event Viewer, Internet Information Services (IIS) Manager, Local Users and Groups, Performance Monitor Extension, Services Extension, Shared Folders Extension, Task Scheduler, WMI Control
+Computer Management has<br>
+Device Manager extension, DHCP Extension, Disk Management Extension, Event Viewer, Internet Information Services (IIS) Manager, Local Users and Groups, Performance Monitor Extension, Services Extension, Shared Folders Extension, Task Scheduler, WMI Control
 
 DNS (cannot edit) has Classic Event Viewer Extension, Services Extension
 
@@ -1876,8 +1879,7 @@ Event Viewer has Classic Event Viewer Extension
 
 Exchange Server 2010 has four Exchange Server 2010 Extensions [Try disabling and see what changes]
 
-Failover Cluster Manager has Failover Cluster Extensions, Failover Cluster Resource Extensions
-
+Failover Cluster Manager has Failover Cluster Extensions, Failover Cluster Resource Extensions<br>
 Failover Cluster Manager Host has DHCP Extension, Print Management
 
 Group Policy Management Editor has
@@ -1947,9 +1949,9 @@ Resultant Set of Policy has ...
 
 Server Manager has ...?
 
-Services has
-Extended View,
-Services Dependencies,
+Services has<br>
+Extended View,<br>
+Services Dependencies,<br>
 Snmp Snapin Extension
 
 Shared Folders has no extensions but View: (All, Sessions, Shares, Open Files)
@@ -1958,8 +1960,7 @@ Windows System Resource Manager has ...?
 
 #### Group Policy Starter GPO
 
-Starter GPOs can be stored in the Active Directory.
-
+Starter GPOs can be stored in the Active Directory.<br>
 Starter GPOs in domain
 
 | **Starter GPOs**             |   | **Comment**                                                                                                                                                                                          |
@@ -1979,14 +1980,12 @@ For more information about each of these settings, see the [Windows Vista Securi
 
 Also in `C:\Windows\inf\StarterGPOs`
 
-Security Templates default file list, description, location
-
+Security Templates default file list, description, location<br>
 `...\Documents\Security\Templates`
 
 INF files
 
-`\Windows\security\templates\policies`
-
+`\Windows\security\templates\policies`<br>
 `\Windows\ServiceProfiles\`
 
 LocalService
@@ -2088,28 +2087,19 @@ GUI
 
 **Web-based (IIS hosted admin tools)**
 
-Server Manager, Roles, Streaming Media Services
-
-Application Center
-
-Active Directory Web Services (ADWS on 2008 R2)
-
-IIS (5.0, ...)
-
-Exchange Server (2010, ...) fqdn/ecp
-
-Team Foundation Server (2012, ...)
-
-Virtual Server 2005
-
-Windows Server 2003 `https://ComputerName:8098` (http://technet.microsoft.com/en-us/library/cc755162.aspx)
-
+Server Manager, Roles, Streaming Media Services<br>
+Application Center<br>
+Active Directory Web Services (ADWS on 2008 R2)<br>
+IIS (5.0, ...)<br>
+Exchange Server (2010, ...) fqdn/ecp<br>
+Team Foundation Server (2012, ...)<br>
+Virtual Server 2005<br>
+Windows Server 2003 `https://ComputerName:8098` (http://technet.microsoft.com/en-us/library/cc755162.aspx)<br>
 WSUS (2.0, not 3.0)
 
 ### Windows Server 2012 Core
 
-sconfig.cmd
-
+sconfig.cmd<br>
 [menu or screenshot]
 
 `sc` services<br>
@@ -2221,65 +2211,50 @@ ResKit
 
 32-bit only (Some tools that are also in the Support Tools may have x64 versions on the 64-bit media)
 
-| **Product/Topic**                                         | **Contents**            | **Updates/Versions**     |
-| --------------------------------------------------------- | ----------------------- | ------------------------ |
-| Windows 3.0                                               |                         |                          |
-| MS-DOS 6.22                                               |                         |                          |
-| Windows 3.1                                               |                         |                          |
-| Windows 3.? (WFWG ?)                                      |                         |                          |
-| Windows 95                                                | Documentation and Tools |                          |
-| Windows 98                                                | Documentation and Tools |                          |
-| Windows NT (Workstation & Server)                         |                         |                          |
-| Windows NT 3.51                                           |                         | 2 Supplements for Server |
-| Windows NT 4.0 (Workstation & Server)                     | Docs, Tools, 3rd party  | 4 supplements for Server |
-| Windows 2000 (Professional & Server)                      |                         | 1 supplement for Server  |
-| Windows XP                                                |                         |                          |
-| Windows 2003                                              |                         |                          |
-| Windows XP Professional Resource Kit, Third Edition (SP2) |                         |                          |
-| Windows Vista                                             |                         |                          |
-| Windows Server 2008                                       |                         |                          |
-| Windows Vista, Second Edition (SP1)                       |                         |                          |
-| Windows 7                                                 |                         |                          |
-| PowerShell Pack                                           |                         |                          |
+| **Product/Topic**                          | **Contents**            | **Updates/Versions**     |
+| ------------------------------------------ | ----------------------- | ------------------------ |
+| Windows 3.0                                |                         |                          |
+| MS-DOS 6.22                                |                         |                          |
+| Windows 3.1                                |                         |                          |
+| Windows 3.? (WFWG ?)                       |                         |                          |
+| Windows 95                                 | Documentation and Tools |                          |
+| Windows 98                                 | Documentation and Tools |                          |
+| Windows NT (Workstation & Server)          |                         |                          |
+| Windows NT 3.51                            |                         | 2 Supplements for Server |
+| Windows NT 4.0 (Workstation & Server)      | Docs, Tools, 3rd party  | 4 supplements for Server |
+| Windows 2000 (Professional & Server)       |                         | 1 supplement for Server  |
+| Windows XP                                 |                         |                          |
+| Windows 2003                               |                         |                          |
+| Windows XP Professional Resource Kit,<br>Third Edition (SP2)   |          |                      |
+| Windows Vista                              |                         |                          |
+| Windows Server 2008                        |                         |                          |
+| Windows Vista, Second Edition (SP1)        |                         |                          |
+| Windows 7                                  |                         |                          |
+| PowerShell Pack                            |                         |                          |
 
-Windows XP
-
-Windows 2000
-
-Windows Server 2003
-
-Windows Administration Resource Kit
-
-IIS
-
-SQL?
-
-Exchange?
-
-Group Policy
-
-Windows security
-
-Active Directory
-
-Terminal Services
-
-Internet Information Services 7
-
-Office
-
-Internet Explorer
-
-Windows Media
-
-Internet Information Services
-
-Back Office
-
+* Windows XP
+* Windows 2000
+* Windows Server 2003
+* Windows Administration Resource Kit
+* IIS
+* SQL?
+* Exchange?
+* Group Policy
+* Windows security
+* Active Directory
+* Terminal Services
+* Internet Information Services 7
+* Office
+* Internet Explorer
+* Windows Media
+* Internet Information Services
+* Back Office
 and several server products such as SharePoint and Microsoft Exchange Server
 
 ### Popular Applications
+
 [Common Applications](Common-Apps.md)
+
 ### Microsoft Servers and Windows Services
 
 See appendix _ for list of all Windows components, features, roles
@@ -2304,8 +2279,7 @@ Ddnscmd.exe
 `%systemroot%\System32\dhcp\backup`<br>
 `HKLM\SYSTEM\CurrentControlSet\Services\DHCPServer\Parameters`
 
-**DHCP Server Tools**
-
+**DHCP Server Tools**<br>
 DHCP Server Tools includes the DHCP Management Console, the DHCP Server cmdlet module for Windows Powershell, and the **Netsh** command-line tool.
 
 #### Exchange, SMTP, POP3 Servers
@@ -2323,7 +2297,7 @@ POP3 mailboxes
 
 **ESEUTIL**
 
-``C:\Program Files\Microsoft\Exchange Server\V14\Bin``
+`C:\Program Files\Microsoft\Exchange Server\V14\Bin`
 
 ```
 Extensible Storage Engine Utilities for Microsoft(R) Exchange Server
@@ -2352,8 +2326,8 @@ Paths
 Shares
 
 Default websites and ports<br>
-http 8530<br>
-https 8531
+`8530` http<br>
+`8531` https
 
 **Windows Server Update Services Tools**
 
@@ -2415,12 +2389,9 @@ WMIC
 
 File Services Tools include the following:
 
-Share and Storage Management Tools;
-
-Distributed File System Tools;
-
-File Server Resource Manager Tools;
-
+Share and Storage Management Tools;<br>
+Distributed File System Tools;<br>
+File Server Resource Manager Tools;<br>
 Services for NFS Administration Tools;
 
 iSCSI management cmdlets for Windows PowerShell
@@ -2435,8 +2406,7 @@ iSCSI management cmdlets for Windows PowerShell
 
 **Distributed File System Replication**
 
-DFS Admin Tools listed above/below?
-
+DFS Admin Tools listed above/below?<br?
 DFS Replication of shared folders will create a temp workspace folder
 
 `<JUNCTION> D:\UserData\DfsrPrivate [D:\System Volume Information\DFSR\Private\{2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{957BE5CA-9DF9-45C1-8916-7B610DA0C897}]`
@@ -2451,8 +2421,7 @@ Directory contents:
 
 #### Storage Manager
 
-**Storage Manager for SANs Tools**
-
+**Storage Manager for SANs Tools**<br>
 Storage Manager for SANs Tools include the Storage Manager for SANs snap-in and the **Provisionstorage.exe** command-line tool.
 
 #### File Server Resource Manager
@@ -2477,7 +2446,10 @@ Audio and Video Files:<br>
 `*.aac, *.aif, *.aiff, *.asf, *.asx, *.au, *.avi, *.flac, *.m3u, *.mid, *.midi, *.mov, *.mp1, *.mp2, *.mp3, *.mp4, *.mpa, *.mpe, *.mpeg, *.mpeg2, *.mpeg3, *.mpg, *.ogg, *.qt, *.qtw, *.ram, *.rm, *.rmi, *.rmvb, *.snd, *.swf, *.vob, *.wav, *.wax, *.wma, *.wmv, *.wvx`
 
 Backup Files<br>
-`*.bak, *.bck, *.bkf, *.old`
+`*.bak`,
+`*.bck`,
+`*.bkf`,
+`*.old`
 
 Compressed Files<br>
 `*.ace, *.arc, *.arj, *.bhx, *.bz2, *.cab, *.gz, *.gzip, *.hpk, *.hqx, *.jar, *.lha, *.lzh, *.lzx, *.pak, *.pit, *.rar, *.sea, *.sit, *.sqz, *.tgz, *.uu, *.uue, *.z, *.zip, *.zoo`
@@ -2495,16 +2467,16 @@ Office Files<br>
 `*.accdb`, `*.accde`, `*.accdr`, `*.accdt`, `*.adn`, `*.adp`, `*.doc`, `*.docm`, `*.docx`, `*.dot`, `*.dotm`, `*.dotx`, `*.grv`, `*.gsa`, `*.gta`, `*.mad`, `*.maf`, `*.mda`, `*.mda`, `*.mda`, `*.mdb`, `*.mde`, `*.mdf`, `*.mdf`, `*.mdm`, `*.mdt`, `*.mdw`, `*.mdw`, `*.mdw`, `*.mdz`, `*.mpd`, `*.mpp`, `*.mpt`, `*.obt`, `*.odb`, `*.one`, `*.onepkg`, `*.pot`, `*.potm`, `*.potx`, `*.ppa`, `*.ppam`, `*.pps`, `*.ppsm`, `*.ppsx`, `*.ppt`, `*.pptm`, `*.pptx`, `*.pub`, `*.pwz`, `*.rqy`, `*.rtf`, `*.rwz`, `*.sldm`, `*.sldx`, `*.slk`, `*.thmx`, `*.vdx`, `*.vsd`, `*.vsl`, `*.vss`, `*.vst`, `*.vsu`, `*.vsw`, `*.vsx`, `*.vtx`, `*.wbk`, `*.wri`, `*.xla`, `*.xlam`, `*.xlb`, `*.xlc`, `*.xld`, `*.xlk`, `*.xll`, `*.xlm`, `*.xls`, `*.xlsb`, `*.xlsm`, `*.xlsx`, `*.xlt`, `*.xltm`, `*.xltx`, `*.xlv`, `*.xlw`, `*.xsf`, `*.xsn`
 
 System Files<br>
-``*.acm, *.dll, *.ocx, *.sys, *.vxd``
+`*.acm, *.dll, *.ocx, *.sys, *.vxd`
 
 Temporary Files<br>
-``*.temp, *.tmp, ~*``
+`*.temp, *.tmp, ~*`
 
 Text Files<br>
-``*.asc, *.text, *.txt``
+`*.asc, *.text, *.txt`
 
 Web Page Files<br>
-``*.asp, *.aspx, *.cgi, *.css, *.dhtml, *.hta, *.htm, *.html, *.mht, *.php, *.php3, *.shtml, *.url``
+`*.asp, *.aspx, *.cgi, *.css, *.dhtml, *.hta, *.htm, *.html, *.mht, *.php, *.php3, *.shtml, *.url`
 
 Disk Images<br>
 iso, gi, c2d, 2 hyperv, vmware, ima, img
@@ -2551,6 +2523,8 @@ Windows Internal Database
 
 #### IIS ?
 
+`C:\Windows\System32\inetsrv\appcmd.exe`
+
 #### Failover Clustering
 
 **Failover Clustering Tools**<br>
@@ -2578,15 +2552,14 @@ default install directory under current user
 
 Network Load Balancing Tools include the
 
-Network Load Balancing Manager;
-
-Network Load Balancing Windows PowerShell Cmdlets;
-
+Network Load Balancing Manager;<br>
+Network Load Balancing Windows PowerShell Cmdlets;<br>
 and the NLB.exe and WLBS.exe Command Line Tools.
 
 #### Remote Desktop Services (Terminal Services/RDP)
 
-Remote Desktops (`%windir%\system32\tsmmc.msc /s`) is a great admin tool. It gives one-click access to every server or PC you add to its console.
+Remote Desktops (`%windir%\system32\tsmmc.msc /s`) is a great admin tool.
+It gives one-click access to every server or PC you add to its console.
 
 **Connect to console with this switch**
 
@@ -2599,10 +2572,8 @@ Remote Desktop Services Tools include the
 
 Remote Desktop snap-ins;
 
-RD Gateway Manager, `tsgateway.msc`;
-
-RD Licensing Manager, `licmgr.exe`;
-
+RD Gateway Manager, `tsgateway.msc`;<br>
+RD Licensing Manager, `licmgr.exe`;<br>
 RD Licensing Diagnoser, `lsdiag.msc`.
 
 Server Manager should be used for administration of all other RDS role services except RD Gateway and RD Licensing.
