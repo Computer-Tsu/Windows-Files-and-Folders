@@ -17,6 +17,7 @@
 
 | Version Number | Codename       | Release Date | End of Support Date |
 |----------------|----------------|--------------|---------------------|
+| macOS 27       | Golden Gate    | 2026-09-14   | 2029-09 ? (est.)    |
 | macOS 26       | Tahoe          | 2025-09-15   | 2028-09 ? (est.)    |
 | macOS 15       | Sequoia        | 2024-09-16   | 2027-09             |
 | macOS 14       | Sonoma         | 2023-09-26   | 2026-09             |
@@ -64,6 +65,7 @@
 | iPhone OS 2    | 2008-07-11   | 2009-06-17          |
 | iPhone OS 1    | 2007-06-29   | 2008-07-11          |
 
+**macOS Golden Gate runs only on Apple Silcon CPU and last version which will include Rosetta the Intel binary-compatible emulation**
 
 -----
 
