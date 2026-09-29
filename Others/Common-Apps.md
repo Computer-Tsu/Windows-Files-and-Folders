@@ -145,21 +145,30 @@ What are the product IDs?
 * Does converters and graphics filters affect file preview of .GIF, .JPG?
 * OCR tools removed from 64-bit. Were part of discontinued Picture/Imaging Manager? Some work arounds include installing Sharepoint designer? or using OneNote and TIF file?
 
+**Office Product Key Activation**
+
+```
+cd "C:\Program Files\Microsoft Office\Office16"
+cscript ospp.vbs /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+cscript ospp.vbs /act
+cscript ospp.vbs /dstatus
+```
+
 **How To configure Outlook LDAP directory to use AD**
 
 1. Add account, Address Books tab, Microsoft LDAP Directory
-2. Server Name: FQDN to server
+2. **Server Name:** FQDN to server
 3. Logon Information
-4. This server requires me to log on: Checked (User Name and Password can be left blank)
-5. Require Secure Password Authentication (SPA) Checked
-6. More Settings ... button
-7. Connection tab
-8. Display Name: The name of the address book your users will see
-10. Connection Details: no change needed
-11. Search tab
+4. **This server requires me to log on:** Checked (*User Name* and *Password* can be left blank)
+5. **Require Secure Password Authentication (SPA)** Checked
+6. **More Settings ...** button
+7. **Connection** tab
+8. **Display Name:** The name of the address book your users will see
+10. **Connection Details:** no change needed
+11. **Search** tab
 12. Specify the maximum number of entries you want to return after a successful search: 200
-13. Search Base, Custom: `dc=domainname,dc=com`
-14. Enable Browsing **(requires server support)**
+13. **Search Base**, Custom: `dc=domainname,dc=com`
+14. **Enable Browsing** *(requires server support)*
 
 **Differences with Service Pack 1**
 
