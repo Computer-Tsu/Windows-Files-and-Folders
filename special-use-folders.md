@@ -2429,8 +2429,8 @@ Storage Manager for SANs Tools include the Storage Manager for SANs snap-in and 
 
 **Default File Groups**
 
-| **File Groups**            | **File Extensions**                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **File Groups**            | **File Extensions**        |
+| -------------------------- | ------------------------ |
 | Audio and Video Files[29] | aac, aif, aiff, asf, asx, au, avi, flac, m3u, mid, midi, mov, mp1, mp2, mp3, mp4, mpa, mpe, mpeg, mpeg2, mpeg3, mpg, ogg, qt, qtw, ram, rm, rmi, rmvb, snd, swf, vob, wav, wax, wma, wmv, wvx                                                                                                                                                                                                                                                                                    |
 | Backup Files               | bak, bck, bkf, old                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Compressed Files[30]      | ace, arc, arj, bhx, bz2, cab, gz, gzip, hpk, hqx, jar, lha, lzh, lzx, pak, pit, rar, sea, sit, sqz, tgz, uu, uue, z, zip, zoo                                                                                                                                                                                                                                                                                                                                                    |
@@ -2581,8 +2581,8 @@ Server Manager should be used for administration of all other RDS role services 
 
 [http://technet.microsoft.com/en-us/library/cc725766.aspx](http://technet.microsoft.com/en-us/library/cc725766.aspx)
 
-| **Command**                                                                                                                                           | **Description**                                                                                                        |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **Command**                         | **Description**               |
+| --------------------------- | ------------------------- |
 | [Change](http://technet.microsoft.com/en-us/library/cc753982.aspx)                                                                                    | Changes Remote Desktop Session Host (RD Session Host) server settings for logons, COM port mappings, and install mode. |
 | [Change logon](http://technet.microsoft.com/en-us/library/cc753586.aspx)                                                                              | Enables or disables logons from client sessions on an RD Session Host server, or displays current logon status.        |
 | [Change port](http://technet.microsoft.com/en-us/library/cc752988.aspx)                                                                               | Lists or changes the COM port mappings to be compatible with MS-DOS applications.                                      |
@@ -2830,8 +2830,8 @@ Log files folder `C:\Windows\NTDS`<br>
 SYSVOL folder `C:\Windows SYSVOL`<br>
 NTDS and _?_ folder location can be customized during installation of Active Directory role.
 
-| **DB/Log/Sys** | **File**           |                                                                                                                                                                                |
-| -------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **DB/Log/Sys** | **File**           |                      |
+| -------------- | ------------------ | ------------------------------ |
 | NTDS           | edb.chk            | The file that is used to track the point up to which transactions in the log file have been committed.                                                                         |
 | NTDS           | edb.log            | The log file into which directory transactions are written before being committed to the database file.                                                                        |
 | NTDS           | edb00085.log       | Active Directory creates additional log files as necessary as existing log files fill up. Each log file has a fixed size of 10 MB.                                             |
@@ -2975,10 +2975,10 @@ Active Directory Certificate Services Tools includes the Certification Authority
 
 [http://technet.microsoft.com/en-us/library/cc772497.aspx](http://technet.microsoft.com/en-us/library/cc772497.aspx)
 
-| Command                                                                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Command            | Description                          |
+| --------------- | ------------------------------------------ |
 | [Certreq](http://www.swiftforensics.com/2012/08/tracking-usb-first-insertion-in-event.html) | <p>Certreq can be used to:</p><ol><li>Request certificates from a certification authority (CA).</li><li>Retrieve a response to a previous request from a CA.</li><li>Create a new request from an .inf file.</li><li>Accept and install a response to a request.</li><li>Construct a cross-certification or qualified subordination request from an existing CA certificate or request.</li><li>Sign a cross-certification or qualified subordination request.</li></ol> |
-| [Certutil](http://technet.microsoft.com/en-us/library/cc731968.aspx)                        | Displays certification configuration information, and configures Certificate Services.                                                                                                                                                                                                                                                                                                                                                                                   |
+| [Certutil](http://technet.microsoft.com/en-us/library/cc731968.aspx)                        | Displays certification configuration information, and configures Certificate Services.                                |
 
 ### Active Directory (LDAP) Database
 
@@ -3241,6 +3241,7 @@ KB902838
 | C:\Program Files\RUXIM\RUXIMIH.exe   |  Reusable UX Interaction Manager |
 | C:\Program Files\RUXIM\RUXIMICS.exe  |  Reusable UX Interaction Manager |
 | C:\Program Files\RUXIM\PLUGScheduler.exe | Windows Update LifeCycle Component Scheduler |
+| DTUDriver.exe   |   Direct To Update Driver |
 
 [End of support for Windows 10, Windows 8.1, and Windows 7 | Microsoft Windows](www.microsoft.com/windows/end-of-support?OCID=app_omc_win_CAN_EOS_CY27)
 
