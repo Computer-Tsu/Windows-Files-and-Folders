@@ -2381,7 +2381,8 @@ Change the GUID/UUID of existing managed computer object
 
 WMI filters
 
-WMIC
+WMIC<br>
+currently deprecated
 
 ### File Sharing, Storage Stuff
 
@@ -3106,8 +3107,8 @@ Description: This dsmod command modifies existing objects in the directory.
 
 [http://technet.microsoft.com/en-us/library/cc771131.aspx](http://technet.microsoft.com/en-us/library/cc771131.aspx)
 
-| **Command**                                                                                                                                        | **Description**                                                                                                                                                                                                     |
-| -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Command**        | **Description**       |
+| -------------------------- | ----------------------- |
 | [Adprep](http://www.grimadmin.com/article.php/creating-modifying-windows-7-libraries)                                                              | Extends the Active Directory schema and updates permissions as necessary to prepare a forest and domain for a domain controller that runs the Windows Server 2008 operating system.                                 |
 | [Csvde](http://technet.microsoft.com/en-us/library/cc742118.aspx)                                                                                  | Imports and exports data from Active Directory using files that store data in the comma-separated value (CSV) format. You can also support batch operations based on the CSV file format standard.                  |
 | [Dcdiag](http://www.forensickb.com/2009/01/windows-event-logs.html)                                                                                | Analyzes the state of domain controllers in a forest or enterprise and reports any problems to help in troubleshooting.                                                                                             |
@@ -3232,6 +3233,17 @@ KB902838
 #### Active Directory Database Mounting Tool
 
 #### Active Directory Recycle Bin
+
+### Windows 10 support has ended
+
+| Filename | Descriptions |
+| ----- | ----- |
+| C:\Program Files\RUXIM\RUXIMIH.exe   |  Reusable UX Interaction Manager |
+| C:\Program Files\RUXIM\RUXIMICS.exe  |  Reusable UX Interaction Manager |
+| C:\Program Files\RUXIM\PLUGScheduler.exe | Windows Update LifeCycle Component Scheduler |
+
+[End of support for Windows 10, Windows 8.1, and Windows 7 | Microsoft Windows](www.microsoft.com/windows/end-of-support?OCID=app_omc_win_CAN_EOS_CY27)
+
 
 1. Not used, group policy or partial solution use `\Default\Favorites` instead. ↑
 2. [http://support.microsoft.com/kb/971760](http://support.microsoft.com/kb/971760) ↑
