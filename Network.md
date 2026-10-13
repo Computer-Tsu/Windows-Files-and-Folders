@@ -151,6 +151,8 @@ motd file<br>
 A sample quote file is installed with the Simple TCP/IP Services.
 If this file is missing, the quote service fails.
 
+** finger**
+
 **Novell NetWare Client**<br>
 available in Windows 2000-XP Pro?
 
@@ -236,6 +238,17 @@ Network Transport (Microsoft Windows Network)
 8.8.8.8
 8.8.4.4
 ```
+
+### IP address?
+
+cloudflare test
+
+search engine query showing current external IP without additional clicks/ads
+
+* **Bing**
+* **Google**
+* **Yahoo**
+* 
 
 verified as of [Publication Date]
 
