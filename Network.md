@@ -1,5 +1,27 @@
 #### Network {#network}
 
+#### Windows Wireless Config
+
+Registry key of remembered Wi-Fi connections<br>
+`HKLM\SOFTWARE\Microsoft\WZCSVC\Parameters\Interfaces` ?
+
+Wireless setup disk config file
+
+```
+A:.
+│   AUTORUN.INF
+│   setupSNK.exe
+│
+├───SMRTNTKY
+└───DEVICE
+    fcw.ico
+    MessageB.txt
+    WSETTING.TXT
+    WSETTING.WFC
+```
+
+
+
 arp<br>
 if you know the MAC but the device does not have an IP address or you don't know its IP, then use arp to associate the ethernet address of the target with a temporary IP address so that you can start managing it remotely - to bootstrap connecting to the management console. Must be on a local LAN. Only works when supported by the device's layer 3, usually printers. It only affects your computer, run in elevated command prompt/shell. Delete the address from your arp cache when done using it.
 
