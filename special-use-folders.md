@@ -1397,36 +1397,36 @@ Log Results<br>
 
 `Files excluded for all users by default\[4]:
 
-| **Filename**                                                                          | **Application**                                                                                      |
-| ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| \*.crmlog                                                                           | Microsoft Writer (Bootable State)                                                                    |
-| \hiberfil.sys                                                                         | Power Management                                                                                     |
-| \Pagefile.sys                                                                         | Memory Page File                                                                                     |
-| \System Volume Information\*.{7cc467ef-6865-4831-853f-2a4817fd1bca}ALT              | VSS Service Alternate DB                                                                             |
-| \System Volume Information\*.{7cc467ef-6865-4831-853f-2a4817fd1bca}DB               | VSS Service DB                                                                                       |
-| \System Volume Information\*{3808876B-C176-4e48-B7AE-04046E6CC752}                  | VSS Default Provider                                                                                 |
-| \System Volume Information\DFSR\*                                                   | DFSR Database                                                                                        |
-| \System Volume Information\MountPointManagerRemoteDatabase                            | Mount Manager                                                                                        |
-| C:\Documents and Settings\All Users\Application Data\Microsoft\Network\Downloader\* | BITS\_metadata                                                                                       |
-| C:\Documents and Settings\All Users\DRM\*                                           | DRM                                                                                                  |
-| C:\Documents and Settings\%Username%\index.dat                                       | Internet Explorer                                                                                    |
-| C:\Documents and Settings\%Username%\Local Settings\Temp\2\*                       | Temporary Files                                                                                      |
-| C:\Windows\csc\*                                                                    | Client Side Cache                                                                                    |
-| C:\WINDOWS\Debug\*                                                                  | Winlogon debug                                                                                       |
-| C:\WINDOWS\netlogon.chg                                                               | Netlogon                                                                                             |
-| C:\WINDOWS\Registration\*.clb                                                       | Microsoft Writer (Bootable State)                                                                    |
-| C:\WINDOWS\repair\asr.err                                                             | ASR Error File                                                                                       |
-| C:\WINDOWS\repair\asr.log                                                             | ASR Log File                                                                                         |
-| C:\WINDOWS\SoftwareDistribution\*                                                   | SUS Client                                                                                           |
-| C:\WINDOWS\system32\CatRoot2\*                                                      | Catalog Database                                                                                     |
-| C:\WINDOWS\system32\LServer\*                                                       | TermServLicensing                                                                                    |
-| C:\WINDOWS\system32\MSDtc\MSDTC.LOG                                                   | MS Distributed Transaction Coordinator                                                               |
-| C:\WINDOWS\system32\MSDtc\trace\dtctrace.log                                          | MS Distributed Transaction Coordinator                                                               |
-| C:\WINDOWS\Tasks\schedlgu.txt                                                         | Task Scheduler                                                                                       |
-| <drive:path>\DfsrPrivate\*                                                         | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
-| <drive:path>\DfsrPrivate\ConflictedAndDeleted\*                                    | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
-| <drive:path>\DfsrPrivate\Staging\*                                                 | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
-| S\system32\MSDtc\trace\dtctrace.log                                                   | DRM                                                                                                  |
+| **Filename**                                                                        | **Application**          |
+| ----------------------------------------------------------------------------------- | -------------------------- |
+| \*.crmlog                                                                           | Microsoft Writer (Bootable State)     |
+| \hiberfil.sys                                                                       | Power Management                      |
+| \Pagefile.sys                                                                       | Memory Page File                      |
+| \System Volume Information\*.{7cc467ef-6865-4831-853f-2a4817fd1bca}ALT              | VSS Service Alternate DB              |
+| \System Volume Information\*.{7cc467ef-6865-4831-853f-2a4817fd1bca}DB               | VSS Service DB                        |
+| \System Volume Information\*{3808876B-C176-4e48-B7AE-04046E6CC752}                  | VSS Default Provider                  |
+| \System Volume Information\DFSR\*                                                   | DFSR Database                         |
+| \System Volume Information\MountPointManagerRemoteDatabase                          | Mount Manager                         |
+| C:\Documents and Settings\All Users\Application Data\Microsoft\Network\Downloader\* | BITS\_metadata                        |
+| C:\Documents and Settings\All Users\DRM\*                                           | DRM                                   |
+| C:\Documents and Settings\%Username%\index.dat                                      | Internet Explorer                     |
+| C:\Documents and Settings\%Username%\Local Settings\Temp\2\*                        | Temporary Files                       |
+| C:\Windows\csc\*                                                                    | Client Side Cache                     |
+| C:\WINDOWS\Debug\*                                                                  | Winlogon debug                        |
+| C:\WINDOWS\netlogon.chg                                                             | Netlogon                              |
+| C:\WINDOWS\Registration\*.clb                                                       | Microsoft Writer (Bootable State)     |
+| C:\WINDOWS\repair\asr.err                                                           | ASR Error File                        |
+| C:\WINDOWS\repair\asr.log                                                           | ASR Log File                          |
+| C:\WINDOWS\SoftwareDistribution\*                                                   | SUS Client                            |
+| C:\WINDOWS\system32\CatRoot2\*                                                      | Catalog Database                      |
+| C:\WINDOWS\system32\LServer\*                                                       | TermServLicensing                     |
+| C:\WINDOWS\system32\MSDtc\MSDTC.LOG                                                 | MS Distributed Transaction Coordinator|
+| C:\WINDOWS\system32\MSDtc\trace\dtctrace.log                                        | MS Distributed Transaction Coordinator|
+| C:\WINDOWS\Tasks\schedlgu.txt                                                       | Task Scheduler                        |
+| <drive:path>\DfsrPrivate\*                                | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
+| <drive:path>\DfsrPrivate\ConflictedAndDeleted\*           | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
+| <drive:path>\DfsrPrivate\Staging\*                        | DFSR Replicated Folder {2AB0DFB4-7B9C-4EAE-A77C-1AFF95B5EE9A}-{8AE2FC0A-37BA-4801-A8A6-0A69DF4502EE} |
+| S\system32\MSDtc\trace\dtctrace.log                                                 | DRM                                   |
 
 `HKLM\SYSTEM\CurrentControlSet\Control\BackupRestore\FilesNotToBackup`<br>
 `HKLM\SYSTEM\CurrentControlSet\Control\BackupRestore\KeysNotToRestore`<br>
@@ -1436,27 +1436,26 @@ Is there also a HKCU key?
 
 **Windows Server Backup**
 
-Wbadmin replaces ntbackup[5]
-
+Wbadmin replaces ntbackup[5]<br>
 [http://technet.microsoft.com/en-us/library/cc770340.aspx](http://technet.microsoft.com/en-us/library/cc770340.aspx)
 
-| **Subcommand**                                                                                                                | **Description**                                                                                                                                                                                                                                                                                    |
-| ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Wbadmin enable backup                                                                                                         | <p>Configures and enables a daily backup schedule.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>                                                                                                                                                                         |
-| Wbadmin disable backup                                                                                                        | <p>Disables your daily backups.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>                                                                                                                                                                                            |
-| Wbadmin start backup                                                                                                          | Runs a one-time backup. If used with no parameters, uses the settings from the daily backup schedule.                                                                                                                                                                                              |
-| Wbadmin stop job                                                                                                              | Stops the currently running backup or recovery operation.                                                                                                                                                                                                                                          |
-| Wbadmin get versions                                                                                                          | Lists details of backups recoverable from the local computer or, if another location is specified, from another computer.                                                                                                                                                                          |
-| [Wbadmin get items](http://msdn2.microsoft.com/en-us/library/ms984439.aspx)                                                   | Lists the items included in a specific backup.                                                                                                                                                                                                                                                     |
+| **Subcommand**                          | **Description**                    |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Wbadmin enable backup                                                                                                         | <p>Configures and enables a daily backup schedule.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>        |
+| Wbadmin disable backup                                                                                                        | <p>Disables your daily backups.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>                           |
+| Wbadmin start backup                                                                                                          | Runs a one-time backup. If used with no parameters, uses the settings from the daily backup schedule.                             |
+| Wbadmin stop job                                                     | Stops the currently running backup or recovery operation.       |
+| Wbadmin get versions                                                                                                          | Lists details of backups recoverable from the local computer or, if another location is specified, from another computer.         |
+| [Wbadmin get items](http://msdn2.microsoft.com/en-us/library/ms984439.aspx)                                                   | Lists the items included in a specific backup.                                                   |
 | [Wbadmin start recovery](http://technet.microsoft.com/en-us/library/cc753116.aspx)                                            | <p>Runs a recovery of the volumes, applications, files, or folders specified.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>                                                                                                                                              |
-| [Wbadmin get status](http://technet.microsoft.com/en-us/library/cc771903.aspx)                                                | Shows the status of the currently running backup or recovery operation.                                                                                                                                                                                                                            |
-| [Wbadmin get disks](http://www.google.com/)                                                                                   | <p>Lists disks that are currently online.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>                                                                                                                                                                                  |
-| [Wbadmin start systemstaterecovery](http://en.wikipedia.org/wiki/Regedit)                                                     | <p>Runs a system state recovery.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>                                                                                                                                                                                           |
+| [Wbadmin get status](http://technet.microsoft.com/en-us/library/cc771903.aspx)                                                | Shows the status of the currently running backup or recovery operation.                                                          |
+| [Wbadmin get disks](http://www.google.com/)                                                                                   | <p>Lists disks that are currently online.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>                 |
+| [Wbadmin start systemstaterecovery](http://en.wikipedia.org/wiki/Regedit)                  | <p>Runs a system state recovery.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>             |
 | [Wbadmin start systemstatebackup](http://blogs.technet.com/b/askperf/archive/2010/03/02/windows-7-where-are-my-printers.aspx) | <p>Runs a system state backup.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>                                                                                                                                                                                             |
-| [Wbadmin delete systemstatebackup](http://www.undocprint.org/formats/winspool/spl)                                            | <p>Deletes one or more system state backups.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>                                                                                                                                                                               |
-| [Wbadmin start sysrecovery](http://technet.microsoft.com/en-us/library/cc731865.aspx)                                         | Runs a recovery of the full system (at least all the volumes that contain the operating system's state). _This subcommand applies only to Windows Server 2008, and it is only available if you are using the Windows Recovery Environment._                                                        |
-| [Wbadmin restore catalog](http://technet.microsoft.com/en-us/library/cc742060.aspx)                                           | <p>Recovers a backup catalog from a specified storage location in the case where the backup catalog on the local computer has been corrupted.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>                                                                              |
-| [Wbadmin delete catalog](http://technet.microsoft.com/en-us/library/cc731038.aspx)                                            | <p>Deletes the backup catalog on the local computer. Use this command only if the backup catalog on this computer is corrupted and you have no backups stored at another location that you can use to restore the catalog.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p> |
+| [Wbadmin delete systemstatebackup](http://www.undocprint.org/formats/winspool/spl)      | <p>Deletes one or more system state backups.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>       |
+| [Wbadmin start sysrecovery](http://technet.microsoft.com/en-us/library/cc731865.aspx)   | Runs a recovery of the full system (at least all the volumes that contain the operating system's state). _This subcommand applies only to Windows Server 2008, and it is only available if you are using the Windows Recovery Environment._                                                        |
+| [Wbadmin restore catalog](http://technet.microsoft.com/en-us/library/cc742060.aspx)     | <p>Recovers a backup catalog from a specified storage location in the case where the backup catalog on the local computer has been corrupted.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p>  |
+| [Wbadmin delete catalog](http://technet.microsoft.com/en-us/library/cc731038.aspx)      | <p>Deletes the backup catalog on the local computer. Use this command only if the backup catalog on this computer is corrupted and you have no backups stored at another location that you can use to restore the catalog.</p><p><em>This subcommand applies only to Windows Server 2008.</em></p> |
 
 #### Fax
 
@@ -1519,12 +1518,10 @@ You may have a print job stuck in the spool, or one that crashes the spool servi
 `Printer Drivers C:\Windows\system32\spool\DRIVERS\x64\3\`<br>
 `Inf Path C:\Windows\System32\DriverStore\FileRepository\...\...inf`
 
-**UNC path for shared printer drivers**
-
+**UNC path for shared printer drivers**<br>
 `print$` `C:\Windows\System32\spool\drivers`
 
-**Terminal Server key fix for no/cannot set default printer**
-
+**Terminal Server key fix for no/cannot set default printer**<br>
 `HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows\Device`
 
 Forms
@@ -1533,8 +1530,8 @@ Ports
 
 [http://technet.microsoft.com/en-us/library/cc771846.aspx](http://technet.microsoft.com/en-us/library/cc771846.aspx)
 
-| **Command**                                                                                                                                      | **Description**                                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Command**                                                           | **Description**      |
+| ------------------------------------------------------------------ | --------------------------------------- |
 | [Lpq](http://technet.microsoft.com/en-us/library/cc730696.aspx)                                                                                  | Displays the status of a print queue on a computer running Line Printer Daemon (LPD).                                                      |
 | [Lpr](http://technet.microsoft.com/en-us/library/cc742050.aspx)                                                                                  | Sends a file to a computer or printer sharing device running the Line Printer Daemon (LPD) service in preparation for printing.            |
 | [Net print](http://technet.microsoft.com/en-us/library/cc771976.aspx)                                                                            | Displays information about a specified printer queue, displays information about a specified print job, or controls a specified print job. |
@@ -1584,10 +1581,10 @@ PrintBrm -B|R|Q [-S <server>] -F <file> [-D <directory>] [-O FORCE] [-P ALL|ORIG
 
 **Print Separator Page**
 
-`pcl.sep`<br>
-`pscript.sep`<br>
-`sysprint.sep`<br>
-`sysprtj.sep`<br>
+- `pcl.sep`
+- `pscript.sep`
+- `sysprint.sep`
+- `sysprtj.sep`
 
 [http://www.windowsnetworking.com/kbase/WindowsTips/WindowsXP/AdminTips/Network/SharedprinterseparatorpageforWindows2000andWindowsXP.html](https://web.archive.org/web/2015/http://www.windowsnetworking.com/kbase/WindowsTips/WindowsXP/AdminTips/Network/SharedprinterseparatorpageforWindows2000andWindowsXP.html)
 
@@ -1603,26 +1600,6 @@ PrintBrm -B|R|Q [-S <server>] -F <file> [-D <directory>] [-O FORCE] [-P ALL|ORIG
 **Troubleshooting Vista shared printer installation**
 
 Add Local printer, local port, enter UNC path
-
-#### Windows Wireless Config
-
-(Move to Networking?)
-
-Registry key of remembered Wi-Fi connections<br>
-`HKLM\SOFTWARE\Microsoft\WZCSVC\Parameters\Interfaces` ?
-
-Wireless setup disk config file
-
-```
-AUTORUN.INF
-setupSNK.exe
- \SMRTNTKY\
- \DEVICE\
-fcw.ico
-MessageB.txt
-WSETTING.TXT
-WSETTING.WFC
-```
 
 #### Windows logon password
 
@@ -1705,14 +1682,14 @@ Underline keyboard shortcuts and access keys has been moved to Make it easier to
 `Magnify.exe`<br>
 `Narrator.exe`
 
-**Registry keys to disable and prevent accidental activation.**
+**Registry keys to disable and prevent accidental activation of accessibility.**
 
 **How to turn off an accessibility feature that was accidently turned on**
 
 Enable Java Access Bridge<br>
 Java Access Bridge, from Oracle, Inc. providing Assistive Technology access to Java applications
 
-### Programs without icons or shortcuts
+## Programs without icons or shortcuts
 
 32-bit vs 64-bit
 
@@ -1722,7 +1699,8 @@ ODBC, Media Player, IE
 
 `odbcad32.exe %windir%\SysWOW64\odbcad32.exe`
 
-Problem Step Recorder `C:\Windows\System32\PSR.exe` and/or `C:\Windows\SysWOW64`
+Problem Step Recorder `C:\Windows\System32\PSR.exe` and/or `C:\Windows\SysWOW64`<br>
+saves as a `.mhtml` file. (pictures limited to *20*?)
 
 msconfig C:\Windows\System32 [Win7] or ? [WinXP]
 
@@ -1797,7 +1775,7 @@ Command aboves will explore the \Windows\System32 folder and put the focus on th
 snap-ins (MSC)
 
 | **Snap-in**                                     | **Filename**                           | **Description**                                                                                                                                                                                                                 | **Source**                     |
-| ----------------------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| ----------------------------------------------- | -------------------------------------- | ------------------------------------------ | ------------------------------ |
 | Active Directory Domains and Trusts             |                                        | You can use the Active Directory Domains and Trusts snap-in to manage Active Directory domains and trusts.                                                                                                                      |                                |
 | Active Directory Schema                         |                                        | View and edit the Active Directory Schema                                                                                                                                                                                       |                                |
 | Active Directory Sites and Services             |                                        | View and manage Sites and Services. Sites define the topology and schedules used for Active Directory Domain Services replication. Services permits administration of certain enterprise-wide Active Directory Domain Services. |                                |
